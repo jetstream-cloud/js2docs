@@ -18,5 +18,4 @@ Table of Contents
 ..
    _:caption: Contents:
 
-index
 KeyDifferences
