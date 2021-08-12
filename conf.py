@@ -1,5 +1,6 @@
 html_title = 'Jetstream2 Wiki'
 
+# Open external links in new tab/window
 from sphinx.writers.html import HTMLTranslator
 class PatchedHTMLTranslator(HTMLTranslator):
    def visit_reference(self, node):
@@ -10,3 +11,5 @@ class PatchedHTMLTranslator(HTMLTranslator):
 
 def setup(app):
     app.set_translator('html', PatchedHTMLTranslator)
+##########
+
