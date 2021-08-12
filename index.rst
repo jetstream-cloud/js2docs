@@ -13,8 +13,10 @@ Table of Contents
 ==================
 
 .. toctree::
-# :maxdepth: 2
-# :caption: Contents:
+..
+   _:maxdepth: 2
+..
+   _:caption: Contents:
 
 index
 KeyDifferences
