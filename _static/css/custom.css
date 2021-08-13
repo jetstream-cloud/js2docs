@@ -3,6 +3,6 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
 
-.fa-github {
+.fa .fa-github {
     display: none;
 }
