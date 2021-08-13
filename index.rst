@@ -7,9 +7,3 @@ Welcome to the Jetstream2 Wiki
 
    Jetstream2
    KeyDifferences  
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
