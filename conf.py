@@ -1,5 +1,7 @@
 html_title = 'Jetstream2 Wiki'
 
+html_show_sourcelink = False
+
 html_theme_options = {
     'analytics_id': 'UA-204881722-1',  #  Provided by Google in your dashboard
     'analytics_anonymize_ip': False,
@@ -38,3 +40,9 @@ html_static_path = ['_static']
 html_css_files = [
     'css/custom.css',
 ]
+
+html_context = {
+   "display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+   "last_updated": True,
+   "commit": False,
+}
