@@ -1,11 +1,13 @@
 html_title = 'Jetstream2 Wiki'
 
 html_show_sourcelink = False
+html_logo = "jetstream-logo-white.svg"
 
 html_theme_options = {
     'analytics_id': 'UA-204881722-1',  #  Provided by Google in your dashboard
     'analytics_anonymize_ip': False,
-    'logo_only': False,
+    #'logo_only': False,
+    'logo_only': True,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
