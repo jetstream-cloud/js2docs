@@ -5,7 +5,8 @@ Welcome to the Jetstream2 Wiki
    :maxdepth: 4
    :caption: Contents:
 
-   your_package_name
+   Jetstream2
+   KeyDifferences  
 
 Indices and tables
 ==================
