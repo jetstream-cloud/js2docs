@@ -23,7 +23,7 @@ theme: "readthedocs"
    
 
 nav:
-  - Overview: Jetstream2.md
+  - Overview: index.md
   - Key Differences: KeyDifferences.md
   - User Interfaces:
     - Atmosphere: ui/atmo.md
