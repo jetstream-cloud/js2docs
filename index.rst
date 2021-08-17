@@ -13,5 +13,5 @@ The Jetstream 2 project is funded under `NSF award number 2005506 <https://www.n
    :titlesonly:
    :caption: Contents
 
-   topics/Jetstream2
-   topics/KeyDifferences  
+  Jetstream2.rst
+  KeyDifferences.rst
