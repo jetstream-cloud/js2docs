@@ -11,6 +11,7 @@ The Jetstream 2 project is funded under `NSF award number 2005506 <https://www.n
 
 .. toctree::
    :maxdepth: 2
+   :titlesonly:
    :caption: Contents
 
    Jetstream2.rst
