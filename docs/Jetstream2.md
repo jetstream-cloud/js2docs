@@ -1,5 +1,5 @@
-Jetstream2
-==================
+# Jetstream2
+---
 
 This is the placeholder for future **Jetstream2** documentation.
 
