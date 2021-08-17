@@ -3,8 +3,7 @@ site_url: https://wiki.jetstream-cloud.org
 site_description: "Jetstream 2 Wiki"
 repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
-#theme: "readthedocs"
-theme: "Flatly"
+theme: "readthedocs"
 
 google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 #https://github.com/mkdocs/mkdocs/issues/2101
