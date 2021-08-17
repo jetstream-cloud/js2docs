@@ -1,0 +1,33 @@
+site_name: 'Jetstream2 Wiki'
+site_url: https://wiki.jetstream-cloud.org
+site_description: "Jetstream 2 Wiki"
+repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
+
+theme: "readthedocs"
+
+#google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
+#https://github.com/mkdocs/mkdocs/issues/2101
+#https://github.com/mkdocs/mkdocs/issues/1794
+
+#extra:
+#  analytics:
+#    provider: google
+#    property: 'UA-204881722-1'
+#  consent:
+#    title: Cookie consent
+#    description: > 
+#      We use cookies to recognize your repeated visits and preferences, as well
+#      as to measure the effectiveness of our documentation and whether users
+#      find what they're searching for. With your consent, you're helping us to
+#      make our documentation better.
+   
+
+nav:
+  - Overview: index.md
+  - Key Differences: KeyDifferences.md
+  - User Interfaces:
+    - Atmosphere: ui/atmo.md
+    - Exosphere: ui/exo.md
+    - Horizon: ui/hrzn.md
+    - API: ui/api.md
+    - CLI: ui/cli.md
