@@ -1,13 +1,13 @@
 site_name: 'Jetstream2 Wiki'
 site_url: https://wiki.jetstream-cloud.org
 site_description: "Jetstream 2 Wiki"
-site_favicon: "img/favicon.ico"
-
 repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
 theme: "readthedocs"
 
-google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
+#google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
+#https://github.com/mkdocs/mkdocs/issues/2101
+#https://github.com/mkdocs/mkdocs/issues/1794
 
 #extra:
 #  analytics:
@@ -22,7 +22,7 @@ google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 #      make our documentation better.
    
 
-pages:
+nav:
   - Overview: Jetstream2.md
   - Key Differences: KeyDifferences.md
   - User Interfaces:
