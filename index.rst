@@ -10,8 +10,8 @@ Consisting of five computational systems, Jetstream 2’s primary system will be
 The Jetstream 2 project is funded under `NSF award number 2005506 <https://www.nsf.gov/awardsearch/showAward?AWD_ID=2005506>`_.
 
 .. toctree::
-   :maxdepth: 4
-   :caption: Contents:
+   :titlesonly:
+   :caption: Contents
 
-   Jetstream2
-   KeyDifferences  
+   topics/Jetstream2
+   topics/KeyDifferences  
