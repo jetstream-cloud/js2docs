@@ -36,13 +36,21 @@ nav:
     - Software: faq/software.md
   - General Usage Information:
     - Featured Images: general/featured.md
+    - Jetstream2 Software Collection: general/software.md
+    - Software Licenses: general/licenses.md
+    - XSEDE Service Units and Jetstream2: general/xsede.md
+    - Jetstream2 Resources: general/resources.md
+    - VM Sizes and Configurations: general/vmsizes.md
+    - Policies and Best Practices:
+      - Acceptable Usage Policies: general/policies.md
+      - Export Control Guidance: general/export.md
+      - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
   - Allocations:
     - Trial allocation: alloc/trial.md
   - User Interfaces:
     - Atmosphere: ui/atmo.md
     - Exosphere: ui/exo.md
     - Horizon: ui/hrzn.md
-    - API: ui/api.md
     - CLI: ui/cli.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
