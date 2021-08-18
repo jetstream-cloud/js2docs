@@ -54,3 +54,12 @@ nav:
     - CLI: ui/cli.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
+    - Manila: general/manila.md
+    - File Transfer: general/filetransfer.md
+    - Add User to a VM: general/adduser.md
+    - Installing Software on your VM: general/installsoftware.md
+    - Jupyter on Jetstream2: general/jupyter.md
+    - Containers on Jetstream2: general/containers.md
+    - Terraform on Jetstream2: general/terraform.md
+    - Virtual Clusters on Jetstream2: general/virtualclusters.md
+    - Galaxy: general/galaxy.md
