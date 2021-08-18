@@ -25,6 +25,15 @@ google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 nav:
   - Overview: index.md
   - Key Differences: KeyDifferences.md
+  - Migrating from Jetstream1 to Jetstream2: migrating.md
+  - Key Features of Jetstream2: keyf.md
+  - Configuration and specifications: config.md
+  - Network configuration and considerations: network.md
+  - Frequently Asked Questions:
+    - Troubleshooting: faq/trouble.md
+    - Allocations: faq/alloc.md
+    - Security: faq/security.md
+    - Software: faq/software.md
   - General Usage Information:
     - Featured Images: general/featured.md
   - Allocations:
