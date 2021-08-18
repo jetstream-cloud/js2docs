@@ -4,7 +4,6 @@ site_description: "Jetstream 2 Wiki"
 repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
 theme: "readthedocs"
-  #logo: assets/jetstream-logo-white.svg
 
 google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 #https://github.com/mkdocs/mkdocs/issues/2101
@@ -26,9 +25,12 @@ google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 nav:
   - Overview: index.md
   - Key Differences: KeyDifferences.md
+  - General Usage Information:
+  - Allocations:
   - User Interfaces:
     - Atmosphere: ui/atmo.md
     - Exosphere: ui/exo.md
     - Horizon: ui/hrzn.md
     - API: ui/api.md
     - CLI: ui/cli.md
+  - General VM Operations:
