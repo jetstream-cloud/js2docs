@@ -26,7 +26,9 @@ nav:
   - Overview: index.md
   - Key Differences: KeyDifferences.md
   - General Usage Information:
+    - Featured Images: general/featured.md
   - Allocations:
+    - Trial allocation: alloc/trial.md
   - User Interfaces:
     - Atmosphere: ui/atmo.md
     - Exosphere: ui/exo.md
@@ -34,3 +36,4 @@ nav:
     - API: ui/api.md
     - CLI: ui/cli.md
   - General VM Operations:
+    - Firewalls: general/firewalls.md
