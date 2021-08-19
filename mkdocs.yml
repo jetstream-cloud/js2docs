@@ -46,7 +46,12 @@ nav:
       - Export Control Guidance: general/export.md
       - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
   - Allocations:
-    - Trial allocation: alloc/trial.md
+    - Trial Allocation: alloc/trial.md
+    - Startup Allocations: alloc/startup.md
+    - Education Allocations: alloc/education.md 
+    - Research Allocations: alloc/research.md 
+    - Supplements (Storage/SUs): alloc/supplement.md
+    - Allocation Extensions: alloc/extension.md
   - User Interfaces:
     - Atmosphere: ui/atmo.md
     - Exosphere: ui/exo.md
