@@ -5,7 +5,7 @@ repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
 theme: 
   name: "readthedocs"
-  logo: "images/jetstream-logo-white.svg"
+  logo: images/jetstream-logo-white.svg
 
 google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 #https://github.com/mkdocs/mkdocs/issues/2101
