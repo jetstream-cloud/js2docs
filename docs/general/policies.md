@@ -4,9 +4,9 @@ In general, fundamental, publishable research is permitted on Jetstream from any
 
 ---
 > “Fundamental research means basic and applied research in science and engineering, the results of which ordinarily are published and shared broadly within the scientific community, as distinguished from proprietary research and from Industrial development, design, production, and product utilization, the results of which ordinarily are restricted for proprietary or national security reason.” <i>[National Security Decision Directive (NSDD) 189, National Policy on the Transfer of Scientific, Technical, and Engineering Information]</i>
+---
 
 For anything other than fundamental, publishable research, you may wish to consult with your institution’s export control office for any export/sharing restrictions.
----
 
 * * *
 
