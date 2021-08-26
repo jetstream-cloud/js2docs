@@ -4,8 +4,7 @@ site_description: "Jetstream 2 Wiki"
 repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
 theme: 
-  #name: "readthedocs"
-  name: "mkdocs"
+  name: "readthedocs"
   logo: "images/jetstream-logo-white.svg"
 
 google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
