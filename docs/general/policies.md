@@ -14,7 +14,7 @@ For anything other than fundamental, publishable research, you may wish to consu
 
 ### Acceptable Use of Jetstream
 
-Jetstream requires compliance with all XSEDE, Indiana University, and University of Texas Austin/TACC usage policies, including but not limited to:
+Jetstream2 requires compliance with all XSEDE and Indiana University policies, including but not limited to:
 
 *   [XSEDE Usage Policy](https://www.xsede.org/ecosystem/operations/usagepolicy)
     
@@ -24,10 +24,8 @@ Jetstream requires compliance with all XSEDE, Indiana University, and University
         
     *   [IT-12 Security of Information Technology Resources](http://policies.iu.edu/policies/categories/information-it/it/IT-12.shtml)
         
-*   TACC
-    
-    *   [Acceptable Use Policy](https://portal.tacc.utexas.edu/tacc-usage-policy)
-        
+Regional clouds may have additional usage and security policies. If you are using one of the regional clouds, please check with your support team there for more information.
+---
 
 Jetstream researchers agree to:
 

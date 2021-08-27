@@ -7,22 +7,21 @@ theme:
   name: "readthedocs"
   logo: images/jetstream-logo-white.svg
 
-google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
+extra:
+  analytics:
+    provider: google
+    property: G-3KNR9L6H6Y
+    consent:
+    title: Cookie consent
+    description: >
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+
+#google_analytics: ['UA-204881722-1','wiki.jetstream-cloud.org']
 #https://github.com/mkdocs/mkdocs/issues/2101
 #https://github.com/mkdocs/mkdocs/issues/1794
-
-#extra:
-#  analytics:
-#    provider: google
-#    property: 'UA-204881722-1'
-#  consent:
-#    title: Cookie consent
-#    description: > 
-#      We use cookies to recognize your repeated visits and preferences, as well
-#      as to measure the effectiveness of our documentation and whether users
-#      find what they're searching for. With your consent, you're helping us to
-#      make our documentation better.
-   
 
 nav:
   - Overview: index.md
@@ -62,9 +61,9 @@ nav:
       - Adding and Using SSH Keys: ui/atmo/keys.md
       - Choosing Your Allocation: ui/atmo/keys.md
       - Launching a VM: ui/atmo/launch.md
-    - Exosphere: ui/exo.md
-    - Horizon: ui/hrzn.md
-    - CLI: ui/cli.md
+    - Exosphere: ui/exo/exo.md
+    - Horizon: ui/horizon/hrzn.md
+    - CLI: ui/cli/cli.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
     - Manila: general/manila.md

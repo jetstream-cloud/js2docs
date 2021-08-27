@@ -1,6 +1,6 @@
 #Acceptable Usage Policies for Jetstream-hosted Gateways  
 
-Gateways hosted on Jetstream agree to abide by the usage policies defined on [Policies: Acceptable Use and Research and Export Control Guidance](Acceptable-Use-Policies-and-Research-and-Export-Control-Guidance_1914634248.html). We also recommend having an Acceptable Usage Policy (AUP) on your gateway.
+Gateways hosted on Jetstream agree to abide by the usage policies defined on [Policies: Acceptable Use and Research and Export Control Guidance](policies.md). We also recommend having an Acceptable Usage Policy (AUP) on your gateway.
 
 We recommend adding a statement to any acceptable use agreement that targets export control issues, such as the language below:
 
