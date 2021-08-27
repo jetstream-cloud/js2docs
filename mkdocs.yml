@@ -5,9 +5,11 @@ repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
 
 theme: 
   name: "readthedocs"
-  logo: images/jetstream-logo-white.svg
+  #logo: images/jetstream-logo-white.svg
 
 extra:
+  logo: images/jetstream-logo-white.svg
+  extra_css: css/custom.css
   analytics:
     provider: google
     property: G-3KNR9L6H6Y
