@@ -1,6 +1,6 @@
 #Acceptable Use Policies and Research and Export Control Guidance  
 
-In general, fundamental, publishable research is permitted on Jetstream from any non-EAR sanctioned countries. Fundamental research is defined as:
+In general, fundamental, publishable research is permitted on Jetstream2 from any non-EAR sanctioned countries. Fundamental research is defined as:
 
 > “Fundamental research means basic and applied research in science and 
 > engineering, the results of which ordinarily are published and shared 
@@ -17,7 +17,7 @@ consult with your institution’s export control office for any export/sharing
 restrictions.
 * * *
 
-### Acceptable Use of Jetstream
+### Acceptable Use of Jetstream2
 
 Jetstream2 requires compliance with all XSEDE and Indiana University policies, including but not limited to:
 
@@ -31,9 +31,9 @@ Jetstream2 requires compliance with all XSEDE and Indiana University policies, i
 > team there for more information.
 ---
 
-Jetstream researchers agree to:
+Jetstream2 researchers agree to:
 
-*   Ensure that data that must be protected by Federal security or privacy laws (e.g., HIPAA, FERPA, ITAR, classified information, export control, etc.) are not stored on this system unless such storage and usage is specifically authorized by the responsible University administrator and complies with any processes for management of access to such information. For export controlled information, including ITAR information, approval of the University Export Compliance Office is required prior to use of the Jetstream systems for storage/processing of export controlled data. The Jetstream system is not intended, by default, to meet the security requirements of these laws or regulations and specific usage related controls or restrictions may be required prior to authorization of the use of the Jetstream system for such purposes.
+*   Ensure that data that must be protected by Federal security or privacy laws (e.g., HIPAA, FERPA, ITAR, classified information, export control, etc.) are not stored on this system unless such storage and usage is specifically authorized by the responsible University administrator and complies with any processes for management of access to such information. For export controlled information, including ITAR information, approval of the University Export Compliance Office is required prior to use of the Jetstream2 systems for storage/processing of export controlled data. The Jetstream2 system is not intended, by default, to meet the security requirements of these laws or regulations and specific usage related controls or restrictions may be required prior to authorization of the use of the Jetstream2 system for such purposes.
     
 *   Ensure that the project does not violate any export control end use restrictions contained in [Part 744 of the EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2343-part-744-control-policy-end-user-and-end-use-based-2/file).
     
@@ -48,9 +48,9 @@ The US Department of Commerce, Bureau of Industrial Security (BIS) publishes a l
 
 * * *
 
-### Sanctioned countries (not eligible to use Jetstream)
+### Sanctioned countries (not eligible to use Jetstream2)
 
-In accordance to federal guidelines, Jetstream will not be accessible to IP ranges from the following countries:
+In accordance to federal guidelines, Jetstream2 will not be accessible to IP ranges from the following countries:
 
 *   Cuba
     
