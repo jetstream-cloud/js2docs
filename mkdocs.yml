@@ -59,7 +59,7 @@ nav:
       - Quick Start Guide: ui/atmo/quick.md
       - Logging In: ui/atmo/login.md
       - Adding and Using SSH Keys: ui/atmo/keys.md
-      - Choosing Your Allocation: ui/atmo/keys.md
+      - Choosing Your Allocation: ui/atmo/alloc.md
       - Launching a VM: ui/atmo/launch.md
     - Exosphere: ui/exo/exo.md
     - Horizon: ui/horizon/hrzn.md

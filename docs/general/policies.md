@@ -2,14 +2,19 @@
 
 In general, fundamental, publishable research is permitted on Jetstream from any non-EAR sanctioned countries. Fundamental research is defined as:
 
----
-```
-“Fundamental research means basic and applied research in science and engineering, the results of which ordinarily are published and shared broadly within the scientific community, as distinguished from proprietary research and from Industrial development, design, production, and product utilization, the results of which ordinarily are restricted for proprietary or national security reason.” <i>[National Security Decision Directive (NSDD) 189, National Policy on the Transfer of Scientific, Technical, and Engineering Information]</i>
+> “Fundamental research means basic and applied research in science and 
+> engineering, the results of which ordinarily are published and shared 
+> broadly within the scientific community, as distinguished from proprietary 
+> research and from Industrial development, design, production, and product 
+> utilization, the results of which ordinarily are restricted for proprietary 
+> or national security reason.” <i>[National Security Decision Directive 
+> (NSDD) 189, National Policy on the Transfer of Scientific, Technical, 
+> and Engineering Information]</i>
 
 
-For anything other than fundamental, publishable research, you may wish to consult with your institution’s export control office for any export/sharing restrictions.
-```
----
+For anything other than fundamental, publishable research, you may wish to 
+consult with your institution’s export control office for any export/sharing 
+restrictions.
 * * *
 
 ### Acceptable Use of Jetstream
@@ -17,14 +22,13 @@ For anything other than fundamental, publishable research, you may wish to consu
 Jetstream2 requires compliance with all XSEDE and Indiana University policies, including but not limited to:
 
 *   [XSEDE Usage Policy](https://www.xsede.org/ecosystem/operations/usagepolicy)
-    
 *   Indiana University 
-    
     *   [IT-02 Misuse and Abuse of Information Technology Resources](http://policies.iu.edu/policies/categories/information-it/it/IT-02.shtml) 
-        
     *   [IT-12 Security of Information Technology Resources](http://policies.iu.edu/policies/categories/information-it/it/IT-12.shtml)
         
-Regional clouds may have additional usage and security policies. If you are using one of the regional clouds, please check with your support team there for more information.
+> Regional clouds may have additional usage and security policies. If 
+> you are using one of the regional clouds, please check with your support 
+> team there for more information.
 ---
 
 Jetstream researchers agree to:
