@@ -1,5 +1,4 @@
-# Jetstream2
----
+![Jetstream2 Panel Art](/images/JS2-banner.png)
 
 This is the placeholder for future **Jetstream2** documentation.
 
