@@ -2,6 +2,7 @@ site_name: 'Jetstream2 Wiki'
 site_url: https://wiki.jetstream-cloud.org
 site_description: "Jetstream 2 Wiki"
 repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
+copyright: Copyright © 2021 The Trustees of Indiana University
 
 theme: 
   name: "readthedocs"
@@ -11,10 +12,15 @@ extra_css:
     - 'css/custom.css'
 
 markdown_extensions:
+    - smarty
     - toc:
         permalink: True
     - sane_lists
     - attr_list
+
+plugins:
+    - search:
+        indexing: 'full'
 
 extra:
   analytics:
