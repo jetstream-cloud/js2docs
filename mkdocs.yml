@@ -10,6 +10,12 @@ theme:
 extra_css: 
     - 'css/custom.css'
 
+markdown_extensions:
+    - toc:
+        permalink: True
+    - sane_lists
+    - attr_list
+
 extra:
   analytics:
     provider: google
