@@ -8,4 +8,3 @@ First-time users: New users will probably wish to review the [System Overview](/
 
 Our [Troubleshooting and FAQ](faq/trouble.md) may have helpful suggestions for common problems.
 
-[TOC]

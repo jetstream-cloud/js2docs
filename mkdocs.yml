@@ -6,6 +6,12 @@ copyright: Copyright © 2021 The Trustees of Indiana University
 
 theme: 
   name: "readthedocs"
+  #name: "windmill"
+  #name: "material"
+  #palette:
+  #  primary: black
+  #features:
+  #  - navigation.top
   logo: 'images/jetstream-logo-white.svg'
   
 extra_css: 
