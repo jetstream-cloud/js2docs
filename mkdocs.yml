@@ -41,7 +41,6 @@ extra:
 nav:
   - Jetstream2 Home: index.md
   - Jetstream2 Info: 
-#     - System Highlights:
      - System Overview: overview/overview.md
      - Key Differences: overview/keydiff.md
      - Key Features of Jetstream2: overview/keyfeatures.md
