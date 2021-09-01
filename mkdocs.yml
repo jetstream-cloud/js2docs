@@ -39,12 +39,15 @@ extra:
 #https://github.com/mkdocs/mkdocs/issues/1794
 
 nav:
-  - Overview: index.md
-  - Key Differences: KeyDifferences.md
+  - Jetstream2 Home: index.md
+  - Jetstream2 Info: 
+#     - System Highlights:
+     - System Overview: overview/overview.md
+     - Key Differences: overview/keydiff.md
+     - Key Features of Jetstream2: overview/keyfeatures.md
+     - Configuration and specifications: overview/config.md
+     - Network configuration and considerations: overview/network.md
   - Migrating from Jetstream1 to Jetstream2: migrating.md
-  - Key Features of Jetstream2: keyf.md
-  - Configuration and specifications: config.md
-  - Network configuration and considerations: network.md
   - Frequently Asked Questions:
     - Troubleshooting: faq/trouble.md
     - Allocations: faq/alloc.md

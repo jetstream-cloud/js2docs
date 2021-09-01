@@ -6,17 +6,17 @@ There will be quite a few similarities between Jetstream1 and Jetstream2. Jetstr
 
 The biggest difference is that Jetstream2 will consist of one primary cloud and multiple regional clouds. As you can see by the image below, the primary cloud will be hosted at Indiana University in Bloomington, IN with regional clouds at various institutions across the United States.
 
-![Jetstream2 Architecture](images/JS2-Architecture.jpg)
+![Jetstream2 Architecture](/images/JS2-Architecture.jpg)
 
 Allocations will only be awarded on the primary cloud by default.
-
-### Interfaces
-
-Jetstream2 will also have a primary graphical user interface. Atmosphere is evolving into a new tool called Containerized Atmosphere for Continuous Analysis Orchestration (CACAO), which is built on the principles of Atmosphere (abstracting complicated functions such as firewalls and virtual networking). Jetstream2 will also provide API services utilizing both the OpenStack Horizon GUI and a robust command line interface (CLI). Because Jetstream2 will no longer have separate operating domains for Atmosphere2/CACAO and API operations, those utilizing Jetstream2 can switch between interfaces easily, seeing all virtual machines and other assets created in any interface. This single namespace also allows for third-party interfaces that can manage any OpenStack created resource to be used with Jetstream2. At the time of deployment, Jetstream2 will feature one such third-party interface called [Exosphere](https://gitlab.com/exosphere/exosphere/-/blob/master/README.md){target=_blank}.
 
 ### Hardware
 
 Jetstream2 will also bring multiple classes of research computing hardware. Jetstream2 will still have hundreds of CPU-based compute nodes for general purpose virtual machines/computing. Jetstream2 will also feature a small number of large memory nodes with up to 1 terabyte of RAM. Jetstream2 will also make available 90 nodes of GPU-enabled nodes with four [NVIDIA A100 GPUs](https://www.nvidia.com/en-us/data-center/a100/){target=_blank}. These will be subdivided using [NVIDIA Multi-Instance GPU (MIG)](https://www.nvidia.com/en-us/technologies/multi-instance-gpu/){target=_blank} to allow Jetstream2 allocations to utilize from 1/8th of a GPU to an entire GPU in their instances to allow everything from educational use requiring a minimal amount of GPU processing power to a full GPU for research workloads.
+
+### Interfaces
+
+Jetstream2 will also have a primary graphical user interface. Atmosphere is evolving into a new tool called Containerized Atmosphere for Continuous Analysis Orchestration (CACAO), which is built on the principles of Atmosphere (abstracting complicated functions such as firewalls and virtual networking). Jetstream2 will also provide API services utilizing both the OpenStack Horizon GUI and a robust command line interface (CLI). Because Jetstream2 will no longer have separate operating domains for Atmosphere2/CACAO and API operations, those utilizing Jetstream2 can switch between interfaces easily, seeing all virtual machines and other assets created in any interface. This single namespace also allows for third-party interfaces that can manage any OpenStack created resource to be used with Jetstream2. At the time of deployment, Jetstream2 will feature one such third-party interface called [Exosphere](https://gitlab.com/exosphere/exosphere/-/blob/master/README.md){target=_blank}.
 
 ### Containers and Orchestration
 
