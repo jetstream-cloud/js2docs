@@ -18,9 +18,9 @@ markdown_extensions:
     - sane_lists
     - attr_list
 
-plugins:
-    - search:
-        indexing: 'full'
+#plugins:
+#    - search:
+#        indexing: 'full'
 
 extra:
   analytics:
@@ -40,13 +40,13 @@ extra:
 
 nav:
   - Jetstream2 Home: index.md
-  - Jetstream2 Info: 
-     - System Overview: overview/overview.md
-     - Key Differences: overview/keydiff.md
-     - Key Features of Jetstream2: overview/keyfeatures.md
-     - Configuration and specifications: overview/config.md
-     - Network configuration and considerations: overview/network.md
   - Migrating from Jetstream1 to Jetstream2: migrating.md
+  - Jetstream2 Info: 
+    - System Overview: overview/overview.md
+    - Key Differences: overview/keydiff.md
+    - Key Features of Jetstream2: overview/keyfeatures.md
+    - Configuration and specifications: overview/config.md
+    - Network configuration and considerations: overview/network.md
   - Frequently Asked Questions:
     - Troubleshooting: faq/trouble.md
     - Allocations: faq/alloc.md
