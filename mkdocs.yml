@@ -42,7 +42,7 @@ nav:
   - Jetstream2 Home: index.md
   - Migrating from Jetstream1 to Jetstream2: migrating.md
   - Jetstream2 Info: 
-    - System Overview: overview/overview.md
+    - System Overview: overview/overview-doc.md
     - Key Differences: overview/keydiff.md
     - Key Features of Jetstream2: overview/keyfeatures.md
     - Configuration and specifications: overview/config.md
