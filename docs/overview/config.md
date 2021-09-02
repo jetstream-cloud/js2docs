@@ -4,7 +4,7 @@
 
 | System Configuration        | Aggregate information           | Per Node (Compute Node)  |
 |:-------------|:-------------:|:-----:|
-| Machine type | Dell (Various) | Dell PowerEdge C6525 |
+| Machine type | Dell | Dell PowerEdge C6525 |
 | Operating system      | Ubuntu      |   Ubuntu |
 | Processor cores | 49,152      |    128  |
 | CPUs  | 768 (AMD Milan 7713) | 2  |
@@ -15,7 +15,7 @@
 
 | System Configuration        | Aggregate information           | Per Node (Compute Node)  |
 |:-------------|:-------------:|:-----:|
-| Machine type | Dell (Various) | Dell PowerEdge R7525 |
+| Machine type | Dell | Dell PowerEdge R7525 |
 | Operating system      | Ubuntu      |   Ubuntu |
 | Processor cores | 4,096      |    128  |
 | CPUs  | 64 (AMD Milan 7713) | 2  |
@@ -26,7 +26,7 @@
 
 | System Configuration        | Aggregate information           | Per Node (Compute Node)  |
 |:-------------|:-------------:|:-----:|
-| Machine type | Dell (Various) | Dell PowerEdge XE8545 |
+| Machine type | Dell | Dell PowerEdge XE8545 |
 | Operating system      | Ubuntu      |   Ubuntu |
 | Processor cores | 11,520      |    128  |
 | CPUs  | 180 (AMD Milan 7713) | 2  |
