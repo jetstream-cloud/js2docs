@@ -6,7 +6,7 @@ There will be quite a few similarities between Jetstream1 and Jetstream2. Jetstr
 
 The biggest difference is that Jetstream2 will consist of one primary cloud and multiple regional clouds. As you can see by the image below, the primary cloud will be hosted at Indiana University in Bloomington, IN with regional clouds at various institutions across the United States.
 
-![Jetstream2 Architecture](/images/JS2-Architecture.jpg)
+![Jetstream2 Architecture](../../images/JS2-Architecture.jpg)
 
 Allocations will only be awarded on the primary cloud by default.
 
