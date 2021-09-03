@@ -1,6 +1,8 @@
 #Configuration and specifications
 
-#### Primary Cloud Compute Nodes (384 nodes)
+### Primary Cloud Specifications
+
+#### Compute Nodes (384 nodes)
 
 | System Configuration        | Aggregate information           | Per Node (Compute Node)  |
 |:-------------|:-------------:|:-----:|
@@ -11,9 +13,9 @@
 | Network   | 100 Gbps x 4 to Internet2  | 100 Gpbs to hypervisor  |
 | Storage  | 14 PB Total Ceph Storage  | 240gb SSD  |
 
-#### Primary Cloud Large Memory Nodes (32 nodes)
+#### Large Memory Nodes (32 nodes)
 
-| System Configuration        | Aggregate information           | Per Node (Compute Node)  |
+| System Configuration        | Aggregate information           | Per Node (Large Memory Node)  |
 |:-------------|:-------------:|:-----:|
 | Machine type | Dell | Dell PowerEdge R7525 |
 | Operating system      | Ubuntu      |   Ubuntu |
@@ -22,9 +24,9 @@
 | Network   | 100 Gbps x 4 to Internet2  | 100 Gpbs to hypervisor  |
 | Storage  | 14 PB Total Ceph Storage  | 480gb SSD  |
 
-#### Primary Cloud GPU Nodes (90 nodes)
+#### GPU Nodes (90 nodes)
 
-| System Configuration        | Aggregate information           | Per Node (Compute Node)  |
+| System Configuration        | Aggregate information           | Per Node (GPU Node)  |
 |:-------------|:-------------:|:-----:|
 | Machine type | Dell | Dell PowerEdge XE8545 |
 | Operating system      | Ubuntu      |   Ubuntu |
