@@ -30,5 +30,6 @@
 | Operating system      | Ubuntu      |   Ubuntu |
 | Processor cores | 11,520      |    128  |
 | CPUs  | 180 (AMD Milan 7713) | 2  |
+| GPUs   | 360 (NVIDIA A100 SXM4 40GB)  | 4 |
 | Network   | 100 Gbps x 4 to Internet2  | 100 Gpbs to hypervisor  |
 | Storage  | 14 PB Total Ceph Storage  | 960gb SSD  |
