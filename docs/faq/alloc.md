@@ -29,18 +29,18 @@
 
    **4. How often can I get a startup allocation?**
 
-> Applications for startup allocations will only be accepted once. After the startup runs out it is best to apply for a research allocation.
+> Applications for startup allocations will only be accepted once. If you have modest needs that are equal or less than startup values, you may renew your startup allocation. If you need a larger allocation, it is best to apply for a [research allocation](https://portal.xsede.org/allocations/research){target=_blank}.
 
 ---
 
   **5. I'm running out of Service Units (SUs) or storage. How do I request more?**
 
-> If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs or storage for Jetstream -- Supplemental Allocations](Requesting-additional-SUs-or-storage-for-Jetstream----Supplemental-Allocations_659423233.html)
+> If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
 
-6
+---
 
-I am at or exceeding the quota limits for my allocation.
+  **6. I am at or exceeding the quota limits for my allocation.**
 
-How do I request additional resources such as CPUs and memory?
+> How do I request additional resources such as CPUs and memory?
 
-Additional CPUs and memory may be requested via Atmosphere.  See [How to request additional resources on Jetstream.](https://iujetstream.atlassian.net/wiki/display/JWT/How+to+request+additional+resources+on+Jetstream)
+> TBD
