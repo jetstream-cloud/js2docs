@@ -75,6 +75,7 @@ nav:
     - Research Allocations: alloc/research.md 
     - Supplements (Storage/SUs): alloc/supplement.md
     - Allocation Extensions: alloc/extension.md
+    - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
     - Atmosphere2: 
       - Overview: ui/atmo/overview.md
