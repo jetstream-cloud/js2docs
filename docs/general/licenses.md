@@ -13,10 +13,10 @@ Licensed software maintained by staff but available to users are listed below. 
 
 #### Specialty software
  
-*   **MATLAB:** is covered on the primary cloud by a site license and has been configured to point to the proper license server.
+*   **MATLAB** is covered on the primary cloud by a site license and has been configured to point to the proper license server.
   
 
-If you need licenses for any other software that is not provided through the Jetstream2 shared software store then you will have to provide your own license.
+If you need licenses for any other software that is not provided through the Jetstream2 shared software store then you will have to provide your own license. Licenses on regional clouds may vary and will need to be discussed with the regional cloud provider. 
 
 > Please be aware that if you take an image or software from Jetstream and 
  run it somewhere else then the license will **not** work. Jetstream license 
