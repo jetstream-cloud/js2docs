@@ -69,6 +69,7 @@ nav:
       - Acceptable Usage Policies: general/policies.md
       - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
   - Allocations:
+    - Allocations Overview: alloc/overview.md
     - Trial Allocation: alloc/trial.md
     - Startup Allocations: alloc/startup.md
     - Education Allocations: alloc/education.md 
