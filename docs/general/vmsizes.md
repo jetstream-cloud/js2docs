@@ -2,6 +2,8 @@
 
 Jetstream2 can be used in several different virtual machine (VM) sizes which are charged in service units (SUs) based on how much of the total system resource is used. The basic unit of VM allocation for Jetstream is based on a virtual CPU (vCPU) hour: 1 service unit (SU) is equivalent to 1 vCPU for 1 hour of wall clock time. A standard ‘Tiny’ VM instance consists of 1 vCPU, 3 GB of RAM, and 8 GB of storage. This corresponds closely to a ‘t2.small’ instance in Amazon Web Services. The majority of storage within an instance is available for user data but will vary based on the VM image selected.  The table below outlines the VM sizes created for Jetstream2.
 
+*Please note that these are all separate resources. Jetstream2 CPU is the default resource. To use Large Memory or GPU resources, you must have an allocation for those resources.*
+
 ### Jetstream2 CPU
 
 | VM Size  | vCPUs | RAM (GB) | Local Storage (GB) | SU cost per hour |
@@ -12,8 +14,10 @@ Jetstream2 can be used in several different virtual machine (VM) sizes which are
 | m3.medium | 8 | 30 | 60 | 8  |
 | m3.large | 16 | 60 | 60 | 16 |
 | m3.xl    | 32 | 125 | 60 | 32 |
-| m3.2l    | 64 | 250 | 60 | 64 |
-| m3.3l    | 128 | 500 | 60 | 128  |
+| m3.2xl    | 64 | 250 | 60 | 64 |
+| m3.3xl*    | 128 | 500 | 60 | 128  |
+
+\* *m3.3xl will not be available by default. It will only be available by request and with proper justification*
 
 ### Jetstream2 Large Memory
 
@@ -42,16 +46,20 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 
 ----
 
-THIS IS WHERE I STOPPED -- COME BACK AND FIX BEYOND THIS POINT
-
 ##### Example of SU estimation:
 
-*   First determine the VM size appropriate to your needs:
+*   First determine the VM resource appropriate to your needs (CPU only, large memory, GPU):
     *   If your work requires 24 GB of RAM and 60 GB of local storage:
-        *   you would request 10 SUs per hour to cover a single Large VM instance.
-    *   If your work requires 10 GB of local storage in 1 thread using 3 GB of RAM:
-        *   you would request 2 SUs per hour for a Small VM instance.
-*   You would then multiply by the number of hours you will use that size VM in the next year and multiply by the number of VMs you will need.
+        *   you would request 8 SUs per hour to cover a single *m3.medium* VM instance.
+    *   If your work requires 10 GB of local storage in 1 core using 3 GB of RAM:
+        *   you would request 2 SUs per hour for an *m3.small* VM instance.
+    *   If your work requires 1TB of RAM:
+        *   you would request 256 SUs per hour for an *r3.xl* instance on Jetstream Large Memory
+    *   If you work requires 20gb of GPU RAM:
+        *   you would request 64 SUs per hour for a *g3.large* instance on Jetstream GPU
+*   You then would calculate for the appropriate resource (refer to the tables above):
+    *   For Jetstream2 CPU, you would then multiply by the number of hours you will use that size VM in the next year and multiply by the number of VMs you will need.
+    *   For Jetstream2 Large Memory and GPU, either refer to the SU cost per hour in the last column, or multiply hours times 2 for LM or 4 for GPU
 *   To calculate the number of SUs you will need in the next year, first estimate the number of hours you expect to work on a particular project.
     For example, if you typically work 40 hours per week and expect to spend 25% of your time on this project that would be 10 hours per week.
 *   Next, calculate the total number of hours per year for this project:
@@ -59,26 +67,34 @@ THIS IS WHERE I STOPPED -- COME BACK AND FIX BEYOND THIS POINT
     *   Total hours = 520
 *   Finally, calculate the total SUs for the year for a single VM instance:
     *   Total SUs = 520 hours per year \* vCPUs
-        *   e.g. For a Medium VM instance: Total SUs = 520 hours per year \* 6vCPUs
-        *   Total SUs = 3120
+        *   e.g. For a Medium VM instance: Total SUs = 520 hours per year \* 8vCPUs
+        *   Total SUs = 4160
 *   If your project requires more than 1 VM instance, multiply the total SUs by the number of VMs that you will need:
-    *   Total SUs needed for 3 medium size VMs = 3 \* 3120
-    *   Total SUs = 9360
+    *   Total SUs needed for 3 medium size VMs = 3 \* 4160
+    *   Total SUs = 12480
+
+The calculations above assume that your VM is shutdown properly.  For instructions see:
+
+* [Atmosphere2 instance management actions](../ui/atmo/manage.md){target=_blank}
+* [Exosphere instance management actions](../ui/exo/manage.md){target=_blank}
+* [Horizon instance management actions](../ui/horizon/manage.md){target=_blank}
+* [Command line instance management actions](../ui/cli/manage.md){target=_blank}
 
 
+##### SU Estimation for Infrastructure or "Always On" allocations
 
-**Shutdown your VM properly**
+For jobs that may need to run for extended periods or as "always on" infrastructure, you can take this approach:
 
-The calculations above assume that your VM is shutdown properly.  For instructions see [Instance management actions](Instance-management-actions_537460754.html).
+VM cost (SUs) x 24 hours/day x 365 days = single VM cost per year
 
+or as an example for each resource, an m3.large, r3.large, and g3.large each running for a year:
 
+> m3.large (16 cores) x 24 hours/day x 365 days = 140,160 SUs
 
-For information on submitting a Research Allocation Request, please see [https://portal.xsede.org/successful-requests.](https://portal.xsede.org/successful-requests)  Note that all allocations above the startup level require a strong justification for the time being requested.
+> r3.large (64 cores x 2 SUs/hour) x 24 hours/day x 365 days = 1,121,280 SUs
 
+> g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
 
+---
 
-[◀️](PREV---XSEDE-Service-Units-and-Jetstream_17465435.html)BACK: [PREV - XSEDE Service Units and Jetstream](PREV---XSEDE-Service-Units-and-Jetstream_17465435.html) | **CURRENT[🔽](https://iujetstream.atlassian.net/wiki/pages/resumedraft.action?draftId=17465371)**: [Virtual Machine Sizes and Configurations](https://iujetstream.atlassian.net/wiki/pages/resumedraft.action?draftId=17465371) | MAIN[🔼](System-Overview_17465367.html): [System Overview](System-Overview_17465367.html) | _NEXT_[▶️](https://iujetstream.atlassian.net/wiki/pages/resumedraft.action?draftId=17465371): [Jetstream featured images](Jetstream-featured-images_29720632.html)
-
-Document generated by Confluence on Aug 20, 2021 15:26
-
-[Atlassian](http://www.atlassian.com/)
+For information on submitting a Research Allocation Request, please see [https://portal.xsede.org/successful-requests.](https://portal.xsede.org/successful-requests){target=_blank} Note that all allocations above the startup level on Jetstream2 CPU require a strong justification for the time being requested.
