@@ -85,15 +85,13 @@ The calculations above assume that your VM is shutdown properly.  For instructi
 
 For jobs that may need to run for extended periods or as "always on" infrastructure, you can take this approach:
 
-VM cost (SUs) x 24 hours/day x 365 days = single VM cost per year
+> VM cost (SUs) x 24 hours/day x 365 days = single VM cost per year
 
 or as an example for each resource, an m3.large, r3.large, and g3.large each running for a year:
 
-> m3.large (16 cores) x 24 hours/day x 365 days = 140,160 SUs
-
-> r3.large (64 cores x 2 SUs/hour) x 24 hours/day x 365 days = 1,121,280 SUs
-
-> g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
+        m3.large (16 cores) x 24 hours/day x 365 days = 140,160 SUs
+        r3.large (64 cores x 2 SUs/hour) x 24 hours/day x 365 days = 1,121,280 SUs
+        g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
 
 ---
 
