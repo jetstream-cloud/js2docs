@@ -8,7 +8,7 @@ Jetstream features multiple user interfaces, including CACAO (Atmosphere2) _**we
 
 ### Accessing Jetstream ###
 
-Jetstream2 is accessible primarily through the CACAO/Atmosphere2 web interface **INSERT LINK HERE** using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
+Jetstream2 is accessible primarily through the CACAO/Atmosphere2 web interface <span style="color:red">**INSERT LINK HERE**</span> using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
 
 Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
 
