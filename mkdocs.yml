@@ -67,6 +67,7 @@ nav:
     - VM Sizes and Configurations: general/vmsizes.md
     - Policies and Best Practices:
       - Acceptable Usage Policies: general/policies.md
+      - Export Control Guidance: general/export.md
       - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
   - Allocations:
     - Allocations Overview: alloc/overview.md
