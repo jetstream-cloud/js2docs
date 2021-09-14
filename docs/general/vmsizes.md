@@ -94,5 +94,6 @@ or as an example for each resource, an m3.large, r3.large, and g3.large each run
         g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
 
 ---
+Startup allocations are subject to limits. Please refer to [Jetstream2 Resources](../general/resources.md) for Startup Allocation limits.
 
 For information on submitting a Research Allocation Request, please see [https://portal.xsede.org/successful-requests.](https://portal.xsede.org/successful-requests){target=_blank} Note that all allocations above the startup level on Jetstream2 CPU require a strong justification for the time being requested.
