@@ -2,9 +2,9 @@
 
 There are many options and tools for using the OpenStack API from the command line. Follow the instructions in the table below to set up a security policy and network, launch and manage a VM and then remove the entire structure.
   
-***Note:*** There is also an API tutorial that the Jetstream team uses here: https://github.com/jlf599/JetstreamAPITutorial - this tutorial goes into greater detail on some topics and may be of value to those learning the Openstack CLI.
+<span style="color:darkred">***Note:***</span> There is also an API tutorial that the Jetstream team uses here:[ Jetstream API Tutorial](https://github.com/jlf599/JetstreamAPITutorial) - this tutorial goes into greater detail on some topics and may be of value to those learning the Openstack CLI.
 
-***Notes:***
+<span style="color:darkred">***Notes:***</span>
 
  - You should be running the latest version of the clients.  We recommend using python-openstack >= 4.0 as it uses Python3 and removes the dependencies on the now deprecated Python2.
  - It is possible to create entities with the same name; e.g. you could create two networks with the same name; however, they will have different UUIDs.  When this occurs you may get a cryptic error message about that entity may not exist or some other baffling error.  In this case, you must address the entity by its UUID. 
@@ -12,7 +12,7 @@ There are many options and tools for using the OpenStack API from the command li
  - It is important to understand that everything is owned by the project.  Other users in your project can see and manipulate entities that you have created. Be careful in your naming and pay attention to the things you are manipulating.
 
 
-The first thing you'll need to do before being able to do any CLI commands is source the openrc file you created. {Add Link here} 
+The first thing you'll need to do before being able to do any CLI commands is source the [openrc]( ) file you created. <span style="color:blue">{Add Link here}</span></p>
 
 ```source openrc-file-name```
 
