@@ -59,14 +59,15 @@ nav:
     - Security: faq/security.md
     - Software: faq/software.md
   - General Usage Information:
+    - Jetstream2 Resources: general/resources.md
+    - XSEDE Service Units and Jetstream2: general/xsede.md
+    - VM Sizes and Configurations: general/vmsizes.md
     - Featured Images: general/featured.md
     - Jetstream2 Software Collection: general/software.md
     - Software Licenses: general/licenses.md
-    - XSEDE Service Units and Jetstream2: general/xsede.md
-    - Jetstream2 Resources: general/resources.md
-    - VM Sizes and Configurations: general/vmsizes.md
     - Policies and Best Practices:
       - Acceptable Usage Policies: general/policies.md
+      - Export Control Guidance: general/export.md
       - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
   - Allocations:
     - Allocations Overview: alloc/overview.md
@@ -85,9 +86,16 @@ nav:
       - Adding and Using SSH Keys: ui/atmo/keys.md
       - Choosing Your Allocation: ui/atmo/alloc.md
       - Launching a VM: ui/atmo/launch.md
-    - Exosphere: ui/exo/exo.md
-    - Horizon: ui/horizon/hrzn.md
-    - CLI: ui/cli/cli.md
+      - Instance Management: ui/atmo/manage.md
+    - Exosphere: 
+      - Overview: ui/exo/exo.md
+      - Instance Management: ui/exo/manage.md
+    - Horizon: 
+      - Overview: ui/horizon/hrzn.md
+      - Instance Management: ui/horizon/manage.md
+    - CLI: 
+      - Overview: ui/cli/cli.md
+      - Instance Management: ui/cli/manage.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
     - Manila: general/manila.md
