@@ -7,6 +7,7 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none !important;
 }
 
+/* Gets rid of the top breadcrumb */
 .wy-breadcrumbs {
     display: none;
 }
@@ -16,6 +17,7 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   background-color: #69090D !important;
 }
 
+/* Centering definition - used by the main graphic */
 .center {
   display: block;
   margin-left: auto;
@@ -23,10 +25,17 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   width: 50%;
 }
 
+/* Change the color of the menu section headings */
 .caption-text {
   color: #ea941a !important;
 }
 
+/* Change the color of the expander + sign */
 .toctree-expand {
   color: #dd0031 !important;
+}
+
+/* Gets rid of the gutters on each side -- default is 800px */
+.wy-nav-content {
+    max-width: 1200px !important;
 }
