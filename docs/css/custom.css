@@ -41,6 +41,7 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
 }
 
 /* Ditch the bottom nav buttons - option in theme isn't working */
-.btn {
+.btn .rst-current-version {
   display: none !important;
 }
+
