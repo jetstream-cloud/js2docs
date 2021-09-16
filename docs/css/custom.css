@@ -45,6 +45,10 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   display: none !important;
 }
 
+.injected {
+  display: none !important;
+}
+
 .rst-badge .rst-versions .rst-versions.rst-badge {
   display: none !important;
 }
