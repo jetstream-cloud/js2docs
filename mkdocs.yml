@@ -6,6 +6,12 @@ copyright: Copyright © 2021 The Trustees of Indiana University
 
 theme: 
   name: "readthedocs"
+  analytics:
+    provider: google
+    gtag: G-3KNR9L6H6Y
+  prev_next_buttons_location: none
+  titles_only: True
+  #sticky_navigation: True
   #name: "windmill"
   #name: "material"
   #palette:
@@ -29,9 +35,6 @@ plugins:
         indexing: 'full'
 
 extra:
-  analytics:
-    provider: google
-    property: G-3KNR9L6H6Y
     consent:
     title: Cookie consent
     description: >
