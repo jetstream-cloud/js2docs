@@ -38,8 +38,8 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 |:-------- |:-----:|:--------:|:------------------:|:--------------------:|:----------------:|
 | g3.small  | 4  |  15  | 120  | 1 slice / 5gb RAM | 16  |
 | g3.medium | 8  |  30  | 120  | 2 slices / 10gb RAM | 32  |
-| g3.large  | 16 |  60  | 120  | 4 slices / 20gb RAM | 64  |
-| g3.xl     | 32 |  125 | 120  | 8 slices / 40gb RAM | 128 |
+| g3.large  | 16 |  60  | 120  | 3 slices / 20gb RAM | 64  |
+| g3.xl     | 32 |  125 | 120  | 7 slices / 40gb RAM | 128 |
 
 
 **This flavor information may be subject to changes in the future.**
