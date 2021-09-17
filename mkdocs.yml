@@ -53,8 +53,8 @@ nav:
   - Migrating from Jetstream1 to Jetstream2: migrating.md
   - Jetstream2 Info: 
     - System Overview: overview/overview-doc.md
-    - Key Differences: overview/keydiff.md
-    - Key Features of Jetstream2: overview/keyfeatures.md
+    - Key Differences Between Jetstream 1 and 2: overview/keydiff.md
+#    - Key Features of Jetstream2: overview/keyfeatures.md
     - Configuration and specifications: overview/config.md
     - Network configuration and considerations: overview/network.md
   - Frequently Asked Questions:

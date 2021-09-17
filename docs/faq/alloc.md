@@ -23,8 +23,10 @@
 
 >  * [https://portal.xsede.org/allocations/managing](https://portal.xsede.org/allocations/managing){target=_blank}
 
-> _**Please note that it can take up to four hours for users added to an allocation to become active.**_
-
+<span class="tab" style="color:red;margin-left:24px"><b>
+```    Please note that it can take up to four hours for users added to an allocation to become active.
+```
+</span></b>
 ---
 
    **4. How often can I get a startup allocation?**

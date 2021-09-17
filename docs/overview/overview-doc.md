@@ -10,11 +10,12 @@ Jetstream features multiple user interfaces, including CACAO (Atmosphere2) _**we
 
 Jetstream2 is accessible primarily through the CACAO/Atmosphere2 web interface <span style="color:red">**INSERT LINK HERE**</span> using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
 
-Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
+> Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
 
-Newly created XSEDE accounts must be added to a Jetstream2 specific allocation by the PI or Resource manager in order to access Jetstream2.
 
-Jetstream2 is meant primarily for **interactive** research, small scale processing **on demand**, or as the backend to science **gateways** to send research jobs to other HPC or HTC resources, or for general infrastructure for research or research-related development.
+>Newly created XSEDE accounts must be added to a Jetstream2 specific allocation by the PI or Resource manager in order to access Jetstream2.
+
+>Jetstream2 is meant primarily for **interactive** research, small scale processing **on demand**, or as the backend to science **gateways** to send research jobs to other HPC or HTC resources, or for general infrastructure for research or research-related development.
 
 Jetstream2 may be used for **prototyping**, for creating tailored **workflows** to either use at smaller scale with a handful of CPUs or to port to larger environments after doing your **proof of concept** work at a smaller level.
 
