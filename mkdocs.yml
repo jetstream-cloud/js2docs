@@ -9,6 +9,7 @@ theme:
   analytics:
     provider: google
     gtag: G-3KNR9L6H6Y
+  google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
   prev_next_buttons_location: none
   titles_only: True
   #sticky_navigation: True
