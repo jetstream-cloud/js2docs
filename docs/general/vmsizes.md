@@ -30,9 +30,9 @@ Jetstream2 Large Memory nodes charge 2 SUs per vCPU hour or 2 SUs per core per h
 
 ### Jetstream2 GPU
 
-Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA Multi-Instance GPU (MIG) into up to 8 slices to allow more researchers and students to make use of the GPU resource.
+Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA Multi-Instance GPU (MIG) into up to 7 slices to allow more researchers and students to make use of the GPU resource.
 
-*8 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU*
+*7 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU*
 
 | VM Size  | vCPUs | RAM(GB) | Local Storage (GB) | GPU Slices/GPU Ram | SU cost / hour |
 |:-------- |:-----:|:--------:|:------------------:|:--------------------:|:----------------:|
