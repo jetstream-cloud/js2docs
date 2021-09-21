@@ -98,7 +98,9 @@ nav:
       - Overview: ui/horizon/hrzn.md
       - Instance Management: ui/horizon/manage.md
     - CLI: 
-      - Overview: ui/cli/cli.md
+      - Overview: ui/cli/OSXclients.md
+      - OpenStack command line:  ui/cli/cli.md
+      - Setting up openrc.sh: ui/cli/openrc.md
       - Instance Management: ui/cli/manage.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
