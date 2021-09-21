@@ -26,7 +26,7 @@ You can make that permanent by adding the following to your environment.
 
 | Create a security group<br>(Do this once at IU and/or TACC<br>before launching instances) 	| Command line 	|
 |---	|---	|
-| Create a security group that will enable<br>inbound ping & SSH.<br><br>For more info see, SecurityGroups<br><br>Important note: On OpenStack, the default is that<br>NO ports are open versus the traditional all<br>ports are open unless specifically closed. For this<br>reason,a security group must be established<br>and the SSH port opened in order to allow login. 	| ```openstack security group create --description "ssh & icmp enabled" ${OS_USERNAME}-global-ssh``` <br><br>```openstack security group rule create --protocol tcp --dst-port 22:22 --remote-ip 0.0.0.0/0 ${OS_USERNAME}-global-ssh``` <br><br>```openstack security group rule create --protocol icmp ${OS_USERNAME}-global-ssh``` 	|
+| Create a security group that will enable<br>inbound ping & SSH.<br><br>For more info see, [SecurityGroups](https://wiki.openstack.org/wiki/Neutron/SecurityGroups)<br><br>Important note: On OpenStack, the default is that<br>NO ports are open versus the traditional all<br>ports are open unless specifically closed. For this<br>reason,a security group must be established<br>and the SSH port opened in order to allow login. 	| ```openstack security group create --description "ssh & icmp enabled" ${OS_USERNAME}-global-ssh``` <br><br>```openstack security group rule create --protocol tcp --dst-port 22:22 --remote-ip 0.0.0.0/0 ${OS_USERNAME}-global-ssh``` <br><br>```openstack security group rule create --protocol icmp ${OS_USERNAME}-global-ssh``` 	|
 |**Upload SSH key - do this once** 	|  	|
 | If you have an SSH key upload id_rsa & <br>id_rsa.pub to nova<br><br>(note: Key filenames may vary) 	| ```cd ~/.ssh```<br><br>```openstack keypair create --public-key id_rsa.pub ${OS_USERNAME}-api-key``` 	|
 | If you don't have an SSH key then create a new<br>key and upload to nova. 	| ```ssh-keygen -b 2048 -t rsa -f ${OS_USERNAME}-api-key -P ""```<br><br>```openstack keypair create --public-key ${OS_USERNAME}-api-key.pub ${OS_USERNAME}-api-key``` 	|
@@ -46,13 +46,13 @@ You can make that permanent by adding the following to your environment.
 | Create a public IP address for an instance 	| ```openstack floating ip create public``` 	|
 | Add that public IP address with that instance 	| ```openstack server add floating ip ${OS_USERNAME}-api-U-1 your.ip.number.here``` 	|
 | **Things to do once the instance is running** 	|  	|
-| You're ready to log in to the running instance<br>via ssh'ing into public IP 	| ```ssh -i ${OS_USERNAME}-api-key``` centos@your.ip.number.here<br><br> or <br><br>```ssh -i ${OS_USERNAME}-api-key``` ubuntu@your.ip.number.here 	|
-| Reboot, suspend, stop, or shelve an instance 	| openstack server reboot ```${OS_USERNAME}-api-U-1```<br>```openstack server suspend ${OS_USERNAME}-api-U-1```<br>```openstack server stop ${OS_USERNAME}-api-U-1```<br>```openstack server shelve ${OS_USERNAME}-api-U-1```	|
+| You're ready to log in to the running instance<br>via ssh'ing into public IP 	| ```ssh -i ${OS_USERNAME}-api-key centos@your.ip.number.here```<br><br> or <br><br>```ssh -i ${OS_USERNAME}-api-key ubuntu@your.ip.number.here``` 	|
+| Reboot, suspend, stop, or shelve an instance 	| ```openstack server reboot ${OS_USERNAME}-api-U-1```<br>```openstack server suspend ${OS_USERNAME}-api-U-1```<br>```openstack server stop ${OS_USERNAME}-api-U-1```<br>```openstack server shelve ${OS_USERNAME}-api-U-1```	|
 | **Commands to clean up what was created above** 	|  	|
 | Remove the public IP address from the instance 	| ```openstack server remove floating ip ${OS_USERNAME}-api-U-1 your.ip.number.here``` 	|
 | Delete an instance 	| ```openstack server delete ${OS_USERNAME}-api-U-1``` 	|
 | Return the public IP address to the pool of IP numbers 	| ```openstack floating ip delete your.ip.number.here``` 	|
-| **Clean up commands for other entities.** 	| ***Note:*** You often want to create infrastructure such as networks, subnets, routers, etc.<br>only once and not delete them. These entities are reusable by all members of your project. 	|
+| **Clean up commands for other entities.** 	| <span style="color:darkred">***Note:***</span> You often want to create infrastructure such as networks, subnets, routers, etc.<br>only once and not delete them. These entities are reusable by all members of your project. 	|
 | Disconnect the router from the gateway 	| ```openstack router unset --external-gateway ${OS_USERNAME}-api-router``` 	|
 | Delete the subnet from the router 	| ```openstack router remove subnet ${OS_USERNAME}-api-router ${OS_USERNAME}-api-subnet1``` 	|
 | Delete the router 	| ```openstack router delete ${OS_USERNAME}-api-router``` 	|
