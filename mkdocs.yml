@@ -98,7 +98,8 @@ nav:
       - Overview: ui/horizon/hrzn.md
       - Instance Management: ui/horizon/manage.md
     - CLI: 
-      - Overview: ui/cli/OSXclients.md
+      - Overview: ui/cli/cli/overview.md
+      - Installing clients: ui/cli/clients.md
       - OpenStack command line:  ui/cli/cli.md
       - Setting up openrc.sh: ui/cli/openrc.md
       - Instance Management: ui/cli/manage.md
