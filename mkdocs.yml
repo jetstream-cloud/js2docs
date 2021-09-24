@@ -30,6 +30,7 @@ markdown_extensions:
         permalink: True
     - sane_lists
     - attr_list
+    - admonition
 
 plugins:
     - search:
@@ -102,7 +103,7 @@ nav:
       - Installing Openstack Clients: 
         - Installing Clients on MacOS: ui/cli/clientOSX.md
         - Installing Clients on Linux: ui/cli/client_linux.md
-      - Setting up openrc.sh: ui/cli/openrc.md
+      - Setting up openrc.sh: ui/cli/openrc.md 
       - Using OpenStack command line:  
         - Setting up a Security Group: ui/cli/security_group.md
         - Setting up a Network: ui/cli/network.md
