@@ -100,13 +100,13 @@ nav:
     - CLI: 
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: 
-        - Installing Clients on MacOS: ui/cli/clientsOSX.md
-        - Installing Clients on Linux: ui/cli/client_linux.md
-        - Setting up openrc.sh: ui/cli/openrc.md
+      - Installing Clients on MacOS: ui/cli/clientOSX.md
+      - Installing Clients on Linux: ui/cli/client_linux.md
+      - Setting up openrc.sh: ui/cli/openrc.md
       - Using OpenStack command line:  
-        - Setting up a Security Group: ui/cli/security_group.md
-        - Setting up a Network: ui/cli/network.md
-        - Launching a Virtual Machine: ui/cli/VM_launch.md
+      - Setting up a Security Group: ui/cli/security_group.md
+      - Setting up a Network: ui/cli/network.md
+      - Launching a Virtual Machine: ui/cli/VM_launch.md
       - Instance Management: ui/cli/manage.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
