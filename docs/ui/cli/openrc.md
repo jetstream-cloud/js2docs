@@ -31,6 +31,6 @@ The username and password in the openrc.sh file are the same login credentials t
 
 2. If you are on more than one allocation, select the project (XSEDE allocation) by clicking where it says "tacc · TG-xxxxxxxx · RegionOne" and choose the appropriate allocation. 
 3. Click on your username in the upper right hand corner
-4: Click on Download OpenStack RC File v3 
-The password is not stored in the script. This openrc.sh file will prompt for a password when sourced.
-Note: To select an active project prior to generating openrc.sh, click on Identity (left hand side) to see a list of your projects.
+4. Click on Download OpenStack RC File v3 . The password is not stored in the script. This openrc.sh file will prompt for a password when sourced.<br>
+<br>
+<span style="color:darkred">***Note: ***</span>To select an active project prior to generating openrc.sh, click on Identity (left hand side) to see a list of your projects.
