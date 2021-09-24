@@ -3,7 +3,7 @@
 <span style="color:red"> File copied over from JS1 - Make modifications for JS2</span><br>
  
 Jetstream cloud has one domain, the 'IU' domain.
-The username and password in the openrc.sh file are the same login credentials that would be { Check with Mike }.<br>For assistance with TACC login credentials, visit [password reset] (https://portal.tacc.utexas.edu/password-reset/-/password/request-reset) .
+The username and password in the openrc.sh file are the same login credentials that would be { Check with Mike }.<br>For assistance with TACC login credentials, visit [password reset](https://portal.tacc.utexas.edu/password-reset/-/password/request-reset) .
 
 
 ---
