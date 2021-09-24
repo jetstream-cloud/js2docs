@@ -1,4 +1,4 @@
-# Installing OpenStack Clients on Mac OSX
+# Installing Clients on MacOS
 
 This will help you get the Openstack clients working on Mac OS X 10.11.x. It may work on recent older versions of Mac OS X but it has not been tested. 
 

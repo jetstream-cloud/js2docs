@@ -1,4 +1,4 @@
-# Installing OpenStack Clients on Mac OSX
+# Installing OpenStack Clients on Linux
 
 This will help you get the Openstack clients working on Linux using Python.
 
