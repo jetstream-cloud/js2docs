@@ -30,7 +30,7 @@
 | Delete an instance    | ```openstack server delete ${OS_USERNAME}-api-U-1```  |
 | Return the public IP address to the pool of IP numbers | ```openstack floating ip delete your.ip.number.here```        |
 
-<span style="color:darkred">***Note:***</span> You often want to create infrastructure such as networks, subnets, routers, etc.<br>only once and not delete them. These entities are reusable by all members of your project.
+<span style="color:darkred">***Note:***</span> You often want to create infrastructure such as networks, subnets, routers, etc. only once and not delete them.<br>    These entities are reusable by all members of your project.
 
 | Clean up other entities     | Openstack Command |
 | ---- | ---- |
