@@ -9,3 +9,5 @@ VMs on Jetstream1 will continue running as long as you have a valid allocation t
 Migration plans are still under development. We will provide instructions for moving your VMs and possibly have some tools to help facilitate that. It's also highly likely that it will NOT be an entirely automatic process. Volumes will not persist because they are completely separate systems and do not share storage. There will be migration information for that, as well.
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
+
+**Updates will all be made here and shared via XSEDE User News.**
