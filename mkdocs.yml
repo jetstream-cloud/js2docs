@@ -1,7 +1,7 @@
-site_name: 'Jetstream2 Wiki'
-site_url: https://wiki.jetstream-cloud.org
-site_description: "Jetstream 2 Wiki"
-repo_url: https://github.com/jetstream-cloud/Jetstream2Wiki
+site_name: 'Jetstream2 Documentation'
+site_url: https://docs.jetstream-cloud.org
+site_description: "Jetstream 2 Documentation"
+repo_url: https://github.com/jetstream-cloud/js2docs
 copyright: Copyright © 2021 The Trustees of Indiana University
 
 theme: 
