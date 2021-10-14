@@ -27,4 +27,3 @@ For more information, please see:
 
 * [NSF Award 2005506 - Jetstream 2: Accelerating Science and Engineering On-Demand](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2005506){target=_blank}
 * [Jetstream System Specifications](config.md)
-* [Key Features of Jetstream2](keyfeatures.md)
