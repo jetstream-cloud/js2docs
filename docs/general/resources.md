@@ -14,7 +14,7 @@ With the exception of Jetstream2 Storage, these resources may be allocated indiv
 Maximum Startup Allocation and Campus Champion Allocation values for each resource are:
 
 * Jetstream2 CPU - 200,000 SUs
-* Jetstream2 Large Meemory - 400,000 SUs
+* Jetstream2 Large Memory - 400,000 SUs
 * Jetstream2 GPU - 600,000 SUs
 * Jetstream2 Storage - 1TB default\*
 
