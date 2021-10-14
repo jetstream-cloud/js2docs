@@ -12,6 +12,7 @@ theme:
   google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
   prev_next_buttons_location: none
   titles_only: True
+  include_404: True
   #sticky_navigation: True
   #name: "windmill"
   #name: "material"
