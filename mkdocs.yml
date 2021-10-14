@@ -52,7 +52,7 @@ extra:
 nav:
   - Jetstream2 Home: index.md
   - Migrating from Jetstream1 to Jetstream2: migrating.md
-  - Jetstream2 Early Operations FAQ: faq/js2-general-faq.md
+  - Jetstream2 Early Operations FAQ: faq/js2-earlyops-faq.md
   - Jetstream2 Info:
     - System Overview: overview/overview-doc.md
     - Key Differences Between Jetstream 1 and 2: overview/keydiff.md
