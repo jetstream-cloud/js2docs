@@ -32,5 +32,6 @@ Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-ne
 
 Since the timelines for Jetstream2 are still uncertain at this time, we would recommend that your research group get a startup allocation now on Jetstream1 and get a supplement for JS2 when it becomes available. As we recommend the API side for gateways and infrastructure, migrating to JS2 will be reasonably easy.
 
-More information about getting Jetstream1 startup allocations is available here: (http://wiki.jetstream-cloud.org/Jetstream+Allocations)
-More information about getting Jetstream1 API access is available here: (http://wiki.jetstream-cloud.org/Using+the+Jetstream+API)
+More information about getting Jetstream1 startup allocations is available [here](http://wiki.jetstream-cloud.org/Jetstream+Allocations){target=_blank}
+
+More information about getting Jetstream1 API access is available [here](http://wiki.jetstream-cloud.org/Using+the+Jetstream+API){target=_blank}
