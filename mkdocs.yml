@@ -4,7 +4,7 @@ site_description: "Jetstream 2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
 copyright: Copyright © 2021 The Trustees of Indiana University
 
-theme: 
+theme:
   name: "readthedocs"
   analytics:
     provider: google
@@ -20,8 +20,8 @@ theme:
   #features:
   #  - navigation.top
   logo: 'images/jetstream-logo-white.svg'
-  
-extra_css: 
+
+extra_css:
     - 'css/custom.css'
 
 markdown_extensions:
@@ -52,7 +52,8 @@ extra:
 nav:
   - Jetstream2 Home: index.md
   - Migrating from Jetstream1 to Jetstream2: migrating.md
-  - Jetstream2 Info: 
+  - Jetstream2 Early Operations FAQ: faq/js2-general-faq.md
+  - Jetstream2 Info:
     - System Overview: overview/overview-doc.md
     - Key Differences Between Jetstream 1 and 2: overview/keydiff.md
 #    - Key Features of Jetstream2: overview/keyfeatures.md
@@ -78,13 +79,13 @@ nav:
     - Allocations Overview: alloc/overview.md
     - Trial Allocation: alloc/trial.md
     - Startup Allocations: alloc/startup.md
-    - Education Allocations: alloc/education.md 
-    - Research Allocations: alloc/research.md 
+    - Education Allocations: alloc/education.md
+    - Research Allocations: alloc/research.md
     - Supplements (Storage/SUs): alloc/supplement.md
     - Allocation Extensions: alloc/extension.md
     - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
-    - Atmosphere2: 
+    - Atmosphere2:
       - Overview: ui/atmo/overview.md
       - Quick Start Guide: ui/atmo/quick.md
       - Logging In: ui/atmo/login.md
@@ -92,19 +93,19 @@ nav:
       - Choosing Your Allocation: ui/atmo/alloc.md
       - Launching a VM: ui/atmo/launch.md
       - Instance Management: ui/atmo/manage.md
-    - Exosphere: 
+    - Exosphere:
       - Overview: ui/exo/exo.md
       - Instance Management: ui/exo/manage.md
-    - Horizon: 
+    - Horizon:
       - Overview: ui/horizon/hrzn.md
       - Instance Management: ui/horizon/manage.md
-    - CLI: 
+    - CLI:
       - Overview: ui/cli/overview.md
-      - Installing Openstack Clients: 
+      - Installing Openstack Clients:
         - Installing Clients on MacOS: ui/cli/clientOSX.md
         - Installing Clients on Linux: ui/cli/client_linux.md
-      - Setting up openrc.sh: ui/cli/openrc.md 
-      - Using OpenStack command line:  
+      - Setting up openrc.sh: ui/cli/openrc.md
+      - Using OpenStack command line:
         - Setting up a Security Group: ui/cli/security_group.md
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/VM_launch.md

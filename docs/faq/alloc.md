@@ -1,4 +1,4 @@
-#Jetstream Allocations FAQ
+#Jetstream2 Allocations FAQ
 
  **1. Is there an overview of the types of allocations available as well as any restrictions those allocations have?**
 
