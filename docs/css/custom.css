@@ -17,6 +17,10 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   background-color: #69090D !important;
 }
 
+.active .wy-menu-vertical:hover {
+    background-color: #69090D !important;
+}
+
 /* Centering definition - used by the main graphic */
 .center {
   display: block;
@@ -25,8 +29,8 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   width: 50%;
 }
 
-.tab { 
-  margin-left: 24px !important; 
+.tab {
+  margin-left: 24px !important;
 }
 
 /* Change the color of the menu section headings */
