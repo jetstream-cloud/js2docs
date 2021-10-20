@@ -17,10 +17,14 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   background-color: #69090D !important;
 }
 
-/* this isn't working and I don't know why -- will revisit later */
-.active, .wy-menu-vertical:hover {
+/* this isn't working and I don't know why -- will revisit later
+  More specifically, it's making the ENTIRE sidebar change colors -- so just
+  need to find the right element.
+*/
+/* .active, .wy-menu-vertical:hover {
     background-color: #69090D !important;
 }
+*/
 
 /* Centering definition - used by the main graphic */
 .center {
