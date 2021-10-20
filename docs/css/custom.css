@@ -17,7 +17,8 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   background-color: #69090D !important;
 }
 
-.active .wy-menu-vertical:hover {
+/* this isn't working and I don't know why -- will revisit later */
+.active, .wy-menu-vertical:hover {
     background-color: #69090D !important;
 }
 
