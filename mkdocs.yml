@@ -94,12 +94,15 @@ nav:
       - Choosing Your Allocation: ui/atmo/alloc.md
       - Launching a VM: ui/atmo/launch.md
       - Instance Management: ui/atmo/manage.md
+      - Storage Under Atmosphere: ui/atmo/storage.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Instance Management: ui/exo/manage.md
+      - Storage Under Exosphere: ui/exo/storage.md
     - Horizon:
       - Overview: ui/horizon/hrzn.md
       - Instance Management: ui/horizon/manage.md
+      - Storage Under Horizon: ui/horizon/storage.md
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients:
@@ -111,9 +114,11 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/VM_launch.md
         - Instance Management: ui/cli/manage.md
+        - Storage Under the CLI: ui/cli/storage.md
   - General VM Operations:
     - Firewalls: general/firewalls.md
     - Manila: general/manila.md
+    - Jetstream2 Object Store: general/object.md
     - File Transfer: general/filetransfer.md
     - Add User to a VM: general/adduser.md
     - Installing Software on your VM: general/installsoftware.md
