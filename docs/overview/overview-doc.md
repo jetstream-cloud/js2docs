@@ -4,7 +4,12 @@
 
 It provides a library of **_virtual machines_** designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers will be able to create their own customized virtual machines (VM) or their own private computing system within Jetstream2.
 
-Jetstream features multiple user interfaces, including CACAO (Atmosphere2) _**web-based user interface**_ developed by [CyVerse](http://www.cyverse.org/){target=_blank}. The operational software environment is based on [OpenStack](http://www.openstack.org/){target=_blank}.
+Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_: 
+
+- CACAO (Atmosphere2, developed by [CyVerse](https://www.cyverse.org/){target=_blank})
+- [Exosphere](../ui/exo/exo.md)
+
+The operational software environment is based on [OpenStack](https://www.openstack.org/){target=_blank}.
 
 ### Accessing Jetstream ###
 
