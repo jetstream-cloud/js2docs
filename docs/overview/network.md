@@ -6,11 +6,11 @@
 
 The Jetstream2 primary cloud configuation features:
 
-*100 Gbps network connectivity from the compute hosts to the cloud's internal network infrastructure
-*4x40 Gbps uplinks from the cloud infrastructure to the data center infrastructure (2x100 planned)
-*100 Gbps connectivity from the site infrastructure to the Internet2 backbone
-*100 Gbps connectivity to the XSEDE research network via virtualized link
-*Individual instances have full access to this infrastructure with no added speed limits.
+* 100 Gbps network connectivity from the compute hosts to the cloud's internal network infrastructure
+* 4x40 Gbps uplinks from the cloud infrastructure to the data center infrastructure (2x100 planned)
+* 100 Gbps connectivity from the site infrastructure to the Internet2 backbone
+* 100 Gbps connectivity to the XSEDE research network via virtualized link
+* Individual instances have full access to this infrastructure with no added speed limits.
 
 #### Persistent IPs:
 
@@ -26,10 +26,10 @@ In general, Jetstream2 does not restrict inbound or outbound access to virtual m
 
 Each user interface of Jetstream2 will have specific security information:
 
-*<span style="color:red">Atmo2 security overview (coming soon!)</span>
-*<span style="color:red">Exosphere security overview (coming soon!)</span>
-*<span style="color:red">Horizon security overview (coming soon!)</span>
-*[CLI security overview](../ui/cli/security_group.md)
+* <span style="color:red">Atmo2 security overview (coming soon!)</span>
+* <span style="color:red">Exosphere security overview (coming soon!)</span>
+* <span style="color:red">Horizon security overview (coming soon!)</span>
+* [CLI security overview](../ui/cli/security_group.md)
 
 Please refer to the [Security FAQ](../faq/security.md) for additional information.
 
