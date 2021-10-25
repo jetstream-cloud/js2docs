@@ -1,6 +1,43 @@
-#Jetstream2 Network Configuration and Considerations
+#Jetstream2 Network Configuration and Policies
 
-This page describes the network architecture of Jetstream2's primary cloud at Indiana University. Regional sites may be configured differently.
+### Summary of Network Configuration and Policies
+
+#### Hardware Configuration:
+
+The Jetstream2 primary cloud configuation features:
+
+*100 Gbps network connectivity from the compute hosts to the cloud's internal network infrastructure
+*4x40 Gbps uplinks from the cloud infrastructure to the data center infrastructure (2x100 planned)
+*100 Gbps connectivity from the site infrastructure to the Internet2 backbone
+*100 Gbps connectivity to the XSEDE research network via virtualized link
+*Individual instances have full access to this infrastructure with no added speed limits.
+
+#### Persistent IPs:
+
+A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](../ui/exo/exo.md) and [Atmosphere2/CACAO](../ui/atmo/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/hrzn.md) and the Jetstream2 [CLI](../ui/cli/cli.md) require you to explicitly release the IP address.
+
+We do ask that you release any unused IPs back to the public pool. There are a finite number of IPs available and allocations hoarding them may inadvertently cause issues for other Jetstream2 researchers.
+
+The Jetstream administration team reserves the right to release any IP addresses not associated with a VM as needed.
+
+#### Network Security Policies:
+
+In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the instutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service port (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way.
+
+Each user interface of Jetstream2 will have specific security information:
+
+*<span style="color:red">Atmo2 security overview (coming soon!)</span>
+*<span style="color:red">Exosphere security overview (coming soon!)</span>
+*<span style="color:red">Horizon security overview (coming soon!)</span>
+*[CLI security overview](../ui/cli/security_group.md)
+
+Please refer to the [Security FAQ](../faq/security.md) for additional information.
+
+-----
+
+### In-depth exploration of Jetstream2 Networking
+
+This section describes the network architecture of Jetstream2's primary cloud at Indiana University. Regional sites may be configured differently.
 
 There are three kinds of networks used on Jetstream2.
 
