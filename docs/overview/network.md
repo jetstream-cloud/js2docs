@@ -37,6 +37,10 @@ Please refer to the [Security FAQ](../faq/security.md) for additional informatio
 
 -----
 
+-----
+
+-----
+
 ### In-depth exploration of Jetstream2 Networking
 
 This section describes the network architecture of Jetstream2's primary cloud at Indiana University. Regional sites may be configured differently.
