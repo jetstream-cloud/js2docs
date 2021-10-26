@@ -12,6 +12,8 @@ The Jetstream2 primary cloud configuation features:
 * 100 Gbps connectivity to the XSEDE research network via virtualized link
 * Individual instances have full access to this infrastructure with no added speed limits.
 
+*It is important to note that connections coming from commercial/commodity internet will likely not be as fast as those coming from Internet2 sites.*
+
 #### Persistent IPs:
 
 A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](../ui/exo/exo.md) and [Atmosphere2/CACAO](../ui/atmo/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/hrzn.md) and the Jetstream2 [CLI](../ui/cli/cli.md) require you to explicitly release the IP address.
