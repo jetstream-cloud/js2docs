@@ -116,14 +116,19 @@ nav:
         - Instance Management: ui/cli/manage.md
         - Storage Under the CLI: ui/cli/storage.md
   - General VM Operations:
-    - Firewalls: general/firewalls.md
-    - Manila: general/manila.md
-    - Jetstream2 Object Store: general/object.md
-    - File Transfer: general/filetransfer.md
-    - Add User to a VM: general/adduser.md
-    - Installing Software on your VM: general/installsoftware.md
-    - Jupyter on Jetstream2: general/jupyter.md
+    - Security:
+      - Firewalls: general/firewalls.md
+    - Storage:
+      - Manila: general/manila.md
+      - Object Store: general/object.md
+      - File Transfer: general/filetransfer.md
+    - Maintenance and Administration:
+      - Add User to a VM: general/adduser.md
+      - Installing Software on your VM: general/installsoftware.md
+    - Software:
+      - Jupyter on Jetstream2: general/jupyter.md
+      - Galaxy: general/galaxy.md
+  - Advanced Capabilities:
     - Containers on Jetstream2: general/containers.md
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
-    - Galaxy: general/galaxy.md
