@@ -2,7 +2,7 @@
 
 **Jetstream2** is a transformative update to the NSF’s science and engineering cloud infrastructure, will provide 8 petaFLOPS of virtual supercomputing power to simplify data analysis, boost discovery, and increase availability of AI resources. It is an NSF-funded, user-friendly _cloud environment_ designed to allow "always on" research infrastructure and to give researchers access to interactive computing and data analysis resources on demand, whenever and wherever they want to analyze their data. While it shares many common features and abilities with other research computing resources, it is **not** a traditional High Performance Computing (HPC) or High Throughput Computing (HTC) environment.
 
-It provides a library of **_virtual machines_** and shared software storage designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers will be able to create their own customized virtual machines (VM) or their own private computing system within Jetstream2.
+It provides a library of **_virtual machines_** and shared software designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers will be able to create their own customized virtual machines (VM) or their own private computing system within Jetstream2.
 
 Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_:
 
@@ -29,7 +29,7 @@ Jetstream2 may be used for **prototyping**, for creating tailored **workflows** 
 
 ### About Jetstream2 ###
 
-Consisting of five computational systems, Jetstream 2’s primary system will be located at Indiana University, with four smaller regional systems deployed nationwide at partners Arizona State University, Cornell University, the University of Hawai’i, and the Texas Advanced Computing Center. The 8 petaFLOPS cloud computing system will use next-generation AMD EPYC processors and NVIDIA A100 GPUs, and 17.2 petabytes of storage. 
+Consisting of five computational systems, Jetstream 2’s primary system will be located at Indiana University, with four smaller regional systems deployed nationwide at partners Arizona State University, Cornell University, the University of Hawai’i, and the Texas Advanced Computing Center. The 8 petaFLOPS cloud computing system will use next-generation AMD EPYC processors and NVIDIA A100 GPUs, and 17.2 petabytes of storage.
 
 Within the Pervasive Technology Institute the project will be led by UITS Research Technologies with key contributions from the Cyberinfrastructure Integration Research Center and the Center for Applied Cybersecurity Research. Additional Jetstream 2 partners include the University of Arizona, Johns Hopkins University, and the University Corporation for Atmospheric Research, with Dell Inc. as the primary supplier.
 

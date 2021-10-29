@@ -8,7 +8,7 @@ Jetstream2 can be used in several different virtual machine (VM) sizes which are
 
 | VM Size  | vCPUs | RAM (GB) | Local Storage (GB) | SU cost per hour |
 |:-------- |:-----:|:--------:|:------------------:|:----------------:|
-| m3.tiny  | 1 |  3 | 8  | 1  |
+| m3.tiny  | 1 |  3 | 10  | 1  |
 | m3.small | 2 |  6 | 20 | 2  |
 | m3.quad  | 4 | 15 | 20 | 4  |
 | m3.medium | 8 | 30 | 60 | 8  |
