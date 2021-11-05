@@ -21,11 +21,20 @@ Jetstream2 requires compliance with all XSEDE and Indiana University policies, i
 *   Ensure that data that must be protected by Federal security or privacy laws (e.g., HIPAA, FERPA, ITAR, classified information, export control, etc.) are not stored on this system unless such storage and usage is specifically authorized by the responsible University administrator and complies with any processes for management of access to such information. For export controlled information, including ITAR information, approval of the University Export Compliance Office is required prior to use of the Jetstream2 systems for storage/processing of export controlled data. The Jetstream2 system is not intended, by default, to meet the security requirements of these laws or regulations and specific usage related controls or restrictions may be required prior to authorization of the use of the Jetstream2 system for such purposes.
 
 *   Ensure that the project does not violate any export control end use restrictions contained in [Part 744 of the EAR](https://www.bis.doc.gov/index.php/documents/regulations-docs/2343-part-744-control-policy-end-user-and-end-use-based-2/file){target=_blank}.
-*   Follow all US government guidance on export controls for research and research data. Please see [Jetstream2 Export Control Guidance](export.md) for more information. 
+*   Follow all US government guidance on export controls for research and research data. Please see [Jetstream2 Export Control Guidance](export.md) for more information.
+
+* * *
+
+### Specialty System (GPU & Large Memory) Specific Policies
+
+* Only g3.* flavors should be run on the Jetstream2-GPU resource
+* Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
+* Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
 
 * * *
 
 ### Best Practices for Jetstream2
+
 
 - Include update policies and tools and such
 - GPU 2-week policy
