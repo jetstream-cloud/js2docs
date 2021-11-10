@@ -31,7 +31,7 @@ TODO write this once Atmosphere2 is ready enough to explore and compare.
 
 ## Getting Help
 
-In addition to the XSEDE ticketing system, there is an #exosphere-user-support channel in the Jetstream Slack workspace. To get an invitation, please open a ticket from the XSEDE user portal. This support option includes _no_ promise of immediate real-time assistance, but the Exosphere core developers monitor it and help when they can. Sometimes it's easier to chat with them than wait for ticket notifications.
+In addition to the XSEDE ticketing system, there is an #exosphere-user-support channel in the Jetstream Slack workspace. To request access, please open a ticket from the XSEDE user portal. This support option includes _no_ promise of immediate, real-time assistance, but the Exosphere core developers monitor it and help when they can. Sometimes it's easier to chat with them than wait for ticket notifications.
 
 ## Contributing
 
