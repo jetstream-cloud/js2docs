@@ -8,7 +8,7 @@ Cacao is a multi cloud orchestration service for researchers and educators that 
 
 ## Why Cacao?
 
-Cacao helps you use clouds with ease of use, flexibility, and collaboration
+Cacao helps you use clouds with ease of use, flexibility, and collaboration.
 
 ### Ease of use
 
