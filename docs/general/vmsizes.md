@@ -75,7 +75,7 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 
 The calculations above assume that your VM is shutdown properly.  For instructions see:
 
-* [Atmosphere2 instance management actions](../ui/atmo/manage.md){target=_blank}
+* [Cacao instance management actions](../ui/atmo/deployments.md){target=_blank}
 * [Exosphere instance management actions](../ui/exo/manage.md){target=_blank}
 * [Horizon instance management actions](../ui/horizon/manage.md){target=_blank}
 * [Command line instance management actions](../ui/cli/manage.md){target=_blank}
