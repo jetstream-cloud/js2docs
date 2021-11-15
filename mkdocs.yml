@@ -25,6 +25,7 @@ theme:
 
 extra_css:
     - 'css/custom.css'
+    - 'css/cacao.css'
 
 markdown_extensions:
     - smarty
@@ -87,15 +88,18 @@ nav:
     - Allocation Extensions: alloc/extension.md
     - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
-    - Atmosphere2:
+    - Cacao (fka Atmosphere2):
       - Overview: ui/atmo/overview.md
-      - Quick Start Guide: ui/atmo/quick.md
-      - Logging In: ui/atmo/login.md
-      - Adding and Using SSH Keys: ui/atmo/keys.md
+      - What is Cacao: ui/atmo/intro.md
+      - Glossary: ui/atmo/glossary.md
+      - UI Basics: ui/atmo/ui_basics.md
+      - Getting Started For New Cacao Users: ui/atmo/getting_started.md
+      - Credentials: ui/atmo/credentials.md
+      - Workspaces: ui/atmo/workspaces.md
+      - Deployments (Launching a VM): ui/atmo/deployments.md
       - Choosing Your Allocation: ui/atmo/alloc.md
-      - Launching a VM: ui/atmo/launch.md
-      - Instance Management: ui/atmo/manage.md
-      - Storage Under Atmosphere: ui/atmo/storage.md
+      - Logging Into An Instance: ui/atmo/login.md
+      - Storage: ui/atmo/storage.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Instance Management: ui/exo/manage.md
