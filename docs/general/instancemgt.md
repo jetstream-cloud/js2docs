@@ -28,7 +28,7 @@ Be aware that locking an instance does not prevent:
 
 ### Reboot
 
-Rebooting an instance is just like restarting a computer. The cloud will first attempt a graceful or "soft" reboot, where all of your programs are allowed to exit. If that fails then will perform a "hard" reboot, which will lose any work that is not yet written to disk. If you cannot connect to your instance, rebooting is a good troubleshooting step before creating a support ticket.
+Rebooting an instance is just like restarting a computer. The cloud will first attempt a graceful or "soft" reboot, where all of your programs are allowed to exit. If that fails then OpenStack will perform a "hard" reboot, which will lose any work that is not yet written to disk. If you cannot connect to your instance, rebooting is a good troubleshooting step before creating a support ticket.
 
 ## Advanced Actions
 
@@ -41,6 +41,7 @@ The following actions are for more sophisticated use cases. If you're a new clou
 Resizing allows you to choose a different flavor (a.k.a. size) for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
 
 Consider resizing if you find yourself in one of these situations:
+
 - Your instance exhausts its compute resources, e.g. you run out of working memory (RAM) or you want it to process work faster.
 - Your instance's CPU is sitting idle most of the time, in which case a smaller flavor would burn your allocation more slowly.
     - Exosphere's instance resource usage graphs are a useful guide here.
@@ -49,7 +50,7 @@ Consider resizing if you find yourself in one of these situations:
 
 If your software stack sometimes needs a large flavor to run a compute-intensive job, but you can develop and tune it on a smaller flavor, consider resizing _down_ to a small flavor for development work, and back _up_ when you're ready to run it at a larger scale. This get you best performance when you need it, while conserving your allocation when you don't.
 
-Resizing is generally **not** appropriate in these situations:
+Moving to a larger size is generally **not** appropriate in these situations:
 
 - The speed of your workload is limited by a process that is single-threaded (not parallelized). If this process cannot be parallelized then resizing is unlikely to speed it up.
 - The speed of your workload is limited by disk or network transfer speed. Larger instances do not have faster storage or network connectivity.
@@ -59,16 +60,17 @@ When resizing, you must select your desired new flavor. After the resize is comp
 
 ### Image
 
-When you create an image, you capture the entire state of your instance's root disk. New instances can be launched from that image, which means that images let you 'snapshot' and 'clone' an instance.
+When you create an image, you capture the entire state of your instance's root disk. New instances can be launched from that image, which means that you can use an image to 'snapshot' and 'clone' an instance.
 
 After you specify the image name, it will take several minutes for the image to finish creating and become active.
 
 Consider creating an image in the following situations:
-- You want to create a new instance that is a _clone_ of your existing instance. In this case, create an image of the existing instance and launch your clones from that image.
-- You are about to perform a possibly destructive action on your instance (like installing, upgrading, or removing software), and you need the ability to go back and get to the prior disk state of the instance if something goes wrong.
-- You are building a software stack that other people will consume (e.g. you are teaching a class). Providing an image can be an easy way for other people to get a new instance just like yours.
 
-Be aware that system images quickly fall behind on operating system updates. As more time passes since an image was created, the more software will need to be updated when a new instance is created for it. This can lead to excessively long instance lanuch times and other problems. For this reason, custom images are not usually the best tool for sharing software or workflows more than a few months into the future. If this describes your situation, please open a support ticket and ask for advice.
+- You want to create a new instance that is a _clone_ of your existing instance. In this case, create an image of the existing instance and launch your clone(s) from that image.
+- You are about to perform a possibly destructive action on your instance (like installing, upgrading, or removing software), and you need the ability to go back and get to the prior disk state of the instance if something goes wrong.
+- You are building a software stack that other people will consume via their own instance (e.g. you are teaching a class). Providing an image can be an easy way for other people to get a new instance just like yours.
+
+Be aware that system images quickly fall behind on operating system updates. As more time passes since an image was created, the more software will need to be updated when a new instance is created for it. This can lead to excessively long instance lanuch times and other problems. For this reason, custom images are not the right tool for sharing software or workflows more than a few months into the future. If this describes your situation, please open a support ticket and ask for advice.
 
 ### Suspend and Resume
 

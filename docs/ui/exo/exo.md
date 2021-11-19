@@ -14,15 +14,15 @@ Right now, Exosphere supports creating and managing instances. Instances are vir
 
 You can also use volumes to store large data sets, and manage persistent IP addresses for servers and science gateways. More powerful features, like data science workbenches and workflow sharing, are in experimental status now.
 
-With Exosphere, there is no requirement to learn about advanced cloud technologies like virtual networks or SSH keypairs. If your use of Jetstream2 becomes more sophisticated, and you need to reach for the OpenStack CLI or APIs, Exosphere does not get in your way.
+With Exosphere, there is no requirement to learn about advanced cloud technologies like virtual networks or SSH keypairs. If your use of Jetstream2 becomes more sophisticated, and you need to reach for more complex tools like the OpenStack CLI or APIs, Exosphere does not get in your way.
 
 ## How Exosphere compares with the Horizon dashboard, OpenStack CLI, and APIs
 
-Exosphere supports users who wish to mix their use of Exosphere with other OpenStack interfaces like Horizon dashboard, the OpenStack command-line interface, and the APIs. Generally (and with a few limitations), resources that you create in one interface will show up in other interfaces. They are different ways to manage the same infrastructure.
+Exosphere supports users who wish to mix their use of Exosphere with other OpenStack interfaces like Horizon dashboard, the OpenStack command-line interface, and the APIs. Generally (and with a few limitations), resources that you create in one interface will show up in other interfaces. They are merely different ways to manage the same infrastructure.
 
 The other OpenStack interfaces support more features of OpenStack that Exosphere doesn't (yet), like Heat for cluster orchestration and Swift for object storage. So, they may better support some advanced cloud use cases than Exosphere, but they are generally less accessible to newer users. The Horizon dashboard, the OpenStack CLI, and the APIs were all built for use by IT engineers, not by researchers and data scientists. For example, in any of these tools you must create a network, subnet, router, security group, and SSH keypair before you can create an instance and connect to it (using an SSH client program and your private SSH key). If your use cases grow sophisticated enough, you may need this lower-level control, but using the Horizon dashboard is sort of like driving a car with a manual transmission. Using the CLI feels somewhat like using Horizon, but now you're shifting gears by typing shell commands instead of clicking buttons. Using the OpenStack APIs directly is like building your own transmission for the car.
 
-Instances created via these tools do _not_ get a one-click shell, desktop, data upload/download tool, or any of the other interactions that Exosphere sets up for you. If you want these with the other OpenStack interfaces, you must set them up yourself with varying degrees of difficulty.
+Instances created via these other tools do _not_ get a one-click shell, desktop, data upload/download tool, or any of the other interactions that Exosphere sets up for you. If you want these with the other OpenStack interfaces, you must set them up yourself with varying degrees of difficulty.
 
 ### How Exosphere compares with Atmosphere2
 
