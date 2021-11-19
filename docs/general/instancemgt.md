@@ -15,7 +15,7 @@ A shelved instance will not accept shell, SSH, or any other connections.  So, if
 
 ## Lock and Unlock
 
-Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces). If your instance is running an important job or used in 'production' capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it).
+Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces. If your instance is running an important job or used in 'production' capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it).
 
 Be aware that locking an instance does not prevent:
 
@@ -29,7 +29,7 @@ The following actions are for more sophisticated use cases. If you're a new clou
 
 ## Resize
 
-**Note: this feature is not implemented in Exosphere yet -- coming very soon. Until then, you can resize using Horizon.**
+**Note: this feature is not implemented in Exosphere yet -- coming soon. Until then, you can resize using Horizon.**
 
 Resizing allows you to choose a different flavor (a.k.a. size) for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
 
@@ -46,7 +46,7 @@ Resizing is generally **not** appropriate in these situations:
 
 - The speed of your workload is limited by a process that is single-threaded (not parallelized). If this process cannot be parallelized then resizing is unlikely to speed it up.
 - The speed of your workload is limited by disk or network transfer speed. Larger instances do not have faster storage or network connectivity.
-- Your instance is running out of storage. Instead, create a volume, attach it, and move your data to the volume. If you're installing a lot of software that is not easily moved to a volume, resizing _may_ be appropriate -- open a ticket and ask for advice. (TO RESEARCH: does OpenStack allow users to resize to a volume-backed instance or not?)
+- Your instance is running out of storage. Instead, create a volume, attach it, and move your data to the volume. If you're installing a lot of software that is not easily moved to a volume, resizing _may_ be appropriate -- open a ticket and ask for advice. (TODO: does OpenStack allow users to resize to a volume-backed instance or not?)
 
 When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, log into the instance (e.g. using Web Shell) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
 
