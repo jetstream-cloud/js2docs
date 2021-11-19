@@ -98,6 +98,7 @@ nav:
       - Storage Under Atmosphere: ui/atmo/storage.md
     - Exosphere:
       - Overview: ui/exo/exo.md
+      - Logging In: ui/exo/login.md
       - Instance Management: ui/exo/manage.md
       - Storage Under Exosphere: ui/exo/storage.md
     - Horizon:
