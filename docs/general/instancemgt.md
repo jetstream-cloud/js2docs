@@ -12,16 +12,19 @@ Shelving and unshelving each take a few minutes, so shelving doesn't make sense 
 
 A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest size that will work for your server needs. This will conserve SUs on your allocation.
 
-
 ## Lock and Unlock
 
-Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces. If your instance is running an important job or used in 'production' capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it).
+Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces. If your instance is running an important job or used in 'production' capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it). Locking and unlocking are non-disruptive actions -- they do not affect a running instance.
 
 Be aware that locking an instance does not prevent:
 
 - another user on your allocation from unlocking it.
 - modifications to the instance's filesystem(s) or running software. For example, someone with access to the instance could still log in and delete files. Locking only prevents instance actions at the cloud (OpenStack) level.
 - the instance from shutting off when your allocation expires or is exhausted.
+
+## Reboot
+
+Rebooting an instance is just like restarting a computer. The cloud will first attempt a graceful or "soft" reboot, where all of your programs are allowed to exit. If that fails then will perform a "hard" reboot, which will lose any work that is not yet written to disk. If you cannot connect to your instance, rebooting is a good troubleshooting step before creating a support ticket.
 
 ---
 
