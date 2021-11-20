@@ -26,8 +26,7 @@ Instances created via these other tools do _not_ get a one-click shell, desktop,
 
 ### How Exosphere compares with Atmosphere2
 
-TODO write this once Atmosphere2 is ready enough to explore and compare.
-
+This section will be populated once Atmosphere2 is ready enough to explore and compare.
 
 ## Getting Help
 
