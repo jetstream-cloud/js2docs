@@ -2,7 +2,7 @@
 
 Exosphere strives to be the most user-friendly interface for research clouds. If you are new to Jetstream2 and unsure which interface to use, Exosphere is a great place to start. Whether you are exploring new software tools, running compute-intensive jobs, teaching a course/workshop, or building a science gateway, Exosphere can likely help you reach your goals. Use Exosphere in your web browser at [https://exosphere.jetstream-cloud.org](https://exosphere.jetstream-cloud.org/exosphere).
 
-(TODO insert up-to-date screenshot)
+![Exosphere screenshot](../../images/exo-screenshot.png)
 
 Right now, Exosphere supports creating and managing instances. Instances are virtual computers (a.k.a. servers) that run your code, containers, software, and services. When you create an instance, you get helpful features like:
 
