@@ -72,6 +72,7 @@ nav:
     - XSEDE Service Units and Jetstream2: general/xsede.md
     - VM Sizes and Configurations: general/vmsizes.md
     - Featured Images: general/featured.md
+    - Instance Management Actions: general/instancemgt.md
     - Jetstream2 Software Collection: general/software.md
     - Software Licenses: general/licenses.md
     - Policies and Best Practices:
@@ -102,6 +103,7 @@ nav:
       - Storage: ui/atmo/storage.md
     - Exosphere:
       - Overview: ui/exo/exo.md
+      - Logging In: ui/exo/login.md
       - Instance Management: ui/exo/manage.md
       - Storage Under Exosphere: ui/exo/storage.md
     - Horizon:
