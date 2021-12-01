@@ -130,6 +130,8 @@ nav:
       - Jupyter on Jetstream2: general/jupyter.md
       - Galaxy: general/galaxy.md
   - Advanced Capabilities:
-    - Containers on Jetstream2: general/containers.md
+    - Containers on Jetstream2:
+      - Docker: general/docker.md
+      - Kubernetes: general/kubernetes.md
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
