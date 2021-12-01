@@ -1,4 +1,4 @@
-# Jetstream2Wiki
+# Jetstream2 Documentation
 
 Test this one out locally by installing mkdocs in your local python venv!
 `pip install mkdocs`

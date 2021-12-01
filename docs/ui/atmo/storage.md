@@ -1,3 +1,5 @@
-# Using Storage Under Atmosphere/CACAO
+![cacao logo](images/cacao-logo.png){ width=128px }[Cacao Overview](overview.md) &gg; Using Storage with Cacao
 
-Coming soon!
+# Using Storage with Cacao
+
+![something sweet coming soon](images/SweetA.png)

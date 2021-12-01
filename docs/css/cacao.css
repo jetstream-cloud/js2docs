@@ -1,0 +1,20 @@
+.cacao-overview + ul, .cacao-overview + ul {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.cacao-steps {
+    background: #ffffff !important;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 0 5px 5px #777;
+    -moz-box-shadow: 0 5px 5px #777;
+    box-shadow: 0 5px 5px #777;
+}
+
+.cacao-steps img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
