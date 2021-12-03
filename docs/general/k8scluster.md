@@ -127,4 +127,25 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
         kubectl get nodes
   
+## Join worker nodes to the cluster
+
+23. On the *Control Plane Node*, create the token and copy the kubeadm join command. <br> (<span style="color:darkred">***Note:***</span> The join command can also be found in the output from kubeadm init command):
+
+        kubeadm token create --print-join-command
+
+24. On the *Worker Nodes*, paste the kubeadm join command to join the cluster. Use sudo to run it as root:
+
+        sudo kubeadm join ...
+
+25. On the *Control Plane Node*, view cluster status. <br> (<span style="color:darkred">***Note:***</span> You may have to wait a few moments to allow all nodes to become ready):
+
+        kubectl get nodes
+
+## Clean up
+
+26. On the *Control Plabe Node*, delete ia resource using kubectl:
+
+        kubectl delete node <node name> 
+
+
 
