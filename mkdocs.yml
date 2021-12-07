@@ -22,6 +22,7 @@ theme:
   #features:
   #  - navigation.top
   logo: 'images/jetstream-logo-white.svg'
+  highlightjs: false
 
 extra_css:
     - 'css/custom.css'
