@@ -1,12 +1,12 @@
 # Building a Kubernetes Cluster
 
-A k8s cluster is a collection of nodes running containers.  Each node is responsible for running containers that are on that specific node. 
+A k8s cluster is a collection of nodes running containers.  Each node is responsible for running containers that are on that specific node.
 
-In this example we use the kubeadm tool to set up a cluster. Our cluster has 3 VMs – 1 control plane and 2 worker nodes. 
+In this example we use the kubeadm tool to set up a cluster. Our cluster has 3 VMs – 1 control plane and 2 worker nodes.
 
 ####Installation
 
-Create three virtual machines and run the installation commands (1-16) on all three. 
+Create three virtual machines and run the installation commands (1-16) on all three.
 
 1. Create configuration file for containerd:
 
@@ -29,7 +29,7 @@ Create three virtual machines and run the installation commands (1-16) on all th
         EOF
 
 4. Apply new settings:
-    
+
         sudo sysctl --system
 
 5.  Install containerd:
@@ -37,7 +37,7 @@ Create three virtual machines and run the installation commands (1-16) on all th
         sudo apt-get update && sudo apt-get install -y containerd
 
 6.	Create default configuration file for containerd:
-        
+
         sudo mkdir -p /etc/containerd
 
 7.	Generate default containerd configuration and save to the newly created default file:
@@ -61,11 +61,11 @@ Create three virtual machines and run the installation commands (1-16) on all th
         sudo apt-get update && sudo apt-get install -y apt-transport-https curl
 
 12.	Download and add GPG key:
-        
+
         curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 13.	Add Kubernetes to repository list:
-        
+
         cat <<EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
         deb https://apt.kubernetes.io/ kubernetes-xenial main
         EOF
@@ -75,7 +75,7 @@ Create three virtual machines and run the installation commands (1-16) on all th
         sudo apt-get update
 
 
-15.	Install Kubernetes packages 
+15.	Install Kubernetes packages
 
         sudo apt-get install -y kubelet=1.22.0-00 kubeadm=1.22.0-00 kubectl=1.22.0-00
 
@@ -86,10 +86,10 @@ Create three virtual machines and run the installation commands (1-16) on all th
 ## Initialize the cluster
 
 
-17. Before initializing the cluster make sure the Cgroup driver is `systemd` on all three VMs. <br> 
+17. Before initializing the cluster make sure the Cgroup driver is `systemd` on all three VMs. <br>
     You can check that by running the following command:  `docker info | grep Cgroup `
-    
-    To change the Cgroup drive to systemd you can do the following: 
+
+    To change the Cgroup drive to systemd you can do the following:
     
         cat <<EOF | sudo tee /etc/docker/daemon.json
         {
@@ -101,8 +101,8 @@ Create three virtual machines and run the installation commands (1-16) on all th
           "storage-driver": "overlay2"
         }
         EOF
-    
-18. You will need to restart Docker and reset kubeadm for the change in step 17. to take effect. 
+
+18. You will need to restart Docker and reset kubeadm for the change in step 17. to take effect.
 
         sudo systemctl daemon-reload
         sudo systemctl restart docker
@@ -114,7 +114,7 @@ Create three virtual machines and run the installation commands (1-16) on all th
         sudo kubeadm init --pod-network-cidr 192.168.0.0/16 --kubernetes-version 1.22.0
 
 20. Set kubectl access on the control plane :
-        
+
         mkdir -p $HOME/.kube
         sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
         sudo chown $(id -u):$(id -g) $HOME/.kube/config
@@ -123,10 +123,10 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
         kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
-22. Test access to cluster: 
+22. Test access to cluster:
 
         kubectl get nodes
-  
+
 ## Join worker nodes to the cluster
 
 23. On the *Control Plane Node*, create the token and copy the kubeadm join command. <br> (<span style="color:darkred">***Note:***</span> The join command can also be found in the output from kubeadm init command):
@@ -145,7 +145,4 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
 26. On the *Control Plabe Node*, delete ia resource using kubectl:
 
-        kubectl delete node <node name> 
-
-
-
+        kubectl delete node <node name>
