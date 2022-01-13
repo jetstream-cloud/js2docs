@@ -8,7 +8,7 @@ General Troubleshooting:
 
 Troubleshooting Jetstream2 Interfaces:
 
-  * [Exosphere](troubleshooting/exo.md)
-  * [Cacao](troubleshooting/cacao.md)
-  * [Horizon](troubleshooting/horizon.md)
-  * [CLI](troubleshooting/cli.md)
+  * [Exosphere](../ui/exo/troubleshooting.md)
+  * [Cacao](../ui/atmo/troubleshooting.md)
+  * [Horizon](../ui/horizon/troubleshooting.md)
+  * [CLI](../ui/cli/troubleshooting.md)

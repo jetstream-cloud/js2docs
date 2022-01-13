@@ -8,7 +8,7 @@ Jetstream features multiple user interfaces, including the following _**web-base
 
 - CACAO (Atmosphere2, developed by [CyVerse](https://www.cyverse.org/){target=_blank})
 - [Exosphere](../ui/exo/exo.md)
-- [Horizon](../ui/horizon/hrzn.md)
+- [Horizon](../ui/horizon/intro.md)
 
 as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/cli.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank})
 

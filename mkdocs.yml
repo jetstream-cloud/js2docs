@@ -101,16 +101,19 @@ nav:
       - Deployments (Launching a VM): ui/atmo/deployments.md
       - Choosing Your Allocation: ui/atmo/alloc.md
       - Logging Into An Instance: ui/atmo/login.md
+      - Cacao Troubleshooting: ui/atmo/troubleshooting.md
       - Storage: ui/atmo/storage.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md
       - Instance Management: ui/exo/manage.md
       - Storage Under Exosphere: ui/exo/storage.md
+      - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
-      - Overview: ui/horizon/hrzn.md
+      - Overview: ui/horizon/intro.md
       - Instance Management: ui/horizon/manage.md
       - Storage Under Horizon: ui/horizon/storage.md
+      - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients:
@@ -123,6 +126,7 @@ nav:
         - Launching a Virtual Machine: ui/cli/VM_launch.md
         - Instance Management: ui/cli/manage.md
         - Storage Under the CLI: ui/cli/storage.md
+        - CLI Troubleshooting: ui/cli/troubleshooting.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
