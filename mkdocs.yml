@@ -141,5 +141,6 @@ nav:
       - Docker: general/docker.md
       - Kubernetes: general/kubernetes.md
       - Build a K8s cluster: general/k8scluster.md
+      - Minikube: general/minikube.md
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
