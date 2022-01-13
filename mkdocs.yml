@@ -101,8 +101,9 @@ nav:
       - Deployments (Launching a VM): ui/atmo/deployments.md
       - Choosing Your Allocation: ui/atmo/alloc.md
       - Logging Into An Instance: ui/atmo/login.md
-      - Cacao Troubleshooting: ui/atmo/troubleshooting.md
+      - Instance Management: ui/atmo/manage.md
       - Storage: ui/atmo/storage.md
+      - Cacao Troubleshooting: ui/atmo/troubleshooting.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md
