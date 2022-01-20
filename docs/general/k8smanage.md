@@ -1,5 +1,7 @@
 # Managing your application with Kubernetes 
 
+To manage applications with Kubernetes we use the `apply` command. This command requires a file or directory of files. When run, the apply command makes the state of the Kubernetes cluster match the state defined in the file/s. 
+
 Using the Kubernetes CLI, (Kubectl), we can create objects such as Pods, Deployments. etc. by providing a yaml file for that object. 
  
 <span style="color:darkred">***This page is under construction***</span>
@@ -17,7 +19,9 @@ Finally, we list the port to expose from the container.
        apiVersion: v1
        kind: Pod
        metadata:
-         name: nginx
+         name: nginx-deployment
+         label:
+         app: webserver  
        spec:
          containers:
          - name: nginx
@@ -30,10 +34,76 @@ To create the pod defined in the yaml file above, run the following command.
     kubectl apply -f simple-pod.yaml 
 
 ## REPLICASET
-Creating replicas of a pod scales an application horizontally.
+
+ReplicaSet adds or deletes pods as needed. 
+Creating replicas of a pod scales an application horizontally. Replicas are usually created as part of a deployment. 
+Here's a sample yaml file for creating 2 replicas, to create a ReplicaSet without a deployment.  
+
+       apiVersion: apps/v1
+       kind: ReplicaSet
+       metadata:
+         name: nginx-replicaset
+       spec: 
+         replicas: 2
+         selector:
+           matchLabels:
+            app: webserver
+       spec: 
+         containers:
+         - name: nginx
+           image: nginx:1.14.2
+           ports:
+           -containerPort: 80
+
+
 
 ## DEPLOYMENT
-## SCALING
+
+Deployment is an object that can provide updates to both pods and ReplicaSets. 
+Deployment object allows you to do rolling updates of a pod, ReplicaSet object does not. A rolling update scales up the new version to the appropriate number of replicas and scales down the old version to zero. 
+
+       apiVersion: apps/v1
+       kind: Deployment
+       metadata:
+         name: nginx-deployment
+       spec: 
+         replicas: 3
+         selector:
+           matchLabels:
+            app: webserver
+       spec: 
+         containers:
+         - name: nginx
+           image: nginx:1.14.2
+           ports:
+           -containerPort: 80
 
 
+## AUTOSCALING
+
+A Horizontal Pod Autoscaler (HPA) allows you to scale up or down depending on traffic. 
+This can be configured by specifying the CPU or memory states. 
+The master node periodically checks to see if the desired state is met and scales up or down as needed.  
+
+One way to do this is to enable autoscaling in a yaml file: 
+
+       apiVersion: apps/v1
+       kind: Deployment
+       metadata:
+         name: nginx-deployment
+         namespace: default
+       spec:
+         maxReplicas: 10
+         minReplicas: 5
+         scaleTargetRef: 
+           apiVersion: apps/v1
+           kind: Deployment
+           name: nginx-deployment
+          targetCPUUtilizationPercentage: 10
+       ...
+       ...
+         
+Autoscaling can also be done by issuing a kubectl command as follows:
+        
+       kubectl autoscale deploy nginx-deployment --min=5 --max=10 --cpu-percent=50
 ## VOLUME 
