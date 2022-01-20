@@ -112,6 +112,7 @@ nav:
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
       - Overview: ui/horizon/intro.md
+      - Security Group Management: ui/horizon/security_group.md
       - Instance Management: ui/horizon/manage.md
       - Storage Under Horizon: ui/horizon/storage.md
       - Horizon Troubleshooting: ui/horizon/troubleshooting.md
