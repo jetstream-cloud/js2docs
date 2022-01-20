@@ -20,9 +20,11 @@ If you have a public IP (also called a floating IP in OpenStack terminology), yo
 
 We recommend limiting access to any service ports via security group and/or firewall in addition to making sure any non-public services like databases have secure passwords for all accounts. If your service only needs to be accessible to the VM it's running on, check the documentation to see if it can be bound only to the localhost port. (Not all services have this ability.)
 
-### What is the default security group for Jetstream2 VMs?
+### What is the default security profile for Jetstream2 VMs?
 
-That depends on the interface. The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](../ui/cli/security_group.md) or [Horizon](../ui/horizon/security_group.md) for more information on managing security groups in those interfaces.
+That depends on the interface.
+
+The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](../ui/cli/security_group.md) or [Horizon](../ui/horizon/security_group.md) for more information on managing security groups in those interfaces.
 
 For Exosphere, the default security group allows all egress and inbound access.
 
