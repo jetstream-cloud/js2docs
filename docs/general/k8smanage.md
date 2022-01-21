@@ -16,12 +16,14 @@ The kind field describes the type of object you want to create.
 The pod spec must contain at least one container. Image specifies which image will be run in the pod. 
 Finally, we list the port to expose from the container. 
 
+yaml manifest:
+
        apiVersion: v1
        kind: Pod
        metadata:
          name: nginx-deployment
          label:
-         app: webserver  
+         app: nginx  
        spec:
          containers:
          - name: nginx
@@ -32,6 +34,9 @@ Finally, we list the port to expose from the container.
 To create the pod defined in the yaml file above, run the following command. 
 
     kubectl apply -f simple-pod.yaml 
+
+
+command line:  
 
 ## REPLICASET
 
@@ -47,7 +52,7 @@ Here's a sample yaml file for creating 2 replicas, to create a ReplicaSet withou
          replicas: 2
          selector:
            matchLabels:
-            app: webserver
+            app: nginx
        spec: 
          containers:
          - name: nginx
@@ -55,12 +60,17 @@ Here's a sample yaml file for creating 2 replicas, to create a ReplicaSet withou
            ports:
            -containerPort: 80
 
+command line: 
+
+kubectl scale --replicas=2 deployment nginx-deployment
 
 
 ## DEPLOYMENT
 
 Deployment is an object that can provide updates to both pods and ReplicaSets. 
 Deployment object allows you to do rolling updates of a pod, ReplicaSet object does not. A rolling update scales up the new version to the appropriate number of replicas and scales down the old version to zero. 
+
+yaml manifest: 
 
        apiVersion: apps/v1
        kind: Deployment
@@ -70,13 +80,44 @@ Deployment object allows you to do rolling updates of a pod, ReplicaSet object d
          replicas: 3
          selector:
            matchLabels:
-            app: webserver
+            app: nginx
        spec: 
          containers:
          - name: nginx
            image: nginx:1.14.2
            ports:
            -containerPort: 80
+
+command line: 
+
+create deployment nginx --image=nginx
+
+
+## SERVICE
+
+Service enables network access from either within the cluster or between external processes. 
+
+       kind: Service
+       metadata:
+         name: nginx-ingress
+       spec:
+         type: NodePort
+         ports:
+         - port: 80
+           targetPort: 80
+           protocol: TCP
+           name: http
+         - port: 443
+           targetPort: 443
+           protocol: TCP
+           name: https
+         selector:
+           app: nginx
+
+
+command line: 
+
+       kubectl create service nodeport nginx-deployment --tcp=80:80
 
 
 ## AUTOSCALING
@@ -103,7 +144,7 @@ One way to do this is to enable autoscaling in a yaml file:
        ...
        ...
          
-Autoscaling can also be done by issuing a kubectl command as follows:
+command line: 
         
        kubectl autoscale deploy nginx-deployment --min=5 --max=10 --cpu-percent=50
-## VOLUME 
+
