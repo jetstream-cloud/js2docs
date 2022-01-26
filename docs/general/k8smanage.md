@@ -38,6 +38,8 @@ To create the pod defined in the yaml file above, run the following command.
 
 command line:  
 
+    kubectl run nginx --image=nginx --port=80
+
 ## REPLICASET
 
 ReplicaSet adds or deletes pods as needed. 
@@ -62,7 +64,7 @@ Here's a sample yaml file for creating 2 replicas, to create a ReplicaSet withou
 
 command line: 
 
-kubectl scale --replicas=2 deployment nginx-deployment
+    kubectl scale --replicas=2 deployment nginx-deployment
 
 
 ## DEPLOYMENT
@@ -90,7 +92,7 @@ yaml manifest:
 
 command line: 
 
-create deployment nginx --image=nginx
+    create deployment nginx --image=nginx
 
 
 ## SERVICE
