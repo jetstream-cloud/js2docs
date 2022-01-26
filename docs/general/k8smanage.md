@@ -38,7 +38,7 @@ To create the pod defined in the yaml file above, run the following command.
 
 command line:  
 
-    kubectl run nginx --image=nginx --port=80
+    kubectl run nginx-deployment --image=nginx --port=80
 
 ## REPLICASET
 
@@ -92,7 +92,7 @@ yaml manifest:
 
 command line: 
 
-    create deployment nginx --image=nginx
+    kubectl create deployment nginx-deployment --image=nginx
 
 
 ## SERVICE
