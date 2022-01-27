@@ -30,6 +30,8 @@ Instructions for using boot from volume are here:
 * Horizon (link coming)
 * CLI (link coming)
 
+---
+
 ### Will there be Microsoft Windows support on Jetstream2 ?
 
 Microsoft Windows is not officially supported on Jetstream2. We will be making a limited number of images available for experimental use.
