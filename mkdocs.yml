@@ -14,7 +14,7 @@ theme:
   prev_next_buttons_location: none
   titles_only: True
   include_404: True
-  sticky_navigation: True
+  #sticky_navigation: True
   collapse_navigation: False
   #name: "windmill"
   #name: "material"
@@ -25,6 +25,7 @@ theme:
   logo: 'images/jetstream-logo-white.svg'
   site_favicon: 'images/Jetstream2_icon_64px.jpg'
   highlightjs: false
+  style_external_links: True
 
 extra_css:
     - 'css/custom.css'
