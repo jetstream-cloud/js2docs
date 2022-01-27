@@ -63,6 +63,7 @@ nav:
     - Configuration and specifications: overview/config.md
     - Network configuration and considerations: overview/network.md
   - Frequently Asked Questions:
+    - General FAQs: faq/general-faq.md
     - Troubleshooting: faq/trouble.md
     - Allocations: faq/alloc.md
     - Security: faq/security.md
