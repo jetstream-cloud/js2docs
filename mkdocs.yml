@@ -15,6 +15,7 @@ theme:
   titles_only: True
   include_404: True
   sticky_navigation: True
+  collapse_navigation: False
   #name: "windmill"
   #name: "material"
   #palette:
