@@ -29,3 +29,11 @@ Instructions for using boot from volume are here:
 * Cacao (link coming)
 * Horizon (link coming)
 * CLI (link coming)
+
+### Will there be Microsoft Windows support on Jetstream2 ?
+
+Microsoft Windows is not officially supported on Jetstream2. We will be making a limited number of images available for experimental use.
+
+It is not known at this time whether GPUs will work on Microsoft-based instances. We will test this as time permits.
+
+More information may be found on the [Microsoft Windows on Jetstream2](../general/windows.md) page.
