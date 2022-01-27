@@ -23,6 +23,7 @@ theme:
   #features:
   #  - navigation.top
   logo: 'images/jetstream-logo-white.svg'
+  site_favicon: 'images/Jetstream2_icon_64px.jpg'
   highlightjs: false
 
 extra_css:
