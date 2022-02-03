@@ -43,8 +43,3 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
 .injected { display: none !important; }
 .rst-badge .rst-versions .rst-versions.rst-badge { display: none !important; }
 .rst-versions { visibility: hidden; }
-
-/* Make it so user can click for a full size image */
-a.zoom .full { display: none; }
-a.zoom:active .thumb { display: none; }
-a.zoom:active .full { display: inline; }

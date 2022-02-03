@@ -1,4 +1,4 @@
-# Setting up openrc.sh for the Jetstream2 Command Line Interface
+## Setting up the openrc.sh for the Jetstream2 CLI
 
 ### New openrc format for Jetstream2 CLI!
 
@@ -12,23 +12,22 @@ Each allocation you wish to use from the command line will need its own applicat
 
 <table>
   <tr>
-    <th>Action</th>
+    <th style="width: 40%; word-wrap: break-word;" !important>Action</th>
     <th>Screenshot</th>
   </tr>
   <tr>
-    <td>Navigate to [https://js2.jetstream-cloud.org/](https://js2.jetstream-cloud.org/){target=_blank}</td>
-    <td><a class="zoom" href="#">
-        <img class="thumb" src="../../images/JS2-Horizon-Login-Screen-Thumbnail.png"/>
-        <img class="full" src="../../images/JS2-Horizon-Login-Screen.png"/>
-        </a>
+    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a></td>
+    <td><a href="../../../images/JS2-Horizon-Login-Screen.png" target=_blank><img src="../../../images/JS2-Horizon-Login-Screen.png"></a>
     </td>
   </tr>
   <tr>
-    <td>You should be at the Horizon Dashboard home now.</td>
-    <td> <a class="zoom" href="#">
-         <img class="thumb" src="../../images/JS2-Horizon-Home-Thumbnail.png"/>
-         <img class="full" src="../../images/JS2-Horizon-Home.png"/>
-         </a>
+    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a Globus page to permit authorization.<p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.<p> </td>
+    <td><a href="../../../images/JS2-Globus-Screen.png" target=_blank><img src="../../../images/JS2-Globus-Screen.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>You should be at the Horizon Dashboard home now.</td>
+    <td><a href="../../../images/JS2-Horizon-Home.png" target=_blank><img src="../../../images/JS2-Horizon-Home.png"></a>
     </td>
   </tr>
 </table>
