@@ -4,14 +4,14 @@ Container filesystems are ephemeral. One way to persist data beyond the lifetime
 
 Creating persistent storage requires the following definitions:
 
-1. StorageClass, 
-2. PersistentVolume, 
-3. PersistentVolumeClaim, and
-4. Pod that uses the PersistentVolumeClaim for storage.
+ -  StorageClass, 
+ -  PersistentVolume, 
+ -  PersistentVolumeClaim, and
+ -  Pod that uses the PersistentVolumeClaim for storage.
 
 Here are some sample definition files. 
 
-1. StorageClass:
+### StorageClass:
 
         apiVersion: storage.k8s.io/v1
         kind: StorageClass
@@ -20,7 +20,7 @@ Here are some sample definition files.
         provisioner: kubernetes.io/no-provisioner
 
 
-2. PersistentVolume
+### PersistentVolume
 
         apiVersion: v1
         kind: PersistentVolume
@@ -36,7 +36,7 @@ Here are some sample definition files.
           hostPath:
             path: /var/output
 
-3. PersistentVolumeClaim
+###  PersistentVolumeClaim
 
         apiVersion: v1
         kind: PersistentVolumeClaim
@@ -51,7 +51,7 @@ Here are some sample definition files.
               storage: 100Mi
 
 
-4. Pod
+### Pod
 
         apiVersion: v1
         kind: Pod
@@ -72,13 +72,14 @@ Here are some sample definition files.
                  - name: alpine-volume
                    mountPath: /output 
 
+The steps to create and use volumes are below:
 
-1. Create the StorageClass, PersistentVolume, PersistentVolumeClaim, and Pod with the `kubectl create` command. 
+1. On the Control Plane, create the StorageClass, PersistentVolume, PersistentVolumeClaim, and Pod with the `kubectl create` command. 
 
-2. Check if your pod is running and which node it is running on. 
-     
-    kubectl get pods -o wide 
+2. Check if your pod is running and which worker node it is running on. 
+         kubectl get pods -o wide 
+The `-o wide` above list the node the pod is running on. 
 
-3. The `-o wide` above list the node the pod is running on. Log into the worker node and verify that `/var/output/trial_run.txt` exists and is populated. 
+3. Log into the worker node and verify that `/var/output/trial_run.txt` exists and is populated. 
 
-4. If you delete and recreate the pod, the volume will automatically bind to the new pod with the `trial_run.txt` file     
+4. If you delete and recreate the pod, the volume will automatically bind to the new pod with the `trial_run.txt` file.     
