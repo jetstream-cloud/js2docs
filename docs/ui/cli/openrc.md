@@ -21,8 +21,19 @@ Each allocation you wish to use from the command line will need its own applicat
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a Globus page to permit authorization.<p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.<p> </td>
+    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a Globus page to permit authorization.<p>
+    <p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.<p> </td>
     <td><a href="../../../images/JS2-Globus-Screen.png" target=_blank><img src="../../../images/JS2-Globus-Screen.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>The next page should be the login screen for your credentials. We're showing the XSEDE login screen as our example.</td>
+    <td><a href="../../../images/JS2-XSEDE-Auth-Screen.png" target=_blank><img src="../../../images/JS2-XSEDE-Auth-Screen.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>If you're using two-factor auth with your credentials as XSEDE does, you'll likely get a Duo or Authenticator screen here.</td>
+    <td><a href="../../../images/JS2-XSEDE-Duo-Screen.png" target=_blank><img src="../../../images/JS2-XSEDE-Duo-Screen.png"></a>
     </td>
   </tr>
   <tr>
@@ -30,17 +41,25 @@ Each allocation you wish to use from the command line will need its own applicat
     <td><a href="../../../images/JS2-Horizon-Home.png" target=_blank><img src="../../../images/JS2-Horizon-Home.png"></a>
     </td>
   </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>As application credentials are unique to each allocation, if you are on multiple XSEDE allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "XSEDE * TG-XXXXXXXXX * IU". That will show allocations under "Projects".</td>
+    <td><a href="../../../images/JS2-Horizon-Change-Projects.png" target=_blank><img src="../../../images/JS2-Horizon-Change-Projects.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>From here, you'll select <b>Identity</b> and then <b>Application Credentials</b> from the sidebar menu on the left<p>
+    Once on that page, you'll click "Create Application Credential" towards the top right (noted by the red arrow)</td>
+    <td><a href="../../../images/JS2-App-Cred-Screen.png" target=_blank><img src="../../../images/JS2-App-Cred-Screen.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>This will bring up the application credential creation screen. <p>The sidebar has descriptions if you need help. <p> We recommend using a descriptive name and to put details in the description so you can easily see what it is for.<p><p>The <b>Secret</b> is the password or passphrase. We recommend using a strong password here or multi-word passphrase. As the page notes, you will not be able to retrieve it later if you forget it or delete the openrc file you generate.<p><p>Set the expiration date and time. If you do not set a date, it will default to TODAY as noted on the sidebar.<p><p>We do not recommend setting the roles, access rules, or selecting unrestricted unless you are an advanced user and understand the full implications of altering these.</td>
+    <td><a href="../../../images/JS2-App-Cred-Create.png" target=_blank><img src="../../../images/JS2-App-Cred-Create.png"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="width: 40%; word-wrap: break-word;" !important>When you hit "Create Application Credential" it will then generate the credential and bring up a confirmation box. Please make sure to save the credential ID and secret if you need them for things other than the openrc. <p><p>To get the openrc for CLI access, please click the "Download openrc file" button referenced by the red arrow in the screenshot. That will download a plain text file for use with the Openstack CLI client</td>
+    <td><a href="../../../images/JS2-Created-App-Cred.png" target=_blank><img src="../../../images/JS2-Created-App-Cred.png"></a>
+    </td>
+  </tr>
 </table>
-
-
-         1. Login to Horizon: <br>
->IU: https://iu.jetstream-cloud.org/dashboard<br>
->Domain: IU
->User Name: *your TACC username*
->Password: *your TACC password*
-
-2. If you are on more than one allocation, select the project (XSEDE allocation) by clicking where it says "tacc · TG-xxxxxxxx · RegionOne" and choose the appropriate allocation.
-3. Click on your username in the upper right hand corner
-4. Click on Download OpenStack RC File v3 . The password is not stored in the script. This openrc.sh file will prompt for a password when sourced.<br>
-<br>
-<span style="color:darkred">***Note: ***</span>To select an active project prior to generating openrc.sh, click on Identity (left hand side) to see a list of your projects.
