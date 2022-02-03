@@ -4,8 +4,6 @@ To manage applications with Kubernetes we use the `apply` command. This command 
 
 Using the Kubernetes CLI, (Kubectl), we can create objects such as Pods, Deployments. etc. by providing a yaml file for that object. 
  
-<span style="color:darkred">***This page is under construction***</span>
-
 
 ## PODS
 
