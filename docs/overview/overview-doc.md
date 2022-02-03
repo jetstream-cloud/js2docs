@@ -6,7 +6,7 @@ It provides a library of **_virtual machines_** and shared software designed to 
 
 Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_:
 
-- CACAO (Atmosphere2, developed by [CyVerse](https://www.cyverse.org/){target=_blank})
+- [Cacao](../ui/atmo/intro.md)
 - [Exosphere](../ui/exo/exo.md)
 - [Horizon](../ui/horizon/intro.md)
 
