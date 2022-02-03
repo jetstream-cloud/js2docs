@@ -47,7 +47,7 @@ Each allocation you wish to use from the command line will need its own applicat
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>From here, you'll select <b>Identity</b> and then <b>Application Credentials</b> from the sidebar menu on the left<p>
+    <td style="width: 40%; word-wrap: break-word;" !important>From here, you'll select <b>Identity</b> and then <b>Application Credentials</b> from the sidebar menu on the left<p><p>
     Once on that page, you'll click "Create Application Credential" towards the top right (noted by the red arrow)</td>
     <td><a href="../../../images/JS2-App-Cred-Screen.png" target=_blank><img src="../../../images/JS2-App-Cred-Screen.png"></a>
     </td>
