@@ -1,31 +1,40 @@
-# Setting up openrc.sh
+# Setting up openrc.sh for the Jetstream2 Command Line Interface
 
-<span style="color:red"> File copied over from JS1 - Make modifications for JS2</span><br>
+### New openrc format for Jetstream2 CLI!
 
-### UPDATES FORTHCOMING - THESE DO NOT WORK ON JS2
- 
-Jetstream cloud has one domain, the 'IU' domain.
-The username and password in the openrc.sh file are the same login credentials that would be { Check with Mike }.<br>For assistance with TACC login credentials, visit [password reset](https://portal.tacc.utexas.edu/password-reset/-/password/request-reset) .
+One of the key changes to using Jetstream2's command line interface (CLI) is that it uses XSEDE credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This page will walk you through that process.
 
+### Openrc files are allocation-specific
 
----
-**IU cloud, IU domain**
-{: .note}
-
-***IU domain*** <br>
->export OS_PROJECT_DOMAIN_NAME=tacc<br>
->export OS_USER_DOMAIN_NAME=tacc<br>
->export OS_PROJECT_NAME=TG_your_xsede_project_name<br>
->export OS_USERNAME=your_tacc_username<br>
->export OS_PASSWORD=your_tacc_password<br>
->export OS_AUTH_URL=*CONTACT HELP@XSEDE.ORG* for the available endpoint URL<br>
->export OS_IDENTITY_API_VERSION=3 <br>
-
----
+Each allocation you wish to use from the command line will need its own application credential and openrc file.
 
 ### Using the Horizon dashboard to generate openrc.sh
 
-1. Login to Horizon: <br>
+<table>
+  <tr>
+    <th>Action</th>
+    <th>Screenshot</th>
+  </tr>
+  <tr>
+    <td>Navigate to [https://js2.jetstream-cloud.org/](https://js2.jetstream-cloud.org/){target=_blank}</td>
+    <td><a class="zoom" href="#">
+        <img class="thumb" src="../../images/JS2-Horizon-Login-Screen-Thumbnail.png"/>
+        <img class="full" src="../../images/JS2-Horizon-Login-Screen.png"/>
+        </a>
+    </td>
+  </tr>
+  <tr>
+    <td>You should be at the Horizon Dashboard home now.</td>
+    <td> <a class="zoom" href="#">
+         <img class="thumb" src="../../images/JS2-Horizon-Home-Thumbnail.png"/>
+         <img class="full" src="../../images/JS2-Horizon-Home.png"/>
+         </a>
+    </td>
+  </tr>
+</table>
+
+
+         1. Login to Horizon: <br>
 >IU: https://iu.jetstream-cloud.org/dashboard<br>
 >Domain: IU
 >User Name: *your TACC username*

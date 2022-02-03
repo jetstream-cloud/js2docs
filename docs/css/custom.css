@@ -3,19 +3,12 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
     display: none;
 }
 
-.wy-breadcrumbs-aside {
-    display: none !important;
-}
+.wy-breadcrumbs-aside { display: none !important;}
 
 /* Gets rid of the top breadcrumb */
-.wy-breadcrumbs {
-    display: none;
-}
+.wy-breadcrumbs { display: none; }
 
-.wy-side-nav-search {
-  /* background-color: #13134a !important; */
-  background-color: #69090D !important;
-}
+.wy-side-nav-search { background-color: #69090D !important; }
 
 /* this isn't working and I don't know why -- will revisit later
   More specifically, it's making the ENTIRE sidebar change colors -- so just
@@ -34,38 +27,24 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
   width: 50%;
 }
 
-.tab {
-  margin-left: 24px !important;
-}
+.tab { margin-left: 24px !important; }
 
 /* Change the color of the menu section headings */
-.caption-text {
-  color: #ea941a !important;
-}
+.caption-text { color: #ea941a !important; }
 
 /* Change the color of the expander + sign */
-.toctree-expand {
-  color: #dd0031 !important;
-}
+.toctree-expand { color: #dd0031 !important; }
 
 /* Gets rid of the gutters on each side -- default is 800px */
-.wy-nav-content {
-    max-width: 1200px !important;
-}
+.wy-nav-content { max-width: 1200px !important; }
 
 /* Ditch the bottom nav buttons - option in theme isn't working */
-.btn {
-  display: none !important;
-}
+.btn { display: none !important; }
+.injected { display: none !important; }
+.rst-badge .rst-versions .rst-versions.rst-badge { display: none !important; }
+.rst-versions { visibility: hidden; }
 
-.injected {
-  display: none !important;
-}
-
-.rst-badge .rst-versions .rst-versions.rst-badge {
-  display: none !important;
-}
-
-.rst-versions {
-  visibility: hidden;
-}
+/* Make it so user can click for a full size image */
+a.zoom .full { display: none; }
+a.zoom:active .thumb { display: none; }
+a.zoom:active .full { display: inline; }
