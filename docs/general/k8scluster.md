@@ -145,4 +145,18 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
 26. On the *Control Plabe Node*, delete ia resource using kubectl:
 
-        kubectl delete node <node name>
+        kubectl delete node <node name> 
+
+
+<span style="color:darkred">***Note:***</span> 
+
+Before using the cluster confirm that all pods in the kube-system are running: 
+
+        kubectl get pods -n kube-system -o wide
+
+This command will give you a list of pods in the kube-system namespace, the status of the pod, the node it is running on. 
+If the status of a pod is not `Running`, you can check the logs for error messages: 
+
+        kubectl logs -n kube-system {name_of_your_pod}  
+
+
