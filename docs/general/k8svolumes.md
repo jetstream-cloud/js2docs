@@ -76,9 +76,11 @@ The steps to create and use volumes are below:
 
 1. On the Control Plane, create the StorageClass, PersistentVolume, PersistentVolumeClaim, and Pod with the `kubectl create` command. 
 
-2. Check if your pod is running and which worker node it is running on. 
-         kubectl get pods -o wide 
-The `-o wide` above list the node the pod is running on. 
+2. Check if your pod is running and which worker node it is running on: 
+
+        kubectl get pods -o wide 
+
+   The `-o wide` above list the node the pod is running on. 
 
 3. Log into the worker node and verify that `/var/output/trial_run.txt` exists and is populated. 
 
