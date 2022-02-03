@@ -10,4 +10,8 @@ Migration plans are still under development. We will provide instructions for mo
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
 
+#### Important note for CLI users
+
+Jetstream2 uses application credentials for CLI access so CLI users can authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](ui/cli/openrc.md){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
+
 **Updates will all be made here and shared via XSEDE User News.**
