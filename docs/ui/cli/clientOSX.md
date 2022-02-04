@@ -10,7 +10,7 @@ This will help you get the Openstack clients working on Mac OS X 10.11.x. It may
 | Add these lines to .bash_profile 	|*# Set architecture flags*<br> <br>```export ARCHFLAGS="-arch x86_64"```<br><br> *# Ensure user-installed binaries take precedence*<br><br>```export PATH=/usr/local/bin:$PATH``` 	|
 | Run this command 	| ```source .bash_profile``` 	|
 | Verify that the Xcode required tools are installed and functional<br>(This command may require root access to run.) 	| ```xcode-select --install``` 	|
-| Set the permissions that Brew expects 	| ```sudo chflags norestricted /usr/local && sudo chown $(whoami):admin /usr/local && sudo chown -R $(whoami):admin /usr/local``` 	|
+| Set the permissions that Brew expects 	| ```sudo chflags norestricted /usr/local```<br> ```sudo chown $(whoami):admin /usr/local ```<br>``` sudo chown -R $(whoami):admin /usr/local``` 	|
 | Install Brew if not already installed 	| ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``` 	|
 | If Brew is installed, update as needed. 	| ```brew update``` 	|
 | If prompted to agree to the Xcode license run: 	| ```xcodebuild -license``` 	|
