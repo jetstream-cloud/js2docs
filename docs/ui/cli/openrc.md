@@ -16,7 +16,7 @@ Each allocation you wish to use from the command line will need its own applicat
     <th>Screenshot</th>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a><p>Make sure it says "XSEDE Globus Auth" in the Authenticate Using box.</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a><p><p>Make sure it says "XSEDE Globus Auth" in the Authenticate Using box.</td>
     <td><a href="../../../images/JS2-Horizon-Login-Screen.png" target=_blank><img src="../../../images/JS2-Horizon-Login-Screen.png"></a>
     </td>
   </tr>
