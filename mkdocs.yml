@@ -4,6 +4,8 @@ site_description: "Jetstream 2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
 copyright: Copyright © 2021 The Trustees of Indiana University
 site_favicon: 'images/Jetstream2_icon_64px.jpg'
+collapse_navigation: True
+sticky_navigation: True
 
 theme:
   name: "readthedocs"
