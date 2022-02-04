@@ -18,14 +18,16 @@ You'll first need to create an XSEDE Portal Account if you do not already have o
 1. Read the [Education Allocations Overview](https://portal.xsede.org/allocations/education){target=_blank}. There are sample allocation requests in the overview that you may find helpful.
 2. Go to the [XSEDE Resource Allocation System](https://portal.xsede.org/submit-request){target=_blank} page. On the Available Opportunities page, click "Start a New Submission" under "Educational". If you are not familiar with the process, select "Begin Guided Submission" for step-by-step instructions.
 
-Before submitting an allocation request have the following information available:
+````
+    Before submitting an allocation request have the following information available:
 
-* PI, Co-PIs, and Allocation Managers (username)
-* Additional XSEDE user names that you will add so they may use your allocation time and resources (optional)
-* Title
-* Abstract (typically a paragraph or two for an Educational request will suffice)
-* Keywords
-* Field of science (secondary areas of science may be also be added)
+    * XSEDE usersnams for PI (required), Co-PIs (optional), and Allocation Managers (optional)
+    * Additional XSEDE user names to add so they may use your allocation time and resources (optional)
+    * Title
+    * Abstract (typically a paragraph or two for an Educational request will suffice)
+    * Keywords
+    * Field of science (secondary areas of science may be also be added)
+````
 
 3. Select your [resources](../general/resources.md) - you can have any combination of Jetstream2 CPU, Jetstream2 Large Memory, and Jetstream2 GPU - but you must justify Large Memory or GPU requests specifically
 
