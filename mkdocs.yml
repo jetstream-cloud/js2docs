@@ -3,6 +3,7 @@ site_url: https://docs.jetstream-cloud.org
 site_description: "Jetstream 2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
 copyright: Copyright © 2021 The Trustees of Indiana University
+site_favicon: 'images/Jetstream2_icon_64px.jpg'
 
 theme:
   name: "readthedocs"
@@ -24,7 +25,6 @@ theme:
   #features:
   #  - navigation.top
   logo: 'images/jetstream-logo-white.svg'
-  site_favicon: 'images/Jetstream2_icon_64px.jpg'
   highlightjs: false
   style_external_links: True
 
