@@ -1,6 +1,6 @@
 # Jetstream2 Allocation Extensions and Renewals
 
-If your allocation is expired or close to expired and has adequate SUs remaining for the resource(s), you may request a supplement.
+If your allocation is expired or close to expired and has adequate SUs remaining for the resource(s), you may request an extension.
 
 Detailed information about the extension request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-extensions){target=_blank} page.
 
