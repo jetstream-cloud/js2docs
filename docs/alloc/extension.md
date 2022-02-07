@@ -1,6 +1,6 @@
 # Jetstream2 Allocation Extensions and Renewals
 
-If your allocation is expired or close to expired and has adequate SUs remaining for the resource(s), you may request an extension.
+If your allocation is expired or close to expired and has adequate SUs remaining for the resource(s), you may request an extension if you need 3-6 months to complete your work or to prepare for a research allocation. If you are planning to continue your research for another year (or more), you should pursue a renewal of your allocation.
 
 Detailed information about the extension request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-extensions){target=_blank} page.
 
@@ -8,7 +8,8 @@ Detailed information about the extension request process is available from the [
 
 If you have a startup allocation and you are planning to stay under the startup limits (as noted on the [Jetstream Resources](../general/resources.md) page), you may continue to renew your startup and not have to enter the research allocations cycle. A renewal is **ALWAYS** preferred over an extension. Please see below for information on renewing a startup allocation.
 
-Research allocations may be extended **once** with *adequate justification*.
+* Research allocations may be extended **once** with *adequate justification*.
+* Research allocations are renewable on a quarterly basis. More information may be found on the [XSEDE Research Allocations page](https://portal.xsede.org/allocations/research){target=_blank}
 
 ### Instructions for requesting an extension
 
