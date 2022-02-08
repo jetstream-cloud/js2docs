@@ -34,10 +34,10 @@
 > Applications for startup allocations will only be accepted once. If you have modest needs that are equal or less than startup values, you may renew your startup allocation. If you need a larger allocation, it is best to apply for a [research allocation](https://portal.xsede.org/allocations/research){target=_blank}.
 
 > Maximum Startup/Campus Champion Allocation values for each resource are:
-> Jetstream2 CPU - 200,000 SUs
-> Jetstream2 Large Memory - 400,000 SUs
-> Jetstream2 GPU - 600,000 SUs
-> Jetstream2 Storage - 1TB default*
+> * Jetstream2 CPU - 200,000 SUs
+> * Jetstream2 Large Memory - 400,000 SUs
+> * Jetstream2 GPU - 600,000 SUs
+> * Jetstream2 Storage - 1TB default*
 >
 > * Storage limits may be larger than 1TB per allocation for a startup if well-justified.
 
