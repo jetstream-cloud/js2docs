@@ -132,6 +132,7 @@ nav:
         - Installing Clients on Linux: ui/cli/client_linux.md
       - Setting up openrc.sh: ui/cli/openrc.md
       - Using OpenStack command line:
+        - Managing SSH Keys: ui/cli/managing-ssh-keys.md
         - Setting up a Security Group: ui/cli/security_group.md
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/VM_launch.md
