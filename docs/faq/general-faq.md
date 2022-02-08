@@ -13,7 +13,7 @@ For specific FAQs, see the following pages:
 
 ### I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?
 
-We won't create custom flavors, but there are ways to get larger root disks. You can [review the flavors](../general/vmsizes.md) and see if moving up from one of the smaller VMs to a slightly larger one would yield a larger root disk. The other option is to use a custom sized root disk using what Openstack calls "boot from volume". What this means is that instead of an ephemeral boot disk for the instance, a volume is used to be the root disk.
+We won't create custom flavors, but there are ways to get larger root disks. You can [review the flavors](../general/vmsizes.md) and see if moving up from one of the smaller VMs to a slightly larger one would yield a larger root disk. The other option is to use a custom sized root disk using what Openstack calls "boot from volume", or a "volume-backed" instance. What this means is that instead of an ephemeral boot disk for the instance, a volume is used to be the root disk.
 
 There are several upsides to this:
 
@@ -25,7 +25,7 @@ The downside is that using boot from volume will count against your Jetstream2-S
 
 Instructions for using boot from volume are here:
 
-* Exosphere (link coming)
+* [Exosphere: Choose a Root Disk Size](../ui/exo/create_instance.md/#choose-a-root-disk-size)
 * Cacao (link coming)
 * Horizon (link coming)
 * CLI (link coming)
