@@ -54,4 +54,8 @@
 
 > How do I request additional resources such as CPUs and memory?
 
-> TBD
+> You may contact help@xsede.org or help@jetstream-cloud.org with those requests.
+
+> It's important to note that Jetstream Trial Allocation quotas are fixed and will **NOT** be increased under any circumstances.
+
+> For other allocation types, justification will be required and will be granted at the discretion of the Jetstream2 staff based on the justification and available resources. Please note that large memory and GPU resources are limited so requests for those will require strong justification for success or partial success. We strive to make resources available to all researchers that require them, so striking a balance between the needs of one versus many is often necessary.
