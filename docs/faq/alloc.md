@@ -54,7 +54,7 @@
 
 > How do I request additional resources such as CPUs and memory?
 
-> You may contact help@xsede.org or help@jetstream-cloud.org with those requests.
+> You may contact *help@xsede.org* or *help@jetstream-cloud.org* with those requests.
 
 > It's important to note that Jetstream Trial Allocation quotas are fixed and will **NOT** be increased under any circumstances.
 
