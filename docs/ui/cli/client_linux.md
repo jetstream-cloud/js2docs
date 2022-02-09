@@ -4,11 +4,11 @@ This will help you get the Openstack clients working on Linux using Python.
 
 | Task 	| Command 	|
 |---	|---	|
-| Optional Virtualenv creation 	| **Though not strictly necessary, we recommend using virtualenv to increase the stability of the openstack cli tools.** 	|
+| Optional Virtual environment creation 	| **Though not strictly necessary, we recommend using venv to increase the stability of the openstack cli tools.** 	|
 | Create a directory for the project (cd to your preferred directory first) 	| ```mkdir <project_name>``` 	|
 | Change to the project directory 	| ```cd <project_name>``` 	|
-| Install the VirtualEnvironment packages 	| ```sudo easy_install virtualenv``` 	|
-| Start the VirtualEnvironment software  	| ```virtualenv <project_name>``` 	|
+| Install the venv packages 	| ```sudo python3 -m pip install --user virtualenv``` 	|
+| Start the VirtualEnvironment software  	| ```python3 -m venv env <project_name>``` 	|
 | Activate the VirtualEnvironment for the project 	| ```source <project_name>/bin/activate``` 	|
 |  	|  	|
 | Note: *Python3 is required*	| This should already be installed by your operating system. <br>Openstack CLI clients MUST be installed with Python3's pip/pip3!<p>check your default Python version with: python --version 	|
