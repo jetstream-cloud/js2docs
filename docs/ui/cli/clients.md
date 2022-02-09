@@ -1,8 +1,8 @@
 # Installing Openstack Clients
 
-* [Mac specific steps](#Mac specific steps)
-* [Windows specific steps](#Windows specific steps)
-* [Common/Linux specific steps](#Common/Linux specific steps)
+* [Mac specific steps](#mac-specific-steps)
+* [Windows specific steps](#windows-specific-steps)
+* [Common/Linux specific steps](#commonlinux-steps)
 
 ### Mac specific steps
 
