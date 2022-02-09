@@ -8,7 +8,7 @@ While several formats are supported, we recommend using RSA format keys. At this
 
 ### Uploading an existing key
 
-If you have an existing SSH key, you can upload it to the Jetstream2 cloud *(note: key filenames may vary - this example assume id_rsa.pub)*:
+If you have an existing SSH key, you can upload it to the Jetstream2 cloud *(note: key filenames may vary - this example assumes id_rsa.pub)*:
 
 > *cd ~/.ssh*
 
