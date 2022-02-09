@@ -14,9 +14,9 @@ This will help you get the Openstack clients working on Mac OS X 10.11.x and hig
 
 Task 	| Command 	|
 |---	|---	|
-| If you haven’t installed Homebrew<br> on your system yet (this might take a few minutes):  | ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```  |
+| If you haven’t installed Homebrew on your system yet (this might take a few minutes):  | ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"```  |
 | Using brew we’re going to install Python 3: | ```brew install python```|
-| Now Python 3 is installed we can<br> install the OpenStack command line tools: | ```sudo pip3 install python-openstackclient``` |
+| Now Python 3 is installed we can install the OpenStack command line tools: | ```sudo pip3 install python-openstackclient``` |
 
 ### Windows specific steps
 
