@@ -127,9 +127,7 @@ nav:
       - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
-      - Installing Openstack Clients:
-        - Installing Clients on MacOS: ui/cli/clientOSX.md
-        - Installing Clients on Linux: ui/cli/client_linux.md
+      - Installing Openstack Clients: ui/cli/clients.md
       - Setting up openrc.sh: ui/cli/openrc.md
       - Using OpenStack command line:
         - Managing SSH Keys: ui/cli/managing-ssh-keys.md
