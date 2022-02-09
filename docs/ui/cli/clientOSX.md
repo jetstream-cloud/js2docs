@@ -1,29 +1,25 @@
 # Installing Clients on MacOS
 
-This will help you get the Openstack clients working on Mac OS X 10.11.x. It may work on recent older versions of Mac OS X but it has not been tested.
+This will help you get the Openstack clients working on Mac OS X 10.11.x and higher. It may work on recent older versions of Mac OS X but it has not been tested.
+
+*At this time, Python 3 is still not shipping on OS X. The latest Openstack clients require it.*
 
 ***Follow the instructions below at your own risk.***
 
-| Task 	| Command 	|
-|---	  |---	|
-| If it’s not already installed, install Xcode from the App Store. 	|  	|
-| Add these lines to .bash_profile 	|*# Set architecture flags*<br> <br>```export ARCHFLAGS="-arch x86_64"```<br><br> *# Ensure user-installed binaries take precedence*<br><br>```export PATH=/usr/local/bin:$PATH``` 	|
-| Run this command 	| ```source .bash_profile``` 	|
-| Verify that the Xcode required tools are installed and functional<br>(This command may require root access to run.) 	| ```xcode-select --install``` 	|
-| Set the permissions that Brew expects 	| ```sudo chflags norestricted /usr/local```<br> ```sudo chown $(whoami):admin /usr/local ```<br>``` sudo chown -R $(whoami):admin /usr/local``` 	|
-| Install Brew if not already installed 	| ```/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"``` 	|
-| If Brew is installed, update as needed. 	| ```brew update``` 	|
-| If prompted to agree to the Xcode license run: 	| ```xcodebuild -license``` 	|
-| Check the Brew install with this command.<br> If errors found doctor will provide instructions to fix them. 	| ```brew doctor``` 	|
-| Verify that Brew is up to date 	| ```brew update``` 	|
-| Install python 	| ```brew install python``` 	|
-| Fix the links 	| ```brew linkapps python``` 	|
+If you haven’t installed Homebrew on your system yet (this might take a few minutes):
 
+> */usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"*
 
+Using brew we’re going to install Python 3:
+
+> *brew install python*
+
+Now Python 3 is installed we can finally install the OpenStack command line tools:
+
+> *sudo pip3 install python-openstackclient*
 
 Though not strictly necessary, we recommend using virtualenv to increase the stability of the openstack cli tools.
 {: .note}
-
 
 | Task  | Command   |
 |---    |---    |
