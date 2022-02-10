@@ -45,6 +45,10 @@ code {color: blue; !important}
     color: blue !important;
 }
 
+.rst-content tt {
+    color: blue !important;
+}
+
 
 /* Ditch the bottom nav buttons - option in theme isn't working */
 /* .btn { display: none !important; }
