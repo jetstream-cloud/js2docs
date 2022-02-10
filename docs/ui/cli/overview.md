@@ -21,20 +21,19 @@ The first thing you'll need to do before being able to do any CLI commands is ha
 
 ##### Source the openrc:
 
-```source openrc-file-name```
+    source openrc-file-name
 
 You can also make the output look nicer in your terminal with the --fit-width option:
 
-```openstack image show Featured-Ubuntu20 --fit-width```
+    openstack image show Featured-Ubuntu20 --fit-width
 
 You can make that permanent by adding the following to your environment.
 
-```export CLIFF_FIT_WIDTH=1```
+    export CLIFF_FIT_WIDTH=1
 
-You then need to do the following steps in the order listed below.
+You'll then need to create a security group and network before launching your first VMs. More information may be found here:
 
- - [Create a security group]()
- - [Create a network]()
+ - [Create a security group](security_group.md)
+ - [Create a network](network.md)
  - [Create and launch a VM]()
- - [Instance management]()
- - [Clean up]()
+ - [Instance management](manage.md)
