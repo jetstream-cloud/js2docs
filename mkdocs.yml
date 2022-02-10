@@ -135,6 +135,7 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/VM_launch.md
         - Instance Management: ui/cli/manage.md
+        - Deleting Instances and Infrastructure: ui/cli/deleting.md
         - Storage Under the CLI: ui/cli/storage.md
         - CLI Troubleshooting: ui/cli/troubleshooting.md
   - General VM Operations:
