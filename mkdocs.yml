@@ -1,11 +1,9 @@
 site_name: 'Jetstream2 Documentation'
 site_url: https://docs.jetstream-cloud.org/
-site_description: "Jetstream 2 Documentation"
+site_description: "Jetstream2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
 copyright: Copyright © 2021 The Trustees of Indiana University
 site_favicon: 'images/Jetstream2_icon_64px.jpg'
-collapse_navigation: True
-#sticky_navigation: True
 
 theme:
   name: "readthedocs"
@@ -14,11 +12,12 @@ theme:
     #OLD gtag: G-3KNR9L6H6Y
     gtag: G-PQH32H51WS
   google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
-  prev_next_buttons_location: none
+  prev_next_buttons_location: both
+  # prev_next_buttons_location: none
   titles_only: True
   include_404: True
-  'collapse_navigation': True
-  #sticky_navigation: True
+  collapse_navigation: False
+  sticky_navigation: True
   #collapse_navigation: False
   #name: "windmill"
   #name: "material"
