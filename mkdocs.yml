@@ -28,6 +28,7 @@ theme:
   logo: 'images/jetstream-logo-white.svg'
   highlightjs: false
   style_external_links: True
+  'display_version': False
 
 extra_css:
     - 'css/custom.css'
