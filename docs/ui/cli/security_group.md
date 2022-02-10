@@ -10,7 +10,8 @@ To allow access to your VM for things like SSH, you will need to create a securi
 
 This will walk you through creating a basic security group on the command line and adding a couple of simple access rules.
 
-> *openstack security group create --description "ssh & icmp enabled" my-username-ssh-and-icmp-access*
+
+<p class="note">openstack security group create --description "ssh & icmp enabled" my-username-ssh-and-icmp-access<p>
 
 This creates the security group named *my-username-ssh-and-icmp-access* with the description noted above. It becomes the container for holding security group rules.
 
