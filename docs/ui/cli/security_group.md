@@ -27,6 +27,6 @@ You can then add additional rules or additional security groups. This will allow
 
 ---
 
-Please refer to the Openstack doc for more information: [Security Groups](https://docs.openstack.org/python-openstackclient/xena/cli/command-objects/security-group.html){target=_blank}
+Please refer to the Openstack docs for more information: [Security Groups](https://docs.openstack.org/python-openstackclient/xena/cli/command-objects/security-group.html){target=_blank}
 
 Also, as with all openstack CLI commands, you can type *openstack help item* to get more information on the options and syntax.
