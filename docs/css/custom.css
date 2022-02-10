@@ -39,7 +39,12 @@ div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
 .wy-nav-content { max-width: 1200px !important; }
 
 /* style code blocks */
-code {color: blue;}
+code {color: blue; !important}
+
+.rst-content code {
+    color: blue !important;
+}
+
 
 /* Ditch the bottom nav buttons - option in theme isn't working */
 /* .btn { display: none !important; }
