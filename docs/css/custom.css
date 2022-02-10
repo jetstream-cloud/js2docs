@@ -49,6 +49,7 @@ code {color: blue; !important}
     color: blue !important;
 }
 
+.rst-versions.rst-badge { display: none !important; }
 
 /* Ditch the bottom nav buttons - option in theme isn't working */
 /* .btn { display: none !important; }
