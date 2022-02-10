@@ -11,15 +11,15 @@ To allow access to your VM for things like SSH, you will need to create a securi
 This will walk you through creating a basic security group on the command line and adding a couple of simple access rules.
 
 
-<p class="note">openstack security group create --description "ssh & icmp enabled" my-username-ssh-and-icmp-access<p>
+    openstack security group create --description "ssh & icmp enabled" my-username-ssh-and-icmp-access
 
 This creates the security group named *my-username-ssh-and-icmp-access* with the description noted above. It becomes the container for holding security group rules.
 
-> *openstack security group rule create --protocol tcp --dst-port 22:22 --remote-ip 0.0.0.0/0 my-username-ssh-and-icmp-access*
+    openstack security group rule create --protocol tcp --dst-port 22:22 --remote-ip 0.0.0.0/0 my-username-ssh-and-icmp-access
 
 This creates an SSH access rule, allowing inbound TCP protocol to port 22 from any IP number.
 
-> *openstack security group rule create --protocol icmp my-username-ssh-and-icmp-access*
+    openstack security group rule create --protocol icmp my-username-ssh-and-icmp-access
 
 This creates an ICMP (most notably ping) access rule, allowing inbound ICMP protocol from any IP number.
 
