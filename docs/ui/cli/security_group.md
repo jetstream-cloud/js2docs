@@ -23,7 +23,11 @@ This creates an SSH access rule, allowing inbound TCP protocol to port 22 from a
 
 This creates an ICMP (most notably ping) access rule, allowing inbound ICMP protocol from any IP number.
 
-You can then add additional rules or additional security groups. This will allow the most basic of access to your VMs. **We do recommend limiting access as much as possible for best security practices.**
+You can then add additional rules or additional security groups. This will allow the most basic of access to your VMs.
+
+**We do recommend limiting access as much as possible for best security practices.**
+{: .note}
+
 
 ---
 

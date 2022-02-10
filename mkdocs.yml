@@ -12,7 +12,7 @@ theme:
     #OLD gtag: G-3KNR9L6H6Y
     gtag: G-PQH32H51WS
   google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
-  prev_next_buttons_location: both
+  prev_next_buttons_location: bottom
   # prev_next_buttons_location: none
   titles_only: True
   include_404: True
@@ -135,7 +135,7 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/VM_launch.md
         - Instance Management: ui/cli/manage.md
-        - Deleting Instances and Infrastructure: ui/cli/deleting.md
+        - Deleting Infrastructure in the CLI: ui/cli/deleting.md
         - Storage Under the CLI: ui/cli/storage.md
         - CLI Troubleshooting: ui/cli/troubleshooting.md
   - General VM Operations:
