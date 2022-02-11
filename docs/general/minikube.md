@@ -23,6 +23,7 @@ Minikube allows you to run a Kubernetes cluster locally.
         minikube start
 
 4. You can check your kubectl installation running the following command:
+
         kubectl get pods --all-namespaces
        
    This should list all the kube-system pods currently running on the machine. 
@@ -37,26 +38,27 @@ Minikube allows you to run a Kubernetes cluster locally.
 
 7. Start Dashboard
         
-       To view your minikube dashboard, run the following command. 
+ To view your minikube dashboard, run the following command. 
 
-       minikube dashboard -- url &
+        minikube dashboard --url &
 
-       This might throw an error depending on what's installed on your machine. To access your dashboard you need to run Kubeproxy. 
+This might throw an error depending on what's installed on your machine. To access your dashboard you need to run Kubeproxy. 
 
 
 8.  Kubeproxy
-       kubectl proxy --address=0.0.0.0 --accept-hosts='.*'
 
+        kubectl proxy --address=0.0.0.0 --accept-hosts='.*'
 
 9. View Minikube Dashboard
       
-      To view your minikube dashboard from your web browser, run the following command: 
+To view your minikube dashboard from your web browser, run the following command: 
         
         http://{host_ip}:8001/api/v1/namespaces/kubernetes-dashboard/services/http:kubernetes-dashboard:/proxy/
-         (Replace host_ip with the ip address of your VM) 
+         
+        (Replace host_ip with the ip address of your VM) 
 
 10. Delete Cluster
 
-       minikube delete
+        minikube delete
 
    
