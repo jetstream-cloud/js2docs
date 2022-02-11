@@ -40,7 +40,7 @@ The first will create a 2048 bit RSA cryptography key with the comment you speci
 
 You may also leave off the -f file option and ssh-keygen will prompt you for the filename.
 
-Source your openrc if you haven't already! Refer to [creating an openrc](openrc.md){target=_blank} if you still need to create an openrc file for Jetstream2. We're assuming it is *openrc.sh* for this example.
+Source your openrc if you haven't already! Refer to [creating an openrc](openrc.md){target=_blank} if you still need to create an openrc file for Jetstream2. We're assuming it is *openrc.sh* for this example and assuming *id_rsa.pub* is your public key's filename.
 
     source openrc.sh
 
