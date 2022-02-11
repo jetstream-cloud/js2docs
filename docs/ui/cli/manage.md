@@ -33,7 +33,7 @@ Note that state is not retained and that resources are still reserved on the com
 
 ### Suspending and resuming
 
-Another option for conserving *some* SUs is suspending your instance. Suspending is similar to closing the lid on your laptop. We generally do not recommend using suspend, but if you opt to use it, we would recommend only using it when you want to conserve some SUs but plan to come back to work with your VM soon.
+Another option for conserving *some* SUs is suspending your instance. Suspending is similar to closing the lid on your laptop. We generally do not recommend using suspend, but if you opt to use it, we would recommend only using it when you want to conserve some SUs but plan to come back to work with your VM very soon.
 
     openstack server suspend my-server-name-or-UUID
 
@@ -45,7 +45,7 @@ Note that resources are still reserved on the compute host for when you decide r
 
 ### Shelving and unshelving
 
-The last management option is shelving. This shuts down the instance down and moves to storage. Memory state is not maintained. Contents of your root disk is maintained. This is the most economical state for an unused VM as there are no SU charges for shelved VMs since it removes the VM from the hypervisor entirely. We recommend using shelving when you are done with a VM for multiple days or weeks.
+The last management option is shelving. This shuts down the instance down and moves to storage. Memory state is not maintained. Contents of your root disk are maintained. This is the most economical state for an unused VM as there are no SU charges for shelved VMs since it removes the VM from the hypervisor entirely. We recommend using shelving when you are done with a VM for multiple days or weeks.
 
     openstack server shelve my-server-name-or-UUID
 
