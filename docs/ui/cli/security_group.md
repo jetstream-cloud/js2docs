@@ -5,13 +5,14 @@ Security groups can be thought of like firewalls. They ultimately control inboun
 To allow access to your VM for things like SSH, you will need to create a security group and add rules to it.
 
 > *You can reuse a security group many times, so a best practice is to create groups by related services. For insance, you might create a basic group for ssh and icmp (which is what we will show as an example) and then a separate security group for http and https access if you're running a web service on your instance.*
+{: .note}
 
 #### Create a security group that will enable inbound ping & SSH:
 
 This will walk you through creating a basic security group on the command line and adding a couple of simple access rules.
 
 
-    openstack security group create --description "ssh & icmp enabled" my-username-ssh-and-icmp-access
+    openstack security group create --description "ssh and icmp enabled" my-username-ssh-and-icmp-access
 
 This creates the security group named *my-username-ssh-and-icmp-access* with the description noted above. It becomes the container for holding security group rules.
 

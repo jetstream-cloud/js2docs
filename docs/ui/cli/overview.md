@@ -4,7 +4,8 @@ There are many options and tools for using the OpenStack API from the command li
 
 <span style="color:darkred">***Note:***</span> There is also an API tutorial that the Jetstream team uses here:[ Jetstream API Tutorial](https://github.com/jlf599/JetstreamAPITutorial) - this tutorial goes into greater detail on some topics and may be of value to those learning the Openstack CLI.
 
-*Please note that the tutorial above presently reflects using the API on Jetstream1. It will be updated soon for Jetstream2*
+> _Please note that the tutorial above presently reflects using the API on Jetstream1. It will be updated soon for Jetstream2_
+{: .note}
 
 ### Important Notes
 
