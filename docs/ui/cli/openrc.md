@@ -58,7 +58,7 @@ Each allocation you wish to use from the command line will need its own applicat
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>When you hit "Create Application Credential" it will then generate the credential and bring up a confirmation box. Please make sure to save the credential ID and secret if you need them for things other than the openrc. <p><p>To get the openrc for CLI access, please click the "Download openrc file" button referenced by the red arrow in the screenshot. That will download a plain text file for use with the Openstack CLI client</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>When you hit "Create Application Credential" it will then generate the credential and bring up a confirmation box. Please make sure to save the credential ID and secret if you need them for things other than the openrc. <p><p>To get the openrc for CLI access, please click the "Download openrc file" button referenced by the red arrow in the screenshot. That will download a plain text file for use with the Openstack CLI client <p><p>We recommend giving your new openrc file a descriptive name (e.g. openrc-TG-TRA111111.sh, using the XSEDE project name or some other meaningful description.)</td>
     <td><a href="../../../images/JS2-Created-App-Cred.png" target=_blank><img src="../../../images/JS2-Created-App-Cred.png"></a>
     </td>
   </tr>
