@@ -133,7 +133,7 @@ nav:
         - Managing SSH Keys: ui/cli/managing-ssh-keys.md
         - Setting up a Security Group: ui/cli/security_group.md
         - Setting up a Network: ui/cli/network.md
-        - Launching a Virtual Machine: ui/cli/VM_launch.md
+        - Launching a Virtual Machine: ui/cli/launch.md
         - Instance Management: ui/cli/manage.md
         - Deleting Infrastructure in the CLI: ui/cli/deleting.md
         - Storage Under the CLI: ui/cli/storage.md

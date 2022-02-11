@@ -17,14 +17,20 @@ There are a very limited number of IPs available. Please return any you are not 
 
 | Clean up other entities     | Openstack Command |
 | ---- | ---- |
-| Deleting network infrastructure   |   |
+|   |   |
+| **Deleting network infrastructure**     | |
+|   |   |
 | Disconnect the router from the gateway        | ```openstack router unset --external-gateway my-router-name```     |
 | Delete the subnet from the router     | ```openstack router remove subnet my-router-name my-subnet-name```     |
 | Delete the router     | ```openstack router delete my-router-name```       |
 | Delete the subnet   |  ```openstack subnet delete my-subnet-name```  |
 | Delete the network   |  ```openstack network delete my-network-name```  |
-| Deleting security infrastructure   |   |
+|   |   |
+| **Deleting security infrastructure**   |   |
+|   |   |
 | Delete a security group rule   |  ```openstack security group delete secgroup-rule-name``` |
 | Delete a security group   |  ```openstack security group delete secgroup-name``` |
+|   |   |
+| **Deleting other items**   |   |
 |   |   |
 | Deleting a keypair   | ```openstack keypair delete my-keypair-name```  |

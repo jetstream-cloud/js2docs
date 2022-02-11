@@ -8,14 +8,14 @@ There are many options and tools for using the OpenStack API from the command li
 
 ### Important Notes
 
- * You should be running the latest version of the clients.  We recommend using python-openstack >= 5.0 as it uses Python3 and removes the dependencies on the now deprecated Python2.
- * It is possible to create entities with the same name; e.g. you could create two networks with the same name; however, they will have different UUIDs.  When this occurs you may get a cryptic error message about that entity may not exist or some other baffling error.  In this case, you must address the entity by its UUID.
- * In the examples below we often use ${OS_USERNAME}-api-whatnot to name an entity.  We do this so that a first time user could more or less cut and paste the example and create a working instance that is unique to you and to distinguish from other users in your project.
- * It is important to understand that everything is owned by the project.  Other users in your project can see and manipulate entities that you have created. Be careful in your naming and pay attention to the things you are manipulating.
+ * It is possible to create entities with the same name; e.g. you could create two networks with the same name; however, they will have different ***Universally Unique Indentifiers*** (UUIDs).  When this occurs you may get a cryptic error message about that entity may not exist or that there are multiple entities with that name.  In this case, you must address the entity by its UUID.
+ * It is important to understand that everything is owned by the project.  Other users in your project can see and manipulate entities that you have created. *Be careful in your naming and pay attention to the things you are manipulating.*
 
 ### Getting Started
 
-The first thing you'll need to do before being able to do any CLI commands is have an appropriate *openrc* file.
+You should be running the latest version of the clients.  We recommend using python-openstack >= 5.0 as it uses Python3 and removes the dependencies on the now deprecated Python2. See [Installing Openstack Clients](clients.md) for more information.
+
+The next thing you'll need to do before being able to do any CLI commands is have an appropriate *openrc* file.
 
 <span style="color:red">Please note that openrc files on Jetstream2 require *application credentials*. Please refer to the [Jetstream2 Openrc File](openrc.md) page for information on generating an application credential and openrc file.
 
@@ -35,5 +35,5 @@ You'll then need to create a security group and network before launching your fi
 
  - [Create a security group](security_group.md)
  - [Create a network](network.md)
- - [Create and launch a VM]()
+ - [Create and launch a VM](launch.md)
  - [Instance management](manage.md)
