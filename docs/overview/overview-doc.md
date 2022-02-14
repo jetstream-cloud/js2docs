@@ -10,7 +10,7 @@ Jetstream features multiple user interfaces, including the following _**web-base
 - [Exosphere](../ui/exo/exo.md)
 - [Horizon](../ui/horizon/intro.md)
 
-as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/cli.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank})
+as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/overview.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank})
 
 The operational software environment is based on [OpenStack](https://www.openstack.org/){target=_blank}.
 

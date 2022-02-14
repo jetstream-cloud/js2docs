@@ -16,7 +16,7 @@ The Jetstream2 primary cloud configuation features:
 
 #### Persistent IPs:
 
-A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](../ui/exo/exo.md) and [Cacao](../ui/atmo/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/intro.md) and the Jetstream2 [CLI](../ui/cli/cli.md) require you to explicitly release the IP address.
+A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](../ui/exo/exo.md) and [Cacao](../ui/atmo/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/intro.md) and the Jetstream2 [CLI](../ui/cli/overview.md) require you to explicitly release the IP address.
 
 We do ask that you release any unused IPs back to the public pool. There are a finite number of IPs available and allocations hoarding them may inadvertently cause issues for other Jetstream2 researchers.
 

@@ -1,6 +1,6 @@
 #Jetstream2 Early Operations FAQ
 
-*Early operations has started on Jetstream2! Official start date is February 9, 2022. We will continue early operations until acceptance is complete by the National Science Foundation. We will post more complete timelines as we will post them here and all official announcements will be made via [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank}.
+**Early operations has started on Jetstream2! Official start date is February 9, 2022. We will continue early operations until acceptance is complete by the National Science Foundation. We will post more complete timelines as we will post them here and all official announcements will be made via** [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank}.
 {: .note}
 
   **1. When will Jetstream2 be available for XSEDE research allocations?**

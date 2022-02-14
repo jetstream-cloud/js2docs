@@ -1,6 +1,6 @@
 # Jetstream2 Startup Allocations
 
-Jetstream2 startup allocations are meant to be used for exploring the Jetstream2 system for research or research infrastructure purposes. They are not intended for teaching purposes. Please apply for an education allocation using the instructions [here](../education.md) for any course, tutorial, or workshop needs.
+Jetstream2 startup allocations are meant to be used for exploring the Jetstream2 system for research or research infrastructure purposes. They are not intended for teaching purposes. Please apply for an education allocation using the instructions [here](education.md) for any course, tutorial, or workshop needs.
 
 You'll need a copy of your CV, abstract, and description of your intended research in PDF format.
 
