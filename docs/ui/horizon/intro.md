@@ -38,7 +38,7 @@ That said, there are times you may need the more complete features of Horizon in
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>As application credentials are unique to each allocation, if you are on multiple XSEDE allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "XSEDE * TG-XXXXXXXXX * IU". That will show allocations under "Projects".</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>If you are on multiple XSEDE allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "XSEDE * TG-XXXXXXXXX * IU". That will show allocations under "Projects".</td>
     <td><a href="../../../images/JS2-Horizon-Change-Projects.png" target=_blank><img src="../../../images/JS2-Horizon-Change-Projects.png"></a>
     </td>
   </tr>
