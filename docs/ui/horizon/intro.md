@@ -50,6 +50,6 @@ That said, there are times you may need the more complete features of Horizon in
 * [Creating networks](network.md)
 * [Launching an instance](launch.md)
 * [Managing instances](manage.md)
-* [Using volumes](volumes.md)
+* [Using volumes](storage.md)
 * [Using Manila shares](manila.md)
 * [Troubleshooting in Horizon](troubleshooting,md)
