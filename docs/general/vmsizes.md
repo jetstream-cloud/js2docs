@@ -6,16 +6,16 @@ Jetstream2 can be used in several different virtual machine (VM) sizes which are
 
 ### Jetstream2 CPU
 
-| VM Size  | vCPUs | RAM (GB) | Local Storage (GB) | SU cost per hour |
-|:-------- |:-----:|:--------:|:------------------:|:----------------:|
-| m3.tiny  | 1 |  3 | 20  | 1  |
-| m3.small | 2 |  6 | 20 | 2  |
-| m3.quad  | 4 | 15 | 20 | 4  |
-| m3.medium | 8 | 30 | 60 | 8  |
-| m3.large | 16 | 60 | 60 | 16 |
-| m3.xl    | 32 | 125 | 60 | 32 |
-| m3.2xl    | 64 | 250 | 60 | 64 |
-| m3.3xl*    | 128 | 500 | 60 | 128  |
+| VM Size   | vCPUs | RAM (GB) | Local Storage (GB) | SU cost per hour |
+|:----------|:-----:|:--------:|:------------------:|:----------------:|
+| m3.tiny   |   1   |    3     |         20         |        1         |
+| m3.small  |   2   |    6     |         20         |        2         |
+| m3.quad   |   4   |    15    |         20         |        4         |
+| m3.medium |   8   |    30    |         60         |        8         |
+| m3.large  |  16   |    60    |         60         |        16        |
+| m3.xl     |  32   |   125    |         60         |        32        |
+| m3.2xl    |  64   |   250    |         60         |        64        |
+| m3.3xl*   |  128  |   500    |         60         |       128        |
 
 \* *m3.3xl will not be available by default. It will only be available by request and with proper justification*
 
@@ -24,9 +24,9 @@ Jetstream2 can be used in several different virtual machine (VM) sizes which are
 Jetstream2 Large Memory nodes charge 2 SUs per vCPU hour or 2 SUs per core per hour.
 
 | VM Size  | vCPUs | RAM (GB) | Local Storage (GB) | SU cost per hour |
-|:-------- |:-----:|:--------:|:------------------:|:----------------:|
-| r3.large | 64  |  500  | 60  | 128  |
-| r3.xl    | 128 |  1000 | 60  | 256  |
+|:---------|:-----:|:--------:|:------------------:|:----------------:|
+| r3.large |  64   |   500    |         60         |       128        |
+| r3.xl    |  128  |   1000   |         60         |       256        |
 
 ### Jetstream2 GPU
 
@@ -34,12 +34,12 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 
 *7 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU*
 
-| VM Size  | vCPUs | RAM(GB) | Local Storage (GB) | GPU Slices/GPU Ram | SU cost / hour |
-|:-------- |:-----:|:--------:|:------------------:|:--------------------:|:----------------:|
-| g3.small  | 4  |  15  | 120  | 1 slice / 5gb RAM | 16  |
-| g3.medium | 8  |  30  | 120  | 2 slices / 10gb RAM | 32  |
-| g3.large  | 16 |  60  | 120  | 3 slices / 20gb RAM | 64  |
-| g3.xl     | 32 |  125 | 120  | 7 slices / 40gb RAM | 128 |
+| VM Size   | vCPUs | RAM(GB) | Local Storage (GB) | GPU Slices/GPU Ram  | SU cost / hour |
+|:----------|:-----:|:-------:|:------------------:|:-------------------:|:--------------:|
+| g3.small  |   4   |   15    |         60         |  1 slice / 5gb RAM  |       16       |
+| g3.medium |   8   |   30    |         60         | 2 slices / 10gb RAM |       32       |
+| g3.large  |  16   |   60    |         60         | 3 slices / 20gb RAM |       64       |
+| g3.xl     |  32   |   125   |         60         | 7 slices / 40gb RAM |      128       |
 
 
 **This flavor information may be subject to changes in the future.**
