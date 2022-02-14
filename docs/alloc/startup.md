@@ -32,7 +32,7 @@ You'll first need to create an XSEDE Portal Account if you do not already have o
 3. Select your [resources](../general/resources.md) - you can have any combination of Jetstream2 CPU, Jetstream2 Large Memory, and Jetstream2 GPU - but you must justify Large Memory or GPU requests specifically
 
 * Select the appropriate resources(s) from the list.
-    * Enter the number of SUs you'll need. The [Virtual Machine Sizes and Configurations page](../general/vmsizes.md) can help you figure VM sizes needed. See the section below for a walkthrough of creating your resource justification.
+    * Enter the number of SUs you'll need. The [Virtual Machine Sizes and Configurations page](../general/vmsizes.md) can help you figure VM sizes needed.
     * Fill in number of Virtual Machines needed (this is an estimate for planning purposes – there's no wrong answer – try to best guess at how many instances you'll run at one time)
     * Fill in number of public IP addresses needed (same as above)
 * If you need additional storage beyond the VM's root disks, select "Jetstream2 Storage".

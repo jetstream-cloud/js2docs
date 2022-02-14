@@ -13,6 +13,8 @@ For specific FAQs, see the following pages:
 
 ### I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?
 
+In OpenStack, flavors define the compute, memory, and storage capacity of instances. We may also refer to it in support tickets or documentation as the VM's size. 
+
 We won't create custom flavors, but there are ways to get larger root disks. You can [review the flavors](../general/vmsizes.md) and see if moving up from one of the smaller VMs to a slightly larger one would yield a larger root disk. The other option is to use a custom sized root disk using what Openstack calls "boot from volume", or a "volume-backed" instance. What this means is that instead of an ephemeral boot disk for the instance, a volume is used to be the root disk.
 
 There are several upsides to this:

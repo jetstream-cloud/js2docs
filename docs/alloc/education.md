@@ -2,7 +2,7 @@
 
 Jetstream2 education allocations are meant to be used for teaching courses, workshops, or tutorials. They are not intended for research.
 
-You'll need a copy of your CV, the course syllabus, and a resource justification. The latter is basically figuring the size of the VM your students will need, the number of weeks they'll need it, and the number of students. An example of the resource selection is below.
+You'll need a copy of your CV, the course syllabus, and a resource justification in PDF format. The latter is basically figuring the size of the VM your students will need, the number of weeks they'll need it, and the number of students. An example of the resource selection is below.
 
 You'll first need to create an XSEDE Portal Account if you do not already have one:
 
