@@ -122,8 +122,11 @@ nav:
     - Horizon:
       - Overview: ui/horizon/intro.md
       - Security Group Management: ui/horizon/security_group.md
+      - Networks in Horizon: ui/horizon/network.md
+      - Launching Instances: ui/horizon/launch.md
       - Instance Management: ui/horizon/manage.md
-      - Storage Under Horizon: ui/horizon/storage.md
+      - Volumes Under Horizon: ui/horizon/volumes.md
+      - Manila Shares in Horizon: ui/horizon/manila.md
       - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
