@@ -26,14 +26,7 @@ The Jetstream administration team reserves the right to release any IP addresses
 
 In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the instutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service ports (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way. Whether they are open by default will be dependent on which user interface you're launching your VM with.
 
-Each user interface of Jetstream2 will have specific security information:
-
-* <span style="color:red">Atmo2 security overview (coming soon!)</span>
-* <span style="color:red">Exosphere security overview (coming soon!)</span>
-* <span style="color:red">Horizon security overview (coming soon!)</span>
-* [CLI security overview](../ui/cli/security_group.md)
-
-Please refer to the [Security FAQ](../faq/security.md) for additional information.
+Please refer to the [Security FAQ](../faq/security.md#what-is-the-default-security-profile-for-jetstream2-vms) for additional information.
 
 -----
 

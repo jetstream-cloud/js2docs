@@ -1,6 +1,8 @@
 #Virtual Machine Sizes and Configurations
 
-Jetstream2 can be used in several different virtual machine (VM) sizes which are charged in service units (SUs) based on how much of the total system resource is used. The basic unit of VM allocation for Jetstream is based on a virtual CPU (vCPU) hour: 1 service unit (SU) is equivalent to 1 vCPU for 1 hour of wall clock time. A standard ‘Tiny’ VM instance consists of 1 vCPU, 3 GB of RAM, and 8 GB of storage. This corresponds closely to a ‘t2.small’ instance in Amazon Web Services. The majority of storage within an instance is available for user data but will vary based on the VM image selected.  The table below outlines the VM sizes created for Jetstream2.
+Jetstream2 can be used in several different virtual machine (VM) sizes which are charged in service units (SUs) based on how much of the total system resource is used.
+
+The basic unit of VM allocation for Jetstream is based on a virtual CPU (vCPU) hour: *1 service unit (SU) is equivalent to 1 vCPU for 1 hour of wall clock time*. The table below outlines the VM sizes created for Jetstream2.
 
 *Please note that these are all separate resources. Jetstream2 CPU is the default resource. To use Large Memory or GPU resources, you must have an allocation for those resources.*
 {: .note}

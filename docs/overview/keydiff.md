@@ -12,7 +12,7 @@ Allocations will only be awarded on the primary cloud by default.
 
 ### Hardware
 
-Jetstream2 will also bring [multiple classes of research computing hardware](config.md){target=_blank}. Jetstream2 will still have hundreds of CPU-based compute nodes for general purpose virtual machines/computing. Jetstream2 will also feature a small number of large memory nodes with up to 1 terabyte of RAM. Jetstream2 will also make available 90 nodes of GPU-enabled nodes with four [NVIDIA A100 GPUs](https://www.nvidia.com/en-us/data-center/a100/){target=_blank}. These will be subdivided using [NVIDIA Multi-Instance GPU (MIG)](https://www.nvidia.com/en-us/technologies/multi-instance-gpu/){target=_blank} to allow Jetstream2 allocations to utilize from 1/8th of a GPU to an entire GPU in their instances to allow everything from educational use requiring a minimal amount of GPU processing power to a full GPU for research workloads.
+Jetstream2 will also bring [multiple classes of research computing hardware](config.md){target=_blank}. Jetstream2 will still have hundreds of CPU-based compute nodes for general purpose virtual machines/computing. Jetstream2 will also feature a small number of large memory nodes with up to 1 terabyte of RAM. Jetstream2 will also make available 90 nodes of GPU-enabled nodes with four [NVIDIA A100 GPUs](https://www.nvidia.com/en-us/data-center/a100/){target=_blank}. These will be subdivided using [NVIDIA virtual GPU (vGPU)](https://www.nvidia.com/en-us/data-center/virtual-solutions/){target=_blank} to allow Jetstream2 allocations to utilize from 1/8th of a GPU to an entire GPU in their instances to allow everything from educational use requiring a minimal amount of GPU processing power to a full GPU for research workloads.
 
 ### Interfaces
 

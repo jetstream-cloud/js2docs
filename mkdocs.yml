@@ -87,6 +87,7 @@ nav:
       - Acceptable Usage Policies: general/policies.md
       - Export Control Guidance: general/export.md
       - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
+      - Best Practices: general/bestpractice.md
     - Microsoft Windows on Jetstream2: general/windows.md
   - Allocations:
     - Allocations Overview: alloc/overview.md

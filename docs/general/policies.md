@@ -33,15 +33,6 @@ Jetstream2 requires compliance with all XSEDE and Indiana University policies, i
 
 * * *
 
-### Best Practices for Jetstream2
-
-
-- Include update policies and tools and such
-- GPU 2-week policy
-- Other things **COME BACK AND FILL THIS IN**
-
-* * *
-
 ### Jetstream2 and General Research Policies
 
 In general, fundamental, publishable research is permitted on Jetstream2 from any non-EAR sanctioned countries. Fundamental research is defined as:

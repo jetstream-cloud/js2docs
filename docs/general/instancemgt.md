@@ -2,7 +2,7 @@
 
 Please orient yourself to the following instance management actions. These will help you use Jetstream2 effectively and conserve your allocation.
 
-Each user interface for Jetstream2 has instance actions in a slightly different place -- see guidance for [Exosphere](../ui/exo/manage.md), [Atmosphere2](../ui/atmo/manage.md), [Horizon](../ui/horizon/manage.md), and the [OpenStack CLI](../ui/cli/manage.md).
+Each user interface for Jetstream2 has instance actions in a slightly different place -- see guidance for [Exosphere](../ui/exo/manage.md), [Cacao](../ui/atmo/manage.md), [Horizon](../ui/horizon/manage.md), and the [OpenStack CLI](../ui/cli/manage.md).
 
 ## Basic Actions
 
@@ -36,7 +36,7 @@ The following actions are for more sophisticated use cases. If you're a new clou
 
 ### Resize
 
-**Note: this feature is not implemented in Exosphere yet -- coming soon. Until then, you can resize using Horizon.**
+**Note: this feature is not implemented in all interfaces yet. Presently, you can resize using Horizon or the CLI.**
 
 Resizing allows you to choose a different flavor (a.k.a. size) for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
 

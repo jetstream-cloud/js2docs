@@ -1,10 +1,12 @@
 #XSEDE Service Units and Jetstream2
 
-Jetstream2 allocations are measured in XSEDE Service Units (SUs). On Jetstream2 (CPU), SUs are consumed at a rate of 1 SU per vCPU_core-hour (use of one virtual core of a CPU per hour).
+Jetstream2 allocations are measured in XSEDE Service Units (SUs).
 
-Jetstream2-LM (Large Memory) SUs are consumed at a rate of 2 SUs per vCPU_core-hour (use of one virtual core of a CPU per hour).
+SUs are consumed at a rate of:
 
-Jetstream2-GPU SUs are consumed at a rate of 4 SUs per vCPU_core-hour (use of one virtual core of a CPU per hour).
+*   Jetstream2 (CPU) - 1 SU per vCPU_core-hour (use of one virtual core of a CPU per hour).
+*   Jetstream2-LM (Large Memory) - 2 SUs per vCPU_core-hour
+*   Jetstream2-GPU - 4 SUs per vCPU_core-hour
 
 Please refer to [VM Sizes and configurations](../general/vmsizes.md){target=_blank} to see available VM flavors and per hour cost on Jetstream2.
 
