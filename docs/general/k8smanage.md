@@ -5,7 +5,7 @@ To manage applications with Kubernetes we use the `apply` command. This command 
 Using the Kubernetes CLI, (Kubectl), we can create objects such as Pods, Deployments. etc. by providing a yaml file for that object. 
  
 
-## PODS
+### Pods
 
 A Pod represents a single instance of an app running in the cluster. 
 
@@ -38,7 +38,7 @@ command line:
 
     kubectl run nginx-deployment --image=nginx --port=80
 
-## REPLICASET
+### ReplicaSet
 
 ReplicaSet adds or deletes pods as needed. 
 Creating replicas of a pod scales an application horizontally. Replicas are usually created as part of a deployment. 
@@ -65,7 +65,7 @@ command line:
     kubectl scale --replicas=2 deployment nginx-deployment
 
 
-## DEPLOYMENT
+### Deployment
 
 Deployment is an object that can provide updates to both pods and ReplicaSets. 
 Deployment object allows you to do rolling updates of a pod, ReplicaSet object does not. A rolling update scales up the new version to the appropriate number of replicas and scales down the old version to zero. 
@@ -93,7 +93,7 @@ command line:
     kubectl create deployment nginx-deployment --image=nginx
 
 
-## SERVICE
+### Service
 
 Service enables network access from either within the cluster or between external processes. 
 
@@ -120,7 +120,7 @@ command line:
        kubectl create service nodeport nginx-deployment --tcp=80:80
 
 
-## AUTOSCALING
+### Autoscaling
 
 A Horizontal Pod Autoscaler (HPA) allows you to scale up or down depending on traffic. 
 This can be configured by specifying the CPU or memory states. 
