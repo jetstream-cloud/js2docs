@@ -3,7 +3,7 @@
 
 Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications. 
 
-More information on Kubernetes here: [Kubernetes] (https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
+More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/)
 
 Some K8s basics :  
 
@@ -22,3 +22,9 @@ Some K8s basics :
     * The ***Scheduler*** assigns pods to nodes. 
 
 
+### Other Kubernetes topics
+
+[Building a Kubernetes Cluster](https://docs.jetstream-cloud.org/general/k8scluster/)  
+[Managing applications with Kubernetes](https://docs.jetstream-cloud.org/general/k8smanage/)  
+[Persistent Volumes in Kubernetes](https://docs.jetstream-cloud.org/general/k8svolumes/)  
+[Minikube](https://docs.jetstream-cloud.org/general/minikube/)  

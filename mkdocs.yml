@@ -119,6 +119,7 @@ nav:
       - Creating an Instance: ui/exo/create_instance.md
       - Instance Management: ui/exo/manage.md
       - Storage Under Exosphere: ui/exo/storage.md
+      - Push-button clusters: ui/exo/push-button-cluster.md
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
       - Overview: ui/horizon/intro.md
