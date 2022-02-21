@@ -14,7 +14,7 @@ Shelving an instance shuts down its operating system. The instance's disk conten
 
 Shelving and unshelving each take a few minutes, so shelving doesn't make sense for very short periods of inactivity. In other words, shelve your instance when you're done for the day or the week, not merely for your lunch break.
 
-A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest size that will work for your server needs. This will conserve SUs on your allocation.
+A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest flavor that will work for your server needs. This will conserve SUs on your allocation.
 
 ### Lock and Unlock
 
@@ -38,7 +38,7 @@ The following actions are for more sophisticated use cases. If you're a new clou
 
 **Note: this feature is not implemented in all interfaces yet. Presently, you can resize using Horizon or the CLI.**
 
-Resizing allows you to choose a different flavor (a.k.a. size) for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
+Resizing allows you to choose a different flavor for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
 
 Consider resizing if you find yourself in one of these situations:
 
@@ -50,7 +50,7 @@ Consider resizing if you find yourself in one of these situations:
 
 If your software stack sometimes needs a large flavor to run a compute-intensive job, but you can develop and tune it on a smaller flavor, consider resizing _down_ to a small flavor for development work, and back _up_ when you're ready to run it at a larger scale. This get you best performance when you need it, while conserving your allocation when you don't.
 
-Moving to a larger size is generally **not** appropriate in these situations:
+Moving to a larger flavor is generally **not** appropriate in these situations:
 
 - The speed of your workload is limited by a process that is single-threaded (not parallelized). If this process cannot be parallelized then resizing is unlikely to speed it up.
 - The speed of your workload is limited by disk or network transfer speed. Larger instances do not have faster storage or network connectivity.
