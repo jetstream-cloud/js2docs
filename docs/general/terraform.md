@@ -20,6 +20,7 @@ If you are unfamiliar with git, the documentation is located here [git-scm](http
 
 # Running Terraform
 Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](https://docs.jetstream-cloud.org/ui/cli/openrc/)
+Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](../ui/cli/openrc)
 
 ## Basic Operations
 
