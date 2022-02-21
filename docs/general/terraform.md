@@ -19,7 +19,6 @@ If you are unfamiliar with git, the documentation is located here [git-scm](http
 
 
 # Running Terraform
-Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](https://docs.jetstream-cloud.org/ui/cli/openrc/)
 Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](../ui/cli/openrc)
 
 ## Basic Operations
@@ -27,8 +26,8 @@ Make sure that you have setup and downloaded your openrc file. [Setting up the o
 
 ### Terraform Init
 
-```terraform init
-```
+```terraform init```
+
 [Terraform Init Documentation](https://www.terraform.io/cli/commands/init)
 
 This is the first command that should be run after writing a new Terraform configuration or cloning an existing one. This command is used to initialize a working directory containing Terraform configuration files.
@@ -38,8 +37,8 @@ This is the first command that should be run after writing a new Terraform confi
 
 ### Terraform Plan
 
-``` terraform plan
-```
+``` terraform plan```
+
 [Terraform Plan Documentation](https://www.terraform.io/cli/commands/plan)
 
 This command creates an execution plan which allows you to preview the changes that Terraform will change. The screenshot below is only a sample output of a plan.
@@ -50,8 +49,8 @@ This command creates an execution plan which allows you to preview the changes t
 
 ### Terraform Apply
 
-``` terraform apply
-```
+``` terraform apply```
+
 [Terraform Apply Documentation](https://www.terraform.io/cli/commands/apply)
 
 This command makes changes based on what's defined in the terraform files and what's existing in your infrastructure already.
