@@ -54,7 +54,7 @@ Moving to a larger flavor is generally **not** appropriate in these situations:
 - The speed of your workload is limited by disk or network transfer speed. Larger instances do not have faster storage or network connectivity.
 - Your instance is running out of storage. Instead, create a volume, attach it, and move your data to the volume. If you're installing a lot of software that is not easily moved to a volume, resizing _may_ be appropriate -- open a ticket and ask for advice.
 
-When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, access the instance (e.g. using Web Shell) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
+When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, access the instance (e.g. using Web Shell or SSH) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
 
 ### Image
 
