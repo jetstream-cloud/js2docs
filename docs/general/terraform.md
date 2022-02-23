@@ -32,7 +32,7 @@ Git clone allows you create a copy of a git repo that creates the directory and 
 ```
 git clone git@github.iu.edu:wellsaar/terraform-jetstream.git
 ```
-This command creates a clone of the git repo that contains the code examples that we use below. The master branch of the
+This command creates a clone of the git repo that contains the code examples that we use below. The master branch of the git repo above should be a good starting point in developing your own terraform code.
 
 # Running Terraform
 Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](../../ui/cli/openrc)
