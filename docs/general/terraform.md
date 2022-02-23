@@ -95,5 +95,6 @@ This command makes changes based on what's defined in the Terraform files and wh
 Terraform code is written in YAML (YAML Ain't Markup Language). Indentation matters with YAML so listed below are some free tools that will help you write in YAML.
 
 
-http://www.yamllint.com
-https://atom.io/
+* [yamllint](http://www.yamllint.com)
+
+* [atom.io](https://atom.io/)
