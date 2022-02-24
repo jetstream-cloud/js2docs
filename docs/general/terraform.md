@@ -62,7 +62,7 @@ Initializing provider plugins.
 - Reusing previous version of terraform-provider-openstack/openstack from the dependency lock file
 - Using previously-installed terraform-provider-openstack/openstackv1.42.0
 Terraform has been successfully initialized!
-1 You may now begin working with Terraform. Try running
+• You may now begin working with Terraform. Try running
 "terraform plan" to see
 any changes that are required for your infrastructure. All Terraform commands
 should now work.
