@@ -6,7 +6,7 @@ It provides a library of **_virtual machines_** and shared software designed to 
 
 Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_:
 
-- [Cacao](../ui/atmo/intro.md)
+- [Cacao](../ui/cacao/intro.md)
 - [Exosphere](../ui/exo/exo.md)
 - [Horizon](../ui/horizon/intro.md)
 
@@ -16,7 +16,7 @@ The operational software environment is based on [OpenStack](https://www.opensta
 
 ### Accessing Jetstream ###
 
-Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) or [Cacao](../ui/atmo/intro.md) web interfaces using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
+Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) or [Cacao](../ui/cacao/intro.md) web interfaces using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
 
 > Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
 

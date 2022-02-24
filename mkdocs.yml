@@ -99,20 +99,28 @@ nav:
     - Extensions & Renewals: alloc/extension.md
     - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
+    - Exosphere:
+      - Overview: ui/exo/exo.md
+      - Logging In: ui/exo/login.md
+      - Creating an Instance: ui/exo/create_instance.md
+      - Instance Management: ui/exo/manage.md
+      - Storage Under Exosphere: ui/exo/storage.md
+      - Push-button clusters: ui/exo/push-button-cluster.md
+      - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Cacao (fka Atmosphere2):
-      - Overview: ui/atmo/overview.md
-      - What is Cacao: ui/atmo/intro.md
-      - Glossary: ui/atmo/glossary.md
-      - UI Basics: ui/atmo/ui_basics.md
-      - Getting Started For New Cacao Users: ui/atmo/getting_started.md
-      - Credentials: ui/atmo/credentials.md
-      - Workspaces: ui/atmo/workspaces.md
-      - Deployments (Launching a VM): ui/atmo/deployments.md
-      - Choosing Your Allocation: ui/atmo/alloc.md
-      - Logging Into An Instance: ui/atmo/login.md
-      - Instance Management: ui/atmo/manage.md
-      - Storage: ui/atmo/storage.md
-      - Cacao Troubleshooting: ui/atmo/troubleshooting.md
+      - Overview: ui/cacao/overview.md
+      - What is Cacao: ui/cacao/intro.md
+      - Glossary: ui/cacao/glossary.md
+      - UI Basics: ui/cacao/ui_basics.md
+      - Getting Started For New Cacao Users: ui/cacao/getting_started.md
+      - Credentials: ui/cacao/credentials.md
+      - Workspaces: ui/cacao/workspaces.md
+      - Deployments (Launching a VM): ui/cacao/deployments.md
+      - Choosing Your Allocation: ui/cacao/alloc.md
+      - Logging Into An Instance: ui/cacao/login.md
+      - Instance Management: ui/cacao/manage.md
+      - Storage: ui/cacao/storage.md
+      - Cacao Troubleshooting: ui/cacao/troubleshooting.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md

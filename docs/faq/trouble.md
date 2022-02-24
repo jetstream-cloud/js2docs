@@ -5,7 +5,7 @@ Jetstream2 requires that you be on a [valid XSEDE allocation](https://portal.xse
 Troubleshooting Jetstream2 Interfaces:
 
   * [Exosphere](../ui/exo/troubleshooting.md)
-  * [Cacao](../ui/atmo/troubleshooting.md)
+  * [Cacao](../ui/cacao/troubleshooting.md)
   * [Horizon](../ui/horizon/troubleshooting.md)
   * [CLI](../ui/cli/troubleshooting.md)
 

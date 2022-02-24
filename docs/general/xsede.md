@@ -22,7 +22,7 @@ The reason for continuing to charge for VMs that are not in a usable state is th
 
 For instructions on managing instances, please see:
 
-* [Cacao instance management actions](../ui/atmo/deployments.md){target=_blank}
+* [Cacao instance management actions](../ui/cacao/deployments.md){target=_blank}
 * [Exosphere instance management actions](../ui/exo/manage.md){target=_blank}
 * [Horizon instance management actions](../ui/horizon/manage.md){target=_blank}
 * [Command line instance management actions](../ui/cli/manage.md){target=_blank}

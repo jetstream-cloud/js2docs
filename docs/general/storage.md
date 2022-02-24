@@ -15,7 +15,7 @@ All are subject to proper justification in the [allocations](../alloc/overview.m
 
 Please refer to the following pages for more information on using Jetstream2 storage under the various interfaces:
 
-- [Using Jetstream2 Storage Under Cacao](../ui/atmo/storage.md)
+- [Using Jetstream2 Storage Under Cacao](../ui/cacao/storage.md)
 - [Using Jetstream2 Storage Under Exosphere](../ui/exo/storage.md)
 - [Using Jetstream2 Storage Under Horizon](../ui/horizon/storage.md)
 - [Using Jetstream2 Storage Under the CLI](../ui/cli/storage.md)

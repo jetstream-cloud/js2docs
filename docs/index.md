@@ -3,7 +3,7 @@
 <img src="images/JS2-Logo-Transparent.png" alt="Logo" class="center" width="400"/>
 
 
-Jetstream2 is a user-friendly cloud computing environment for researchers and educators running on [OpenStack](https://www.openstack.org/){target=_blank} and featuring [Cacao](ui/atmo/intro.md) (formerly known as Atmosphere) and [Exosphere](ui/exo/exo.md) for the primary graphical user interfaces. It is built on the successes of Jetstream1 and continues the main features of that system while extending to a broader range of hardware and services, including GPUs, large memory nodes, virtual clustering, programmable cyberinfrastructure with OpenStack Heat and Terraform, and many other features. It is designed to provide both infrastructure for gateways and other "always on" services as well as giving researchers access to interactive computing and data analysis resources on demand.
+Jetstream2 is a user-friendly cloud computing environment for researchers and educators running on [OpenStack](https://www.openstack.org/){target=_blank} and featuring [Cacao](ui/cacao/intro.md) (formerly known as Atmosphere) and [Exosphere](ui/exo/exo.md) for the primary graphical user interfaces. It is built on the successes of Jetstream1 and continues the main features of that system while extending to a broader range of hardware and services, including GPUs, large memory nodes, virtual clustering, programmable cyberinfrastructure with OpenStack Heat and Terraform, and many other features. It is designed to provide both infrastructure for gateways and other "always on" services as well as giving researchers access to interactive computing and data analysis resources on demand.
 
 For a more in-depth description please see the [System Overview](overview/overview-doc.md){target=_blank}.
 
@@ -13,7 +13,7 @@ For a more in-depth description please see the [System Overview](overview/overvi
 * [System Overview](overview/overview-doc.md){target=_blank}
 * [Acceptable Usage Policies](general/policies.md){target=_blank}
 * [Allocations Overview](alloc/overview.md){target=_blank}
-* [Cacao Overview](ui/atmo/overview.md){target=_blank}
+* [Cacao Overview](ui/cacao/overview.md){target=_blank}
 
 ---
 Our [Troubleshooting and FAQ](faq/trouble.md){target=_blank} may have helpful suggestions for common problems.
