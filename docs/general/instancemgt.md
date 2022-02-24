@@ -14,7 +14,7 @@ Shelving an instance shuts down its operating system. The instance's disk conten
 
 Shelving and unshelving each take a few minutes, so shelving doesn't make sense for very short periods of inactivity. In other words, shelve your instance when you're done for the day or the week, not merely for your lunch break.
 
-A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest size that will work for your server needs. This will conserve SUs on your allocation.
+A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest flavor that will work for your server needs. This will conserve SUs on your allocation.
 
 ### Lock and Unlock
 
@@ -36,9 +36,7 @@ The following actions are for more sophisticated use cases. If you're a new clou
 
 ### Resize
 
-**Note: this feature is not implemented in all interfaces yet. Presently, you can resize using Horizon or the CLI.**
-
-Resizing allows you to choose a different flavor (a.k.a. size) for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first).
+Resizing allows you to choose a different flavor for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first). You can now resize using Exosphere, Horizon, or the CLI.
 
 Consider resizing if you find yourself in one of these situations:
 
@@ -46,17 +44,17 @@ Consider resizing if you find yourself in one of these situations:
 - Your instance's CPU is sitting idle most of the time, in which case a smaller flavor would burn your allocation more slowly.
     - Exosphere's instance resource usage graphs are a useful guide here.
 - You launched a GPU flavor, then later find that you no longer need the GPU, but want to keep using the instance.
-    - Note that the reverse does not apply, because an instance launched from an image without GPU drivers will not be able to use the GPU if it is resized to a GPU flavor.)
+- You launched a non-GPU flavor, then later find that you want to use the same instance with a GPU.
 
 If your software stack sometimes needs a large flavor to run a compute-intensive job, but you can develop and tune it on a smaller flavor, consider resizing _down_ to a small flavor for development work, and back _up_ when you're ready to run it at a larger scale. This get you best performance when you need it, while conserving your allocation when you don't.
 
-Moving to a larger size is generally **not** appropriate in these situations:
+Moving to a larger flavor is generally **not** appropriate in these situations:
 
 - The speed of your workload is limited by a process that is single-threaded (not parallelized). If this process cannot be parallelized then resizing is unlikely to speed it up.
 - The speed of your workload is limited by disk or network transfer speed. Larger instances do not have faster storage or network connectivity.
 - Your instance is running out of storage. Instead, create a volume, attach it, and move your data to the volume. If you're installing a lot of software that is not easily moved to a volume, resizing _may_ be appropriate -- open a ticket and ask for advice.
 
-When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, log into the instance (e.g. using Web Shell) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
+When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, access the instance (e.g. using Web Shell or SSH) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
 
 ### Image
 
