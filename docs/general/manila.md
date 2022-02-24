@@ -1,47 +1,47 @@
 # Manila - Filesystems-as-a-service - on Jetstream2
  
-Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a c    ore service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distribute    d filesystems, as well as with a base Linux NFS or Samba server.
-Prereqs: Make sure you have the nfs client installed on your instance: *apt install nfs-common* for Ubuntu and *yum install nfs-utils*     for CentOS.
+Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.
+Prereqs: Make sure you have these packages installed on your instance: ceph-commons and ceph-fuse
  
 
 ## To use Manila via Horizon 
  
 ### Create the share
 
-1. Click on:  Project  → Share → Shares → Create Share
-
-    ![image](../images/Manila1.png) &nbsp;       
-
+1. Click on:  Project  → Share → Shares → Create Share <br> 
+      
+    ![image](../images/JS2-manila1.png) &nbsp; 
+  
 2. Create a share with the following settings:
-    - protocol - nfs,
-    - share type - cephnfstype 
+    - share name - a name of your choosing  
+    - share protocol - CephFS    
+    - size - the size of your manila share  
+    - share type - cephnfsnativetype <br><br> 
+  
+    ![image](../images/JS2-manila2.png)  
     &nbsp;  
+    
+3. Once your share is available you can select `Edit Share` and `Manage Rules` and `Add Rule` :  
+   
+    ![image](../images/JS2-manila3.png)  &nbsp;
 
-    ![image](../images/Manila2.png)
+    - access type - cephx  
+    - access level - read-write  
+    - access to - an arbitrary name (In this example it is `manilashare`) <br><br>  
+  
+  
+    ![image](../images/JS2-manila4.png)  &nbsp;
+  
 
+4. If you now go back to the share page (Project/Share/Shares) and click on the share you created you should see your share's metadata.  
+    
+    Important things to note here are :
 
-### Add an interface on the Manila network to an instance
+    - Path - ips:ports followed by volume path (/volume/\_no-group/...)
+    - Access Key   <br><br>
+  
+    
+   
+    ![image](../images/JS2-manila5.png)  &nbsp;
 
-1. Click Compute → Instances screen
-
-2. Click Attach Interface (under Create Snapshot tab at far right)
-
-
-    ![image](../images/Manila3.png) &nbsp;
-
-
-3. Attach to manila_testing (10.255.0.0/16) network.
-
-
-    ![image](../images/Manila4.png) &nbsp;
-
-
-4. The instance should show the interface.
-
-
-    ![image](../images/Manila5.png)
-
-
-### Attaching instance to the Manila network
-
-1. On a running instance add an interface on the manila_testing network.
+ 
