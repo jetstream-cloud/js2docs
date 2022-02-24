@@ -42,6 +42,12 @@ Wait until the instance is ready - this could take up to half-an-hour.
 
 SSH into the new instance as `exouser`. (Alternatively use the web shell.)
 
+Switch to the `rocky` user:
+
+```bash
+sudo su - rocky
+```
+
 Go to the cluster repository directory: 
 
 ```bash
@@ -90,6 +96,7 @@ You now have your very own working Slurm cluster. Congratulations!
 Once you're done with your cluster, and you want to get rid of the head node instance as well as all the OpenStack resources created for the cluster, run the following commands on the head node instance (in an SSH session or web shell):
 
 ```bash
+sudo su - rocky
 cd ~/CRI_Jetstream_Cluster
 ./cluster_destroy_local.sh -d
 ```
