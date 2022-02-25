@@ -9,8 +9,9 @@ Prereqs: Make sure you have these packages installed on your instance: ceph-comm
 ### 1. Create the share on Horizon
 
 i. Click on:  Project  → Share → Shares → Create Share <br> 
-     
-    ![image](../images/JS2-manila1.png) &nbsp; 
+    
+![image](../images/JS2-manila1.png)  
+&nbsp;  
   
 ii. Create a share with the following settings:
     - share name - a name of your choosing  
@@ -18,19 +19,19 @@ ii. Create a share with the following settings:
     - size - the size of your manila share  
     - share type - cephnfsnativetype <br><br> 
   
-    ![image](../images/JS2-manila2.png)  
-    &nbsp;  
+![image](../images/JS2-manila2.png)  
+&nbsp;  
     
 iii. Once your share is available you can select `Edit Share` and `Manage Rules` and `Add Rule` :  
    
-    ![image](../images/JS2-manila3.png)  &nbsp;
+![image](../images/JS2-manila3.png)  &nbsp;
 
     - access type - cephx  
     - access level - read-write  
     - access to - an arbitrary name (In this example it is `manilashare`) <br><br>  
   
   
-    ![image](../images/JS2-manila4.png)  &nbsp;
+![image](../images/JS2-manila4.png)  &nbsp;
   
 
 iv. If you now go back to the share page (Project/Share/Shares) and click on the share you created you should see your share's metadata.  
@@ -38,11 +39,11 @@ iv. If you now go back to the share page (Project/Share/Shares) and click on the
     Important things to note here are :
 
     - Path - ips:ports followed by volume path (/volume/\_no-group/...)
-    - Access Key   <br><br>
+    - Access Key 
   
     
-   
-    ![image](../images/JS2-manila5.png)  &nbsp;
+ 
+![image](../images/JS2-manila5.png)  &nbsp;
 
 
 ### 2. Create a mount point on your instance
