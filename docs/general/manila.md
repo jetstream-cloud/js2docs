@@ -1,21 +1,32 @@
 # Manila - Filesystems-as-a-service - on Jetstream2
- 
-Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a c    ore service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distribute    d filesystems, as well as with a base Linux NFS or Samba server.
-Prereqs: Make sure you have the nfs client installed on your instance: *apt install nfs-common* for Ubuntu and *yum install nfs-utils*     for CentOS.
- 
 
-## To use Manila via Horizon 
- 
+Manila is a native Openstack project that provides shared filesytems for virtual machines. Manila is an offshoot of the Openstack Cinder project that provides volume storage for Openstack instances. Manila provides a way to make network filesytems available between VMs without needing to understand how to run and maintain a network file system (NFS) server.
+
+If you have a need of shared volume/data space, Manila is likely a solution to this problem.
+
+Prereqs: Make sure you have the nfs client installed on your instance.
+
+For Ubuntu:
+
+    *apt install nfs-common*
+
+For Centos/Rocky:
+
+    *yum install nfs-utils*
+
+
+## To use Manila via Horizon
+
 ### Create the share
 
 1. Click on:  Project  → Share → Shares → Create Share
 
-    ![image](../images/Manila1.png) &nbsp;       
+    ![image](../images/Manila1.png) &nbsp;
 
 2. Create a share with the following settings:
     - protocol - nfs,
-    - share type - cephnfstype 
-    &nbsp;  
+    - share type - cephnfstype
+    &nbsp;
 
     ![image](../images/Manila2.png)
 
