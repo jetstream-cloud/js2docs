@@ -1,36 +1,64 @@
 # Manila - Filesystems-as-a-service - on Jetstream2
 
-Manila is a native Openstack project that provides shared filesytems for virtual machines. Manila is an offshoot of the Openstack Cinder project that provides volume storage for Openstack instances. Manila provides a way to make network filesytems available between VMs without needing to understand how to run and maintain a network file system (NFS) server.
+Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.
 
-If you have a need of shared volume/data space, Manila is likely a solution to this problem.
-
-Prereqs: Make sure you have the nfs client installed on your instance.
-
-For Ubuntu:
-
-    *apt install nfs-common*
-
-For Centos/Rocky:
-
-    *yum install nfs-utils*
+Prereqs: Make sure you have these packages installed on your instance: ceph-commons and ceph-fuse
 
 
 ## To use Manila via Horizon
 
-### Create the share
+### Create the share on Horizon
+
+i. Click on:  Project  → Share → Shares → Create Share <br> 
+    
+![image](../images/JS2-manila1.png)  
+&nbsp;  
+  
+ii. Create a share with the following settings:
+
+    - share name - a name of your choosing  
+    - share protocol - CephFS    
+    - size - the size of your manila share  
+    - share type - cephnfsnativetype  
+  
+![image](../images/JS2-manila2.png)  
+&nbsp;  
+    
+iii. Once your share is available you can select `Edit Share` and `Manage Rules` and `Add Rule` :  
+   
+![image](../images/JS2-manila3.png)  &nbsp;
+
+    - access type - cephx  
+    - access level - read-write  
+    - access to - an arbitrary name (In this example it is `manilashare`)   
+  
+  
+![image](../images/JS2-manila4.png)  &nbsp;
+  
+
+iv. If you now go back to the share page (Project/Share/Shares) and click on the share you created you should see your share's metadata.  
+    
+    Important things to note here are :
+
+    - Path - ips:ports followed by volume path (/volume/\_no-group/...)
+    - Access Key 
+  
+    
+ 
+![image](../images/JS2-manila5.png)  &nbsp;
+
+
+### 2. Create a mount point on your instance
 
 ```
 mkdir /mnt/ceph
 ```
 
-    ![image](../images/Manila1.png) &nbsp;
+### 3. a. Configuring a CentOS instance
 
-2. Create a share with the following settings:
-    - protocol - nfs,
-    - share type - cephnfstype
-    &nbsp;
+To mount the manila share created above you need to edit the three files listed below :  
 
-i. /etc/ceph/ceph.conf
+i. /etc/ceph/ceph.conf 
 
 ```
 [global]
@@ -41,14 +69,14 @@ fuse big writes = true
 mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789
 ```
 
-ii. /etc/fstab
-
-Add the following:
+ii. /etc/fstab  
+ 
+Add the following: 
 
 ```
 none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
-Replace `$accessTo` with the arbitrary name you chose in step 3 above and `$volumePath` with (/volume/\_no-group/...).
+Replace `$accessTo` with the arbitrary name you chose in step 3 above and `$volumePath` with (/volume/\_no-group/...).  
 
 It should look something like this:
 
@@ -56,7 +84,7 @@ It should look something like this:
 none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 
-iii.  /etc/ceph/ceph.client.`$accessTo`.keyring
+iii.  /etc/ceph/ceph.client.`$accessTo`.keyring  
 
 Add the following:
 
@@ -66,7 +94,7 @@ Add the following:
 ```
 Replace `$accessTo` with the arbitrary name you chose in step 3 and `$accessKey` with the Access Key generated in step 4
 
-Your file should look something like this :
+Your file should look something like this : 
 
 ```
 [client.manilashare]
@@ -75,9 +103,9 @@ Your file should look something like this :
 
 ### 3. b. Configuring a Ubuntu instance
 
-i. Create the file `/etc/ceph.$accessTo.secret` and add the `accessKey`
+i. Create the file `/etc/ceph.$accessTo.secret` and add the `accessKey` 
 
-Example:
+Example: 
 
 /etc/ceph.manilashare.secret
 
@@ -86,21 +114,21 @@ AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 
 ```
 
-ii. Edit `/etc/fstab` to include the following line:
+ii. Edit `/etc/fstab` to include the following line: 
 
 ```
 $path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph/ceph.$accessTo.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 $path = ips:ports followed by volume path (/volume/\_no-group/...)
 
-Example:
+Example: 
 
 ```
 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98 /mnt/ceph ceph name=manilashare,secretfile=/etc/ceph/ceph.manilashare.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 
 ### 4. Mount the share
-
+ 
 Mount the manila share created with the following command `mount -a`
 
 If you then run a `df -h` you shhould see something like this:
@@ -135,5 +163,6 @@ tmpfs                                                                           
 /dev/loop4                                                                                                                                                                                        44M   44M     0 100% /snap/snapd/14978
 /dev/loop2                                                                                                                                                                                        68M   68M     0 100% /snap/lxd/22526
 tmpfs                                                                                                                                                                                            595M  8.0K  595M   1% /run/user/1000
-149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98
+149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98  
 ```
+
