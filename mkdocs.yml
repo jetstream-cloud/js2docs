@@ -149,7 +149,7 @@ nav:
     - Storage:
       - Manila: 
         - Manila via Horizon: general/manilaHorizon.md
-        - Manila via Openstack: general/ManilaOpenstack.md
+        - Manila via Openstack: general/manilaOpenstack.md
       - Object Store: general/object.md
       - File Transfer: general/filetransfer.md
     - Maintenance and Administration:
