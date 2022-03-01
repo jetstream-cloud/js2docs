@@ -1,6 +1,6 @@
 # To use Manila via Openstack CLI
 
-On a terminal terminal that has the Openstack Clients and the appropriate login credentials you can do the following:
+On a terminal  that has the Openstack Clients and the appropriate login credentials you can do the following:
 
 ### 1. Create a share
 
