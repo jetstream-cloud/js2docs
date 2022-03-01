@@ -147,7 +147,9 @@ nav:
     - Security:
       - Firewalls: general/firewalls.md
     - Storage:
-      - Manila: general/manila.md
+      - Manila: 
+        - Manila via Horizon: general/manilaHorizon.md
+        - Manila via Openstack: general/ManilaOpenstack.md
       - Object Store: general/object.md
       - File Transfer: general/filetransfer.md
     - Maintenance and Administration:
