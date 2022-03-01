@@ -1,6 +1,6 @@
 # To use Manila via Horizon
 
-### Create the share on Horizon
+### 1. Create the share on Horizon
 
 i. Click on:  Project  → Share → Shares → Create Share <br> 
     
