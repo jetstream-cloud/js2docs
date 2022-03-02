@@ -23,7 +23,7 @@ iii. Once your share is available you can select `Edit Share` and `Manage Rules`
 
     - access type - cephx  
     - access level - read-write  
-    - access to - an arbitrary name (In this example it is `manilashare`)   
+    - access to - an arbitrary unique name (In this example it is `manilashare`. The name assigned must be globally unique, if you use the name `manilashare`, you will see an error state.)   
   
   
 ![image](../images/JS2-manila4.png)  &nbsp;
