@@ -41,3 +41,14 @@ Microsoft Windows is not officially supported on Jetstream2. We will be making a
 It is not known at this time whether GPUs will work on Microsoft-based instances. We will test this as time permits.
 
 More information may be found on the [Microsoft Windows on Jetstream2](../general/windows.md) page.
+
+---
+
+### How do I share a volume between virtual machines?
+
+
+You can’t easily share volumes in OpenStack without deploying a Shared File System service. However, the native Openstack Manila filesystems-as-a-service option is available.  
+
+Instructions for using manila on Jetstream2 are here: 
+  
+[Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/#manila-filesystems-as-a-service-on-jetstream2)
