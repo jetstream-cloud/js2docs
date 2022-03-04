@@ -1,6 +1,6 @@
 # To use Manila via Openstack CLI
 
-On a terminal  that has the Openstack Clients and the appropriate login credentials you can do the following:
+On a terminal that has the Openstack Clients installed and the appropriate login credentials you can do the following:
 
 ### 1. Create a share
 
@@ -70,7 +70,7 @@ Metadata for the access rule:
     | properties   |                                      |
     +--------------+--------------------------------------+
 
-Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your access_key. 
+Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key`. 
 
 ### 3. Get access key
 
@@ -97,7 +97,7 @@ Metadata for the access rule:
     | properties   |                                          |
     +--------------+------------------------------------------+
 
-The access rule is active and you can use the access_key generate above.     
+The access rule is active and you can use the `access_key` generated above.     
 
 
 
@@ -153,4 +153,19 @@ You will need the path of your `export_locations`
 
 In the above example it is:  
 
-    149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/1ca2d54e-16a5-43b8-90de-75a91c1b96e9/fba3f935-5047-4eef-8b4d-3c27f356c2c7 
+    149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/1ca2d54e-16a5-43b8-90de-75a91c1b96e9/fba3f935-5047-4eef-8b4d-3c27f356c2c7
+
+--- 
+
+    Important things to note down: 
+
+    - Share id (Step 1)
+    - Access rule id (Step 2)
+    - Acccess key (Step 3)
+    - Export location path (Step 4)
+
+
+### Using Manila Share on a VM
+
+a. [Centos/Rocky](https://docs.jetstream-cloud.org/general/manilaVM/#3-a-configuring-a-centosrocky-instance)  
+b. [Ubuntu](https://docs.jetstream-cloud.org/general/manilaVM/#3-b-configuring-a-ubuntu-instance)  

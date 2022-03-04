@@ -1,11 +1,11 @@
 # Configuring a VM to use Manila Shares
 
-### 2. Create a mount point on your instance 
+### 1. Create a mount point on your instance 
 ```
 mkdir /mnt/ceph
 ```
 
-### 3. a. Configuring a CentOS/Rocky instance
+### 2. a. Configuring a CentOS/Rocky instance
 
 To mount the manila share created above you need to edit the three files listed below :
 
@@ -52,7 +52,7 @@ Your file should look something like this :
     key = AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 ```
 
-### 3. b. Configuring a Ubuntu instance
+### 2. b. Configuring a Ubuntu instance
 
 i. Create the file `/etc/ceph.$accessTo.secret` and add the `accessKey`
 
