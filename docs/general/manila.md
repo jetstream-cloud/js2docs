@@ -6,6 +6,6 @@ Prereqs: Make sure you have these packages installed on your instance: ceph-comm
 
 Follow the links below to use: 
 
-    - [Manila via Horizon](https://docs.jetstream-cloud.org/general/manilaHorizon/)  
-    - [Manila via Openstack CLI](https://docs.jetstream-cloud.org/general/manilaOpenstack/)
+ - [Manila via Horizon](./manilaHorizon.md)  
+ - [Manila via Openstack CLI](./manilaOpenstack.md)
 

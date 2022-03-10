@@ -24,7 +24,7 @@ Some K8s basics :
 
 ### Other Kubernetes topics
 
-[Building a Kubernetes Cluster](https://docs.jetstream-cloud.org/general/k8scluster/)  
-[Managing applications with Kubernetes](https://docs.jetstream-cloud.org/general/k8smanage/)  
-[Persistent Volumes in Kubernetes](https://docs.jetstream-cloud.org/general/k8svolumes/)  
-[Minikube](https://docs.jetstream-cloud.org/general/minikube/)  
+[Building a Kubernetes Cluster](./k8scluster.md)  
+[Managing applications with Kubernetes](./k8smanage.md)  
+[Persistent Volumes in Kubernetes](./k8svolumes.md)  
+[Minikube](./minikube.md)  
