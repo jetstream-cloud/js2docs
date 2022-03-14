@@ -22,4 +22,4 @@ If your application credential secret in the openrc contains some punctuation/sp
 
     The request you have made requires authentication. (HTTP 401) (Request-ID:
 
-For example, if you had an ampersand in your credential password, it may have gotten escaped to **&amp;** instead of just the ampersand character. The same could happen for less than or greater than signs and potentially other special characters. Double check the openrc to verify that that has not happened.
+For example, if you had an ampersand in your credential password, it may have gotten escaped to **\&amp\;** instead of just the ampersand character. The same could happen for less than or greater than signs and potentially other special characters. Double check the openrc to verify that that has not happened.
