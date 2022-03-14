@@ -13,7 +13,7 @@ For specific FAQs, see the following pages:
 
 ### I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?
 
-In OpenStack, flavors define the compute, memory, and storage capacity of instances. We may also refer to it in support tickets or documentation as the VM's size. 
+In OpenStack, flavors define the compute, memory, and storage capacity of instances. We may also refer to it in support tickets or documentation as the VM's size.
 
 We won't create custom flavors, but there are ways to get larger root disks. You can [review the flavors](../general/vmsizes.md) and see if moving up from one of the smaller VMs to a slightly larger one would yield a larger root disk. The other option is to use a custom sized root disk using what Openstack calls "boot from volume", or a "volume-backed" instance. What this means is that instead of an ephemeral boot disk for the instance, a volume is used to be the root disk.
 
@@ -47,8 +47,16 @@ More information may be found on the [Microsoft Windows on Jetstream2](../genera
 ### How do I share a volume between virtual machines?
 
 
-You can’t easily share volumes in OpenStack without deploying a Shared File System service. However, the native Openstack Manila filesystems-as-a-service option is available.  
+You can’t easily share volumes in OpenStack without deploying a Shared File System service. However, the native Openstack Manila filesystems-as-a-service option is available.
 
-Instructions for using manila on Jetstream2 are here: 
-  
+Instructions for using manila on Jetstream2 are here:
+
 [Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/#manila-filesystems-as-a-service-on-jetstream2)
+
+---
+
+### Can I set the password for a user on my virtual machine?
+
+We generally don't recommend using password authentication on Jetstream2, recommending that you use SSH keys for access. That said, if you need to set a password for console access or for some other reason, you can do it like this:
+
+    sudo passwd *username*
