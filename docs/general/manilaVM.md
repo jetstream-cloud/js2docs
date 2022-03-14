@@ -17,7 +17,7 @@ admin socket = /var/run/ceph/$cluster-$name-$pid.asok
 client reconnect stale = true
 debug client = 0/2
 fuse big writes = true
-mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149    .165.158.86:6789
+mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789
 ```
 
 ii. /etc/fstab
@@ -25,14 +25,14 @@ ii. /etc/fstab
 Add the following:
 
 ```
-none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_moun    tpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
+none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
 ```
-Replace `$accessTo` with the arbitrary name you chose in step 3 above and `$volumePath` with (    /volume/\_no-group/...).
+Replace `$accessTo` with the arbitrary name you chose in step 3 above and `$volumePath` with (/volume/\_no-group/...).
 
 It should look something like this:
 
 ```
-none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mo    untpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc6    1fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 
 iii.  /etc/ceph/ceph.client.`$accessTo`.keyring
@@ -43,7 +43,7 @@ Add the following:
 [client.$accessTo]
     key = $accessKey
 ```
-Replace `$accessTo` with the arbitrary name you chose in step 3 and `$accessKey` with the Acce    ss Key generated in step 4
+Replace `$accessTo` with the arbitrary name you chose in step 3 and `$accessKey` with the Access Key generated in step 4
 
 Your file should look something like this :
 
@@ -68,21 +68,21 @@ AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 ii. Edit `/etc/fstab` to include the following line:
 
 ```
-$path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph.$accessTo.secret,x-systemd.device-tim    eout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+$path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph.$accessTo.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 $path = ips:ports followed by volume path (/volume/\_no-group/...)
 
 Example:
 
 ```
-149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86    :6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fb    b98 /mnt/ceph ceph name=manilashare,secretfile=/etc/ceph/ceph.manilashare.secret,x-systemd.dev    ice-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98 /mnt/ceph ceph name=manilashare,secretfile=/etc/ceph/ceph.manilashare.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 
 ### 3. Mount the share
 
 Mount the manila share created with the following command `mount -a`
 
-If you then run a `df -h` you shhould see something like this:
+If you then run a `df -h` you should see something like this:
 
 #### CentOS
 
@@ -113,7 +113,7 @@ tmpfs                                                                           
 /dev/loop4                                                                                                                                                                                                44M   44M     0 100% /snap/snapd/14978
 /dev/loop2                                                                                                                                                                                                68M   68M     0 100% /snap/lxd/22526
 tmpfs                                                                                                                                                                                                    595M  8.0K  595M   1% /run/user/1000
-149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86    :6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fb    b98
+149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98
 ```
 
 

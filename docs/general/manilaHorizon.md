@@ -9,10 +9,10 @@ i. Click on:  Project  → Share → Shares → Create Share <br>
   
 ii. Create a share with the following settings:
 
-    - share name - a name of your choosing  
-    - share protocol - CephFS    
-    - size - the size of your manila share  
-    - share type - cephnfsnativetype  
+- share name - a name of your choosing  
+- share protocol - CephFS    
+- size - the size of your manila share  
+- share type - cephnfsnativetype  
   
 ![image](../images/JS2-manila2.png)  
 &nbsp;  
@@ -23,9 +23,9 @@ i. Once your share is available you can select `Edit Share` and `Manage Rules` a
    
 ![image](../images/JS2-manila3.png)  &nbsp;
 
-    - access type - cephx  
-    - access level - read-write  
-    - access to - an arbitrary unique name   
+- access type - cephx  
+- access level - read-write  
+- access to - an arbitrary unique name   
 
 
 In the example above the accessTo name is `manilashare`. The name assigned must be globally unique, if you use a name that is already in use you will see and error state.   
@@ -35,10 +35,10 @@ In the example above the accessTo name is `manilashare`. The name assigned must 
 
 ii.  If you now go back to the share page (Project/Share/Shares) and click on the share you created you should see your share's metadata.  
     
-    Important things to note here are :
+Important things to note here are :
 
-    - Path - ips:ports followed by volume path (/volume/\_no-group/...)
-    - Access Key 
+- Path - ips:ports followed by volume path (/volume/\_no-group/...)
+- Access Key 
   
     
  
@@ -47,6 +47,6 @@ ii.  If you now go back to the share page (Project/Share/Shares) and click on th
 
 ### Using Manila Share on a VM
 
-a. [Centos/Rocky](https://docs.jetstream-cloud.org/general/manilaVM/#3-a-configuring-a-centosrocky-instance)    
-b. [Ubuntu](https://docs.jetstream-cloud.org/general/manilaVM/#3-b-configuring-a-ubuntu-instance)  
+a. [Centos/Rocky](./manilaVM.md#2-a-configuring-a-centosrocky-instance)    
+b. [Ubuntu](./manilaVM.md#2-b-configuring-a-ubuntu-instance)  
 

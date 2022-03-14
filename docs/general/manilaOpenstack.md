@@ -157,15 +157,15 @@ In the above example it is:
 
 --- 
 
-    Important things to note down: 
+Important things to note down: 
 
-    - Share id (Step 1)
-    - Access rule id (Step 2)
-    - Acccess key (Step 3)
-    - Export location path (Step 4)
+- Share id (Step 1)
+- Access rule id (Step 2)
+- Acccess key (Step 3)
+- Export location path (Step 4)
 
 
 ### Using Manila Share on a VM
 
-a. [Centos/Rocky](https://docs.jetstream-cloud.org/general/manilaVM/#3-a-configuring-a-centosrocky-instance)  
-b. [Ubuntu](https://docs.jetstream-cloud.org/general/manilaVM/#3-b-configuring-a-ubuntu-instance)  
+a. [Centos/Rocky](./manilaVM.md#2-a-configuring-a-centosrocky-instance)    
+b. [Ubuntu](./manilaVM.md#2-b-configuring-a-ubuntu-instance)  
