@@ -7,9 +7,9 @@ mkdir /mnt/ceph
 
 ### 2. a. Configuring a CentOS/Rocky instance
 
-To mount the manila share created above you need to edit the three files listed below :
+To mount the manila share created above you need to create/edit the three files listed below :
 
-i. /etc/ceph/ceph.conf
+i. Create `/etc/ceph/ceph.conf` and add the following
 
 ```
 [global]
@@ -20,9 +20,7 @@ fuse big writes = true
 mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789
 ```
 
-ii. /etc/fstab
-
-Add the following:
+ii. Edit `/etc/fstab` and add the following:
 
 ```
 none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
@@ -35,9 +33,7 @@ It should look something like this:
 none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 
-iii.  /etc/ceph/ceph.client.`$accessTo`.keyring
-
-Add the following:
+iii. Create ` /etc/ceph/ceph.client.$accessTo.keyring` and add the following:
 
 ```
 [client.$accessTo]
