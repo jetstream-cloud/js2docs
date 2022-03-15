@@ -7,6 +7,13 @@ Jetstream allocations are awarded exclusively through XSEDE. XSEDE provides XSED
 A guide with more detail on Jetstream allocations is available online at the
 [XSEDE Resource Information](https://portal.xsede.org/allocations/resource-info){target=_blank} page.
 
+Allocation types:
+
+- [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2_icon_64px
+- [Startup allocation](startup.md) - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.
+- [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
+- [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting. 
+
 ----
 
 You'll need to have an XSEDE Portal account to request access to the Jetstream2 Trial Allocation, be added to a PI's allocation, or apply for an allocation.
