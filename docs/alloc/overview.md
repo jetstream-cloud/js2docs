@@ -9,10 +9,10 @@ A guide with more detail on Jetstream allocations is available online at the
 
 Allocation types:
 
-- [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2_icon_64px
+- [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2
 - [Startup allocation](startup.md) - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.
 - [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
-- [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting. 
+- [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.
 
 ----
 
