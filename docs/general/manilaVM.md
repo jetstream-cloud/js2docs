@@ -39,7 +39,7 @@ iii. Create ` /etc/ceph/ceph.client.$accessTo.keyring` and add the following:
 [client.$accessTo]
     key = $accessKey
 ```
-Replace `$accessTo` with the arbitrary name you chose in step 3 and `$accessKey` with the Access Key generated in step 4
+Replace `$accessTo` with the arbitrary name you chose and `$accessKey` with the Access Key generated in the earlier steps.
 
 Your file should look something like this :
 
