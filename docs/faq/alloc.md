@@ -19,6 +19,8 @@
 
    **3. How do I let other XSEDE accounts use my allocation?**
 
+You can add users to (or remove them from) your XSEDE allocation via the XSEDE User Portal. Users must have already created their XSEDE accounts before they can be added to an allocation.
+
 > To add users to, or remove them from, an active Extreme Science and Engineering Discovery Environment ([XSEDE](https://www.xsede.org/documents/527334/695761/what-is-XSEDE.pdf){target=_blank}) allocation, the principal investigator, co-principal investigator, or [allocation manager](https://portal.xsede.org/allocations/managing#manageusers){target=_blank} can follow the instructions here:
 
 >  * [https://portal.xsede.org/allocations/managing](https://portal.xsede.org/allocations/managing){target=_blank}
