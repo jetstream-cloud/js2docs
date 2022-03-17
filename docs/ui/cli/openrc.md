@@ -1,8 +1,8 @@
-## Setting up the openrc.sh for the Jetstream2 CLI
+## Setting up application credentials and openrc.sh for the Jetstream2 CLI
 
 ### New openrc format for Jetstream2 CLI!
 
-One of the key changes to using Jetstream2's command line interface (CLI) is that it uses XSEDE credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This page will walk you through that process.
+One of the key changes to using Jetstream2's command line interface (CLI) is that it uses XSEDE credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
 
 > **Please make sure to source the new Jetstream2 openrc in a fresh terminal session. If you invoke it in a session that's had another openrc sourced, you'll get an error like this:**
 *Error authenticating with application credential: Application credentials cannot request a scope.*
@@ -11,6 +11,10 @@ One of the key changes to using Jetstream2's command line interface (CLI) is tha
 ### Openrc files are allocation-specific
 
 Each allocation you wish to use from the command line will need its own application credential and openrc file.
+
+### You CANNOT use the openrc generator like in Jetstream1
+
+The openrc generator on the Horizon right side (username) menu will NOT work properly with Jetstream2! Please use the process below to get your application credential based openrc file. 
 
 ### Using the Horizon dashboard to generate openrc.sh
 
