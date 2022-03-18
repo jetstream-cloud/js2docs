@@ -18,7 +18,7 @@ If you do not have an application credential openrc and CLI clients installed, p
 - [Creating an application credential and openrc on Jetstream2](https://docs.jetstream-cloud.org/ui/cli/openrc/){target=_blank}
 - [Installing Openstack Clients](https://docs.jetstream-cloud.org/ui/cli/clients/){target=_blank}
 
-Opetionally, you'll want an AWS s3api client like the [aws command line interface reference client](https://aws.amazon.com/cli/){target=_blank}
+Optionally, you'll want an AWS s3api client like the [aws command line interface reference client](https://aws.amazon.com/cli/){target=_blank}
 
 #### Using the object store with s3api compatibility
 
@@ -35,7 +35,7 @@ You can save the creds in a config to use from the CLI/programatically. It's gen
     aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-For your **~/.aws/credentials**, make sure the value from the credential create under “Access” matches “aws_access_key_id” and the Secret matchines “aws_secret_access_key”
+For your **~/.aws/credentials**, make sure the value from the credential create under “Access” matches “aws_access_key_id” and the Secret matches “aws_secret_access_key”
 
 You can retrieve your ec2 credentials later, as well, by doing
 
