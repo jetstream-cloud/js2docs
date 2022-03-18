@@ -5,7 +5,7 @@ The object store is presently experimental. It WILL be a production service in c
 
 **Documentation will continue to evolve.**
 
-The Jetstream object store utilizes Openstack Swift and is fully S3 compatible. You can utilize it via Horizon or the command line interface (CLI).
+The Jetstream object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI).
 
 *Horizon instructions will be coming soon. Though it does not appear that you can generate the EC2 credentials in Horizon.*
 
@@ -18,9 +18,9 @@ If you do not have an application credential openrc and CLI clients installed, p
 - [Creating an application credential and openrc on Jetstream2](https://docs.jetstream-cloud.org/ui/cli/openrc/){target=_blank}
 - [Installing Openstack Clients](https://docs.jetstream-cloud.org/ui/cli/clients/){target=_blank}
 
-#### Trying the object store from the CLI
+#### Using the object store with s3api compatibility
 
-Once you have sourced your application credential based openrc and installed the python-openstack and python-swiftclient client you can proceed to generate your ec2-style credentials.
+Once you have sourced your application credential based openrc and installed the python-openstack and python-swiftclient client you will need to generate your ec2-style credentials.
 
 The CLI command is:
 
@@ -34,9 +34,25 @@ You can save the creds in a config to use from the CLI/programatically. It's gen
     aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-The endpoint you’ll need for S3 operations is https://js2.jetstream-cloud.org:8001/swift/v1
+The endpoint you’ll need for S3 operations is https://js2.jetstream-cloud.org:8001/
 
-To use the OpenStack CLI with the object store, you’ll need the Swift client if you have not already installed it. You can install it by doing:
+For s3 style operations, you'll want to use the s3api functions. Those are documented here: https://docs.aws.amazon.com/cli/latest/reference/s3api/{target=_blank}
+
+Using the [aws command line interface](https://aws.amazon.com/cli/){target=_blank} you can test operations.
+
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" create-bucket --bucket my_unique_bucket_name
+
+and to add a file to the bucket:
+
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" put_object --bucket my_unique_bucket_name --key my_file.zip --body my_file.zip
+
+and to see bucket contents:
+
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" list-objects --bucket my_unique_bucket_name
+
+#### Trying the object store from the CLI using Swift
+
+To use the OpenStack CLI natively with the object store, you’ll need the Swift client if you have not already installed it. You can install it by doing:
 
     pip install python-swiftclient
 
