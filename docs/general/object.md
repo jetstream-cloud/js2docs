@@ -28,14 +28,14 @@ The CLI command is:
 
     openstack ec2 credentials create
 
-You can save the creds in a config to use from the CLI/programatically. It's generally kept in the text file ~/.aws/config and looks like this:
+You can save the creds in a config to use from the CLI/programatically. It's generally kept in the text file *~/.aws/credentials* and looks like this:
 
     [default]
     region=RegionOne
     aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-For your ~/.aws/config, make sure the value from the credential create under “Access” matches “aws_access_key_id” and the Secret matchines “aws_secret_access_key”
+For your *~/.aws/credentials*, make sure the value from the credential create under “Access” matches “aws_access_key_id” and the Secret matchines “aws_secret_access_key”
 
 You can retrieve your ec2 credentials later, as well, by doing
 
