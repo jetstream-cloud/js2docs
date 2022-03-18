@@ -36,7 +36,7 @@ You can save the creds in a config to use from the CLI/programatically. It's gen
 
 The endpoint you’ll need for S3 operations is https://js2.jetstream-cloud.org:8001/
 
-For s3 style operations, you'll want to use the s3api functions. Those are documented here: https://docs.aws.amazon.com/cli/latest/reference/s3api/{target=_blank}
+For s3 style operations, you'll want to use the s3api functions. Those are documented here: [https://docs.aws.amazon.com/cli/latest/reference/s3api/](https://docs.aws.amazon.com/cli/latest/reference/s3api/){target=_blank}
 
 Using the [aws command line interface](https://aws.amazon.com/cli/){target=_blank} you can test operations.
 
