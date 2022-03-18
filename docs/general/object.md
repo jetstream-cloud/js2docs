@@ -30,11 +30,18 @@ The CLI command is:
 
 You can save the creds in a config to use from the CLI/programatically. It's generally kept in the text file ~/.aws/config and looks like this:
 
-
     [default]
     region=RegionOne
     aws_access_key_id=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
     aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+For your ~/.aws/config, make sure the value from the credential create under “Access” matches “aws_access_key_id” and the Secret matchines “aws_secret_access_key”
+
+You can retrieve your ec2 credentials later, as well, by doing
+
+    openstack ec2 credentials list
+
+    openstack ec2 credentials show *access_key_value*
 
 The endpoint you’ll need for S3 operations is https://js2.jetstream-cloud.org:8001/
 
@@ -42,15 +49,15 @@ For s3 style operations, you'll want to use the s3api functions. Those are docum
 
 Using the [aws command line interface](https://aws.amazon.com/cli/){target=_blank} you can test operations.
 
-    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" create-bucket --bucket my_unique_bucket_name
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" create-bucket --bucket my-unique-bucket-name
 
 and to add a file to the bucket:
 
-    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" put_object --bucket my_unique_bucket_name --key my_file.zip --body my_file.zip
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" put_object --bucket my-unique-bucket-name --key my-file.zip --body my-file.zip
 
 and to see bucket contents:
 
-    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" list-objects --bucket my_unique_bucket_name
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" list-objects --bucket my-unique-bucket-name
 
 #### Trying the object store from the CLI using Swift
 
@@ -60,15 +67,15 @@ To use the OpenStack CLI natively with the object store, you’ll need the Swift
 
 Once you have the Swift client installed, you can test it by doing:
 
-    swift post my_unique_bucket_name
+    swift post my-unique-bucket-name
 
-which will create a storage container called "my_unique_bucket_name". You can then list your buckets by doing:
+which will create a storage container called "my-unique-bucket-name". You can then list your buckets by doing:
 
     swift list
 
 If you want to delete the test bucket, you can do:
 
-    swift delete my_unique_bucket_name
+    swift delete my-unique-bucket-name
 
 As with all Openstack clients, you can see the full list of commands with
 
