@@ -18,6 +18,8 @@ If you do not have an application credential openrc and CLI clients installed, p
 - [Creating an application credential and openrc on Jetstream2](https://docs.jetstream-cloud.org/ui/cli/openrc/){target=_blank}
 - [Installing Openstack Clients](https://docs.jetstream-cloud.org/ui/cli/clients/){target=_blank}
 
+Opetionally, you'll want an AWS s3api client like the [aws command line interface reference client](https://aws.amazon.com/cli/){target=_blank}
+
 #### Using the object store with s3api compatibility
 
 Once you have sourced your application credential based openrc and installed the python-openstack and python-swiftclient client you will need to generate your ec2-style credentials.
