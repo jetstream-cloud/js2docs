@@ -5,7 +5,7 @@ The object store is presently experimental. It WILL be a production service in c
 
 **Documentation will continue to evolve.**
 
-The Jetstream object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI).
+The Jetstream object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI). From the CLI, you can use the python-swiftclient or the aws s3api or compatible tools.
 
 *Horizon instructions will be coming soon. Though it does not appear that you can generate the EC2 credentials in Horizon.*
 
