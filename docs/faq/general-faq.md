@@ -51,8 +51,7 @@ You can’t easily share volumes in OpenStack without deploying a Shared File Sy
 
 Instructions for using manila on Jetstream2 are here:
 
-<<<<<<< HEAD
-[Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/#manila-filesystems-as-a-service-on-jetstream2)
+[Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/)
 
 ---
 
