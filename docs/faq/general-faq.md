@@ -49,9 +49,7 @@ More information may be found on the [Microsoft Windows on Jetstream2](../genera
 
 You can’t easily share volumes in OpenStack without deploying a Shared File System service. However, the native Openstack Manila filesystems-as-a-service option is available.
 
-Instructions for using manila on Jetstream2 are here:
-
-[Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/)
+Instructions for using manila on Jetstream2 are here - [Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/)
 
 ---
 
@@ -60,8 +58,3 @@ Instructions for using manila on Jetstream2 are here:
 We generally don't recommend using password authentication on Jetstream2, recommending that you use SSH keys for access. That said, if you need to set a password for console access or for some other reason, you can do it like this:
 
     sudo passwd *username*
-=======
-Instructions for using manila on Jetstream2 are here:
-
-[Manila - Filesystems-as-a-service - on Jetstream2](../general/manila.md)
->>>>>>> 4a4d2a4f0b49431b0df61c280d1d2167c5a756c4
