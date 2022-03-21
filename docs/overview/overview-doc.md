@@ -6,9 +6,9 @@ It provides a library of **_virtual machines_** and shared software designed to 
 
 Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_:
 
-- [Cacao](../ui/cacao/intro.md)
 - [Exosphere](../ui/exo/exo.md)
 - [Horizon](../ui/horizon/intro.md)
+- [Cacao](../ui/cacao/intro.md)
 
 as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/overview.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank})
 
