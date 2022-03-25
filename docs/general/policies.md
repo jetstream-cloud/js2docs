@@ -25,14 +25,6 @@ Jetstream2 requires compliance with all XSEDE and Indiana University policies, i
 
 * * *
 
-### Specialty System (GPU & Large Memory) Specific Policies
-
-* Only g3.* flavors should be run on the Jetstream2-GPU resource
-* Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
-* Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
-
-* * *
-
 ### Jetstream2 and General Research Policies
 
 In general, fundamental, publishable research is permitted on Jetstream2 from any non-EAR sanctioned countries. Fundamental research is defined as:
@@ -50,3 +42,12 @@ In general, fundamental, publishable research is permitted on Jetstream2 from an
 For anything other than fundamental, publishable research, you may wish to
 consult with your institution’s export control office for any export/sharing
 restrictions.
+
+* * *
+
+### Specialty System (GPU & Large Memory) Specific Policies
+
+* Only g3.* flavors should be run on the Jetstream2-GPU resource
+* Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
+* Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
+* At some future point, if GPU or large memory resources are scarce, we may limit runtime to two weeks spans or institute some form VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
