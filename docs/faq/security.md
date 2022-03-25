@@ -33,3 +33,25 @@ The CLI and Horizon by default allow egress only. You have to apply the appropri
 For Exosphere, the default security group allows all egress and inbound access.
 
 For CACAO, the default security group allows all egress and inbound access for X.
+
+---
+
+### In Exosphere, there is a way to get a passphrase for any instance. Can I prevent other users on my allocation from accessing my instance(s)?
+
+The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.
+
+It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult. (Note that currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.)
+
+We note how to change a user password here:
+
+https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine
+
+you can do:
+
+`sudo passwd exouser`
+
+and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. I would HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
+
+https://docs.jetstream-cloud.org/ui/exo/create_instance/
+
+under the advanced options. You can also manually add your key to an already running instance.
