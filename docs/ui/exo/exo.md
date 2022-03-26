@@ -1,6 +1,6 @@
 # Exosphere
 
-Exosphere strives to be the most user-friendly interface for research clouds. If you are new to Jetstream2 and unsure which interface to use, Exosphere is a great place to start. Whether you are exploring new software tools, running compute-intensive jobs, teaching a course/workshop, or building a science gateway, Exosphere can likely help you reach your goals. Use Exosphere in your web browser at [https://exosphere.jetstream-cloud.org](https://exosphere.jetstream-cloud.org/exosphere).
+Exosphere strives to be the most user-friendly interface for research clouds. If you are new to Jetstream2 and unsure which interface to use, Exosphere is a great place to start. Whether you are exploring new software tools, running compute-intensive jobs, teaching a course/workshop, or building a science gateway, Exosphere can likely help you reach your goals. Use Exosphere in your web browser at [https://jetstream2.exosphere.app/](https://jetstream2.exosphere.app/).
 
 ![Exosphere screenshot](../../images/exo-screenshot.png)
 
