@@ -50,7 +50,7 @@ you can do:
 
 `sudo passwd exouser`
 
-and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. I would HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
+and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. While you can use the console option still, we HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
 
 https://docs.jetstream-cloud.org/ui/exo/create_instance/
 
