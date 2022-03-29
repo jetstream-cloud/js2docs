@@ -51,3 +51,13 @@ restrictions.
 * Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
 * Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
 * At some future point, if GPU or large memory resources are scarce, we may limit runtime to two weeks spans or institute some form VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
+
+### Allocation Related Policies
+
+Jetstream2 requires an active XSEDE allocation for access. If your allocation expires you will no longer be able to access Jetstream2 or your resources. Presently, XSEDE warns PIs monthly, starting at 3 months until allocation expiration, and at the time of expiration.
+
+Jetstream2 policy is that we will do the following when allocations expire:
+
+* At **expiration + 1 day** - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
+* If the allocation has not been renewed *(preferred)* or extended in **10 days**, all VMs on the allocation will be shelved and thus no longer accessible
+* If the allocation has not been renewed *(preferred)* or extended in **30 days**, all resources (VMs, volumes, shares, images, etc) on the allocation will be destroyed and *will not be recoverable*

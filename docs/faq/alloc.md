@@ -61,3 +61,15 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 > It's important to note that Jetstream Trial Allocation quotas are fixed and will **NOT** be increased under any circumstances.
 
 > For other allocation types, justification will be required and will be granted at the discretion of the Jetstream2 staff based on the justification and available resources. Please note that large memory and GPU resources are limited so requests for those will require strong justification for success or partial success. We strive to make resources available to all researchers that require them, so striking a balance between the needs of one versus many is often necessary.
+
+---
+
+**7. Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?**
+
+> If your allocation is expired or out of SUs, you may request an extension, renewal, or supplement. Please see one of the following links:
+>
+> * [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}
+>
+> * [Jetstream2 Allocation Extensions and Renewals](../alloc/extension.md){target=_blank}
+>
+> Jetstream2 staff are unable to take these actions on your behalf.
