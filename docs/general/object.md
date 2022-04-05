@@ -53,7 +53,7 @@ Using the [aws command line interface](https://aws.amazon.com/cli/){target=_blan
 
 and to add a file to the bucket:
 
-    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" put_object --bucket my-unique-bucket-name --key my-file.zip --body my-file.zip
+    aws s3api --endpoint-url "https://js2.jetstream-cloud.org:8001/" put-object --bucket my-unique-bucket-name --key my-file.zip --body my-file.zip
 
 and to see bucket contents:
 
