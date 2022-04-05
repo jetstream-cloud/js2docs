@@ -47,5 +47,5 @@ Important things to note here are :
 
 ### Using Manila Share on a VM
 
-a. [Centos/Rocky](/general/manilaVM.md#2-a-configuring-a-centosrocky-instance)
-b. [Ubuntu](/general/manilaVM.md#2-b-configuring-a-ubuntu-instance)
+- [Centos/Rocky](/general/manilaVM/#2-a-configuring-a-centosrocky-instance)
+- [Ubuntu](/general/manilaVM/#2-b-configuring-a-ubuntu-instance)

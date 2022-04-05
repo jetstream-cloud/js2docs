@@ -152,8 +152,6 @@ nav:
     - Storage:
       - Manila:
         - Manila: general/manila.md
-        - Manila via Horizon: general/manilaHorizon.md
-        - Manila via Openstack: general/manilaOpenstack.md
         - Using Manila Share on a VM: general/manilaVM.md
       - Object Store: general/object.md
       - File Transfer: general/filetransfer.md
