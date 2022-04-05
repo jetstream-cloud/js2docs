@@ -4,12 +4,12 @@ On a terminal that has the Openstack Clients installed and the appropriate login
 
 ### 1. Create a share
 
-`openstack share create --name $manila-share-name cephfs $vol-size --os-share-api-version 2.63` 
+`openstack share create --name $manila-share-name cephfs $vol-size --os-share-api-version 2.63`
 
-Example:  
+Example:
 `openstack share create --name manila-share-cli cephfs 10 --os-share-api-version 2.63`
 
-Metadata for the share created above: 
+Metadata for the share created above:
 
     +---------------------------------------+--------------------------------------+
     | Field                                 | Value                                |
@@ -50,10 +50,10 @@ Metadata for the share created above:
 
 `openstack share access create $manila-share-name cephx $anyName --os-share-api-version 2.63`
 
-Example:  
+Example:
 `openstack share access create manila-share-cli cephx manilaAccess --os-share-api-version 2.63`
 
-Metadata for the access rule: 
+Metadata for the access rule:
 
     +--------------+--------------------------------------+
     | Field        | Value                                |
@@ -70,17 +70,17 @@ Metadata for the access rule:
     | properties   |                                      |
     +--------------+--------------------------------------+
 
-Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key`. 
+Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key`.
 
 ### 3. Get access key
 
 `openstack share access show $access-rule-id --os-share-api-version 2.63`
 
-Example: 
+Example:
 
 `openstack share access show 95067b4f-f77c-4b76-be12-ac5c3a8e8897 --os-share-api-version 2.63`
-    
-Metadata for the access rule: 
+
+Metadata for the access rule:
 
     +--------------+------------------------------------------+
     | Field        | Value                                    |
@@ -97,19 +97,19 @@ Metadata for the access rule:
     | properties   |                                          |
     +--------------+------------------------------------------+
 
-The access rule is active and you can use the `access_key` generated above.     
+The access rule is active and you can use the `access_key` generated above.
 
 
 
-### 4. View share information 
+### 4. View share information
 
 
 `openstack share show $share_id --os-share-api-version 2.63`
-Example:  
+Example:
 
-`openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4 --os-share-api-version 2.63` 
+`openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4 --os-share-api-version 2.63`
 
-Metadata for your share will now look a little different: 
+Metadata for your share will now look a little different:
 
     +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
     | Field                                 | Value                                                                                                                                  |
@@ -151,13 +151,13 @@ Metadata for your share will now look a little different:
 
 You will need the path of your `export_locations`
 
-In the above example it is:  
+In the above example it is:
 
     149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/1ca2d54e-16a5-43b8-90de-75a91c1b96e9/fba3f935-5047-4eef-8b4d-3c27f356c2c7
 
---- 
+---
 
-Important things to note down: 
+Important things to note down:
 
 - Share id (Step 1)
 - Access rule id (Step 2)
@@ -167,5 +167,5 @@ Important things to note down:
 
 ### Using Manila Share on a VM
 
-a. [Centos/Rocky](./manilaVM.md#2-a-configuring-a-centosrocky-instance)    
-b. [Ubuntu](./manilaVM.md#2-b-configuring-a-ubuntu-instance)  
+a. [Centos/Rocky](../../general/manilaVM.md#2-a-configuring-a-centosrocky-instance)
+b. [Ubuntu](../../general/manilaVM.md#2-b-configuring-a-ubuntu-instance)  
