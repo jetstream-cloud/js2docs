@@ -20,6 +20,8 @@ If you do not have an application credential openrc and CLI clients installed, p
 
 Optionally, you'll want an AWS s3api client like the [aws command line interface reference client](https://aws.amazon.com/cli/){target=_blank}
 
+There's also a tutorial from Andrea Zonca on [Using the distributed file format Zarr on Jetstream 2 object storage](https://zonca.dev/2022/04/zarr-jetstream2.html){target=_blank}
+
 #### Using the object store with s3api compatibility
 
 Once you have sourced your application credential based openrc and installed the python-openstack and python-swiftclient client you will need to generate your ec2-style credentials.
