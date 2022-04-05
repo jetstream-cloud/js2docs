@@ -34,6 +34,9 @@ extra_css:
     - 'css/custom.css'
     - 'css/cacao.css'
 
+extra_javascript:
+    - 'js/matomo.js'
+
 markdown_extensions:
     - smarty
     - toc:
