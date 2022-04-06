@@ -16,7 +16,7 @@ theme:
   # prev_next_buttons_location: none
   titles_only: True
   include_404: True
-  collapse_navigation: False
+  collapse_navigation: True
   sticky_navigation: True
   #collapse_navigation: False
   #name: "windmill"
