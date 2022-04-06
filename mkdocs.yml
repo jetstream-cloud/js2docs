@@ -144,8 +144,9 @@ nav:
         - Launching a Virtual Machine: ui/cli/launch.md
         - Instance Management: ui/cli/manage.md
         - Deleting Infrastructure in the CLI: ui/cli/deleting.md
-        - Storage Under the CLI: ui/cli/storage.md
-        - CLI Troubleshooting: ui/cli/troubleshooting.md
+      - Storage Under the CLI: ui/cli/storage.md
+      - Manila Shares in the CLI: ui/cli/manila.md
+      - CLI Troubleshooting: ui/cli/troubleshooting.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md

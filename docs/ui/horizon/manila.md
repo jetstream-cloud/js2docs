@@ -47,5 +47,4 @@ Important things to note here are :
 
 ### Using Manila Share on a VM
 
-- [Centos/Rocky](/general/manilaVM/#2-a-configuring-a-centosrocky-instance)
-- [Ubuntu](/general/manilaVM/#2-b-configuring-a-ubuntu-instance)
+This is the same whether you're using Horizon or the CLI. Please refer to [Configuring a VM to use Manila Shares](../../general/manilaVM.md)
