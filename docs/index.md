@@ -13,7 +13,7 @@ For a more in-depth description please see the [System Overview](overview/overvi
 * [System Overview](overview/overview-doc.md){target=_blank}
 * [Acceptable Usage Policies](general/policies.md){target=_blank}
 * [Allocations Overview](alloc/overview.md){target=_blank}
-* [Cacao Overview](ui/cacao/overview.md){target=_blank}
+* [Exosphere Overview](ui/exosphere/exo.md){target=_blank}
 
 ---
 Our [Troubleshooting and FAQ](faq/trouble.md){target=_blank} may have helpful suggestions for common problems.
