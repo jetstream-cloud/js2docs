@@ -85,6 +85,7 @@ nav:
     - Featured Images: general/featured.md
     - Instance Management Actions: general/instancemgt.md
     - Jetstream2 Software Collection: general/software.md
+      - Using the Jetstream2 Software Collection: general/usingsoftware.md
     - Software Licenses: general/licenses.md
     - Policies and Best Practices:
       - Acceptable Usage Policies: general/policies.md
