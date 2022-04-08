@@ -22,8 +22,9 @@ Make the mount point you want to use (we highly suggest it be **/software**)
 
 Add the following entry to the end of your /etc/fstab (make sure the mountpoint you created in the last step matches)
 
-\# JS2 Software Collection mount
-149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,secretfile=/etc/ceph.js2softwarero.secret,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0
+> \# JS2 Software Collection mount
+> ```149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,secretfile=/etc/ceph.js2softwarero.secret,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0
+```
 
 Then mount the filesystem within
 
