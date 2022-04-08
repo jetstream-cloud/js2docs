@@ -155,7 +155,7 @@ nav:
     - Research Software:
       - Jupyter on Jetstream2: general/jupyter.md
       - Galaxy: general/galaxy.md
-  - Software Collection
+  - Software Collection:
     - Jetstream2 Software Collection: general/software.md
     - Using the Jetstream2 Software Collection: general/usingsoftware.md
     - Software Licenses: general/licenses.md
