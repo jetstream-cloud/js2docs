@@ -84,14 +84,6 @@ nav:
     - VM Sizes and Configurations: general/vmsizes.md
     - Featured Images: general/featured.md
     - Instance Management Actions: general/instancemgt.md
-    - Jetstream2 Software Collection: general/software.md
-      - Using the Jetstream2 Software Collection: general/usingsoftware.md
-    - Software Licenses: general/licenses.md
-    - Policies and Best Practices:
-      - Acceptable Usage Policies: general/policies.md
-      - Export Control Guidance: general/export.md
-      - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
-      - Best Practices: general/bestpractice.md
     - Microsoft Windows on Jetstream2: general/windows.md
   - Allocations:
     - Allocations Overview: alloc/overview.md
@@ -160,9 +152,18 @@ nav:
     - Maintenance and Administration:
       - Add User to a VM: general/adduser.md
       - Installing Software on your VM: general/installsoftware.md
-    - Software:
+    - Research Software:
       - Jupyter on Jetstream2: general/jupyter.md
       - Galaxy: general/galaxy.md
+  - Software Collection
+    - Jetstream2 Software Collection: general/software.md
+    - Using the Jetstream2 Software Collection: general/usingsoftware.md
+    - Software Licenses: general/licenses.md
+  - Policies and Best Practices:
+    - Acceptable Usage Policies: general/policies.md
+    - Export Control Guidance: general/export.md
+    - AUPs for Jetstream2 Hosted Gateways: general/gateways.md
+    - Best Practices: general/bestpractice.md
   - Advanced Capabilities:
     - Containers on Jetstream2:
       - Docker: general/docker.md
