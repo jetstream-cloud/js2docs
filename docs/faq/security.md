@@ -24,6 +24,18 @@ We recommend limiting access to any service ports via security group and/or fire
 
 ---
 
+### Do I need to run a firewall on my VM?
+
+Jetstream2 staff encourages a defense-in-depth approach to security. This potentially involves several methods of restricting access and securing instances.
+
+Firewalls are not enabled by default on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See *What is the default security profile for Jetstream2 VMs?* on this page for more information on that.)
+
+We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you're comfortable administering it.
+
+Please refer to [Jetstream2 Virtual Machine Firewalls](../general/firewalls.md) for more information.
+
+---
+
 ### What is the default security profile for Jetstream2 VMs?
 
 That depends on the interface.
@@ -32,7 +44,7 @@ The CLI and Horizon by default allow egress only. You have to apply the appropri
 
 For Exosphere, the default security group allows all egress and inbound access.
 
-For CACAO, the default security group allows all egress and inbound access for X.
+For CACAO, the default security group will be announced when it is available for general usage. 
 
 ---
 
