@@ -143,6 +143,7 @@ nav:
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
+      - Being the root user: general/sudo.md
     - Storage:
       - Manila:
         - Manila: general/manila.md
