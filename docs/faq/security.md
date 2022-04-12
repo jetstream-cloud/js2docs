@@ -44,7 +44,7 @@ The CLI and Horizon by default allow egress only. You have to apply the appropri
 
 For Exosphere, the default security group allows all egress and inbound access.
 
-For CACAO, the default security group will be announced when it is available for general usage. 
+For CACAO, the default security group will be announced when it is available for general usage.
 
 ---
 
@@ -56,7 +56,7 @@ It is possible to make it less straightforward for another user on the same allo
 
 We note how to change a user password here:
 
-https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine
+[https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine](https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine)
 
 you can do:
 
@@ -64,6 +64,6 @@ you can do:
 
 and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. While you can use the console option still, we HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
 
-https://docs.jetstream-cloud.org/ui/exo/create_instance/
+[https://docs.jetstream-cloud.org/ui/exo/create_instance/](https://docs.jetstream-cloud.org/ui/exo/create_instance/)
 
 under the advanced options. You can also manually add your key to an already running instance.

@@ -52,4 +52,4 @@ That said, there are times you may need the more complete features of Horizon in
 * [Managing instances](manage.md)
 * [Using volumes](storage.md)
 * [Using Manila shares](manila.md)
-* [Troubleshooting in Horizon](troubleshooting,md)
+* [Troubleshooting in Horizon](troubleshooting.md)
