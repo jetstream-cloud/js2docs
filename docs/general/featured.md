@@ -11,6 +11,8 @@ At this time, the featured images will be:
 * Rocky 8
 * CentOS 7
 
+All featured images are named ***Featured-yyyyyyyy*** (e.g. Featured-Ubuntu20) on Jetstream2.
+
 These featured images will evolve over time. As distributions leave support (e.g Ubuntu 18 will end support in April 2023), we will replace them with newer, supported versions. NVIDIA drivers will be present on all featured images so any of the featured images will work with Jetstream2 GPUs.
 
 Our goal is to maintain a minimum of featured images but keep them updated via automated pipeline on a weekly basis.
