@@ -7,11 +7,11 @@ site_favicon: 'images/Jetstream2_icon_64px.jpg'
 
 theme:
   name: "readthedocs"
-  analytics:
-    provider: google
+  #analytics:
+  #  provider: google
     #OLD gtag: G-3KNR9L6H6Y
-    gtag: G-PQH32H51WS
-  google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
+  #  gtag: G-PQH32H51WS
+  #google_analytics: ['UA-204881722-1', 'jetstream2wiki.readthedocs.io']
   prev_next_buttons_location: bottom
   # prev_next_buttons_location: none
   titles_only: 'True'
