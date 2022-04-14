@@ -2,12 +2,15 @@
 
 Containers are isolated environments in which to run your applications. They created by objects called images. An image is defined as a read only template with instructions for creating a container. These instructions define everything a container needs; Software, dependencies, system libraries, environment variables, configuration files, etc.
 
-Jetstream2 supports Docker and Singularity. Other container software may be included in the future.
+Jetstream2 supports Docker and Apptainer/Singularity. Other container software may be included in the future.
 
 [Jetstream Featured Images](featured.md) all include Docker as part of the build. Additionally, the NVIDIA Docker2 container environment is also built in so that all Featured images may be used for GPU usage or using NVIDIA containers for code development.
 
-Singularity is installed as part of the [Jetstream Software Collection](software.md).
+[Apptainer (previously known as Singularity)](https://apptainer.org/){target=_blank} is installed as part of the [Jetstream Software Collection](software.md). You can access Apptainer from any [Jetstream Featured Image](featured.md) by doing:
 
+    module load apptainer
+
+---
 
 ## Some basic Docker commands:
 
