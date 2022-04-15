@@ -5,7 +5,7 @@
 
   **1. When will Jetstream2 be available for XSEDE research allocations?**
 
-Jetstream2 is presently available only via the XSEDE Resource Allocation System for research allocation submissions. The system is still not available to researchers, educators, or students at this time. All research allocations successfully receiving a Jetstream2 research award will be amongst the first groups given access to Jetstream2.
+Jetstream2 is presently available via the XSEDE Resource Allocation System for research allocation submissions.
 
 Please see this page for more information: [XSEDE Research Allocations](https://portal.xsede.org/allocations/research){target=_blank}
 
@@ -13,7 +13,7 @@ Please see this page for more information: [XSEDE Research Allocations](https://
 
   **2. When will Jetstream2 be available for XSEDE startup and education allocations?**
 
-Until Jetstream2 completes National Science Foundation (NSF) acceptance testing, timelines remain uncertain. Once acceptance testing has been completed, documented, presented and approved by the NSF, we will be able to publish a more definitive timeline.
+We expect to open Jetstream2 for Startup and Education allocations either on April 15, 2022 or in the following business week. The system has been running with researchers, educators, and students since February 9, 2022. We feel the system is stable and ready for general usage. The only limiting factors presently are getting the mechanisms with XSEDE opened up for Jetstream2 usage. This is currently in progress. 
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important operations updates.
 

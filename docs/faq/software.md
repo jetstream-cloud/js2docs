@@ -18,7 +18,7 @@ This software store is mounted automatically when the instance is launched. Inst
 
 ### Can I request to have other software packages added to the software collection?
 
-You can request software using the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}
+You may request software using the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}
 
 Please do keep in mind that we cannot add and maintain all requested software packages. We will review any requests and track those requests.
 
