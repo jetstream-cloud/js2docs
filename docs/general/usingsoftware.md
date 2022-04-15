@@ -4,6 +4,8 @@ Jetstream2 utilizes [Lmod](https://lmod.readthedocs.io/){target=_blank} to load 
 
 All of the instructions on listing, loading, and unloading modules/software packages assume you are using a Jetstream2 featured image created after April 9, 2022.
 
+Additional information on using Lmod is available in the [User Guide for Lmod](https://lmod.readthedocs.io/en/latest/010_user.html){target=_blank}
+
 ### Listing available software from the collection
 
 You can use ***module avail*** to show available software packages. This may show multiple versions of the same package in the future, which will default to the latest version but allow you to load previous versions.
@@ -54,7 +56,7 @@ You can also unload any loaded modules by using ***module unload***
       1) R/4.1.2   2) intel-OneAPI/2022.1.2
 
     [exouser@rocky-lmod-host ~]$ module unload R
-    
+
     [exouser@rocky-lmod-host ~]$ module list
 
     Currently Loaded Modules:
