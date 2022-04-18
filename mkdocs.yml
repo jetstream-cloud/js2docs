@@ -100,6 +100,7 @@ nav:
       - Logging In: ui/exo/login.md
       - Creating an Instance: ui/exo/create_instance.md
       - Instance Management: ui/exo/manage.md
+      - File Transfer: ui/exo/exo-filetransfer.md
       - Storage Under Exosphere: ui/exo/storage.md
       - Push-button clusters: ui/exo/push-button-cluster.md
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
