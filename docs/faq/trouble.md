@@ -19,6 +19,12 @@ The [Jetstream2 Software Collection](../general/software.md) requires Lmod modul
 
 We're looking for a longer term solution for this, but in the meantime, you can fix this in the terminal preferences.
 
-In a newly launched terminal in the Web Desktop, do `source .bashrc` should allow you to do commands like *module avail*
+With Terminal as the active application:
+
+* Go to Edit -> Profile Preferences.
+* Select the Title and Command tab.
+* Check the "Run command as login shell" checkbox
+
+You'll need to start a new terminal window, but that new session should allow you to do commands like *module avail*
 
 ---
