@@ -77,6 +77,7 @@ nav:
     - Allocations: faq/alloc.md
     - Security: faq/security.md
     - Software: faq/software.md
+    - Gateways: faq/gateways.md
   - General Usage Information:
     - Jetstream2 Resources: general/resources.md
     - Jetstream2 Storage: general/storage.md
@@ -176,3 +177,4 @@ nav:
       - Minikube: general/minikube.md
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
+    - Federating Gateways on Jetstream2: general/federating.md
