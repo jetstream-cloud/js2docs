@@ -7,6 +7,7 @@ For specific FAQs, see the following pages:
 * [Troubleshooting](trouble.md)
 * [Security FAQ](security.md)
 * [Software FAQ](software.md)
+* [Gateways FAQ](gateways.md)
 
 ---
 ## General FAQs
