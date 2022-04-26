@@ -70,6 +70,6 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 >
 > * [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}
 >
-> * [Jetstream2 Allocation Extensions and Renewals](../alloc/extension.md){target=_blank}
+> * [Jetstream2 Allocation Extensions and Renewals](../alloc/renew-extend.md){target=_blank}
 >
 > Jetstream2 staff are unable to take these actions on your behalf.
