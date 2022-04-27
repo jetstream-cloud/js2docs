@@ -30,7 +30,7 @@ If you are unfamiliar with git, the documentation is located here [git-scm](http
 Git clone allows you create a copy of a git repo that creates the directory and checks out the active branch.
 
 ```
-git clone git@github.iu.edu:wellsaar/terraform-jetstream.git
+git clone git@github.com:wellsaar/terraform-jetstream.git
 ```
 This command creates a clone of the git repo that contains the code examples that we use below. The master branch of the git repo above should be a good starting point in developing your own terraform code.
 
