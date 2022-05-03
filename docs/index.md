@@ -14,7 +14,6 @@ For a more in-depth description please see the [System Overview](overview/overvi
 <link rel="stylesheet" href="/css/status_widget.css">
 
 <table>
-
 <tbody>
   <tr>
     <td>Overall JS2 system status</td>
@@ -32,7 +31,9 @@ For a more in-depth description please see the [System Overview](overview/overvi
   </tbody>
 </table>
 
-Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list.
+Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list. Also see, [Jetstream2 system status and information](overview/status.md) for additional news information. 
+
+
 
 ---
 ###New users may wish to review:###
