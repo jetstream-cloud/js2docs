@@ -6,14 +6,17 @@ XSEDE strongly encourages researchers to request a [Startup Allocation](startup.
 
 For projects that have progressed beyond the Startup phase, either in purpose or scale of computational activities, a Research request is appropriate. Research requests are accepted and reviewed quarterly by the XSEDE Resource Allocations Committee (XRAC).
 
+---
+
 XSEDE maintains a page with all of the information you will need to submit a research allocation:
 [https://portal.xsede.org/allocations/research](https://portal.xsede.org/allocations/research){target=_blank}
 
-We highly encourage all potential applicants to view the [webinars](https://portal.xsede.org/allocations/research#webinars){target=_blank} on writing a successful research allocation request and also the webinar for code and scaling documentation.
+---
 
-There are also [Example Research Requests](https://portal.xsede.org/allocations/research#examples){target=_blank} an applicant can review.
-
-*Please review the [Required Components](https://portal.xsede.org/allocations/research#requiredcomponents){target=_blank} section of the XSEDE documentation. If your research allocation request does not have all of the required components, it may be rejected without review.*
+We highly encourage all potential applicants to view:
+  * [Webinars](https://portal.xsede.org/allocations/research#webinars){target=_blank} on writing a successful research allocation request and also the webinar for code and scaling documentation.
+  * [Example Research Requests](https://portal.xsede.org/allocations/research#examples){target=_blank} an applicant can review.
+  * [Required Components](https://portal.xsede.org/allocations/research#requiredcomponents){target=_blank} section of the XSEDE documentation. *If your research allocation request does not have all of the required components, it may be rejected without review.*
 
 [Science Gateway research requests](https://portal.xsede.org/allocations/research#gateways){target=_blank} may have some different criteria. We recommend reviewing this section of the document if you will be submitting a science gateway oriented research request.
 
