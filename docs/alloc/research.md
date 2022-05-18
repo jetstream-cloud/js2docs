@@ -14,6 +14,7 @@ XSEDE maintains a page with all of the information you will need to submit a res
 ---
 
 We highly encourage all potential applicants to view:
+
   * [Webinars](https://portal.xsede.org/allocations/research#webinars){target=_blank} on writing a successful research allocation request and also the webinar for code and scaling documentation.
   * [Example Research Requests](https://portal.xsede.org/allocations/research#examples){target=_blank} an applicant can review.
   * [Required Components](https://portal.xsede.org/allocations/research#requiredcomponents){target=_blank} section of the XSEDE documentation. *If your research allocation request does not have all of the required components, it may be rejected without review.*
