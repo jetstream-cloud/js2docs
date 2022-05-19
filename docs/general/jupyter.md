@@ -2,7 +2,7 @@
 
 The easiest way to use a Jupyter notebook on Jetstream2 is to launch an instance using [Exosphere](../ui/exo/exo.md), making sure to [launch with the web desktop enabled](https://docs.jetstream-cloud.org/ui/exo/create_instance/#configure-instance).
 
-Then you can open a terminal and do
+Then you can open a web desktop session in Exosphere, open a terminal, and type the commands
 
     module load anaconda
     jupyter notebook
