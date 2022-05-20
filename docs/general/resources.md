@@ -5,7 +5,7 @@ As noted on the [Key Differences](../overview/keydiff.md#hardware) page, Jetstre
 * [Jetstream2 (CPU only)](../overview/config.md#compute-nodes-384-nodes){target=_blank}
 * [Jetstream2 Large Memory](../overview/config.md#large-memory-nodes-32-nodes){target=_blank}
 * [Jetstream2 GPU](../overview/config.md#gpu-nodes-90-nodes){target=_blank}
-* Jetstream2 Storage (see below)
+* [Jetstream2 Storage](resources.md#jetstream2-storage)
 
 The specifications for each are linked above.
 
