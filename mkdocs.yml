@@ -81,7 +81,6 @@ nav:
     - Gateways: faq/gateways.md
   - General Usage Information:
     - Jetstream2 Resources: general/resources.md
-    - Jetstream2 Storage: general/storage.md
     - XSEDE Service Units and Jetstream2: general/xsede.md
     - VM Sizes and Configurations: general/vmsizes.md
     - Featured Images: general/featured.md
