@@ -1,5 +1,8 @@
 # Configuring a VM to use Manila Shares
 
+Please note that any items with ***$something*** are placeholders for your names that you used when you created the manila shares in Horizon or via the CLI.
+{: .note}
+
 ### 1. Create a mount point on your instance
 ```
 mkdir /mnt/ceph
@@ -11,7 +14,9 @@ i. Create the file `/etc/ceph.$accessTo.secret` and add the `accessKey`
 
 Example:
 
-/etc/ceph.manilashare.secret
+    vi /etc/ceph.manilashare.secret
+
+and add
 
 ```
 AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
@@ -24,6 +29,8 @@ ii. Edit `/etc/fstab` to include the following line:
 $path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph.$accessTo.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 ```
 $path = ips:ports followed by volume path (/volume/\_no-group/...)
+
+*Please make sure to change the $variables to whatever you set these values to in Manila or the CLI when you created the share*
 
 Example:
 
