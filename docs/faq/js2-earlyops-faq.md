@@ -13,7 +13,15 @@ Please see this page for more information: [XSEDE Research Allocations](https://
 
   **2. When will Jetstream2 be available for XSEDE startup and education allocations?**
 
-We expect to open Jetstream2 for Startup and Education allocations either on April 15, 2022 or in the following business week. The system has been running with researchers, educators, and students since February 9, 2022. We feel the system is stable and ready for general usage. The only limiting factors presently are getting the mechanisms with XSEDE opened up for Jetstream2 usage. This is currently in progress. 
+Jetstream2 is presently available via the XSEDE Resource Allocation System for startup, education, and Champion allocation submissions.
+
+Please see these pages for more information:
+
+* [Startup Allocations](../alloc/startup.md)
+* [Education Allocations](../alloc/education.md)
+* [Jetstream2 Allocatable Resources](../general/resources.md)
+
+The system has been running with researchers, educators, and students since February 9, 2022. We feel the system is stable and ready for general usage.
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important operations updates.
 
@@ -28,13 +36,3 @@ Jetstream2 Trial Allocations will be made available after Jetstream2 goes into p
 Until Jetstream2 completes National Science Foundation (NSF) acceptance testing, timelines remain uncertain. Once acceptance testing has been completed, documented, presented and approved by the NSF, we will be able to publish a more definitive timeline.
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important operations updates.
-
----
-
-  **4. My research group wants to bring up a new gateway or infrastructure project, should I wait for Jetstream2?**
-
-Since the timelines for Jetstream2 are still uncertain at this time, we would recommend that your research group get a startup allocation now on Jetstream1 and get a supplement for JS2 when it becomes available. As we recommend the API side for gateways and infrastructure, migrating to JS2 will be reasonably easy.
-
-More information about getting Jetstream1 startup allocations is available [here](http://wiki.jetstream-cloud.org/Jetstream+Allocations){target=_blank}
-
-More information about getting Jetstream1 API access is available [here](http://wiki.jetstream-cloud.org/Using+the+Jetstream+API){target=_blank}
