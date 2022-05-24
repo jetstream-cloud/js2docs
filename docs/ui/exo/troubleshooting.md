@@ -8,3 +8,11 @@ It is possible to make it less straightforward for another user on the same allo
 
 Currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.
 {: .note}
+
+We HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
+
+[https://docs.jetstream-cloud.org/ui/exo/create_instance/](https://docs.jetstream-cloud.org/ui/exo/create_instance/)
+
+under the advanced options. You can also manually add your key to an already running instance.
+
+We generally recommend using only ssh keys for external access and not changing the exouser password.
