@@ -64,9 +64,10 @@ extra:
 
 nav:
   - Jetstream2 Home: index.md
-  - Migrating from Jetstream1 to Jetstream2 General: migrating.md
-  - Migrating from Jetstream1 to Jetstream2 Overview: migration/migration_overview.md
-  - Migrating from Jetstream1 to Jetstream2 HOW-TO: migration/how_to_migrate.md
+  - Migrating from Jetstream1 to Jetstream2:
+    - General: migrating.md
+    - Overview: migration/migration_overview.md
+    - HOW-TO: migration/how_to_migrate.md
   - Jetstream2 Early Operations FAQ: faq/js2-earlyops-faq.md
   - Jetstream2 Status and News: overview/status.md
   - Jetstream2 Info:
