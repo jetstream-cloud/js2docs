@@ -14,6 +14,18 @@ Allocation types:
 - [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
 - [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.
 
+Maximum Trial Allocation values for each resource are:
+* Jetstream2 CPU - 2,000 SUs, 2 cores
+
+Maximum Startup/Campus Champion Allocation values for each resource are:
+* Jetstream2 CPU - 200,000 SUs
+* Jetstream2 Large Memory - 400,000 SUs
+* Jetstream2 GPU - 600,000 SUs
+* Jetstream2 Storage - 1TB default**&ast;**
+
+**&ast;** Storage limits may be larger than 1TB per allocation for a startup if well-justified.
+
+
 ----
 
 You'll need to have an XSEDE Portal account to request access to the Jetstream2 Trial Allocation, be added to a PI's allocation, or apply for an allocation.
