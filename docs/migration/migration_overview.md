@@ -55,7 +55,7 @@ One important differences to note for our existing users is that we’ve enhance
 
 `Important note for CLI users`
 
-Jetstream2 use of **Application Credentials** has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](ui/cli/openrc.md){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
+Jetstream2 use of **Application Credentials** has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc.md){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
 
 
 ### Jetstream2 Software Collection<a name="SoftwareCollection"></a>
