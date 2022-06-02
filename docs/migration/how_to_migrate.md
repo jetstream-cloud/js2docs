@@ -10,7 +10,7 @@ In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you'll need to und
 ### Allocations <a name="Allocations"></a>
 
 Just as in JS1, you'll need an allocation of compute (normal, large memory, GPU) and storage resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
-The allocation process is described here: [Allocation Overivew](alloc/overview/)
+The allocation process is described here: [Allocation Overivew](/alloc/overview/)
 
 You can take one of two approaches:
 
@@ -19,32 +19,32 @@ You can take one of two approaches:
 
 ### Supplement Allocation <a name="Supplement"></a>
 
-If you already have a JS1 allocation, then we encourage you to request a supplement a **[STARTUP](alloc/startup/)** amount of resources for the compute, large-memory-compute, GPU, and storage resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
+If you already have a JS1 allocation, then we encourage you to request a supplement a **[STARTUP](/alloc/startup/)** amount of resources for the compute, large-memory-compute, GPU, and storage resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
 
-* [SUPPLEMENT](alloc/supplement/)
-* [RENEWAL](alloc/renew-extend/)
+* [SUPPLEMENT](/alloc/supplement/)
+* [RENEWAL](/alloc/renew-extend/)
 
 ### New Allocation <a name="NewAllocation"></a>
 
 Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still startup with a STARTUP level in order to create the **Code, Performance, & Scaling** estimates you'll need later.
 
-* [ALLOCATION OVERVIEW](alloc/overview/)
-* [STARTUP ALLOCATION](alloc/startup)
+* [ALLOCATION OVERVIEW](/alloc/overview/)
+* [STARTUP ALLOCATION](/alloc/startup)
 
 
 ### How to move your data <a name="MoveData"></a>
 
-If you've already using JS1, you'll likely wish to retain your old VMs and data, both on VMs and in external volumes.
+If you've already using JS1, you'll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
 
 #### Three approaches
 There are essentially three approaches to accomplish this:
 
 1. **Recreate your work**</br>
 In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></br>
-Information about creating new VMs can be found for each type of user inteface: [General Instance Management](general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](general/filetransfer)
+Information about creating new VMs can be found for each type of user inteface: [General Instance Management](/general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](/general/filetransfer)
 
 2. **Copy your JS1 work**</br>
-Similar to recreating your work, you can save some steps after [starting new VMs](general/instancemgt) by copying your existing software from your current VM on JS1: [File Transfer](general/filetransfer) </br></br> **A NOTE OF WARNING**: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
+Similar to recreating your work, you can save some steps after [starting new VMs](/general/instancemgt) by copying your existing software from your current VM on JS1: [File Transfer](/general/filetransfer) </br></br> **A NOTE OF WARNING**: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
 Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.
 
 3. **Transfer your work** </br>
