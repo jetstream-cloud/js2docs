@@ -9,10 +9,10 @@ Researchers on Jetstream1 (JS1)  wishing to migrate to Jetstream2 (JS2) should t
 * [Software Collection](#SoftwareCollection)
 
 
-2. [How to migrate from JS1 to JS2](#abcd)
-* [Allocations](https://docs.jetstream-cloud.org/migrating/how_to_migrate/#Allocations)
-* [How to move data](https://docs.jetstream-cloud.org/migrating/how_to_migrate/#MoveData)
-* [Where to find help](https://docs.jetstream-cloud.org/migrating/how_to_migrate/#GetHelp)
+2. [How to migrate from JS1 to JS2](migration_overview.md)
+* [Allocations](how_to_migrate.md/#Allocations)
+* [How to move data](how_to_migrate.md/#MoveData)
+* [Where to find help](how_to_migrate.md/#GetHelp)
 
 ## Critical differences JS2 and JS1 <a name="CriticalDifferences"></a>
 
@@ -28,10 +28,10 @@ The biggest difference is that Jetstream2 will consist of one primary cloud (hos
 * User Interfaces will feel familiar, particularly if you’ve tried the API side of JS1 before as we continue to have HORIZON, EXOSPHERE, and a COMMAND LINE INTERFACE.
 * For our Atmosphere users, both EXOSPHERE and the successor to Atmosphere: CACAO offer the ease-of-use you’ve come to expect.
 * Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).
- * [EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/](https://docs.jetstream-cloud.org/ui/exo/exo)
- * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](https://docs.jetstream-cloud.org/ui/exo/exo)
- * [HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/](https://docs.jetstream-cloud.org/ui/exo/exo)
- * [CLI : https://docs.jetstream-cloud.org/ui/cli/overview/](https://docs.jetstream-cloud.org/ui/exo/exo)
+ * [EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/](ui/exo/exo)
+ * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](ui/exo/exo)
+ * [HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/](ui/exo/exo)
+ * [CLI : https://docs.jetstream-cloud.org/ui/cli/overview/](ui/exo/exo)
 
 
 ### Application Credentials<a name="ApplicationCredentials"></a>
@@ -43,4 +43,4 @@ Rather than pack each and every virtual machine with research software, Jetstrea
 The use of the JS2 Software Collection is described here:</br>
 https://docs.jetstream-cloud.org/general/usingsoftware/#using-the-jetstream2-software-collection
 
-[<<previous](https://docs.jetstream-cloud.org) | [next>>](https://docs.jetstream-cloud.org/migrating/how_to_migrate/)
+[previous](https://docs.jetstream-cloud.org) | [next](how_to_migrate.md)
