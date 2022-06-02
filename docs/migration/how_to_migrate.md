@@ -9,17 +9,17 @@ In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you'll need to und
 
 ### Allocations <a name="Allocations"></a>
 
-Just as in JS1, you'll need an allocation of compute (normal, large memory, GPU) and storage resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
+Just as in JS1, you'll need an allocation of compute (`normal`, `large memory`, `GPU`) and `storage` resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
 The allocation process is described here: [Allocation Overivew](/alloc/overview/)
 
 You can take one of two approaches:
 
 1. A supplement to a current research allocation -OR-
-2. A completely new allocation.
+2. A completely new allocation
 
 ### Supplement Allocation <a name="Supplement"></a>
 
-If you already have a JS1 allocation, then we encourage you to request a supplement a **[STARTUP](/alloc/startup/)** amount of resources for the compute, large-memory-compute, GPU, and storage resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
+If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the _compute, large-memory-compute, GPU, and storage_ resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
 
 * [SUPPLEMENT](/alloc/supplement/)
 * [RENEWAL](/alloc/renew-extend/)
@@ -35,9 +35,11 @@ Of course, if your research will be changing, you can always apply for a new all
 ### How to move your data <a name="MoveData"></a>
 
 If you've already been using JS1, you'll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
+Below, we provide instructions for moving your VMs. As time permits, we anticipate the development of tools to help facilitate and partially automate migration.
+Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage. 
 
 #### Three approaches
-There are essentially three approaches to accomplish this:
+There are essentially three approaches to accomplish data retention:
 
 1. **Recreate your work**</br>
 In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></br>
@@ -89,4 +91,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 * **JS2**:</br>The latest JS2 documentation will be maintained at [docs.jetsteam-cloud.org](https://docs.jetsteam-cloud.org)
 
-* **NEWS**: Announcements will be made at the [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news)
+* **NEWS**: Announcements will be made at the [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news) </br> To ensure that you are receiving all updates to your inbox, login to the page to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
+
+**Updates will all be made [docs.jetsteam-cloud.org](https://docs.jetsteam-cloud.org) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
+
