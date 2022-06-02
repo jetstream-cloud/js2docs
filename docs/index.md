@@ -43,3 +43,7 @@ Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstr
 * [Allocations Overview](alloc/overview.md)
 * [Exosphere Overview](ui/exo/exo.md)
 * [Troubleshooting and FAQ](faq/trouble.md) may have helpful suggestions for common problems.
+
+### Jetstream1 users may wish to review:###
+
+* [Migration](/migration/migration_overview)
