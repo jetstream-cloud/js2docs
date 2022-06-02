@@ -129,7 +129,7 @@ nav:
       - Networks in Horizon: ui/horizon/network.md
       - Launching Instances: ui/horizon/launch.md
       - Instance Management: ui/horizon/manage.md
-      - Volumes Under Horizon: ui/horizon/volumes.md
+      - Volumes Under Horizon: ui/horizon/storage.md
       - Manila Shares in Horizon: ui/horizon/manila.md
       - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
