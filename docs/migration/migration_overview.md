@@ -3,16 +3,16 @@
 Researchers on Jetstream1 (JS1)  wishing to migrate to Jetstream2 (JS2) should take note of:
 
 1. [Critical differences between JS2 and JS1](#CriticalDifferences) for:
-  * [Architecture](#Architecture)
-  * [User interfaces](#UI)
-  * [Authentication](#ApplicationCredentials)
-  * [Software Collection](#SoftwareCollection)
+   * [Architecture](#Architecture)
+   * [User interfaces](#UI)
+   * [Authentication](#ApplicationCredentials)
+   * [Software Collection](#SoftwareCollection)
 
 
 2. [How to migrate from JS1 to JS2](migration_overview.md)
-  * [Allocations](how_to_migrate.md/#Allocations)
-  * [How to move data](how_to_migrate.md/#MoveData)
-  * [Where to find help](how_to_migrate.md/#GetHelp)
+   * [Allocations](how_to_migrate.md/#Allocations)
+   * [How to move data](how_to_migrate.md/#MoveData)
+   * [Where to find help](how_to_migrate.md/#GetHelp)
 
 ## Critical differences JS2 and JS1 <a name="CriticalDifferences"></a>
 
