@@ -27,6 +27,7 @@ The biggest difference is that Jetstream2 will consist of one primary cloud (hos
 * User Interfaces will feel familiar, particularly if you’ve tried the API side of JS1 before as we continue to have HORIZON, EXOSPHERE, and a COMMAND LINE INTERFACE.
 * For our Atmosphere users, both EXOSPHERE and the successor to Atmosphere: CACAO offer the ease-of-use you’ve come to expect.
 * Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).
+
     * [EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/](ui/exo/exo)
     * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](ui/exo/exo)
     * [HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/](ui/exo/exo)
