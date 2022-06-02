@@ -7,16 +7,11 @@ In this section, we document information relative to that migration.
 
 Jetstream1 will remain online through the end of Q1 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase.
 
-VMs on Jetstream1 will continue running as long as you have a valid allocation there and until it is decommissioned. The TACC cloud of Jetstream1 will likely be taken down in stages prior to the IU cloud, but those timelines are still up in the air, as well.
+We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages prior to the IU cloud.
 
-#### Important note for CLI users
+## What Researchers should know before migrating
 
-Jetstream2 uses application credentials for CLI access so CLI users can authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](ui/cli/openrc.md){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
-
-**Updates will all be made here and shared via XSEDE User News.**
-
-
-Researchers on Jetstream1 (JS1)  wishing to migrate to Jetstream2 (JS2) should take note of:
+Researchers on JS1 wishing to migrate to JS2 should take note of:
 
 1. [Critical differences between JS2 and JS1](#CriticalDifferences) for:
     * [Architecture](#Architecture)
@@ -45,7 +40,7 @@ The biggest difference is that Jetstream2 will consist of one primary cloud (hos
 * Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).
 
     * [EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/](/ui/exo/exo)
-    * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](/ui/cacao/overview)
+    * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](/ui/cacao/overview) </br> **Note**: CACAO is still in development on JS2 and not in its final production state.
     * [HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/](/ui/horizon/intro)
     * [CLI : https://docs.jetstream-cloud.org/ui/cli/overview/](/ui/cli/overview)
 
@@ -55,7 +50,7 @@ One important differences to note for our existing users is that we’ve enhance
 
 `Important note for CLI users`
 
-Jetstream2 use of **Application Credentials** has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc.md){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
+Jetstream2 use of **Application Credentials** has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
 
 
 ### Jetstream2 Software Collection<a name="SoftwareCollection"></a>

@@ -61,7 +61,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 1. Identify if your VM or volume used the Atmosphere or API/CLI interface
     * **Atmosphere**:</br>
       * VMs:
-        1. Follow the instructions here to [update and image your VM](https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM)
+        1. Follow the instructions here to [update and image your VM](https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM) </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`
         2. Next
             * Go to the IMAGES tab
             * Click on the Image you created
