@@ -201,6 +201,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.jetstream-cloud.org/general/quotas/</loc>
+         <lastmod>2022-06-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.jetstream-cloud.org/general/resources/</loc>
          <lastmod>2022-06-02</lastmod>
          <changefreq>daily</changefreq>
