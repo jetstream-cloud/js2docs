@@ -46,8 +46,6 @@
               </ul>
               <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../../migrating/">General</a>
-                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Overview</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../how_to_migrate/">HOW-TO</a>
@@ -347,11 +345,9 @@
 In this section, we document information relative to that migration.</p>
 <h2 id="jetstream-1-2-availability">Jetstream 1 &amp; 2 availability<a class="headerlink" href="#jetstream-1-2-availability" title="Permanent link">&para;</a></h2>
 <p>Jetstream1 will remain online through the end of Q1 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase.</p>
-<p>VMs on Jetstream1 will continue running as long as you have a valid allocation there and until it is decommissioned. The TACC cloud of Jetstream1 will likely be taken down in stages prior to the IU cloud, but those timelines are still up in the air, as well.</p>
-<h4 id="important-note-for-cli-users">Important note for CLI users<a class="headerlink" href="#important-note-for-cli-users" title="Permanent link">&para;</a></h4>
-<p>Jetstream2 uses application credentials for CLI access so CLI users can authenticate using XSEDE credentials. Please see <a href="ui/cli/openrc.md" target="_blank">Setting up the openrc.sh for the Jetstream2 CLI</a> for instructions generating application credentials and an openrc for Jetstream2.</p>
-<p><strong>Updates will all be made here and shared via XSEDE User News.</strong></p>
-<p>Researchers on Jetstream1 (JS1)  wishing to migrate to Jetstream2 (JS2) should take note of:</p>
+<p>We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages prior to the IU cloud.</p>
+<h2 id="what-researchers-should-know-before-migrating">What Researchers should know before migrating<a class="headerlink" href="#what-researchers-should-know-before-migrating" title="Permanent link">&para;</a></h2>
+<p>Researchers on JS1 wishing to migrate to JS2 should take note of:</p>
 <ol>
 <li>
 <p><a href="#CriticalDifferences">Critical differences between JS2 and JS1</a> for:</p>
@@ -384,7 +380,7 @@ In this section, we document information relative to that migration.</p>
 <p>Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).</p>
 <ul>
 <li><a href="/ui/exo/exo">EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/</a></li>
-<li><a href="/ui/cacao/overview">CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/</a></li>
+<li><a href="/ui/cacao/overview">CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/</a> </br> <strong>Note</strong>: CACAO is still in development on JS2 and not in its final production state.</li>
 <li><a href="/ui/horizon/intro">HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/</a></li>
 <li><a href="/ui/cli/overview">CLI : https://docs.jetstream-cloud.org/ui/cli/overview/</a></li>
 </ul>
@@ -393,7 +389,7 @@ In this section, we document information relative to that migration.</p>
 <h3 id="application-credentials">Application Credentials<a name="ApplicationCredentials"></a><a class="headerlink" href="#application-credentials" title="Permanent link">&para;</a></h3>
 <p>One important differences to note for our existing users is that we’ve enhanced our security profile and are using <strong>Application Credentials</strong> for our interfaces. Each user interface above has similar, but slightly different ways to access those <strong>Application Credentials</strong>, so please be aware, and carefully follow the instructions.</p>
 <p><code>Important note for CLI users</code></p>
-<p>Jetstream2 use of <strong>Application Credentials</strong> has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see <a href="/ui/cli/openrc.md" target="_blank">Setting up the openrc.sh for the Jetstream2 CLI</a> for instructions generating application credentials and an openrc for Jetstream2.</p>
+<p>Jetstream2 use of <strong>Application Credentials</strong> has expanded to CLI access so CLI users can also authenticate using XSEDE credentials. Please see <a href="/ui/cli/openrc" target="_blank">Setting up the openrc.sh for the Jetstream2 CLI</a> for instructions generating application credentials and an openrc for Jetstream2.</p>
 <h3 id="jetstream2-software-collection">Jetstream2 Software Collection<a name="SoftwareCollection"></a><a class="headerlink" href="#jetstream2-software-collection" title="Permanent link">&para;</a></h3>
 <p>Rather than pack each and every virtual machine with research software, Jetstream2 has created a shared directory of packages that you can load and unload as desired using the <strong>LMOD</strong> system.</p>
 <p>The use of the JS2 Software Collection is described here:</br>
@@ -402,7 +398,7 @@ In this section, we document information relative to that migration.</p>
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../migrating/" class="btn btn-neutral float-left" title="General"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../.." class="btn btn-neutral float-left" title="Jetstream2 Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../how_to_migrate/" class="btn btn-neutral float-right" title="HOW-TO">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -431,7 +427,7 @@ In this section, we document information relative to that migration.</p>
         </span>
     
     
-      <span><a href="../../migrating/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../how_to_migrate/" style="color: #fcfcfc">Next &raquo;</a></span>
