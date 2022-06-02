@@ -11,20 +11,28 @@ In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you'll need to und
 Just as in JS1, you'll need an allocation of compute (normal, large memory, GPU) and storage resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
 The allocation process is described here: [alloc/overview/](alloc/overview/)
 
-You can take one of two approaches: (1) A supplement to a current research allocation -OR- (2) A completely new allocation.
+You can take one of two approaches:
+
+1. A supplement to a current research allocation -OR-
+2. A completely new allocation.
 
 ### Supplement Allocation <a name="Supplement"></a>
+
 If you already have a JS1 allocation, then we encourage you to request a supplement a **[STARTUP](alloc/startup/)** amount of resources for the compute, large-memory-compute, GPU, and storage resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
+
 * [Supplement: alloc/supplement/](alloc/supplement/)
 * [Renewal: alloc/renew-extend/](alloc/renew-extend/)
 
 ### New Allocation <a name="NewAllocation"></a>
+
 Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still startup with a STARTUP level in order to create the **Code, Performance, & Scaling** estimates you'll need later.
+
 * [ALLOCATION OVERVIEW](alloc/overview/)
 * [STARTUP ALLOCATION](alloc/startup)
 
 
 ### How to move your data <a name="MoveData"></a>
+
 If you've already using JS1, you'll likely wish to retain your old VMs and data, both on VMs and in external volumes.
 
 #### Three approaches
