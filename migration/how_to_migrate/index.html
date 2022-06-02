@@ -342,13 +342,15 @@
               
                 <h2 id="how-to-migrate">How to Migrate<a class="headerlink" href="#how-to-migrate" title="Permanent link">&para;</a></h2>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
-<p>In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you&rsquo;ll need to understand:
-* <a href="#Allocations">Allocations</a>
-* <a href="#MoveData">How to move data</a>
-* <a href="#GetHelp">Where to find help</a></p>
+<p>In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you&rsquo;ll need to understand:</p>
+<ul>
+<li><a href="#Allocations">Allocations</a></li>
+<li><a href="#MoveData">How to move data</a></li>
+<li><a href="#GetHelp">Where to find help</a></li>
+</ul>
 <h3 id="allocations">Allocations <a name="Allocations"></a><a class="headerlink" href="#allocations" title="Permanent link">&para;</a></h3>
 <p>Just as in JS1, you&rsquo;ll need an allocation of compute (normal, large memory, GPU) and storage resources, awarded by NSF and currently managed by <a href="https://portal.xsede.org">XSEDE</a>.
-The allocation process is described here: <a href="alloc/overview/">alloc/overview/</a></p>
+The allocation process is described here: <a href="alloc/overview/">Allocation Overivew</a></p>
 <p>You can take one of two approaches:</p>
 <ol>
 <li>A supplement to a current research allocation -OR-</li>
@@ -357,8 +359,8 @@ The allocation process is described here: <a href="alloc/overview/">alloc/overvi
 <h3 id="supplement-allocation">Supplement Allocation <a name="Supplement"></a><a class="headerlink" href="#supplement-allocation" title="Permanent link">&para;</a></h3>
 <p>If you already have a JS1 allocation, then we encourage you to request a supplement a <strong><a href="alloc/startup/">STARTUP</a></strong> amount of resources for the compute, large-memory-compute, GPU, and storage resources on JS2. This will enable you to create the <strong>Code, Performance, &amp; Scaling</strong> estimates you&rsquo;ll need for a successful project renewal on JS2.</p>
 <ul>
-<li><a href="alloc/supplement/">Supplement: alloc/supplement/</a></li>
-<li><a href="alloc/renew-extend/">Renewal: alloc/renew-extend/</a></li>
+<li><a href="alloc/supplement/">Supplement:</a></li>
+<li><a href="alloc/renew-extend/">Renewal:</a></li>
 </ul>
 <h3 id="new-allocation">New Allocation <a name="NewAllocation"></a><a class="headerlink" href="#new-allocation" title="Permanent link">&para;</a></h3>
 <p>Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still startup with a STARTUP level in order to create the <strong>Code, Performance, &amp; Scaling</strong> estimates you&rsquo;ll need later.</p>
@@ -374,11 +376,11 @@ The allocation process is described here: <a href="alloc/overview/">alloc/overvi
 <li>
 <p><strong>Recreate your work</strong></br>
 In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></br>
-Information about creating new VMs can be found for each type of user inteface:</br> general/instancemgt </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here:</br> general/filetransfer</p>
+Information about creating new VMs can be found for each type of user inteface:</br> <a href="general/instancemgt">General Instance Management</a> </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here:</br> <a href="general/filetransfer">File Transfer</a></p>
 </li>
 <li>
 <p><strong>Copy your JS1 work</strong></br>
-Similar to recreating your work, you can save some steps after <a href="general/instancemgt">starting new VMs</a> by copying your existing software from your current VM on JS1: general/filetransfer </br></br> <strong>A NOTE OF WARNING</strong>: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
+Similar to recreating your work, you can save some steps after <a href="general/instancemgt">starting new VMs</a> by copying your existing software from your current VM on JS1: <a href="general/filetransfer">File Transfer</a> </br></br> <strong>A NOTE OF WARNING</strong>: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
 Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.</p>
 </li>
 <li>
@@ -394,32 +396,40 @@ You can create snapshots of your existing JS1 VMs and request the <a href="mailt
 </ul>
 <h3 id="how-to-preserve-jetstream1-vms-and-data">How to preserve Jetstream1 VMs and data <a name="SaveData"></a><a class="headerlink" href="#how-to-preserve-jetstream1-vms-and-data" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Identify if your VM or volume used the Atmosphere or API/CLI interface
- * <strong>Atmosphere</strong>:
-   * VMs:<ol>
+<li>Identify if your VM or volume used the Atmosphere or API/CLI interface<ul>
+<li><strong>Atmosphere</strong>:</li>
+<li>VMs:<ol>
 <li>Follow the instructions here to <a href="https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM">update and image your VM</a></li>
 <li>Next
-   * Go to the IMAGES tab
-   * Click on the Image you created
-   * Click on the Version you want
-   * Click on Copy for either IU or TACC to grab the UUID of the image
-   * Submit a ticket with that UUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2. </br>
-   * Volumes:</li>
+  * Go to the IMAGES tab
+  * Click on the Image you created
+  * Click on the Version you want
+  * Click on Copy for either IU or TACC to grab the UUID of the image
+  * Submit a ticket with that UUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2. </br></li>
+</ol>
+</li>
+<li>Volumes:<ol>
 <li>Click on the PROJECTS tab</li>
 <li>Click on the Project Folder</li>
 <li>scroll down to VOLUMES and click on the desired volume</li>
 <li>Click on Copy to grab the UUID of the image.</li>
-<li>Submit a ticket with that VUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your volume to Jetstream2.</br>
- * <strong>API</strong>:
-   * VMs:</li>
+<li>Submit a ticket with that VUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your volume to Jetstream2.</br></li>
+</ol>
+</li>
+<li><strong>API</strong>:</li>
+<li>VMs:<ol>
 <li>Follow the instructions here to <a href="https://wiki.jetstream-clould.org/Creating+snapshots+and+new+Glance+images+from+the+command+line">create a snapshot of your instance</a></br></li>
 <li>Make note of the UUID</li>
-<li>Submit a ticket with that UUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2.</br>
-   * Volumes:</li>
+<li>Submit a ticket with that UUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2.</br></li>
+</ol>
+</li>
+<li>Volumes:<ol>
 <li>Use the command: <code>openstack volume list</code></li>
 <li>Note the Volume UID</li>
 <li>Submit a ticket with that VUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2.</li>
 </ol>
+</li>
+</ul>
 </li>
 </ol>
 <h3 id="where-to-find-help-documentation">Where to find help documentation <a name="GetHelp"></a><a class="headerlink" href="#where-to-find-help-documentation" title="Permanent link">&para;</a></h3>
