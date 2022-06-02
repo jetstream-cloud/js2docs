@@ -26,7 +26,7 @@ If you already have a JS1 allocation, then we encourage you to request a supplem
 
 ### New Allocation <a name="NewAllocation"></a>
 
-Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still startup with a STARTUP level in order to create the **Code, Performance, & Scaling** estimates you'll need later.
+Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still start with a STARTUP level in order to create the **Code, Performance, & Scaling** estimates you'll need later.
 
 * [ALLOCATION OVERVIEW](/alloc/overview/)
 * [STARTUP ALLOCATION](/alloc/startup)
@@ -34,7 +34,7 @@ Of course, if your research will be changing, you can always apply for a new all
 
 ### How to move your data <a name="MoveData"></a>
 
-If you've already using JS1, you'll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
+If you've already been using JS1, you'll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
 
 #### Three approaches
 There are essentially three approaches to accomplish this:
