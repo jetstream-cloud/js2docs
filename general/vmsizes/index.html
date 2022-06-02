@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/vmsizes/" />
+      <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
+    <title>VM Sizes and Configurations - Jetstream2 Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+        <link href="../../css/cacao.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "VM Sizes and Configurations";
+        var mkdocs_page_input_path = "general/vmsizes.md";
+        var mkdocs_page_url = "/general/vmsizes/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/jetstream-logo-white.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Jetstream2 Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../migrating/">Migrating from Jetstream1 to Jetstream2 General</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../migration/migration_overview/">Migrating from Jetstream1 to Jetstream2 Overview</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../migration/how_to_migrate/">Migrating from Jetstream1 to Jetstream2 HOW-TO</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">Jetstream2 Early Operations FAQ</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/overview-doc/">System Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/config/">Configuration and specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/network/">Network configuration and considerations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Frequently Asked Questions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/general-faq/">General FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/trouble/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gateways/">Gateways</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Usage Information</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../resources/">Jetstream2 Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../xsede/">XSEDE Service Units and Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">VM Sizes and Configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows on Jetstream2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Allocations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/overview/">Allocations Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/trial/">Trial Allocation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/startup/">Startup Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Interfaces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Exosphere</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/login/">Logging In</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/storage/">Storage Under Exosphere</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (fka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Horizon</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/intro/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/security_group/">Security Group Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/network/">Networks in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/launch/">Launching Instances</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../ui/horizon/volumes.md">Volumes Under Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/manila/">Manila Shares in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/troubleshooting/">Horizon Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CLI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/clients/">Installing Openstack Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/openrc/">Setting up openrc.sh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/managing-ssh-keys/">Managing SSH Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/security_group/">Setting up a Security Group</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/network/">Setting up a Network</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/launch/">Launching a Virtual Machine</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/deleting/">Deleting Infrastructure in the CLI</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/storage/">Storage Under the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General VM Operations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../firewalls/">Firewalls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../sudo/">Being the root user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Storage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Manila</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../manila/">Manila</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM/">Using Manila Share on a VM</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../object/">Object Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filetransfer/">File Transfer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Maintenance and Administration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../adduser/">Add User to a VM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../installsoftware/">Installing Software on your VM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Research Software</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../jupyter/">Jupyter on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../galaxy/">Galaxy</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Collection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../software/">Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../licenses/">Software Licenses</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Policies and Best Practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../policies/">Acceptable Usage Policies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../export/">Export Control Guidance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gateways/">AUPs for Jetstream2 Hosted Gateways</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bestpractice/">Best Practices</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kubernetes/">Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8scluster/">Build a K8s cluster</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanage/">Managing Applications with Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../terraform/">Terraform on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../virtualclusters/">Virtual Clusters on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../federating/">Federating Gateways on Jetstream2</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Jetstream2 Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>General Usage Information &raquo;</li><li>VM Sizes and Configurations</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/vmsizes.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="virtual-machine-sizes-and-configurations">Virtual Machine Sizes and Configurations<a class="headerlink" href="#virtual-machine-sizes-and-configurations" title="Permanent link">&para;</a></h1>
+<p>Jetstream2 can be used in several different virtual machine (VM) sizes which are charged in service units (SUs) based on how much of the total system resource is used.</p>
+<p>The basic unit of VM allocation for Jetstream is based on a virtual CPU (vCPU) hour: <em>1 service unit (SU) is equivalent to 1 vCPU for 1 hour of wall clock time</em>. The table below outlines the VM sizes created for Jetstream2.</p>
+<p class="note"><em>Please note that these are all separate resources. Jetstream2 CPU is the default resource. To use Large Memory or GPU resources, you must have an allocation for those resources.</em></p>
+<p>While the root disk sizes here are fixed, there is an option called &ldquo;boot from volume&rdquo; that will allow you to specify a larger root disk using quota from your storage allocation. Instructions for that are in the user interface sections.</p>
+<h3 id="jetstream2-cpu">Jetstream2 CPU<a class="headerlink" href="#jetstream2-cpu" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th align="left">VM Size</th>
+<th align="center">vCPUs</th>
+<th align="center">RAM (GB)</th>
+<th align="center">Local Storage (GB)</th>
+<th align="center">SU cost per hour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">m3.tiny</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">20</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="left">m3.small</td>
+<td align="center">2</td>
+<td align="center">6</td>
+<td align="center">20</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="left">m3.quad</td>
+<td align="center">4</td>
+<td align="center">15</td>
+<td align="center">20</td>
+<td align="center">4</td>
+</tr>
+<tr>
+<td align="left">m3.medium</td>
+<td align="center">8</td>
+<td align="center">30</td>
+<td align="center">60</td>
+<td align="center">8</td>
+</tr>
+<tr>
+<td align="left">m3.large</td>
+<td align="center">16</td>
+<td align="center">60</td>
+<td align="center">60</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="left">m3.xl</td>
+<td align="center">32</td>
+<td align="center">125</td>
+<td align="center">60</td>
+<td align="center">32</td>
+</tr>
+<tr>
+<td align="left">m3.2xl</td>
+<td align="center">64</td>
+<td align="center">250</td>
+<td align="center">60</td>
+<td align="center">64</td>
+</tr>
+<tr>
+<td align="left">m3.3xl*</td>
+<td align="center">128</td>
+<td align="center">500</td>
+<td align="center">60</td>
+<td align="center">128</td>
+</tr>
+</tbody>
+</table>
+<p>* <em>m3.3xl will not be available by default. It will only be available by request and with proper justification</em></p>
+<h3 id="jetstream2-large-memory">Jetstream2 Large Memory<a class="headerlink" href="#jetstream2-large-memory" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 Large Memory nodes charge 2 SUs per vCPU hour or 2 SUs per core per hour.</p>
+<table>
+<thead>
+<tr>
+<th align="left">VM Size</th>
+<th align="center">vCPUs</th>
+<th align="center">RAM (GB)</th>
+<th align="center">Local Storage (GB)</th>
+<th align="center">SU cost per hour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">r3.large</td>
+<td align="center">64</td>
+<td align="center">500</td>
+<td align="center">60</td>
+<td align="center">128</td>
+</tr>
+<tr>
+<td align="left">r3.xl</td>
+<td align="center">128</td>
+<td align="center">1000</td>
+<td align="center">60</td>
+<td align="center">256</td>
+</tr>
+</tbody>
+</table>
+<h3 id="jetstream2-gpu">Jetstream2 GPU<a class="headerlink" href="#jetstream2-gpu" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA virtual GPU (vGPU) into up to 5 slices to allow more researchers and students to make use of the GPU resource.</p>
+<p><em>5 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU</em></p>
+<table>
+<thead>
+<tr>
+<th align="left">VM Size</th>
+<th align="center">vCPUs</th>
+<th align="center">RAM(GB)</th>
+<th align="center">Local Storage (GB)</th>
+<th align="center">GPU Slices/GPU Ram</th>
+<th align="center">SU cost / hour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">g3.small</td>
+<td align="center">4</td>
+<td align="center">15</td>
+<td align="center">60</td>
+<td align="center">1 slice / 5gb RAM</td>
+<td align="center">16</td>
+</tr>
+<tr>
+<td align="left">g3.medium</td>
+<td align="center">8</td>
+<td align="center">30</td>
+<td align="center">60</td>
+<td align="center">2 slices / 10gb RAM</td>
+<td align="center">32</td>
+</tr>
+<tr>
+<td align="left">g3.large</td>
+<td align="center">16</td>
+<td align="center">60</td>
+<td align="center">60</td>
+<td align="center">4 slices / 20gb RAM</td>
+<td align="center">64</td>
+</tr>
+<tr>
+<td align="left">g3.xl</td>
+<td align="center">32</td>
+<td align="center">125</td>
+<td align="center">60</td>
+<td align="center">5 slices / 40gb RAM</td>
+<td align="center">128</td>
+</tr>
+</tbody>
+</table>
+<p><strong>This flavor information may be subject to changes in the future.</strong></p>
+<hr />
+<h5 id="example-of-su-estimation">Example of SU estimation:<a class="headerlink" href="#example-of-su-estimation" title="Permanent link">&para;</a></h5>
+<ul>
+<li>First determine the VM resource appropriate to your needs (CPU only, large memory, GPU):<ul>
+<li>If your work requires 24 GB of RAM and 60 GB of local storage:<ul>
+<li>you would request 8 SUs per hour to cover a single <em>m3.medium</em> VM instance.</li>
+</ul>
+</li>
+<li>If your work requires 10 GB of local storage in 1 core using 3 GB of RAM:<ul>
+<li>you would request 2 SUs per hour for an <em>m3.small</em> VM instance.</li>
+</ul>
+</li>
+<li>If your work requires 1TB of RAM:<ul>
+<li>you would request 256 SUs per hour for an <em>r3.xl</em> instance on Jetstream Large Memory</li>
+</ul>
+</li>
+<li>If you work requires 20gb of GPU RAM:<ul>
+<li>you would request 64 SUs per hour for a <em>g3.large</em> instance on Jetstream GPU</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>You then would calculate for the appropriate resource (refer to the tables above):<ul>
+<li>For Jetstream2 CPU, you would then multiply by the number of hours you will use that size VM in the next year and multiply by the number of VMs you will need.</li>
+<li>For Jetstream2 Large Memory and GPU, either refer to the SU cost per hour in the last column, or multiply hours times 2 for LM or 4 for GPU</li>
+</ul>
+</li>
+<li>To calculate the number of SUs you will need in the next year, first estimate the number of hours you expect to work on a particular project.
+    For example, if you typically work 40 hours per week and expect to spend 25% of your time on this project that would be 10 hours per week.</li>
+<li>Next, calculate the total number of hours per year for this project:<ul>
+<li>Total hours = 10 hours per week * 52 weeks per year</li>
+<li>Total hours = 520</li>
+</ul>
+</li>
+<li>Finally, calculate the total SUs for the year for a single VM instance:<ul>
+<li>Total SUs = 520 hours per year * vCPUs<ul>
+<li>e.g. For a Medium VM instance: Total SUs = 520 hours per year * 8vCPUs</li>
+<li>Total SUs = 4160</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>If your project requires more than 1 VM instance, multiply the total SUs by the number of VMs that you will need:<ul>
+<li>Total SUs needed for 3 medium size VMs = 3 * 4160</li>
+<li>Total SUs = 12480</li>
+</ul>
+</li>
+</ul>
+<p>The calculations above assume that your VM is shutdown properly.  For instructions see:</p>
+<ul>
+<li><a href="../../ui/cacao/deployments/" target="_blank">Cacao instance management actions</a></li>
+<li><a href="../../ui/exo/manage/" target="_blank">Exosphere instance management actions</a></li>
+<li><a href="../../ui/horizon/manage/" target="_blank">Horizon instance management actions</a></li>
+<li><a href="../../ui/cli/manage/" target="_blank">Command line instance management actions</a></li>
+</ul>
+<h5 id="su-estimation-for-infrastructure-or-always-on-allocations">SU Estimation for Infrastructure or &ldquo;Always On&rdquo; allocations<a class="headerlink" href="#su-estimation-for-infrastructure-or-always-on-allocations" title="Permanent link">&para;</a></h5>
+<p>For jobs that may need to run for extended periods or as &ldquo;always on&rdquo; infrastructure, you can take this approach:</p>
+<blockquote>
+<p>VM cost (SUs) x 24 hours/day x 365 days = single VM cost per year</p>
+</blockquote>
+<p>or as an example for each resource, an m3.large, r3.large, and g3.large each running for a year:</p>
+<pre><code>    m3.large (16 cores) x 24 hours/day x 365 days = 140,160 SUs
+    r3.large (64 cores x 2 SUs/hour) x 24 hours/day x 365 days = 1,121,280 SUs
+    g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
+</code></pre>
+<hr />
+<p>Startup allocations are subject to limits. Please refer to <a href="../resources/">Jetstream2 Resources</a> for Startup Allocation limits.</p>
+<p>For information on submitting a Research Allocation Request, please see <a href="https://portal.xsede.org/successful-requests" target="_blank">https://portal.xsede.org/successful-requests.</a> Note that all allocations above the startup level on Jetstream2 CPU require a strong justification for the time being requested.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../xsede/" class="btn btn-neutral float-left" title="XSEDE Service Units and Jetstream2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../featured/" class="btn btn-neutral float-right" title="Featured Images">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright © 2021 The Trustees of Indiana University</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jetstream-cloud/js2docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../xsede/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../featured/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/matomo.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

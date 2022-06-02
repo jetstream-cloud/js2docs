@@ -1,0 +1,59 @@
+/* Hide "On GitHub" section from versions menu */
+div.rst-versions > div.rst-other-versions > div.injected > dl:nth-child(4) {
+    display: none;
+}
+
+.wy-breadcrumbs-aside { display: none !important;}
+
+/* Gets rid of the top breadcrumb */
+.wy-breadcrumbs { display: none; }
+
+.wy-side-nav-search { background-color: #69090D !important; }
+
+/* this isn't working and I don't know why -- will revisit later
+  More specifically, it's making the ENTIRE sidebar change colors -- so just
+  need to find the right element.
+*/
+/* .active, .wy-menu-vertical:hover {
+    background-color: #69090D !important;
+}
+*/
+
+/* Centering definition - used by the main graphic */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.tab { margin-left: 24px !important; }
+
+/* Change the color of the menu section headings */
+.caption-text { color: #ea941a !important; }
+
+/* Change the color of the expander + sign */
+.toctree-expand { color: #dd0031 !important; }
+
+/* Gets rid of the gutters on each side -- default is 800px */
+.wy-nav-content { max-width: 1200px !important; }
+
+/* style code blocks */
+code {color: blue; !important}
+
+.rst-content code {
+    color: blue !important;
+}
+
+.rst-content tt {
+    color: blue !important;
+}
+
+.rst-versions.rst-badge { display: none !important; }
+.injected { display: none !important; }
+
+/* Ditch the bottom nav buttons - option in theme isn't working */
+/* .btn { display: none !important; }
+.rst-badge .rst-versions .rst-versions.rst-badge { display: none !important; }
+.rst-versions { visibility: hidden; }
+*/
