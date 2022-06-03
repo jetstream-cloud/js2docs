@@ -5,7 +5,7 @@ In this section, we document information relative to that migration.
 
 ## Jetstream 1 & 2 availability
 
-Jetstream1 will remain online through the end of Q1 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase.
+Jetstream1 will remain online through the end of July 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase. ***There will be no extension beyond July 31 for Jetstream1. All allocations will be disabled and denied access at that time.***
 
 We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages prior to the IU cloud.
 
