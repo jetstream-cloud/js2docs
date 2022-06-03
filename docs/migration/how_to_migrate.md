@@ -59,8 +59,11 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
  While you can also follow the steps at [How to preserve JS1 VMs and data](#SaveData), please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.<br>
 
 ### How to preserve Jetstream1 VMs and data <a name="SaveData"></a>
-1. Identify if your VM or volume used the Atmosphere or API/CLI interface
-!!! Atmosphere steps ""
+
+- Identify if your VM or volume used the Atmosphere or API/CLI interface
+
+!!! Atmosphere steps "Atmosphere"
+
     * **Atmosphere**:</br>
       * VMs:
         1. Follow the instructions here to [update and image your VM](https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM) </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`
@@ -76,7 +79,10 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
         3. Scroll down to VOLUMES and click on the desired volume
         4. Click on Copy to grab the UUID of the image.
         5. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
-!!! API steps ""
+
+
+!!! API steps "API"
+
     * **API**:
       * VMs:
         1. Follow the instructions here to [create a snapshot of your instance](https://wiki.jetstream-clould.org/Creating+snapshots+and+new+Glance+images+from+the+command+line)</br>
