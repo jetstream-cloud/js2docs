@@ -21,41 +21,41 @@ You can take one of two approaches:
 
 If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the _compute, large-memory-compute, GPU, and storage_ resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
 
-* [SUPPLEMENT](/alloc/supplement/)
-* [RENEWAL](/alloc/renew-extend/)
+* [Supplement](/alloc/supplement/)
+* [Renewal](/alloc/renew-extend/)
 
 ### New Allocation <a name="NewAllocation"></a>
 
-Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still start with a STARTUP level in order to create the **Code, Performance, & Scaling** estimates you'll need later.
+Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still start with a Startup level in order to create the **Code, Performance, & Scaling** estimates you'll need later for a Research allocation.
 
-* [ALLOCATION OVERVIEW](/alloc/overview/)
-* [STARTUP ALLOCATION](/alloc/startup)
+* [Allocation Overview](/alloc/overview/)
+* [Startup Allocation](/alloc/startup)
 
 
 ### How to move your data <a name="MoveData"></a>
 
 If you've already been using JS1, you'll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
 Below, we provide instructions for moving your VMs. As time permits, we anticipate the development of tools to help facilitate and partially automate migration.
-Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage. 
+Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage.
 
 #### Three approaches
 There are essentially three approaches to accomplish data retention:
 
 1. **Recreate your work**</br>
 In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></br>
-Information about creating new VMs can be found for each type of user inteface: [General Instance Management](/general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](/general/filetransfer)
+Information about creating new VMs can be found for each type of user inteface: [General Instance Management](/general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](/general/filetransfer)<br>
 
 2. **Copy your JS1 work**</br>
 Similar to recreating your work, you can save some steps after [starting new VMs](/general/instancemgt) by copying your existing software from your current VM on JS1: [File Transfer](/general/filetransfer) </br></br> **A NOTE OF WARNING**: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
-Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.
+Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.<br>
 
 3. **Transfer your work** </br>
-You can create snapshots of your existing JS1 VMs and request the [Help Desk Support](mailto:help@jetstream-cloud.org) team copy these snapshots as well as data volumes to Jetstream2.
+You can create snapshots of your existing JS1 VMs and request the [Help Desk Support](mailto:help@jetstream-cloud.org) team copy these snapshots as well as data volumes to Jetstream2.<br>
 
  * **Data volumes**:</br>
  This is fairly straightforward and is described below: [How to preserve JS1 VMs and data](#SaveData)</br>
  * **VMs**:</br>
- While you can also follow the steps at [How to preserve JS1 VMs and data](#SaveData), please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.
+ While you can also follow the steps at [How to preserve JS1 VMs and data](#SaveData), please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.<br>
 
 ### How to preserve Jetstream1 VMs and data <a name="SaveData"></a>
 1. Identify if your VM or volume used the Atmosphere or API/CLI interface
@@ -94,4 +94,3 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 * **NEWS**: Announcements will be made at the [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news) </br> To ensure that you are receiving all updates to your inbox, login to the page to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
 
 **Updates will all be made [docs.jetsteam-cloud.org](https://docs.jetsteam-cloud.org) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
-

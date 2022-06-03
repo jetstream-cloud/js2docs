@@ -17,7 +17,7 @@ Researchers on JS1 wishing to migrate to JS2 should take note of:
     * [Architecture](#Architecture)
     * [User interfaces](#UI)
     * [Authentication](#ApplicationCredentials)
-    * [Software Collection](#SoftwareCollection) </br>
+    * [Software Collection](#SoftwareCollection) </br><br>
 
 2. [How to migrate from JS1 to JS2](migration_overview.md)
     * [Allocations](/migration/how_to_migrate/#Allocations)
@@ -28,21 +28,20 @@ Researchers on JS1 wishing to migrate to JS2 should take note of:
 
 ### Architecture <a name="Architecture"></a>
 
-The key differences between the architecture of JS2 and JS1 are described here:</br>
-[https://docs.jetstream-cloud.org/overview/keydiff/#key-differences-between-jetstream1-and-jetstream2](/overview/keydiff/#key-differences-between-jetstream1-and-jetstream2)
+We highly recommend that you read about the [key differences between the architecture of JS2 and JS1](/overview/keydiff/#key-differences-between-jetstream1-and-jetstream2).
 
 The biggest difference is that Jetstream2 will consist of one primary cloud (hosted at Indiana University) and multiple regional clouds.
 
 ### User Interfaces (UI)<a name="UI"></a>
 
-* User Interfaces will feel familiar, particularly if you’ve tried the API side of JS1 before as we continue to have HORIZON, EXOSPHERE, and a COMMAND LINE INTERFACE.
-* For our Atmosphere users, both EXOSPHERE and the successor to Atmosphere: CACAO offer the ease-of-use you’ve come to expect.
 * Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).
+* User Interfaces will feel familiar, particularly if you’ve tried the API side of JS1 before as we continue to have Exosphere, Horizon, and a Command Line Interface
+* For our Atmosphere users, we are recommending Exosphere as it gives much of the power of Horizon while maintaining the simplicity of Atmosphere.
 
-    * [EXOSPHERE: https://docs.jetstream-cloud.org/ui/exo/exo/](/ui/exo/exo)
-    * [CACAO (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](/ui/cacao/overview) </br> **Note**: CACAO is still in development on JS2 and not in its final production state.
-    * [HORIZON : https://docs.jetstream-cloud.org/ui/horizon/intro/](/ui/horizon/intro)
+    * [Exosphere: https://docs.jetstream-cloud.org/ui/exo/exo/](/ui/exo/exo)
+    * [Horizon : https://docs.jetstream-cloud.org/ui/horizon/intro/](/ui/horizon/intro)
     * [CLI : https://docs.jetstream-cloud.org/ui/cli/overview/](/ui/cli/overview)
+    * [Cacao (aka Atmsophere2) : https://docs.jetstream-cloud.org/ui/cacao/overview/](/ui/cacao/overview) </br> ***Note: Cacao is still in development on JS2 and not in its final production state.***
 
 
 ### Application Credentials<a name="ApplicationCredentials"></a>
@@ -58,4 +57,3 @@ Rather than pack each and every virtual machine with research software, Jetstrea
 
 The use of the JS2 Software Collection is described here:</br>
 [https://docs.jetstream-cloud.org/general/usingsoftware/#using-the-jetstream2-software-collection](/general/usingsoftware/#using-the-jetstream2-software-collection)
-
