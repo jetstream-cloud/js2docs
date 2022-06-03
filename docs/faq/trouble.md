@@ -28,3 +28,13 @@ With Terminal as the active application:
 You'll need to start a new terminal window, but that new session should allow you to do commands like *module avail*
 
 ---
+
+### There is a known issue with suspending GPU instances
+
+We will update this [Status IO Incident](https://jetstream.status.io/pages/incident/61dc808a7e9a82053ce739d2/629a6de486604112e598b390){target=_blank} with details/
+
+There is an issue/bug with suspending GPU instances with the version of libvirt Jetstream2 is using for virtualization.
+
+We will have to upgrade the compute nodes to resolve it. This is on the near-term timeline but we do not have a precise date at this time.
+
+In the meantime, please only use stop or shelve with GPU instances.
