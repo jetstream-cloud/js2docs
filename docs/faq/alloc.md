@@ -14,7 +14,7 @@
   **2.  Is there a example or demonstration of how to get an allocation that I could follow?**
 
 > The [Research Allocation](../alloc/research.md) page has information and links for writing a successful Jetstream2 research allocation request.
-> 
+>
 > There is a Cornell Virtual Workshop (CVW) on getting a Research Allocation for Jetstream here: https://cvw.cac.cornell.edu/JetstreamReq/. It is not updated for Jetstream2 though the principles are the same.
 
 ---
@@ -45,16 +45,21 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 >
 > * Storage limits may be larger than 1TB per allocation for a startup if well-justified.
 
+---
+
+**5. Can I renew a startup allocation?**
+
+> If your SU needs are equal to or less than the maximum startup values (see item 4 just above) you may renew your startup allocation. If you need a signficantly larger amound of SUs for any of the resources, you will need to pursue a [research allocation](../alloc/research.md)
 
 ---
 
-  **5. I'm running out of Service Units (SUs) or storage. How do I request more?**
+  **6. I'm running out of Service Units (SUs) or storage. How do I request more?**
 
 > If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
 
 ---
 
-  **6. I am at or exceeding the quota limits for my allocation.**
+  **7. I am at or exceeding the quota limits for my allocation.**
 
 > How do I request additional resources such as CPUs and memory?
 
@@ -66,7 +71,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 ---
 
-**7. Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?**
+**8. Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?**
 
 > If your allocation is expired or out of SUs, you may request an extension, renewal, or supplement. Please see one of the following links:
 >
