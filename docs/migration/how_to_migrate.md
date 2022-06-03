@@ -60,7 +60,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 ### How to preserve Jetstream1 VMs and data <a name="SaveData"></a>
 
-:arrow_right: Identify if your VM or volume used the Atmosphere or API/CLI interface
+- Identify if your VM or volume used the Atmosphere or API/CLI interface
 
 !!! Atmosphere steps "Atmosphere"
 
