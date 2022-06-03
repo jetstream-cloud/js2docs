@@ -48,7 +48,6 @@ The biggest difference is that Jetstream2 will consist of one primary cloud (hos
 One important differences to note for our existing users is that we’ve enhanced our security profile and are using **Application Credentials** for our interfaces. Each user interface above has similar, but slightly different ways to access those **Application Credentials**, so please be aware, and carefully follow the instructions.
 
 !!! note "Important note for CLI users"
-
 Jetstream2 use of **Application Credentials** has expanded to include CLI access. This means CLI users well also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
 
 
