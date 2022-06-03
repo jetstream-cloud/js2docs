@@ -80,7 +80,8 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
         4. Click on Copy to grab the UUID of the image.
         5. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
 
-!!! API steps ""
+
+!!! API steps "API"
 
     * **API**:
       * VMs:
