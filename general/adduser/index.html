@@ -344,15 +344,15 @@
                 <h1 id="adding-users-to-your-vm">Adding Users to your VM<a class="headerlink" href="#adding-users-to-your-vm" title="Permanent link">&para;</a></h1>
 <p>These steps will let the user that you create ssh to a running instance using a password you set.  The user can reset the password once they login and/or add their ssh keys.</p>
 <h3 id="step-by-step-guide">Step-by-step guide<a class="headerlink" href="#step-by-step-guide" title="Permanent link">&para;</a></h3>
-<p>All steps to be run as root or using sudo. <strong><em>&lt;USERNAME&gt;</em></strong> should be replaced with an actual username</p>
+<p>All steps to be run as root or using sudo. <strong><em><USERNAME></em></strong> should be replaced with an actual username</p>
 <ul>
 <li>Sudo or otherwise become root: <code>sudo su -</code></li>
-<li>Create the user: <code>adduser &amp;lt;username&gt;</code></li>
-<li>Assign a temporary password: <code>passwd &amp;lt;username&gt;</code></li>
+<li>Create the user: <code>adduser &lt;username&gt;</code></li>
+<li>Assign a temporary password: <code>passwd &lt;username&gt;</code></li>
 </ul>
 <p>As an optional step, you can add the user to any other groups as needed. We&rsquo;ll use the <em>docker</em> group as an example.</p>
 <ul>
-<li>Add the user to group &ldquo;docker&rdquo; : <code>usermod -a -G docker &amp;lt;username&gt;</code></li>
+<li>Add the user to group &ldquo;docker&rdquo; : <code>usermod -a -G docker &lt;username&gt;</code></li>
 </ul>
               
             </div>
