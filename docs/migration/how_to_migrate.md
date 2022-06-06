@@ -48,11 +48,11 @@ There are essentially three approaches to accomplish data retention:
 
 1. **Recreate your work**</br>
 In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></br>
-Information about creating new VMs can be found for each type of user inteface: [General Instance Management](/general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](/general/filetransfer)<br>
+Information about creating new VMs can be found for each type of user inteface: [General Instance Management](/general/instancemgt) </br></br> while instructions for tansfering files from external locations to JS2 VMs can be found here: [File Transfer](/general/filetransfer)</br></br>
 
 2. **Copy your JS1 work**</br>
 Similar to recreating your work, you can save some steps after [starting new VMs](/general/instancemgt) by copying your existing software from your current VM on JS1: [File Transfer](/general/filetransfer) </br></br> **A NOTE OF WARNING**: network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2. </br></br>
-Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.<br>
+Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.</br></br>
 
 3. **Transfer your work** </br>
 You can create snapshots of your existing JS1 VMs and request the [Help Desk Support](mailto:help@jetstream-cloud.org) team copy these snapshots as well as data volumes to Jetstream2.<br>
@@ -107,4 +107,4 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 * **NEWS**: Announcements will be made at the [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news) </br> To ensure that you are receiving all updates to your inbox, login to the page to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
 
-**Updates will all be made [docs.jetsteam-cloud.org](https://docs.jetsteam-cloud.org) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
+**Updates will all be made [Jetstream2 System Status and Information]](overview/status/) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
