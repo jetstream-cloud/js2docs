@@ -25,7 +25,7 @@ The system has been running with researchers, educators, and students since Febr
 
 Please watch this space and [XSEDE user news](https://www.xsede.org/news/user-news){target=_blank} and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important operations updates.
 
-For information about migrating from Jetstream1 to Jetstream2, you may want to also monitor [Migrating from Jetstream1 to Jetstream2](../migrating.md)
+For information about migrating from Jetstream1 to Jetstream2, you may want to also monitor [Migrating from Jetstream1 to Jetstream2](/migration/migration_overview)
 
 ---
 
