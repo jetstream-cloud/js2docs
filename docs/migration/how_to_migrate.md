@@ -107,4 +107,4 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 * **NEWS**: Announcements will be made at the [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news) </br> To ensure that you are receiving all updates to your inbox, login to the page to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don't miss any important migration updates.
 
-**Updates will all be made [Jetstream2 System Status and Information]](overview/status/) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
+**Updates will all be made [Jetstream2 System Status and Information](overview/status/) and shared via [XSEDE User News : https://www.xsede.org/news/user-news site ](https://www.xsede.org/news/user-news).**
