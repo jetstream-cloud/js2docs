@@ -6,7 +6,7 @@ These steps will let the user that you create ssh to a running instance using a 
 
 All steps to be run as root or using sudo. __*&lt;USERNAME>*__ should be replaced with an actual username
 
-* Sudo or otherwise become root: __*sudo su -*__
+* Sudo or otherwise become root: ```sudo su -```
 * Create the user: __*adduser &lt;username>*__
 * Assign a temporary password: __*passwd &lt;username>*__
 
