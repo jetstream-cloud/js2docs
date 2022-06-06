@@ -347,12 +347,12 @@
 <p>All steps to be run as root or using sudo. <strong><em>&lt;USERNAME&gt;</em></strong> should be replaced with an actual username</p>
 <ul>
 <li>Sudo or otherwise become root: <code>sudo su -</code></li>
-<li>Create the user: <strong><em>adduser &lt;username&gt;</em></strong></li>
-<li>Assign a temporary password: <strong><em>passwd &lt;username&gt;</em></strong></li>
+<li>Create the user: <code>adduser &amp;lt;username&gt;</code></li>
+<li>Assign a temporary password: <code>passwd &amp;lt;username&gt;</code></li>
 </ul>
 <p>As an optional step, you can add the user to any other groups as needed. We&rsquo;ll use the <em>docker</em> group as an example.</p>
 <ul>
-<li>Add the user to group &ldquo;docker&rdquo; : <strong><em>usermod -a -G docker &lt;username&gt;</em></strong></li>
+<li>Add the user to group &ldquo;docker&rdquo; : <code>usermod -a -G docker &amp;lt;username&gt;</code></li>
 </ul>
               
             </div>
