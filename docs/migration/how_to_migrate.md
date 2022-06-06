@@ -8,6 +8,8 @@ In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you'll need to und
 * [How to move data](#MoveData)
 * [Where to find help](#GetHelp)
 
+---
+
 ### Allocations <a name="Allocations"></a>
 
 Just as in JS1, you'll need an allocation of compute (`normal`, `large memory`, `GPU`) and `storage` resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
@@ -15,12 +17,12 @@ The allocation process is described here: [Allocation Overivew](/alloc/overview/
 
 You can take one of two approaches:
 
-1. A supplement to a current research allocation -OR-
-2. A completely new allocation
+1. A [supplement](#Supplement) to a current research allocation -OR-
+2. A completely [new allocation](#NewAllocation)
 
 ### Supplement Allocation <a name="Supplement"></a>
 
-If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the _compute, large-memory-compute, GPU, and storage_ resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
+If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the `compute`, `large-memory-compute`, `GPU`, and `storage` resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
 
 * [Supplement](/alloc/supplement/)
 * [Renewal](/alloc/renew-extend/)
@@ -32,6 +34,8 @@ Of course, if your research will be changing, you can always apply for a new all
 * [Allocation Overview](/alloc/overview/)
 * [Startup Allocation](/alloc/startup)
 
+
+---
 
 ### How to move your data <a name="MoveData"></a>
 
@@ -62,7 +66,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 - Identify if your VM or volume used the Atmosphere or API/CLI interface
 
-!!! Atmosphere steps "Atmosphere"
+!!! note "Atmosphere"
 
     * **Atmosphere**:</br>
       * VMs:
@@ -81,7 +85,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
         5. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
 
 
-!!! API steps "API"
+!!! note "API"
 
     * **API**:
       * VMs:
@@ -93,6 +97,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
         2. Note the Volume UID
         3. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2.
 
+---
 
 ### Where to find help documentation <a name="GetHelp"></a>
 
