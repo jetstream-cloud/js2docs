@@ -356,6 +356,10 @@
 <pre><code>AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 
 </code></pre>
+<p>Substitute the key value from the share creation above.</p>
+<p>Also, make sure the permissions on the file are rw to the owner only. You can do that with</p>
+<pre><code>sudo chmod 600 /etc/ceph.manilashare.secret
+</code></pre>
 <p>ii. Edit <code>/etc/fstab</code> to include the following line:</p>
 <pre><code>$path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph.$accessTo.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 </code></pre>
