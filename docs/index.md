@@ -3,9 +3,9 @@
 <img src="images/JS2-Logo-Transparent.png" alt="Logo" class="center" width="400"/>
 
 
-Jetstream2 is a user-friendly cloud computing environment for researchers and educators running on [OpenStack](https://www.openstack.org/){target=_blank} and featuring [Exosphere](ui/exo/exo.md) as the primary user interface. It is built on the successes of Jetstream1 and continues the main features of that system while extending to a broader range of hardware and services, including GPUs, large memory nodes, virtual clustering, programmable cyberinfrastructure with OpenStack Heat and Terraform, and many other features. It is designed to provide both infrastructure for gateways and other "always on" services as well as giving researchers access to interactive computing and data analysis resources on demand.
+Jetstream2 is a user-friendly cloud computing environment for researchers and educators running on [OpenStack](https://www.openstack.org/){target=_blank} and featuring [Exosphere](/ui/exo/exo.md) as the primary user interface. It is built on the successes of Jetstream1 and continues the main features of that system while extending to a broader range of hardware and services, including GPUs, large memory nodes, virtual clustering, programmable cyberinfrastructure with OpenStack Heat and Terraform, and many other features. It is designed to provide both infrastructure for gateways and other "always on" services as well as giving researchers access to interactive computing and data analysis resources on demand.
 
-For a more in-depth description please see the [System Overview](overview/overview-doc.md).
+For a more in-depth description please see the [System Overview](/overview/overview-doc).
 
 ---
 
@@ -31,7 +31,7 @@ For a more in-depth description please see the [System Overview](overview/overvi
   </tbody>
 </table>
 
-Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list. Also see, [Jetstream2 system status and information](overview/status.md) for additional news information. 
+Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list. Also see, [Jetstream2 system status and information](overview/status.md) for additional news information.
 
 
 
