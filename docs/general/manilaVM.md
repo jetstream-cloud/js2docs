@@ -23,6 +23,12 @@ AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 
 ```
 
+Substitute the key value from the share creation above.
+
+Also, make sure the permissions on the file are rw to the owner only. You can do that with
+
+    sudo chmod 600 /etc/ceph.manilashare.secret
+
 ii. Edit `/etc/fstab` to include the following line:
 
 ```
