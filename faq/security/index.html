@@ -343,9 +343,9 @@
                 <h1 id="security-faq">Security FAQ<a class="headerlink" href="#security-faq" title="Permanent link">&para;</a></h1>
 <h3 id="do-i-need-to-patchupdate-my-vms">Do I need to patch/update my VMs?<a class="headerlink" href="#do-i-need-to-patchupdate-my-vms" title="Permanent link">&para;</a></h3>
 <p>The featured images provided by the Jetstream team have unattended security updates enabled. Instances will not reboot, but they will apply any update marked as a security update.  It&rsquo;s still a good idea to update your VM periodically.</p>
-<p>CentOS 7: <em>sudo yum update</em></p>
-<p>Rocky 8: <em>sudo dnf update</em></p>
-<p>Ubuntu: <em>sudo apt-get update ; sudo apt-get upgrade</em></p>
+<p>CentOS 7: <code>sudo yum update</code></p>
+<p>Rocky 8: <code>sudo dnf update</code></p>
+<p>Ubuntu: <code>sudo apt-get update ; sudo apt-get upgrade</code></p>
 <p>If the kernel or glibc/libc packages are being updated, rebooting is necessary to implement those updates</p>
 <p>Always run updates before taking snapshots so your new instances will have the latest patches in place.</p>
 <hr />
@@ -355,13 +355,13 @@
 <hr />
 <h3 id="do-i-need-to-run-a-firewall-on-my-vm">Do I need to run a firewall on my VM?<a class="headerlink" href="#do-i-need-to-run-a-firewall-on-my-vm" title="Permanent link">&para;</a></h3>
 <p>Jetstream2 staff encourages a defense-in-depth approach to security. This potentially involves several methods of restricting access and securing instances.</p>
-<p>Firewalls are not enabled by default on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See <em>What is the default security profile for Jetstream2 VMs?</em> on this page for more information on that.)</p>
+<p>Firewalls are not enabled by default on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See <a href="#DefaultSecProfile">What is the default security profile for Jetstream2 VMs?</a> on this page for more information on that.)</p>
 <p>We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you&rsquo;re comfortable administering it.</p>
-<p>Please refer to <a href="../../general/firewalls/">Jetstream2 Virtual Machine Firewalls</a> for more information.</p>
+<p>Please refer to <a href="/general/firewalls.md">Jetstream2 Virtual Machine Firewalls</a> for more information.</p>
 <hr />
-<h3 id="what-is-the-default-security-profile-for-jetstream2-vms">What is the default security profile for Jetstream2 VMs?<a class="headerlink" href="#what-is-the-default-security-profile-for-jetstream2-vms" title="Permanent link">&para;</a></h3>
+<h3 id="what-is-the-default-security-profile-for-jetstream2-vms">What is the default security profile for Jetstream2 VMs? <a name="DefaultSecProfile"></a><a class="headerlink" href="#what-is-the-default-security-profile-for-jetstream2-vms" title="Permanent link">&para;</a></h3>
 <p>That depends on the interface.</p>
-<p>The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the <a href="../../ui/cli/security_group/">CLI</a> or <a href="../../ui/horizon/security_group/">Horizon</a> for more information on managing security groups in those interfaces.</p>
+<p>The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the <a href="/ui/cli/security_group.md">CLI</a> or <a href="/ui/horizon/security_group.md">Horizon</a> for more information on managing security groups in those interfaces.</p>
 <p>For Exosphere, the default security group allows all egress and inbound access.</p>
 <p>For CACAO, the default security group will be announced when it is available for general usage.</p>
 <hr />
@@ -369,11 +369,11 @@
 <p>The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.</p>
 <p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult. (Note that currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.)</p>
 <p>We note how to change a user password here:</p>
-<p><a href="https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine">https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine</a></p>
+<p><a href="/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine">https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine</a></p>
 <p>you can do:</p>
 <p><code>sudo passwd exouser</code></p>
 <p>and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. While you can use the console option still, we HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That&rsquo;s covered here:</p>
-<p><a href="https://docs.jetstream-cloud.org/ui/exo/create_instance/">https://docs.jetstream-cloud.org/ui/exo/create_instance/</a></p>
+<p><a href="/ui/exo/create_instance/">https://docs.jetstream-cloud.org/ui/exo/create_instance/</a></p>
 <p>under the advanced options. You can also manually add your key to an already running instance.</p>
               
             </div>
