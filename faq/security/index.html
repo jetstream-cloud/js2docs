@@ -350,12 +350,17 @@
 <p>Always run updates before taking snapshots so your new instances will have the latest patches in place.</p>
 <hr />
 <h3 id="do-i-need-to-secure-services-running-on-my-vms">Do I need to secure services running on my VMs?<a class="headerlink" href="#do-i-need-to-secure-services-running-on-my-vms" title="Permanent link">&para;</a></h3>
-<p>If you have a public IP (also called a floating IP in OpenStack terminology), your instance may be exposed to the internet. While you can use security groups or host-based firewalls like iptables or UFW to limit access, it&rsquo;s best to take a posture of defense in depth and always secure any listening services.</p>
-<p>We recommend limiting access to any service ports via security group and/or firewall in addition to making sure any non-public services like databases have secure passwords for all accounts. If your service only needs to be accessible to the VM it&rsquo;s running on, check the documentation to see if it can be bound only to the localhost port. (Not all services have this ability.)</p>
+<p>If you have a public IP (also called a floating IP in OpenStack terminology), your instance may be exposed to the internet. While you can use security groups or host-based firewalls like <code>iptables</code> or <code>UFW</code> to limit access, it&rsquo;s best to take a posture of defense in depth and always secure any listening services.</p>
+<p>We <strong>strongly recommend</strong></p>
+<ul>
+<li>limiting access to any service ports via security group and/or firewall</li>
+<li>making sure any non-public services like databases have secure passwords for all accounts.</li>
+<li>If your service only needs to be accessible to the VM it&rsquo;s running on, check the documentation to see if it can be bound only to the localhost port. (Not all services have this ability.)</li>
+</ul>
 <hr />
 <h3 id="do-i-need-to-run-a-firewall-on-my-vm">Do I need to run a firewall on my VM?<a class="headerlink" href="#do-i-need-to-run-a-firewall-on-my-vm" title="Permanent link">&para;</a></h3>
 <p>Jetstream2 staff encourages a defense-in-depth approach to security. This potentially involves several methods of restricting access and securing instances.</p>
-<p>Firewalls are not enabled by default on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See <a href="#DefaultSecProfile">What is the default security profile for Jetstream2 VMs?</a> on this page for more information on that.)</p>
+<p>Firewalls are <strong>not enabled by default</strong> on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See <a href="#DefaultSecProfile">What is the default security profile for Jetstream2 VMs?</a> on this page for more information on that.)</p>
 <p>We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you&rsquo;re comfortable administering it.</p>
 <p>Please refer to <a href="/general/firewalls.md">Jetstream2 Virtual Machine Firewalls</a> for more information.</p>
 <hr />
@@ -367,7 +372,10 @@
 <hr />
 <h3 id="in-exosphere-there-is-a-way-to-get-a-passphrase-for-any-instance-can-i-prevent-other-users-on-my-allocation-from-accessing-my-instances">In Exosphere, there is a way to get a passphrase for any instance. Can I prevent other users on my allocation from accessing my instance(s)?<a class="headerlink" href="#in-exosphere-there-is-a-way-to-get-a-passphrase-for-any-instance-can-i-prevent-other-users-on-my-allocation-from-accessing-my-instances" title="Permanent link">&para;</a></h3>
 <p>The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.</p>
-<p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult. (Note that currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.)</p>
+<p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult.</p>
+<div class="admonition warning">
+<p>Note that currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.)</p>
+</div>
 <p>We note how to change a user password here:</p>
 <p><a href="/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine">https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine</a></p>
 <p>you can do:</p>

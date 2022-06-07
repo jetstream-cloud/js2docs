@@ -403,20 +403,22 @@ Currently Loaded Modules:
 <p>Add the following entry to the end of your /etc/fstab (make sure the mountpoint you created in the last step matches)</p>
 <blockquote>
 <p># JS2 Software Collection mount
-<code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,secretfile=/etc/ceph.js2softwarero.secret,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0</code></p>
+</p>
 </blockquote>
+<pre><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,secretfile=/etc/ceph.js2softwarero.secret,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0
+</code></pre>
 <p>Then mount the filesystem with</p>
 <pre><code>mount -a
 </code></pre>
 <p>If you then run a <code>df -h|grep vol</code> you should see something like this:</p>
-<blockquote>
-<p><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98   1.8T  134G  1.7T   2% /mnt/ceph</code></p>
-</blockquote>
+<blockquote></blockquote>
+<pre><code> 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98   1.8T  134G  1.7T   2% /mnt/ceph
+</code></pre>
 <p>You&rsquo;ll also need to install Lmod on your VM. The major distributions include this either in default software repositories or in the Powertools repo for CentOS/Alma/Rocky8.</p>
 <p>You&rsquo;ll need to point your modulepath config to:</p>
 <pre><code>/software/xx/modulefiles
 </code></pre>
-<p>replacing the xx with u20, u18, r8, or c7 depending on the Linux variant you&rsquo;re using.</p>
+<p>replacing the <code>xx</code> with <code>u20</code>, <code>u18</code>, <code>r8</code>, or <code>c7</code> depending on the Linux variant you&rsquo;re using.</p>
               
             </div>
           </div><footer>

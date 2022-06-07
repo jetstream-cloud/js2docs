@@ -352,19 +352,22 @@
 <hr />
 <p>General Troubleshooting:</p>
 <h3 id="in-ubuntu-20-web-desktop-i-cant-load-items-from-the-js2-software-collection">In Ubuntu 20 web desktop, I can&rsquo;t load items from the JS2 Software Collection.<a class="headerlink" href="#in-ubuntu-20-web-desktop-i-cant-load-items-from-the-js2-software-collection" title="Permanent link">&para;</a></h3>
-<p>The <a href="../../general/software/">Jetstream2 Software Collection</a> requires Lmod modules to work. By default, the Gnome terminal in the the Ubuntu web desktop does not act like a login shell &ndash; meaning it doesn&rsquo;t source the normal Bash login/environment files setting up your path and other environment variables.</p>
+<p>The <a href="../../general/software/">Jetstream2 Software Collection</a> requires <code>Lmod</code> modules to work. By default, the Gnome terminal in the the Ubuntu web desktop does not act like a login shell &ndash; meaning it doesn&rsquo;t source the normal Bash login/environment files setting up your path and other environment variables.</p>
 <p>We&rsquo;re looking for a longer term solution for this, but in the meantime, you can fix this in the terminal preferences.</p>
 <p>With Terminal as the active application:</p>
 <ul>
 <li>Go to Edit -&gt; Profile Preferences.</li>
-<li>Select the Title and Command tab.</li>
+<li>Select the <strong><em>Title and Command</em></strong> tab.</li>
 <li>Check the &ldquo;Run command as login shell&rdquo; checkbox</li>
 </ul>
-<p>You&rsquo;ll need to start a new terminal window, but that new session should allow you to do commands like <em>module avail</em></p>
+<p>You&rsquo;ll need to start a new terminal window, but that new session should allow you to do commands like <code>module avail</code></p>
 <hr />
 <h3 id="there-is-a-known-issue-with-suspending-gpu-instances">There is a known issue with suspending GPU instances<a class="headerlink" href="#there-is-a-known-issue-with-suspending-gpu-instances" title="Permanent link">&para;</a></h3>
 <p>We will update this <a href="https://jetstream.status.io/pages/incident/61dc808a7e9a82053ce739d2/629a6de486604112e598b390" target="_blank">Status IO Incident</a> with details/</p>
 <p>There is an issue/bug with suspending GPU instances with the version of libvirt Jetstream2 is using for virtualization.</p>
+<div class="admonition danger">
+<p>DO NOT SUSPEND GPU instances.</p>
+</div>
 <p>We will have to upgrade the compute nodes to resolve it. This is on the near-term timeline but we do not have a precise date at this time.</p>
 <p>In the meantime, please only use stop or shelve with GPU instances.</p>
               
