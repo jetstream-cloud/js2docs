@@ -59,7 +59,7 @@ Similar to recreating your work, you can save some steps after [starting new VMs
 
      Network configurations and any instance management tools and scripts you’ve used previously will likely require updating to current values appropriate for JS2.</br>
 
-!!! info "INFO::transfer speeds"
+!!! note "INFO::transfer speeds"
 
      Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.</br>
 
