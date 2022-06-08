@@ -1,6 +1,6 @@
 # Federating a gateway or JupyterHub on Jetstream2
 
-One of Jetstream2's key features is to enable the federating of gateways and JupyterHub services. To accomplish this, we have partnered with the [Cyberinfrastructure Integration Research Center](https://circ.iu.edu/){target=_blank} to provide their Custos software to researchers and educators on Jetstream2. Custos open source software is operated as a service by the [IU PTI](https://pti.iu.edu/){target=_blank} [Cyberinfrastructure Integration Research Center](https://circ.iu.edu/){target=_blank}. Custos and its constituent components (CILogon, Keycloak, and HashiCorp Vault) are all multi-tenanted services, where a tenant is a science gateway, JupyterHub, or similar service.
+One of Jetstream2's key features is to enable the federating of gateways and JupyterHub services. To accomplish this, we have partnered with the [Cyberinfrastructure Integration Research Center](https://circ.iu.edu/){target=_blank} to provide their `Custos` software to researchers and educators on Jetstream2. Custos open source software is operated as a service by the [IU PTI](https://pti.iu.edu/){target=_blank} [Cyberinfrastructure Integration Research Center](https://circ.iu.edu/){target=_blank}. Custos and its constituent components (CILogon, Keycloak, and HashiCorp Vault) are all multi-tenanted services, where a tenant is a science gateway, JupyterHub, or similar service.
 
 To request Custos integration with your service, please follow these steps:
 
