@@ -35,6 +35,16 @@ Instructions for using boot from volume are here:
 
 ---
 
+### How do I get access to one of the Jetstream2 regional clouds?
+
+The regional clouds of Jetstream2 (Arizona State University, Cornell University, University of Hawai'i, and Texas Advanced Computing Center) are available via invitation only. They have limited resources and the local PIs have discretion as to which projects may run there.
+
+All allocations gain access to the primary Jetstream2 cloud at Indiana University. If you have an allocation and wish to have it added to a regional cloud, you can [request access using this form](https://jetstream-cloud.org/contact/index.html){target=_blank}
+
+*As the regional clouds have autonomy over their access and because resources are limited, it's important to note that not all requests may be accommodated.*
+
+---
+
 ### Will there be Microsoft Windows support on Jetstream2 ?
 
 Microsoft Windows is not officially supported on Jetstream2. We will be making a limited number of images available for experimental use.
