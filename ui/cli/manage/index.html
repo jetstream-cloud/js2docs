@@ -40,9 +40,12 @@
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Jetstream2 Main</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../..">Jetstream2 Home</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Jetstream2 Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
               <ul>
@@ -51,13 +54,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../migration/how_to_migrate/">HOW-TO</a>
                   </li>
               </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
               <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">Jetstream2 Early Operations FAQ</a>
-                </li>
-              </ul>
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
-                </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
@@ -343,7 +343,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="instance-management-actions-in-the-cli">Instance Management Actions in the CLI<a class="headerlink" href="#instance-management-actions-in-the-cli" title="Permanent link">&para;</a></h1>
-<p>Once you have an instance, you may need to stop, start, or do other actions with it. You may wish to review <a href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a> for more information about the &ldquo;costs&rdquo; of the various states of Jetstream2 virtual machines.</p>
+<p>Once you have an instance, you may need to stop, start, or do other actions with it. You may wish to review <a href="/general/xsede.md">XSEDE Service Units and Jetstream2</a> for more information about the &ldquo;costs&rdquo; of the various states of Jetstream2 virtual machines.</p>
 <h3 id="view-the-console-log">View the console log<a class="headerlink" href="#view-the-console-log" title="Permanent link">&para;</a></h3>
 <p>Sometimes you may need to look at the console log for troubleshooting purposes or even just to see if the boot completed normally. You can do this with</p>
 <pre><code>openstack console log show my-server-name-or-UUID
