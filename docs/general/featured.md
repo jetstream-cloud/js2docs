@@ -6,8 +6,9 @@ A key difference between Jetstream1 and Jetstream2 is that there will not be app
 
 At this time, the featured images will be:
 
+* Ubuntu 22.04
 * Ubuntu 20.04
-* Ubuntu 18.04
+* Ubuntu 18.04 *(will retire soon)*
 * Rocky 8
 * CentOS 7
 
