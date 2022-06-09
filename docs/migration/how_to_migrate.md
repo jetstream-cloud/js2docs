@@ -12,7 +12,8 @@ In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you'll need to und
 
 ### Allocations <a name="Allocations"></a>
 
-Just as in JS1, you'll need an allocation of compute (`normal`, `large memory`, `GPU`) and `storage` resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
+Just as in JS1, you'll need an allocation for one or more of the compute resources (`CPU (Jetstream2)`, `Large Memory (Jetstream2-LargeMemory)`, or `GPU (Jetstream2-GPU)`) and `storage (Jetstream2-Storage)` resources, awarded by NSF and currently managed by [XSEDE](https://portal.xsede.org).
+
 The allocation process is described here: [Allocation Overivew](/alloc/overview/)
 
 You can take one of two approaches:
@@ -22,10 +23,12 @@ You can take one of two approaches:
 
 ### Supplement Allocation <a name="Supplement"></a>
 
-If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the `compute`, `large-memory-compute`, `GPU`, and `storage` resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
+If you already have a JS1 allocation, then we encourage you to request a supplement at a **[Startup](/alloc/startup/)** amount of resources for the `CPU (Jetstream2)`, `Large Memory (Jetstream2-LargeMemory)`, `GPU (Jetstream2-GPU)`, and `storage (Jetstream2-Storage)` resources on JS2.
 
 * [Supplement](/alloc/supplement/)
 * [Renewal](/alloc/renew-extend/)
+
+You may also review the Startup limits on the [Resource Overview page](/general/resources/).
 
 ### New Allocation <a name="NewAllocation"></a>
 
