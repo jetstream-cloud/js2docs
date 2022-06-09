@@ -18,8 +18,8 @@ This software store is mounted automatically when the instance is launched. Inst
 
 ### Can I request to have other software packages added to the software collection?
 
-You may request software using the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}
+Since everyone on Jetstream2 allocations potentially has root access on their VMs, you may install any software you need on a per VM basis. You can then snapshot and save your customized images.
+
+If you feel a package would be broadly useful to the Jetstream User community, you may request software using the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank} and staff will review the package.
 
 Please do keep in mind that we cannot add and maintain all requested software packages. We will review any requests and track those requests.
-
-Since everyone on Jetstream2 allocations potentially has root access on their VMs, you can install any software you need. You can then snapshot and save your customized images.
