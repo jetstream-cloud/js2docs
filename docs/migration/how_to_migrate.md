@@ -103,7 +103,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
     * **API**:
       * VMs:
-        1. Follow the instructions here to [create a snapshot of your instance](https://wiki.jetstream-clould.org/Creating+snapshots+and+new+Glance+images+from+the+command+line)</br>
+        1. Follow the instructions here to [create a snapshot of your instance](https://wiki.jetstream-cloud.org/Creating+snapshots+and+new+Glance+images+from+the+command+line)</br>
         2. Make note of the UUID
         3. Submit a ticket with that UUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2.</br>
       * Volumes:

@@ -1,6 +1,6 @@
 # Instance Management Actions in the CLI
 
-Once you have an instance, you may need to stop, start, or do other actions with it. You may wish to review [XSEDE Service Units and Jetstream2](../../general/xsede.md) for more information about the "costs" of the various states of Jetstream2 virtual machines.
+Once you have an instance, you may need to stop, start, or do other actions with it. You may wish to review [XSEDE Service Units and Jetstream2](/general/xsede.md) for more information about the "costs" of the various states of Jetstream2 virtual machines.
 
 ### View the console log
 
