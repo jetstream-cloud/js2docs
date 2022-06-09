@@ -155,6 +155,7 @@ nav:
       - Manila:
         - Manila: general/manila.md
         - Using Manila Share on a VM: general/manilaVM.md
+        - Configuring a Ceph FUSE client: manilaVM-FUSE.md
       - Object Store: general/object.md
       - File Transfer: general/filetransfer.md
     - Maintenance and Administration:
