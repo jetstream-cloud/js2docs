@@ -7,9 +7,11 @@ In this section, we document information relative to that migration.
 
 Jetstream1 will remain online through the end of July 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase.
 
-!!! note "There will be no extension beyond July 31 for Jetstream1. All allocations will be disabled and denied access at that time."
+!!! warning ""
 
-We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages prior to the IU cloud.
+    There will be no extension beyond July 31 for Jetstream1. All allocations will be disabled and denied access at that time.
+
+We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages **prior** to the IU cloud.
 
 ## What Researchers should know before migrating
 
@@ -32,7 +34,13 @@ Researchers on JS1 wishing to migrate to JS2 should take note of:
 
 We highly recommend that you read about the [key differences between the architecture of JS2 and JS1](/overview/keydiff/#key-differences-between-jetstream1-and-jetstream2).
 
-The biggest difference is that Jetstream2 will consist of one primary cloud (hosted at Indiana University) and multiple regional clouds.
+The biggest difference is that Jetstream2 will consist of one primary cloud (hosted at Indiana University) and multiple regional clouds, each with unique features and resources.
+
+For Atmosphere users, you will be pleased to find that IP addresses are [persistent](/overview/network/#PersistentIP), though we do ask you to return IP addresses to the pool whenever they are no longer needed, as they are a finite resource.
+
+!!! warning ""
+
+    The JS1 IP pool and IP addresses ARE NOT transferable to JS2 at this time.
 
 ### User Interfaces (UI)<a name="UI"></a>
 
@@ -51,7 +59,7 @@ One important differences to note for our existing users is that we’ve enhance
 
 !!! note "Important note for CLI users"
 
-Jetstream2 use of **Application Credentials** has expanded to include CLI access. This means CLI users well also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
+    Jetstream2 use of **Application Credentials** has expanded to include CLI access. This means CLI users well also authenticate using XSEDE credentials. Please see [Setting up the openrc.sh for the Jetstream2 CLI](/ui/cli/openrc){target=_blank} for instructions generating application credentials and an openrc for Jetstream2.
 
 
 ### Jetstream2 Software Collection<a name="SoftwareCollection"></a>
