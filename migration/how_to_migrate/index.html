@@ -343,27 +343,29 @@
                 <h2 id="how-to-migrate">How to Migrate<a class="headerlink" href="#how-to-migrate" title="Permanent link">&para;</a></h2>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
 <p>In order to migrate from Jetstream1 (JS1) to Jetstream2 (JS2) you&rsquo;ll need to understand:</p>
-<div class="admonition migration concepts"></div>
+<div class="admonition migration concepts">
 <ul>
 <li><a href="#Allocations">Allocations</a></li>
 <li><a href="#MoveData">How to move data</a></li>
 <li><a href="#GetHelp">Where to find help</a></li>
 </ul>
+</div>
 <hr />
 <h3 id="allocations">Allocations <a name="Allocations"></a><a class="headerlink" href="#allocations" title="Permanent link">&para;</a></h3>
-<p>Just as in JS1, you&rsquo;ll need an allocation of compute (<code>normal</code>, <code>large memory</code>, <code>GPU</code>) and <code>storage</code> resources, awarded by NSF and currently managed by <a href="https://portal.xsede.org">XSEDE</a>.
-The allocation process is described here: <a href="/alloc/overview/">Allocation Overivew</a></p>
+<p>Just as in JS1, you&rsquo;ll need an allocation for one or more of the compute resources (<code>CPU (Jetstream2)</code>, <code>Large Memory (Jetstream2-LargeMemory)</code>, or <code>GPU (Jetstream2-GPU)</code>) and <code>storage (Jetstream2-Storage)</code> resources, awarded by NSF and currently managed by <a href="https://portal.xsede.org">XSEDE</a>.</p>
+<p>The allocation process is described here: <a href="/alloc/overview/">Allocation Overivew</a></p>
 <p>You can take one of two approaches:</p>
 <ol>
 <li>A <a href="#Supplement">supplement</a> to a current research allocation -OR-</li>
 <li>A completely <a href="#NewAllocation">new allocation</a></li>
 </ol>
 <h3 id="supplement-allocation">Supplement Allocation <a name="Supplement"></a><a class="headerlink" href="#supplement-allocation" title="Permanent link">&para;</a></h3>
-<p>If you already have a JS1 allocation, then we encourage you to request a supplement at a <strong><a href="/alloc/startup/">STARTUP</a></strong> amount of resources for the <code>compute</code>, <code>large-memory-compute</code>, <code>GPU</code>, and <code>storage</code> resources on JS2. This will enable you to create the <strong>Code, Performance, &amp; Scaling</strong> estimates you&rsquo;ll need for a successful project renewal on JS2.</p>
+<p>If you already have a JS1 allocation, then we encourage you to request a supplement at a <strong><a href="/alloc/startup/">Startup</a></strong> amount of resources for the <code>CPU (Jetstream2)</code>, <code>Large Memory (Jetstream2-LargeMemory)</code>, <code>GPU (Jetstream2-GPU)</code>, and <code>storage (Jetstream2-Storage)</code> resources on JS2.</p>
 <ul>
 <li><a href="/alloc/supplement/">Supplement</a></li>
 <li><a href="/alloc/renew-extend/">Renewal</a></li>
 </ul>
+<p>You may also review the Startup limits on the <a href="/general/resources/">Resource Overview page</a>.</p>
 <h3 id="new-allocation">New Allocation <a name="NewAllocation"></a><a class="headerlink" href="#new-allocation" title="Permanent link">&para;</a></h3>
 <p>Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still start with a Startup level in order to create the <strong>Code, Performance, &amp; Scaling</strong> estimates you&rsquo;ll need later for a Research allocation.</p>
 <ul>
@@ -378,16 +380,18 @@ Volumes on JS1 do not persist on JS2 because they are completely separate system
 <h4 id="three-approaches">Three approaches<a class="headerlink" href="#three-approaches" title="Permanent link">&para;</a></h4>
 <p>There are essentially three approaches to accomplish data retention:</p>
 <ol>
-<li><strong>Recreate your work</strong></br>
-In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></li>
-</ol>
+<li>
+<p><strong>Recreate your work</strong> (STAFF RECOMMENDED)</br>
+In order to get you going the fastest, take advantage of all the new features of JS2, and avoid any legacy configuration differences, it’s often advisable to simply create new VMs and bring in fresh software and data.</br></p>
 <ul>
 <li>Information about creating new VMs can be found for each type of user interface: <a href="/general/instancemgt">General Instance Management</a> </br></li>
 <li>Instructions for tansfering files from external locations to JS2 VMs can be found here: <a href="/general/filetransfer">File Transfer</a></br></br></li>
 </ul>
-<ol start="2">
-<li><strong>Copy your JS1 work</strong></br>
-Similar to recreating your work, you can save some steps after <a href="/general/instancemgt">starting new VMs</a> by copying your existing software from your current VM on JS1: <a href="/general/filetransfer">File Transfer</a> </br></li>
+</li>
+<li>
+<p><strong>Copy your JS1 work</strong></br>
+Similar to recreating your work, you can save some steps after <a href="/general/instancemgt">starting new VMs</a> by copying your existing software from your current VM on JS1: <a href="/general/filetransfer">File Transfer</a> </br></p>
+</li>
 </ol>
 <div class="admonition caution">
 <p class="admonition-title">CAUTION::JS1-compatibility</p>
@@ -398,15 +402,17 @@ Similar to recreating your work, you can save some steps after <a href="/general
 <p>Copying data from JS1 to JS2, particularly from within the same regional provider, will generally have good performance relative to a transfers across the internet.</br></p>
 </div>
 <ol start="3">
-<li><strong>Transfer your work</strong> </br>
-You can create snapshots of your existing JS1 VMs and request the <a href="mailto:help@jetstream-cloud.org">Help Desk Support</a> team copy these snapshots as well as data volumes to Jetstream2.<br></li>
-</ol>
+<li>
+<p><strong>Transfer your work</strong> </br>
+You can create snapshots of your existing JS1 VMs and request the <a href="mailto:help@jetstream-cloud.org">Help Desk Support</a> team copy these snapshots as well as data volumes to Jetstream2.<br></p>
 <ul>
 <li><strong>Data volumes</strong>:</br>
   This is fairly straightforward and is described below: <a href="#SaveData">How to preserve JS1 VMs and data</a></br></li>
 <li><strong>VMs</strong>:</br>
   You can also follow the steps at <a href="#SaveData">How to preserve JS1 VMs and data</a></br></li>
 </ul>
+</li>
+</ol>
 <div class="admonition caution">
 <p class="admonition-title">CAUTION::JS1-compatibility</p>
 <p>Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br></p>
@@ -422,20 +428,20 @@ You can create snapshots of your existing JS1 VMs and request the <a href="mailt
 <li>VMs:<ol>
 <li>Follow the instructions here to <a href="https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM">update and image your VM</a> </br> <strong>NOTE</strong>: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it&rsquo;s <code>sudo yum update</code> <br/>For Ubuntu based systems, do <code>sudo apt-get update</code> and then <code>sudo apt-get upgrade</code></li>
 <li>Next<ul>
-<li>Go to the IMAGES tab</li>
+<li>Go to the <strong>IMAGES</strong> tab</li>
 <li>Click on the Image you created</li>
 <li>Click on the Version you want</li>
-<li>Click on Copy for either IU or TACC to grab the UUID of the image</li>
+<li>Click on <strong>COPY</strong> for either IU or TACC to grab the UUID of the image</li>
 <li>Submit a ticket with that UUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your image to Jetstream2. </br></li>
 </ul>
 </li>
 </ol>
 </li>
 <li>Volumes:<ol>
-<li>Click on the PROJECTS tab</li>
+<li>Click on the <strong>PROJECTS</strong> tab</li>
 <li>Click on the Project Folder</li>
-<li>Scroll down to VOLUMES and click on the desired volume</li>
-<li>Click on Copy to grab the UUID of the image.</li>
+<li>Scroll down to <strong>VOLUMES</strong> and click on the desired volume</li>
+<li>Click on <strong>COPY</strong> to grab the UUID of the image.</li>
 <li>Submit a ticket with that VUID to <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a> to ask staff to copy your volume to Jetstream2.</br></li>
 </ol>
 </li>
@@ -463,7 +469,10 @@ You can create snapshots of your existing JS1 VMs and request the <a href="mailt
 <h3 id="where-to-find-help-documentation">Where to find help documentation <a name="GetHelp"></a><a class="headerlink" href="#where-to-find-help-documentation" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
-<p><strong>JS1</strong>:</br>Documentation for JS1 will temporarily remain during the summer of 2022 at <a href="https://wiki.jetstream-cloud.org">https://wiki.jetstream-cloud.org</a> </br> <strong>PLEASE NOTE</strong> that this documentation will likely <strong>NOT</strong> be updated.</p>
+<p><strong>JS1</strong>:</br>Documentation for JS1 will temporarily remain during the summer of 2022 at <a href="https://wiki.jetstream-cloud.org">https://wiki.jetstream-cloud.org</a> </br></p>
+<div class="admonition warning">
+<p>This documentation will likely <strong>NOT</strong> be updated.</p>
+</div>
 </li>
 <li>
 <p><strong>JS2</strong>:</br>The latest JS2 documentation will be maintained at <a href="https://docs.jetsteam-cloud.org">docs.jetsteam-cloud.org</a></p>
@@ -472,7 +481,10 @@ You can create snapshots of your existing JS1 VMs and request the <a href="mailt
 <p><strong>NEWS</strong>: Announcements will be made at the <a href="https://www.xsede.org/news/user-news">XSEDE User News : https://www.xsede.org/news/user-news site </a> </br> To ensure that you are receiving all updates to your inbox, login to the page to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don&rsquo;t miss any important migration updates.</p>
 </li>
 </ul>
-<p><strong>Updates will all be made <a href="overview/status/">Jetstream2 System Status and Information</a> and shared via <a href="https://www.xsede.org/news/user-news">XSEDE User News : https://www.xsede.org/news/user-news site </a>.</strong></p>
+<div class="admonition example">
+<p class="admonition-title">LIVE UPDATES</p>
+<p>Updates will all be made <a href="overview/status/">Jetstream2 System Status and Information</a> and shared via <a href="https://www.xsede.org/news/user-news">XSEDE User News : https://www.xsede.org/news/user-news site </a>.</p>
+</div>
               
             </div>
           </div><footer>

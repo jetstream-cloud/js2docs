@@ -352,13 +352,13 @@
 <li>Individual instances have full access to this infrastructure with no added speed limits.</li>
 </ul>
 <p><em>It is important to note that connections coming from commercial/commodity internet will likely not be as fast as those coming from Internet2 sites.</em></p>
-<h4 id="persistent-ips">Persistent IPs:<a class="headerlink" href="#persistent-ips" title="Permanent link">&para;</a></h4>
-<p>A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like <a href="../../ui/exo/exo/">Exosphere</a> and <a href="../../ui/cacao/overview/">Cacao</a> release IPs by default when a VM is deleted. <a href="../../ui/horizon/intro/">Horizon</a> and the Jetstream2 <a href="../../ui/cli/overview/">CLI</a> require you to explicitly release the IP address.</p>
+<h4 id="persistent-ips">Persistent IPs: <a name="PersistentIP"></a><a class="headerlink" href="#persistent-ips" title="Permanent link">&para;</a></h4>
+<p>A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like <a href="/ui/exo/exo.md">Exosphere</a> and <a href="/ui/cacao/overview.md">Cacao</a> release IPs by default when a VM is deleted. <a href="../../ui/horizon/intro/">Horizon</a> and the Jetstream2 <a href="/ui/cli/overview.md">CLI</a> require you to explicitly release the IP address.</p>
 <p>We do ask that you release any unused IPs back to the public pool. There are a finite number of IPs available and allocations hoarding them may inadvertently cause issues for other Jetstream2 researchers.</p>
 <p>The Jetstream administration team reserves the right to release any IP addresses not associated with a VM as needed.</p>
 <h4 id="network-security-policies">Network Security Policies:<a class="headerlink" href="#network-security-policies" title="Permanent link">&para;</a></h4>
 <p>In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the instutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service ports (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way. Whether they are open by default will be dependent on which user interface you&rsquo;re launching your VM with.</p>
-<p>Please refer to the <a href="../../faq/security/#what-is-the-default-security-profile-for-jetstream2-vms">Security FAQ</a> for additional information.</p>
+<p>Please refer to the <a href="/faq/security.md#what-is-the-default-security-profile-for-jetstream2-vms">Security FAQ</a> for additional information.</p>
 <hr />
 <hr />
 <hr />
@@ -372,7 +372,7 @@
 </ul>
 <p>This document primarily looks at the <strong>Cluster Network</strong> and may delve into the <strong>Neutron overlay networks</strong>. The Management Network is not in the scope of user-facing documentation.</p>
 <h2 id="cluster-network">Cluster Network<a class="headerlink" href="#cluster-network" title="Permanent link">&para;</a></h2>
-<p><a href="../../attachments/bgp-in-the-data-center.pdf" target="_blank">BGP in the Data Center</a> is recommended reading. It provides background and orientation to Clos networks and BGP the way that it is used here. It is a short, accessible read for someone with general IT networking knowledge. For a quicker version, read chapters 1, 2, 4, and 6. Skim chapters 3 and 5.</p>
+<p><a href="/attachments/bgp-in-the-data-center.pdf" target="_blank">BGP in the Data Center</a> is recommended reading. It provides background and orientation to Clos networks and BGP the way that it is used here. It is a short, accessible read for someone with general IT networking knowledge. For a quicker version, read chapters 1, 2, 4, and 6. Skim chapters 3 and 5.</p>
 <p>The Jetstream2 network is a two-tier spine-and-leaf network in a <a href="https://en.wikipedia.org/wiki/Fat_tree" target="_blank">fat tree</a> or <a href="https://en.wikipedia.org/wiki/Clos_network" target="_blank">Clos</a> topology.</p>
 <p><img alt="Jetstream2 physical topology" src="../../images/js2-iu-network.png" /></p>
 <p>There are no inter-switch links (ISLs). Traffic that transits the network will generally traverse a leaf switch, a spine switch, and another leaf switch.</p>

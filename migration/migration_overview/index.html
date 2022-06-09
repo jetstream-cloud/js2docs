@@ -345,10 +345,10 @@
 In this section, we document information relative to that migration.</p>
 <h2 id="jetstream-1-2-availability">Jetstream 1 &amp; 2 availability<a class="headerlink" href="#jetstream-1-2-availability" title="Permanent link">&para;</a></h2>
 <p>Jetstream1 will remain online through the end of July 2022. We are no longer accepting any new allocations on Jetstream1 as Jetstream2 has entered operations phase.</p>
-<div class="admonition note">
-<p class="admonition-title">There will be no extension beyond July 31 for Jetstream1. All allocations will be disabled and denied access at that time.</p>
+<div class="admonition warning">
+<p>There will be no extension beyond July 31 for Jetstream1. All allocations will be disabled and denied access at that time.</p>
 </div>
-<p>We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages prior to the IU cloud.</p>
+<p>We strongly recommend users migrate to JS2 as soon as possible. VMs on JS1 will continue running as long as you have a valid allocation there BUT only until it is decommissioned. The TACC cloud of JS1 will likely be taken down in stages <strong>prior</strong> to the IU cloud.</p>
 <h2 id="what-researchers-should-know-before-migrating">What Researchers should know before migrating<a class="headerlink" href="#what-researchers-should-know-before-migrating" title="Permanent link">&para;</a></h2>
 <p>Researchers on JS1 wishing to migrate to JS2 should take note of:</p>
 <ol>
@@ -373,7 +373,11 @@ In this section, we document information relative to that migration.</p>
 <h2 id="critical-differences-js2-and-js1">Critical differences JS2 and JS1 <a name="CriticalDifferences"></a><a class="headerlink" href="#critical-differences-js2-and-js1" title="Permanent link">&para;</a></h2>
 <h3 id="architecture">Architecture <a name="Architecture"></a><a class="headerlink" href="#architecture" title="Permanent link">&para;</a></h3>
 <p>We highly recommend that you read about the <a href="/overview/keydiff/#key-differences-between-jetstream1-and-jetstream2">key differences between the architecture of JS2 and JS1</a>.</p>
-<p>The biggest difference is that Jetstream2 will consist of one primary cloud (hosted at Indiana University) and multiple regional clouds.</p>
+<p>The biggest difference is that Jetstream2 will consist of one primary cloud (hosted at Indiana University) and multiple regional clouds, each with unique features and resources.</p>
+<p>For Atmosphere users, you will be pleased to find that IP addresses are <a href="/overview/network/#PersistentIP">persistent</a>, though we do ask you to return IP addresses to the pool whenever they are no longer needed, as they are a finite resource.</p>
+<div class="admonition warning">
+<p>The JS1 IP pool and IP addresses ARE NOT transferable to JS2 at this time.</p>
+</div>
 <h3 id="user-interfaces-ui">User Interfaces (UI)<a name="UI"></a><a class="headerlink" href="#user-interfaces-ui" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Jetstream2 has 3 Graphical User Interfaces and a Command Line Interface (CLI).</li>
@@ -392,8 +396,8 @@ In this section, we document information relative to that migration.</p>
 <p>One important differences to note for our existing users is that we’ve enhanced our security profile and are using <strong>Application Credentials</strong> for our interfaces. Each user interface above has similar, but slightly different ways to access those <strong>Application Credentials</strong>, so please be aware, and carefully follow the instructions.</p>
 <div class="admonition note">
 <p class="admonition-title">Important note for CLI users</p>
-</div>
 <p>Jetstream2 use of <strong>Application Credentials</strong> has expanded to include CLI access. This means CLI users well also authenticate using XSEDE credentials. Please see <a href="/ui/cli/openrc" target="_blank">Setting up the openrc.sh for the Jetstream2 CLI</a> for instructions generating application credentials and an openrc for Jetstream2.</p>
+</div>
 <h3 id="jetstream2-software-collection">Jetstream2 Software Collection<a name="SoftwareCollection"></a><a class="headerlink" href="#jetstream2-software-collection" title="Permanent link">&para;</a></h3>
 <p>Rather than pack each and every virtual machine with research software, Jetstream2 has created a shared directory of packages that you can load and unload as desired using the <strong>LMOD</strong> system.</p>
 <p>The use of the JS2 Software Collection is described here:</br>
