@@ -27,9 +27,8 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 >  * [https://portal.xsede.org/allocations/managing](https://portal.xsede.org/allocations/managing){target=_blank}
 
-!!! Reminder 
-
-    Please note that it can take up to four hours for users added to an allocation to become active.
+!!! Note
+    **It can take up to four hours for users added to an allocation to become active.**
 
 ---
 
