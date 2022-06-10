@@ -32,7 +32,7 @@ If you have a startup allocation and you are planning to stay under the startup 
 * Go to the [Submit / Review Requests page](https://portal.xsede.org/group/xup/submit-request#/){target=_blank}
     * (You can also mouse over the "Allocations tab" and then select "Submit/Review Request")
 * Look on the **LEFT** side of the page and scroll down to find your allocation.
-    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring.*
+    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring if it is a startup allocation.*
 * Choose "Start Renewal for *[Your allocation number]*"
 * Select the duration from the list.
 * Enter all comments and justifications for the extension.
