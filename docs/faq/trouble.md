@@ -13,7 +13,7 @@ Troubleshooting Jetstream2 Interfaces:
 
 General Troubleshooting:
 
-### In Ubuntu 20 web desktop, I can't load items from the JS2 Software Collection.
+### In Ubuntu 20 or 22 web desktop, I can't load items from the JS2 Software Collection.
 
 The [Jetstream2 Software Collection](../general/software.md) requires `Lmod` modules to work. By default, the Gnome terminal in the the Ubuntu web desktop does not act like a login shell -- meaning it doesn't source the normal Bash login/environment files setting up your path and other environment variables.
 
@@ -22,6 +22,7 @@ We're looking for a longer term solution for this, but in the meantime, you can 
 With Terminal as the active application:
 
 * Go to Edit -> Profile Preferences.
+* Select the "Unnamed" Profile
 * Select the ***Title and Command*** tab.
 * Check the "Run command as login shell" checkbox
 
