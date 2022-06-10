@@ -51,6 +51,8 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 > If your SU needs are equal to or less than the maximum startup values (see item 4 just above) you may renew your startup allocation. If you need a signficantly larger amound of SUs for any of the resources, you will need to pursue a [research allocation](../alloc/research.md)
 
+> Startup allocations may be renewed at 30 days or less before expiration. Please refer to [Instructions for requesting a renewal](https://docs.jetstream-cloud.org/alloc/renew-extend/#instructions-for-requesting-a-renewal) for more information. 
+
 ---
 
   **6. I'm running out of Service Units (SUs) or storage. How do I request more?**
