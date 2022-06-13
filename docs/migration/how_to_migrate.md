@@ -28,13 +28,16 @@ If you already have a JS1 allocation, then we encourage you to request a supplem
 * [Supplement](/alloc/supplement/)
 * [Renewal](/alloc/renew-extend/)
 
+!!! warning "Campus Champions"
+
+    Please note that we will **NOT** be automatically adding [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations to Jetstream2. You will explicitly need to get a [supplement](/alloc/supplement/) for it.
+
 ### New Allocation <a name="NewAllocation"></a>
 
 Of course, if your research will be changing, you can always apply for a new allocation of resources on JS2. We recommend you still start with a Startup level in order to create the **Code, Performance, & Scaling** estimates you'll need later for a Research allocation.
 
 * [Allocation Overview](/alloc/overview/)
 * [Startup Allocation](/alloc/startup)
-
 
 ---
 

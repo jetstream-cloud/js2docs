@@ -11,8 +11,13 @@ A guide with more detail on Jetstream allocations is available online at the
 
 - [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2
 - [Startup allocation](startup.md) - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.
+    * [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations will generally default to this level, though other limits are available upon request.
 - [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
 - [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.
+
+!!! warning "Campus Champions"
+
+    Please note that we will **NOT** be automatically adding [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations to Jetstream2. You will explicitly need to get a [supplement](/alloc/supplement/) for it.
 
 #### Maximum Trial Allocation values for each resource are:
 
