@@ -62,6 +62,8 @@ You can’t easily share volumes in OpenStack without deploying a Shared File Sy
 
 Instructions for using manila on Jetstream2 are here - [Manila - Filesystems-as-a-service - on Jetstream2](https://docs.jetstream-cloud.org/general/manila/)
 
+Please note, there are different quotas for block storage (volumes) and shares. There will be a self-service tool for managing those quotas soon, but for now, if you need to have your Jetstream2 Storage quota adjusted between block and share storage, please [contact us via the Jetstream2 contact form](https://jetstream-cloud.org/contact/index.html){target=_blank} with the amount you wish to move between the storage types. 
+
 ---
 
 ### Can I set the password for a user on my virtual machine?
