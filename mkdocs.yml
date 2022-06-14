@@ -185,9 +185,9 @@ nav:
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
     - Federating Gateways on Jetstream2: general/federating.md
-- Archived Documentation:
-      - Atmosphere on JS1:
-        - Customizing and saving a VM: archive/atmosphere/Customizing+and+saving+a+VM.md
-        - Imaging Guidelines: archive/atmosphere/Imaging+Guidelines.md
-        - Request an image of an instance: archive/atmosphere/Request+an+image+of+an+instance.md
-        - Detach a Volume: archive/atmosphere/Detach+a+Volume.md
+  - Archived Documentation:
+    - Atmosphere on JS1:
+      - Customizing and saving a VM: archive/atmosphere/Customizing+and+saving+a+VM.md
+      - Imaging Guidelines: archive/atmosphere/Imaging+Guidelines.md
+      - Request an image of an instance: archive/atmosphere/Request+an+image+of+an+instance.md
+      - Detach a Volume: archive/atmosphere/Detach+a+Volume.md
