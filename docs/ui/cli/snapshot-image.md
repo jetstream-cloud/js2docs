@@ -15,7 +15,8 @@ When you have created a custom workflow or configuration, you can create a _snap
 !!! warning "CAUTION:: cloud-init & qemu-guest-agent"
 
     Before creating the snapshot and/or image, you'll want to make sure that `cloud-init` is installed on your instance as well as `qemu-guest-agent`
-        – If your instance was based on one of the [Featured](/general/featured) images, both _cloud-init_ and _qemu-guest-agent_ should be present unless you explicitly removed them.
+
+    * If your instance was based on one of the [Featured](/general/featured) images, both _cloud-init_ and _qemu-guest-agent_ should be present unless you explicitly removed them.
 
 #### To create the snapshot from the command line:
 
