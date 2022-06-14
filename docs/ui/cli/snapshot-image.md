@@ -4,7 +4,7 @@
 
 When you have created a custom workflow or configuration, you can create a _snapshot_ for your own use. In **OpenStack**, an instance _snapshot_ is an [image](/general/instancemgt/#Image). The only difference between an _image_ that has been uploaded directly to the image data service: [glance](https://docs.openstack.org/glance) and an _image_ you create by _snapshot_ is that an image created by snapshot has additional properties in the glance database and defaults to being private.
 
-!!! info ""
+!!! note ""
 
     [Glance](https://docs.openstack.org/glance) is a central image repository which provides discovering, registering, retrieving for disk and server images.
 
