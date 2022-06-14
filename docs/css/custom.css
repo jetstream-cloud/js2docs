@@ -57,3 +57,9 @@ code {color: blue; !important}
 .rst-badge .rst-versions .rst-versions.rst-badge { display: none !important; }
 .rst-versions { visibility: hidden; }
 */
+
+.admonition-title { background: #69090D !important; }
+
+.admonition.note { background: #e2e5e7 !important; }
+
+.note { background: #e2e5e7 !important; }
