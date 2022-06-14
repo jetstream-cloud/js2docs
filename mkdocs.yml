@@ -91,6 +91,7 @@ nav:
     - Instance Management Actions: general/instancemgt.md
     - Featured Images: general/featured.md
     - Microsoft Windows on Jetstream2: general/windows.md
+    - Storage: general/storage.md
   - Allocations:
     - Allocations Overview: alloc/overview.md
     - Trial Allocation: alloc/trial.md
@@ -101,6 +102,7 @@ nav:
     - Extensions & Renewals: alloc/renew-extend.md
     - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
+    - Overview: ui/index.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md
