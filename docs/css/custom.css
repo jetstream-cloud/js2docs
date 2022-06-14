@@ -62,4 +62,6 @@ code {color: blue; !important}
 
 .admonition.note { background: #e2e5e7 !important; }
 
+.admonition.danger { background: #e2e5e7 !important; }
+
 .note { background: #e2e5e7 !important; }
