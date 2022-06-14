@@ -21,6 +21,7 @@ From the Jetstream Atmosphere Dashboard:
     !!! note "NOTE:"
 
         A Volume will fail to detach if:
+        
         * the Volume is in active use on the active Instance to which it is attached.
         * if the Instance to which it is attached is in an inactive state (shelve/shutdown/suspend) (i.e. the Instance must be active in order to detach)
 
