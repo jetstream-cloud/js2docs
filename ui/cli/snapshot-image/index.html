@@ -101,6 +101,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/windows/">Microsoft Windows on Jetstream2</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/storage/">Storage</a>
+                  </li>
               </ul>
               <p class="caption"><span class="caption-text">Allocations</span></p>
               <ul>
@@ -123,6 +125,8 @@
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
               <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Exosphere</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../exo/exo/">Overview</a>
@@ -380,15 +384,15 @@
 </div>
 <h4 id="to-create-the-snapshot-from-the-command-line">To create the snapshot from the command line:<a class="headerlink" href="#to-create-the-snapshot-from-the-command-line" title="Permanent link">&para;</a></h4>
 <p><code>openstack server image create --name snapshot-image-name instance-name</code></p>
-<pre><code>(e.g. openstack server image create --name MyCustomCentos7Image-Feb-7-2017 my-CentOS7-instance)
+<pre><code>(e.g. openstack server image create --name MyCustomImage-Feb-7-2022 my-cutom-instance)
 </code></pre>
 <p>Snapshots won&rsquo;t initially show in Horizon or other interfaces. To make a snapshot visible, you&rsquo;ll need to export it and bring it back as a Glance image. If you only plan to use this within your project and from the command line only, the rest of the steps aren&rsquo;t necessary.</p>
 <p><code>openstack image save --file whatever_file_name_you_like.raw UID</code></p>
-<pre><code>(e.g. openstack image save --file c7custom-image.raw 569677d8-c7b0-4606-86d8-7673a5ecd5cf )
+<pre><code>(e.g. openstack image save --file my-custom-image.raw 569677d8-c7b0-4606-86d8-7673a5ecd5cf )
 </code></pre>
 <h4 id="uploading-a-snapshot-or-new-image-into-glance">Uploading a snapshot or new image into Glance:<a class="headerlink" href="#uploading-a-snapshot-or-new-image-into-glance" title="Permanent link">&para;</a></h4>
 <p>You can upload a snapshot or image into Glance using:</p>
-<pre><code>openstack image create --disk-format raw --container-format bare --property visibility=community --property skip_atmosphere=yes --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --file c7custom-image.raw My-Custom-Image-Name
+<pre><code>openstack image create --disk-format raw --container-format bare --property visibility=private --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --file my-custom-image.raw My-Custom-Image-Name
 </code></pre>
 <div class="admonition danger">
 <p class="admonition-title">CAUTION:: metadata tags</p>

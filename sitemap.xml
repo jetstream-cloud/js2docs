@@ -236,6 +236,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.jetstream-cloud.org/general/storage/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.jetstream-cloud.org/general/sudo/</loc>
          <lastmod>2022-06-14</lastmod>
          <changefreq>daily</changefreq>
@@ -302,6 +307,11 @@
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/status/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.jetstream-cloud.org/ui/</loc>
          <lastmod>2022-06-14</lastmod>
          <changefreq>daily</changefreq>
     </url>
