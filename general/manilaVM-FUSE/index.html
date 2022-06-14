@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/alloc/supplement/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/manilaVM-FUSE/" />
       <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
-    <title>Supplements (Storage/SUs) - Jetstream2 Documentation</title>
+    <title>Configuring a Ceph FUSE client - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link href="../../css/custom.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Supplements (Storage/SUs)";
-        var mkdocs_page_input_path = "alloc/supplement.md";
-        var mkdocs_page_url = "/alloc/supplement/";
+        var mkdocs_page_name = "Configuring a Ceph FUSE client";
+        var mkdocs_page_input_path = "general/manilaVM-FUSE.md";
+        var mkdocs_page_url = "/general/manilaVM-FUSE/";
       </script>
     
     <script src="../../js/jquery-3.6.0.min.js" defer></script>
@@ -87,38 +87,38 @@
               </ul>
               <p class="caption"><span class="caption-text">General Usage Information</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/resources/">Jetstream2 Resources</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../xsede/">XSEDE Service Units and Jetstream2</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/vmsizes/">VM Sizes and Configurations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../vmsizes/">VM Sizes and Configurations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/quotas/">Quotas</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/instancemgt/">Instance Management Actions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../instancemgt/">Instance Management Actions</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/windows/">Microsoft Windows on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows on Jetstream2</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Allocations</span></p>
-              <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="../overview/">Allocations Overview</a>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/overview/">Allocations Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../trial/">Trial Allocation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/trial/">Trial Allocation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../startup/">Startup Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/startup/">Startup Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../education/">Education Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research Allocations</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Supplements (Storage/SUs)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../renew-extend/">Extensions & Renewals</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../faq/">Frequently Asked Questions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -227,93 +227,93 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General VM Operations</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/firewalls/">Firewalls</a>
+                <li class="toctree-l2"><a class="reference internal" href="../firewalls/">Firewalls</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/sudo/">Being the root user</a>
+                <li class="toctree-l2"><a class="reference internal" href="../sudo/">Being the root user</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Storage</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="#">Manila</a>
-    <ul>
-                <li class="toctree-l3"><a class="reference internal" href="../../general/manila/">Manila</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Storage</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">Manila</a>
+    <ul class="current">
+                <li class="toctree-l3"><a class="reference internal" href="../manila/">Manila</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM/">Using Manila Share on a VM</a>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM/">Using Manila Share on a VM</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                <li class="toctree-l3 current"><a class="reference internal current" href="./">Configuring a Ceph FUSE client</a>
                 </li>
     </ul>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/object/">Object Store</a>
+                <li class="toctree-l2"><a class="reference internal" href="../object/">Object Store</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/filetransfer/">File Transfer</a>
+                <li class="toctree-l2"><a class="reference internal" href="../filetransfer/">File Transfer</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Maintenance and Administration</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/adduser/">Add User to a VM</a>
+                <li class="toctree-l2"><a class="reference internal" href="../adduser/">Add User to a VM</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/installsoftware/">Installing Software on your VM</a>
+                <li class="toctree-l2"><a class="reference internal" href="../installsoftware/">Installing Software on your VM</a>
                 </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Research Software</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/jupyter/">Jupyter on Jetstream2</a>
+                <li class="toctree-l2"><a class="reference internal" href="../jupyter/">Jupyter on Jetstream2</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/galaxy/">Galaxy</a>
+                <li class="toctree-l2"><a class="reference internal" href="../galaxy/">Galaxy</a>
                 </li>
     </ul>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Software Collection</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/software/">Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware/">Using the Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/licenses/">Software Licenses</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../licenses/">Software Licenses</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Policies and Best Practices</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/policies/">Acceptable Usage Policies</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../policies/">Acceptable Usage Policies</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/export/">Export Control Guidance</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../export/">Export Control Guidance</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/gateways/">AUPs for Jetstream2 Hosted Gateways</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../gateways/">AUPs for Jetstream2 Hosted Gateways</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/bestpractice/">Best Practices</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../bestpractice/">Best Practices</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
     <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/docker/">Docker</a>
+                <li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/kubernetes/">Kubernetes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../kubernetes/">Kubernetes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/k8scluster/">Build a K8s cluster</a>
+                <li class="toctree-l2"><a class="reference internal" href="../k8scluster/">Build a K8s cluster</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanage/">Managing Applications with Kubernetes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanage/">Managing Applications with Kubernetes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
+                <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../terraform/">Terraform on Jetstream2</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/federating/">Federating Gateways on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../federating/">Federating Gateways on Jetstream2</a>
                   </li>
               </ul>
       </div>
@@ -330,9 +330,11 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Allocations &raquo;</li><li>Supplements (Storage/SUs)</li>
+          <li>General VM Operations &raquo;</li>
+          <li>Storage &raquo;</li>
+          <li>Manila &raquo;</li><li>Configuring a Ceph FUSE client</li>
     <li class="wy-breadcrumbs-aside">
-        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/alloc/supplement.md"
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/manilaVM-FUSE.md"
           class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
@@ -342,42 +344,42 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="jetstream2-allocation-supplements">Jetstream2 Allocation Supplements<a class="headerlink" href="#jetstream2-allocation-supplements" title="Permanent link">&para;</a></h1>
-<p>If your allocation has been depleted or you need to add SUs or storage for a Jetstream2, resource to your existing allocation, you may request a supplement.</p>
-<p>Detailed information about the supplement request process is available from the <a href="https://portal.xsede.org/allocations/managing#managealloc-supplements" target="_blank">XSEDE Manage Allocations</a> page.</p>
-<h3 id="instructions-for-requesting-a-supplements">Instructions for requesting a supplements<a class="headerlink" href="#instructions-for-requesting-a-supplements" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Login to <a href="https://portal.xsede.org" target="_blank">portal.xsede.org</a></li>
-<li>Go to the <a href="https://portal.xsede.org/group/xup/submit-request#/" target="_blank">Submit / Review Requests page</a><ul>
-<li>(You can also mouse over the &ldquo;Allocations tab&rdquo; and then select &ldquo;Submit/Review Request&rdquo;)</li>
-</ul>
-</li>
-<li>Find your allocation. Under the Action menu for your allocation, select &ldquo;Supplement&rdquo;<ul>
-<li><em>Note: If your allocation is going to expire in 30 days or less, you will not see the Supplement option. You should see the Extension option, though. Choose a 3 month extension and once it&rsquo;s approved, the supplement button should appear.</em></li>
-</ul>
-</li>
-<li>Choose &ldquo;Start Supplement&rdquo;</li>
-<li>Select the appropriate Jetstream2 resources(s) from the list.</li>
-<li>Once you have selected the resources you need, you&rsquo;ll need to fill in the values of your request. The SU request has the same options as when you got your allocation. You&rsquo;ll fill in the SUs needed, the number VMs and IPs you expect to use (for forecasting purposes), and any comments.<ul>
-<li>For storage requests, you&rsquo;ll fill in the value in gigabytes - e.g. 1000gb = 1TB.</li>
-<li>For the number of SUs you&rsquo;ll need. The <a href="../../general/vmsizes/">Virtual Machine Sizes and Configurations page</a> can help you estimage VM sizes needed and SUs that will consume.</li>
-<li>For more information about the resources, please see the <a href="../../general/resources/">Jetstream2 Resources</a> page</li>
-</ul>
-</li>
-<li>You will have to include a PDF &ldquo;Progress Report&rdquo; &ndash; basically a paragraph or two on the need for the storage or SU request.<ul>
-<li>We do like to see any publications that have been published or submitted during your allocation period as part of this report.</li>
-<li>Any other milestones or achievements would also be welcomed in the progress report along with user or job counts if it&rsquo;s a science gateway resource.</li>
-</ul>
-</li>
-<li>After you have added that, you may submit the request.</li>
-</ul>
-<p><strong>Requests are typically reviewed within 1 to 2 business days. You&rsquo;ll receive notification from XSEDE Allocations on the status of your request once it has been reviewed by all service providers on the request.</strong></p>
+                <h1 id="configuring-a-ceph-fuse-client">Configuring a Ceph FUSE client<a class="headerlink" href="#configuring-a-ceph-fuse-client" title="Permanent link">&para;</a></h1>
+<p>While most clients will use the native kernel ceph client, there may be times where you want to use the FUSE client for rate limiting or</p>
+<p>To mount the manila share created previously you need to edit the three files listed below :</p>
+<p>i. /etc/ceph/ceph.conf</p>
+<pre><code>[global]
+admin socket = /var/run/ceph/$cluster-$name-$pid.asok
+client reconnect stale = true
+debug client = 0/2
+fuse big writes = true
+mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149    .165.158.86:6789
+</code></pre>
+<p>where the mon host information is provided to you as part of the manila share.</p>
+<p>ii. /etc/fstab</p>
+<p>Add the following:</p>
+<pre><code>none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_moun    tpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
+</code></pre>
+<p>Replace <code>$accessTo</code> with the arbitrary name you chose in step 3 above and <code>$volumePath</code> with (    /volume/_no-group/&hellip;) that is also in the share information that you created.</p>
+<p>It should look something like this:</p>
+<pre><code>none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mo    untpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc6    1fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+</code></pre>
+<p>iii.  /etc/ceph/ceph.client.<code>$accessTo</code>.keyring</p>
+<p>Add the following:</p>
+<pre><code>[client.$accessTo]
+    key = $accessKey
+</code></pre>
+<p>Replace <code>$accessTo</code> with the arbitrary name you chose in step 3 and <code>$accessKey</code> with the Acce    ss Key generated in step 4</p>
+<p>Your file should look something like this :</p>
+<pre><code>[client.manilashare]
+    key = AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
+</code></pre>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../research/" class="btn btn-neutral float-left" title="Research Allocations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../renew-extend/" class="btn btn-neutral float-right" title="Extensions & Renewals">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../manilaVM/" class="btn btn-neutral float-left" title="Using Manila Share on a VM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../object/" class="btn btn-neutral float-right" title="Object Store">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -405,10 +407,10 @@
         </span>
     
     
-      <span><a href="../research/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../manilaVM/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../renew-extend/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../object/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

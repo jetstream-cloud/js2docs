@@ -95,9 +95,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/windows/">Microsoft Windows on Jetstream2</a>
                   </li>
@@ -244,6 +244,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM/">Using Manila Share on a VM</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/object/">Object Store</a>
@@ -351,12 +353,13 @@
 </ul>
 <hr />
 <p>General Troubleshooting:</p>
-<h3 id="in-ubuntu-20-web-desktop-i-cant-load-items-from-the-js2-software-collection">In Ubuntu 20 web desktop, I can&rsquo;t load items from the JS2 Software Collection.<a class="headerlink" href="#in-ubuntu-20-web-desktop-i-cant-load-items-from-the-js2-software-collection" title="Permanent link">&para;</a></h3>
+<h3 id="in-ubuntu-20-or-22-web-desktop-i-cant-load-items-from-the-js2-software-collection">In Ubuntu 20 or 22 web desktop, I can&rsquo;t load items from the JS2 Software Collection.<a class="headerlink" href="#in-ubuntu-20-or-22-web-desktop-i-cant-load-items-from-the-js2-software-collection" title="Permanent link">&para;</a></h3>
 <p>The <a href="../../general/software/">Jetstream2 Software Collection</a> requires <code>Lmod</code> modules to work. By default, the Gnome terminal in the the Ubuntu web desktop does not act like a login shell &ndash; meaning it doesn&rsquo;t source the normal Bash login/environment files setting up your path and other environment variables.</p>
 <p>We&rsquo;re looking for a longer term solution for this, but in the meantime, you can fix this in the terminal preferences.</p>
 <p>With Terminal as the active application:</p>
 <ul>
 <li>Go to Edit -&gt; Profile Preferences.</li>
+<li>Select the &ldquo;Unnamed&rdquo; Profile</li>
 <li>Select the <strong><em>Title and Command</em></strong> tab.</li>
 <li>Check the &ldquo;Run command as login shell&rdquo; checkbox</li>
 </ul>

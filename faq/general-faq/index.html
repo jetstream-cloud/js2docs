@@ -95,9 +95,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/windows/">Microsoft Windows on Jetstream2</a>
                   </li>
@@ -244,6 +244,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM/">Using Manila Share on a VM</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/object/">Object Store</a>
@@ -383,6 +385,7 @@
 <h3 id="how-do-i-share-a-volume-between-virtual-machines">How do I share a volume between virtual machines?<a class="headerlink" href="#how-do-i-share-a-volume-between-virtual-machines" title="Permanent link">&para;</a></h3>
 <p>You can’t easily share volumes in OpenStack without deploying a Shared File System service. However, the native Openstack Manila filesystems-as-a-service option is available.</p>
 <p>Instructions for using manila on Jetstream2 are here - <a href="https://docs.jetstream-cloud.org/general/manila/">Manila - Filesystems-as-a-service - on Jetstream2</a></p>
+<p>Please note, there are different quotas for block storage (volumes) and shares. There will be a self-service tool for managing those quotas soon, but for now, if you need to have your Jetstream2 Storage quota adjusted between block and share storage, please <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact us via the Jetstream2 contact form</a> with the amount you wish to move between the storage types. </p>
 <hr />
 <h3 id="can-i-set-the-password-for-a-user-on-my-virtual-machine">Can I set the password for a user on my virtual machine?<a class="headerlink" href="#can-i-set-the-password-for-a-user-on-my-virtual-machine" title="Permanent link">&para;</a></h3>
 <p>We generally don&rsquo;t recommend using password authentication on Jetstream2, recommending that you use SSH keys for access. That said, if you need to set a password for console access or for some other reason, you can do it like this:</p>

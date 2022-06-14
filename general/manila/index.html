@@ -95,9 +95,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows on Jetstream2</a>
                   </li>
@@ -244,6 +244,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../manilaVM/">Using Manila Share on a VM</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../object/">Object Store</a>
@@ -354,6 +356,10 @@ With Manila, you can have multiple instances on Jetstream2 share a filesystem.</
 <p>Once a Manila share is created, you can mount and use it on your VM managed from any valid Jetstream2 interface.</p>
 <ul>
 <li><a href="../manilaVM/">Configuring a VM to use Manila Shares</a></li>
+</ul>
+<p>If there is a need for using Manila shares via FUSE, we do provide documentation for that, as well, though most will use the native kernel drivers above.</p>
+<ul>
+<li><a href="../manilaVM-FUSE/">Configuring a Ceph FUSE client</a></li>
 </ul>
               
             </div>

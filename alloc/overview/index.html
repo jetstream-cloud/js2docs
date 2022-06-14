@@ -95,9 +95,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
-                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/featured/">Featured Images</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/windows/">Microsoft Windows on Jetstream2</a>
                   </li>
@@ -244,6 +244,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM/">Using Manila Share on a VM</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/object/">Object Store</a>
@@ -348,10 +350,17 @@
 <h3 id="allocation-types">Allocation types:<a class="headerlink" href="#allocation-types" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../trial/">Trial allocation</a> - <em>Limited in hours and cores</em>, non-renewable, meant to explore using Jetstream2</li>
-<li><a href="../startup/">Startup allocation</a> - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.</li>
+<li><a href="../startup/">Startup allocation</a> - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.<ul>
+<li><a href="https://www.xsede.org/community-engagement/campus-champions">Campus Champions</a> allocations will generally default to this level, though other limits are available upon request.</li>
+</ul>
+</li>
 <li><a href="../education/">Education allocation</a> - For workshops, tutorials, or courses. Startup limits may not apply.</li>
 <li><a href="../research/">Research allocation</a> - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">Campus Champions</p>
+<p>Please note that we will <strong>NOT</strong> be automatically adding <a href="https://www.xsede.org/community-engagement/campus-champions">Campus Champions</a> allocations to Jetstream2. You will explicitly need to get a <a href="/alloc/supplement/">supplement</a> for it.</p>
+</div>
 <h4 id="maximum-trial-allocation-values-for-each-resource-are">Maximum Trial Allocation values for each resource are:<a class="headerlink" href="#maximum-trial-allocation-values-for-each-resource-are" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Jetstream2 CPU - 2,000 SUs, 2 cores</li>

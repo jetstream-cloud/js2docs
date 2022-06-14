@@ -95,9 +95,9 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
-                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows on Jetstream2</a>
                   </li>
@@ -244,6 +244,8 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../manilaVM/">Using Manila Share on a VM</a>
                 </li>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
     </ul>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../object/">Object Store</a>
@@ -381,7 +383,7 @@
 <li>Your instance is running out of storage. Instead, create a volume, attach it, and move your data to the volume. If you&rsquo;re installing a lot of software that is not easily moved to a volume, resizing <em>may</em> be appropriate &ndash; open a ticket and ask for advice.</li>
 </ul>
 <p>When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status &ldquo;Resize verify&rdquo;. At that time, access the instance (e.g. using Web Shell or SSH) and confirm that it is working, then choose the &ldquo;Confirm resize&rdquo; action. If the resize process broke something and you need to return to the previous flavor, choose the &ldquo;Revert resize&rdquo; action.</p>
-<h3 id="image">Image<a class="headerlink" href="#image" title="Permanent link">&para;</a></h3>
+<h3 id="image">Image <a name="Image"></a><a class="headerlink" href="#image" title="Permanent link">&para;</a></h3>
 <p>When you create an image, you capture the entire state of your instance&rsquo;s root disk. New instances can be launched from that image, which means that you can use an image to &lsquo;snapshot&rsquo; and &lsquo;clone&rsquo; an instance.</p>
 <p>After you specify the image name, it will take several minutes for the image to finish creating and become active.</p>
 <p>Consider creating an image in the following situations:</p>
@@ -398,8 +400,8 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../featured/" class="btn btn-neutral float-left" title="Featured Images"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../windows/" class="btn btn-neutral float-right" title="Microsoft Windows on Jetstream2">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../quotas/" class="btn btn-neutral float-left" title="Quotas"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../featured/" class="btn btn-neutral float-right" title="Featured Images">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -427,10 +429,10 @@
         </span>
     
     
-      <span><a href="../featured/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../quotas/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../windows/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../featured/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
