@@ -34,13 +34,13 @@ Snapshots won't initially show in Horizon or other interfaces. To make a snapsho
 
 You can upload a snapshot or image into Glance using:
 
-    openstack image create --disk-format raw --container-format bare --property visibility=community --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --file my-custom-image.raw My-Custom-Image-Name
+    openstack image create --disk-format raw --container-format bare --property visibility=private --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --file my-custom-image.raw My-Custom-Image-Name
 
 !!! danger "CAUTION:: metadata tags"
 
     There are a lot of metadata tags in the example, but those are important to insure that your instances will create properly from the stored image. You definitely want to make sure you get them all.
 
-    You can set the visibility property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). 
+    You can set the visibility property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot).
 
     For more information on Glance visibility properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
 
