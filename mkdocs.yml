@@ -143,6 +143,7 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/launch.md
         - Instance Management: ui/cli/manage.md
+        - Snapshots & Images: ui/cli/snapshot-image.md
         - Deleting Infrastructure in the CLI: ui/cli/deleting.md
       - Storage Under the CLI: ui/cli/storage.md
       - Manila Shares in the CLI: ui/cli/manila.md
@@ -184,3 +185,9 @@ nav:
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
     - Federating Gateways on Jetstream2: general/federating.md
+- Archived Documentation:
+      - Atmosphere on JS1:
+        - Customizing and saving a VM: archive/atmosphere/Customizing+and+saving+a+VM.md
+        - Imaging Guidelines: archive/atmosphere/Imaging+Guidelines.md
+        - Request an image of an instance: archive/atmosphere/Request+an+image+of+an+instance.md
+        - Detach a Volume: archive/atmosphere/Detach+a+Volume.md

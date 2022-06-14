@@ -88,7 +88,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
     * **Atmosphere**:</br>
       * VMs:
-        1. Follow the instructions here to [update and image your VM](https://wiki.jetstream-cloud.org/Customizing+and+saving+a+VM) </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`
+        1. Follow the instructions here to [update and image your VM](/archive/atmosphere/Customizing+and+saving+a+VM) </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`
         2. Next
             * Go to the **IMAGES** tab
             * Click on the Image you created
@@ -107,7 +107,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
     * **API**:
       * VMs:
-        1. Follow the instructions here to [create a snapshot of your instance](https://wiki.jetstream-cloud.org/Creating+snapshots+and+new+Glance+images+from+the+command+line)</br>
+        1. Follow the instructions here to [create a snapshot of your instance](/ui/cli/snapshot-image)</br>
         2. Make note of the UUID
         3. Submit a ticket with that UUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2.</br>
       * Volumes:
