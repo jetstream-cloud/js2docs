@@ -46,6 +46,26 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Customizing%2Band%2Bsaving%2Ba%2BVM/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Detach%2Ba%2BVolume/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Imaging%2BGuidelines/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/</loc>
+         <lastmod>2022-06-14</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.jetstream-cloud.org/faq/alloc/</loc>
          <lastmod>2022-06-14</lastmod>
          <changefreq>daily</changefreq>

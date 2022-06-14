@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/archive/atmosphere/Imaging%2BGuidelines/" />
+      <link rel="shortcut icon" href="../../../images/Jetstream2_icon_64px.jpg" />
+    <title>Imaging Guidelines - Jetstream2 Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+        <link href="../../../css/cacao.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Imaging Guidelines";
+        var mkdocs_page_input_path = "archive/atmosphere/Imaging+Guidelines.md";
+        var mkdocs_page_url = "/archive/atmosphere/Imaging%2BGuidelines/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../..">
+          <img src="../../../images/jetstream-logo-white.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Jetstream2 Main</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Jetstream2 Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../migration/migration_overview/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../migration/how_to_migrate/">HOW-TO</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/network/">Network configuration and considerations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Frequently Asked Questions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/general-faq/">General FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/trouble/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gateways/">Gateways</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Usage Information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/quotas/">Quotas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/featured/">Featured Images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/windows/">Microsoft Windows on Jetstream2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Allocations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/overview/">Allocations Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/trial/">Trial Allocation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/startup/">Startup Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Interfaces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Exosphere</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/exo/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/login/">Logging In</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/create_instance/">Creating an Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/exo-filetransfer/">File Transfer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/storage/">Storage Under Exosphere</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/push-button-cluster/">Push-button clusters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (fka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Horizon</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/intro/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/security_group/">Security Group Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/network/">Networks in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/launch/">Launching Instances</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/storage/">Volumes Under Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/manila/">Manila Shares in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/horizon/troubleshooting/">Horizon Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CLI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/clients/">Installing Openstack Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/openrc/">Setting up openrc.sh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/managing-ssh-keys/">Managing SSH Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/security_group/">Setting up a Security Group</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/network/">Setting up a Network</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/launch/">Launching a Virtual Machine</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/snapshot-image/">Snapshots & Images</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../ui/cli/deleting/">Deleting Infrastructure in the CLI</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/storage/">Storage Under the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/manila/">Manila Shares in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General VM Operations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/firewalls/">Firewalls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/sudo/">Being the root user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Storage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Manila</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manila/">Manila</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manilaVM/">Using Manila Share on a VM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/object/">Object Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/filetransfer/">File Transfer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Maintenance and Administration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/adduser/">Add User to a VM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/installsoftware/">Installing Software on your VM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Research Software</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/jupyter/">Jupyter on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/galaxy/">Galaxy</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Collection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Policies and Best Practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/policies/">Acceptable Usage Policies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/export/">Export Control Guidance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/gateways/">AUPs for Jetstream2 Hosted Gateways</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/bestpractice/">Best Practices</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/docker/">Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/kubernetes/">Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8scluster/">Build a K8s cluster</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanage/">Managing Applications with Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/terraform/">Terraform on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/federating/">Federating Gateways on Jetstream2</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Archived Documentation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Atmosphere on JS1</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Customizing%2Band%2Bsaving%2Ba%2BVM/">Customizing and saving a VM</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Imaging Guidelines</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/">Request an image of an instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Detach%2Ba%2BVolume/">Detach a Volume</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Jetstream2 Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Archived Documentation &raquo;</li>
+          <li>Atmosphere on JS1 &raquo;</li><li>Imaging Guidelines</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/archive/atmosphere/Imaging+Guidelines.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="imaging-guidelines">Imaging Guidelines<a class="headerlink" href="#imaging-guidelines" title="Permanent link">&para;</a></h1>
+<p>Here are some tips to help ensure a viable importable image:</p>
+<ul>
+<li><strong>Operating system</strong>: Base the image on<ul>
+<li><em>CentOS 7</em> and later</li>
+<li><em>Ubuntu 16.04</em> and later, <em>Ubuntu 18.04 or 20.04</em> recommended</li>
+</ul>
+</li>
+<li><strong>File system</strong>: <em>Ext4</em>, or <em>XFS</em>.</li>
+<li><strong>Image format</strong>: <em>RAW</em> or <em>QCOW2</em> (images must be in RAW format for upload)</li>
+<li><strong>Software</strong>: Image must contain no licensed software that would prohibit use within a cloud or virtualized environment.  It is recommended that software be installed in <code>/opt</code> or <code>/usr/local/</code>.</li>
+<li><strong>New Image Name</strong>:<ul>
+<li><strong>DO NOT</strong> use the name of an existing featured image. Please be mindful of re-using the name of one of your own existing images.</li>
+<li><strong>DO NOT</strong> use a period (<code>"."</code>) as any character of the name.</li>
+</ul>
+</li>
+<li><strong>Description of the Image</strong>: <strong>DO</strong> add an informative description of your image and make note of how it varies from any base images.</li>
+<li><strong>Instance status</strong>: The instance <strong>MUST</strong> be <strong>ACTIVE</strong> or <strong>STOPPED</strong> in order to image.<ul>
+<li><strong>Suspended</strong> or <strong>Shelved</strong> images cannot be imaged at this time.</li>
+</ul>
+</li>
+<li><strong>DO NOT</strong> delete Instances until <strong>AFTER</strong> the IMAGING process has completed.</li>
+<li><strong>Volumes</strong>: All Volumes MUST be <strong>DETACHED</strong> from the instance.<ul>
+<li>Failure to detach Volumes will result in a image whose child instances <strong>fail to boot</strong>.</li>
+</ul>
+</li>
+<li><strong>Owner</strong>: At this time, only the creator of an image may update an image. Developer teams wishing to update a shared image should contact <a href="mailto:help@jetstream-cloud.org">Jetstream support</a>.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">BEST PRACTICE</p>
+<ul>
+<li>Users are recommended to upgrade the operating system before imaging.<ul>
+<li>For CentOS based systems: <code>sudo yum update</code></li>
+<li>For Ubuntu based systems: do <code>sudo apt-get update</code> and then <code>sudo apt-get upgrade</code></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Before submitting a request for an image of your instance, <strong>remove</strong> the following software from the instance:</p>
+<ul>
+<li><strong>Licensed software</strong>: including software not purchased by Jetstream or otherwise not in the public domain.</li>
+<li><strong>Not cloud suitable</strong>: Software in which the licensing, features, or activity of the software otherwise precludes its use or inhibits the activity of other software within a cloud or virtualized environment.</li>
+</ul>
+<p>Volumes and iRODS FUSE mounts are <strong>not copied</strong> as part of the image.</p>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION!</p>
+<p>The following directories are deleted as part of the imaging process:</p>
+<p><code>/home/
+/mnt/
+/tmp/
+/root/</code></p>
+</div>
+<p>The following system files are typically overwritten by the Jetstream imaging process for security and operational reasons:</p>
+<pre><code>/etc/fstab
+/etc/group
+/etc/host.allow
+/etc/host.conf
+/etc/host.deny
+/etc/hosts
+/etc/ldap.conf
+/etc/passwd
+/etc/resolve.conf
+/etc/shadow
+/etc/sshd/
+/etc/sysconfig/iptables
+/root/
+/var/log
+</code></pre>
+<div class="admonition note">
+<p class="admonition-title">VERY IMPORTANT NOTE: CHOOSE SMALLEST SIZE</p>
+<p>Users are encouraged to test launch any image created to validate that it behaves as expected before suspending or removing their current active instance.</p>
+<p>Creating an image on the SMALLEST possible size VM on which it will run will allow the image to be launched on VMs of the same size and larger.</p>
+<p>For example, an image created on a Tiny size VM can be launched on a VM of any size; an image created on a Medium VM can only be launched on a Medium or larger size VM.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">About your <code>/home/ directory</code></p>
+<p>All files, directories, and icons located under <code>/home/&lt;username&gt;/Desktop</code> will be deleted. To preserve them, email <a href="mailto:help@jetstream-cloud.org">help@jetstream-cloud.org</a>.
+Any files installed in <code>/home</code> must be saved to your volume, to iRODS, or to another storage device or system external to your VM.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Can an image be exported?</p>
+<p>Yes&hellip;and no.  Currently an automated method for exporting images to run on other systems is not available but if you find that you do need to export an image to something other than IU Scholarworks contact <a href="mailto:help@xsede.org">help@xsede.org</a>.</p>
+</div>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Customizing%2Band%2Bsaving%2Ba%2BVM/" class="btn btn-neutral float-left" title="Customizing and saving a VM"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/" class="btn btn-neutral float-right" title="Request an image of an instance">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright © 2021 The Trustees of Indiana University</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jetstream-cloud/js2docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Customizing%2Band%2Bsaving%2Ba%2BVM/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
