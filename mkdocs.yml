@@ -88,10 +88,7 @@ nav:
     - XSEDE Service Units and Jetstream2: general/xsede.md
     - VM Sizes and Configurations: general/vmsizes.md
     - Quotas: general/quotas.md
-    - Instance Management:
-      - Instance Management Actions: general/instancemgt.md
-      - Basic Actions: general/instancemgt/#Basic
-      - Advanced Actions: general/instancemgt/#Advanced
+    - Instance Management Actions: general/instancemgt.md
     - Featured Images: general/featured.md
     - Microsoft Windows on Jetstream2: general/windows.md
   - Allocations:
