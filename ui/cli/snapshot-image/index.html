@@ -95,7 +95,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/instancemgt/">Instance Management Actions</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Instance Management</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/instancemgt/">Instance Management Actions</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../general/instancemgt/#Basic">Basic Actions</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="../../../general/instancemgt/#Advanced">Advanced Actions</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/featured/">Featured Images</a>
                   </li>
@@ -353,8 +361,10 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">CAUTION:: cloud-init &amp; qemu-guest-agent</p>
-<p>Before creating the snapshot and/or image, you&rsquo;ll want to make sure that <code>cloud-init</code> is installed on your instance as well as <code>qemu-guest-agent</code>
-    – If your instance was based on one of the <a href="/general/featured">Featured</a> images, both <em>cloud-init</em> and <em>qemu-guest-agent</em> should be present unless you explicitly removed them.</p>
+<p>Before creating the snapshot and/or image, you&rsquo;ll want to make sure that <code>cloud-init</code> is installed on your instance as well as <code>qemu-guest-agent</code></p>
+<ul>
+<li>If your instance was based on one of the <a href="/general/featured">Featured</a> images, both <em>cloud-init</em> and <em>qemu-guest-agent</em> should be present unless you explicitly removed them.</li>
+</ul>
 </div>
 <h4 id="to-create-the-snapshot-from-the-command-line">To create the snapshot from the command line:<a class="headerlink" href="#to-create-the-snapshot-from-the-command-line" title="Permanent link">&para;</a></h4>
 <p><code>openstack server image create --name snapshot-image-name instance-name</code></p>

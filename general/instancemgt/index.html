@@ -95,7 +95,15 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../quotas/">Quotas</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Instance Management Actions</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Instance Management</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Instance Management Actions</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="#Basic">Basic Actions</a>
+                </li>
+                <li class="toctree-l2"><a class="" href="#Advanced">Advanced Actions</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
                   </li>
@@ -330,7 +338,8 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>General Usage Information &raquo;</li><li>Instance Management Actions</li>
+          <li>General Usage Information &raquo;</li>
+          <li>Instance Management &raquo;</li><li>Instance Management Actions</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/instancemgt.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -345,13 +354,13 @@
                 <h1 id="instance-management-actions">Instance Management Actions<a class="headerlink" href="#instance-management-actions" title="Permanent link">&para;</a></h1>
 <p>Please orient yourself to the following instance management actions. These will help you use Jetstream2 effectively and conserve your allocation.</p>
 <p>Each user interface for Jetstream2 has instance actions in a slightly different place &ndash; see guidance for <a href="../../ui/exo/manage/">Exosphere</a>, <a href="../../ui/cacao/manage/">Cacao</a>, <a href="../../ui/horizon/manage/">Horizon</a>, and the <a href="../../ui/cli/manage/">OpenStack CLI</a>.</p>
-<h2 id="basic-actions">Basic Actions<a class="headerlink" href="#basic-actions" title="Permanent link">&para;</a></h2>
-<h3 id="shelve-and-unshelve">Shelve and Unshelve<a class="headerlink" href="#shelve-and-unshelve" title="Permanent link">&para;</a></h3>
+<h2 id="basic-actions">Basic Actions  <a name="Basic"></a><a class="headerlink" href="#basic-actions" title="Permanent link">&para;</a></h2>
+<h3 id="shelve-and-unshelve">Shelve and Unshelve <a name="Shelve"></a><a class="headerlink" href="#shelve-and-unshelve" title="Permanent link">&para;</a></h3>
 <p><strong>When your instance is not performing work or otherwise in active use, please <em>shelve</em> it.</strong> Shelving an instance shuts it down and frees up resources on the cloud for other users. It also conserves the SUs (service units) on your allocation.</p>
 <p>Shelving an instance shuts down its operating system. The instance&rsquo;s disk contents are preserved, but any running programs will exit, so please save any unfinished work before shelving.</p>
 <p>Shelving and unshelving each take a few minutes, so shelving doesn&rsquo;t make sense for very short periods of inactivity. In other words, shelve your instance when you&rsquo;re done for the day or the week, not merely for your lunch break.</p>
 <p>A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest flavor that will work for your server needs. This will conserve SUs on your allocation.</p>
-<h3 id="lock-and-unlock">Lock and Unlock<a class="headerlink" href="#lock-and-unlock" title="Permanent link">&para;</a></h3>
+<h3 id="lock-and-unlock">Lock and Unlock <a name="Lock"></a><a class="headerlink" href="#lock-and-unlock" title="Permanent link">&para;</a></h3>
 <p>Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces. If your instance is running an important job or used in &lsquo;production&rsquo; capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it). Locking and unlocking are non-disruptive actions &ndash; they do not affect a running instance.</p>
 <p>Be aware that locking an instance does not prevent:</p>
 <ul>
@@ -359,11 +368,12 @@
 <li>modifications to the instance&rsquo;s filesystem(s) or running software. For example, someone with access to the instance could still log in and delete files. Locking only prevents instance actions at the cloud (OpenStack) level.</li>
 <li>the instance from shutting off when your allocation expires or is exhausted.</li>
 </ul>
-<h3 id="reboot">Reboot<a class="headerlink" href="#reboot" title="Permanent link">&para;</a></h3>
+<h3 id="reboot">Reboot <a name="Reboot"></a><a class="headerlink" href="#reboot" title="Permanent link">&para;</a></h3>
 <p>Rebooting an instance is just like restarting a computer. The cloud will first attempt a graceful or &ldquo;soft&rdquo; reboot, where all of your programs are allowed to exit. If that fails then OpenStack will perform a &ldquo;hard&rdquo; reboot, which will lose any work that is not yet written to disk. If you cannot connect to your instance, rebooting is a good troubleshooting step before creating a support ticket.</p>
-<h2 id="advanced-actions">Advanced Actions<a class="headerlink" href="#advanced-actions" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="advanced-actions">Advanced Actions <a name="Advanced"></a><a class="headerlink" href="#advanced-actions" title="Permanent link">&para;</a></h2>
 <p>The following actions are for more sophisticated use cases. If you&rsquo;re a new cloud user, it&rsquo;s okay to skip reading about these for now.</p>
-<h3 id="resize">Resize<a class="headerlink" href="#resize" title="Permanent link">&para;</a></h3>
+<h3 id="resize">Resize <a name="Resize"></a><a class="headerlink" href="#resize" title="Permanent link">&para;</a></h3>
 <p>Resizing allows you to choose a different flavor for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first). You can now resize using Exosphere, Horizon, or the CLI.</p>
 <p>Consider resizing if you find yourself in one of these situations:</p>
 <ul>
@@ -393,7 +403,7 @@
 <li>You are building a software stack that other people will consume via their own instance (e.g. you are teaching a class). Providing an image can be an easy way for other people to get a new instance just like yours.</li>
 </ul>
 <p>Be aware that system images quickly fall behind on operating system updates. As more time passes since an image was created, the more software will need to be updated when a new instance is created for it. This can lead to excessively long instance lanuch times and other problems. For this reason, custom images are not the right tool for sharing software or workflows more than a few months into the future. If this describes your situation, please open a support ticket and ask for advice.</p>
-<h3 id="suspend-and-resume">Suspend and Resume<a class="headerlink" href="#suspend-and-resume" title="Permanent link">&para;</a></h3>
+<h3 id="suspend-and-resume">Suspend and Resume <a name="Suspend"></a><a class="headerlink" href="#suspend-and-resume" title="Permanent link">&para;</a></h3>
 <p>Suspending an instance is like placing a computer on standby (a.k.a. sleep). When you resume the instance, all running programs will be in the state they were in prior to entering standby. (Still, it is wise to save any work in progress before suspending.)</p>
 <p>Please consider suspending instead of shelving <em>only</em> if you are running software that was complex or labor-intensive to <em>start</em> (not install), and you only need to leave it suspended for a relatively short time (e.g. a few days). Suspended instances still occupy resources on the cloud, and they continue to consume your allocation at a reduced rate.</p>
               
