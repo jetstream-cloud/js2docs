@@ -56,7 +56,7 @@ Moving to a larger flavor is generally **not** appropriate in these situations:
 
 When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, access the instance (e.g. using Web Shell or SSH) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
 
-### Image
+### Image <a name="Image"></a>
 
 When you create an image, you capture the entire state of your instance's root disk. New instances can be launched from that image, which means that you can use an image to 'snapshot' and 'clone' an instance.
 
