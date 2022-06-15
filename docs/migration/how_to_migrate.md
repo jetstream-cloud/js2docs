@@ -57,7 +57,7 @@ Volumes on JS1 do not persist on JS2 because they are completely separate system
 
 !!! note "Data volumes and VM transfers"
 
-     As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2.
+     As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank} and include your allocation number, resource names and UUIDs that you wish to discuss migrating. 
 
 #### Three approaches
 There are essentially three approaches to accomplish data retention:
