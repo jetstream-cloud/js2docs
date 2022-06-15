@@ -147,7 +147,7 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (fka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
@@ -185,15 +185,17 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Networks in Horizon</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssh_keys/">SSH Keys in Horizon</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../launch/">Launching Instances</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
+                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management &ast;</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon</a>
+                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon &ast;</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manila/">Manila Shares in Horizon</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Horizon Troubleshooting</a>
+                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Horizon Troubleshooting &ast;</a>
                 </li>
     </ul>
                   </li>
@@ -365,12 +367,109 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="working-with-networks-in-horizon">Working with Networks in Horizon<a class="headerlink" href="#working-with-networks-in-horizon" title="Permanent link">&para;</a></h1>
+<h2 id="create-a-network">Create a Network<a class="headerlink" href="#create-a-network" title="Permanent link">&para;</a></h2>
+<p><img _=";" align="right" alt="" src="/img/horizon_create_network.webp" width="50%" /></p>
+<ol>
+<li>Click on <code>Project</code> → <code>Network</code> → <code>Network Topology</code> → <code>+Create Network</code></li>
+</ol>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_network_name.webp" width="50%" /></p>
+<ol start="2">
+<li>Enter a network name, for example, <code>&lt;username&gt;_net</code>.</li>
+</ol>
+<ul>
+<li>After giving it a descriptive name, press the blue <code>NEXT</code> button.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_subnet.webp" width="50%" /></p>
+<ol start="3">
+<li>Enter a subnet name, e.g. <code>&lt;username&gt;</code>_subnet, and a network address, e.g. <code>10.1.1.0/24</code>, and a gateway address, e.g. <code>10.1.1.1</code>.</li>
+</ol>
+<ul>
+<li>
+<p>This should be a non-routable subnet. You can use <code>10.0.0.0 - 10.255.255.255</code>, <code>172.16.0.0 - 172.31.255.255</code>, <code>192.168.0.0 - 192.168.255.255</code>.</p>
+</li>
+<li>
+<p>If you&rsquo;re not sure what to choose, you can go with <code>10.1.1.0/24</code> → this will give you 255 available addresses in the <code>10.1.1.0</code> domain.</p>
+</li>
+<li>
+<p>If you choose <code>10.1.1.0/24</code> you can then set the gateway address to be <code>10.1.1.1</code></p>
+</li>
+<li>
+<p>After giving it a descriptive name, press the blue <code>NEXT</code> button.</p>
+</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_network_dhcp.webp" width="50%" /></p>
+<ol start="4">
+<li>
+<p>Click <code>Create</code> to create the new network.</p>
+<div class="admonition note">
+<p>Do NOT uncheck the <code>Enable DHCP</code> box unless you are familiar with setting the advanced features of OpenStack networks, subnets, and routers.</p>
+</div>
+</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_create_router.jpg" width="50%" /></p>
+<ol start="5">
+<li>Click on <code>+Create Router</code>.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_router_name.jpg" width="50%" /></p>
+<ol start="6">
+<li>Enter a router name, for example, <code>&lt;username&gt;_router</code>.</li>
+</ol>
+<ul>
+<li>Under the <code>External Network</code> dropdown, select <code>public</code>, then click <code>Create Router</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_router_name.jpg" width="50%" /></p>
+<ol start="6">
+<li>Enter a router name, for example, <code>&lt;username&gt;_router</code>.</li>
+</ol>
+<ul>
+<li>Under the <code>External Network</code> dropdown, select <code>public</code>, then click <code>Create Router</code></li>
+<li>After giving it a descriptive name, press the blue <code>NEXT</code> button.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_net_top_graph.webp" width="50%" /></p>
+<ol start="7">
+<li>You&rsquo;ll need to connect your private network to the router. Make sure  you&rsquo;re in Graph mode (vs Topology mode). Your screen should look like the top image on the right. If it looks like bars it&rsquo;s in Topology mode, click the <code>Graph</code> tab under the <code>Network Topology</code> page heading to put it into Topology mode</li>
+</ol>
+<ul>
+<li>Click on the router you just created then <code>+Add Interface</code>.</li>
+</ul>
+<p><img _=";" align="right" alt="" src="/img/horizon_net_interface.jpg" width="50%" /></p>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_router-add.png" width="50%" /></p>
+<ol start="8">
+<li>Select the subnet you just created from the dropdown list.</li>
+</ol>
+<ul>
+<li>Click <code>Submit</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_network_final.webp" width="30%" /></p>
+<ol start="9">
+<li>The network should now be connected to the new router.  The end result will look similar to the diagram.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../security_group/" class="btn btn-neutral float-left" title="Security Group Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../launch/" class="btn btn-neutral float-right" title="Launching Instances">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ssh_keys/" class="btn btn-neutral float-right" title="SSH Keys in Horizon">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -401,7 +500,7 @@
       <span><a href="../security_group/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../launch/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../ssh_keys/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

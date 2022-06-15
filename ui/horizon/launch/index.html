@@ -147,7 +147,7 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (fka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
@@ -185,15 +185,17 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../network/">Networks in Horizon</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../ssh_keys/">SSH Keys in Horizon</a>
+                </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Launching Instances</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
+                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management &ast;</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon</a>
+                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon &ast;</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manila/">Manila Shares in Horizon</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Horizon Troubleshooting</a>
+                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Horizon Troubleshooting &ast;</a>
                 </li>
     </ul>
                   </li>
@@ -364,13 +366,153 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                
+                <h1 id="launching-instance">Launching instance<a class="headerlink" href="#launching-instance" title="Permanent link">&para;</a></h1>
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_launch.webp" width="50%" /></p>
+<ol>
+<li><code>Launch instance</code> menu</li>
+</ol>
+<ul>
+<li>With the <code>network</code>, <code>security group</code>, and <code>ssh keys</code> setup, you should be ready to launch an instance.</li>
+<li>On the left side bar, click on <code>Project</code> → <code>Compute</code> →  <code>Instances</code></li>
+<li>Click <code>Launch Instance</code></li>
+<li>Give your instance a descriptive name. You can take the defaults for the rest of the items.</li>
+<li>Click <code>Next</code>.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_source.webp" width="50%" /></p>
+<ol start="2">
+<li><strong>Instance Source</strong></li>
+</ol>
+<ul>
+<li>
+<p>On the <code>Source</code> screen, make sure the <code>Select Boot Source</code> option is <code>Image</code></p>
+<div class="admonition note">
+<p>Please note that it may take 30-60 seconds for that option to appear and to fully populate that list as it pulls the entire image catalog listing anew each time!</p>
+</div>
+</li>
+<li>
+<p>Type <code>Featured</code> in the <code>Available</code> box to find the Jetstream Featured images. You can also boot one of the images shown in the list if you&rsquo;d rather do that, but we only guarantee the featured images will work for anyone.</p>
+</li>
+<li>Find the image you want to use and click the arrow to the right of its name. You&rsquo;ll see it show up under <code>Allocated</code> towards the top of the dialog box.</li>
+<li>
+<p>Click <code>Next</code>.</p>
+<div class="admonition note">
+<p>If deploying a non-public image that has been shared to your project from another project, you will need to choose the correct VISIBILITY filter option in the dropdown menu as the list defaults to only public or your own private images.</p>
+</div>
+</li>
+</ul>
+<p></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_flavor.webp" width="50%" /></p>
+<ol start="3">
+<li><strong>Flavor</strong></li>
+</ol>
+<ul>
+<li>On the <code>Flavor</code> screen, select the size VM you want to use and click the arrow to the right of its description. Like the previous screen, you&rsquo;ll see it move up into the <code>Allocated</code> area towards the top of the box.</li>
+<li>Click <code>Next</code>.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_network.webp" width="50%" /></p>
+<ol start="4">
+<li><strong>Networks</strong></li>
+</ol>
+<ul>
+<li>On the <code>Networks</code> screen, find the network you created earlier and click the arrow to the right of its description. Like the previous screen, you&rsquo;ll see it move up into the <code>Allocated</code> area towards the top of the box.</li>
+<li>Click <code>Next</code>.</li>
+<li>Click <code>Next</code> again to skip the <code>Network Ports</code> screen and proceed to <code>Security Groups</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_secgrp.webp" width="50%" /></p>
+<ol start="5">
+<li><strong>Security Groups</strong></li>
+</ol>
+<ul>
+<li>On the <code>Security Groups</code> screen, select the security group you created earlier and click the arrow to the right of its description. Like the previous screen, you&rsquo;ll see it move up into the <code>Allocated</code> area towards the top of the box.</li>
+<li>Click <code>Next</code>.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_keypair.webp" width="50%" /></p>
+<ol start="6">
+<li><strong>Keypair</strong></li>
+</ol>
+<ul>
+<li>On the <code>Key Pair</code> screen, if the key pair you created earlier is NOT in the <code>Allocated</code> section, click the arrow to the right of its description. Like the previous screen, you&rsquo;ll see it move up into the <code>Allocated</code> area towards the top of the box.</li>
+<li>At this point you can click <code>Launch Instance</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_float_IP.webp" width="50%" /></p>
+<ol start="7">
+<li><strong>Associate Floating IP</strong></li>
+</ol>
+<ul>
+<li>Your instance should now show up in your instances list.</li>
+<li>Once it has entered the running state, click the dropdown at the far right and select <code>Associate Floating IP</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_assoc_IP.webp" width="50%" /></p>
+<ol start="8">
+<li><strong>Assign IP</strong></li>
+</ol>
+<ul>
+<li>If you have an IP allocated, you&rsquo;ll see it in the IP Address list. If you do not, click the <code>+</code> sign to allocate a new IP address</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_pool_IP.webp" width="50%" /></p>
+<ol start="9">
+<li><strong>Assign Pool</strong></li>
+</ol>
+<ul>
+<li>Make sure <code>Public</code> is selected under <code>Pool</code></li>
+<li>Click <code>Allocate IP</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_select_IP.webp" width="50%" /></p>
+<ol start="10">
+<li><strong>Choose IP</strong></li>
+</ol>
+<ul>
+<li>Note your new IP address and make sure it&rsquo;s the one you want to associate with the instance</li>
+<li>Note that the correct instance is selected under <code>Port to be associated</code></li>
+<li>If all is well, click <code>Associate</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_test_IP.webp" width="50%" /></p>
+<ol start="11">
+<li><strong>Test the connection</strong></li>
+</ol>
+<ul>
+<li>Please note that sometimes it takes a few seconds or even a little more for the association to become active.</li>
+<li>Try pinging your host: <code>ping -c 5 ip_address</code></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/img/horizon_instance_ssh_IP.webp" width="50%" /></p>
+<ol start="12">
+<li><strong>Try to <code>ssh</code> to your instance</strong></li>
+</ol>
+<ul>
+<li>If you chose a CentOS-based instance, your default user is <code>centos</code></li>
+<li>If you chose an Ubuntu-based instance, your default user is <code>ubuntu</code></li>
+<li>Access your host with <code>ssh</code> – the example from a terminal-based ssh-client as on Linux or a Mac would be <code>ssh centos@your_ip_number</code> or <code>ssh ubuntu@your_ip_number</code></li>
+<li>Note that the first time you connect you&rsquo;ll get a request to verify that you&rsquo;re getting a new host key and making sure you want to connect</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../network/" class="btn btn-neutral float-left" title="Networks in Horizon"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../manage/" class="btn btn-neutral float-right" title="Instance Management">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../ssh_keys/" class="btn btn-neutral float-left" title="SSH Keys in Horizon"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manage/" class="btn btn-neutral float-right" title="Instance Management &ast;">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -398,7 +540,7 @@
         </span>
     
     
-      <span><a href="../network/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../ssh_keys/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../manage/" style="color: #fcfcfc">Next &raquo;</a></span>
