@@ -18,7 +18,7 @@ When you have created a custom workflow or configuration, you can create a _snap
 
     * If your instance was based on one of the [Featured](/general/featured) images, both _cloud-init_ and _qemu-guest-agent_ should be present unless you explicitly removed them.
 
-#### To create the snapshot from the command line:
+#### To create the snapshot from the command line <a name="ImageCreate"></a>
 
 `openstack server image create --name snapshot-image-name instance-name`
 
@@ -49,7 +49,9 @@ You can upload a snapshot or image into Glance using:
 - Make sure it works.
 - Do this before deleting. **Please**. ***Once it's gone, it's really gone***. Be sure.
 
-#### Delete unused snapshot
+---
+
+#### Delete unused snapshot <a name="ImageDelete"></a>
 
 Delete your snapshot if you no longer need it. For example:
 
