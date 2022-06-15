@@ -55,6 +55,10 @@ If you've already been using JS1, you'll likely wish to retain your old VMs and 
 Below, we provide instructions for moving your VMs. As time permits, we anticipate the development of tools to help facilitate and partially automate migration.
 Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage.
 
+!!! note "Data volumes and VM transfers"
+
+     As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2.
+
 #### Three approaches
 There are essentially three approaches to accomplish data retention:
 
