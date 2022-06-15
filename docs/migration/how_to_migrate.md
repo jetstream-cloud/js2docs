@@ -25,6 +25,8 @@ You can take one of two approaches:
 
 If you already have a JS1 allocation, then we encourage you to request a supplement at a **[STARTUP](/alloc/startup/)** amount of resources for the `compute`, `large-memory-compute`, `GPU`, and `storage` resources on JS2. This will enable you to create the **Code, Performance, & Scaling** estimates you'll need for a successful project renewal on JS2.
 
+If your allocation is set to expire in June or July and is a NOT a research allocation **AND** is below the [normal startup limits on JS2](/general/resources/), you may also choose to renew it instead. Please ONLY look at extending allocations if you have a research allocation that won't be able to be reviewed at XRAC prior to Jetstream1 going offline. 
+
 * [Supplement](/alloc/supplement/)
 * [Renewal](/alloc/renew-extend/)
 
