@@ -396,12 +396,10 @@
 <p>You can upload a snapshot or image into Glance using:</p>
 <pre><code>openstack image create --disk-format raw --container-format bare --property visibility=private --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property os_require_quiesce=yes --file my-custom-image.raw My-Custom-Image-Name
 </code></pre>
-<div class="admonition danger">
-<p class="admonition-title">CAUTION:: metadata tags</p>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION:: metadata tags and visibility</p>
 <p>There are a lot of metadata tags in the example, but those are important to insure that your instances will create properly from the stored image. You definitely want to make sure you get them all.</p>
-<p>You can set the <strong><em>visibility</em></strong> property to <code>community</code> (all can see and boot), <code>shared</code> (only those you specify can see and boot), <code>private</code> (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow <code>public</code> visibility, such as staff-featured images. Limiting the number of fully <code>public</code> images in the catalog improves Jetstream2 reliability and performance.</p>
-<p>For more information on Glance <strong><em>visibility</em></strong> properties, see <a href="https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design">https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design</a></p>
-<p>Currently, <strong><em>visibility</em></strong> can only be modified in the <a href="/ui/horizon/intro">Horizon</a> and <a href="/ui/cli/snapshot-image">CLI</a> interfaces.</p>
+<p>You can also set the <strong><em>visibility</em></strong> property during creation, but see <a href="#ImageSharing">Sharing an Image</a> for limits.</p>
 </div>
 <h4 id="boot-test">Boot &amp; Test<a class="headerlink" href="#boot-test" title="Permanent link">&para;</a></h4>
 <ul>
@@ -413,6 +411,29 @@
 <h4 id="delete-unused-snapshot">Delete unused snapshot<a class="headerlink" href="#delete-unused-snapshot" title="Permanent link">&para;</a></h4>
 <p>Delete your snapshot if you no longer need it. For example:</p>
 <p><code>openstack image delete 569677d8-c7b0-4606-86d8-7673a5ecd5cf</code></p>
+<hr />
+<h4 id="sharing-an-image">Sharing an Image <a name="ImageSharing"></a><a class="headerlink" href="#sharing-an-image" title="Permanent link">&para;</a></h4>
+<p>When you upload an image to Openstack, you set the <strong><em>visibility</em></strong> of your image. Our documentation for uploading an image from the CLI sets visibility to <code>community</code>. However, if you’ve set it to <code>shared</code> or <code>private</code>, you will need to change that if you want to share it.</p>
+<p>If <strong><em>visibility</em></strong> is set to <code>shared</code> or <code>private</code>, visibility will be limited to the project/allocation where you uploaded (e.g. only members of your TG-xxxxxxx project will see it initially). If you need to share it with another allocation but don’t want to make it visible to all projects, you’ll want to verify that the visibility is shared by doing:</p>
+<pre><code>openstack image show &lt;UUID or NAME&gt; -c name -c id -c visibility
+</code></pre>
+<p>To change the visibility for an image your allocation/project owns, do:</p>
+<pre><code>openstack image set --shared &lt;UUID or NAME&gt;
+</code></pre>
+<p>Then to share it with a project you do:</p>
+<pre><code>openstack image add project &lt;image UUID or NAME&gt; &lt;project&gt;
+</code></pre>
+<p>Where project is the TG-xxxxxxxxx number of the allocation you want to share it with.</p>
+<p>Someone from the other project you&rsquo;re sharing it with would then need to do</p>
+<pre><code>openstack image set --accept &lt;image UUID or NAME&gt;
+</code></pre>
+<p>to accept the image.</p>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION:: VISIBILITY</p>
+<p>You can set the <strong><em>visibility</em></strong> property to <code>community</code> (all can see and boot), <code>shared</code> (only those you specify can see and boot), <code>private</code> (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow <code>public</code> visibility, such as staff-featured images. Limiting the number of fully <code>public</code> images in the catalog improves Jetstream2 reliability and performance.</p>
+<p>For more information on Glance <strong><em>visibility</em></strong> properties, see <a href="https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design">https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design</a></p>
+<p>Currently, <strong><em>visibility</em></strong> can only be modified in the <a href="/ui/horizon/intro">Horizon</a> and <a href="/ui/cli/snapshot-image">CLI</a> interfaces.</p>
+</div>
               
             </div>
           </div><footer>
