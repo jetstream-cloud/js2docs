@@ -399,8 +399,9 @@
 <div class="admonition danger">
 <p class="admonition-title">CAUTION:: metadata tags</p>
 <p>There are a lot of metadata tags in the example, but those are important to insure that your instances will create properly from the stored image. You definitely want to make sure you get them all.</p>
-<p>You can set the visibility property to <code>community</code> (all can see and boot), <code>shared</code> (only those you specify can see and boot), <code>private</code> (only your allocation can see and boot).</p>
-<p>For more information on Glance visibility properties, see <a href="https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design">https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design</a></p>
+<p>You can set the <strong><em>visibility</em></strong> property to <code>community</code> (all can see and boot), <code>shared</code> (only those you specify can see and boot), <code>private</code> (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow <code>public</code> visibility, such as staff-featured images. Limiting the number of fully <code>public</code> images in the catalog improves Jetstream2 reliability and performance.</p>
+<p>For more information on Glance <strong><em>visibility</em></strong> properties, see <a href="https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design">https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design</a></p>
+<p>Currently, <strong><em>visibility</em></strong> can only be modified in the <a href="/ui/horizon/intro">Horizon</a> and <a href="/ui/cli/snapshot-image">CLI</a> interfaces.</p>
 </div>
 <h4 id="boot-test">Boot &amp; Test<a class="headerlink" href="#boot-test" title="Permanent link">&para;</a></h4>
 <ul>

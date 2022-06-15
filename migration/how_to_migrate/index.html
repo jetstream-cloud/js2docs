@@ -381,11 +381,17 @@
 The allocation process is described here: <a href="/alloc/overview/">Allocation Overivew</a></p>
 <p>You can take one of two approaches:</p>
 <ol>
-<li>A <a href="#Supplement">supplement</a> to a current research allocation -OR-</li>
+<li>A <a href="#Supplement">supplement</a> or renewal to a current research allocation -OR-</li>
 <li>A completely <a href="#NewAllocation">new allocation</a></li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">New allocations vs renewals</p>
+<p>By XSEDE policy, a PI may only have one startup allocation. If you have a valid allocation, consider renewing your startup, education, or champion allocation rather than trying to get a new allocation. Research allocations may be extended within reason but extensions are no substitute for the renewal process in general.</br></p>
+</div>
 <h3 id="supplement-allocation">Supplement Allocation <a name="Supplement"></a><a class="headerlink" href="#supplement-allocation" title="Permanent link">&para;</a></h3>
 <p>If you already have a JS1 allocation, then we encourage you to request a supplement at a <strong><a href="/alloc/startup/">STARTUP</a></strong> amount of resources for the <code>compute</code>, <code>large-memory-compute</code>, <code>GPU</code>, and <code>storage</code> resources on JS2. This will enable you to create the <strong>Code, Performance, &amp; Scaling</strong> estimates you&rsquo;ll need for a successful project renewal on JS2.</p>
+<p>If your startup or champion allocation is set to expire in June or July and is a NOT a research allocation <strong>AND</strong> is below the <a href="/general/resources/">normal startup limits on JS2</a>, you may also choose to renew it instead. Please ONLY look at extending allocations if you have a research allocation that won&rsquo;t be able to be reviewed at XRAC prior to Jetstream1 going offline.</p>
+<p><a href="/alloc/education/">Education allocations</a> may also be renewed without restriction as long as there is proper justification.</p>
 <ul>
 <li><a href="/alloc/supplement/">Supplement</a></li>
 <li><a href="/alloc/renew-extend/">Renewal</a></li>
@@ -405,6 +411,10 @@ The allocation process is described here: <a href="/alloc/overview/">Allocation 
 <p>If you&rsquo;ve already been using JS1, you&rsquo;ll likely wish to retain your old VMs and data, found within both VMs and in external volumes.
 Below, we provide instructions for moving your VMs. As time permits, we anticipate the development of tools to help facilitate and partially automate migration.
 Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage.</p>
+<div class="admonition note">
+<p class="admonition-title">Data volumes and VM transfers</p>
+<p>As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact form</a> and include your allocation number, resource names and UUIDs that you wish to discuss migrating. </p>
+</div>
 <h4 id="three-approaches">Three approaches<a class="headerlink" href="#three-approaches" title="Permanent link">&para;</a></h4>
 <p>There are essentially three approaches to accomplish data retention:</p>
 <ol>
