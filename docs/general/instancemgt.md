@@ -72,6 +72,15 @@ Consider creating an image in the following situations:
 
 Be aware that system images quickly fall behind on operating system updates. As more time passes since an image was created, the more software will need to be updated when a new instance is created for it. This can lead to excessively long instance lanuch times and other problems. For this reason, custom images are not the right tool for sharing software or workflows more than a few months into the future. If this describes your situation, please open a support ticket and ask for advice.
 
+!!! danger "CAUTION:: Image Sharing"
+
+    You can set the ***visibility*** property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow `public` visibility, such as staff-featured images.
+
+    For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
+
+    Currently, ***visibility*** can only be modified in the [Horizon](/ui/horizon/intro) and [CLI](/ui/cli/overview) interfaces.
+
+
 ### Suspend and Resume <a name="Suspend"></a>
 
 Suspending an instance is like placing a computer on standby (a.k.a. sleep). When you resume the instance, all running programs will be in the state they were in prior to entering standby. (Still, it is wise to save any work in progress before suspending.)

@@ -40,9 +40,11 @@ You can upload a snapshot or image into Glance using:
 
     There are a lot of metadata tags in the example, but those are important to insure that your instances will create properly from the stored image. You definitely want to make sure you get them all.
 
-    You can set the visibility property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot).
+    You can set the ***visibility*** property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow `public` visibility, such as staff-featured images. Limiting the number of fully `public` images in the catalog improves Jetstream2 reliability and performance.
 
-    For more information on Glance visibility properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
+    For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
+
+    Currently, ***visibility*** can only be modified in the [Horizon](/ui/horizon/intro) and [CLI](/ui/cli/snapshot-image) interfaces.
 
 #### Boot & Test
 
