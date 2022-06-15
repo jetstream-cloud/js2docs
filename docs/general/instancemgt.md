@@ -74,7 +74,7 @@ Be aware that system images quickly fall behind on operating system updates. As 
 
 !!! danger "CAUTION:: Image Sharing"
 
-    You can set the ***visibility*** property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow `public` visibility, such as staff-featured images.
+    You can set the ***visibility*** property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow `public` visibility, such as staff-featured images. Limiting the number of fully `public` images in the catalog improves Jetstream2 reliability and performance.
 
     For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
 
