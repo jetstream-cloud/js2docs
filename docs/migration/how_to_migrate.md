@@ -18,8 +18,12 @@ The allocation process is described here: [Allocation Overivew](/alloc/overview/
 
 You can take one of two approaches:
 
-1. A [supplement](#Supplement) to a current research allocation -OR-
+1. A [supplement](#Supplement) or renewal to a current research allocation -OR-
 2. A completely [new allocation](#NewAllocation)
+
+!!! note "New allocations vs renewals"
+
+     By XSEDE policy, a PI may only have one startup allocation. If you have a valid allocation, consider renewing your startup, education, or champion allocation rather than trying to get a new allocation. Research allocations may be extended within reason but extensions are no substitute for the renewal process in general.</br>
 
 ### Supplement Allocation <a name="Supplement"></a>
 
@@ -27,7 +31,7 @@ If you already have a JS1 allocation, then we encourage you to request a supplem
 
 If your startup or champion allocation is set to expire in June or July and is a NOT a research allocation **AND** is below the [normal startup limits on JS2](/general/resources/), you may also choose to renew it instead. Please ONLY look at extending allocations if you have a research allocation that won't be able to be reviewed at XRAC prior to Jetstream1 going offline.
 
-[Education allocations](/alloc/education/) may also be renewed without restriction as long as there is proper justification. 
+[Education allocations](/alloc/education/) may also be renewed without restriction as long as there is proper justification.
 
 * [Supplement](/alloc/supplement/)
 * [Renewal](/alloc/renew-extend/)
