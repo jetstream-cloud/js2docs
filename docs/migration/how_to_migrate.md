@@ -57,7 +57,7 @@ Volumes on JS1 do not persist on JS2 because they are completely separate system
 
 !!! note "Data volumes and VM transfers"
 
-     As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank} and include your allocation number, resource names and UUIDs that you wish to discuss migrating. 
+     As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the [contact form](https://jetstream-cloud.org/contact/index.html){target=_blank} and include your allocation number, resource names and UUIDs that you wish to discuss migrating.
 
 #### Three approaches
 There are essentially three approaches to accomplish data retention:
@@ -91,6 +91,11 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 !!! caution "CAUTION::JS1-compatibility"
 
      Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br>
+
+!!! warning "EXOSPHERE::JS1 compatibility"
+
+    If the VM you wish to transfer is not `Ubuntu 20` or higher or `Rocky 8` or higher, ***THE VM WILL NOT WORK WITH THE EXOSPHERE WEB DESKTOP***</br>
+
 
 ### How to preserve Jetstream1 VMs and data <a name="SaveData"></a>
 
