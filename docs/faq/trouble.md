@@ -43,3 +43,7 @@ There is an issue/bug with suspending GPU instances with the version of libvirt 
 We will have to upgrade the compute nodes to resolve it. This is on the near-term timeline but we do not have a precise date at this time.
 
 In the meantime, please only use stop or shelve with GPU instances.
+
+### I can't ping or reach a public/floating IP from an internal, non-routed host
+
+This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.
