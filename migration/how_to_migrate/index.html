@@ -419,7 +419,7 @@ Below, we provide instructions for moving your VMs. As time permits, we anticipa
 Volumes on JS1 do not persist on JS2 because they are completely separate systems and do not share storage.</p>
 <div class="admonition note">
 <p class="admonition-title">Data volumes and VM transfers</p>
-<p>As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact form</a> and include your allocation number, resource names and UUIDs that you wish to discuss migrating. </p>
+<p>As we note below, it is highly preferable to recreate resources on Jetstream2. Volume data, especially larger volumes, may be difficult to transfer easily. The Jetstream team can help with volume transfers and will discuss potentially helping with VM snapshots/transfers, though we highly encourage recreating VMs on Jetstream2. Please use the <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact form</a> and include your allocation number, resource names and UUIDs that you wish to discuss migrating.</p>
 </div>
 <h4 id="three-approaches">Three approaches<a class="headerlink" href="#three-approaches" title="Permanent link">&para;</a></h4>
 <p>There are essentially three approaches to accomplish data retention:</p>
@@ -460,6 +460,10 @@ You can create snapshots of your existing JS1 VMs and request the <a href="mailt
 <div class="admonition caution">
 <p class="admonition-title">CAUTION::JS1-compatibility</p>
 <p>Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">EXOSPHERE::JS1 compatibility</p>
+<p>If the VM you wish to transfer is not <code>Ubuntu 20</code> or higher or <code>Rocky 8</code> or higher, <strong><em>THE VM WILL NOT WORK WITH THE EXOSPHERE WEB DESKTOP</em></strong></br></p>
 </div>
 <h3 id="how-to-preserve-jetstream1-vms-and-data">How to preserve Jetstream1 VMs and data <a name="SaveData"></a><a class="headerlink" href="#how-to-preserve-jetstream1-vms-and-data" title="Permanent link">&para;</a></h3>
 <ul>
