@@ -1,6 +1,6 @@
 # Jetstream2 Allocation Supplements
 
-If your allocation has been depleted or you need to add SUs or storage for a Jetstream2, resource to your existing allocation, you may request a supplement.
+If your allocation has been depleted or you need to add SUs or storage for a Jetstream2 resource to your existing allocation, you may request a supplement.
 
 Detailed information about the supplement request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-supplements){target=_blank} page.
 
