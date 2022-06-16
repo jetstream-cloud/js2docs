@@ -4,6 +4,10 @@ If your allocation has been depleted or you need to add SUs or storage for a Jet
 
 Detailed information about the supplement request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-supplements){target=_blank} page.
 
+!!! note "Supplements and User Access"
+
+     It's important to note that when you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, you may need to go to your [Allocations/Usage page](https://portal.xsede.org/group/xup/allocations/usage){target=_blank} and select the "Manage Users" button for the appropriate project.
+
 ### Instructions for requesting a supplements
 
 * Login to [portal.xsede.org](https://portal.xsede.org){target=_blank}
