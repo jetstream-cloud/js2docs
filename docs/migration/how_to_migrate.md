@@ -112,13 +112,13 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
             * Click on the Image you created
             * Click on the Version you want
             * Click on **COPY** for either IU or TACC to grab the UUID of the image
-            * Submit a ticket with your **USERNAME**, VM **PROJECT FOLDER**, and VM **UUID** to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
+            * Submit a ticket with</br>&bull; your **XSEDE::USERNAME**, &amp; **PROJECT CODE** (TG-#####),</br>&bull; **Atmosphere PROJECT FOLDER**,</br>&bull; VM **name**, &amp; **UUID/Alias**</br>&bull; any related Volume **name**, **size**, &amp; **UUID/Alias**</br>to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
       * Volumes:
         1. Click on the **PROJECTS** tab
         2. Click on the Project Folder
         3. Scroll down to **VOLUMES** and click on the desired volume
         4. Click on **COPY** to grab the UUID of the image.
-        5. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
+        5. Submit a ticket with</br>&bull; your **XSEDE::USERNAME**, &amp; **PROJECT CODE** (TG-#####),</br>&bull; **Atmosphere PROJECT FOLDER**,</br>&bull; Volume **name**, **size**, &amp; **UUID/Alias**</br>&bull; any related VM **name**, &amp; **UUID/Alias**</br>to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
 
 
 !!! note "API"
@@ -128,11 +128,11 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
         1. ***STAFF RECOMMENDED but not required***: Contact staff and request a staff ssh-key to add to your VM to more easily allow staff to prepare the image for transfer.
         2. Follow the instructions here to [create a snapshot of your instance](/ui/cli/snapshot-image)</br>
         3. Make note of the VM UUID
-        4. Submit a ticket with that UUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2.</br>
+        4. Submit a ticket with</br>&bull; your **XSEDE::USERNAME**, &amp; **PROJECT CODE** (TG-#####),</br>&bull; VM **name**, &amp; **UUID/Alias**</br>&bull; any related Volume **name**, **size**, &amp; **UUID/Alias**</br>to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
       * Volumes:
         1. Use the command: `openstack volume list`
-        2. Note the Volume UID
-        3. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2.
+        2. Note the Volume UUID
+        3. Submit a ticket with</br>&bull; your **XSEDE::USERNAME**, &amp; **PROJECT CODE** (TG-#####),</br>&bull; Volume **name**, **size**, &amp; **UUID/Alias**</br>&bull; any related VM **name**, &amp; **UUID/Alias**</br>to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
 
 ---
 
