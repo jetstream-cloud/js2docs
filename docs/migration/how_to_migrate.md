@@ -92,10 +92,13 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
      Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br>
 
-!!! warning "EXOSPHERE::JS1 compatibility"
+     **Web shell and desktop will not work nor will the software repository if you are transferring an Atmosphere instance. If you want these features, you will need to launch a new instance under Exosphere on JS2 and rebuild your VM there.**
 
-    If the VM you wish to transfer is not `Ubuntu 20` or higher or `Rocky 8` or higher, ***THE VM WILL NOT WORK WITH THE EXOSPHERE WEB DESKTOP***</br>
+     * Do you want the value added features of Exosphere and Jetstream2 ?
 
+     * Or do you want your exact instance/image from Atmosphere on JS1.
+
+     You cannot easily have both with an Atmosphere-migrated instance.
 
 ### How to preserve Jetstream1 VMs and data <a name="SaveData"></a>
 
@@ -106,19 +109,17 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
     * **Atmosphere**:</br>
       * VMs:
         1. ***STAFF RECOMMENDED but not required***:: Contact staff and request a staff ssh-key to add to your VM to more easily allow staff to prepare the image for transfer.
-        2. Follow the instructions here to [update and image your VM](/archive/atmosphere/Customizing+and+saving+a+VM) </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`
-        3. Next
-            * Go to the **IMAGES** tab
-            * Click on the Image you created
-            * Click on the Version you want
-            * Click on **COPY** for either IU or TACC to grab the UUID of the image
-            * Submit a ticket with your **USERNAME**, VM **PROJECT FOLDER**, and VM **UUID** to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your image to Jetstream2. </br>
+        2. We recommand using a running instance for the migration. </br> **NOTE**: It is strongly recommended that users upgrade the operating system before imaging. </br> For CentOS based systems, it's `sudo yum update` <br/>For Ubuntu based systems, do `sudo apt-get update` and then `sudo apt-get upgrade`. VMs that are too far out of date may be in violation of Jetstream/Jetstream2 policies.
+        3. For the instance you wish to migrate, do the following:
+            * Go to the instance that you wish to migrate in Atmosphere
+            * Click on **COPY** for the Alias (UUID) of the image
+            * Submit a ticket with your **USERNAME**, VM **PROJECT FOLDER**, and VM **UUID** to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your instance to Jetstream2. </br>
       * Volumes:
         1. Click on the **PROJECTS** tab
         2. Click on the Project Folder
         3. Scroll down to **VOLUMES** and click on the desired volume
-        4. Click on **COPY** to grab the UUID of the image.
-        5. Submit a ticket with that VUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
+        4. Click on **COPY** to grab the UUID of the volume.
+        5. Submit a ticket with that volume UUID to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org) to ask staff to copy your volume to Jetstream2.</br>
 
 
 !!! note "API"
