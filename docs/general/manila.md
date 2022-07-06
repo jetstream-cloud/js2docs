@@ -10,6 +10,10 @@ You can set up and manage Manila shares via Horizon and the CLI presently:
  - [Manila via Horizon](../ui/horizon/manila.md)
  - [Manila via Openstack CLI](../ui/cli/manila.md)
 
- Once a Manila share is created, you can mount and use it on your VM managed from any valid Jetstream2 interface.
+Once a Manila share is created, you can mount and use it on your VM managed from any valid Jetstream2 interface.
 
 - [Configuring a VM to use Manila Shares](manilaVM.md)
+
+If there is a need for using Manila shares via FUSE, we do provide documentation for that, as well, though most will use the native kernel drivers above.
+
+- [Configuring a Ceph FUSE client](manilaVM-FUSE.md)

@@ -5,6 +5,20 @@ Kubernetes (K8s) is an open-source system for automating deployment, scaling, an
 
 More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/){target=_blank}
 
+### Kubernetes topics
+
+- [Building a Kubernetes Cluster](./k8scluster.md)
+- [Managing applications with Kubernetes](./k8smanage.md)
+- [Persistent Volumes in Kubernetes](./k8svolumes.md)
+- [Minikube](./minikube.md)
+
+### Third Party Kubernetes topics
+
+- [Deploy Kubernetes with kubespray](https://t.co/Hh8ZincbdN){target=_blank}
+    - [Feedback via Github](https://t.co/3EXyrp0EEd){target=_blank}
+- [Deploy ProjectJupyter JupyterHub](https://t.co/XUKA9od8Nd){target=_blank}
+
+---
 Some K8s basics :
 
 1. A ***Pod*** is the smallest deployable unit of Kubernetes. A Pod can contain one or more containers on a single IP address (internal). Containers within a pod can communicate with each other. Pods are run on Nodes.
@@ -20,17 +34,3 @@ Some K8s basics :
     * ***Cluster Store***  or ***etcd*** – Persistently stores the cluster’s configuration, state, and metadata.
     * The ***Controller Manager*** runs controller processes that monitor and respond to controller events. Some examples of control loops include; node controller, job controller, end point controller, and replication controller.
     * The ***Scheduler*** assigns pods to nodes.
-
-
-### Other Kubernetes topics
-
-- [Building a Kubernetes Cluster](./k8scluster.md)
-- [Managing applications with Kubernetes](./k8smanage.md)
-- [Persistent Volumes in Kubernetes](./k8svolumes.md)
-- [Minikube](./minikube.md)
-
-### Third Party Kubernetes topics
-
-- [Deploy Kubernetes with kubespray](https://t.co/Hh8ZincbdN){target=_blank}
-    - [Feedback via Github](https://t.co/3EXyrp0EEd){target=_blank}
-- [Deploy ProjectJupyter JupyterHub](https://t.co/XUKA9od8Nd){target=_blank}

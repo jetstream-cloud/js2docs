@@ -4,9 +4,9 @@ Please orient yourself to the following instance management actions. These will 
 
 Each user interface for Jetstream2 has instance actions in a slightly different place -- see guidance for [Exosphere](../ui/exo/manage.md), [Cacao](../ui/cacao/manage.md), [Horizon](../ui/horizon/manage.md), and the [OpenStack CLI](../ui/cli/manage.md).
 
-## Basic Actions
+## Basic Actions  <a name="Basic"></a>
 
-### Shelve and Unshelve
+### Shelve and Unshelve <a name="Shelve"></a>
 
 **When your instance is not performing work or otherwise in active use, please _shelve_ it.** Shelving an instance shuts it down and frees up resources on the cloud for other users. It also conserves the SUs (service units) on your allocation.
 
@@ -16,7 +16,7 @@ Shelving and unshelving each take a few minutes, so shelving doesn't make sense 
 
 A shelved instance will not accept shell, SSH, or any other connections.  So, if your instance runs a server that you want to provide others the ability to connect to at any time, you must leave it active. If this describes your instance, consider re-sizing it to the smallest flavor that will work for your server needs. This will conserve SUs on your allocation.
 
-### Lock and Unlock
+### Lock and Unlock <a name="Lock"></a>
 
 Locking an instance helps prevent anyone from accidentally deleting or performing other actions on it, from Exosphere and all other Jetstream2 interfaces. If your instance is running an important job or used in 'production' capacity, consider keeping it locked. You must unlock your instance again before performing other actions (such as shelving it). Locking and unlocking are non-disruptive actions -- they do not affect a running instance.
 
@@ -26,15 +26,17 @@ Be aware that locking an instance does not prevent:
 - modifications to the instance's filesystem(s) or running software. For example, someone with access to the instance could still log in and delete files. Locking only prevents instance actions at the cloud (OpenStack) level.
 - the instance from shutting off when your allocation expires or is exhausted.
 
-### Reboot
+### Reboot <a name="Reboot"></a>
 
 Rebooting an instance is just like restarting a computer. The cloud will first attempt a graceful or "soft" reboot, where all of your programs are allowed to exit. If that fails then OpenStack will perform a "hard" reboot, which will lose any work that is not yet written to disk. If you cannot connect to your instance, rebooting is a good troubleshooting step before creating a support ticket.
 
-## Advanced Actions
+---
+
+## Advanced Actions <a name="Advanced"></a>
 
 The following actions are for more sophisticated use cases. If you're a new cloud user, it's okay to skip reading about these for now.
 
-### Resize
+### Resize <a name="Resize"></a>
 
 Resizing allows you to choose a different flavor for your instance. When you resize, your instance will shut down and then restart with the new flavor (so please save any work in progress first). You can now resize using Exosphere, Horizon, or the CLI.
 
@@ -56,7 +58,7 @@ Moving to a larger flavor is generally **not** appropriate in these situations:
 
 When resizing, you must select your desired new flavor. After the resize is complete, the instance will be in status "Resize verify". At that time, access the instance (e.g. using Web Shell or SSH) and confirm that it is working, then choose the "Confirm resize" action. If the resize process broke something and you need to return to the previous flavor, choose the "Revert resize" action.
 
-### Image
+### Image <a name="Image"></a>
 
 When you create an image, you capture the entire state of your instance's root disk. New instances can be launched from that image, which means that you can use an image to 'snapshot' and 'clone' an instance.
 
@@ -70,7 +72,16 @@ Consider creating an image in the following situations:
 
 Be aware that system images quickly fall behind on operating system updates. As more time passes since an image was created, the more software will need to be updated when a new instance is created for it. This can lead to excessively long instance lanuch times and other problems. For this reason, custom images are not the right tool for sharing software or workflows more than a few months into the future. If this describes your situation, please open a support ticket and ask for advice.
 
-### Suspend and Resume
+!!! danger "CAUTION:: Image Sharing"
+
+    You can set the ***visibility*** property to `community` (all can see and boot), `shared` (only those you specify can see and boot), `private` (only your allocation can see and boot). Only in VERY special cases will Jetstream2 allow `public` visibility, such as staff-featured images. Limiting the number of fully `public` images in the catalog improves Jetstream2 reliability and performance.
+
+    For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
+
+    Currently, ***visibility*** can only be modified in the [Horizon](/ui/horizon/intro) and [CLI](/ui/cli/overview) interfaces.
+
+
+### Suspend and Resume <a name="Suspend"></a>
 
 Suspending an instance is like placing a computer on standby (a.k.a. sleep). When you resume the instance, all running programs will be in the state they were in prior to entering standby. (Still, it is wise to save any work in progress before suspending.)
 

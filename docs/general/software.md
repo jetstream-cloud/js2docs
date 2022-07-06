@@ -10,7 +10,7 @@ This list will be ever evolving, but at this time, we anticipate the following s
 * Singularity/Apptainer\*
 * NVIDIA (formerly PGI) Compiler
 * AOCC Compiler
-* Anaconda
+* Anaconda\* *(Jupyter is available via Anaconda!)*
 * Databases (e.g. Mysql, Postgresql, Mongo)
 * Java
 * Jupyter/JupyterLab/JupyterHub (as part of Anaconda)

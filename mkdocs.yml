@@ -63,9 +63,14 @@ extra:
 #https://github.com/mkdocs/mkdocs/issues/1794
 
 nav:
-  - Jetstream2 Home: index.md
-  - Migrating from Jetstream1 to Jetstream2: migrating.md
-  - Jetstream2 Early Operations FAQ: faq/js2-earlyops-faq.md
+  - Jetstream2 Main:
+    - Jetstream2 Home: index.md
+    - Jetstream2 Status and News: overview/status.md
+  - Migrating from Jetstream1 to Jetstream2:
+    - Overview: migration/migration_overview.md
+    - HOW-TO: migration/how_to_migrate.md
+  - Jetstream2 Early Operations:
+    - FAQ: faq/js2-earlyops-faq.md
   - Jetstream2 Info:
     - System Overview: overview/overview-doc.md
     - Key Differences Between Jetstream 1 and 2: overview/keydiff.md
@@ -77,14 +82,16 @@ nav:
     - Allocations: faq/alloc.md
     - Security: faq/security.md
     - Software: faq/software.md
+    - Gateways: faq/gateways.md
   - General Usage Information:
     - Jetstream2 Resources: general/resources.md
-    - Jetstream2 Storage: general/storage.md
     - XSEDE Service Units and Jetstream2: general/xsede.md
     - VM Sizes and Configurations: general/vmsizes.md
-    - Featured Images: general/featured.md
+    - Quotas: general/quotas.md
     - Instance Management Actions: general/instancemgt.md
+    - Featured Images: general/featured.md
     - Microsoft Windows on Jetstream2: general/windows.md
+    - Storage: general/storage.md
   - Allocations:
     - Allocations Overview: alloc/overview.md
     - Trial Allocation: alloc/trial.md
@@ -92,9 +99,10 @@ nav:
     - Education Allocations: alloc/education.md
     - Research Allocations: alloc/research.md
     - Supplements (Storage/SUs): alloc/supplement.md
-    - Extensions & Renewals: alloc/extension.md
+    - Extensions & Renewals: alloc/renew-extend.md
     - Frequently Asked Questions: alloc/faq.md
   - User Interfaces:
+    - Overview: ui/index.md
     - Exosphere:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md
@@ -104,7 +112,7 @@ nav:
       - Storage Under Exosphere: ui/exo/storage.md
       - Push-button clusters: ui/exo/push-button-cluster.md
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
-    - Cacao (fka Atmosphere2):
+    - Cacao (aka Atmosphere2):
       - Overview: ui/cacao/overview.md
       - What is Cacao: ui/cacao/intro.md
       - Glossary: ui/cacao/glossary.md
@@ -122,11 +130,12 @@ nav:
       - Overview: ui/horizon/intro.md
       - Security Group Management: ui/horizon/security_group.md
       - Networks in Horizon: ui/horizon/network.md
+      - SSH Keys in Horizon: ui/horizon/ssh_keys.md
       - Launching Instances: ui/horizon/launch.md
-      - Instance Management: ui/horizon/manage.md
-      - Volumes Under Horizon: ui/horizon/volumes.md
+      - Instance Management &ast;: ui/horizon/manage.md
+      - Volumes Under Horizon &ast;: ui/horizon/storage.md
       - Manila Shares in Horizon: ui/horizon/manila.md
-      - Horizon Troubleshooting: ui/horizon/troubleshooting.md
+      - Horizon Troubleshooting &ast;: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: ui/cli/clients.md
@@ -137,7 +146,10 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/launch.md
         - Instance Management: ui/cli/manage.md
-        - Deleting Infrastructure in the CLI: ui/cli/deleting.md
+        - Snapshots & Images:
+          - Overview & Creation: ui/cli/snapshot-image.md
+          - Image Sharing: ui/cli/snapshot-image/#ImageSharing
+      - Deleting Infrastructure in the CLI: ui/cli/deleting.md
       - Storage Under the CLI: ui/cli/storage.md
       - Manila Shares in the CLI: ui/cli/manila.md
       - CLI Troubleshooting: ui/cli/troubleshooting.md
@@ -149,6 +161,7 @@ nav:
       - Manila:
         - Manila: general/manila.md
         - Using Manila Share on a VM: general/manilaVM.md
+        - Configuring a Ceph FUSE client: general/manilaVM-FUSE.md
       - Object Store: general/object.md
       - File Transfer: general/filetransfer.md
     - Maintenance and Administration:
@@ -176,3 +189,10 @@ nav:
       - Minikube: general/minikube.md
     - Terraform on Jetstream2: general/terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
+    - Federating Gateways on Jetstream2: general/federating.md
+  - Archived Documentation:
+    - Atmosphere on JS1:
+      - Customizing and saving a VM: archive/atmosphere/Customizing+and+saving+a+VM.md
+      - Imaging Guidelines: archive/atmosphere/Imaging+Guidelines.md
+      - Request an image of an instance: archive/atmosphere/Request+an+image+of+an+instance.md
+      - Detach a Volume: archive/atmosphere/Detach+a+Volume.md

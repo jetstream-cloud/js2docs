@@ -19,6 +19,7 @@ Please refer to [VM Sizes and configurations](../general/vmsizes.md){target=_bla
 For Large Memory and GPU allocations, the vCPU core hour cost is 2x and 4x respectively as noted above.
 
 The reason for continuing to charge for VMs that are not in a usable state is that they still consume resorces if they are suspended or stopped. In those states, they still occupy allocable/usable space on the hypervisor, preventing other users from using those resources.
+{: .note}
 
 For instructions on managing instances, please see:
 

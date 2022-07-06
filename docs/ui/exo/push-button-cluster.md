@@ -79,7 +79,7 @@ ls -alt *.out
 cat nodes_1.out
 ```
 
-You should seem something like this:
+You should see something like this:
 
 ```
 $ ls -alt *.out

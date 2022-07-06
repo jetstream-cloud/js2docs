@@ -4,9 +4,11 @@ If your allocation is expired or close to expired and has adequate SUs remaining
 
 Detailed information about the extension request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-extensions){target=_blank} page.
 
-*Please note: Extensions are not a substitution for the renewal process.*
+***Please note: Extensions are not a substitution for the renewal process.*** <br><br>
+***A renewal is ALWAYS preferred over an extension. Please see below for information on renewing a startup allocation.***
+{: .note}
 
-If you have a startup allocation and you are planning to stay under the startup limits (as noted on the [Jetstream Resources](../general/resources.md) page), you may continue to renew your startup and not have to enter the research allocations cycle. A renewal is **ALWAYS** preferred over an extension. Please see below for information on renewing a startup allocation.
+If you have a startup allocation and you are planning to stay under the startup limits (as noted on the [Jetstream Resources](../general/resources.md) page), you may continue to renew your startup and not have to enter the research allocations cycle.
 
 * Research allocations may be extended **once** with *adequate justification*.
 * Research allocations are renewable on a quarterly basis. More information may be found on the [XSEDE Research Allocations page](https://portal.xsede.org/allocations/research){target=_blank}
@@ -30,7 +32,7 @@ If you have a startup allocation and you are planning to stay under the startup 
 * Go to the [Submit / Review Requests page](https://portal.xsede.org/group/xup/submit-request#/){target=_blank}
     * (You can also mouse over the "Allocations tab" and then select "Submit/Review Request")
 * Look on the **LEFT** side of the page and scroll down to find your allocation.
-    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring.*
+    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring if it is a startup allocation.*
 * Choose "Start Renewal for *[Your allocation number]*"
 * Select the duration from the list.
 * Enter all comments and justifications for the extension.

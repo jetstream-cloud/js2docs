@@ -54,7 +54,7 @@ Install the package:
 
 Depending on your python installation, your pip may be called pip3 to denote Python3. You can do
 
-   pip --version
+    pip --version
 
 to see what version of Python it's tied to. Please note that Python 2.x is deprecated and should not be used.
 
@@ -64,4 +64,4 @@ To install something for your user only
 
 To install something for the entire VM
 
-   sudo pip install module_name
+    sudo pip install module_name

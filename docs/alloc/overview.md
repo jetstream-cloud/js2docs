@@ -7,12 +7,31 @@ Jetstream allocations are awarded exclusively through XSEDE. XSEDE provides XSED
 A guide with more detail on Jetstream allocations is available online at the
 [XSEDE Resource Information](https://portal.xsede.org/allocations/resource-info){target=_blank} page.
 
-Allocation types:
+### Allocation types:
 
 - [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2
 - [Startup allocation](startup.md) - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.
+    * [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations will generally default to this level, though other limits are available upon request.
 - [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
 - [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.
+
+!!! warning "Campus Champions"
+
+    Please note that we will **NOT** be automatically adding [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations to Jetstream2. You will explicitly need to get a [supplement](/alloc/supplement/) for it.
+
+#### Maximum Trial Allocation values for each resource are:
+
+* Jetstream2 CPU - 2,000 SUs, 2 cores
+
+#### Maximum Startup/Campus Champion Allocation values for each resource are:
+
+* Jetstream2 CPU - 200,000 SUs
+* Jetstream2 Large Memory - 400,000 SUs
+* Jetstream2 GPU - 600,000 SUs
+* Jetstream2 Storage - 1TB default**&ast;**
+
+**&ast;** Storage limits may be larger than 1TB per allocation for a startup if well-justified.
+
 
 ----
 
