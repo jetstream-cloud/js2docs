@@ -150,6 +150,9 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
         kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
+<span style="color:darkred">***Note:***</span> A bug in Calico prevents Calico containers from deploying on the worker nodes. To fix that, run the following command on the control plane.<br> 
+        `kubectl set env daemonset/calico-node -n kube-system IP_AUTODETECTION_METHOD=interface=ens\*`
+
 22. Test access to cluster:
 
         kubectl get nodes
@@ -170,7 +173,7 @@ Create three virtual machines and run the installation commands (1-16) on all th
 
 ## Clean up
 
-26. On the *Control Plabe Node*, delete ia resource using kubectl:
+26. On the *Control Plane Node*, delete ia resource using kubectl:
 
         kubectl delete node <node name> 
 
