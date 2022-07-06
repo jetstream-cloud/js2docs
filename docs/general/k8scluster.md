@@ -4,6 +4,33 @@ A k8s cluster is a collection of nodes running containers.  Each node is respons
 
 In this example we use the kubeadm tool to set up a cluster. Our cluster has 3 VMs – 1 control plane and 2 worker nodes.
 
+####Optional 
+
+On the control plane node: 
+
+        sudo hostnamectl set-hostname k8s-control
+
+On the first worker node:
+
+        sudo hostnamectl set-hostname k8s-worker1
+
+On the second worker node:
+
+        sudo hostnamectl set-hostname k8s-worker2
+
+
+####Set up the hosts file
+
+On all nodes edit the `/etc/hosts` file to include the private ip address for each node
+
+        <control_plane_node_private_IP> k8s-control 
+        <worker_node_1_private_IP> k8s-worker1 
+        <worker_node_2_private_IP> k8s-worker2
+
+Log out of all three servers and log back in for these changes to take effect.
+
+One way to find the private IP of your instance is by running `hostname -i` on the VMs. 
+
 ####Installation
 
 Create three virtual machines and run the installation commands (1-16) on all three.
