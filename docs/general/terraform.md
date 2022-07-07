@@ -189,4 +189,4 @@ Terraform code is written in YAML (YAML Ain't Markup Language). Indentation matt
 
 * [yamllint](http://www.yamllint.com)
 
-* [atom.io](https://atom.io/)
+* [vscode](https://code.visualstudio.com)
