@@ -90,7 +90,7 @@ You can create snapshots of your existing JS1 VMs and request the [Help Desk Sup
 
 !!! caution "CAUTION::JS1-compatibility"
 
-     Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of a JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br>
+     Please be aware that configurational differences between JS1 and JS2 generally prevent straight forward re-deployment of am Atmosphere JS1 VM on JS2. It may be more advisable to transfer the VM and mount the snapshot as a external volume on a new JS2 VM.</br>
 
      **Web shell and desktop will not work nor will the software repository if you are transferring an Atmosphere instance. If you want these features, you will need to launch a new instance under Exosphere on JS2 and rebuild your VM there.**
 
