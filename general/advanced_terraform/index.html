@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/k8scluster/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/advanced_terraform/" />
       <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
-    <title>Build a K8s cluster - Jetstream2 Documentation</title>
+    <title>Advanced Terraform - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link href="../../css/custom.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Build a K8s cluster";
-        var mkdocs_page_input_path = "general/k8scluster.md";
-        var mkdocs_page_url = "/general/k8scluster/";
+        var mkdocs_page_name = "Advanced Terraform";
+        var mkdocs_page_input_path = "general/advanced_terraform.md";
+        var mkdocs_page_url = "/general/advanced_terraform/";
       </script>
     
     <script src="../../js/jquery-3.6.0.min.js" defer></script>
@@ -306,14 +306,14 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Containers on Jetstream2</a>
-    <ul class="current">
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
+    <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../kubernetes/">Kubernetes</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Build a K8s cluster</a>
+                <li class="toctree-l2"><a class="reference internal" href="../k8scluster/">Build a K8s cluster</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8smanage/">Managing Applications with Kubernetes</a>
                 </li>
@@ -358,11 +358,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Advanced Capabilities &raquo;</li>
-          <li>Containers on Jetstream2 &raquo;</li><li>Build a K8s cluster</li>
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Advanced Terraform</li>
     <li class="wy-breadcrumbs-aside">
-        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/k8scluster.md"
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/advanced_terraform.md"
           class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
@@ -372,210 +370,36 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="building-a-kubernetes-cluster">Building a Kubernetes Cluster<a class="headerlink" href="#building-a-kubernetes-cluster" title="Permanent link">&para;</a></h1>
-<p>A k8s cluster is a collection of nodes running containers.  Each node is responsible for running containers that are on that specific node.</p>
-<p>In this example we use the kubeadm tool to set up a cluster. Our cluster has 3 VMs – 1 control plane and 2 worker nodes.</p>
-<h4 id="optional">Optional<a class="headerlink" href="#optional" title="Permanent link">&para;</a></h4>
-<p>On the control plane node: </p>
-<pre><code>    sudo hostnamectl set-hostname k8s-control
+                <h1 id="advanced-terraform">Advanced Terraform<a class="headerlink" href="#advanced-terraform" title="Permanent link">&para;</a></h1>
+<p>This topics is for more advanced users looking to expand what terraform can do.
+The following examples assume that you have created an app credential and have installed terraform.</p>
+<p>The following link is to a repo with some more examples of what terraform can do.</p>
+<pre><code>https://github.com/wellsaar/terraform-js2
 </code></pre>
-<p>On the first worker node:</p>
-<pre><code>    sudo hostnamectl set-hostname k8s-worker1
+<p>The following is a brief overview of the code.</p>
+<h1 id="nginx-and-mariadb">Nginx and Mariadb<a class="headerlink" href="#nginx-and-mariadb" title="Permanent link">&para;</a></h1>
+<p>This creates an ubuntu 20 server with nginx and mariadb installed and running, with a simple &ldquo;Hello World!&rdquo; webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
+<p>Set your key_pair in ubuntu20.tfvars</p>
+<p>If would like the change the flavor of the instance you boot, add the following to ubuntu20.tfvars</p>
+<pre><code>flavor_id = &quot;ID of flavor here&quot;
 </code></pre>
-<p>On the second worker node:</p>
-<pre><code>    sudo hostnamectl set-hostname k8s-worker2
+<p>You can see the list of flavor with the following command.</p>
+<pre><code>openstack flavor list
 </code></pre>
-<h4 id="set-up-the-hosts-file">Set up the hosts file<a class="headerlink" href="#set-up-the-hosts-file" title="Permanent link">&para;</a></h4>
-<p>On all nodes edit the <code>/etc/hosts</code> file to include the private ip address for each node</p>
-<pre><code>    &lt;control_plane_node_private_IP&gt; k8s-control 
-    &lt;worker_node_1_private_IP&gt; k8s-worker1 
-    &lt;worker_node_2_private_IP&gt; k8s-worker2
+<h1 id="r-shiny-server-nginx-proxy">R + Shiny server (Nginx proxy)<a class="headerlink" href="#r-shiny-server-nginx-proxy" title="Permanent link">&para;</a></h1>
+<p>This creates an ubuntu 20 server with nginx, r and shiny server installed and configure the nginx server for SSL (using certbot) and reverse proxies back shiny to port 443 (https).</p>
+<p>You can specify which version of shiny you want by editing shiny_version in ansible/main.yml</p>
+<h2 id="requirements_1">Requirements<a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h2>
+<p>Set your key_pair in ubuntu20.tfvars</p>
+<p>Set your email address for certbot</p>
+<p>Specify your domain_name, more often then not your domain name will be</p>
+<pre><code>shiny.(Jetstream Allocation Name).projects.jetstream-cloud.org
 </code></pre>
-<p>Log out of all three servers and log back in for these changes to take effect.</p>
-<p>One way to find the private IP of your instance is by running <code>hostname -i</code> on the VMs. </p>
-<h4 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h4>
-<p>Create three virtual machines and run the installation commands (1-16) on all three.</p>
-<ol>
-<li>
-<p>Create configuration file for containerd:</p>
-<pre><code>cat &lt;&lt;EOF | sudo tee /etc/modules-load.d/containerd.config
-overlay
-br_netfilter
-EOF
-</code></pre>
-</li>
-<li>
-<p>Load modules:</p>
-<pre><code>sudo modprobe overlay
-sudo modprobe br_netfilter
-</code></pre>
-</li>
-<li>
-<p>Set networking configurations for K8s:</p>
-<pre><code>cat &lt;&lt;EOF | sudo tee /etc/sysctl.d/99-kubernetes-cri.conf
-net.bridge.bridge-nf-call-iptables = 1
-net.ipv4.ip_forward = 1
-net.bridge.bridge-nf-call-ip6tables = 1
-EOF
-</code></pre>
-</li>
-<li>
-<p>Apply new settings:</p>
-<pre><code>sudo sysctl --system
-</code></pre>
-</li>
-<li>
-<p>Install containerd:</p>
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y containerd
-</code></pre>
-</li>
-<li>
-<p>Create default configuration file for containerd:</p>
-<pre><code>sudo mkdir -p /etc/containerd
-</code></pre>
-</li>
-<li>
-<p>Generate default containerd configuration and save to the newly created default file:</p>
-<pre><code>sudo containerd config default | sudo tee /etc/containerd/config.toml
-</code></pre>
-</li>
-<li>
-<p>Restart containerd to ensure new configuration file usage:</p>
-<pre><code>sudo systemctl restart containerd
-</code></pre>
-</li>
-<li>
-<p>Verify that containerd is running.</p>
-<pre><code>sudo systemctl status containerd
-</code></pre>
-</li>
-<li>
-<p>Disable swap:</p>
-<pre><code>sudo swapoff -a
-</code></pre>
-</li>
-<li>
-<p>Install dependency packages:</p>
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get install -y apt-transport-https curl
-</code></pre>
-</li>
-<li>
-<p>Download and add GPG key:</p>
-<pre><code>curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
-</code></pre>
-</li>
-<li>
-<p>Add Kubernetes to repository list:</p>
-<pre><code>cat &lt;&lt;EOF | sudo tee /etc/apt/sources.list.d/kubernetes.list
-deb https://apt.kubernetes.io/ kubernetes-xenial main
-EOF
-</code></pre>
-</li>
-<li>
-<p>Update package listings:</p>
-<pre><code>sudo apt-get update
-</code></pre>
-</li>
-<li>
-<p>Install Kubernetes packages</p>
-<pre><code>sudo apt-get install -y kubelet=1.22.0-00 kubeadm=1.22.0-00 kubectl=1.22.0-00
-</code></pre>
-</li>
-<li>
-<p>Turn off automatic updates:</p>
-<pre><code>sudo apt-mark hold kubelet kubeadm kubectl
-</code></pre>
-</li>
-</ol>
-<h2 id="initialize-the-cluster">Initialize the cluster<a class="headerlink" href="#initialize-the-cluster" title="Permanent link">&para;</a></h2>
-<ol start="17">
-<li>
-<p>Before initializing the cluster make sure the Cgroup driver is <code>systemd</code> on all three VMs. <br>
-    You can check that by running the following command:  <code>docker info | grep Cgroup</code></p>
-<p>To change the Cgroup drive to systemd you can do the following:</p>
-<pre><code>cat &lt;&lt;EOF | sudo tee /etc/docker/daemon.json
-{
-  "exec-opts": ["native.cgroupdriver=systemd"],
-  "log-driver": "json-file",
-  "log-opts": {
-    "max-size": "100m"
-  },
-  "storage-driver": "overlay2"
-}
-EOF
-</code></pre>
-</li>
-<li>
-<p>You will need to restart Docker and reset kubeadm for the change in step 17. to take effect.</p>
-<pre><code>sudo systemctl daemon-reload
-sudo systemctl restart docker
-sudo kubeadm reset
-</code></pre>
-</li>
-<li>
-<p>Initialize the Kubernetes cluster on the control plane node using kubeadm:<br></p>
-<pre><code>sudo kubeadm init --pod-network-cidr 192.168.0.0/16 --kubernetes-version 1.22.0
-</code></pre>
-</li>
-<li>
-<p>Set kubectl access on the control plane :</p>
-<pre><code>mkdir -p $HOME/.kube
-sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
-sudo chown $(id -u):$(id -g) $HOME/.kube/config
-</code></pre>
-</li>
-<li>
-<p>On the Control Plane Node, install Calico Networking:</p>
-<pre><code>kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
-</code></pre>
-</li>
-</ol>
-<p><span style="color:darkred"><strong><em>Note:</em></strong></span> A bug in Calico prevents Calico containers from deploying on the worker nodes. To fix that, run the following command on the control plane.<br> 
-        <code>kubectl set env daemonset/calico-node -n kube-system IP_AUTODETECTION_METHOD=interface=ens\*</code></p>
-<ol start="22">
-<li>Test access to cluster:<pre><code>kubectl get nodes
-</code></pre>
-</li>
-</ol>
-<h2 id="join-worker-nodes-to-the-cluster">Join worker nodes to the cluster<a class="headerlink" href="#join-worker-nodes-to-the-cluster" title="Permanent link">&para;</a></h2>
-<ol start="23">
-<li>
-<p>On the <em>Control Plane Node</em>, create the token and copy the kubeadm join command. <br> (<span style="color:darkred"><strong><em>Note:</em></strong></span> The join command can also be found in the output from kubeadm init command):</p>
-<pre><code>kubeadm token create --print-join-command
-</code></pre>
-</li>
-<li>
-<p>On the <em>Worker Nodes</em>, paste the kubeadm join command to join the cluster. Use sudo to run it as root:</p>
-<pre><code>sudo kubeadm join ...
-</code></pre>
-</li>
-<li>
-<p>On the <em>Control Plane Node</em>, view cluster status. <br> (<span style="color:darkred"><strong><em>Note:</em></strong></span> You may have to wait a few moments to allow all nodes to become ready):</p>
-<pre><code>kubectl get nodes
-</code></pre>
-</li>
-</ol>
-<h2 id="clean-up">Clean up<a class="headerlink" href="#clean-up" title="Permanent link">&para;</a></h2>
-<ol start="26">
-<li>On the <em>Control Plane Node</em>, delete ia resource using kubectl:<pre><code>kubectl delete node &lt;node name&gt;
-</code></pre>
-</li>
-</ol>
-<p><span style="color:darkred"><strong><em>Note:</em></strong></span> </p>
-<p>Before using the cluster confirm that all pods in the kube-system are running: </p>
-<pre><code>    kubectl get pods -n kube-system -o wide
-</code></pre>
-<p>This command will give you a list of pods in the kube-system namespace, the status of the pod, the node it is running on. 
-If the status of a pod is not <code>Running</code>, you can check the logs for error messages: </p>
-<pre><code>    kubectl logs -n kube-system {name_of_your_pod}
-</code></pre>
+<p>If you would like to change your flavor, see above.</p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../kubernetes/" class="btn btn-neutral float-left" title="Kubernetes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../k8smanage/" class="btn btn-neutral float-right" title="Managing Applications with Kubernetes">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -602,10 +426,6 @@ If the status of a pod is not <code>Running</code>, you can check the logs for e
         </span>
     
     
-      <span><a href="../kubernetes/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../k8smanage/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

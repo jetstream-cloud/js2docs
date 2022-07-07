@@ -373,6 +373,71 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="exosphere-troubleshooting">Exosphere Troubleshooting<a class="headerlink" href="#exosphere-troubleshooting" title="Permanent link">&para;</a></h1>
+<h2 id="how-to-break-and-fix-your-instance">How to Break and Fix Your Instance<a class="headerlink" href="#how-to-break-and-fix-your-instance" title="Permanent link">&para;</a></h2>
+<p>In order to provide you with easy remote connectivity, Exosphere configures certain things when setting up a new instance.
+If you modify these configurations, you may break various functionality in Exosphere.</p>
+<ul>
+<li>
+<p>If you change the passphrase for the <code>exouser</code> local user, you will break Web Shell and Web Desktop.
+Also, the passphrase shown on the instance details page will cease to work for SSH connections or the console.</p>
+<ul>
+<li>Fix this by changing the <code>exouser</code> passphrase back to what is displayed on the instance details page.</li>
+</ul>
+</li>
+<li>
+<p>If you modify your instance&rsquo;s firewall (iptables, ufw, or firewalld) or OpenStack security group(s), you may break Web Shell, Web Desktop, and SSH connectivity.</p>
+<ul>
+<li>Fix this by allowing TCP ports 22 (for SSH) and 49528 (for Guacamole-based shell and desktop) through your firewall(s).</li>
+</ul>
+</li>
+<li>
+<p>If you stop or modify the Docker containers named <code>exo-guac-guacamole</code> or <code>exo-guac-guacd</code>, you will break Web Shell and Web Desktop.</p>
+<ul>
+<li>Fix this by connecting via native SSH, then running <code>cd /opt/guacamole</code> and <code>sudo docker-compose up</code> inside the SSH session.</li>
+</ul>
+</li>
+<li>
+<p>If you modify files or file permissions in <code>/opt/guacamole/</code>, you may break Web Shell and Web Desktop the next time your instance restarts.</p>
+<ul>
+<li>Fix this by connecting with native SSH, reverting your changes, and then running <code>cd /opt/guacamole</code> and <code>sudo docker-compose up</code>.</li>
+</ul>
+</li>
+<li>
+<p>If you modify the TigerVNC package, its configuration in <code>/home/exouser/.vnc</code>, or the <code>vncserver@1</code> systemd service, you may break Web Desktop.</p>
+<ul>
+<li>Fix this by connecting via Web Shell or SSH, reverting your changes, and running <code>sudo systemctl restart vncserver@1</code>.</li>
+</ul>
+</li>
+<li>
+<p>If you modify the SSH server configuration in <code>/etc/sshd_config</code>, you may break Web Shell and native SSH connectivity.
+ You may also break the file upload/download tool inside of Web Shell and Web Desktop.</p>
+<ul>
+<li>Fix this by reverting your changes (if you can) and running <code>sudo systemctl restart ssh</code>.</li>
+</ul>
+</li>
+<li>
+<p>If you modify <code>/etc/fstab</code>, you may break automatic mounting of volumes and/or the Jetstream2 Software Catalog.</p>
+<ul>
+<li>Fix this by reverting your changes.</li>
+</ul>
+</li>
+<li>
+<p>If you modify <code>/opt/system_load_json.py</code> or the root user&rsquo;s crontab entry that runs it, you will break the live-updating instance resource usage graphs in the Exosphere UI.</p>
+<ul>
+<li>Fix this by reverting your changes.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">If all else fails</p>
+<p><strong>If you cannot un-break your instance using the steps above, it is often best to create a new instance</strong> and use that instead.
+There are an infinite number of creative ways to break an instance.
+It may not be fast or straightforward for Jetstream2 support staff to recover a broken instance.
+Fortunately, it is fast and easy to make another.
+This highlights the importance of backing up any data or configurations that are important to your work.
+If you can&rsquo;t afford to lose something, keep a copy somewhere else.</p>
+</div>
+<hr />
 <h3 id="i-changed-the-exouser-password-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work">I changed the exouser password on my instance and now the web shell and web desktop in Exosphere don&rsquo;t work.<a class="headerlink" href="#i-changed-the-exouser-password-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work" title="Permanent link">&para;</a></h3>
 <p>The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.</p>
 <p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult.</p>

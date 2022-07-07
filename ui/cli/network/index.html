@@ -387,7 +387,11 @@
 <tbody>
 <tr>
 <td>Create a private network</td>
-<td><code>openstack network create my-network-name</code></td>
+<td><code>openstack network create my-network-name [--dns-domain tg-xxxxxxxx.projects.jetstream-cloud.org]</code></td>
+</tr>
+<tr>
+<td>(Optional)</td>
+<td>The &ndash;dns-domain is optional but recommended. <br><br> You will need to install <i>python-designateclient</i> for dns services. <br><br> Substitute your allocation number for the Xs above</td>
 </tr>
 <tr>
 <td>Verify that the private network was created</td>
