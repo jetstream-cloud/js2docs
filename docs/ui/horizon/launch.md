@@ -2,7 +2,7 @@
 
 ![](/img/horizon_instance_launch.webp){ align=right ; width=50% }
 
-1. `Launch instance` menu
+1. **Open `Launch instance` menu**
 
 * With the `network`, `security group`, and `ssh keys` setup, you should be ready to launch an instance.
 * On the left side bar, click on `Project` → `Compute` →  `Instances`
