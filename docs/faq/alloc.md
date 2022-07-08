@@ -1,6 +1,6 @@
 #Jetstream2 Allocations FAQ
 
- **1. Is there an overview of the types of allocations available as well as any restrictions those allocations have?**
+####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
 > The [Getting Started guide](https://www.xsede.org/for-users/getting-started){target=_blank} describes the process of getting onto XSEDE, applying for allocations and using XSEDE resources. To review the types of allocations XSEDE and the process to get an allocation, here are some links you might find useful:
 
@@ -11,7 +11,7 @@
   *   [Proposal deadlines](https://portal.xsede.org/allocations/research#schedule){target=_blank}
 ---
 
-  **2.  Is there a example or demonstration of how to get an allocation that I could follow?**
+####Is there a example or demonstration of how to get an allocation that I could follow?
 
 > The [Research Allocation](../alloc/research.md) page has information and links for writing a successful Jetstream2 research allocation request.
 >
@@ -19,7 +19,7 @@
 
 ---
 
-   **3. How do I let other XSEDE accounts use my allocation?**
+####How do I let other XSEDE accounts use my allocation?
 
 You can add users to (or remove them from) your XSEDE allocation via the XSEDE User Portal. Users must have already created their XSEDE accounts before they can be added to an allocation.
 
@@ -32,7 +32,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 ---
 
-   **4. How often can I get a startup allocation?**
+####How often can I get a startup allocation?
 
 > Applications for startup allocations will only be accepted once. If you have modest needs that are equal or less than startup values, you may renew your startup allocation. If you need a larger allocation, it is best to apply for a [research allocation](https://portal.xsede.org/allocations/research){target=_blank}.
 
@@ -46,7 +46,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 ---
 
-**5. Can I renew a startup allocation?**
+####Can I renew a startup allocation?
 
 > If your SU needs are equal to or less than the maximum startup values (see item 4 just above) you may renew your startup allocation. If you need a signficantly larger amound of SUs for any of the resources, you will need to pursue a [research allocation](../alloc/research.md)
 
@@ -54,7 +54,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 ---
 
-  **6. I'm running out of Service Units (SUs) or storage. How do I request more?**
+####I'm running out of Service Units (SUs) or storage. How do I request more?
 
 > If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
 
@@ -63,7 +63,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
     Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.
 ---
 
-  **7. I am at or exceeding the quota limits for my allocation.**
+####I am at or exceeding the quota limits for my allocation.
 
 > How do I request additional resources such as CPUs and memory?
 
@@ -75,7 +75,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 ---
 
-**8. Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?**
+####Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?
 
 > If your allocation is expired or out of SUs, you may request an extension, renewal, or supplement. Please see one of the following links:
 >
