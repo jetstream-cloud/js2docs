@@ -4,9 +4,14 @@ If your allocation is expired or close to expired and has adequate SUs remaining
 
 Detailed information about the extension request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-extensions){target=_blank} page.
 
-***Please note: Extensions are not a substitution for the renewal process.*** <br><br>
-***A renewal is ALWAYS preferred over an extension. Please see below for information on renewing a startup allocation.***
-{: .note}
+
+!!! note Important Things to Note "Extensions"
+
+     Extensions only add time. If you need more or different resources, you need to pursue a supplement.
+
+     Please note: Extensions are not a substitution for the renewal process.
+
+     **A renewal is ALWAYS preferred over an extension. Please see below for information on renewing a startup allocation.**
 
 If you have a startup allocation and you are planning to stay under the startup limits (as noted on the [Jetstream Resources](../general/resources.md) page), you may continue to renew your startup and not have to enter the research allocations cycle.
 

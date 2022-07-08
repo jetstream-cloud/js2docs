@@ -58,6 +58,9 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 > If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
 
+!!! Note
+
+    Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.
 ---
 
   **7. I am at or exceeding the quota limits for my allocation.**
@@ -81,3 +84,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 > * [Jetstream2 Allocation Extensions and Renewals](../alloc/renew-extend.md){target=_blank}
 >
 > Jetstream2 staff are unable to take these actions on your behalf.
+
+!!! Note
+
+    Extensions only add time. If you need more or different resources, you need to pursue a supplement.
