@@ -187,7 +187,9 @@ nav:
       - Managing Applications with Kubernetes: general/k8smanage.md
       - Persistent Volumes in Kubernetes: general/k8svolumes.md
       - Minikube: general/minikube.md
-    - Terraform on Jetstream2: general/terraform.md
+    - Terraform:
+      - Terraform on Jetstream2: general/terraform.md
+      - Advanced Terraform Topics: general/advanced_terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
     - Federating Gateways on Jetstream2: general/federating.md
   - Archived Documentation:
