@@ -47,3 +47,19 @@ Specify your domain_name, more often then not your domain name will be
 shiny.(Jetstream Allocation Name).projects.jetstream-cloud.org
 ```
 If you would like to change your flavor, see above.
+
+# Kubernetes Cluster
+
+This repo located below will setup a Kubernetes cluster with the amount of followers you specific.
+
+Currently this is running on Ubuntu 20 and installs the latest version of kubernetes.
+
+```
+https://github.com/wellsaar/terraform-js2-k8cluster
+```
+
+## Requirements
+
+Editing k8.tfvars with your public key as well.
+If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.
+
