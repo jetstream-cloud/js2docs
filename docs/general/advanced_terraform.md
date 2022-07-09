@@ -1,14 +1,13 @@
-# Advanced Terraform 
+# Advanced Terraform
 
 This topics is for more advanced users looking to expand what terraform can do.
-The following examples assume that you have created an app credential and have installed terraform.
+The following examples assume that you have created an app credential and have [installed terraform](terraform.md).
 
-The following link is to a repo with some more examples of what terraform can do.
-```
-https://github.com/wellsaar/terraform-js2
-```
+The following link is to a repo with some more examples of what terraform can do:
 
-The following is a brief overview of the code.
+[https://github.com/wellsaar/terraform-js2](https://github.com/wellsaar/terraform-js2){target=_blank}
+
+A brief overview of the code is below:
 
 # Nginx and Mariadb
 
@@ -62,4 +61,3 @@ https://github.com/wellsaar/terraform-js2-k8cluster
 
 Editing k8.tfvars with your public key as well.
 If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.
-
