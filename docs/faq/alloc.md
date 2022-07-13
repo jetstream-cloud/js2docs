@@ -88,3 +88,9 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 !!! Note
 
     Extensions only add time. If you need more or different resources, you need to pursue a supplement.
+
+---
+
+####My PI got a Jetstream2 supplement added to our existing allocation but we cannot access Exosphere or Horizon
+
+> When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your [Allocations/Usage page](https://portal.xsede.org/group/xup/allocations/usage){target=_blank} and select the "Manage Users" button for the appropriate project.
