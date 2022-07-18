@@ -14,7 +14,7 @@ For specific FAQs, see the following pages:
 
 ### How do I cite Jetstream2 ?
 
-The Jetstream2 team requests that all researchers using Jetstream2 cite us in any publications that utilize results that were computed or created on Jetstream2. We keep the most up to date citation information here - [Jetstream2 Citation Information](https://jetstream-cloud.org/research/index.html#cite-jetstream){target=_blank} 
+The Jetstream2 team requests that all researchers using Jetstream2 cite us in any publications that utilize results that were computed or created on Jetstream2. We keep the most up to date citation information here - [Jetstream2 Citation Information](https://jetstream-cloud.org/research/index.html#cite-jetstream){target=_blank}
 
 ### I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?
 
@@ -75,3 +75,16 @@ Please note, there are different quotas for block storage (volumes) and shares. 
 We generally don't recommend using password authentication on Jetstream2, recommending that you use SSH keys for access. That said, if you need to set a password for console access or for some other reason, you can do it like this:
 
     sudo passwd *username*
+
+---
+
+### How can I get my public IP number from my VM ?
+
+If your VM has a public IP address and you need to find that IP (and don’t have ready access to the Jetstream2 interfaces), use wget or curl from the command line to get your public IP:
+
+    wget http://169.254.169.254/latest/meta-data/public-ipv4 -qO -
+    wget http://ipinfo.io/ip -qO -
+    curl http://169.254.169.254/latest/meta-data/public-ipv4
+    curl http://ipinfo.io/ip
+
+*Note: http://169.254.169.254/latest/meta-data/public-ipv4 works even in conditions in which external DNS servers are not accessible.
