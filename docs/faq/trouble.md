@@ -47,3 +47,7 @@ In the meantime, please only use stop or shelve with GPU instances.
 ### I can't ping or reach a public/floating IP from an internal, non-routed host
 
 This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.
+
+To communicate from an internal only Jetstream2 instance to an instance on Jetstream2 with a floating IP, you'll need to use the internal networking address or name.
+
+The engineers are looking at ways to work around this and hope to have it solved in the near future. 
