@@ -95,8 +95,8 @@ If your VM has a public IP address and you need to find that IP (and don’t hav
 
 Jetstream2 is using OpenStack Designate to set dns names for instances. We were proactive and set the auto_allocated network that most Jetstream2 users will use, but if you've created a new network and want an auto-created DNS A record, you'll need to do this from the command line:
 
-    openstack network set --dns-domain tg-xxxxxxxxx.projects.jetstream-cloud.org. <network-name>
+    openstack network set --dns-domain tg-xxxxxxxxx.projects.jetstream-cloud.org. network-name-or-UUID
 
-where the tg-xxxxxxxxx is your XSEDE allocation number and <network-name> is the custom network you've created in that allocation.
+where the tg-xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you've created in that allocation.
 
-This FAQ topic may move to its own page in the future. 
+This FAQ topic may move to its own page in the future.
