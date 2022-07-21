@@ -100,3 +100,33 @@ Jetstream2 is using OpenStack Designate to set dns names for instances. We were 
 where the tg-xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you've created in that allocation.
 
 This FAQ topic may move to its own page in the future.
+
+---
+
+### How do I keep a program running on a VM even if I log out or get disconnected?
+
+If you want to start a workflow and have it run, that's a unix capability.
+
+Tutorials like [How to Run Linux Commands in Background](https://linuxize.com/post/how-to-run-linux-commands-in-background/){target=_blank}
+
+show a number of methods shown here on how to start a program and leave it running, even if your connection disconnects.
+
+I'd suggest looking at the nohup command. As that page says:
+
+*"Another way to keep a process running after the shell exit is to use nohup.*
+
+*The nohup command executes another program specified as its argument and ignores all SIGHUP (hangup) signals. SIGHUP is a signal that is sent to a process when its controlling terminal is closed."*
+
+To run a command in the background using the nohup command, type:
+
+    nohup command &
+
+If you want to log any terminal output to a file, you can use one of these commands below.
+
+To redirect standard output and standard error to different files:
+
+    nohup myprogram > myprogram.out 2> myprogram.err
+
+or to the same file:
+
+    nohup myprogram > myprogram.out 2>&1
