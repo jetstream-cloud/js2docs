@@ -63,4 +63,6 @@ The only easy work around for the moment is to use another web browser. You can 
 
 Chrome can also be launched from the command-line by typing `google-chrome`. You can also launch it from the activity bar.
 
-As soon as Ubuntu releases a fix for this we will update the featured image. 
+As soon as Ubuntu releases a fix for this we will update the featured image.
+
+Another option if you do prefer Firefox is to use Ubuntu 20.
