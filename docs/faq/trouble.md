@@ -50,4 +50,17 @@ This as a change in the network between Jetstream 1 and 2. You cannot presently 
 
 To communicate from an internal only Jetstream2 instance to an instance on Jetstream2 with a floating IP, you'll need to use the internal networking address or name.
 
-The engineers are looking at ways to work around this and hope to have it solved in the near future. 
+
+### Firefox doesn't work in Ubuntu 22
+
+This is a known issue with the Ubuntu 22 distribution. You can read about the bug report and its status [in this Ubuntu launchpad](https://bugs.launchpad.net/ubuntu/+source/snapd/+bug/1951491){target=_blank}
+
+The only easy work around for the moment is to use another web browser. You can install Chrome from a terminal command line as one possibility:
+
+    wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+    sudo apt install ./google-chrome-stable_current_amd64.deb
+
+Chrome can also be launched from the command-line by typing `google-chrome`. You can also launch it from the activity bar.
+
+As soon as Ubuntu releases a fix for this we will update the featured image. 
