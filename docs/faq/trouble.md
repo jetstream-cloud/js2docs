@@ -66,3 +66,15 @@ Chrome can also be launched from the command-line by typing `google-chrome`. You
 As soon as Ubuntu releases a fix for this we will update the featured image.
 
 Another option if you do prefer Firefox is to use Ubuntu 20.
+
+### My instance/image that was migrated to a bootable volume won't mount on Exosphere
+
+Most instances that were migrated from Jetstream1 were partitioned whereas volumes on Jetstream2 are generally the entire device. What this means is that in almost all cases, migrated instances will have their information on */dev/sdb1* assuming it's the first volume you're attaching to an instance.
+
+Exosphere, in the quest to keep things simple, only tries to mount the entire devices, e.g. */dev/sdb*, which means it won't find the data on /dev/sdb1.
+
+The best way to work around this is to use Horizon to attach the volume and then do
+
+    sudo mount /dev/sdb1 /mnt
+
+and you'll be able to see the contents of the volume in /mnt
