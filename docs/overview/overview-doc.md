@@ -16,7 +16,7 @@ The operational software environment is based on [OpenStack](https://www.opensta
 
 ### Accessing Jetstream ###
 
-Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) or [Cacao](../ui/cacao/intro.md) web interfaces using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
+Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) web interface using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
 
 > Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
 
