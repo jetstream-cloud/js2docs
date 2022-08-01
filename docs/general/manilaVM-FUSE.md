@@ -1,6 +1,14 @@
 # Configuring a Ceph FUSE client
 
-While most clients will use the native kernel ceph client, there may be times where you want to use the FUSE client for rate limiting or
+While most clients will use the native kernel ceph client, there may be times where you want to use the FUSE client for rate limiting or if requested by the Jetstream2 team.
+
+You will need the `ceph-fuse` rpm if not already installed. You can install it with:
+
+    dnf install ceph-fuse
+
+for Redhat-Based OSes like Rocky and Alma. For Ubuntu, you can install it with:
+
+    apt-get install ceph-fuse
 
 To mount the manila share created previously you need to edit the three files listed below :
 
