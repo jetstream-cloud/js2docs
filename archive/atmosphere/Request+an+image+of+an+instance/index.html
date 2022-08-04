@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/" />
-      <link rel="shortcut icon" href="../../../images/Jetstream2_icon_64px.jpg" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
     <title>Request an image of an instance - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
@@ -323,7 +323,13 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
@@ -399,7 +405,7 @@
 <hr />
 <h4 id="image-request-image-info">Image Request - Image Info<a class="headerlink" href="#image-request-image-info" title="Permanent link">&para;</a></h4>
 <p>The information you provide on here will help others to discover this image.</p>
-<p><img _=";" align="right" alt="" src="../../img/image_request_image_info.webp?w=100" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_image_info.webp?w=100" width="300" /></p>
 <ul>
 <li><strong>Create or Update? (optional)</strong>: The default is to create a new image, but if you are updating an image to a new revision, you can uncheck this box and it will be created as a new version of the same image. You can see examples of this with the Ubuntu 18.04 Featured image on Atmosphere. We recommend you update the image when possible.</li>
 <li><strong>New Image Name (required)</strong>: Enter the name, up to 30 characters, to assign to the new image. Please DO NOT use the name of an existing featured image. Please be mindful of re-using the name of one of your own existing images.</li>
@@ -411,7 +417,7 @@
 <hr />
 <h4 id="image-request-version-info">Image Request - Version Info<a class="headerlink" href="#image-request-version-info" title="Permanent link">&para;</a></h4>
 <p>Versioning is an important part of the imaging process.  Use this information to track how your image changes over time.  This information will also be helpful to others that wish to use your image.</p>
-<p><img _=";" align="right" alt="" src="../../img/image_request_version_info.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_version_info.webp" width="300" /></p>
 <ul>
 <li><strong>New Version Name (required)</strong>: Enter the new (unique) name or number of the image.  Versioning helps users understand how your changes relate to the overall progress of the Application.  Versions are alphanumeric (e.g. 2.0-stable, 2.1-beta, 2.2-testing).  Limit the name to 30 characters and keep versioning consistent.</li>
 <li><strong>Change Log (required)</strong>: Concisely describe what you&rsquo;ve changed in this specific version.  This description will help users understand how your application as changed over time.</li>
@@ -420,7 +426,7 @@
 <p></br></br></br></br></br></br></p>
 <hr />
 <h4 id="image-request-provider">Image Request - Provider<a class="headerlink" href="#image-request-provider" title="Permanent link">&para;</a></h4>
-<p><img _=";" align="right" alt="" src="../../img/image_request_provider.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_provider.webp" width="300" /></p>
 <ul>
 <li>Select the cloud provider to use for the image.  If you would like the image to be available on multiple clouds, email help@jetstream-cloud.org.</li>
 <li>Indicate minimum CPU and memory requirements (optional).</li>
@@ -429,7 +435,7 @@
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <h4 id="image-request-privacy">Image Request - Privacy<a class="headerlink" href="#image-request-privacy" title="Permanent link">&para;</a></h4>
-<p><img _=";" align="right" alt="" src="../../img/image_request_privacy.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_privacy.webp" width="300" /></p>
 <ul>
 <li>Select the visibility for the image:<ul>
 <li><strong>Public</strong>: The image will be visible to all users and anyone will be able to launch it.</li>
@@ -448,7 +454,7 @@
 <p></br></br></br></br></br></br></p>
 <hr />
 <h4 id="image-request-exclude-files-advanced-option">Image Request - Exclude Files (advanced option)<a class="headerlink" href="#image-request-exclude-files-advanced-option" title="Permanent link">&para;</a></h4>
-<p><img _=";" align="right" alt="" src="../../img/image_request_exclude_files.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_exclude_files.webp" width="300" /></p>
 <p>Note the list of directories that will automatically be excluded form the image:</p>
 <pre><code>/home/
 /mnt/
@@ -459,7 +465,7 @@
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <h4 id="image-request-boot-scripts-licenses-advanced-option">Image Request - Boot Scripts &amp; Licenses (advanced option)<a class="headerlink" href="#image-request-boot-scripts-licenses-advanced-option" title="Permanent link">&para;</a></h4>
-<p><img _=";" align="right" alt="" src="../../img/image_request_boot_scripts.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_boot_scripts.webp" width="300" /></p>
 <p>Deployment scripts are executed when a user launches the image and each time an instance is &lsquo;Started&rsquo;, &lsquo;Resumed&rsquo;, or &lsquo;Restarted&rsquo;.  These scripts should be able to handled being run multiple times without adverse effects.  </p>
 <p>Click <strong>Next</strong> to continue to the next screen without adding a new script or a software license.</p>
 <ul>
@@ -483,7 +489,7 @@
 <p></br></br></br></br></br></br></p>
 <hr />
 <h4 id="image-request-review">Image Request - Review<a class="headerlink" href="#image-request-review" title="Permanent link">&para;</a></h4>
-<p><img _=";" align="right" alt="" src="../../img/image_request_review.webp" width="300" /></p>
+<p><img _=";" align="right" alt="" src="../../images/image_request_review.webp" width="300" /></p>
 <p>On the Review screen, verify the information entered on the previous screens.  Click Back to return to the previous screens and make corrections.  When all is OK, click the checkbox certifying that the license does not contain any license-restricted software that is prohibited from being distributed within a virtual or cloud environment..</p>
 <ul>
 <li>Click <strong>Request Image</strong>.</li>

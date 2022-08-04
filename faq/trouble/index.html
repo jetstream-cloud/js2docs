@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/faq/trouble/" />
-      <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
     <title>Troubleshooting - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
@@ -323,7 +323,13 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
@@ -404,6 +410,24 @@
 <p>In the meantime, please only use stop or shelve with GPU instances.</p>
 <h3 id="i-cant-ping-or-reach-a-publicfloating-ip-from-an-internal-non-routed-host">I can&rsquo;t ping or reach a public/floating IP from an internal, non-routed host<a class="headerlink" href="#i-cant-ping-or-reach-a-publicfloating-ip-from-an-internal-non-routed-host" title="Permanent link">&para;</a></h3>
 <p>This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.</p>
+<p>To communicate from an internal only Jetstream2 instance to an instance on Jetstream2 with a floating IP, you&rsquo;ll need to use the internal networking address or name.</p>
+<h3 id="firefox-doesnt-work-in-ubuntu-22">Firefox doesn&rsquo;t work in Ubuntu 22<a class="headerlink" href="#firefox-doesnt-work-in-ubuntu-22" title="Permanent link">&para;</a></h3>
+<p>This is a known issue with the Ubuntu 22 distribution. You can read about the bug report and its status <a href="https://bugs.launchpad.net/ubuntu/+source/snapd/+bug/1951491" target="_blank">in this Ubuntu launchpad</a></p>
+<p>The only easy work around for the moment is to use another web browser. You can install Chrome from a terminal command line as one possibility:</p>
+<pre><code>wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo apt install ./google-chrome-stable_current_amd64.deb
+</code></pre>
+<p>Chrome can also be launched from the command-line by typing <code>google-chrome</code>. You can also launch it from the activity bar.</p>
+<p>As soon as Ubuntu releases a fix for this we will update the featured image.</p>
+<p>Another option if you do prefer Firefox is to use Ubuntu 20.</p>
+<h3 id="my-instanceimage-that-was-migrated-to-a-bootable-volume-wont-mount-on-exosphere">My instance/image that was migrated to a bootable volume won&rsquo;t mount on Exosphere<a class="headerlink" href="#my-instanceimage-that-was-migrated-to-a-bootable-volume-wont-mount-on-exosphere" title="Permanent link">&para;</a></h3>
+<p>Most instances that were migrated from Jetstream1 were partitioned whereas volumes on Jetstream2 are generally the entire device. What this means is that in almost all cases, migrated instances will have their information on <em>/dev/sdb1</em> assuming it&rsquo;s the first volume you&rsquo;re attaching to an instance.</p>
+<p>Exosphere, in the quest to keep things simple, only tries to mount the entire devices, e.g. <em>/dev/sdb</em>, which means it won&rsquo;t find the data on /dev/sdb1.</p>
+<p>The best way to work around this is to use Horizon to attach the volume and then do</p>
+<pre><code>sudo mount /dev/sdb1 /mnt
+</code></pre>
+<p>and you&rsquo;ll be able to see the contents of the volume in /mnt</p>
               
             </div>
           </div><footer>

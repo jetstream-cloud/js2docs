@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/advanced_terraform/" />
-      <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
-    <title>Advanced Terraform - Jetstream2 Documentation</title>
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Advanced Terraform Topics - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link href="../../css/custom.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Advanced Terraform";
+        var mkdocs_page_name = "Advanced Terraform Topics";
         var mkdocs_page_input_path = "general/advanced_terraform.md";
         var mkdocs_page_url = "/general/advanced_terraform/";
       </script>
@@ -306,7 +306,7 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a>
@@ -323,7 +323,13 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Terraform</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Advanced Terraform Topics</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
@@ -358,7 +364,9 @@
       <div class="wy-nav-content">
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li><li>Advanced Terraform</li>
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Advanced Capabilities &raquo;</li>
+          <li>Terraform &raquo;</li><li>Advanced Terraform Topics</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/advanced_terraform.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -372,11 +380,10 @@
               
                 <h1 id="advanced-terraform">Advanced Terraform<a class="headerlink" href="#advanced-terraform" title="Permanent link">&para;</a></h1>
 <p>This topics is for more advanced users looking to expand what terraform can do.
-The following examples assume that you have created an app credential and have installed terraform.</p>
-<p>The following link is to a repo with some more examples of what terraform can do.</p>
-<pre><code>https://github.com/wellsaar/terraform-js2
-</code></pre>
-<p>The following is a brief overview of the code.</p>
+The following examples assume that you have created an app credential and have <a href="../terraform/">installed terraform</a>.</p>
+<p>The following link is to a repo with some more examples of what terraform can do:</p>
+<p><a href="https://github.com/wellsaar/terraform-js2" target="_blank">https://github.com/wellsaar/terraform-js2</a></p>
+<p>A brief overview of the code is below:</p>
 <h1 id="nginx-and-mariadb">Nginx and Mariadb<a class="headerlink" href="#nginx-and-mariadb" title="Permanent link">&para;</a></h1>
 <p>This creates an ubuntu 20 server with nginx and mariadb installed and running, with a simple &ldquo;Hello World!&rdquo; webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.</p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
@@ -397,9 +404,21 @@ The following examples assume that you have created an app credential and have i
 <pre><code>shiny.(Jetstream Allocation Name).projects.jetstream-cloud.org
 </code></pre>
 <p>If you would like to change your flavor, see above.</p>
+<h1 id="kubernetes-cluster">Kubernetes Cluster<a class="headerlink" href="#kubernetes-cluster" title="Permanent link">&para;</a></h1>
+<p>This repo located below will setup a Kubernetes cluster with the amount of followers you specific.</p>
+<p>Currently this is running on Ubuntu 20 and installs the latest version of kubernetes.</p>
+<pre><code>https://github.com/wellsaar/terraform-js2-k8cluster
+</code></pre>
+<h2 id="requirements_2">Requirements<a class="headerlink" href="#requirements_2" title="Permanent link">&para;</a></h2>
+<p>Editing k8.tfvars with your public key as well.
+If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.</p>
               
             </div>
           </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../terraform/" class="btn btn-neutral float-left" title="Terraform on Jetstream2"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../virtualclusters/" class="btn btn-neutral float-right" title="Virtual Clusters on Jetstream2">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
 
   <hr/>
 
@@ -426,6 +445,10 @@ The following examples assume that you have created an app credential and have i
         </span>
     
     
+      <span><a href="../terraform/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../virtualclusters/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

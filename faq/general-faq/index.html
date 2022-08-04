@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/faq/general-faq/" />
-      <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
     <title>General FAQs - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
@@ -323,7 +323,13 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
@@ -384,7 +390,7 @@
 <hr />
 <h2 id="general-faqs">General FAQs<a class="headerlink" href="#general-faqs" title="Permanent link">&para;</a></h2>
 <h3 id="how-do-i-cite-jetstream2">How do I cite Jetstream2 ?<a class="headerlink" href="#how-do-i-cite-jetstream2" title="Permanent link">&para;</a></h3>
-<p>The Jetstream2 team requests that all researchers using Jetstream2 cite us in any publications that utilize results that were computed or created on Jetstream2. We keep the most up to date citation information here - <a href="https://jetstream-cloud.org/research/index.html#cite-jetstream" target="_blank">Jetstream2 Citation Information</a> </p>
+<p>The Jetstream2 team requests that all researchers using Jetstream2 cite us in any publications that utilize results that were computed or created on Jetstream2. We keep the most up to date citation information here - <a href="https://jetstream-cloud.org/research/index.html#cite-jetstream" target="_blank">Jetstream2 Citation Information</a></p>
 <h3 id="i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me">I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?<a class="headerlink" href="#i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me" title="Permanent link">&para;</a></h3>
 <p>In OpenStack, flavors define the compute, memory, and storage capacity of instances. We may also refer to it in support tickets or documentation as the VM&rsquo;s size.</p>
 <p>We won&rsquo;t create custom flavors, but there are ways to get larger root disks. You can <a href="../../general/vmsizes/">review the flavors</a> and see if moving up from one of the smaller VMs to a slightly larger one would yield a larger root disk. The other option is to use a custom sized root disk using what Openstack calls &ldquo;boot from volume&rdquo;, or a &ldquo;volume-backed&rdquo; instance. What this means is that instead of an ephemeral boot disk for the instance, a volume is used to be the root disk.</p>
@@ -421,6 +427,40 @@
 <h3 id="can-i-set-the-password-for-a-user-on-my-virtual-machine">Can I set the password for a user on my virtual machine?<a class="headerlink" href="#can-i-set-the-password-for-a-user-on-my-virtual-machine" title="Permanent link">&para;</a></h3>
 <p>We generally don&rsquo;t recommend using password authentication on Jetstream2, recommending that you use SSH keys for access. That said, if you need to set a password for console access or for some other reason, you can do it like this:</p>
 <pre><code>sudo passwd *username*
+</code></pre>
+<hr />
+<h3 id="how-can-i-get-my-public-ip-number-from-my-vm">How can I get my public IP number from my VM ?<a class="headerlink" href="#how-can-i-get-my-public-ip-number-from-my-vm" title="Permanent link">&para;</a></h3>
+<p>If your VM has a public IP address and you need to find that IP (and don’t have ready access to the Jetstream2 interfaces), use wget or curl from the command line to get your public IP:</p>
+<pre><code>wget http://169.254.169.254/latest/meta-data/public-ipv4 -qO -
+wget http://ipinfo.io/ip -qO -
+curl http://169.254.169.254/latest/meta-data/public-ipv4
+curl http://ipinfo.io/ip
+</code></pre>
+<p>*Note: http://169.254.169.254/latest/meta-data/public-ipv4 works even in conditions in which external DNS servers are not accessible.</p>
+<hr />
+<h3 id="how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance">How do I get a jetstream-cloud.org dns name for my instance?<a class="headerlink" href="#how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 is using OpenStack Designate to set dns names for instances. We were proactive and set the auto_allocated network that most Jetstream2 users will use, but if you&rsquo;ve created a new network and want an auto-created DNS A record, you&rsquo;ll need to do this from the command line:</p>
+<pre><code>openstack network set --dns-domain tg-xxxxxxxxx.projects.jetstream-cloud.org. network-name-or-UUID
+</code></pre>
+<p>where the tg-xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you&rsquo;ve created in that allocation.</p>
+<p>This FAQ topic may move to its own page in the future.</p>
+<hr />
+<h3 id="how-do-i-keep-a-program-running-on-a-vm-even-if-i-log-out-or-get-disconnected">How do I keep a program running on a VM even if I log out or get disconnected?<a class="headerlink" href="#how-do-i-keep-a-program-running-on-a-vm-even-if-i-log-out-or-get-disconnected" title="Permanent link">&para;</a></h3>
+<p>If you want to start a workflow and have it run, that&rsquo;s a unix capability.</p>
+<p>Tutorials like <a href="https://linuxize.com/post/how-to-run-linux-commands-in-background/" target="_blank">How to Run Linux Commands in Background</a></p>
+<p>show a number of methods shown here on how to start a program and leave it running, even if your connection disconnects.</p>
+<p>I&rsquo;d suggest looking at the nohup command. As that page says:</p>
+<p><em>&ldquo;Another way to keep a process running after the shell exit is to use nohup.</em></p>
+<p><em>The nohup command executes another program specified as its argument and ignores all SIGHUP (hangup) signals. SIGHUP is a signal that is sent to a process when its controlling terminal is closed.&rdquo;</em></p>
+<p>To run a command in the background using the nohup command, type:</p>
+<pre><code>nohup command &amp;
+</code></pre>
+<p>If you want to log any terminal output to a file, you can use one of these commands below.</p>
+<p>To redirect standard output and standard error to different files:</p>
+<pre><code>nohup myprogram &gt; myprogram.out 2&gt; myprogram.err
+</code></pre>
+<p>or to the same file:</p>
+<pre><code>nohup myprogram &gt; myprogram.out 2&gt;&amp;1
 </code></pre>
               
             </div>

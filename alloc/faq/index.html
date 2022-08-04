@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/alloc/faq/" />
-      <link rel="shortcut icon" href="../../images/Jetstream2_icon_64px.jpg" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
     <title>Frequently Asked Questions - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
@@ -323,7 +323,13 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
                   </li>
@@ -372,7 +378,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="jetstream2-allocations-faq">Jetstream2 Allocations FAQ<a class="headerlink" href="#jetstream2-allocations-faq" title="Permanent link">&para;</a></h1>
-<p><strong>1. Is there an overview of the types of allocations available as well as any restrictions those allocations have?</strong></p>
+<h4 id="is-there-an-overview-of-the-types-of-allocations-available-as-well-as-any-restrictions-those-allocations-have">Is there an overview of the types of allocations available as well as any restrictions those allocations have?<a class="headerlink" href="#is-there-an-overview-of-the-types-of-allocations-available-as-well-as-any-restrictions-those-allocations-have" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>The <a href="https://www.xsede.org/for-users/getting-started" target="_blank">Getting Started guide</a> describes the process of getting onto XSEDE, applying for allocations and using XSEDE resources. To review the types of allocations XSEDE and the process to get an allocation, here are some links you might find useful:</p>
 <ul>
@@ -384,13 +390,13 @@
 </ul>
 </blockquote>
 <hr />
-<p><strong>2.  Is there a example or demonstration of how to get an allocation that I could follow?</strong></p>
+<h4 id="is-there-a-example-or-demonstration-of-how-to-get-an-allocation-that-i-could-follow">Is there a example or demonstration of how to get an allocation that I could follow?<a class="headerlink" href="#is-there-a-example-or-demonstration-of-how-to-get-an-allocation-that-i-could-follow" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>The <a href="../research/">Research Allocation</a> page has information and links for writing a successful Jetstream2 research allocation request.</p>
 <p>There is a Cornell Virtual Workshop (CVW) on getting a Research Allocation for Jetstream here: https://cvw.cac.cornell.edu/JetstreamReq/. It is not updated for Jetstream2 though the principles are the same.</p>
 </blockquote>
 <hr />
-<p><strong>3. How do I let other XSEDE accounts use my allocation?</strong></p>
+<h4 id="how-do-i-let-other-xsede-accounts-use-my-allocation">How do I let other XSEDE accounts use my allocation?<a class="headerlink" href="#how-do-i-let-other-xsede-accounts-use-my-allocation" title="Permanent link">&para;</a></h4>
 <p>You can add users to (or remove them from) your XSEDE allocation via the XSEDE User Portal. Users must have already created their XSEDE accounts before they can be added to an allocation.</p>
 <blockquote>
 <p>To add users to, or remove them from, an active Extreme Science and Engineering Discovery Environment (<a href="https://www.xsede.org/documents/527334/695761/what-is-XSEDE.pdf" target="_blank">XSEDE</a>) allocation, the principal investigator, co-principal investigator, or <a href="https://portal.xsede.org/allocations/managing#manageusers" target="_blank">allocation manager</a> can follow the instructions here:</p>
@@ -403,7 +409,7 @@
 <p><strong>It can take up to four hours for users added to an allocation to become active.</strong></p>
 </div>
 <hr />
-<p><strong>4. How often can I get a startup allocation?</strong></p>
+<h4 id="how-often-can-i-get-a-startup-allocation">How often can I get a startup allocation?<a class="headerlink" href="#how-often-can-i-get-a-startup-allocation" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>Applications for startup allocations will only be accepted once. If you have modest needs that are equal or less than startup values, you may renew your startup allocation. If you need a larger allocation, it is best to apply for a <a href="https://portal.xsede.org/allocations/research" target="_blank">research allocation</a>.</p>
 <p>Maximum Startup/Campus Champion Allocation values for each resource are:<br>
@@ -416,18 +422,22 @@
 </ul>
 </blockquote>
 <hr />
-<p><strong>5. Can I renew a startup allocation?</strong></p>
+<h4 id="can-i-renew-a-startup-allocation">Can I renew a startup allocation?<a class="headerlink" href="#can-i-renew-a-startup-allocation" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>If your SU needs are equal to or less than the maximum startup values (see item 4 just above) you may renew your startup allocation. If you need a signficantly larger amound of SUs for any of the resources, you will need to pursue a <a href="../research/">research allocation</a></p>
 <p>Startup allocations may be renewed at 30 days or less before expiration. Please refer to <a href="https://docs.jetstream-cloud.org/alloc/renew-extend/#instructions-for-requesting-a-renewal">Instructions for requesting a renewal</a> for more information.</p>
 </blockquote>
 <hr />
-<p><strong>6. I&rsquo;m running out of Service Units (SUs) or storage. How do I request more?</strong></p>
+<h4 id="im-running-out-of-service-units-sus-or-storage-how-do-i-request-more">I&rsquo;m running out of Service Units (SUs) or storage. How do I request more?<a class="headerlink" href="#im-running-out-of-service-units-sus-or-storage-how-do-i-request-more" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see <a href="../supplement/" target="_blank">Requesting additional SUs, other Jetstream resources, or storage for Jetstream &ndash; Supplemental Allocations</a>.</p>
 </blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.</p>
+</div>
 <hr />
-<p><strong>7. I am at or exceeding the quota limits for my allocation.</strong></p>
+<h4 id="i-am-at-or-exceeding-the-quota-limits-for-my-allocation">I am at or exceeding the quota limits for my allocation.<a class="headerlink" href="#i-am-at-or-exceeding-the-quota-limits-for-my-allocation" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>How do I request additional resources such as CPUs and memory?</p>
 <p>You may contact <em>help@xsede.org</em> or <em>help@jetstream-cloud.org</em> with those requests.</p>
@@ -435,7 +445,7 @@
 <p>For other allocation types, justification will be required and will be granted at the discretion of the Jetstream2 staff based on the justification and available resources. Please note that large memory and GPU resources are limited so requests for those will require strong justification for success or partial success. We strive to make resources available to all researchers that require them, so striking a balance between the needs of one versus many is often necessary.</p>
 </blockquote>
 <hr />
-<p><strong>8. Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?</strong></p>
+<h4 id="can-you-extend-my-allocation-for-me-or-give-me-access-to-my-allocation-for-just-a-few-daysweeksmonths-more">Can you extend my allocation for me or give me access to my allocation for just a few days/weeks/months more?<a class="headerlink" href="#can-you-extend-my-allocation-for-me-or-give-me-access-to-my-allocation-for-just-a-few-daysweeksmonths-more" title="Permanent link">&para;</a></h4>
 <blockquote>
 <p>If your allocation is expired or out of SUs, you may request an extension, renewal, or supplement. Please see one of the following links:</p>
 <ul>
@@ -447,6 +457,15 @@
 </li>
 </ul>
 <p>Jetstream2 staff are unable to take these actions on your behalf.</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Extensions only add time. If you need more or different resources, you need to pursue a supplement.</p>
+</div>
+<hr />
+<h4 id="my-pi-got-a-jetstream2-supplement-added-to-our-existing-allocation-but-we-cannot-access-exosphere-or-horizon">My PI got a Jetstream2 supplement added to our existing allocation but we cannot access Exosphere or Horizon<a class="headerlink" href="#my-pi-got-a-jetstream2-supplement-added-to-our-existing-allocation-but-we-cannot-access-exosphere-or-horizon" title="Permanent link">&para;</a></h4>
+<blockquote>
+<p>When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your <a href="https://portal.xsede.org/group/xup/allocations/usage" target="_blank">Allocations/Usage page</a> and select the &ldquo;Manage Users&rdquo; button for the appropriate project.</p>
 </blockquote>
               
             </div>
