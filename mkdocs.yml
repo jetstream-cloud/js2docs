@@ -48,6 +48,9 @@ markdown_extensions:
 plugins:
     - search:
         indexing: 'full'
+    - exclude-search:
+        exclude:
+          - z-archive/*
 
 extra:
     consent:
