@@ -24,9 +24,9 @@ Researchers on JS1 wishing to migrate to JS2 should take note of:
     * [Software Collection](#SoftwareCollection) </br><br>
 
 2. [How to migrate from JS1 to JS2](migration_overview.md)
-    * [Allocations](/migration/how_to_migrate/#Allocations)
-    * [How to move data](/migration/how_to_migrate/#MoveData)
-    * [Where to find help](/migration/how_to_migrate/#GetHelp)
+    * [Allocations](/z-archive/migration/how_to_migrate/#Allocations)
+    * [How to move data](/z-archive/migration/how_to_migrate/#MoveData)
+    * [Where to find help](/z-archive/migration/how_to_migrate/#GetHelp)
 
 ## Critical differences JS2 and JS1 <a name="CriticalDifferences"></a>
 
@@ -67,3 +67,7 @@ Rather than pack each and every virtual machine with research software, Jetstrea
 
 The use of the JS2 Software Collection is described here:</br>
 [https://docs.jetstream-cloud.org/general/usingsoftware/#using-the-jetstream2-software-collection](/general/usingsoftware/#using-the-jetstream2-software-collection)
+
+---
+
+[Next: How to Migrate> ](/z-archive/migration/how_to_migrate/)

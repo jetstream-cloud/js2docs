@@ -11,6 +11,16 @@ To allow access to your VM for things like SSH, you will need to create a securi
 
 This will walk you through creating a basic security group in Horizon and adding a couple of simple access rules.
 
+---
+
+![](../../../images/Security-group-create-group.png){ align=right ; width=50% }
+
+In the popup box that comes up, you'll give your new security group a name (we suggest something like *my-username-ssh-and-icmp*) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.
+
+</br></br></br></br></br></br></br></br>
+
+---
+
 <table>
   <tr>
     <th style="width: 40%; word-wrap: break-word;" !important>Action</th>
@@ -27,7 +37,7 @@ This will walk you through creating a basic security group in Horizon and adding
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>In the popup box that comes up, you'll give your new security group a name (we suggest something like *my-username-ssh-and-icmp*) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.</td>
+    <td style="width: 40%; word-  wrap: break-word;" !important>In the popup box that comes up, you'll give your new security group a name (we suggest something like *my-username-ssh-and-icmp*) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.</td>
     <td><a href="../../../images/Security-group-create-group.png" target=_blank><img src="../../../images/Security-group-create-group.png"></a>
     </td>
   </tr>
@@ -47,7 +57,7 @@ This will walk you through creating a basic security group in Horizon and adding
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>We'll fill in the other details needed. We do recommend putting in a description with what the rule does so it's easy to see at a glance. We'll also select CIDR as the remote type and then set *0.0.0.0/0* as the CIDR. This allows all traffic to the SSH port. <p><p>You can make that be a single IP or a specific CIDR block. <p><p>In general, limiting access to specific CIDR blocks or IPs is best.</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>We'll fill in the other details needed. We do recommend putting in a description with what the rule does so it's easy to see at a glance. We'll also select CIDR as the remote type and then set *0.0.0.0/0* as the CIDR. This allows all traffic to the SSH port. <p><p>You can make that be a single IP or a specific CIDR block. <p><p>In general, limiting access to specific CIDR blocks or IPs is best.</br></br>For example, you could specify *129.114.36.0/22* to limit connections to only Jetstream2 VMs at the TACC regional location.</td>
     <td><a href="../../../images/Security-group-add-rule-details.png" target=_blank><img src="../../../images/Security-group-add-rule-details.png"></a>
     </td>
   </tr>

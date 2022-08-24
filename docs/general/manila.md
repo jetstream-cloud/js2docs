@@ -1,9 +1,10 @@
 # Manila - Filesystems-as-a-service - on Jetstream2
 
-Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.
-With Manila, you can have multiple instances on Jetstream2 share a filesystem.
+**Use**: With Manila, you can have multiple instances on Jetstream2 share a filesystem.
 
-If you are not using a Jetstream2 Featured image, you'll need to make sure you have these packages installed on your instance: ceph-commons and ceph-fuse
+**Description**: [Manila](https://docs.openstack.org/manila/) is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.
+
+If you are not using a Jetstream2 Featured image, you'll need to make sure you have these packages installed on your instance: `ceph-commons` and `ceph-fuse`
 
 You can set up and manage Manila shares via Horizon and the CLI presently:
 

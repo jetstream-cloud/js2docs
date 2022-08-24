@@ -46,4 +46,4 @@ Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstr
 
 ### Jetstream1 users may wish to review:###
 
-* [Migration](/migration/migration_overview)
+* [Migration](/z-archive/migration/migration_overview)

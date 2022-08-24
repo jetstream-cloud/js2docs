@@ -2,7 +2,7 @@
 
 ## Create a Network
 
-![](/img/horizon_create_network.webp){ align=right ; width=50% }
+![](/images/horizon_create_network.webp){ align=right ; width=50% }
 
 1. Click on `Project` → `Network` → `Network Topology` → `+Create Network`
 
@@ -10,7 +10,7 @@
 
 ---
 
-![](/img/horizon_network_name.webp){ align=right ; width=50% }
+![](/images/horizon_network_name.webp){ align=right ; width=50% }
 
 2. Enter a network name, for example, `<username>_net`.
 
@@ -20,7 +20,7 @@
 
 ---
 
-![](/img/horizon_subnet.webp){ align=right ; width=50% }
+![](/images/horizon_subnet.webp){ align=right ; width=50% }
 
 3. Enter a subnet name, e.g. `<username>`_subnet, and a network address, e.g. `10.1.1.0/24`, and a gateway address, e.g. `10.1.1.1`.
 
@@ -36,7 +36,7 @@
 
 ---
 
-![](/img/horizon_network_dhcp.webp){ align=right ; width=50% }
+![](/images/horizon_network_dhcp.webp){ align=right ; width=50% }
 
 4. Click `Create` to create the new network.
 
@@ -48,7 +48,7 @@
 
 ---
 
-![](/img/horizon_create_router.jpg){ align=right ; width=50% }
+![](/images/horizon_create_router.jpg){ align=right ; width=50% }
 
 5. Click on `+Create Router`.
 
@@ -56,7 +56,7 @@
 
 ---
 
-![](/img/horizon_router_name.jpg){ align=right ; width=50% }
+![](/images/horizon_router_name.jpg){ align=right ; width=50% }
 
 6. Enter a router name, for example, `<username>_router`.
 
@@ -66,7 +66,7 @@
 
 ---
 
-![](/img/horizon_router_name.jpg){ align=right ; width=50% }
+![](/images/horizon_router_name.jpg){ align=right ; width=50% }
 
 6. Enter a router name, for example, `<username>_router`.
 
@@ -77,19 +77,19 @@
 
 ---
 
-![](/img/horizon_net_top_graph.webp){ align=right ; width=50% }
+![](/images/horizon_net_top_graph.webp){ align=right ; width=50% }
 
 7. You'll need to connect your private network to the router. Make sure  you're in Graph mode (vs Topology mode). Your screen should look like the top image on the right. If it looks like bars it's in Topology mode, click the `Graph` tab under the `Network Topology` page heading to put it into Topology mode
 
 * Click on the router you just created then `+Add Interface`.
 
-![](/img/horizon_net_interface.jpg){ align=right ; width=50% }
+![](/images/horizon_net_interface.jpg){ align=right ; width=50% }
 
 </br></br></br></br></br></br></br></br>
 
 ---
 
-![](/img/horizon_router-add.png){ align=right ; width=50% }
+![](/images/horizon_router-add.png){ align=right ; width=50% }
 
 8. Select the subnet you just created from the dropdown list.
 
@@ -99,7 +99,7 @@
 
 ---
 
-![](/img/horizon_network_final.webp){ align=right ; width=30% }
+![](/images/horizon_network_final.webp){ align=right ; width=30% }
 
 9. The network should now be connected to the new router.  The end result will look similar to the diagram.
 

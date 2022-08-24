@@ -2,7 +2,7 @@
 
 ## Upload SSH Key
 
-![](/img/horizon_keypair.webp){ align=right ; width=50% }
+![](/images/horizon_keypair.webp){ align=right ; width=50% }
 
 1. You will need to upload at least 1 ssh public key **BEFORE** deploying an instance in order to access the instances you create. This assumes you already have an SSH key pair that you use. If not, you can create a key pair via this screen.
 
