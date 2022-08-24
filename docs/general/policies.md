@@ -50,7 +50,7 @@ restrictions.
 * Only g3.* flavors should be run on the Jetstream2-GPU resource
 * Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
 * Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
-* At some future point, if GPU or large memory resources are scarce, we may limit runtime to two weeks spans or institute some form VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
+* At some future point, if GPU or large memory resources are scarce, we may limit runtime to two week spans or institute some form VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
 
 ### Allocation Related Policies
 
@@ -68,6 +68,6 @@ Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) ca
 
 As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.
 
-### Network Quota Policies
+### Router Quota Policies
 
-By default, every project on Jetstream2 is started with a **network quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
+By default, every project on Jetstream2 is started with a **router quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
