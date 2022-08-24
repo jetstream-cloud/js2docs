@@ -23,24 +23,32 @@
 
 Jetstream2 is maintaining a system status and announcement site at <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a>
 
-Please visit that site for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list.
+Please visit that site for detailed system status information and planned maintenance announcements.
+
+##### Mailing list for outages and maintenance
+
+We also have a mailing list that receives system notices. All JS2 researchers, educators, and students get automatically added when they receive JS2 access. You may also subscribe by emailing *js2-users-l-subscribe AT list.iu.edu* or by contacting JS2 help to be added.
+
+##### Community chat
+
+We are also introducing a new community discussion site on the Matrix communication network: [https://matrix.to/#/#jetstream-cloud:matrix.org](https://matrix.to/#/#jetstream-cloud:matrix.org){target=_blank}. This allows JS2 researchers and students to communicate easily with each other. There are many client choices, but we might suggest using [Element](https://element.io/){target=_blank} via a web browser or app (available for iOS, Android, Mac, Windows, and Linux). While the discussion site is not an official support channel, Jetstream2 staff will participate during business hours and may answer questions found there. 
+
+The ticketing system is still the preferred mechanism for official support. That is available via help@jetstream-cloud.org or the contact form [https://jetstream-cloud.org/contact/index.html](https://jetstream-cloud.org/contact/index.html){target=_blank} for any questions not covered in the JS2 documentation. 
 
 ---
 
 ### XSEDE User News and Announcements
 
-[XSEDE User News](https://portal.xsede.org/user-news){target=_blank}) also is a source for XSEDE and Jetstream2 related news. We highly recommend that you consider adding the following news catagories via XSEDE User News:
+!!! caution "XSEDE End of Life"
 
-* Jetstream2 (Indiana)
-* Conferences
-* Education & Outreach
-* General User News
-* Training
-
-The XSEDE lists are generally low traffic and they do not share your information. You can change your preferences at any time via the [Manage XSEDE User News Email Subscription](https://portal.xsede.org/user-news/-/news/manage-subscription){target=_blank} page.
+     In a few short weeks, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022. More information may be found at [Advance to ACCESS](https://www.xsede.org/advancetoaccess){target=_blank}
 
 ---
 
 ### ACCESS User News and Announcements
 
-Links and information for ACCESS user news will be posted here as they become available.
+##### What Is ACCESS?
+
+The new NSF-funded program for advancing computational and data-intensive research – the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) – offers significant opportunities for community involvement. One of those is ensuring that requests for resource allocations meet the program's requirements in careful merit reviews by a diverse group of reviewers.
+
+More information will be provided here as it becomes generally available.

@@ -3,6 +3,14 @@
 Please note that any items with ***${something}*** are placeholders for your names that you used when you created the manila shares in Horizon or via the CLI.
 {: .note}
 
+### Pre-requisites
+
+All JS2 featured images will have the necessary Ceph repository and packages installed. You will need to make sure you have *ceph-common* from the Ceph repository. Instructions may be found here:
+
+[https://docs.ceph.com/en/quincy/install/get-packages/](https://docs.ceph.com/en/quincy/install/get-packages/){target=_blank}
+
+If you aren't comfortable with adding repositories and installing packages, we highly recommend that you use a featured image.
+
 ### 1. Create a mount point on your instance
 ```
 mkdir /mnt/ceph

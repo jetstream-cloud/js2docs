@@ -31,7 +31,7 @@ For a more in-depth description please see the [System Overview](/overview/overv
   </tbody>
 </table>
 
-Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information, planned maintenance announcements, and to subscribe to our downtime/outages mailing list. Also see, [Jetstream2 system status and information](overview/status.md) for additional news information.
+Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information and planned maintenance announcements. Also see, [Jetstream2 system status and information](overview/status.md) for additional information on our [outages and maintenance mailing list](overview/status.md#mailing-list-for-outages-and-maintenance) and [community chat](overview/status.md#community-chat).
 
 
 
@@ -43,7 +43,10 @@ Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstr
 * [Allocations Overview](alloc/overview.md)
 * [Exosphere Overview](ui/exo/exo.md)
 * [Troubleshooting and FAQ](faq/trouble.md) may have helpful suggestions for common problems.
+<<<<<<< HEAD
 
 ### Jetstream1 users may wish to review:###
 
 * [Migration](/z-archive/migration/migration_overview)
+=======
+>>>>>>> 8a09124437975fa1be19c85805748ec7a35b6d54
