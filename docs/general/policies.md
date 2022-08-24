@@ -68,6 +68,6 @@ Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) ca
 
 As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.
 
-### Network Quota Policies
+### Router Quota Policies
 
-By default, every project on Jetstream2 is started with a **network quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
+By default, every project on Jetstream2 is started with a **router quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
