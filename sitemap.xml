@@ -2,537 +2,507 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://docs.jetstream-cloud.org/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/education/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/faq/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/overview/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/renew-extend/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/research/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/startup/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/supplement/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/alloc/trial/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Customizing%2Band%2Bsaving%2Ba%2BVM/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Detach%2Ba%2BVolume/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Imaging%2BGuidelines/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/alloc/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/gateways/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/general-faq/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/js2-earlyops-faq/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/security/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/software/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/faq/trouble/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/adduser/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/advanced_terraform/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/bestpractice/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/docker/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/export/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/featured/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/federating/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/filetransfer/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/firewalls/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/galaxy/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/gateways/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/installsoftware/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/instancemgt/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/jupyter/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/k8scluster/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/k8smanage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/k8svolumes/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/kubernetes/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/licenses/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/manila/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/manilaVM-FUSE/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/manilaVM/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/minikube/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/object/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/policies/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/quotas/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/resources/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/software/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/storage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/sudo/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/terraform/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/usingsoftware/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/virtualclusters/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/vmsizes/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/windows/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/general/xsede/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/migration/how_to_migrate/</loc>
-         <lastmod>2022-08-04</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.jetstream-cloud.org/migration/migration_overview/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/config/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/keydiff/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/network/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/overview-doc/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/overview/status/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/alloc/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/credentials/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/deployments/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/getting_started/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/glossary/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/intro/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/login/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/manage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/overview/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/storage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/troubleshooting/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/ui_basics/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cacao/workspaces/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/clients/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/deleting/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/launch/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/manage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/managing-ssh-keys/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/manila/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/network/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/openrc/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/overview/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/security_group/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/snapshot-image/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/storage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/cli/troubleshooting/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/create_instance/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/exo-filetransfer/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/exo/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/login/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/manage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/push-button-cluster/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/storage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/exo/troubleshooting/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/intro/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/launch/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/manage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/manila/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/network/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/security_group/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/ssh_keys/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/storage/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://docs.jetstream-cloud.org/ui/horizon/troubleshooting/</loc>
-         <lastmod>2022-08-04</lastmod>
+         <lastmod>2022-08-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

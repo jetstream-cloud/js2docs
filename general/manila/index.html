@@ -47,13 +47,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../migration/migration_overview/">Overview</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../migration/how_to_migrate/">HOW-TO</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">FAQ</a>
@@ -336,21 +329,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../federating/">Federating Gateways on Jetstream2</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Archived Documentation</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Atmosphere on JS1</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Customizing%2Band%2Bsaving%2Ba%2BVM/">Customizing and saving a VM</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Imaging%2BGuidelines/">Imaging Guidelines</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/">Request an image of an instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Detach%2Ba%2BVolume/">Detach a Volume</a>
-                </li>
-    </ul>
-                  </li>
-              </ul>
       </div>
     </div>
     </nav>
@@ -367,7 +345,8 @@
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>General VM Operations &raquo;</li>
           <li>Storage &raquo;</li>
-          <li>Manila &raquo;</li><li>Manila</li>
+          <li>Manila &raquo;</li>
+      <li>Manila</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/manila.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -375,14 +354,13 @@
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
                 <h1 id="manila-filesystems-as-a-service-on-jetstream2">Manila - Filesystems-as-a-service - on Jetstream2<a class="headerlink" href="#manila-filesystems-as-a-service-on-jetstream2" title="Permanent link">&para;</a></h1>
-<p>Manila is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.
-With Manila, you can have multiple instances on Jetstream2 share a filesystem.</p>
-<p>If you are not using a Jetstream2 Featured image, you&rsquo;ll need to make sure you have these packages installed on your instance: ceph-commons and ceph-fuse</p>
+<p><strong>Use</strong>: With Manila, you can have multiple instances on Jetstream2 share a filesystem.</p>
+<p><strong>Description</strong>: <a href="https://docs.openstack.org/manila/">Manila</a> is the file share service project for OpenStack. Manila provides the management of file shares for example, NFS and CIFS, as a core service to OpenStack. Manila works with a variety of proprietary backend storage arrays and appliances, with open source distributed filesystems, as well as with a base Linux NFS or Samba server.</p>
+<p>If you are not using a Jetstream2 Featured image, you&rsquo;ll need to make sure you have these packages installed on your instance: <code>ceph-commons</code> and <code>ceph-fuse</code></p>
 <p>You can set up and manage Manila shares via Horizon and the CLI presently:</p>
 <ul>
 <li><a href="../../ui/horizon/manila/">Manila via Horizon</a></li>
@@ -408,7 +386,7 @@ With Manila, you can have multiple instances on Jetstream2 share a filesystem.</
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>Copyright © 2021 The Trustees of Indiana University</p>
+      <p>Copyright © 2022 The Trustees of Indiana University</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

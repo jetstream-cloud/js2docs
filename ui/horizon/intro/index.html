@@ -47,13 +47,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../migration/migration_overview/">Overview</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../migration/how_to_migrate/">HOW-TO</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
@@ -336,21 +329,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/federating/">Federating Gateways on Jetstream2</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Archived Documentation</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Atmosphere on JS1</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../../archive/atmosphere/Customizing%2Band%2Bsaving%2Ba%2BVM/">Customizing and saving a VM</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../../archive/atmosphere/Imaging%2BGuidelines/">Imaging Guidelines</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../../archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/">Request an image of an instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../../archive/atmosphere/Detach%2Ba%2BVolume/">Detach a Volume</a>
-                </li>
-    </ul>
-                  </li>
-              </ul>
       </div>
     </div>
     </nav>
@@ -366,7 +344,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Horizon &raquo;</li><li>Overview</li>
+          <li>Horizon &raquo;</li>
+      <li>Overview</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/horizon/intro.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -374,7 +353,6 @@
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
@@ -382,44 +360,63 @@
 <p>Horizon is a web-based GUI for interacting with the Openstack API. It is likely the most complete GUI for working with Openstack but isn&rsquo;t the fastest or most user-friendly. Almost all functionality that is available from the CLI is available in Horizon. <a href="../../exo/exo/">Exosphere</a> and <a href="../../cacao/intro/">Cacao</a> both provide subsets of Horizon functionality with more focus on ease of use.</p>
 <p>That said, there are times you may need the more complete features of Horizon instead of the other GUI interfaces. This documentation will cover the basics of launching, using, and managing instances, using various storage options in Horizon, using container orchestration engines, and other aspects of using Openstack.</p>
 <h3 id="logging-into-horizon">Logging into horizon<a class="headerlink" href="#logging-into-horizon" title="Permanent link">&para;</a></h3>
-<table>
-  <tr>
-    <th style="width: 40%; word-wrap: break-word;" !important>Action</th>
-    <th>Screenshot</th>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a><p><p>Make sure it says "XSEDE Globus Auth" in the Authenticate Using box.</td>
-    <td><a href="../../../images/JS2-Horizon-Login-Screen.png" target=_blank><img src="../../../images/JS2-Horizon-Login-Screen.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a Globus page to permit authorization.<p>
-    <p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.<p> </td>
-    <td><a href="../../../images/JS2-Globus-Screen.png" target=_blank><img src="../../../images/JS2-Globus-Screen.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>The next page should be the login screen for your credentials. We're showing the XSEDE login screen as our example.</td>
-    <td><a href="../../../images/JS2-XSEDE-Auth-Screen.png" target=_blank><img src="../../../images/JS2-XSEDE-Auth-Screen.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>If you're using two-factor auth with your credentials as XSEDE does, you'll likely get a Duo or Authenticator screen here.</td>
-    <td><a href="../../../images/JS2-XSEDE-Duo-Screen.png" target=_blank><img src="../../../images/JS2-XSEDE-Duo-Screen.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>You should be at the Horizon Dashboard home now.</td>
-    <td><a href="../../../images/JS2-Horizon-Home.png" target=_blank><img src="../../../images/JS2-Horizon-Home.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>If you are on multiple XSEDE allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "XSEDE * TG-XXXXXXXXX * IU". That will show allocations under "Projects".</td>
-    <td><a href="../../../images/JS2-Horizon-Change-Projects.png" target=_blank><img src="../../../images/JS2-Horizon-Change-Projects.png"></a>
-    </td>
-  </tr>
-</table>
-
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Login-Screen.png" width="50%" /></p>
+<ol>
+<li><strong>Navigate</strong></li>
+</ol>
+<ul>
+<li>Navigate to <a href="https://js2.jetstream-cloud.org">https://js2.jetstream-cloud.org</a>
+Make sure it says &ldquo;XSEDE Globus Auth&rdquo; in the Authenticate Using box.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-Globus-Screen.png" width="50%" /></p>
+<ol>
+<li><strong>Globus Authentication</strong></li>
+</ol>
+<ul>
+<li>The first time you log in you&rsquo;ll be directed to a Globus page to permit authorization.</br></br>
+If you have linked institutional, Google, Orcid, or other credentials, you&rsquo;ll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-XSEDE-Auth-Screen.png" width="50%" /></p>
+<ol>
+<li><strong>XSEDE credentials</strong></li>
+</ol>
+<ul>
+<li>The next page should be the login screen for your credentials. We&rsquo;re showing the XSEDE login screen as our example.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-XSEDE-Duo-Screen.png" width="50%" /></p>
+<ol>
+<li><strong>Multi Factor Authentication</strong></li>
+</ol>
+<ul>
+<li>If you&rsquo;re using multi-factor authentication with your credentials as XSEDE does, you&rsquo;ll likely get a Duo or an Authenticator screen here.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Home.png" width="50%" /></p>
+<ol>
+<li><strong>Horizon Dashboard</strong></li>
+</ol>
+<ul>
+<li>You should be at the Horizon Dashboard home now.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Change-Projects.png" width="50%" /></p>
+<ol>
+<li><strong>Project</strong></li>
+</ol>
+<ul>
+<li>If you are on multiple XSEDE allocations, you&rsquo;ll want to verify you&rsquo;re using the correct one and change to the correct one if you are not. </br></br>You do that by clicking at the top left next to the Jetstream2 logo where it has <code>XSEDE * AAA000000 * IU</code>. That will show allocations under &ldquo;Projects&rdquo;.</li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br>&lt;</p>
+<hr />
 <h3 id="getting-started-with-horizon">Getting started with Horizon<a class="headerlink" href="#getting-started-with-horizon" title="Permanent link">&para;</a></h3>
 <ul>
 <li><a href="../security_group/">Creating and managing security groups</a></li>
@@ -442,7 +439,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>Copyright © 2021 The Trustees of Indiana University</p>
+      <p>Copyright © 2022 The Trustees of Indiana University</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.

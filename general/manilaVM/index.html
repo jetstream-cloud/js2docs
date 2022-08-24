@@ -47,13 +47,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Migrating from Jetstream1 to Jetstream2</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../migration/migration_overview/">Overview</a>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../migration/how_to_migrate/">HOW-TO</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">FAQ</a>
@@ -336,21 +329,6 @@
                   <li class="toctree-l1"><a class="reference internal" href="../federating/">Federating Gateways on Jetstream2</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Archived Documentation</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Atmosphere on JS1</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Customizing%2Band%2Bsaving%2Ba%2BVM/">Customizing and saving a VM</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Imaging%2BGuidelines/">Imaging Guidelines</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Request%2Ban%2Bimage%2Bof%2Ban%2Binstance/">Request an image of an instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../archive/atmosphere/Detach%2Ba%2BVolume/">Detach a Volume</a>
-                </li>
-    </ul>
-                  </li>
-              </ul>
       </div>
     </div>
     </nav>
@@ -367,7 +345,8 @@
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>General VM Operations &raquo;</li>
           <li>Storage &raquo;</li>
-          <li>Manila &raquo;</li><li>Using Manila Share on a VM</li>
+          <li>Manila &raquo;</li>
+      <li>Using Manila Share on a VM</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/manilaVM.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -375,17 +354,20 @@
   </ul>
   <hr/>
 </div>
-
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
                 <h1 id="configuring-a-vm-to-use-manila-shares">Configuring a VM to use Manila Shares<a class="headerlink" href="#configuring-a-vm-to-use-manila-shares" title="Permanent link">&para;</a></h1>
-<p class="note">Please note that any items with <strong><em>$something</em></strong> are placeholders for your names that you used when you created the manila shares in Horizon or via the CLI.</p>
+<p class="note">Please note that any items with <strong><em>${something}</em></strong> are placeholders for your names that you used when you created the manila shares in Horizon or via the CLI.</p>
+<h3 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h3>
+<p>All JS2 featured images will have the necessary Ceph repository and packages installed. You will need to make sure you have <em>ceph-common</em> from the Ceph repository. Instructions may be found here:</p>
+<p><a href="https://docs.ceph.com/en/quincy/install/get-packages/" target="_blank">https://docs.ceph.com/en/quincy/install/get-packages/</a></p>
+<p>If you aren&rsquo;t comfortable with adding repositories and installing packages, we highly recommend that you use a featured image.</p>
 <h3 id="1-create-a-mount-point-on-your-instance">1. Create a mount point on your instance<a class="headerlink" href="#1-create-a-mount-point-on-your-instance" title="Permanent link">&para;</a></h3>
 <pre><code>mkdir /mnt/ceph
 </code></pre>
 <h3 id="2configuring-your-instance">2.Configuring your instance<a class="headerlink" href="#2configuring-your-instance" title="Permanent link">&para;</a></h3>
-<p>i. Create the file <code>/etc/ceph.$accessTo.secret</code> and add the <code>accessKey</code></p>
+<p>i. Create the file <code>/etc/ceph.${accessTo}.secret</code> and add the <code>accessKey</code></p>
 <p>Example:</p>
 <pre><code>vi /etc/ceph.manilashare.secret
 </code></pre>
@@ -398,9 +380,9 @@
 <pre><code>sudo chmod 600 /etc/ceph.manilashare.secret
 </code></pre>
 <p>ii. Edit <code>/etc/fstab</code> to include the following line:</p>
-<pre><code>$path /mnt/ceph ceph name=$accessTo,secretfile=/etc/ceph.$accessTo.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+<pre><code>$path /mnt/ceph ceph name=${accessTo},secretfile=/etc/ceph.${accessTo}.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 </code></pre>
-<p>$path = ips:ports followed by volume path (/volume/_no-group/&hellip;)</p>
+<p>$path = IP#:ports followed by volume path (/volume/_no-group/uuid/uuid)</p>
 <p><em>Please make sure to change the $variables to whatever you set these values to in Manila or the CLI when you created the share</em></p>
 <p>Example:</p>
 <pre><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98 /mnt/ceph ceph name=manilashare,secretfile=/etc/ceph/ceph.manilashare.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
@@ -423,7 +405,7 @@
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-      <p>Copyright © 2021 The Trustees of Indiana University</p>
+      <p>Copyright © 2022 The Trustees of Indiana University</p>
   </div>
 
   Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
