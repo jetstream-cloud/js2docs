@@ -2,17 +2,17 @@
 
 Jetstream2 tries to apportion the memory, storage, and network available to researchers based on both allocation type and Jetstream2 resource node type.
 
-## Limit Types
+## Limits
 
-Quotas are a function of:
+Quotas are a function of: [allocation](#AllocationType) and [resource](#ResourceType)
 
-### **allocation** type:
+### **allocation** type: <a name="AllocationsType"></a>
 
 | <div style="width:180px">Startup/Research</div> | <div style="width:180px">Education</div> | <div style="width:180px">Jetstream Trial Allocations (JTA)</div> |
 | --- | --- | --- |
 | default allocations for collaborative users in a common research project. | special allocations for teaching and workshops. Quotas are set slightly higher because of typical larger user counts | Sample allocations with minimal capacity quotas designed for evaluation purposes |
 
-### **resource** type:
+### **resource** type: <a name="ResourceType"></a>
 
 | <div style="width:180px">CPU (compute)</div> | <div style="width:180px">GPU | <div style="width:180px">LM (large memory compute)</div> |
 | --- | --- | --- |
@@ -37,3 +37,7 @@ Quotas are a function of:
 | 2 cores<br/>6  GB RAM<br/>2 floating IPs | none | none |
 
 **&ast;** modifications available with proper documentation
+
+## Other Limits
+
+[Jetstream2 policies](/general/policies/) may also impact quotas, particular regarding networking.

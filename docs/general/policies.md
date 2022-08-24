@@ -66,4 +66,8 @@ Jetstream2 policy is that we will do the following when allocations expire:
 
 Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) can be retained by an allocation for a virtual machine as long as needed under all Jetstream2 interfaces. As long as the IP number is in use by a virtual machine, whether active or not, it may be retained.
 
-As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need. 
+As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.
+
+### Network Quota Policies
+
+By default, every project on Jetstream2 is started with a **network quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
