@@ -417,7 +417,9 @@ restrictions.</p>
 </ul>
 <h3 id="ip-ipv4-floating-ip-policies">IP (IPv4 floating ip) Policies<a class="headerlink" href="#ip-ipv4-floating-ip-policies" title="Permanent link">&para;</a></h3>
 <p>Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) can be retained by an allocation for a virtual machine as long as needed under all Jetstream2 interfaces. As long as the IP number is in use by a virtual machine, whether active or not, it may be retained.</p>
-<p>As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need. </p>
+<p>As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.</p>
+<h3 id="network-quota-policies">Network Quota Policies<a class="headerlink" href="#network-quota-policies" title="Permanent link">&para;</a></h3>
+<p>By default, every project on Jetstream2 is started with a <strong>network quota = 1</strong>, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.</p>
               
             </div>
           </div><footer>
