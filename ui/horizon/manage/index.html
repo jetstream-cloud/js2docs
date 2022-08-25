@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/ui/horizon/manage/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Instance Management &ast; - Jetstream2 Documentation</title>
+    <title>Instance Management - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link href="../../../css/custom.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Instance Management \u0026ast;";
+        var mkdocs_page_name = "Instance Management";
         var mkdocs_page_input_path = "ui/horizon/manage.md";
         var mkdocs_page_url = "/ui/horizon/manage/";
       </script>
@@ -182,9 +182,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../launch/">Launching Instances</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Instance Management &ast;</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Instance Management</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon &ast;</a>
+                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manila/">Manila Shares in Horizon</a>
                 </li>
@@ -345,7 +345,7 @@
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
           <li>Horizon &raquo;</li>
-      <li>Instance Management &ast;</li>
+      <li>Instance Management</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/horizon/manage.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -357,13 +357,131 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="instance-management-actions">Instance Management Actions<a class="headerlink" href="#instance-management-actions" title="Permanent link">&para;</a></h1>
-<p>Coming soon!</p>
+<h3 id="actions">ACTIONS<a class="headerlink" href="#actions" title="Permanent link">&para;</a></h3>
+<p><img _=";" align="right" alt="" src="/images/horizon_instance_actions.png" width="25%" /></p>
+<p>After launching an instance (On the left side bar, click on <code>Project</code> → <code>Compute</code> →  <code>Instances</code>), several options are available under the <code>Actions</code> menu located on the right hand side of your screen.</p>
+<ul>
+<li><code>Shutting down</code>, <code>Suspending</code>, <code>Stopping</code>, <code>Shelving</code>, <code>Deleting</code>, <code>Rebooting</code>, <code>Imaging</code></li>
+</ul>
+<hr />
+<ol>
+<li><code>Suspend</code> &amp; <code>Resume</code></li>
+</ol>
+<ul>
+<li>Click <code>Action</code> → <code>Suspend</code> ( restored by <code>Resume</code> )</li>
+<li>Stops active computing while still consuming system resources</li>
+<li>Safely preserve the state of your instance</li>
+<li>Preserves some of your allocation (75% normal usage rate)</li>
+<li><strong>Status</strong> will change to <code>Suspended</code></li>
+</ul>
+<p></br></br></p>
+<hr />
+<ol start="2">
+<li><code>Shutoff</code> &amp; <code>Start Instance</code></li>
+</ol>
+<ul>
+<li>Click <code>Action</code> → <code>Shut Off Instance</code> ( restored by <code>Start Instance</code> )</li>
+<li>Stops active computing, consuming fewer resources than a <code>Suspend</code>.</li>
+<li>Preserve your allocation (50% normal usage rate)</li>
+<li><strong>Status</strong> will change to <code>Shutoff</code></li>
+</ul>
+<p></br></br></p>
+<hr />
+<ol start="3">
+<li><code>Shelve</code> &amp; <code>Unshelve</code></li>
+</ol>
+<ul>
+<li>Click <code>Action</code> → <code>Shelve Instance</code> ( restored by <code>Unshelve</code> )</li>
+<li>Stops all computing, consuming no service units (0% normal usage rate).</li>
+<li>Stores a snapshot of the instance.</li>
+<li>We strongly recommend <code>detaching volumes</code> before <code>shelving</code>.</li>
+<li><strong>Status</strong> will change to <code>Shelved Offloaded</code></li>
+</ul>
+<p></br></br></p>
+<hr />
+<ol start="4">
+<li><code>Soft Reboot</code> &amp; <code>Hard Reboot</code></li>
+</ol>
+<ul>
+<li>Click <code>Action</code> → <code>Soft Reboot Instance</code> or <code>Action</code> → <code>Hard Reboot Instance</code></li>
+<li><strong>Soft</strong>: send an <strong><em>ACPI Restart</em></strong> request to the VM. Similar to sending a <strong><em>reboot</em></strong> command to a physical computer</li>
+<li><strong>Hard</strong>: forcibly restart your VM. Similar to cycling the power on a physical computer.</li>
+<li><strong>Status</strong> will change to <code>Reboot</code> or <code>Hard Reboot</code></li>
+</ul>
+<p></br></br></p>
+<hr />
+<ol start="5">
+<li><code>Delete Instance</code></li>
+</ol>
+<ul>
+<li>
+<p>Click <code>Action</code> → <code>Delete Instance</code></p>
+<div class="admonition warning">
+<p>Unmount volumes attached to your instance before deleting the instance or risk corrupting your data and the volume.</p>
+</div>
+</li>
+<li>
+<p>If <em>Ephemeral disk</em><em>: Stops and removes the instance ephemeral disk from the cloud. </em><strong>All data will be permanently lost!</strong>*</p>
+</li>
+<li>If <em>Volume-backed disk</em><em>: Stops and removes the instance from the cloud. If <code>Delete Volume on Instance Delete</code> was set to <code>yes</code>, </em><strong>All data will be permanently lost!</strong>* . If set to <code>no</code>, the volume may be used to back a new instance, though any data stored in memory will be permanently lost.</li>
+<li><strong>Status</strong> will briefly change to <code>Deleting</code> while the instance is being removed.</li>
+</ul>
+<p></br></br></p>
+<hr />
+<ol start="6">
+<li><code>Create Snapshot</code></li>
+</ol>
+<ul>
+<li>Click <code>Action</code> → <code>Create Snapshot</code></li>
+<li>Creates an <strong>image</strong> template from a VM instance.<ul>
+<li>You can launch an instance, custom install the software and files you want to use, then request an <strong>snapshot/image</strong> of the instance. This will save all of the changes and updates, but also make your custom changes available to yourself and collaborators.  Saving instances as images helps leverage both your time and existing resources. The saved image can be used to launch a new child instance at any time. This allows you to discard non-active instances, thus saving resources.</li>
+</ul>
+</li>
+<li>
+<p><strong>Snapshots and Images</strong></p>
+<ul>
+<li>When you have created a custom workflow or configuration, you can create a <em>snapshot</em> for your own use. In <strong>OpenStack</strong>, an instance <em>snapshot</em> is an <a href="/general/instancemgt/#Image">image</a>. The only difference between an <em>image</em> that has been uploaded directly to the image data service: <a href="https://docs.openstack.org/glance">glance</a> and an <em>image</em> you create by <em>snapshot</em> is that an image created by snapshot has additional properties in the glance database and defaults to being private.</li>
+</ul>
+<div class="admonition note">
+<p><a href="https://docs.openstack.org/glance">Glance</a> is a central image repository which provides discovering, registering, retrieving for disk and server images.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">CAUTION:: SHUTOFF</p>
+<p>You can create a snapshot from a running server instance, but if you want to preserve all data, <strong><em>you must shut down the source VM and verify the instance status is SHUTOFF before creating the snapshot</em></strong>.</p>
+</div>
+</li>
+<li>
+<p>Instances must have status <code>Active</code>, <code>Suspended</code>, or <code>Shutoff</code> to snapshot.</p>
+<ul>
+<li><code>Shelved</code> instances are already imaged as part of the shelving process and appear in <code>Project</code> → <code>Compute</code> →  <code>Images</code> as <code>&lt;instance_named&gt;_shelved</code></li>
+</ul>
+</li>
+<li>
+<p>The menu will automatically shift to <code>Project</code> → <code>Compute</code> →  <code>Images</code> while the image is created.</p>
+</li>
+<li>
+<p><strong>BEST PRACTICE</strong>: We recommend users upgrade the operating system before imaging.</p>
+<ul>
+<li>For CentOS based systems, it&rsquo;s <code>sudo yum update</code>.</li>
+<li>For Ubuntu based systems, do <code>sudo apt-get update</code> and then <code>sudo apt-get upgrade</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition note">
+<p>Creating an image on the SMALLEST possible size VM on which it will run will allow the image to be launched on VMs of the same <code>flavor</code> size or larger without resorting to a <code>volume-backed instance</code>.</p>
+<p>For example, an image created on a <code>Tiny</code> sized VM can be launched on a VM of any size; an image created on a <code>Medium</code> VM can only be launched on a <code>Medium</code> or larger size VM.</p>
+</div>
+<p><img _=";" align="right" alt="" src="/images/horizon_image_actions.png" width="25%" /></p>
+<ul>
+<li>In the <code>Project</code> → <code>Compute</code> →  <code>Images</code> menu, click <code>Action</code> → <code>Edit Image</code> to modify the <code>visibility</code> and <code>minimum disk</code> requirements of your newly created image</li>
+</ul>
+<p></br></br></br></br></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../launch/" class="btn btn-neutral float-left" title="Launching Instances"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../storage/" class="btn btn-neutral float-right" title="Volumes Under Horizon &ast;">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../storage/" class="btn btn-neutral float-right" title="Volumes Under Horizon">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

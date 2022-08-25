@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/ui/horizon/storage/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Volumes Under Horizon &ast; - Jetstream2 Documentation</title>
+    <title>Volumes Under Horizon - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link href="../../../css/custom.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Volumes Under Horizon \u0026ast;";
+        var mkdocs_page_name = "Volumes Under Horizon";
         var mkdocs_page_input_path = "ui/horizon/storage.md";
         var mkdocs_page_url = "/ui/horizon/storage/";
       </script>
@@ -182,9 +182,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../launch/">Launching Instances</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management &ast;</a>
+                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Volumes Under Horizon &ast;</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Volumes Under Horizon</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manila/">Manila Shares in Horizon</a>
                 </li>
@@ -345,7 +345,7 @@
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
           <li>Horizon &raquo;</li>
-      <li>Volumes Under Horizon &ast;</li>
+      <li>Volumes Under Horizon</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/horizon/storage.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -357,12 +357,101 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="using-storage-under-horizon">Using Storage Under Horizon<a class="headerlink" href="#using-storage-under-horizon" title="Permanent link">&para;</a></h1>
-<p>Coming soon!</p>
+<h3 id="volumes">Volumes<a class="headerlink" href="#volumes" title="Permanent link">&para;</a></h3>
+<p>Small virtual filesystems that may be attached to the Users running/active Instances.</br>
+Files/data saved to a Volume are maintained across successive attachment/detachment actions to the User’s Instances.</br>
+On the left side bar, click on <code>Project</code> → <code>Volumes</code> →  <code>Volumes</code>.</p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_create_empty.png" width="50%" /></p>
+<ol>
+<li><code>Create Volume</code></li>
+</ol>
+<ul>
+<li>Click <code>+Create Volume</code></li>
+<li><strong>Volume Name</strong>: Choose short name for your volume, e.g. <code>&lt;username&gt;_data</code></li>
+<li><strong>Description</strong>: Briefly describe the volume contents</li>
+<li><strong>Volume Source</strong>: There are two options, <code>empty</code> and <code>image</code><ul>
+<li><code>empty</code>: creates a blank volume of the specified size</li>
+<li><code>image</code>: uses an existing <code>image</code> as a template for a new volume. Select from available <code>images</code></li>
+</ul>
+</li>
+<li><strong>Size</strong>: modify the size of the size of the volume.</br><strong><em>All volumes count against the project&rsquo;s storage quota</em></strong></li>
+<li>Click <code>Create Volume</code></li>
+</ul>
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_create_image.png" width="30%" /></p>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_actions.png" width="25%" /></p>
+<ol start="2">
+<li><code>Attach Volume</code></li>
+</ol>
+<ul>
+<li>Click <code>Manage Attachments</code> for the desired volume</li>
+<li>Select an instance to attach to, and click <code>Attach Volume</code>
+<img _=";" align="right" alt="" src="/images/horizon_volume_manage_attachments.png" width="50%" /></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_attached-to.png" width="25%" /></p>
+<ul>
+<li>The <strong>device</strong> on a particular <strong>instance</strong> will now be listed in the <code>Attached To</code> column</li>
+<li><code>ssh</code> to your instance, create any filesystems as needed, create a mountpoint, and mount the volume.<ul>
+<li>ssh: <code>ssh ubuntu@ip</code></li>
+<li>check if device is attached: <code>sudo fdisk -l &lt;device&gt;</code>, often <code>/dev/sdb</code></li>
+<li>if new disk, create filesystem: <code>sudo mkfs.ext4 &lt;device&gt;</code></li>
+<li>create a mountpoint: <code>sudo mkdir -p &lt;path&gt;</code>, e.g. <code>/mnt/vol_b</code></li>
+<li>mount the volume: <code>sudo mount -o noatime &lt;device&gt; &lt;path&gt;</code>, e.g. <code>sudo mount -o noatime /dev/sdb /mnt/vol_b</code></li>
+<li>check the mount:<br/>
+    <code>ubuntu@test-horizon-tiny:~$ df -kh /mnt/vol_b
+    Filesystem      Size  Used Avail Use% Mounted on
+    /dev/sdb         98G   24K   93G   1% /mnt/vol_b</code></li>
+<li>you may need to change the permissions to make the volume accessible: <code>sudo chown ubuntu.ubuntu /mnt/vol_b</code></li>
+<li>To make the volume mount persist, you can add an entry to <code>/etc/fstab</code> similar to this::<br/>
+    <code>/dev/sdb /mnt/vol_b ext4 defaults,noatime 0 0</code></li>
+</ul>
+</li>
+</ul>
+<p></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_actions.png" width="25%" /></p>
+<ol start="3">
+<li><code>Detach Volume</code></li>
+</ol>
+<ul>
+<li><code>ssh</code> to your instance and unmount the volume:<ul>
+<li>ssh: <code>ssh ubuntu@ip</code></li>
+<li>unmount: <code>sudo umount /mnt/vol_b</code></li>
+</ul>
+</li>
+<li>In Horizon <code>Project</code> → <code>Volumes</code> →  <code>Volumes</code>, click <code>Manage Attachments</code> for the desired volume</li>
+<li>Select an instance, and click <code>Detach Volume</code></li>
+<li>Confirm <code>Detach Volume</code>
+<img _=";" align="right" alt="" src="/images/horizon_volume_manage_detach.png" width="50%" /></li>
+</ul>
+<p></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/horizon_volume_actions.png" width="25%" /></p>
+<ol start="4">
+<li><code>Delete Volume</code></li>
+</ol>
+<ul>
+<li>In Horizon <code>Project</code> → <code>Volumes</code> →  <code>Volumes</code>, click <code>Actions</code> for the desired volume</li>
+<li>Click <code>Delete Volume</code></li>
+<li>
+<p>Confirm your selection.</p>
+<div class="admonition warning">
+<p><strong><em>Deleted volumes are not recoverable. All data stored in the volume will be removed.</em></strong></p>
+</div>
+</li>
+<li>
+<p>Confirm <code>Delete Volume</code></p>
+</li>
+</ul>
+<p></br></br></br></br></br></br></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../manage/" class="btn btn-neutral float-left" title="Instance Management &ast;"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manage/" class="btn btn-neutral float-left" title="Instance Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../manila/" class="btn btn-neutral float-right" title="Manila Shares in Horizon">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 

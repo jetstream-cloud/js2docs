@@ -182,9 +182,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../launch/">Launching Instances</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management &ast;</a>
+                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon &ast;</a>
+                <li class="toctree-l2"><a class="reference internal" href="../storage/">Volumes Under Horizon</a>
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Manila Shares in Horizon</a>
                 </li>
@@ -358,42 +358,49 @@
               
                 <h1 id="to-use-manila-via-horizon">To use Manila via Horizon<a class="headerlink" href="#to-use-manila-via-horizon" title="Permanent link">&para;</a></h1>
 <h3 id="1-create-the-share-on-horizon">1. Create the share on Horizon<a class="headerlink" href="#1-create-the-share-on-horizon" title="Permanent link">&para;</a></h3>
-<p>i. Click on:  Project  → Share → Shares → Create Share <br></p>
-<p><img alt="image" src="/images/JS2-manila1.png" />
-&nbsp;</p>
-<p>ii. Create a share with the following settings:</p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-manila1.png" width="50%" /></p>
+<p>i. Click on:  <code>Project</code>  → <code>Share</code> → <code>Shares</code> → <code>+Create Share</code></p>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-manila2.png" width="50%" /></p>
+<p>ii. <code>Create share</code> with the following settings:</p>
 <ul>
-<li>share name - a name of your choosing</li>
-<li>share protocol - CephFS</li>
-<li>size - the size of your manila share</li>
-<li>share type - cephnfsnativetype</li>
+<li><strong>share name</strong>: a name of your choosing</li>
+<li><strong>share protocol</strong>: CephFS</li>
+<li><strong>size</strong>: the size of your manila share</li>
+<li><strong>share type</strong>: cephnfsnativetype</li>
 </ul>
-<p><img alt="image" src="/images/JS2-manila2.png" />
-&nbsp;</p>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
 <h3 id="2-edit-the-share-rule">2. Edit the share rule<a class="headerlink" href="#2-edit-the-share-rule" title="Permanent link">&para;</a></h3>
 <p>i. Once your share is available you can select <code>Edit Share</code> and <code>Manage Rules</code> and <code>Add Rule</code> :</p>
-<p><img alt="image" src="/images/JS2-manila3.png" />  &nbsp;</p>
+<p><img _=";" align="right" alt="" src="/images/JS2-manila3.png" width="50%" /></p>
 <ul>
-<li>access type - cephx</li>
-<li>access level - read-write</li>
-<li>access to - an arbitrary unique name</li>
+<li><strong>access type</strong>: cephx</li>
+<li><strong>access level</strong>: read-write</li>
+<li><strong>access to</strong>: an arbitrary unique name</li>
 </ul>
-<p>In the example above the accessTo name is <code>manilashare</code>. The name assigned must be globally unique, if you use a name that is already in use you will see and error state.</p>
-<p><img alt="image" src="/images/JS2-manila4.png" />  &nbsp;</p>
-<p>ii.  If you now go back to the share page (Project/Share/Shares) and click on the share you created you should see your share&rsquo;s metadata.</p>
+<p><img _=";" align="right" alt="" src="/images/JS2-manila4.png" width="50%" /></p>
+<p>In the example above the <code>accessTo</code> name is <code>manilashare</code>.</br><strong><em>The name assigned must be globally unique, if you use a name that is already in use you will see an error state.</em></strong></p>
+<p></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/JS2-manila5.png" width="50%" /></p>
+<p>ii.  If you now go back to the share page (<code>Project</code>/<code>Share</code>/<code>Shares</code>) and click on the share you created you should see your share&rsquo;s metadata.</p>
 <p>Important things to note here are :</p>
 <ul>
-<li>Path - ips:ports followed by volume path (/volume/_no-group/&hellip;)</li>
-<li>Access Key</li>
+<li><strong>Path</strong>: <code>IPs</code>:<code>ports</code> followed by volume path (/volume/_no-group/&hellip;)</li>
+<li><strong>Access Key</strong></li>
 </ul>
-<p><img alt="image" src="/images/JS2-manila5.png" />  &nbsp;</p>
+<p></br></br></br></br></br></br></p>
+<hr />
 <h3 id="using-manila-share-on-a-vm">Using Manila Share on a VM<a class="headerlink" href="#using-manila-share-on-a-vm" title="Permanent link">&para;</a></h3>
 <p>This is the same whether you&rsquo;re using Horizon or the CLI. Please refer to <a href="../../../general/manilaVM/">Configuring a VM to use Manila Shares</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../storage/" class="btn btn-neutral float-left" title="Volumes Under Horizon &ast;"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../storage/" class="btn btn-neutral float-left" title="Volumes Under Horizon"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../troubleshooting/" class="btn btn-neutral float-right" title="Horizon Troubleshooting &ast;">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
