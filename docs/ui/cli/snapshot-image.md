@@ -63,7 +63,7 @@ Delete your snapshot if you no longer need it. For example:
 
 When you upload an image to Openstack, you set the ***visibility*** of your image. Our documentation for uploading an image from the CLI sets visibility to `community`. However, if you’ve set it to `shared` or `private`, you will need to change that if you want to share it.
 
-If ***visibility*** is set to `shared` or `private`, visibility will be limited to the project/allocation where you uploaded (e.g. only members of your TG-xxxxxxx project will see it initially). If you need to share it with another allocation but don’t want to make it visible to all projects, you’ll want to verify that the visibility is shared by doing:
+If ***visibility*** is set to `shared` or `private`, visibility will be limited to the project/allocation where you uploaded (e.g. only members of your AAA000000 project will see it initially). If you need to share it with another allocation but don’t want to make it visible to all projects, you’ll want to verify that the visibility is shared by doing:
 
 
     openstack image show <UUID or NAME> -c name -c id -c visibility
@@ -76,7 +76,7 @@ Then to share it with a project you do:
 
     openstack image add project <image UUID or NAME> <project>
 
-Where project is the TG-xxxxxxxxx number of the allocation you want to share it with.
+Where project is the AAA000000 number of the allocation you want to share it with.
 
 Someone from the other project you're sharing it with would then need to do
 

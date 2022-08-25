@@ -129,10 +129,10 @@ nav:
       - Networks in Horizon: ui/horizon/network.md
       - SSH Keys in Horizon: ui/horizon/ssh_keys.md
       - Launching Instances: ui/horizon/launch.md
-      - Instance Management &ast;: ui/horizon/manage.md
-      - Volumes Under Horizon &ast;: ui/horizon/storage.md
+      - Instance Management: ui/horizon/manage.md
+      - Volumes Under Horizon: ui/horizon/storage.md
       - Manila Shares in Horizon: ui/horizon/manila.md
-      - Horizon Troubleshooting &ast;: ui/horizon/troubleshooting.md
+      - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: ui/cli/clients.md
