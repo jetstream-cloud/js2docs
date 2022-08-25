@@ -102,8 +102,8 @@ After launching an instance (On the left side bar, click on `Project` → `Compu
 
     For example, an image created on a `Tiny` sized VM can be launched on a VM of any size; an image created on a `Medium` VM can only be launched on a `Medium` or larger size VM.
 
-![](/images/horizon_images_actions.png){ align=right ; width=25% }
+![](/images/horizon_image_actions.png){ align=right ; width=25% }
 
 * In the `Project` → `Compute` →  `Images` menu, click `Action` → `Edit Image` to modify the `visibility` and `minimum disk` requirements of your newly created image
 
-</br></br>
+</br></br></br></br>
