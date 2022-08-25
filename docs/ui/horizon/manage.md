@@ -106,4 +106,4 @@ After launching an instance (On the left side bar, click on `Project` → `Compu
 
 * In the `Project` → `Compute` →  `Images` menu, click `Action` → `Edit Image` to modify the `visibility` and `minimum disk` requirements of your newly created image
 
-</br></br></br></br>
+</br></br></br></br></br></br></br></br>
