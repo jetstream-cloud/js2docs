@@ -96,7 +96,7 @@
 
 ![](/images/horizon_net_interface.jpg){ align=right ; width=50% }
 
-</br></br>
+</br></br></br></br></br></br>
 
 !!! warning "auto_allocated_network"
 
