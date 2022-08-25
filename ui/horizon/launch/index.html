@@ -386,14 +386,41 @@
 </li>
 <li>Find the image you want to use and click the arrow to the right of its name. You&rsquo;ll see it show up under <code>Allocated</code> towards the top of the dialog box.</li>
 <li>
-<p>Click <code>Next</code>.</p>
+<p>Click <code>Next</code>.</br></br></p>
 <div class="admonition note">
 <p class="admonition-title">Image Visbility</p>
 <p>If you are deploying a non-public image that has been shared to your project from another project, you will need to choose the correct VISIBILITY filter option in the dropdown menu as the list defaults to only public or your own private images.</p>
 </div>
 </li>
 </ul>
-<p></br></br></p>
+<p></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/horizon_launch_volume_backed.png" width="50%" /></p>
+<h3 id="alternative-volume-backed-instance">ALTERNATIVE: Volume-backed Instance<a class="headerlink" href="#alternative-volume-backed-instance" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Some users may find the pre-defined default ephemeral-storage-based root disks do not provide sufficient flexibility.</li>
+<li>For these cases, users may create a custom-sized volume from which to boot.<ul>
+<li><strong>ADVANTAGES</strong>: volume-backed instances allow users to create any size root disk for an instance that they need (limited only by <em>ext4</em> or <em>xfs</em> filesystem limits). Additionally, actions such as shelving and unshelving happen VERY quickly relative to fixed ephemeral root disks.</li>
+<li><strong>DISADVANTAGES</strong>: &ndash;&gt; <strong><em>Volume-backed instances count against the project&rsquo;s storage quota.</em></strong> &lt;&ndash;</li>
+</ul>
+</li>
+<li>As above:<ul>
+<li>On the <code>Source</code> screen, make sure the <code>Select Boot Source</code> option is <code>Image</code></li>
+<li>Type <code>Featured</code> in the <code>Available</code> box to find the Jetstream Featured images.</li>
+<li>Find the image you want to use and click the arrow to the right of its name. You&rsquo;ll see it show up under <code>Allocated</code> towards the top of the dialog box.</li>
+</ul>
+</li>
+<li>
+<p><strong>NEW</strong>: Change <code>Create New Volume</code> to <strong>Yes</strong></p>
+<ul>
+<li>The setting for <code>Delete Volume on Instance Delete</code> can be set to <strong>Yes</strong> or <strong>No</strong>. We recommend <strong>Yes</strong>.</li>
+</ul>
+</li>
+<li>
+<p>Click <code>Next</code>.</br></br></p>
+</li>
+</ul>
+<p></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_instance_flavor.webp" width="50%" /></p>
 <ol start="3">
@@ -405,11 +432,11 @@
 <p>Click <code>Next</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Flavor Compatibility</p>
-<p>Please choose a <code>flavor</code> compatible with the selected image.</p>
+<p>Please choose a <code>flavor</code> compatible with the selected image size and resource requirements.</p>
 </div>
 </li>
 </ul>
-<p></br></br></p>
+<p></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_instance_network.webp" width="50%" /></p>
 <ol start="4">
