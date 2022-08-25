@@ -26,13 +26,13 @@
 
 * Type `Featured` in the `Available` box to find the Jetstream Featured images. You can also boot any of `community` or `public` visibility images shown in the list if you'd rather do that, but Jetstream staff have only tested or will support the featured images.
 * Find the image you want to use and click the arrow to the right of its name. You'll see it show up under `Allocated` towards the top of the dialog box.
-* Click `Next`.</br></br>
+* Click `Next`.</br></br></br></br>
 
     !!! note "Image Visbility"
 
         If you are deploying a non-public image that has been shared to your project from another project, you will need to choose the correct VISIBILITY filter option in the dropdown menu as the list defaults to only public or your own private images.
 
-</br></br></br></br></br></br>
+</br></br></br></br>
 
 ---
 ![](/images/horizon_launch_volume_backed.png){ align=right ; width=50% }
@@ -50,7 +50,7 @@
 * **NEW**: Change `Create New Volume` to **Yes**
     * The setting for `Delete Volume on Instance Delete` can be set to **Yes** or **No**. We recommend **Yes**.
 
-* Click `Next`.</br></br>
+* Click `Next`.
 
 </br></br></br>
 
