@@ -188,7 +188,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/manila/">Manila Shares in Horizon</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../horizon/troubleshooting/">Horizon Troubleshooting &ast;</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/troubleshooting/">Horizon Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -406,7 +406,7 @@
 <hr />
 <h4 id="sharing-an-image">Sharing an Image <a name="ImageSharing"></a><a class="headerlink" href="#sharing-an-image" title="Permanent link">&para;</a></h4>
 <p>When you upload an image to Openstack, you set the <strong><em>visibility</em></strong> of your image. Our documentation for uploading an image from the CLI sets visibility to <code>community</code>. However, if you’ve set it to <code>shared</code> or <code>private</code>, you will need to change that if you want to share it.</p>
-<p>If <strong><em>visibility</em></strong> is set to <code>shared</code> or <code>private</code>, visibility will be limited to the project/allocation where you uploaded (e.g. only members of your TG-xxxxxxx project will see it initially). If you need to share it with another allocation but don’t want to make it visible to all projects, you’ll want to verify that the visibility is shared by doing:</p>
+<p>If <strong><em>visibility</em></strong> is set to <code>shared</code> or <code>private</code>, visibility will be limited to the project/allocation where you uploaded (e.g. only members of your AAA000000 project will see it initially). If you need to share it with another allocation but don’t want to make it visible to all projects, you’ll want to verify that the visibility is shared by doing:</p>
 <pre><code>openstack image show &lt;UUID or NAME&gt; -c name -c id -c visibility
 </code></pre>
 <p>To change the visibility for an image your allocation/project owns, do:</p>
@@ -415,7 +415,7 @@
 <p>Then to share it with a project you do:</p>
 <pre><code>openstack image add project &lt;image UUID or NAME&gt; &lt;project&gt;
 </code></pre>
-<p>Where project is the TG-xxxxxxxxx number of the allocation you want to share it with.</p>
+<p>Where project is the AAA000000 number of the allocation you want to share it with.</p>
 <p>Someone from the other project you&rsquo;re sharing it with would then need to do</p>
 <pre><code>openstack image set --accept &lt;image UUID or NAME&gt;
 </code></pre>
