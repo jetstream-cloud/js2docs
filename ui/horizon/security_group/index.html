@@ -359,73 +359,82 @@
                 <h1 id="security-group-management-in-horizon">Security Group Management in Horizon<a class="headerlink" href="#security-group-management-in-horizon" title="Permanent link">&para;</a></h1>
 <p>Security groups can be thought of like firewalls. They ultimately control inbound and outbound traffic to your virtual machines. Under the CLI and Horizon, access defaults to all outbound allowed and <strong>NO</strong> inbound allowed.</p>
 <p>To allow access to your VM for things like SSH, you will need to create a security group and add rules to it.</p>
-<blockquote>
-<p class="note"><em>You can reuse a security group many times, so a best practice is to create groups by related services. For insance, you might create a basic group for ssh and icmp (which is what we will show as an example) and then a separate security group for http and https access if you&rsquo;re running a web service on your instance.</em></p>
-</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Naming and reusing security groups</p>
+<p>You can reuse a security group many times, so a best practice is to create groups by related services. For instance, you might create a basic group for ssh and icmp (which is what we will show as an example) and then a separate security group for http and https access if you&rsquo;re running a web service on your instance.</br></p>
+</div>
 <h3 id="creating-security-groups-and-rules">Creating Security Groups and Rules<a class="headerlink" href="#creating-security-groups-and-rules" title="Permanent link">&para;</a></h3>
 <p>This will walk you through creating a basic security group in Horizon and adding a couple of simple access rules.</p>
 <hr />
-<p><img _=";" align="right" alt="" src="../../../images/Security-group-create-group.png" width="50%" /></p>
-<p>In the popup box that comes up, you&rsquo;ll give your new security group a name (we suggest something like <em>my-username-ssh-and-icmp</em>) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.</p>
-<p></br></br></br></br></br></br></br></br></p>
-<hr />
-<table>
+<table style="border-style: none;">
   <tr>
-    <th style="width: 40%; word-wrap: break-word;" !important>Action</th>
-    <th>Screenshot</th>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>Login to the <a href="https://js2.jetstream-cloud.org" target=_blank>Horizon dashboard and</a> make sure you've selected the correct allocation. Select the "Network" tab on the sidebar and click "Security Groups".</td>
-    <td><a href="../../../images/Security-group-open-page.png" target=_blank><img src="../../../images/Security-group-open-page.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>Once you're on the security group page, you'll need to click the "Create Security Group" button (noted with a red arrow on the screenshot)</td>
-    <td><a href="../../../images/Security-group-page.png" target=_blank><img src="../../../images/Security-group-page.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-  wrap: break-word;" !important>In the popup box that comes up, you'll give your new security group a name (we suggest something like *my-username-ssh-and-icmp*) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.</td>
-    <td><a href="../../../images/Security-group-create-group.png" target=_blank><img src="../../../images/Security-group-create-group.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>When the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You'll see your new group name at the top where it says **Manage Security Group Rules: your-rule-name**.<p><p>You'll then want to click "Add Rule" (noted with a red arrow on the screenshot)</td>
-    <td><a href="../../../images/Security-group-create-success.png" target=_blank><img src="../../../images/Security-group-create-success.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>This will bring up a new dialog box where you can select the parameters for your security group rule.</td>
-    <td><a href="../../../images/Security-group-add-rule.png" target=_blank><img src="../../../images/Security-group-add-rule.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>If you click the "Rule" dropdown at the top, you'll see a list of common rule types as well as the option for custom rules. For this example, we'll select "SSH" to allow inbound port 22/SSH access.</td>
-    <td><a href="../../../images/Security-group-add-rule-type.png" target=_blank><img src="../../../images/Security-group-add-rule-type.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>We'll fill in the other details needed. We do recommend putting in a description with what the rule does so it's easy to see at a glance. We'll also select CIDR as the remote type and then set *0.0.0.0/0* as the CIDR. This allows all traffic to the SSH port. <p><p>You can make that be a single IP or a specific CIDR block. <p><p>In general, limiting access to specific CIDR blocks or IPs is best.</br></br>For example, you could specify *129.114.36.0/22* to limit connections to only Jetstream2 VMs at the TACC regional location.</td>
-    <td><a href="../../../images/Security-group-add-rule-details.png" target=_blank><img src="../../../images/Security-group-add-rule-details.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>When the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You'll see your new rule now on the page.</td>
-    <td><a href="../../../images/Security-group-add-rule-success.png" target=_blank><img src="../../../images/Security-group-add-rule-success.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>You'll need to click the "Create Security Group" button and second time and we'll create a second rule for "All ICMP". This will allow things like incoming ping to check the status of your virtual machine. You'll select *Ingress*, *CIDR*, and set the CIDR to *0.0.0.0/0* to allow all hosts to ping your virtual machine. </td>
-    <td><a href="../../../images/Security-group-add-second-rule.png" target=_blank><img src="../../../images/Security-group-add-second-rule.png"></a>
-    </td>
-  </tr>
-  <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>As before, when the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You'll see your new rule now on the page.</td>
-    <td><a href="../../../images/Security-group-add-second-rule-success.png" target=_blank><img src="../../../images/Security-group-add-second-rule-success.png"></a>
-    </td>
+    <th style="width: 550px; word-wrap: break-word;">Action</th>
+    <th style="width: 550px; word-wrap: break-word;">Screenshot</th>
   </tr>
 </table>
 
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-open-page.png" width="50%" /></p>
+<ol>
+<li>Login to the <a href="https://js2.jetstream-cloud.org" target=_blank>Horizon dashboard and</a> make sure you&rsquo;ve selected the correct allocation. Select the <code>Network</code> tab on the sidebar and click <code>Security Groups</code>.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-page.png" width="50%" /></p>
+<ol start="2">
+<li>Once you&rsquo;re on the security group page, you&rsquo;ll need to click the <code>Create Security Group</code> button (noted with a red arrow on the screenshot).</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-create-group.png" width="50%" /></p>
+<ol start="3">
+<li>In the popup box that comes up, you&rsquo;ll give your new security group a name (we suggest something like <strong><em>my-username-ssh-and-icmp</em></strong>) and optional description. We recommend giving a meaningful name and noting in the description what your intended purpose is.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-create-success.png" width="50%" /></p>
+<ol start="4">
+<li>When the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You&rsquo;ll see your new group name at the top where it says <strong>Manage Security Group Rules: your-rule-name</strong>.</br></br>You&rsquo;ll then want to click <code>Add Rule</code> (noted with a red arrow on the screenshot).</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-rule.png" width="50%" /></p>
+<ol start="5">
+<li>This will bring up a new dialog box where you can select the parameters for your security group rule.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-rule-type.png" width="50%" /></p>
+<ol start="6">
+<li>If you click the <code>Rule</code> dropdown at the top, you&rsquo;ll see a list of common rule types as well as the option for custom rules. For this example, we&rsquo;ll select <code>SSH</code> to allow inbound port 22/SSH access.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-rule-details.png" width="50%" /></p>
+<ol start="7">
+<li>We&rsquo;ll fill in the other details needed. We do recommend putting in a description with what the rule does so it&rsquo;s easy to see at a glance. We&rsquo;ll also select CIDR as the remote type and then set <strong><em>0.0.0.0/0</em></strong> as the CIDR. This allows all traffic to the SSH port. </br></br>You can make that be a single IP or a specific CIDR block. </br></br>In general, limiting access to specific CIDR blocks or IPs is best.</br></br></li>
+</ol>
+<p class="note">For example, you could specify <strong><em>129.114.36.0/22</em></strong> to limit connections to only Jetstream2 VMs at the TACC regional location.</p>
+<p></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-rule-success.png" width="50%" /></p>
+<ol start="8">
+<li>When the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You&rsquo;ll see your new rule now on the page.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-second-rule.png" width="50%" /></p>
+<ol start="9">
+<li>You&rsquo;ll need to click the <code>Add Rule</code> button a second time and we&rsquo;ll create a second rule for <strong>All ICMP</strong>. This will allow things like incoming ping to check the status of your virtual machine. You&rsquo;ll select <code>Ingress</code>, <code>CIDR</code>, and set the CIDR to <strong><em>0.0.0.0/0</em></strong> to allow all hosts to ping your virtual machine.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
+<p><img _=";" align="right" alt="" src="/images/Security-group-add-second-rule-success.png" width="50%" /></p>
+<ol start="10">
+<li>As before, when the creation is successful, it will bring you back to the security group page and note the success in the corner with a green status message. You&rsquo;ll see your new rule now on the page.</li>
+</ol>
+<p></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
+<hr />
 <p>You can then add additional rules or additional security groups. This will allow the most basic of access to your VMs.</p>
 <p class="note"><strong>We do recommend limiting access as much as possible for best security practices.</strong></p>
               

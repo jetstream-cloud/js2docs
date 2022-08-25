@@ -360,24 +360,43 @@
 <h2 id="create-a-network">Create a Network<a class="headerlink" href="#create-a-network" title="Permanent link">&para;</a></h2>
 <p><img _=";" align="right" alt="" src="/images/horizon_create_network.webp" width="50%" /></p>
 <ol>
-<li>Click on <code>Project</code> → <code>Network</code> → <code>Network Topology</code> → <code>+Create Network</code></li>
+<li><strong>Network</strong></li>
 </ol>
+<ul>
+<li>
+<p>You will need a network that Virtual Machines can use.</p>
+</li>
+<li>
+<p>If <code>auto_allocated_network</code> exists from Exosphere, you may wish to use that one and can skip ahead.</br>-<strong>Otherwise</strong>-</br></p>
+</li>
+<li>
+<p>In the left menus, click on <code>Project</code> → <code>Network</code> → <code>Network Topology</code> → <code>+Create Network</code></p>
+</li>
+</ul>
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_network_name.webp" width="50%" /></p>
 <ol start="2">
-<li>Enter a network name, for example, <code>&lt;username&gt;_net</code>.</li>
+<li><strong>Network name</strong></li>
 </ol>
 <ul>
-<li>After giving it a descriptive name, press the blue <code>NEXT</code> button.</li>
+<li>
+<p>Enter a network name, for example, <code>&lt;username&gt;_net</code>.</p>
+</li>
+<li>
+<p>After giving it a descriptive name, press the blue <code>NEXT</code> button.</p>
+</li>
 </ul>
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_subnet.webp" width="50%" /></p>
 <ol start="3">
-<li>Enter a subnet name, e.g. <code>&lt;username&gt;</code>_subnet, and a network address, e.g. <code>10.1.1.0/24</code>, and a gateway address, e.g. <code>10.1.1.1</code>.</li>
+<li><strong>Subnet</strong></li>
 </ol>
 <ul>
+<li>
+<p>Enter a subnet name, e.g. <code>&lt;username&gt;</code>_subnet, and a network address, e.g. <code>10.1.1.0/24</code>, and a gateway address, e.g. <code>10.1.1.1</code>.</p>
+</li>
 <li>
 <p>This should be a non-routable subnet. You can use <code>10.0.0.0 - 10.255.255.255</code>, <code>172.16.0.0 - 172.31.255.255</code>, <code>192.168.0.0 - 192.168.255.255</code>.</p>
 </li>
@@ -395,35 +414,38 @@
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_network_dhcp.webp" width="50%" /></p>
 <ol start="4">
+<li><strong>Create</strong></li>
+</ol>
+<ul>
 <li>
 <p>Click <code>Create</code> to create the new network.</p>
-<div class="admonition note">
+<div class="admonition warning">
 <p>Do NOT uncheck the <code>Enable DHCP</code> box unless you are familiar with setting the advanced features of OpenStack networks, subnets, and routers.</p>
 </div>
 </li>
-</ol>
+</ul>
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_create_router.jpg" width="50%" /></p>
 <ol start="5">
-<li>Click on <code>+Create Router</code>.</li>
-</ol>
-<p></br></br></br></br></br></br></br></br></p>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/horizon_router_name.jpg" width="50%" /></p>
-<ol start="6">
-<li>Enter a router name, for example, <code>&lt;username&gt;_router</code>.</li>
+<li><strong>Router</strong></li>
 </ol>
 <ul>
-<li>Under the <code>External Network</code> dropdown, select <code>public</code>, then click <code>Create Router</code></li>
+<li>
+<p><a href="/general/policies">Jetstream2 Policy</a> defaults to <code>network quota = 1</code>.</br>If you already have the <code>auto_allocated_network</code> and have not requested a quota increase, the button <code>+Create Router</code> may be greyed out.</br>-<strong>Otherwise</strong>-</br></p>
+</li>
+<li>
+<p>Click on <code>+Create Router</code>.</p>
+</li>
 </ul>
 <p></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_router_name.jpg" width="50%" /></p>
 <ol start="6">
-<li>Enter a router name, for example, <code>&lt;username&gt;_router</code>.</li>
+<li><strong>Router name</strong></li>
 </ol>
 <ul>
+<li>Enter a router name, for example, <code>&lt;username&gt;_router</code>.</li>
 <li>Under the <code>External Network</code> dropdown, select <code>public</code>, then click <code>Create Router</code></li>
 <li>After giving it a descriptive name, press the blue <code>NEXT</code> button.</li>
 </ul>
@@ -431,20 +453,37 @@
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_net_top_graph.webp" width="50%" /></p>
 <ol start="7">
-<li>You&rsquo;ll need to connect your private network to the router. Make sure  you&rsquo;re in Graph mode (vs Topology mode). Your screen should look like the top image on the right. If it looks like bars it&rsquo;s in Topology mode, click the <code>Graph</code> tab under the <code>Network Topology</code> page heading to put it into Topology mode</li>
+<li><strong>Connect Network to Router</strong></li>
 </ol>
 <ul>
-<li>Click on the router you just created then <code>+Add Interface</code>.</li>
+<li>
+<p>You&rsquo;ll need to connect your private network to the router.</br>Make sure  you&rsquo;re in <code>Graph</code> mode (vs <code>Topology</code> mode). Your screen should look like the top image on the right.</p>
+<ul>
+<li>If it looks like it&rsquo;s in <code>Topology</code> mode, click the <code>Graph</code> tab under the <code>Network Topology</code> page heading to put it into <code>Graph</code> mode</li>
+</ul>
+</li>
+<li>
+<p>Click on the router you just created (<em>or </em><em>auto_allocated_router</em><em> </em>),</br>then <code>+Add Interface</code>.</p>
+</li>
 </ul>
 <p><img _=";" align="right" alt="" src="/images/horizon_net_interface.jpg" width="50%" /></p>
-<p></br></br></br></br></br></br></br></br></p>
+<div class="admonition warning">
+<p class="admonition-title">auto_allocated_network</p>
+<p>If <strong><em>auto_allocated_network</em></strong> is present, you can simply use <strong><em>auto_allocated_network</em></strong> without all these steps. You only need to connect to the <strong><em>auto_allocated_router</em></strong> if you need a separate CIDR block for your VMs.</p>
+</div>
+<p></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_router-add.png" width="50%" /></p>
 <ol start="8">
-<li>Select the subnet you just created from the dropdown list.</li>
+<li><strong>Select subnet</strong></li>
 </ol>
 <ul>
-<li>Click <code>Submit</code></li>
+<li>
+<p>Select the subnet you previously created from the dropdown list.</p>
+</li>
+<li>
+<p>Click <code>Submit</code></p>
+</li>
 </ul>
 <p></br></br></br></br></br></br></br></br></p>
 <hr />

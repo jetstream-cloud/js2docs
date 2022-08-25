@@ -357,28 +357,33 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="add-ssh-keys-in-horizon">Add SSH Keys in Horizon<a class="headerlink" href="#add-ssh-keys-in-horizon" title="Permanent link">&para;</a></h1>
-<h2 id="upload-ssh-key">Upload SSH Key<a class="headerlink" href="#upload-ssh-key" title="Permanent link">&para;</a></h2>
 <p><img _=";" align="right" alt="" src="/images/horizon_keypair.webp" width="50%" /></p>
 <ol>
+<li><strong>Upload SSH Key</strong></li>
+</ol>
+<ul>
 <li>
-<p>You will need to upload at least 1 ssh public key <strong>BEFORE</strong> deploying an instance in order to access the instances you create. This assumes you already have an SSH key pair that you use. If not, you can create a key pair via this screen.</p>
+<p>You will need to upload at least 1 SSH public key <strong>BEFORE</strong> deploying an instance in order to access the instances you create.</br></br>This assumes you already have an SSH key pair that you use. If not, you can import a key pair via this screen.</p>
 <div class="admonition warning">
 <p>Jetstream recommends and only supports using RSA-based SSH keys or ed25519-based keys.</p>
 </div>
 </li>
-</ol>
-<ul>
-<li>On the left side bar, click on <code>Compute</code> →  <code>Key Pairs</code></li>
+<li>
+<p>On the left side bar, click on <code>Compute</code> →  <code>Key Pairs</code></p>
+</li>
 <li>
 <p>Click <code>Import Key Pair</code></p>
 <ul>
 <li><strong>Key Pair Name</strong>: <code>&lt;username&gt;</code>_key</li>
-<li><strong>Public Key</strong>: Paste the contents of your public key file here – generally in your <code>~/.ssh/identity_rsa.pub</code> file</li>
+<li><strong>Public Key</strong>: Paste the contents of your public key file from your remote host here<ul>
+<li>On unix/linux/macOS systems, this is often found in the <code>~/.ssh/identity_rsa.pub</code> file</li>
+</ul>
+</li>
 <li>Click <code>Import Key Pair</code></li>
 </ul>
 </li>
 </ul>
-<p></br></br></br></br></br></br></br></br></p>
+<p></br></br></p>
 <hr />
               
             </div>
