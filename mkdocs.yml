@@ -132,7 +132,7 @@ nav:
       - Instance Management: ui/horizon/manage.md
       - Volumes Under Horizon: ui/horizon/storage.md
       - Manila Shares in Horizon: ui/horizon/manila.md
-      - Horizon Troubleshooting &ast;: ui/horizon/troubleshooting.md
+      - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: ui/cli/clients.md

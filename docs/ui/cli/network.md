@@ -9,7 +9,7 @@ If you do not give your instances a public IP address (also called a floating ip
 
 | Setup the network | OpenStack Command |
 |---- | ----|
-| Create a private network |``` openstack network create my-network-name [--dns-domain tg-xxxxxxxx.projects.jetstream-cloud.org]```|
+| Create a private network |``` openstack network create my-network-name [--dns-domain AAA000000.projects.jetstream-cloud.org]```|
 | (Optional)   | The --dns-domain is optional but recommended. <br><br> You will need to install <i>python-designateclient</i> for dns services. <br><br> Substitute your allocation number for the Xs above  |
 | Verify that the private network was created | ```openstack network list```  |
 | Create a subnet within the private network<br>space | ```openstack subnet create --network my-network-name --subnet-range 10.0.0.0/24 my-subnet-name```  |
