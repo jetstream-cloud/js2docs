@@ -32,9 +32,10 @@
 
 3. **Subnet**
 
-* Enter a subnet name, e.g. `<username>`_subnet, and a network address, e.g. `10.1.1.0/24`, and a gateway address, e.g. `10.1.1.1`.
+* Enter a subnet name, e.g. `<username>_subnet`, and </br>a network address, e.g. `10.1.1.0/24`, and </br>a gateway address, e.g. `10.1.1.1`.
 
-* This should be a non-routable subnet. You can use `10.0.0.0 - 10.255.255.255`, `172.16.0.0 - 172.31.255.255`, `192.168.0.0 - 192.168.255.255`.
+    * This should be a non-routable subnet.
+    * You can use `10.0.0.0 - 10.255.255.255`, `172.16.0.0 - 172.31.255.255`, `192.168.0.0 - 192.168.255.255`.
 
 * If you're not sure what to choose, you can go with `10.1.1.0/24` → this will give you 255 available addresses in the `10.1.1.0` domain.
 
@@ -56,7 +57,7 @@
 
         Do NOT uncheck the `Enable DHCP` box unless you are familiar with setting the advanced features of OpenStack networks, subnets, and routers.
 
-</br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
 
 ---
 
@@ -64,7 +65,7 @@
 
 5. **Router**
 
-* [Jetstream2 Policy](/general/policies) defaults to `network quota = 1`.</br>If you already have the `auto_allocated_network` and have not requested a quota increase, the button `+Create Router` may be greyed out.</br>-**Otherwise**-</br>
+* [Jetstream2 Policy](/general/policies) defaults to `router quota = 1`.</br>If you already have the `auto_allocated_network` and have not requested a quota increase, the button `+Create Router` may be greyed out.</br>-**Otherwise**-</br>
 
 * Click on `+Create Router`.
 
@@ -95,6 +96,8 @@
 
 ![](/images/horizon_net_interface.jpg){ align=right ; width=50% }
 
+</br></br>
+
 !!! warning "auto_allocated_network"
 
     If ***auto_allocated_network*** is present, you can simply use ***auto_allocated_network*** without all these steps. You only need to connect to the ***auto_allocated_router*** if you need a separate CIDR block for your VMs.
@@ -119,6 +122,6 @@
 
 9. The network should now be connected to the new router.  The end result will look similar to the diagram.
 
-</br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br></br></br></br>
 
 ---
