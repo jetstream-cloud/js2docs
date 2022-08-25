@@ -1,6 +1,12 @@
 # To use Manila via Openstack CLI
 
-On a terminal that has the Openstack Clients installed and the appropriate login credentials you can do the following:
+On a terminal that has the [Openstack Client installed](clients.md){target=_blank} and the appropriate login credentials you can do the following steps to create a share.
+
+If you haven't installed the *python-manilaclient* you will need to do that. Installing with pip/pip3 would be
+
+    pip3 install python-manilaclient
+
+Then you should be able to proceed with the rest of the steps.
 
 ### 1. Create a share
 
