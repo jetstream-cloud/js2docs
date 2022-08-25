@@ -26,13 +26,33 @@
 
 * Type `Featured` in the `Available` box to find the Jetstream Featured images. You can also boot any of `community` or `public` visibility images shown in the list if you'd rather do that, but Jetstream staff have only tested or will support the featured images.
 * Find the image you want to use and click the arrow to the right of its name. You'll see it show up under `Allocated` towards the top of the dialog box.
-* Click `Next`.
+* Click `Next`.</br></br>
 
     !!! note "Image Visbility"
 
         If you are deploying a non-public image that has been shared to your project from another project, you will need to choose the correct VISIBILITY filter option in the dropdown menu as the list defaults to only public or your own private images.
 
-</br></br>
+</br></br></br></br></br></br>
+
+---
+![](/images/horizon_launch_volume_backed.png){ align=right ; width=50% }
+
+### ALTERNATIVE: Volume-backed Instance
+
+* Some users may find the pre-defined default ephemeral-storage-based root disks do not provide sufficient flexibility.
+* For these cases, users may create a custom-sized volume from which to boot.
+    * **ADVANTAGES**: volume-backed instances allow users to create any size root disk for an instance that they need (limited only by _ext4_ or _xfs_ filesystem limits). Additionally, actions such as shelving and unshelving happen VERY quickly relative to fixed ephemeral root disks.
+    * **DISADVANTAGES**: --> ***Volume-backed instances count against the project's storage quota.*** <--
+* As above:
+    * On the `Source` screen, make sure the `Select Boot Source` option is `Image`
+    * Type `Featured` in the `Available` box to find the Jetstream Featured images.
+    * Find the image you want to use and click the arrow to the right of its name. You'll see it show up under `Allocated` towards the top of the dialog box.
+* **NEW**: Change `Create New Volume` to **Yes**
+    * The setting for `Delete Volume on Instance Delete` can be set to **Yes** or **No**. We recommend **Yes**.
+
+* Click `Next`.</br></br>
+
+</br></br></br>
 
 ---
 
@@ -45,9 +65,9 @@
 
     !!! note "Flavor Compatibility"
 
-        Please choose a `flavor` compatible with the selected image.
+        Please choose a `flavor` compatible with the selected image size and resource requirements.
 
-</br></br>
+</br></br></br></br></br></br></br></br>
 
 ---
 
