@@ -395,10 +395,11 @@
 </ol>
 <ul>
 <li>
-<p>Enter a subnet name, e.g. <code>&lt;username&gt;</code>_subnet, and a network address, e.g. <code>10.1.1.0/24</code>, and a gateway address, e.g. <code>10.1.1.1</code>.</p>
-</li>
-<li>
-<p>This should be a non-routable subnet. You can use <code>10.0.0.0 - 10.255.255.255</code>, <code>172.16.0.0 - 172.31.255.255</code>, <code>192.168.0.0 - 192.168.255.255</code>.</p>
+<p>Enter a subnet name, e.g. <code>&lt;username&gt;_subnet</code>, and </br>a network address, e.g. <code>10.1.1.0/24</code>, and </br>a gateway address, e.g. <code>10.1.1.1</code>.</p>
+<ul>
+<li>This should be a non-routable subnet.</li>
+<li>You can use <code>10.0.0.0 - 10.255.255.255</code>, <code>172.16.0.0 - 172.31.255.255</code>, <code>192.168.0.0 - 192.168.255.255</code>.</li>
+</ul>
 </li>
 <li>
 <p>If you&rsquo;re not sure what to choose, you can go with <code>10.1.1.0/24</code> → this will give you 255 available addresses in the <code>10.1.1.0</code> domain.</p>
@@ -424,7 +425,7 @@
 </div>
 </li>
 </ul>
-<p></br></br></br></br></br></br></br></br></p>
+<p></br></br></br></br></br></br></br></br></br></br></br></p>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/horizon_create_router.jpg" width="50%" /></p>
 <ol start="5">
@@ -432,7 +433,7 @@
 </ol>
 <ul>
 <li>
-<p><a href="/general/policies">Jetstream2 Policy</a> defaults to <code>network quota = 1</code>.</br>If you already have the <code>auto_allocated_network</code> and have not requested a quota increase, the button <code>+Create Router</code> may be greyed out.</br>-<strong>Otherwise</strong>-</br></p>
+<p><a href="/general/policies">Jetstream2 Policy</a> defaults to <code>router quota = 1</code>.</br>If you already have the <code>auto_allocated_network</code> and have not requested a quota increase, the button <code>+Create Router</code> may be greyed out.</br>-<strong>Otherwise</strong>-</br></p>
 </li>
 <li>
 <p>Click on <code>+Create Router</code>.</p>
@@ -467,6 +468,7 @@
 </li>
 </ul>
 <p><img _=";" align="right" alt="" src="/images/horizon_net_interface.jpg" width="50%" /></p>
+<p></br></br></p>
 <div class="admonition warning">
 <p class="admonition-title">auto_allocated_network</p>
 <p>If <strong><em>auto_allocated_network</em></strong> is present, you can simply use <strong><em>auto_allocated_network</em></strong> without all these steps. You only need to connect to the <strong><em>auto_allocated_router</em></strong> if you need a separate CIDR block for your VMs.</p>
@@ -491,7 +493,7 @@
 <ol start="9">
 <li>The network should now be connected to the new router.  The end result will look similar to the diagram.</li>
 </ol>
-<p></br></br></br></br></br></br></br></br></p>
+<p></br></br></br></br></br></br></br></br></br></br></br></p>
 <hr />
               
             </div>
