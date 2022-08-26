@@ -2,7 +2,7 @@
 
 ### New openrc format for Jetstream2 CLI!
 
-One of the key changes to using Jetstream2's command line interface (CLI) is that it uses XSEDE credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
+One of the key changes to using Jetstream2's command line interface (CLI) is that it uses ACCESS credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
 
 > **Please make sure to source the new Jetstream2 openrc in a fresh terminal session. If you invoke it in a session that's had another openrc sourced, you'll get an error like this:**
 *Error authenticating with application credential: Application credentials cannot request a scope.*
@@ -40,7 +40,7 @@ The openrc generator on the Horizon right side (username) menu will NOT work pro
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>If you're using two-factor auth with your credentials as XSEDE does, you'll likely get a Duo or Authenticator screen here.</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>If you're using two-factor auth with your credentials as ACCESS does, you'll likely get a Duo or Authenticator screen here.</td>
     <td><a href="/images/JS2-Access-Duo-Screen.png" target=_blank><img src="/images/JS2-Access-Duo-Screen.png"></a>
     </td>
   </tr>
