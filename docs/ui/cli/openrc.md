@@ -24,24 +24,24 @@ The openrc generator on the Horizon right side (username) menu will NOT work pro
     <th>Screenshot</th>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a><p><p>Make sure it says "XSEDE Globus Auth" in the Authenticate Using box.</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>Navigate to <a href="https://js2.jetstream-cloud.org" target=_blank>https://js2.jetstream-cloud.org</a><p><p>Make sure it says "ACCESS CILogin" in the Authenticate Using box.</td>
     <td><a href="/images/JS2-Horizon-Login-Screen.png" target=_blank><img src="/images/JS2-Horizon-Login-Screen.png"></a>
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a Globus page to permit authorization.<p>
-    <p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know XSEDE credentials work correctly so we will show that in our example.<p> </td>
-    <td><a href="/images/JS2-Globus-Screen.png" target=_blank><img src="/images/JS2-Globus-Screen.png"></a>
+    <td style="width: 40%; word-wrap: break-word;" !important>The first time you log in you'll be directed to a CILogin page to permit authorization.<p>
+    <p>If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate.<p> We know ACCESS credentials work correctly so we will show that in our example.<p> </td>
+    <td><a href="/images/JS2-CILogin-Screen.png" target=_blank><img src="/images/JS2-CILogin-Screen.png"></a>
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>The next page should be the login screen for your credentials. We're showing the XSEDE login screen as our example.</td>
-    <td><a href="/images/JS2-XSEDE-Auth-Screen.png" target=_blank><img src="/images/JS2-XSEDE-Auth-Screen.png"></a>
+    <td style="width: 40%; word-wrap: break-word;" !important>The next page should be the login screen for your credentials. We're showing the ACCESS login screen as our example.</td>
+    <td><a href="/images/JS2-CILogin-Auth-Screen.png" target=_blank><img src="/images/JS2-CILogin-Auth-Screen.png"></a>
     </td>
   </tr>
   <tr>
     <td style="width: 40%; word-wrap: break-word;" !important>If you're using two-factor auth with your credentials as XSEDE does, you'll likely get a Duo or Authenticator screen here.</td>
-    <td><a href="/images/JS2-XSEDE-Duo-Screen.png" target=_blank><img src="/images/JS2-XSEDE-Duo-Screen.png"></a>
+    <td><a href="/images/JS2-Access-Duo-Screen.png" target=_blank><img src="/images/JS2-Access-Duo-Screen.png"></a>
     </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ The openrc generator on the Horizon right side (username) menu will NOT work pro
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>As application credentials are unique to each allocation, if you are on multiple XSEDE allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "XSEDE * AAA000000 * IU". That will show allocations under "Projects".</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>As application credentials are unique to each allocation, if you are on multiple ACCESS allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. <p><p>You do that by clicking at the top left next to the Jetstream2 logo where it has "ACCESS * AAA000000 * IU". That will show allocations under "Projects".</td>
     <td><a href="/images/JS2-Horizon-Change-Projects.png" target=_blank><img src="/images/JS2-Horizon-Change-Projects.png"></a>
     </td>
   </tr>
@@ -66,7 +66,7 @@ The openrc generator on the Horizon right side (username) menu will NOT work pro
     </td>
   </tr>
   <tr>
-    <td style="width: 40%; word-wrap: break-word;" !important>When you hit "Create Application Credential" it will then generate the credential and bring up a confirmation box. Please make sure to save the credential ID and secret if you need them for things other than the openrc. <p><p>To get the openrc for CLI access, please click the "Download openrc file" button referenced by the red arrow in the screenshot. That will download a plain text file for use with the Openstack CLI client <p><p>We recommend giving your new openrc file a descriptive name (e.g. openrc-TRA111111.sh, using the XSEDE project name or some other meaningful description.)</td>
+    <td style="width: 40%; word-wrap: break-word;" !important>When you hit "Create Application Credential" it will then generate the credential and bring up a confirmation box. Please make sure to save the credential ID and secret if you need them for things other than the openrc. <p><p>To get the openrc for CLI access, please click the "Download openrc file" button referenced by the red arrow in the screenshot. That will download a plain text file for use with the Openstack CLI client <p><p>We recommend giving your new openrc file a descriptive name (e.g. openrc-TRA111111.sh, using the ACCESS project name or some other meaningful description.)</td>
     <td><a href="/images/JS2-Created-App-Cred.png" target=_blank><img src="/images/JS2-Created-App-Cred.png"></a>
     </td>
   </tr>
