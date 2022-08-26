@@ -381,10 +381,10 @@
 <p>The downside is that using boot from volume will count against your Jetstream2-Storage allocation whereas root disks do not.</p>
 <p>Instructions for using boot from volume are here:</p>
 <ul>
-<li><a href="https://docs.jetstream-cloud.org/ui/exo/create_instance/#configure-instance">Exosphere: Choose a Root Disk Size</a></li>
+<li><a href="/ui/exo/create_instance/#configure-instance">Exosphere: Choose a Root Disk Size</a></li>
 <li>Cacao (link coming)</li>
-<li>Horizon (link coming)</li>
-<li>CLI (link coming)</li>
+<li><a href="/ui/horizon/launch/#alternative-volume-backed-instance">Horizon</a></li>
+<li>[CLI<a href="/ui/cli/launch.md"></a></li>
 </ul>
 <hr />
 <h3 id="how-do-i-get-access-to-one-of-the-jetstream2-regional-clouds">How do I get access to one of the Jetstream2 regional clouds?<a class="headerlink" href="#how-do-i-get-access-to-one-of-the-jetstream2-regional-clouds" title="Permanent link">&para;</a></h3>
@@ -422,6 +422,11 @@ curl http://ipinfo.io/ip
 </code></pre>
 <p>where the xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you&rsquo;ve created in that allocation.</p>
 <p>This FAQ topic may move to its own page in the future.</p>
+<hr />
+<h3 id="are-there-backups-of-jetstream2-storage-resources">Are there backups of Jetstream2 storage resources ?<a class="headerlink" href="#are-there-backups-of-jetstream2-storage-resources" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 provides multiple forms of storage, including block (volumes), shares (Manila), and an object store. All of these storage formats are on erasure coded partitions that should provide protection against data loss in the case of hardware issues or outages.</p>
+<p>Jetstream2, however, does not provide any backup service for data. Since the storage is not a shared filesystem as on traditional HPC, there are issues with providing consistent backup for all of the user-defined instance root disks, volumes, shares, and object store buckets. As such, we recommend that you keep a copy of any crucial data offsite. This is a good practice no matter what computing system you may be on.</p>
+<p>Additionally, there are NSF-funded resources like the Open Storage Network (OSN) available for research storage for work in <a href="https://www.openstoragenetwork.org/motivation/our-policy/" target="_blank">active use</a>. This is also an ACCESS allocated resource. More information may be found on the <a href="https://www.openstoragenetwork.org/" target="_blank">Open Storage Network website</a></p>
 <hr />
 <h3 id="how-do-i-keep-a-program-running-on-a-vm-even-if-i-log-out-or-get-disconnected">How do I keep a program running on a VM even if I log out or get disconnected?<a class="headerlink" href="#how-do-i-keep-a-program-running-on-a-vm-even-if-i-log-out-or-get-disconnected" title="Permanent link">&para;</a></h3>
 <p>If you want to start a workflow and have it run, that&rsquo;s a unix capability.</p>

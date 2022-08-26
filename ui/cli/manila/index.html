@@ -357,7 +357,11 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="to-use-manila-via-openstack-cli">To use Manila via Openstack CLI<a class="headerlink" href="#to-use-manila-via-openstack-cli" title="Permanent link">&para;</a></h1>
-<p>On a terminal that has the Openstack Clients installed and the appropriate login credentials you can do the following:</p>
+<p>On a terminal that has the <a href="../clients/" target="_blank">Openstack Client installed</a> and the appropriate login credentials you can do the following steps to create a share.</p>
+<p>If you haven&rsquo;t installed the <em>python-manilaclient</em> you will need to do that. Installing with pip/pip3 would be</p>
+<pre><code>pip3 install python-manilaclient
+</code></pre>
+<p>Then you should be able to proceed with the rest of the steps.</p>
 <h3 id="1-create-a-share">1. Create a share<a class="headerlink" href="#1-create-a-share" title="Permanent link">&para;</a></h3>
 <p><code>openstack share create --name $manila-share-name cephfs $vol-size --os-share-api-version 2.63</code></p>
 <p>Example:

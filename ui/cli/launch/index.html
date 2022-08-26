@@ -377,11 +377,15 @@
 </tr>
 <tr>
 <td>Create and boot an instance<br><span style="color:darkred"><strong><em>Notes:</em></strong></span><br><br><ul><li>Make sure your SSH keyname matches</li><li><em>your-instance-name</em> is the name of the<br>instance; make it something meaningful for you.</li><li>Choose an appropriate flavor from the list in the<br> first command</li>  <li>Choose an appropriate image from the list in the<br> second command</li></td>
-<td><code>openstack server create my-server-name \</code><br><code>--flavor FLAVOR \</code><br><code>--image IMAGE-NAME \</code><br><code>--key-name my-keypair-name \</code><br><code>--security-group my-security-group-name \</code> <br><code>--wait</code></td>
+<td><code>openstack server create &lt;my-server-name&gt; \</code><br><code>--flavor FLAVOR \</code><br><code>--image IMAGE-NAME \</code><br><code>--key-name &lt;my-keypair-name&gt; \</code><br><code>--security-group &lt;my-security-group-name&gt; \</code> <br><code>--wait</code></td>
 </tr>
 <tr>
-<td><strong>Optional</strong><br><br>If you have multiple networks, you&rsquo;ll need<br> to also include this line <br><br> See <a href="../network/">Create a network in the CLI</a> for more<br> information</td>
-<td><br><code>--nic net-id=my-network-name</code></td>
+<td><strong>Optional-Volume-backed</strong><br><br>Add the following optional flag to the above<br><strong>server create</strong> step if you wish to <strong>not use</strong> the default ephemeral disk and instead<br><strong>create a custom volume-backed instance</strong><br>(<strong><em>storage counts against your quota</em></strong>)<br><br><ul><li>size in GB</li><li>Note your <strong><em>volumes_attached id</em></strong> from the <strong>server create</strong> output</td>
+<td><br><code>--boot-from-volume &lt;size&gt;</code><br><br>Optional Rename volume:<br><br><code>openstack volume set --name '&lt;my-server-name&gt;-vol' &lt;volumes_attached_id&gt;</code></td>
+</tr>
+<tr>
+<td><strong>Optional-Network</strong><br><br>If you have multiple networks, you&rsquo;ll need<br> to also include this line in the<br><strong>server create</strong> step<br><br> See <a href="../network/">Create a network in the CLI</a> for more<br> information</td>
+<td><br><code>--nic net-id=&lt;my-network-name&gt;</code></td>
 </tr>
 <tr>
 <td>Create a public IP address for an instance</td>
