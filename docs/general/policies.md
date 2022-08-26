@@ -70,4 +70,8 @@ As IP addresses are a scarce resource, any IP numbers that are not in use may be
 
 ### Router Quota Policies
 
-By default, every project on Jetstream2 is started with a **router quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance. Each project can submit a help request to increase this quota along with justification for the increase.
+By default, every project on Jetstream2 is started with a **router quota = 1**, in part to maximize available IP addresses as well as decrease the time needed for periodic maintenance.
+
+We'd prefer to have people follow a traditional data center or building approach where you have one router to many subnets. The VMs on a particular subnet are still isolated from the other subnet traffic.
+
+Each project can submit a help request to increase this quota along with justification for the increase.
