@@ -103,6 +103,14 @@ This FAQ topic may move to its own page in the future.
 
 ---
 
+### Are there backups of Jetstream2 storage resources ?
+
+Jetstream2 provides multiple forms of storage, including block (volumes), shares (Manila), and an object store. All of these storage formats are on erasure coded partitions that should provide protection against data loss in the case of hardware issues or outages.
+
+Jetstream2, however, does not provide any backup service for data. Since the storage is not a shared filesystem as on traditional HPC, there are issues with providing consistent backup for all of the user-defined instance root disks, volumes, shares, and object store buckets. As such, we recommend that you keep a copy of any crucial data offsite. This is a good practice no matter what computing system you may be on. 
+
+---
+
 ### How do I keep a program running on a VM even if I log out or get disconnected?
 
 If you want to start a workflow and have it run, that's a unix capability.
