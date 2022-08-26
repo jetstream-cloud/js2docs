@@ -32,10 +32,10 @@ The downside is that using boot from volume will count against your Jetstream2-S
 
 Instructions for using boot from volume are here:
 
-* [Exosphere: Choose a Root Disk Size](https://docs.jetstream-cloud.org/ui/exo/create_instance/#configure-instance)
+* [Exosphere: Choose a Root Disk Size](/ui/exo/create_instance/#configure-instance)
 * Cacao (link coming)
-* Horizon (link coming)
-* CLI (link coming)
+* [Horizon](/ui/horizon/launch/#alternative-volume-backed-instance)
+* [CLI[](/ui/cli/launch.md)
 
 ---
 
