@@ -35,7 +35,7 @@ Instructions for using boot from volume are here:
 * [Exosphere: Choose a Root Disk Size](/ui/exo/create_instance/#configure-instance)
 * Cacao (link coming)
 * [Horizon](/ui/horizon/launch/#alternative-volume-backed-instance)
-* [CLI](/ui/cli/launch.md)
+* [CLI](/ui/cli/launch)
 
 ---
 
