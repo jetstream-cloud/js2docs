@@ -1,5 +1,9 @@
 # Jetstream2 Allocations Overview
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 *Access to Jetstream2 is available solely through Xtreme Science and Engineering Discovery Environment (XSEDE) allocations. You must be on a valid allocation or the PI of a valid allocation to have access to Jetstream2.*
 
 Jetstream allocations are awarded exclusively through XSEDE. XSEDE provides XSEDE User Portal (XUP) accounts free of charge. XSEDE allocations require that the Principal Investigator (PI) be a US-based researcher.

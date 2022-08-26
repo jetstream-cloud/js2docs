@@ -37,7 +37,7 @@ The ticketing system is still the preferred mechanism for official support. That
 
 ---
 
-### XSEDE User News and Announcements
+### ACCESS/XSEDE User News and Announcements
 
 !!! caution "XSEDE End of Life"
 
@@ -45,7 +45,9 @@ The ticketing system is still the preferred mechanism for official support. That
 
 ---
 
-### ACCESS User News and Announcements
+Next week, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022.
+
+The [Advance to ACCESS website](https://www.xsede.org/advancetoaccess){target=_blank} will always have the most current information.
 
 ##### What Is ACCESS?
 

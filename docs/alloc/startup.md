@@ -1,5 +1,9 @@
 # Jetstream2 Startup Allocations
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 Jetstream2 startup allocations are meant to be used for exploring the Jetstream2 system for research or research infrastructure purposes. They are not intended for teaching purposes. Please apply for an education allocation using the instructions [here](education.md) for any course, tutorial, or workshop needs.
 
 You'll need a copy of your CV, abstract, and description of your intended research in PDF format.

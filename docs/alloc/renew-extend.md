@@ -1,5 +1,9 @@
 # Jetstream2 Allocation Extensions and Renewals
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 If your allocation is expired or close to expired and has adequate SUs remaining for the resource(s), you may request an extension if you need 3-6 months to complete your work or to prepare for a research allocation. If you are planning to continue your research for another year (or more), you should pursue a renewal of your allocation.
 
 Detailed information about the extension request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-extensions){target=_blank} page.
