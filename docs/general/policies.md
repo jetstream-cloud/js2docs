@@ -75,3 +75,5 @@ By default, every project on Jetstream2 is started with a **router quota = 1**, 
 We'd prefer to have people follow a traditional data center or building approach where you have one router to many subnets. The VMs on a particular subnet are still isolated from the other subnet traffic.
 
 Each project can submit a help request to increase this quota along with justification for the increase.
+
+***There is little technical reason to have multiple routers. Routers won't be overloaded from handling many subnets***
