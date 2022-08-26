@@ -1,5 +1,9 @@
 # Jetstream2 Research Allocations
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 Jetstream2 ressearch allocations are meant to be used for building on research exploration that you likely began initially with a startup allocation. Research allocations are intended only for research or research infrastructure purposes. They are not intended for teaching purposes. Please apply for an education allocation using the instructions [here](education.md) for any course, tutorial, or workshop needs.
 
 XSEDE strongly encourages researchers to request a [Startup Allocation](startup.md) prior to requesting a Research Allocation, in order to obtain benchmark results before you prepare your Research request. While having a Startup project is not absolutely required, the lack of benchmark results on the resources requested will greatly increase the level of scrutiny from the panel, especially for requests on highly oversubscribed resources.

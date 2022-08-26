@@ -1,5 +1,9 @@
 # Jetstream2 Education Allocations
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+     
 Jetstream2 education allocations are meant to be used for teaching courses, workshops, or tutorials. They are not intended for research.
 
 You'll need a copy of your CV, the course syllabus, and a resource justification in PDF format. The latter is basically figuring the size of the VM your students will need, the number of weeks they'll need it, and the number of students. An example of the resource selection is below.

@@ -1,5 +1,9 @@
 #Jetstream2 Allocations FAQ
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 ####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
 > The [Getting Started guide](https://www.xsede.org/for-users/getting-started){target=_blank} describes the process of getting onto XSEDE, applying for allocations and using XSEDE resources. To review the types of allocations XSEDE and the process to get an allocation, here are some links you might find useful:

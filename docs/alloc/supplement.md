@@ -1,5 +1,9 @@
 # Jetstream2 Allocation Supplements
 
+!!! Notice "XSEDE to ACCESS transition"
+
+     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+
 If your allocation has been depleted or you need to add SUs or storage for a Jetstream2 resource to your existing allocation, you may request a supplement.
 
 Detailed information about the supplement request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-supplements){target=_blank} page.
