@@ -107,7 +107,9 @@ This FAQ topic may move to its own page in the future.
 
 Jetstream2 provides multiple forms of storage, including block (volumes), shares (Manila), and an object store. All of these storage formats are on erasure coded partitions that should provide protection against data loss in the case of hardware issues or outages.
 
-Jetstream2, however, does not provide any backup service for data. Since the storage is not a shared filesystem as on traditional HPC, there are issues with providing consistent backup for all of the user-defined instance root disks, volumes, shares, and object store buckets. As such, we recommend that you keep a copy of any crucial data offsite. This is a good practice no matter what computing system you may be on. 
+Jetstream2, however, does not provide any backup service for data. Since the storage is not a shared filesystem as on traditional HPC, there are issues with providing consistent backup for all of the user-defined instance root disks, volumes, shares, and object store buckets. As such, we recommend that you keep a copy of any crucial data offsite. This is a good practice no matter what computing system you may be on.
+
+Additionally, there are NSF-funded resources like the Open Storage Network (OSN) available for research storage for work in [active use](https://www.openstoragenetwork.org/motivation/our-policy/){target=_blank}. This is also an ACCESS allocated resource. More information may be found on the [Open Storage Network website](https://www.openstoragenetwork.org/){target=_blank}
 
 ---
 
