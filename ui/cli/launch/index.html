@@ -380,7 +380,7 @@
 <td><code>openstack server create &lt;my-server-name&gt; \</code><br><code>--flavor FLAVOR \</code><br><code>--image IMAGE-NAME \</code><br><code>--key-name &lt;my-keypair-name&gt; \</code><br><code>--security-group &lt;my-security-group-name&gt; \</code> <br><code>--wait</code></td>
 </tr>
 <tr>
-<td><strong>Optional-Volume-backed</strong><br><br>Add the following optional flag to the above<br><strong>server create</strong> step if you wish to <strong>not use</strong> the default ephemeral disk and instead<br><strong>create a custom volume-backed instance</strong><br>(<strong><em>storage counts against your quota</em></strong>)<br><br><ul><li>size in GB</li><li>Note your <strong><em>volumes_attached id</em></strong> from the <strong>server create</strong> output</td>
+<td><strong>Optional-Volume-backed</strong><br><br>Add the following optional flag to the above<br><strong>server create</strong> step if you wish to <strong>not use</strong> the<br>default ephemeral disk and instead<br><strong>create a custom volume-backed instance</strong><br>(<strong><em>storage counts against your quota</em></strong>)<br><br><ul><li>size in GB</li><li>Note your <strong><em>volumes_attached id</em></strong> from the <strong>server create</strong> output</td>
 <td><br><code>--boot-from-volume &lt;size&gt;</code><br><br>Optional Rename volume:<br><br><code>openstack volume set --name '&lt;my-server-name&gt;-vol' &lt;volumes_attached_id&gt;</code></td>
 </tr>
 <tr>
