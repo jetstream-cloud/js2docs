@@ -5,7 +5,7 @@
 One of the key changes to using Jetstream2's command line interface (CLI) is that it uses ACCESS credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
 
 > **Please make sure to source the new Jetstream2 openrc in a fresh terminal session. If you invoke it in a session that's had another openrc sourced, you'll get an error like this:**
-*Error authenticating with application credential: Application credentials cannot request a scope.*
+*Error authenticating with application credential: Application credentials cannot request a scope.* Other troubleshooting items may be found [here](troubleshooting.md)
 {: .note}
 
 ### Openrc files are allocation-specific
