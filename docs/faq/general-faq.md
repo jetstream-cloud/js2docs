@@ -113,6 +113,18 @@ Additionally, there are NSF-funded resources like the Open Storage Network (OSN)
 
 ---
 
+### What are the IP ranges / CIDR blocks for Jetstream2 ?
+
+The current CIDR blocks for Jetstrea2 are:
+
+```
+149.165.152.0/22
+149.165.159.0/24
+149.165.168.0/21
+```
+
+---
+
 ### How do I keep a program running on a VM even if I log out or get disconnected?
 
 If you want to start a workflow and have it run, that's a unix capability.
