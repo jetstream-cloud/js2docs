@@ -16,12 +16,10 @@ The operational software environment is based on [OpenStack](https://www.opensta
 
 ### Accessing Jetstream ###
 
-Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) web interface using [XSEDE](https://www.xsede.org/){target=_blank} credentials via [Globus Auth](https://www.globus.org/tags/globus-auth){target=_blank}.
-
-> Jetstream2 is **not** accessible via [XSEDE's Single Sign-On Login Hub.](https://portal.xsede.org/single-sign-on-hub){target=_blank}
+Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) web interface using [ACCESS](https://access-ci.org/){target=_blank} credentials via [CILogon](https://www.cilogon.org/faq/){target=_blank}.
 
 
->Newly created XSEDE accounts must be added to a Jetstream2 specific allocation by the PI or Resource manager in order to access Jetstream2.
+>Newly created ACCESS accounts must be added to a Jetstream2 specific allocation by the PI or Resource manager in order to access Jetstream2.
 
 >Jetstream2 is meant primarily for **interactive** research, small scale processing **on demand**, or as the backend to science **gateways** to send research jobs to other HPC or HTC resources, or for general infrastructure for research or research-related development.
 
