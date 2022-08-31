@@ -26,8 +26,7 @@ Make sure it says "ACCESS CILogin" in the Authenticate Using box.
 * The first time you log in you'll be directed to a CILogin page to permit authorization.</br></br>
 If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate. <p>
 
-We know ACCESS credentials work correctly so we will show that in our example.
-<p>
+We know ***ACCESS-CI*** credentials work correctly so we will show that in our example.
 
 !!! note "Other intstitution credentials"
 
