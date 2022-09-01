@@ -1,6 +1,8 @@
-#XSEDE Service Units and Jetstream2
+#ACCESS Service Units and Jetstream2
 
-Jetstream2 allocations are measured in XSEDE Service Units (SUs).
+ACCESS allocations are measured in ACCESS credits. Those credits then may be [converted](https://allocations.access-ci.org/exchange_calculator){target=_blank} to resource-defined service units.
+
+Jetstream2 allocations Jetstream core hours or service units (SUs).
 
 SUs are consumed at a rate of:
 
