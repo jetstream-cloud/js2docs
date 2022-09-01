@@ -19,7 +19,7 @@ Make sure it says "ACCESS CiLogon" in the Authenticate Using box.
 
 ---
 
-![](/images/JS2-CiLogon-Screen.png){ align=right ; width=50% }
+![](/images/JS2-CILogin-Screen.png){ align=right ; width=50% }
 
 2. **CiLogon Authentication**
 
@@ -37,7 +37,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 ---
 
-![](/images/JS2-CiLogon-Auth-Screen.png){ align=right ; width=50% }
+![](/images/JS2-CILogon-Auth-Screen.png){ align=right ; width=50% }
 
 3. **ACCESS credentials**
 
