@@ -24,7 +24,7 @@ Make sure it says "ACCESS CiLogon" in the Authenticate Using box.
 2. **CiLogon Authentication**
 
 * You will be directed to a CILogon page to permit authorization the first time and any time your are using a new browser or your credentials go stale.</br></br>
-If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate. <p>
+* If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate. <p>
 
 We know ***ACCESS-CI*** credentials work correctly so we will show that in our example.
 
