@@ -71,7 +71,7 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 > How do I request additional resources such as CPUs and memory?
 
-> You may contact *help@xsede.org* or *help@jetstream-cloud.org* with those requests.
+> You may contact *help@jetstream-cloud.org* or open a ticket via the [ACCESS Help Form](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank} with those requests.
 
 > It's important to note that Jetstream Trial Allocation quotas are fixed and will **NOT** be increased under any circumstances.
 
