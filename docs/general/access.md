@@ -1,4 +1,4 @@
-#ACCESS Service Units and Jetstream2
+#ACCESS Credits and Jetstream2
 
 ACCESS allocations are measured in ACCESS credits. Those credits then may be [converted](https://allocations.access-ci.org/exchange_calculator){target=_blank} to resource-defined service units.
 
