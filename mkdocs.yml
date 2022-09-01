@@ -82,7 +82,7 @@ nav:
     - Gateways: faq/gateways.md
   - General Usage Information:
     - Jetstream2 Resources: general/resources.md
-    - XSEDE Service Units and Jetstream2: general/xsede.md
+    - ACCESS Service Units and Jetstream2: general/access.md
     - VM Sizes and Configurations: general/vmsizes.md
     - Quotas: general/quotas.md
     - Instance Management Actions: general/instancemgt.md
