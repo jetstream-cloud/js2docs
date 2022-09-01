@@ -2,15 +2,15 @@
 
 ## Using ACCESS Account (single sign-on)
 
-The default login method uses your ACCESS account credentials. Note that this may require multi-factor (Duo) authentication. (If you need help setting up or changing your multi-factor authentication method, please open an [[ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.)
+The default login method uses your ACCESS account credentials. Note that this may require multi-factor (Duo) authentication. (If you need help setting up or changing your multi-factor authentication method, please open an [ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.)
 
-You will be directed to a CILogin page to permit authorization the first time and any time your are using a new browser or your credentials go stale.
+You will be directed to a CILogon page to permit authorization the first time and any time your are using a new browser or your credentials go stale.
 
-If you have linked institutional, Google, Orcid, or other credentials **PREVIOUSLY** with CILogin, you’ll be able to use those to authenticate. We know ACCESS-CI credentials work correctly and recommend using that as the setting unless you are 100% sure you have linked your credentials with CILogin (previously linked credentials in XSEDE using Globus do NOT carry over).
+If you have linked institutional, Google, Orcid, or other credentials **PREVIOUSLY** with CILogon, you’ll be able to use those to authenticate. We know ACCESS-CI credentials work correctly and recommend using that as the setting unless you are 100% sure you have linked your credentials with CILogon (previously linked credentials in XSEDE using Globus do NOT carry over).
 
-!! note "Other intstitution credentials"
+!!! note "Other intstitution credentials"
 
-     Please note that other CILogin credentials (i.e. for your home institution or Google) must be set up outside of this process. Instructions for that will hopefully be available from ACCESS soon. We will link them here when available.
+     Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Instructions for that will hopefully be available from ACCESS soon. We will link them here when available.
 
 ## Choosing Allocations and Regions
 

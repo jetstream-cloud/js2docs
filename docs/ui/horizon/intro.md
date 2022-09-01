@@ -13,31 +13,31 @@ That said, there are times you may need the more complete features of Horizon in
 1. **Navigate**
 
 * Navigate to [https://js2.jetstream-cloud.org](https://js2.jetstream-cloud.org)</br>
-Make sure it says "ACCESS CILogin" in the Authenticate Using box.
+Make sure it says "ACCESS CiLogon" in the Authenticate Using box.
 
 </br></br></br></br></br></br></br></br></br></br></br></br>
 
 ---
 
-![](/images/JS2-CILogin-Screen.png){ align=right ; width=50% }
+![](/images/JS2-CiLogon-Screen.png){ align=right ; width=50% }
 
-2. **CILogin Authentication**
+2. **CiLogon Authentication**
 
-* The first time you log in you'll be directed to a CILogin page to permit authorization.</br></br>
+* You will be directed to a CILogon page to permit authorization the first time and any time your are using a new browser or your credentials go stale.</br></br>
 If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate. <p>
 
 We know ***ACCESS-CI*** credentials work correctly so we will show that in our example.
 
 !!! note "Other intstitution credentials"
 
-     Please note that other CILogin credentials (i.e. for your home institution or Google) must be set up outside of this process. Instructions for that will hopefully be available from ACCESS soon. We will link them here when available.
+     Please note that other CiLogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Instructions for that will hopefully be available from ACCESS soon. We will link them here when available.
 
 
 </br></br></br></br></br></br></br></br></br>
 
 ---
 
-![](/images/JS2-CILogin-Auth-Screen.png){ align=right ; width=50% }
+![](/images/JS2-CiLogon-Auth-Screen.png){ align=right ; width=50% }
 
 3. **ACCESS credentials**
 
