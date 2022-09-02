@@ -1,50 +1,67 @@
 # Jetstream2 Allocations Overview
 
-!!! Notice "XSEDE to ACCESS transition"
+!!! Note "XSEDE to ACCESS transition"
 
      Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
 
-*Access to Jetstream2 is available solely through Xtreme Science and Engineering Discovery Environment (XSEDE) allocations. You must be on a valid allocation or the PI of a valid allocation to have access to Jetstream2.*
+*Access to Jetstream2 is available solely through Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) allocations. You must be on a valid allocation or the PI of a valid allocation to have access to Jetstream2.*
 
-Jetstream allocations are awarded exclusively through XSEDE. XSEDE provides XSEDE User Portal (XUP) accounts free of charge. XSEDE allocations require that the Principal Investigator (PI) be a US-based researcher.
+Jetstream allocations are awarded exclusively through ACCESS. ACCESS provides user accounts free of charge. ACCESS allocations require that the Principal Investigator (PI) be a US-based researcher.
 
-A guide with more detail on Jetstream allocations is available online at the
-[XSEDE Resource Information](https://portal.xsede.org/allocations/resource-info){target=_blank} page.
+!!! Note "Get an account"
+
+    You may apply for an account via the [ACCESS User Registration page](https://identity.access-ci.org/new-user){target=_blank}.
+
+A guide with more detail on the allocations processes is available from the
+[Managing Allocations Overview](https://allocations.access-ci.org/manage-allocations-overview){target=_blank} page.
 
 ### Allocation types:
 
-- [Trial allocation](trial.md) - *Limited in hours and cores*, non-renewable, meant to explore using Jetstream2
-- [Startup allocation](startup.md) - For smaller scale research or exploratory usage before applying for a larger research allocation. Not intended for any courses or workshops.
-    * [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations will generally default to this level, though other limits are available upon request.
-- [Education allocation](education.md) - For workshops, tutorials, or courses. Startup limits may not apply.
-- [Research allocation](research.md) - Larger scale allocations intended for research. Limits are generally only in what the PI can justify requesting.
+Allocations have fundamentally changed with ACCESS. They are no longer groups by type, but rather by size.
 
-!!! warning "Campus Champions"
+##### ACCESS Credits and Thresholds
 
-    Please note that we will **NOT** be automatically adding [Campus Champions](https://www.xsede.org/community-engagement/campus-champions) allocations to Jetstream2. You will explicitly need to get a [supplement](/alloc/supplement/) for it.
+Researchers have opportunities to request ACCESS allocations at four levels.
 
-#### Maximum Trial Allocation values for each resource are:
+|  Allocation | Credit Threshold |
+|---|---|
+| Explore ACCESS | 400,000  |
+|  Discover ACCESS | 1,500,000  |
+| Accelerate ACCESS | 3,000,000  |
+| Maximize ACCESS | Not awarded in credits |
 
-* Jetstream2 CPU - 2,000 SUs, 2 cores
+Information for each tier is below. Complete information including how to apply for allocations may be found on the [ACCESS Prepare Requests Overview](https://allocations.access-ci.org/prepare-requests-overview){target=_blank} page.
 
-#### Maximum Startup/Campus Champion Allocation values for each resource are:
+##### Explore ACCESS
 
-* Jetstream2 CPU - 200,000 SUs
-* Jetstream2 Large Memory - 400,000 SUs
-* Jetstream2 GPU - 600,000 SUs
-* Jetstream2 Storage - 1TB default**&ast;**
+Explore ACCESS allocations are intended for purposes that require small resource amounts. Researchers can try out resources or run benchmarks, instructors can provide access for small-scale classroom activities, research software engineers can develop or port codes, and so on. Graduate students can conduct thesis or dissertation work.
 
-**&ast;** Storage limits may be larger than 1TB per allocation for a startup if well-justified.
+These allocations can be requested at any time. They are available for the duration of your supporting grant or for 12 months without a grant (with possible extensions up to five years). Multiple requests are allowed if you have more than one supporting grant or need to keep your classroom or other non-research activity separate from your research efforts.
 
+##### Discover ACCESS
+
+Discover ACCESS projects are intended to fill the needs of many small-scale research activities or other resource needs. The goal of this opportunity is to allow many researchers, Campus Champions, and Gateways to request allocations with a minimum amount of effort so they can complete their work.
+
+These allocations can be requested at any time. They are available for the duration of your supporting grant or for 12 months without a grant (with possible extensions up to five years). Multiple requests are allowed if you have more than one supporting grant or need to keep your classroom or other non-research activity separate from your research efforts.
+
+To submit a request, you will need to provide a one-page description of the project that addresses how you plan to use ACCESS resources. You can also ask for an advisory review from the community to guide you to appropriate resources.
+
+##### Accelerate ACCESS
+
+Accelerate ACCESS allocations support activities that require more substantial, mid-scale resource amounts to pursue their research objectives. These include activities such as consolidating multi-grant programs, collaborative projects, preparing for Maximize ACCESS requests, and supporting gateways with growing communities.
+
+These allocations can be requested at any time. They are available for the duration of your supporting grant or for 12 months without a grant (with possible extensions up to five years). Multiple requests are allowed if you have more than one supporting grant or need to keep your classroom or other non-research activity separate from your research efforts.
+
+Researchers are expected to have reasonably well defined plans for their resource use and to submit a three-page project description for merit review. Reviewers will look more closely at how your resource usage plan addresses the review criteria.
+
+##### Maximize ACCESS
+
+For projects with resource needs beyond those provided by an Accelerate ACCESS project, a Maximize ACCESS request is required. ACCESS does not place an upper limit on the size of allocations that can be requested or awarded at this level, but resource providers may have limits on allocation amounts for specific resources. The review process is similar to the XSEDE process for large allocations.
 
 ----
 
-You'll need to have an XSEDE Portal account to request access to the Jetstream2 Trial Allocation, be added to a PI's allocation, or apply for an allocation.
+You'll need to have an ACCESS account to request access to the Jetstream2 Trial Allocation, be added to a PI's allocation, or apply for an allocation.
 
-### To create an XSEDE portal account if you do not have one:
-1. Go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}
-2. Click "Create Account" on the left side of your screen.
-3. Fill out the form and click Submit.
-4. Upon receipt of the email notification click the link in the email to verify your account and set your username and password. If the link doesn't work, go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}, click "Sign In" and then select "Verify Account" under the "Other Sign In Options".
-5. Following account verification, if not already logged in, go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}, click "Sign In" and sign in with the username and password set in the verification step.
-6. You will be asked to read and accept the User Responsibilities form. This form outlines acceptable use to protect shared resources and intellectual property.
+##### To create an ACCESS account if you do not have one:
+
+Please see [ACCESS User Registration](https://identity.access-ci.org/new-user){target=_blank} for up to date information on creating an ACCESS user account. 

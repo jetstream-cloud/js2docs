@@ -1,6 +1,6 @@
 #Jetstream2 Allocations FAQ
 
-!!! Notice "XSEDE to ACCESS transition"
+!!! Note "XSEDE to ACCESS transition"
 
      Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
 

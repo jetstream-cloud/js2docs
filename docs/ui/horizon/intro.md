@@ -15,7 +15,7 @@ That said, there are times you may need the more complete features of Horizon in
 * Navigate to [https://js2.jetstream-cloud.org](https://js2.jetstream-cloud.org)</br>
 Make sure it says "ACCESS CILogin" in the Authenticate Using box.
 
-</br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br>
 
 ---
 
@@ -30,10 +30,8 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 !!! note "Other intstitution credentials"
 
-     Please note that other CILogin credentials (i.e. for your home institution or Google) must be set up outside of this process. Instructions for that will hopefully be available from ACCESS soon. We will link them here when available.
+     Please note that other CILogin credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
-
-</br></br></br></br></br></br></br></br></br>
 
 ---
 
@@ -43,7 +41,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 * The next page should be the login screen for your credentials. We're showing the ACCESS login screen as our example.
 
-</br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br>
 
 ---
 
@@ -53,7 +51,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 * If you're using multi-factor authentication with your credentials as ACCESS does, you'll likely get a Duo or an Authenticator screen here.
 
-</br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br>
 
 ---
 
@@ -63,7 +61,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 * You should be at the Horizon Dashboard home now.
 
-</br></br></br></br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br></br></br></br></br>
 
 ---
 
@@ -73,7 +71,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 * If you are on multiple ACCESS allocations, you'll want to verify you're using the correct one and change to the correct one if you are not. </br></br>You do that by clicking at the top left next to the Jetstream2 logo where it has `ACCESS * AAA000000 * IU`. That will show allocations under "Projects".
 
-</br></br></br></br></br></br></br></br></br></br>
+</br></br></br></br>
 
 ---
 
