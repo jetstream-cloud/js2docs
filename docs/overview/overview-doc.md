@@ -2,7 +2,7 @@
 
 **Jetstream2** is a transformative update to the NSF’s science and engineering cloud infrastructure and provides 8 petaFLOPS of supercomputing power to simplify data analysis, boost discovery, and increase availability of AI resources. It is an NSF-funded, user-friendly _cloud environment_ designed to allow "always on" research infrastructure and to give researchers access to interactive computing and data analysis resources on demand, whenever and wherever they want to analyze their data.
 
-!!! Key takeaway "Jetstream is a cloud!"
+!!! Note "Jetstream is a cloud!"
 
      While it shares many common features and abilities with other research computing resources, it is **not** a traditional High Performance Computing (HPC) or High Throughput Computing (HTC) environment.</br>
 
