@@ -68,7 +68,7 @@ nav:
     - Jetstream2 Status and News: overview/status.md
   - Jetstream2 Info:
     - System Overview: overview/overview-doc.md
-    - Key Differences Between Jetstream 1 and 2: overview/keydiff.md
+    - Architecture and Capabilities of Jetstream2: overview/architecture.md
     - Configuration and specifications: overview/config.md
     - Network configuration and considerations: overview/network.md
   - Frequently Asked Questions:
