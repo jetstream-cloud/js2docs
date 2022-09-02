@@ -39,18 +39,10 @@ The ticketing system is still the preferred mechanism for official support. That
 
 ### ACCESS/XSEDE User News and Announcements
 
-!!! caution "XSEDE End of Life"
-
-     In a few short weeks, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022. More information may be found at [Advance to ACCESS](https://www.xsede.org/advancetoaccess){target=_blank}
-
----
-
-Next week, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022.
-
-The [Advance to ACCESS website](https://www.xsede.org/advancetoaccess){target=_blank} will always have the most current information.
-
 ##### What Is ACCESS?
 
 The new NSF-funded program for advancing computational and data-intensive research – the Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) – offers significant opportunities for community involvement. One of those is ensuring that requests for resource allocations meet the program's requirements in careful merit reviews by a diverse group of reviewers.
 
-More information will be provided here as it becomes generally available.
+The ACCESS website is: [https://access-ci.org/](https://access-ci.org/){target=_blank}
+
+ACCESS Infrastructure News and Outages may be found here [https://operations.access-ci.org/infrastructure_news](https://operations.access-ci.org/infrastructure_news){target=_blank}
