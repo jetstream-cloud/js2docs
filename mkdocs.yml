@@ -127,9 +127,7 @@ nav:
         - Setting up a Network: ui/cli/network.md
         - Launching a Virtual Machine: ui/cli/launch.md
         - Instance Management: ui/cli/manage.md
-        - Snapshots & Images:
-          - Overview & Creation: ui/cli/snapshot-image.md
-          - Image Sharing: ui/cli/snapshot-image.md#ImageSharing
+        - Snapshots & Images: ui/cli/snapshot-image.md
       - Deleting Infrastructure in the CLI: ui/cli/deleting.md
       - Storage Under the CLI: ui/cli/storage.md
       - Manila Shares in the CLI: ui/cli/manila.md

@@ -13,7 +13,7 @@ That said, there are times you may need the more complete features of Horizon in
 1. **Navigate**
 
 * Navigate to [https://js2.jetstream-cloud.org](https://js2.jetstream-cloud.org)</br>
-Make sure it says "ACCESS CILogin" in the Authenticate Using box.
+Make sure it says "ACCESS CILogon" in the Authenticate Using box.
 
 </br></br></br></br></br></br>
 
@@ -21,16 +21,16 @@ Make sure it says "ACCESS CILogin" in the Authenticate Using box.
 
 ![](/images/JS2-CILogin-Screen.png){ align=right ; width=50% }
 
-2. **CILogin Authentication**
+2. **CILogon Authentication**
 
-* You will be directed to a CILogin page to permit authorization the first time and any time your are using a new browser or your credentials go stale.</br></br>
+* You will be directed to a CILogon page to permit authorization the first time and any time your are using a new browser or your credentials go stale.</br></br>
 * If you have linked institutional, Google, Orcid, or other credentials, you'll be able to use those to authenticate. <p>
 
-We know ***ACCESS-CI*** credentials work correctly so we will show that in our example.
+We know ***ACCESS-CI*** credentials work correctly so we will show that in our example and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon
 
 !!! note "Other intstitution credentials"
 
-     Please note that other CILogin credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
+     Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
 
 ---
