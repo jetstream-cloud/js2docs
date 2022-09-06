@@ -2,7 +2,6 @@
 
 For specific FAQs, see the following pages:
 
-* [Early Operations FAQ](js2-earlyops-faq.md)
 * [Allocations FAQ](alloc.md)
 * [Troubleshooting](trouble.md)
 * [Security FAQ](security.md)
