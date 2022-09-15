@@ -4,7 +4,7 @@
 genomic data analysis, although support other domains is growing:
 machine learning, natural language processing, climate science. **Galaxy enables
 scientists to share, analyze and visualize their own data via a browser.**
-Thounsands of modern and popoular tools are readily available alongside
+Thousands of modern and popoular tools are readily available alongside
 pre-formatted reference data. There are also [extensive training
 resources](https://training.galaxyproject.org/){target=_blank} for a variety of roles,
 including researchers, tool developers, and educators.
