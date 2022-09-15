@@ -24,6 +24,17 @@ If your application credential secret in the openrc contains some punctuation/sp
 
 For example, if you had an ampersand in your credential password, it may have gotten escaped to **\&amp\;** instead of just the ampersand character. The same could happen for less than or greater than signs and potentially other special characters. Double check the openrc to verify that that has not happened.
 
+#### I get an error when trying to `source` my openrc file
+
+If your **secret** (password/passphrase) contains spaces, the openrc.sh file that Horizon generates may not have the field properly enclosed in quotes, resulting in an error message similar to `export: 'example!' not a valid identifier`.
+
+Simply open the file in the text editor of your choice and edit the line `export OS_APPLICATION_CREDENTIAL_SECRET`. For example: 
+
+1. `vi openrc.sh`
+2. Press `i` to enter insertion mode
+3. Change `export OS_APPLICATION_CREDENTIAL_SECRET=secret example!` to `export OS_APPLICATION_CREDENTIAL_SECRET="secret example!"`
+4. Press `esc` and type `:wq`, then hit `enter` to save your changes.
+
 ### View the console log
 
 Sometimes you may need to look at the console log for troubleshooting purposes or even just to see if the boot completed normally. You can do this with
