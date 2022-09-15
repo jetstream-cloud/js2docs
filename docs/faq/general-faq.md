@@ -132,7 +132,7 @@ Tutorials like [How to Run Linux Commands in Background](https://linuxize.com/po
 
 show a number of methods shown here on how to start a program and leave it running, even if your connection disconnects.
 
-I'd suggest looking at the nohup command. As that page says:
+We would suggest looking at the nohup command. As that page says:
 
 *"Another way to keep a process running after the shell exit is to use nohup.*
 
