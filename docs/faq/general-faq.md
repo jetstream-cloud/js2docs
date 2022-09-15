@@ -114,7 +114,7 @@ Additionally, there are NSF-funded resources like the Open Storage Network (OSN)
 
 ### What are the IP ranges / CIDR blocks for Jetstream2 ?
 
-The current CIDR blocks for Jetstrea2 are:
+The current CIDR blocks for Jetstream2 are:
 
 ```
 149.165.152.0/22
