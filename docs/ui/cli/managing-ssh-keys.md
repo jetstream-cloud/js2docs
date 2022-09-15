@@ -38,6 +38,8 @@ Then you can create your key
 
 The first will create a 2048 bit RSA cryptography key with the comment you specify and the filename id_rsa (which is the default). The second will create an Ed25519 elliptical cryptography key. The comment is optional but we do recommend it to keep track of keys. *You only need to do one of these, though you can create both.*
 
+***Note***: It is always good practice to secure your ssh keys with a password! Some platforms (for example, Ubuntu 20.04 LTS) will also refuse ssh connections using unprotected keys by default.
+
 You may also leave off the -f file option and ssh-keygen will prompt you for the filename.
 
     openstack keypair create --public-key id_rsa.pub my-api-key
