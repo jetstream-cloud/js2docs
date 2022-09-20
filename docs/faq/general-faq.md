@@ -38,6 +38,10 @@ Instructions for using boot from volume are here:
 
 ---
 
+### I was added to an allocation but can't access Jetstream2?
+
+It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, [contact Jetstream2 help](https://jetstream-cloud.org/contact/index.html){target=_blank}.
+
 ### How do I get access to one of the Jetstream2 regional clouds?
 
 The regional clouds of Jetstream2 (Arizona State University, Cornell University, University of Hawai'i, and Texas Advanced Computing Center) are available via invitation only. They have limited resources and the local PIs have discretion as to which projects may run there.
