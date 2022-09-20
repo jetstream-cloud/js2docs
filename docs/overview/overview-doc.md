@@ -14,13 +14,13 @@ Jetstream features multiple user interfaces, including the following _**web-base
 - [Horizon](../ui/horizon/intro.md)
 - [Cacao](../ui/cacao/intro.md)
 
-as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/overview.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank})
+as well as [the OpenStack Command Line Interface (CLI)](../ui/cli/overview.md) and the [OpenStack Software Development Kit (SDK)](https://docs.openstack.org/openstacksdk/latest/){target=_blank}.
 
 The operational software environment is based on [OpenStack](https://www.openstack.org/){target=_blank}.
 
 ### Accessing Jetstream ###
 
-Jetstream2 is primarily accessible through either the [Exosphere](../ui/exo/exo.md) web interface using [ACCESS](https://access-ci.org/){target=_blank} credentials via [CILogon](https://www.cilogon.org/faq/){target=_blank}.
+Jetstream2 is primarily accessible through the [Exosphere](../ui/exo/exo.md) web interface using [ACCESS](https://access-ci.org/){target=_blank} credentials via [CILogon](https://www.cilogon.org/faq/){target=_blank}.
 
 
 >Newly created ACCESS accounts must be [added to a Jetstream2 specific allocation](https://allocations.access-ci.org/user_management){target=_blank} by the PI or Resource manager in order to access Jetstream2.

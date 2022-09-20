@@ -37,7 +37,7 @@ i. Once your share is available you can select `Edit Share` and `Manage Rules` a
 
 ![](/images/JS2-manila4.png){ align=right ; width=50% }
 
-In the example above the `accessTo` name is `manilashare`.</br>***The name assigned must be globally unique, if you use a name that is already in use you will see an error state.***
+In the example above the `accessTo` name is `manilashare`.</br>***The name assigned must be globally unique!*** If you use a name that is already in use you will see an error state. To help avoid accidental overlap, we recommend prefixing your name with something unique such as your ACCESS username or your allocation number. For example, instead of using just `seed-research`, use `<ALLOCATION>-seed-research`.
 
 </br></br></br></br></br></br></br></br>
 

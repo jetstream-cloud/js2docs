@@ -50,7 +50,7 @@ restrictions.
 * Only g3.* flavors should be run on the Jetstream2-GPU resource
 * Only r3.* flavors should be run on the Jetstream2-LargeMemory resource
 * Running standard compute (m3.*) flavors on the specialty resources may result in those instances being deleted without warning
-* At some future point, if GPU or large memory resources are scarce, we may limit runtime to two week spans or institute some form VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
+* At some future point, if GPU or large memory resources are scarce, we may limit runtime to two week spans or institute some form of VM scheduling service to ensure equitable access to all. We do not anticipate doing this at this time.
 
 ### Allocation Related Policies
 

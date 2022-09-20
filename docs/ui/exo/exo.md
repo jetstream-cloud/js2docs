@@ -24,9 +24,9 @@ The other OpenStack interfaces support more features of OpenStack that Exosphere
 
 Instances created via these other tools do _not_ get a one-click shell, desktop, data upload/download tool, or any of the other interactions that Exosphere sets up for you. If you want these with the other OpenStack interfaces, you must set them up yourself with varying degrees of difficulty.
 
-### How Exosphere compares with Atmosphere2
+### How Exosphere compares with Cacao (Atmosphere2)
 
-This section will be populated once Atmosphere2 is ready enough to explore and compare.
+This section will be populated once [Cacao (Atmosphere2)](../cacao/overview.md) is ready enough to explore and compare.
 
 ## Getting Help
 

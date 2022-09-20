@@ -19,7 +19,7 @@
 
 > The [Research Allocation](../alloc/research.md) page has information and links for writing a successful Jetstream2 research allocation request.
 >
-> There is a Cornell Virtual Workshop (CVW) on getting a Research Allocation for Jetstream here: https://cvw.cac.cornell.edu/JetstreamReq/. It is not updated for Jetstream2 though the principles are the same.
+> There is a Cornell Virtual Workshop (CVW) on getting a Research Allocation for Jetstream here: [https://cvw.cac.cornell.edu/JetstreamReq/](https://cvw.cac.cornell.edu/JetstreamReq/). It is not updated for Jetstream2 though the principles are the same.
 
 ---
 
