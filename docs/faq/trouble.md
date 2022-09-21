@@ -78,3 +78,11 @@ The best way to work around this is to use Horizon to attach the volume and then
     sudo mount /dev/sdb1 /mnt
 
 and you'll be able to see the contents of the volume in /mnt
+
+### My GPU is not usable after a kernel update
+
+The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a kernel update. If they do not, you can do this on Ubuntu-based instances:
+
+    ls /var/lib/initramfs-tools | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
+
+This doesn't work on redhat-based instances like Rocky or Alma. We're working on a simple solution for that. 
