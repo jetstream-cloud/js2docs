@@ -16,10 +16,10 @@ The basic setup is as follows:
 
 1. Git clone the terraform repo
 2. Download the openrc file into the repo
-3. Run source openrc.sh
-4. Initalize Terraform with terraform init
-5. See what changes Terraform wants to make to your infrastructure with terraform plan
-6. Apply the changes with terraform apply
+3. Run `source openrc.sh`
+4. Initalize Terraform with `terraform init`
+5. See what changes Terraform wants to make to your infrastructure with `terraform plan`
+6. Apply the changes with `terraform apply`
 
 
 ### Getting started with git
@@ -182,11 +182,25 @@ Only 'yes' will be accepted to approve.
 Enter a value: yes
 ```
 
-## Writing YAML files and Validating YAML files
+## Writing Terraform Files
 
-Terraform code is written in YAML (YAML Ain't Markup Language). Indentation matters with YAML so listed below are some free tools that will help you write in YAML.
+Terraform code is written in HCL (Hashicorp Configuration Language), and configuration files typically end in the `.tf` extension. Configurations can either be split into multiple files or maintained in a single file. Listed below are some free resources that may help you:
 
 
-* [yamllint](http://www.yamllint.com)
+* [Overview - Configuration Language](https://www.terraform.io/language)
 
-* [vscode](https://code.visualstudio.com)
+* [Syntax - Configuration Language](https://www.terraform.io/language/syntax/configuration)
+
+* [Hashicorp Terraform VSCode Language Extension](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform)
+
+### OpenStack Provider
+
+Plugins called providers inform Terraform about how to perform its basic functions across different platforms, such as AWS or, more importantly, Jetstream2. In order to connect Terraform to Jetstream2, you will need to use the OpenStack provider. In our example, this is accomplished in the file `main.tf`; note that no configuration is needed for openstack since all necessary information (authentication URL, application credentials, etc.) has already been exported to environment variables by sourcing openrc.sh. 
+
+### OpenStack Resources
+
+Terraform's unitary block representing an infrastructure object such as a VM, IP address, or security group is known as a resource. In configuration files, these are declared with [resource blocks](https://www.terraform.io/language/resources/syntax). The OpenStack provider makes plenty of resources available under its namespace; by declaring OpenStack resources, you can effectively use Terraform to create/manage anything the [OpenStack CLI](../ui/cli/overview.md) is capable of. 
+
+For example, in our sample files above, a Jetstream2 instance is created in the `ubuntu.tf` file (line 6) by declaring an "openstack_compute_instance_v2" resource. If you have used the [OpenStack CLI](../ui/cli/overview.md), these fields should look familiar. The example sets many of the resource's arguments with [Terraform variables](https://www.terraform.io/language/values/variables); however, they could just as easily be hard-coded.
+
+***Note:*** You can find a breakdown of all resources offered by the OpenStack provider and more examples in the [Terraform OpenStack documentation](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs).
