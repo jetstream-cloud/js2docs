@@ -11,9 +11,17 @@ For specific FAQs, see the following pages:
 ---
 ## General FAQs
 
+### I was added to an allocation but can't access Jetstream2?
+
+It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, [contact Jetstream2 help](https://jetstream-cloud.org/contact/index.html){target=_blank}.
+
+---
+
 ### How do I cite Jetstream2 ?
 
 The Jetstream2 team requests that all researchers using Jetstream2 cite us in any publications that utilize results that were computed or created on Jetstream2. We keep the most up to date citation information here - [Jetstream2 Citation Information](https://jetstream-cloud.org/research/index.html#cite-jetstream){target=_blank}
+
+---
 
 ### I need a root disk larger than the maximum size for Jetstream2 instances. Can you create a custom flavor for me?
 
@@ -37,10 +45,6 @@ Instructions for using boot from volume are here:
 * [CLI](/ui/cli/launch)
 
 ---
-
-### I was added to an allocation but can't access Jetstream2?
-
-It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, [contact Jetstream2 help](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
 ### How do I get access to one of the Jetstream2 regional clouds?
 
