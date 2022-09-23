@@ -6,65 +6,57 @@
 
 ####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
-> The [Getting Started guide](https://www.xsede.org/for-users/getting-started){target=_blank} describes the process of getting onto XSEDE, applying for allocations and using XSEDE resources. To review the types of allocations XSEDE and the process to get an allocation, here are some links you might find useful:
+> The [Getting Started guide](https://allocations.access-ci.org/get-started-overview){target=_blank} describes the the overall allocations process and using ACCESS resources. To review the types of allocations ACCESS and the process to get an allocation, here are some links you might find useful:
 
->  *   [Allocations overview](https://www.xsede.org/web/guest/allocations){target=_blank}
-  *   [Types of allocations, eligibility, details](https://www.xsede.org/web/xup/documentation-overview#allocations-types){target=_blank}
-  *   [Allocation policies](https://portal.xsede.org/allocation-policies){target=_blank}
-  *   [Submit and manage allocation requests](https://www.xsede.org/group/xup/submit-request){target=_blank}
-  *   [Proposal deadlines](https://portal.xsede.org/allocations/research#schedule){target=_blank}
+>  *  [Allocations overview](../alloc/overview.md){target=_blank}
+  *   [Types of allocations, eligibility, details](https://allocations.access-ci.org/prepare-requests-overview){target=_blank}
+  *   [Allocation policies](https://allocations.access-ci.org/access-allocations-policies){target=_blank}
+  *   [Managing allocations overview](https://allocations.access-ci.org/manage-allocations-overview){target=_blank}
+  *   [Managing users](https://allocations.access-ci.org/user_management){target=_blank} - *requires ACCESS login*
+  *   [ACCESS Allocation FAQs](https://allocations.access-ci.org/ramps-policies-faqs){target=_blank}
 ---
 
 ####Is there a example or demonstration of how to get an allocation that I could follow?
 
-> The [Research Allocation](../alloc/research.md) page has information and links for writing a successful Jetstream2 research allocation request.
+> The requirements for allocations has changed considerably with ACCESS.
+
+> * [Explore ACCESS](https://allocations.access-ci.org/preparing-your-explore-access-request){target=_blank} - up to 400,000 credits, basically requires an abstract and other standard items listed on the Explore ACCESS page.
+  * [Discover ACCESS](https://allocations.access-ci.org/preparing-your-discover-access-request){target=_blank} - up to 1,500,000 credits, requires an abstract, one page description, and other standard items listed on the Discover ACCESS page.
+  * [Accelerate ACCESS](https://allocations.access-ci.org/preparing-your-discover-access-request){target=_blank} - up to 3,000,000 credits, requires an abstract, three page description, and other standard items listed on the Discover ACCESS page.
+  * [Maximize ACCESS](https://allocations.access-ci.org/preparing-your-maximize-access-request){target=_blank} - most closely resembles XSEDE research allocations. Submission periods are twice a year and have requirements of up to 10 page main document, additional code and scaling performance documents, and the other standard materials like CVs required by all requests.
+
 >
-> There is a Cornell Virtual Workshop (CVW) on getting a Research Allocation for Jetstream here: [https://cvw.cac.cornell.edu/JetstreamReq/](https://cvw.cac.cornell.edu/JetstreamReq/). It is not updated for Jetstream2 though the principles are the same.
+> Presently there are no sample documents though we expect those will materialize in time. That said, with the requirements for documentation for all but the largest allocations being up to three pages, following the ACCESS pages linked above for submissions should yield all of the information you need.
 
 ---
 
-####How do I let other XSEDE accounts use my allocation?
+####How do I let other ACCESS accounts use my allocation?
 
-You can add users to (or remove them from) your XSEDE allocation via the XSEDE User Portal. Users must have already created their XSEDE accounts before they can be added to an allocation.
+You can add users to (or remove them from) your ACCESS allocation via the ACCESS Allocations Portal. Users must have already created their ACCESS accounts before they can be added to an allocation.
 
-> To add users to, or remove them from, an active Extreme Science and Engineering Discovery Environment ([XSEDE](https://www.xsede.org/documents/527334/695761/what-is-XSEDE.pdf){target=_blank}) allocation, the principal investigator, co-principal investigator, or [allocation manager](https://portal.xsede.org/allocations/managing#manageusers){target=_blank} can follow the instructions here:
+> To add users to, or remove them from, an active Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support ([ACCESS](https://access-ci.org/about/){target=_blank}) allocation, the principal investigator, co-principal investigator, or can use the ACCESS tools here (*requires ACCESS login*):
 
->  * [https://portal.xsede.org/allocations/managing](https://portal.xsede.org/allocations/managing){target=_blank}
+>  * [User Management](https://allocations.access-ci.org/user_management){target=_blank}
 
 !!! Note
     **It can take up to four hours for users added to an allocation to become active.**
 
 ---
 
-####How often can I get a startup allocation?
+#### Can I keep renewing my allocation(s)?
 
-> Applications for startup allocations will only be accepted once. If you have modest needs that are equal or less than startup values, you may renew your startup allocation. If you need a larger allocation, it is best to apply for a [research allocation](https://portal.xsede.org/allocations/research){target=_blank}.
-
-> Maximum Startup/Campus Champion Allocation values for each resource are:<br>
-> * Jetstream2 CPU - 200,000 SUs<br>
-> * Jetstream2 Large Memory - 400,000 SUs<br>
-> * Jetstream2 GPU - 600,000 SUs<br>
-> * Jetstream2 Storage - 1TB default*<p>
->
-> * Storage limits may be larger than 1TB per allocation for a startup if well-justified.
-
----
-
-####Can I renew a startup allocation?
-
-> If your SU needs are equal to or less than the maximum startup values (see item 4 just above) you may renew your startup allocation. If you need a signficantly larger amound of SUs for any of the resources, you will need to pursue a [research allocation](../alloc/research.md)
-
-> Startup allocations may be renewed at 30 days or less before expiration. Please refer to [Instructions for requesting a renewal](https://docs.jetstream-cloud.org/alloc/renew-extend/#instructions-for-requesting-a-renewal) for more information.
+> Unlike XSEDE, ACCESS does not differentiate between most allocation types. You can renew all allocation types now, though ***Maximize ACCCESS*** allocations are only renewable during the enrollment periods noted at the top of the [Preparing Your Maximize ACCESS Request](https://allocations.access-ci.org/preparing-your-maximize-access-request){target=_blank} page.
 
 ---
 
 ####I'm running out of Service Units (SUs) or storage. How do I request more?
 
-> If you already have an XSEDE allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the XSEDE User Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
+> If you already have an ACCESS allocation and need to request additional service units (SUs), the PI, co-PI, or delegate may submit a request via the ACCESS Portal. For instructions on how to submit the request, see [Requesting additional SUs, other Jetstream resources, or storage for Jetstream -- Supplemental Allocations](../alloc/supplement.md){target=_blank}.
 
 !!! Note
 
     Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.
+    
 ---
 
 ####I am at or exceeding the quota limits for my allocation.
@@ -91,10 +83,15 @@ You can add users to (or remove them from) your XSEDE allocation via the XSEDE U
 
 !!! Note
 
+    For allocations that are about to expire or have expired, ***renewals are ALWAYS preferred over extensions***
+
+
+!!! Note
+
     Extensions only add time. If you need more or different resources, you need to pursue a supplement.
 
 ---
 
 ####My PI got a Jetstream2 supplement added to our existing allocation but we cannot access Exosphere or Horizon
 
-> When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your [Allocations/Usage page](https://portal.xsede.org/group/xup/allocations/usage){target=_blank} and select the "Manage Users" button for the appropriate project.
+> When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your [User Management page](https://allocations.access-ci.org/user_management){target=_blank} and select the appropriate allocation to manage.
