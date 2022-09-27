@@ -17,7 +17,7 @@ It can take up to four hours for ACCESS to sync up everything to Jetstream2. If 
 
 !!! Note "Use ACCESS CI credentials if you're having trouble authenticating"
 
-     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.
+     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
 ---
 

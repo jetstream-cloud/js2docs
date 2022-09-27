@@ -1,9 +1,5 @@
 #Jetstream2 Allocations FAQ
 
-!!! Note "XSEDE to ACCESS transition"
-
-     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
-
 ####I was added to an allocation but I get an error like this trying to log in
 
 >    ````{"error":{"code":401,"message":"The request you have made requires authentication.","title":"Unauthorized"}}````
@@ -12,7 +8,7 @@
 
 !!! Note "Use ACCESS CI credentials if you're having trouble authenticating"
 
-     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.
+     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
 ####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
