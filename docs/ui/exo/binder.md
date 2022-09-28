@@ -1,3 +1,6 @@
+***Warning:*** Exosphere's Binder-related functionality is an experimental feature. Developing it further may not be a current priority; users are still encouraged to [report any bugs they encounter](https://jetstream2.exosphere.app/exosphere/getsupport), but they may not receive a quick resolution.
+{: .note}
+
 # About Binder & BinderHub
 [Binder](https://jupyter.org/binder) is a project maintained by Project Jupyter that allows for the deployment and sharing of computing environments with a single link. It is built on an open-source software stack that converts a git repository to a reproducible Docker image, then deploys that image into a shareable container. Out of the box, Binder supports Python, R, and Julia as base languages, and offers classic Jupyter notebooks, JupyterLab, nteract, RStudio, and Shiny as exposable user interfaces.
 
