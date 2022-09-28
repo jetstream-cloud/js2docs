@@ -10,6 +10,10 @@
 
 >The allocation updates and user additions are created by ACCESS and synced to Jetstream2 (and other ACCESS resources). It can take up to four hours for users added to an allocation to become active. This is outside of our control. If you are still unable to log into [Exosphere](../ui/exo/login.md) or [Horizon](../ui/horizon/intro.md) after four hours from being added, please open a ticket via either the [ACCESS Help Form](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank} or the [Jetstream Help Form](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
+!!! Note "Use ACCESS CI credentials if you're having trouble authenticating"
+
+     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.
+
 ####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
 > The [Getting Started guide](https://allocations.access-ci.org/get-started-overview){target=_blank} describes the the overall allocations process and using ACCESS resources. To review the types of allocations ACCESS and the process to get an allocation, here are some links you might find useful:
