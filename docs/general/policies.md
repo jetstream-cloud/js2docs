@@ -54,7 +54,7 @@ restrictions.
 
 ### Allocation Related Policies
 
-Jetstream2 requires an active XSEDE allocation for access. If your allocation expires you will no longer be able to access Jetstream2 or your resources. Presently, XSEDE warns PIs monthly, starting at 3 months until allocation expiration, and at the time of expiration.
+Jetstream2 requires an active ACCESS allocation for access. If your allocation expires you will no longer be able to access Jetstream2 or your resources. Presently, ACCESS warns PIs monthly, starting at 3 months until allocation expiration, and at the time of expiration.
 
 Jetstream2 policy is that we will do the following when allocations expire:
 
@@ -66,7 +66,9 @@ Jetstream2 policy is that we will do the following when allocations expire:
 
 Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) can be retained by an allocation for a virtual machine as long as needed under all Jetstream2 interfaces. As long as the IP number is in use by a virtual machine, whether active or not, it may be retained.
 
-As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.
+!!! Note "Unused IP addresses may be reclaimed"
+
+     As IP addresses are a scarce resource, any IP numbers that are not in use may be reclaimed by the system without warning based on need.
 
 ### Router Quota Policies
 
