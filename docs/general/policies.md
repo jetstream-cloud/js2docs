@@ -2,9 +2,9 @@
 
 ### Acceptable Use of Jetstream2
 
-Jetstream2 requires compliance with all XSEDE and Indiana University policies, including but not limited to:
+Jetstream2 requires compliance with all ACCESS and Indiana University policies, including but not limited to:
 
-*   [XSEDE Usage Policy](https://www.xsede.org/ecosystem/operations/usagepolicy){target=_blank}
+*   [ACCESS Acceptable Usage Policy](https://identity.access-ci.org/aup.html){target=_blank}
 *   Indiana University 
     *   [IT-02 Misuse and Abuse of Information Technology Resources](http://policies.iu.edu/policies/categories/information-it/it/IT-02.shtml){target=_blank}
     *   [IT-12 Security of Information Technology Resources](http://policies.iu.edu/policies/categories/information-it/it/IT-12.shtml){target=_blank}
@@ -58,7 +58,7 @@ Jetstream2 requires an active ACCESS allocation for access. If your allocation e
 
 Jetstream2 policy is that we will do the following when allocations expire:
 
-* At **expiration + 1 day** - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
+* At **expiration** - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
 * If the allocation has not been renewed *(preferred)* or extended in **10 days**, all VMs on the allocation will be shelved and thus no longer accessible
 * If the allocation has not been renewed *(preferred)* or extended in **30 days**, all resources (VMs, volumes, shares, images, etc) on the allocation will be destroyed and *will not be recoverable*
 
