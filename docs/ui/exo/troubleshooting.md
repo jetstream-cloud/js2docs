@@ -61,3 +61,16 @@ We HIGHLY suggest utilizing ssh keys for your instances to ensure you have acces
 under the advanced options. You can also manually add your key to an already running instance.
 
 We generally recommend using only ssh keys for external access and not changing the exouser password.
+
+### I can't copy and paste to/from the Web Shell or Web Desktop (Guacamole)
+
+Copying and pasting to and from Guacamole interfaces (i.e. the web shell or web desktop) can be a tricky endeavor. If you are a Firefox user, this article presents a fix: [https://sudoedit.com/firefox-async-clipboard/](https://sudoedit.com/firefox-async-clipboard/)
+
+Otherwise, you can generally paste text *into* Guacamole by following these steps:
+
+1. Copy the text into the clipboard on your workstation
+2. Right-click in the Guacamole window (might be middle-click on some systems)
+
+To copy *out* of Guacamole, simply highlight the text, and it will be placed into your clipboard.
+
+If all else fails, try accessing the clipboard information in the `Ctrl`+`Alt`+`Shift` menu.

@@ -102,10 +102,12 @@ nav:
       - Overview: ui/exo/exo.md
       - Logging In: ui/exo/login.md
       - Creating an Instance: ui/exo/create_instance.md
+      - Accessing an Exosphere Instance: ui/exo/access-instance.md
       - Instance Management: ui/exo/manage.md
       - File Transfer: ui/exo/exo-filetransfer.md
       - Storage Under Exosphere: ui/exo/storage.md
       - Push-button clusters: ui/exo/push-button-cluster.md
+      - Binder Workflows: ui/exo/binder.md
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
       - Overview: ui/horizon/intro.md
