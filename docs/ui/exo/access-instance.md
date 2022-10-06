@@ -71,7 +71,7 @@ Public key authentication is preferred to passwords by many. Adding your public 
 
 #### Adding a Public Key Manually
 
-1. Access your instance's web shell or console
+1. Access your instance's web shell or console, or by SSH using password authentication
 2. Open up the file `/home/exouser/.ssh/authorized_keys` in the editor of your choice, for example:
     ```
     vim /home/exouser/.ssh/authorized_keys
