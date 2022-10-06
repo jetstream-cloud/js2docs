@@ -72,9 +72,9 @@ Public key authentication is preferred to passwords by many. Adding your public 
 #### Adding a Public Key Manually
 
 1. Access your instance's web shell or console
-2. Open up the file `~/.ssh/"authorized keys"` in the editor of your choice, for example:
+2. Open up the file `~/.ssh/authorized_keys` in the editor of your choice, for example:
     ```
-    vim ~/.ssh/"authorized keys"
+    vim ~/.ssh/authorized_keys
     ```
 3. Paste your **public** SSH key into the file (**never share your private keys**) by copying it into the clipboard on your workstation, then right-clicking on the web shell. If you are having trouble copying/pasting, see [Exosphere Troubleshooting](../troubleshooting/#i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole). If the file is not empty, simply put your key on a new line.
 4. Save and close the file.
