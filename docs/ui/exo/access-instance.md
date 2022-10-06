@@ -2,7 +2,7 @@
 
 ## The exouser Profile & Passphrase
 
-Instances launched with Exosphere will be created with a user `exouser`. By default, `exouser` has `sudo` privilege, and any web shells/desktops launched from Exosphere will be signed in with this account. Should you ever need the initial password/passphrase created for `exouser`, it can be found on the Instance's Details page under "Credentials."
+Instances launched with Exosphere will be created with a user `exouser`. By default, `exouser` has `sudo` privilege, and any web shells/desktops launched from Exosphere will be signed in with this account. Should you ever need the initial passphrase (password) created for `exouser`, it can be found on the Instance's Details page under "Credentials."
 ![A screenshot of an Instance Details page with the location of the exouser passphrase highlighted](../../images/exo-passphrase.png)
 
 ---
@@ -42,14 +42,14 @@ When using the console, you will not be signed into the machine automatically, s
 If your instance does not have a public IP address assigned to it, you will be unable to SSH from your workstation (or anywhere else outside of Jetstream2, unless you are using another instance within the same allocation that *does* have a public ip as a tunnel point or jump host).
 {: .note}
 
-Exosphere instances support SSH connections with both password and [public key](https://kb.iu.edu/d/aews) authentication. You probably already have an SSH client on your computer, included with your operating system. You can use this to connect to your instance. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to [enable it in the settings](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). If your Windows version is too old, or you want a more customizable environment, these resources may be useful:
+Exosphere instances support SSH connections with both passphrase and [public key](https://kb.iu.edu/d/aews) authentication. You probably already have an SSH client on your computer, included with your operating system. You can use this to connect to your instance. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to [enable it in the settings](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). If your Windows version is too old, or you want a more customizable environment, these resources may be useful:
 
 - [PuTTY](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui), a free SSH client and `xterm` terminal emulator for Windows and Unix.
 - [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-### SSH Password Authentication
+### SSH Passphrase Authentication
 
-Password authentication is enabled on Exosphere-created instances by default. To connect to your instance, simply execute (where `<PUBLIC_IP>` is replaced with your instance's public ip address, e.g. `149.165.0.0`)
+Passphrase authentication is enabled on Exosphere-created instances by default. To connect to your instance, simply execute (where `<PUBLIC_IP>` is replaced with your instance's public ip address, e.g. `149.165.0.0`)
 ```
 ssh exouser@<PUBLIC_IP>
 ```
@@ -57,7 +57,7 @@ The Interactions section of the Instance Details page also shows this SSH connec
 
 When prompted, enter the `exouser` passphrase.
 
-If you want to force password authentication, but are being prompted for a public key (or password for your public key), you can instead try
+If you want to force passphrase authentication, but are being prompted for a public key (or passphrase for your public key), you can instead try
 ```
 ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no exouser@<PUBLIC_IP>
 ```
@@ -67,11 +67,11 @@ ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no exouser@<PUB
 This guide assumes that you have already generated a public/private key pair. For step-by-step instructions on doing so, see [the IU Knowledge Base](https://kb.iu.edu/d/aews).
 {: .note}
 
-Public key authentication is preferred to passwords by many. Adding your public key to an instance with the Exosphere UI is only possible [during creation](../create_instance/#advanced-options); however, there is a workaround.
+Public key authentication is preferred to passphrases by many. Adding your public key to an instance with the Exosphere UI is only possible [during creation](../create_instance/#advanced-options); however, there is a workaround.
 
 #### Adding a Public Key Manually
 
-1. Access your instance's web shell or console, or by SSH using password authentication
+1. Access your instance's web shell or console, or by SSH using passphrase authentication
 2. Open up the file `/home/exouser/.ssh/authorized_keys` in the editor of your choice, for example:
     ```
     vim /home/exouser/.ssh/authorized_keys
