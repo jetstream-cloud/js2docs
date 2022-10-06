@@ -1,14 +1,16 @@
+# Binder Workflows in Exosphere
+
 !!! warning "About experimental features" 
 
     Exosphere's Binder-related functionality is an experimental feature. Developing it further may not be a current priority; users are still encouraged to [report any bugs they encounter](https://jetstream2.exosphere.app/exosphere/getsupport), but they may not receive a quick resolution.
 
-# About Binder & BinderHub
+## About Binder & BinderHub
 [Binder](https://jupyter.org/binder) is a project maintained by Project Jupyter that allows for the deployment and sharing of computing environments with a single link. It is built on an open-source software stack that converts a git repository to a reproducible Docker image, then deploys that image into a shareable container. Out of the box, Binder supports Python, R, and Julia as base languages, and offers classic Jupyter notebooks, JupyterLab, nteract, RStudio, and Shiny as exposable user interfaces.
 
 ## When (not) to use a Binder
 When deciding if a Binder workflow is optimal for specific your use case, there are some considerations to make. First and foremost is the nature of Docker containers; since by default containers are stateless/ephemeral, **all changes made to files inside the workflow will be permanently lost when your instance restarts.** Although there are ways around this (for example, creating a [Docker volume](https://docs.docker.com/storage/volumes/) and attaching it to the container), such a need may be a good indication to explore other solutions, for example a [traditional Jupyter server using Anaconda](../../general/jupyter.md). For some examples of good use cases for Binder, see ["What is Binder used for?"](https://jupyter.org/binder#what-is-binder-used-for) in the Jupyter docs.
 
-# Deploying a Binder using Exosphere
+## Deploying a Binder using Exosphere
 This guide assumes that you are comfortable creating instances using Exosphere. If you are new to Exosphere, see [Exosphere: Overview](./exo.md).
 {: .note}
 
@@ -17,10 +19,10 @@ Any Binder-compatible repository can be easily be deployed as a Jetstream2 insta
 Currently, Exosphere's workflow deployment features are somewhat limited and intended for the **individual consumption of Binders** rather than the mass publishing of them--for example, you want to run someone's Binder repository, but it needs more compute resources than you can get from [mybinder.org](https://mybinder.org/). If your goal is to create a replacement for [mybinder.org](https://mybinder.org/), where users can individually spin up Binders as needed, that may be possible on Jetstream2, but you will have to manually set up a [BinderHub](https://binderhub.readthedocs.io/en/latest/index.html) deployment, which is not covered here.
 {: .note}
 
-## Enable Experimental Features in Settings
+### Enable Experimental Features in Settings
 Open the Settings page (top menu). Ensure that the "Experimental Features" option is enabled.  
 
-## Create a Jetstream2 Instance
+### Create a Jetstream2 Instance
 Select "Create" and then "Instance".
 
 ![screenshot of create dropdown](../../images/exo-create-dropdown.png)
@@ -42,7 +44,7 @@ Click "Create" to start your new instance.
 Instances with Workflows may take extra time to deploy; depending on the flavor selected and the complexity of the Binder, this may be up to around 15-30 minutes. 
 {: .note}
 
-## Accessing the Workflow
+### Accessing the Workflow
 Provided that your instance has a public IP assigned to it, your workflow can be accessed by simply clicking the "Workflow" button on your instance's page (look under "Interactions").
 
 ![screenshot of Exosphere instance page, showing the "Workflow" button highlighted](../../images/exo-workflow-launch.png)
