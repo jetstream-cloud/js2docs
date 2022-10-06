@@ -39,7 +39,7 @@ When using the console, you will not be signed into the machine automatically, s
 
 ## Accessing an Instance with Native SSH
 
-If your instance does not have a public IP address assigned to it, you will be unable to SSH from your workstation (or anywhere else outside of Jetstream2, unless you are using another instance that *does* have a public ip as a tunnel point or jump host).
+If your instance does not have a public IP address assigned to it, you will be unable to SSH from your workstation (or anywhere else outside of Jetstream2, unless you are using another instance within the same allocation that *does* have a public ip as a tunnel point or jump host).
 {: .note}
 
 Exosphere instances support SSH connections with both password and [public key](https://kb.iu.edu/d/aews) authentication. SSH clients are almost always packaged in with operating systems by default. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to [enable it in the settings](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). If your Windows version is too old, or you want a more customizable environment, these resources may be useful:
