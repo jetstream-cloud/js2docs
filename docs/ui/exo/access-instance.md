@@ -31,7 +31,9 @@ If an instance was [configured with Web Desktop](../create_instance/#configure-i
 
 ### Console
 
-The Exosphere console is usually only used in rare circumstances, and is more akin to plugging a monitor, keyboard, and mouse into the machine than accessing it via the web shell. When using the console, you will not be signed into the machine automatically, so you will likely need to reference the `exouser` passphrase (see above).
+The Exosphere console is usually only used in rare circumstances, like recovering an instance with broken network connectivity or a corrupted disk. The console is more akin to plugging a monitor, keyboard, and mouse into the machine than accessing it via the Web Shell. If the Web Shell is working, it will generally offer a better experience than the console.
+
+When using the console, you will not be signed into the machine automatically, so you will likely need to reference the `exouser` passphrase (see above).
 
 ---
 
