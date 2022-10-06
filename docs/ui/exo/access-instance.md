@@ -2,21 +2,21 @@
 
 ## The exouser Profile & Passphrase
 
-Instances launched with Exosphere will be created with a user `exouser`. By default, `exouser` has `sudo` privilege, and any web shells/desktops launched from Exosphere will be signed in with this account. Should you ever need the initial password/passphrase created for `exouser`, it can be found on the individual Exosphere page for your instance under "Credentials."
-![A screenshot of an instance page with the location of the exouser passphrase highlighted](../../images/exo-passphrase.png)
+Instances launched with Exosphere will be created with a user `exouser`. By default, `exouser` has `sudo` privilege, and any web shells/desktops launched from Exosphere will be signed in with this account. Should you ever need the initial password/passphrase created for `exouser`, it can be found on the Instance's Details page under "Credentials."
+![A screenshot of an Instance Details page with the location of the exouser passphrase highlighted](../../images/exo-passphrase.png)
 
 ---
 
 ## Accessing an Instance through Exosphere Web Interface
 
-Exosphere provides a variety of different methods for interacting with your instances, depending on the options selected during creation. These options include the web shell, web desktop, and console, all of which can be accessed either from the Exosphere *Instances* page (with the "Connect to" dropdown) or from the *Interactions* section of your instance's main page. 
+Exosphere provides a variety of different methods for interacting with your instances, depending on the options selected during creation. These options include the web shell, web desktop, and console, all of which can be accessed either from the Exosphere Instance List page (with the "Connect to" dropdown) or from the *Interactions* section of the Instance Details page. 
 
 Remember that the web shell and web desktop will not be available if you have chosen not to assign a public IP address to your instance!
 {: .note}
 
-| "Instances" Page | Individual Instance Page |
-|---------|---------|
-| ![A screenshot of the "connect to" dropdown on the "instances" page](../../images/exo-connect-dropdown.png) | ![A screenshot of the individual instance page's "interactions" section](../../images/exo-interactions.png)|
+| Instance List Page                                                                                            | Instance Details Page                                                                                    |
+|---------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| ![A screenshot of the "connect to" dropdown on the Instance List page](../../images/exo-connect-dropdown.png) | ![A screenshot of the Instance Details page's "interactions" section](../../images/exo-interactions.png) |
 
 ### Web Shell (Guacamole)
 

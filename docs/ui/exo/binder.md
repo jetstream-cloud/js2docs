@@ -45,9 +45,9 @@ Instances with Workflows may take extra time to deploy; depending on the flavor 
 {: .note}
 
 ### Accessing the Workflow
-Provided that your instance has a public IP assigned to it, your workflow can be accessed by simply clicking the "Workflow" button on your instance's page (look under "Interactions").
+Provided that your instance has a public IP assigned to it, your workflow can be accessed by simply clicking the "Workflow" button on your Instance Details page (look under "Interactions").
 
-![screenshot of Exosphere instance page, showing the "Workflow" button highlighted](../../images/exo-workflow-launch.png)
+![screenshot of Exosphere Instance Details page, showing the "Workflow" button highlighted](../../images/exo-workflow-launch.png)
 
 This will usually take you to Jupyter. If you want to access a different interface, simply change the `/tree` in the URL bar to the appropriate resource. For example:
 
