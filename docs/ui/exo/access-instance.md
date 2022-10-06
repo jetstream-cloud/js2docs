@@ -22,7 +22,7 @@ Remember that the web shell and web desktop will not be available if you have ch
 
 By default, Exosphere configures all new instances with an easy-access web shell via [Guacamole](https://guacamole.apache.org/). This command-line interface signs in as `exouser`, and thus has `sudo` access. 
 
-***Tip***: From the web shell, you can open/close a menu overlay with `ctrl`+`alt`+`shift`. This menu supports directly uploading files to your instance, as well as sharing clipboard data.
+***Tip***: From the web shell, you can open/close a menu overlay with `ctrl`+`alt`+`shift`. This menu supports directly uploading and downloading files to/from your instance, as well as sharing clipboard data.
 {: .note}
 
 ### Web Desktop (Guacamole)
