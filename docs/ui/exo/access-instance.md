@@ -53,7 +53,9 @@ Password authentication is enabled on Exosphere-created instances by default. To
 ```
 ssh exouser@<PUBLIC_IP>
 ```
-then enter the `exouser` passphrase when prompted.
+The Interactions section of the Instance Details page also shows this SSH connection string.
+
+When prompted, enter the `exouser` passphrase.
 
 If you want to force password authentication, but are being prompted for a public key (or password for your public key), you can instead try
 ```
