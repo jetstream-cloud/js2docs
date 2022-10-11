@@ -73,7 +73,7 @@ This is an advanced topic for researchers and educators that are more comfortabl
 
 Do the following as the root user:
 
-Create the file **/etc/ceph.js2softwarero.secret** with the contents
+Create the file **/etc/ceph/ceph.client.js2softwarerw.keyring** with the contents
 
     AQAYuStiw81/ABAAsvzI5h53WOC5K1vzmGB66g==
 
@@ -86,7 +86,7 @@ Add the following entry to the end of your /etc/fstab (make sure the mountpoint 
 > \# JS2 Software Collection mount
 >
 ```
-149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,secretfile=/etc/ceph.js2softwarero.secret,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0
+149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/b7112570-f7cb-4bd2-8c0e-39b08609b9fd/01aa9d72-69bf-4250-9245-2eaddcdb251d /software ceph name=js2softwarero,x-systemd.device-timeout=31,x-systemd.mount-timeout=30,noatime,_netdev,ro 0 0
 ```
 
 Then mount the filesystem with
