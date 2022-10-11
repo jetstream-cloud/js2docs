@@ -168,6 +168,7 @@ nav:
   - Software Collection:
     - Jetstream2 Software Collection: general/software.md
     - Using the JS2 Software Collection - Command Line: general/usingsoftware-cli.md
+    - Using the JS2 Software Collection - Web Desktop: general/usingsoftware-desktop.md
     - Software Licenses: general/licenses.md
   - Policies and Best Practices:
     - Acceptable Usage Policies: general/policies.md

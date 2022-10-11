@@ -12,7 +12,10 @@ The Jetstream2 software collection is documented here : [Software Collection](..
 
 ### How do I access the software in this collection?
 
-This software store is mounted automatically when the instance is launched. Instructions for using it are in the [software collection information page](../general/usingsoftware.md)
+This software store is mounted automatically when an instance is launched from a [Jetstream2 featured image](../general/featured.md). Please see the following links about using the Jetstream Software Collection:
+
+* [Using the Jetstream2 Software Collection from the command line](../general/usingsoftware-cli.md)
+* [Using the Jetstream2 Software Collection from the web desktop](../general/usingsoftware-desktop.md)
 
 ---
 
