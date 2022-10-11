@@ -106,4 +106,4 @@ You'll need to point your modulepath config to:
 
     /software/xx/modulefiles
 
-replacing the `xx` with `u20`, `u18`, `r8`, or `c7` depending on the Linux variant you're using.
+replacing the `xx` with `u22`,`u20`, or `r8` depending on the Linux variant you're using.
