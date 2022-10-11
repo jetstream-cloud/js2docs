@@ -15,7 +15,7 @@ In Ubuntu 22, application shortcuts can be found either on the favorites bar (bo
 
 |           Favorites Bar                                                                              | Search Bar                                                                                           |
 |------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
-| ![A screenshot showing the location of the Ubuntu 22.04 favorites bar](../../images/u22-desktop.png) | ![A screenshot highlighting the location of the Ubuntu 22.04 search bar](../../images/u22-search.png)|
+| ![A screenshot showing the location of the Ubuntu 22.04 favorites bar](../images/u22-desktop.png) | ![A screenshot highlighting the location of the Ubuntu 22.04 search bar](../images/u22-search.png)|
 
 ### Ubuntu 20
 
@@ -23,7 +23,7 @@ Ubuntu 20 is similar to Ubuntu 22, but the favorites bar is located on the side.
 
 | Favorites Bar                                                                                        | Show Applications                                                                                                        |
 |------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|
-| ![A screenshot showing the location of the Ubuntu 20.04 favorites bar](../../images/u20-desktop.png) | ![A screenshot highlighting the location of the "Show Applications" button in Ubuntu 20](../../images/u20-apps-menu.png) |
+| ![A screenshot showing the location of the Ubuntu 20.04 favorites bar](../images/u20-desktop.png) | ![A screenshot highlighting the location of the "Show Applications" button in Ubuntu 20](../images/u20-apps-menu.png) |
 
 ### Rocky Linux 8 and AlmaLinux 8
 
@@ -31,4 +31,4 @@ Unlike Ubuntu, Rocky and Alma do not immediately show a favorites bar on the des
 
 | Rocky 8 "Activities" Menu (identical for Alma 8)                                                           | Favorites Bar, Application List, and Search Bar                                                                         |
 |------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| ![A screenshot showing the location of the Rocky/Alma 8 "Activities" menu](../../images/rocky-desktop.png) | ![A screenshot highlighting the location of the "Show Applications" button in Rocky 8](../../images/rocky-apps-menu.png)|
+| ![A screenshot showing the location of the Rocky/Alma 8 "Activities" menu](../images/rocky-desktop.png) | ![A screenshot highlighting the location of the "Show Applications" button in Rocky 8](../images/rocky-apps-menu.png)|
