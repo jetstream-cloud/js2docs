@@ -5,9 +5,11 @@ The [Jetstream2 Software Collection](software.md) is automatically mounted to in
 
 Jetstream2 instances created through [Exosphere](../ui/exo/exo.md) may be [deployed with a Web Desktop](../../ui/exo/create_instance/#configure-instance). The Exosphere Web Desktop can be used to access the full Jetstream2 Software Collection, notably including graphical applications that cannot be used from the pure command-line (i.e. RStudio and MATLAB). 
 
-## RStudio and MATLAB Quick Shortcuts
+## Navigating the Web Desktop
 
-Featured images from October 11, 2022 onward include easy-access shortcuts for RStudio and MATLAB.
+Though all featured images use the same desktop environment under the hood ([GNOME](https://www.gnome.org/)), the locations of applications and features may vary slightly. Desktop-compatible featured images from October 11, 2022 onward include easy-access application shortcuts for RStudio and MATLAB; however, all other software will need to be launched from the terminal (CLI). See *[Using the Jetstream2 Software Collection from the CLI](usingsoftware-cli.md)*.
+
+Applications (including the terminal) can be found in the following respective locations:
 
 ### Ubuntu 22
 
