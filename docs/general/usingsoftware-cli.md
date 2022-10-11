@@ -1,4 +1,4 @@
-# Using the Jetstream2 Software Collection
+# Using the Jetstream2 Software Collection from the CLI
 
 Jetstream2 utilizes [Lmod](https://lmod.readthedocs.io/){target=_blank} to load and unload software you may need in your research or education pursuits. The software is served from a shared store utilizing Manila shares that are mounted automatically if you're using a Jetstream2 Featured Image.
 

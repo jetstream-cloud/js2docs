@@ -167,7 +167,7 @@ nav:
       - Galaxy: general/galaxy.md
   - Software Collection:
     - Jetstream2 Software Collection: general/software.md
-    - Using the Jetstream2 Software Collection: general/usingsoftware.md
+    - Using the Jetstream2 Software Collection: general/usingsoftware-cli.md
     - Software Licenses: general/licenses.md
   - Policies and Best Practices:
     - Acceptable Usage Policies: general/policies.md
