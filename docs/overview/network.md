@@ -7,7 +7,7 @@
 The Jetstream2 primary cloud configuation features:
 
 * 100 Gbps network connectivity from the compute hosts to the cloud's internal network infrastructure
-* 4x40 Gbps uplinks from the cloud infrastructure to the data center infrastructure (2x100 planned)
+* 2x100 Gbps uplinks from the cloud infrastructure to the data center infrastructure
 * 100 Gbps connectivity from the site infrastructure to the Internet2 backbone
 * 100 Gbps connectivity to the XSEDE research network via virtualized link
 * Individual instances have full access to this infrastructure with no added speed limits.
