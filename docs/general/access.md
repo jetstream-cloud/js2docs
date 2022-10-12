@@ -4,7 +4,7 @@ ACCESS allocations are measured in ACCESS credits. Those credits then may be [co
 
 Jetstream2 allocations Jetstream core hours or service units (SUs).
 
-!!! Notice "ACCESS to Jetstream2 SUs"
+!!! Note "ACCESS to Jetstream2 SUs"
 
      For simplicity, we've aligned our SU value such that ***1 ACCESS Credit = 1 Jetstream2 SU***.</br>
 
