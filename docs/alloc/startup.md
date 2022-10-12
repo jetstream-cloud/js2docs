@@ -1,55 +1,59 @@
 # Jetstream2 Startup Allocations
 
-!!! Notice "XSEDE to ACCESS transition"
+Under ACCESS, there are no longer allocations dedicated solely to research (including research startups) or education. Instead, there are categories of allocations based on the request size. We discuss those in the [Allocations Overview](overview.md) and ACCESS covers that on their [Prepare Requests: Overview](https://allocations.access-ci.org/prepare-requests-overview){target=_blank} page.
 
-     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+Startup allocations generally represented researchers getting started with the national cyberinfrastructure or research groups that needed modest amounts of resources generally equal to startup values. This allowed researchers that needed more modest awards to renew yearly without submitting to the allocations committee.
 
-Jetstream2 startup allocations are meant to be used for exploring the Jetstream2 system for research or research infrastructure purposes. They are not intended for teaching purposes. Please apply for an education allocation using the instructions [here](education.md) for any course, tutorial, or workshop needs.
+ACCESS has embraced this methodology and all allocations under 3,000,000 SUs may be awarded outside of the allocations committee. The allocation types and sizes are covered in the [Allocations Overview](overview.md).
 
-You'll need a copy of your CV, abstract, and description of your intended research in PDF format.
+We would suggest reviewing:
 
-You'll first need to create an XSEDE Portal Account if you do not already have one:
+* [Jetstream2 VM Sizes](../general/vmsizes.md)
+* [ACCESS Credits and Jetstream2](../general/access.md)
+* [Allocations Overview](overview.md)
 
-### To create an XSEDE portal account if you do not have one:
-1. Go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}
-2. Click "Create Account" on the left side of your screen.
-3. Fill out the form and click Submit.
-4. Upon receipt of the email notification click the link in the email to verify your account and set your username and password. If the link doesn't work, go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}, click "Sign In" and then select "Verify Account" under the "Other Sign In Options".
-5. Following account verification, if not already logged in, go to [https://portal.xsede.org/](https://portal.xsede.org/){target=_blank}, click "Sign In" and sign in with the username and password set in the verification step.
-6. You will be asked to read and accept the User Responsibilities form. This form outlines acceptable use to protect shared resources and intellectual property.
+You can estimate your needs after reviewing the VM sizes using this example:
 
-### Apply for an XSEDE Startup Allocation
-1. Read the [Startup Allocations Overview](https://portal.xsede.org/allocations/startup){target=_blank}. There are sample allocation requests in the overview that you may find helpful.
-2. Go to the [XSEDE Resource Allocation System](https://portal.xsede.org/submit-request){target=_blank} page. On the Available Opportunities page, click "Start a New Submission" under "Startup". If you are not familiar with the process, select "Begin Guided Submission" for step-by-step instructions.
+- m3.medium instance size (8 vCPU) for task 1 (8 SUs/hr)
+- m3.large instance (16 vCPU) for task 2 (16 SUs/hr)
+- g3.large instance (16 vCPU + 4 GPU slices) for task 3 (64 SUs/hr)
+- Planning for 24 hour/day usage
 
-````
-    Before submitting an allocation request have the following information available:
+```
+(8 + 16 + 64) x 24 hours/day x 365 days = 770,880 SUs
+```
 
-    * XSEDE usersnams for PI (required), Co-PIs (optional), and Allocation Managers (optional)
-    * Additional XSEDE user names to add so they may use your allocation time and resources (optional)
-    * Title
-    * Abstract (typically a paragraph or two for an Educational request will suffice)
-    * Keywords
-    * Field of science (secondary areas of science may be also be added)
-````
+It would be standard practice to round that to 800,000 SUs for development time and incidentals. This would qualify you for a Discover ACCESS	allocation (up to 1.5M SUs) so you could request more ACCESS credits if you so desired.
 
-3. Select your [resources](../general/resources.md) - you can have any combination of Jetstream2 CPU, Jetstream2 Large Memory, and Jetstream2 GPU - but you must justify Large Memory or GPU requests specifically
+---
 
-* Select the appropriate resources(s) from the list.
-    * Enter the number of SUs you'll need. The [Virtual Machine Sizes and Configurations page](../general/vmsizes.md) can help you figure VM sizes needed.
-    * Fill in number of Virtual Machines needed (this is an estimate for planning purposes – there's no wrong answer – try to best guess at how many instances you'll run at one time)
-    * Fill in number of public IP addresses needed (same as above)
-* If you need additional storage beyond the VM's root disks, select "Jetstream2 Storage".
-    * All allocations by default will receive 1TB of storage so if that covers your needs, you do **NOT** need to select Jetstream2 Storage
-* Upload your supporting documents - PDF format required
-    * PI CV (2 page limit)
-    * CoPI CV required for every CoPI added to request (2 page limit) -- *optional*
-    * Syllabus
-    * Resource Justification (see below)
-    * Supporting Grants -- *optional*
-    * Publications of previous/supporting work -- *optional*
-4. Submit allocation request. At this point, all entered information is validated, errors or omissions are flagged.
+The process is that you as the PI will:
+
+> 1. [Create your user account](https://identity.access-ci.org/new-user){target=_blank}
+> 2. [Request an allocation/ACCESS credits](https://allocations.access-ci.org/opportunities){target=_blank}
+> 3. [Then you will "spend" those credits on Jetstream2 resources](https://allocations.access-ci.org/requests){target=_blank}
+> 4. [Have any colleagues or student researchers get their ACCESS accounts](https://identity.access-ci.org/new-user){target=_blank}
+> 5. [Add them to your allocation](https://allocations.access-ci.org/user_management){target=_blank}
+
+Resource managers, students, or other necessary users for your allocation may be added via [ACCESS User Management](https://allocations.access-ci.org/user_management){target=_blank}
+
+!!! Note
+    **It can take up to four hours for allocations or users to become active AFTER your receive the email notification.**
+
+---
+
+[ACCESS Allocations home page](https://allocations.access-ci.org/){target=_blank} has complete information on these topics:
+
+* [Create your user account](https://identity.access-ci.org/new-user){target=_blank}
+* [Select an opportunity (choose the size of your allocation)](https://allocations.access-ci.org/prepare-requests-overview){target=_blank}
+* [Request an allocation/ACCESS credits](https://allocations.access-ci.org/opportunities){target=_blank}
+* [Receive credits](https://allocations.access-ci.org/use-credits-overview){target=_blank}
+* [Exchange/spend those credits](https://allocations.access-ci.org/resources){target=_blank}
+
+---
+
+You'll need a copy of your CV as the PI and the CVs of any co-PIs. We recommend providing a detailed abstract regardless of allocation size. Intermediate allocation sizes, Discover and Accelerate, will require 1 page and 3 page project descriptions respectively. This is covered on the [Prepare Requests: Overview](https://allocations.access-ci.org/prepare-requests-overview){target=_blank} page.
 
 **Allow 1-2 business days for your application to go through the approval process.**
 
-Detailed information about the allocation request process, with screenshots, is available in the [XRAS Submit Allocation Request Step-by-Step Guide](https://portal.xsede.org/allocation-request-steps){target=_blank}.
+If you have questions about the the allocations process please open a ticket via either the [ACCESS Help Form](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank} or the [Jetstream Help Form](https://jetstream-cloud.org/contact/index.html){target=_blank}

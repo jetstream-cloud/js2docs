@@ -14,7 +14,7 @@ You can estimate your need after reviewing the VM sizes using this example:
 
 - 16 week course
 - 20 students
-- m1.medium instance size (8 vCPU)
+- m3.medium instance size (8 vCPU)
 - Planning for 24 hour/day usage
 
 ```
