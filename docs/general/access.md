@@ -4,6 +4,10 @@ ACCESS allocations are measured in ACCESS credits. Those credits then may be [co
 
 Jetstream2 allocations Jetstream core hours or service units (SUs).
 
+!!! Notice "ACCESS to Jetstream2 SUs"
+
+     For simplicity, we've aligned our SU value such that ***1 ACCESS Credit = 1 Jetstream2 SU***.</br>
+
 SUs are consumed at a rate of:
 
 *   Jetstream2 (CPU) - 1 SU per vCPU_core-hour (use of one virtual core of a CPU per hour).
