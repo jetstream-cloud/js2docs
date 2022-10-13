@@ -4,8 +4,9 @@ Jetstream2 can be used in several different virtual machine (VM) sizes which are
 
 The basic unit of VM allocation for Jetstream is based on a virtual CPU (vCPU) hour: *1 service unit (SU) is equivalent to 1 vCPU for 1 hour of wall clock time*. The table below outlines the VM sizes created for Jetstream2.
 
-*Please note that these are all separate resources. Jetstream2 CPU is the default resource. To use Large Memory or GPU resources, you must have an allocation for those resources.*
-{: .note}
+!!! Note "Jetstream2 Resources"
+
+     ***Please note that these are all separate resources under ACCESS. You must select Jetstream2 (CPU), Jetstream2 GPU or Jetstream2 Large Memory when spending credits to have access to these JS2 resources. Having access to one does NOT yield access to all. ***
 
 While the root disk sizes here are fixed, there is an option called "boot from volume" that will allow you to specify a larger root disk using quota from your storage allocation. Instructions for that are in the user interface sections.
 
@@ -97,8 +98,3 @@ or as an example for each resource, an m3.large, r3.large, and g3.large each run
         m3.large (16 cores) x 24 hours/day x 365 days = 140,160 SUs
         r3.large (64 cores x 2 SUs/hour) x 24 hours/day x 365 days = 1,121,280 SUs
         g3.large (16 cores x 4 SUs/hour) x 24 hours/day x 365 days = 560,640 SUs
-
----
-Startup allocations are subject to limits. Please refer to [Jetstream2 Resources](../general/resources.md) for Startup Allocation limits.
-
-For information on submitting a Research Allocation Request, please see [https://portal.xsede.org/successful-requests.](https://portal.xsede.org/successful-requests){target=_blank} Note that all allocations above the startup level on Jetstream2 CPU require a strong justification for the time being requested.
