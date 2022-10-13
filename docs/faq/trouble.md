@@ -1,6 +1,6 @@
 #Troubleshooting
 
-Jetstream2 requires that you be on a [valid XSEDE allocation](https://portal.xsede.org/allocations/startup){target=_blank}. If you are having issues accessing the various Jetstream2 interfaces, please first verify that you're on a valid allocation via the [XSEDE User Portal](https://portal.xsede.org/group/xup/allocations/usage){target=_blank}
+Jetstream2 requires that you be on a [valid ACCESS allocation](/alloc/overview.md){target=_blank}. If you are having issues accessing the various Jetstream2 interfaces, please first verify that you're on a valid allocation via the [ACCESS allocations summary page](https://allocations.access-ci.org/allocations/summary){target=_blank}
 
 Troubleshooting Jetstream2 Interfaces:
 
