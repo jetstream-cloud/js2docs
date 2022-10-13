@@ -1,32 +1,36 @@
 # Jetstream2 Allocation Supplements
 
-!!! Notice "XSEDE to ACCESS transition"
+Supplements under ACCESS are a little diferent than the process under XSEDE.
 
-     Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br>
+The following text is from the [RAMPS policies for ACCESS](https://allocations.access-ci.org/ramps-policies-faqs#can-i-request-supplemental-credits){target=_blank}
 
-If your allocation has been depleted or you need to add SUs or storage for a Jetstream2 resource to your existing allocation, you may request a supplement.
+>The ACCESS Credits for the Explore, Discover, and Accelerate opportunities are awarded in two phases. The first half of the Credits are available to you upon approval of your initial request. You can request the second half when needed by submitting a supplement request accompanied by a brief Progress Report.
 
-Detailed information about the supplement request process is available from the [XSEDE Manage Allocations](https://portal.xsede.org/allocations/managing#managealloc-supplements){target=_blank} page.
+>If you require additional credits beyond the posted Credit limit for your type of project, you will need to prepare a request for an allocation opportunity with a higher limit. To be fair to all researchers, we cannot exceed the Credit limits of a given opportunity.
+
+>For Maximize ACCESS projects, supplements are available and have no upper limit (in theory). However, supplement requests for Maximize ACCESS projects are subject to resource availability and Resource Provider review and approval.
+
+Additional information about supplements is available from the [Managing allocations: overview
+](https://allocations.access-ci.org/manage-allocations-overview#h.ii1cvqx8falk){target=_blank} page.
 
 !!! note "Supplements and User Access"
 
-     It's important to note that when you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, you may need to go to your [Allocations/Usage page](https://portal.xsede.org/group/xup/allocations/usage){target=_blank} and select the "Manage Users" button for the appropriate project.
+     It's important to note that when you add a resource via a supplement that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, you may need to go to your [Manage Users page](hhttps://allocations.access-ci.org/user_management){target=_blank} and select the appropriate project.
+
+     It can take up to 4 hours for any users added to an allocation to become active.
 
 !!! note Important Note "Supplements vs Extensions"
 
-    Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.
-
+    Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal *(preferred)* or extension.
 
 ### Instructions for requesting a supplements
 
-* Login to [portal.xsede.org](https://portal.xsede.org){target=_blank}
-* Go to the [Submit / Review Requests page](https://portal.xsede.org/group/xup/submit-request#/){target=_blank}
-    * (You can also mouse over the "Allocations tab" and then select "Submit/Review Request")
+* Go to the [Manage Allocations page](https://allocations.access-ci.org/requests){target=_blank}
+    * This will require you to authenticate to ACCESS if you have not already
 * Find your allocation. Under the Action menu for your allocation, select "Supplement"
     * *Note: If your allocation is going to expire in 30 days or less, you will not see the Supplement option. You should see the Extension option, though. Choose a 3 month extension and once it's approved, the supplement button should appear.*
-* Choose "Start Supplement"
 * Select the appropriate Jetstream2 resources(s) from the list.
-* Once you have selected the resources you need, you'll need to fill in the values of your request. The SU request has the same options as when you got your allocation. You'll fill in the SUs needed, the number VMs and IPs you expect to use (for forecasting purposes), and any comments.
+* Once you have selected the resources you need, you'll fill in the SUs needed and any comments.
     * For storage requests, you'll fill in the value in gigabytes - e.g. 1000gb = 1TB.
     * For the number of SUs you'll need. The [Virtual Machine Sizes and Configurations page](../general/vmsizes.md) can help you estimage VM sizes needed and SUs that will consume.
     * For more information about the resources, please see the [Jetstream2 Resources](../general/resources.md) page

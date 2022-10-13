@@ -4,6 +4,10 @@ Jetstream2 tries to apportion the memory, storage, and network available to rese
 
 ## Limits
 
+!!! Note "Jetstream2 quotas"
+
+     ***Please note that these quotas are currently under review as we determine how to make them best work with the new allocation types. We will update this page once we do so.  ***
+
 Quotas are a function of: [allocation](#AllocationType) and [resource](#ResourceType)
 
 ### **allocation** type: <a name="AllocationsType"></a>
