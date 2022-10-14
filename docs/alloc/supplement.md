@@ -1,6 +1,6 @@
 # Jetstream2 Allocation Supplements
 
-Supplements under ACCESS are a little diferent than the process under XSEDE.
+Supplemental allocations allow you to get more SUs for a resource you currently use or access to a different resource you haven't previously had access to. With XSEDE allocations, you could add SUs beyond your initial request. Under ACCESS, you can spend additional credits that you have requested for your allocation type. 
 
 The following text is from the [RAMPS policies for ACCESS](https://allocations.access-ci.org/ramps-policies-faqs#can-i-request-supplemental-credits){target=_blank}
 
@@ -39,4 +39,4 @@ Additional information about supplements is available from the [Managing allocat
     * Any other milestones or achievements would also be welcomed in the progress report along with user or job counts if it's a science gateway resource.
 * After you have added that, you may submit the request.
 
-**Requests are typically reviewed within 1 to 2 business days. You'll receive notification from XSEDE Allocations on the status of your request once it has been reviewed by all service providers on the request.**
+**Requests are typically reviewed within 1 to 2 business days. You'll receive notification from ACCESS Allocations on the status of your request once it has been reviewed by all service providers on the request.**
