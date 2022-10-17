@@ -29,6 +29,28 @@ The mount point is the directory that represents the root of a volume's filesyst
 
 Please note that attached volumes are mounted the first time they are accessed inside the instance (e.g. with a `cd` command).
 
+### Detaching a Volume
+
+A volume can be detached from an instance on either the Volumes List page or the Volume Details page:
+
+| Volume List                                                                                                              | Volume Details                                                                                                                 |
+|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ![A screenshot of the Exosphere Volume list page with the "Detach" button circled](../../images/exo-vol-detach-list.png) | ![A screenshot of the Exosphere Volume details page with the "Detach" button circled](../../images/exo-vol-detach-details.png) |
+
+### Deleting a Volume
+
+!!! warning "Volume deletion is permanent" 
+    Deleting a volume will **permanently** destroy any data stored on it.
+
+***Note:*** A volume cannot be deleted if it is still attached to an instance; it will need to be detached first.
+{: .note}
+
+A volume can be deleted on either the Volumes List page or the Volume Details page by clicking the trash can icon:
+
+| Volume List                                                                                                              | Volume Details                                                                                                                 |
+|--------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| ![A screenshot of the Exosphere Volume list page with the trash can icon circled](../../images/exo-vol-del-list.png)     | ![A screenshot of the Exosphere Volume details page with the trash can icon circled](../../images/exo-vol-del-details.png)     |
+
 ## File Shares
 
 OpenStack Manila file shares are significantly more complicated to set up than simple volumes; however, unlike simple volumes, file shares can be mounted to and accessed by multiple instances at the same time. Currently, Exosphere does not support the creation or management of Manila shares within its user interface. 
