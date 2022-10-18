@@ -4,13 +4,21 @@ Visit Exosphere in your web browser at [https://jetstream2.exosphere.app/](https
 
 #### Starting the login/authentication process
 
-To log in to J2 Exosphere, you will need to click on the “Add allocation” card. The next screen will ask you to add your ACCESS account or select another login method (“Other Login Methods” button). “Other login methods” allows you to add an OpenStack account, which is not something most users can use with Jetstream2. Almost all users will use their access ACCESS account or any other credentials besides OpenStack and should select the “Add ACCESS Account” card and follow the instructions below.
+To log in to J2 Exosphere, you will need to click on the “Add allocation” card.
+
+<img src="/images/exo-add-alloc.png" alt="A screenshot showing the 'Add Allocation' button on the Exosphere home page" width="40%"/>
+
+The next screen will ask you to add your ACCESS account or select another login method (“Other Login Methods” button). “Other login methods” allows you to add an OpenStack account, which is not something most users can use with Jetstream2. Almost all users will use their access ACCESS account or any other credentials besides OpenStack and should select the “Add ACCESS Account” card and follow the instructions below.
+
+<img src="/images/exo-add-access-acct.png" alt="A screenshot showing the 'Add ACCESS account' button" width="50%"/>
 
 #### Using ACCESS account (single sign-on)
 
-Your ACCESS account credentials are the default login method to Exosphere, so it is recommended that you select ***ACCESS-CI*** from the dropdown box. *It may default to some other source so be sure to change it to ACCESS-CI!* Please note that this may require multi-factor (Duo) authentication. If you need help setting up or changing your multi-factor authentication method, please open an [ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.
-
 Once you click on “Add ACCESS account”, you will be redirected to a CILogon page, a platform that manages ACCESS log ins. You will be required to allow authorization via CILogon any time you launch Exosphere unless you are already signed in. To log in using your ACCESS-CI credentials (which should be the same as your XSEDE credentials if you previously used XSEDE), select ***ACCESS CI (XSEDE)*** from the “Select an Identity Provider” drop down menu.
+
+<img src="/images/exo-cilogon-dropdown.png" alt="A screenshot showing the 'Select an Identity Provider' dropdown, with 'ACCESS CI (XSEDE)' selected" width="50%"/>
+
+Your ACCESS account credentials are the default login method to Exosphere, so it is recommended that you select ***ACCESS-CI*** from the dropdown box. *It may default to some other source so be sure to change it to ACCESS-CI!* Please note that this may require multi-factor (Duo) authentication. If you need help setting up or changing your multi-factor authentication method, please open an [ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.
 
 #### Using other accounts
 
@@ -31,3 +39,7 @@ After you log in with your ACCESS credentials, Exosphere will prompt you to sele
 The Exosphere interface for Jetstream2 also allows you to manage resources on other OpenStack-based research clouds alongside Jetstream2. In order for this to work, these third-party clouds must expose their OpenStack APIs publicly, and you must have OpenStack credentials (or an OpenRC file) to provide. To add other clouds, choose "Add allocation", select "Other login methods", and pick the "OpenStack" login method.
 
 If you encounter difficulty adding non-Jetstream2 clouds to Exosphere, Jetstream2 staff will have limited ability to troubleshoot and help, so this capability is not guaranteed to work.
+
+| Add Allocation | Other Login Methods | Add OpenStack Account |
+|----------------|---------------------|-----------------------|
+| <img src="/images/exo-add-alloc.png" alt="A screenshot showing the 'Add Allocation' button on the Exosphere home page"/> | <img src="/images/exo-other-login-methods.png" alt="A screenshot highlighting the 'Other Login Methods' button"/> | <img src="/images/exo-add-openstack-acct.png" alt="A screenshot highlighting the 'Add OpenStack Account' button"/> |
