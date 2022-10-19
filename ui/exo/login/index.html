@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
                   </li>
@@ -357,11 +352,22 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="exosphere-logging-in">Exosphere: Logging In<a class="headerlink" href="#exosphere-logging-in" title="Permanent link">&para;</a></h1>
-<h2 id="using-xsede-account-single-sign-on">Using XSEDE Account (single sign-on)<a class="headerlink" href="#using-xsede-account-single-sign-on" title="Permanent link">&para;</a></h2>
-<p>The default login method uses your XSEDE account credentials. Note that this may require multi-factor (Duo) authentication. (If you need help setting up or changing your multi-factor authentication method, please open an XSEDE ticket, as Jetstream2 staff cannot fix this for you directly.)</p>
-<h2 id="choosing-allocations-and-regions">Choosing Allocations and Regions<a class="headerlink" href="#choosing-allocations-and-regions" title="Permanent link">&para;</a></h2>
-<p>After you log in with your XSEDE credentials, Exosphere will prompt you to select from the allocations that you are a member of. Any un-selected allocations will not be added the Exosphere interface, so select all that you may want to use. If you are granted access to a Jetstream2 regional cloud, you will be logged into those allocations in both the main (Indiana University) region and any other regions.</p>
-<h2 id="logging-into-non-jetstream-clouds-in-exosphere">Logging into non-Jetstream Clouds in Exosphere<a class="headerlink" href="#logging-into-non-jetstream-clouds-in-exosphere" title="Permanent link">&para;</a></h2>
+<p>Visit Exosphere in your web browser at <a href="https://jetstream2.exosphere.app/">https://jetstream2.exosphere.app/</a>.</p>
+<h4 id="starting-the-loginauthentication-process">Starting the login/authentication process<a class="headerlink" href="#starting-the-loginauthentication-process" title="Permanent link">&para;</a></h4>
+<p>To log in to J2 Exosphere, you will need to click on the “Add allocation” card. The next screen will ask you to add your ACCESS account or select another login method (“Other Login Methods” button). “Other login methods” allows you to add an OpenStack account, which is not something most users can use with Jetstream2. Almost all users will use their access ACCESS account or any other credentials besides OpenStack and should select the “Add ACCESS Account” card and follow the instructions below.</p>
+<h4 id="using-access-account-single-sign-on">Using ACCESS account (single sign-on)<a class="headerlink" href="#using-access-account-single-sign-on" title="Permanent link">&para;</a></h4>
+<p>Your ACCESS account credentials are the default login method to Exosphere, so it is recommended that you select <strong><em>ACCESS-CI</em></strong> from the dropdown box. <em>It may default to some other source so be sure to change it to ACCESS-CI!</em> Please note that this may require multi-factor (Duo) authentication. If you need help setting up or changing your multi-factor authentication method, please open an <a href="https://support.access-ci.org/user/login?destination=/open-a-ticket" target="_blank">ACCESS Help Ticket</a>, as Jetstream2 staff cannot fix this for you directly.</p>
+<p>Once you click on “Add ACCESS account”, you will be redirected to a CILogon page, a platform that manages ACCESS log ins. You will be required to allow authorization via CILogon any time you launch Exosphere unless you are already signed in. To log in using your ACCESS-CI credentials (which should be the same as your XSEDE credentials if you previously used XSEDE), select <strong><em>ACCESS CI (XSEDE)</em></strong> from the “Select an Identity Provider” drop down menu.</p>
+<h4 id="using-other-accounts">Using other accounts<a class="headerlink" href="#using-other-accounts" title="Permanent link">&para;</a></h4>
+<p>If you have linked institutional, Google, Orcid, or other credentials <strong>PREVIOUSLY</strong> with CILogon, you’ll be able to use those to authenticate.</p>
+<p><strong><em>We know ACCESS-CI credentials work correctly and recommend using &ldquo;ACCESS-CI&rdquo; as your identity provider unless you are 100% sure you have linked your credentials with CILogon (previously linked credentials in XSEDE using Globus do NOT carry over).</em></strong></p>
+<div class="admonition note">
+<p class="admonition-title">Other intstitution credentials</p>
+<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these <a href="https://identity.access-ci.org/id-linking" target="_blank">Linking instructions</a> to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.</p>
+</div>
+<h4 id="choosing-allocations-and-regions">Choosing allocations and regions<a class="headerlink" href="#choosing-allocations-and-regions" title="Permanent link">&para;</a></h4>
+<p>After you log in with your ACCESS credentials, Exosphere will prompt you to select from the allocations that you are a member of. Any un-selected allocations will not be added the Exosphere interface, so select all that you may want to use. If you are granted access to a Jetstream2 regional cloud, you will be logged into those allocations in both the main (Indiana University) region and any other regions.</p>
+<h4 id="logging-into-non-jetstream-clouds-in-exosphere">Logging into non-Jetstream clouds in Exosphere<a class="headerlink" href="#logging-into-non-jetstream-clouds-in-exosphere" title="Permanent link">&para;</a></h4>
 <p>The Exosphere interface for Jetstream2 also allows you to manage resources on other OpenStack-based research clouds alongside Jetstream2. In order for this to work, these third-party clouds must expose their OpenStack APIs publicly, and you must have OpenStack credentials (or an OpenRC file) to provide. To add other clouds, choose &ldquo;Add allocation&rdquo;, select &ldquo;Other login methods&rdquo;, and pick the &ldquo;OpenStack&rdquo; login method.</p>
 <p>If you encounter difficulty adding non-Jetstream2 clouds to Exosphere, Jetstream2 staff will have limited ability to troubleshoot and help, so this capability is not guaranteed to work.</p>
               

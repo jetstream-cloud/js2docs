@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/xsede/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/usingsoftware-desktop/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>XSEDE Service Units and Jetstream2 - Jetstream2 Documentation</title>
+    <title>Using the JS2 Software Collection - Web Desktop - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link href="../../css/custom.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "XSEDE Service Units and Jetstream2";
-        var mkdocs_page_input_path = "general/xsede.md";
-        var mkdocs_page_url = "/general/xsede/";
+        var mkdocs_page_name = "Using the JS2 Software Collection - Web Desktop";
+        var mkdocs_page_input_path = "general/usingsoftware-desktop.md";
+        var mkdocs_page_url = "/general/usingsoftware-desktop/";
       </script>
     
     <script src="../../js/jquery-3.6.0.min.js" defer></script>
@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -79,10 +74,10 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General Usage Information</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../ui/cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../ui/cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -279,10 +272,12 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Software Collection</span></p>
-              <ul>
+              <ul class="current">
                   <li class="toctree-l1"><a class="reference internal" href="../software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../licenses/">Software Licenses</a>
                   </li>
@@ -343,10 +338,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>General Usage Information &raquo;</li>
-      <li>XSEDE Service Units and Jetstream2</li>
+          <li>Software Collection &raquo;</li>
+      <li>Using the JS2 Software Collection - Web Desktop</li>
     <li class="wy-breadcrumbs-aside">
-        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/xsede.md"
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/usingsoftware-desktop.md"
           class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
@@ -355,36 +350,66 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="xsede-service-units-and-jetstream2">XSEDE Service Units and Jetstream2<a class="headerlink" href="#xsede-service-units-and-jetstream2" title="Permanent link">&para;</a></h1>
-<p>Jetstream2 allocations are measured in XSEDE Service Units (SUs).</p>
-<p>SUs are consumed at a rate of:</p>
-<ul>
-<li>Jetstream2 (CPU) - 1 SU per vCPU_core-hour (use of one virtual core of a CPU per hour).</li>
-<li>Jetstream2-LM (Large Memory) - 2 SUs per vCPU_core-hour</li>
-<li>Jetstream2-GPU - 4 SUs per vCPU_core-hour</li>
-</ul>
-<p>Please refer to <a href="../vmsizes/" target="_blank">VM Sizes and configurations</a> to see available VM flavors and per hour cost on Jetstream2.</p>
-<hr />
-<ul>
-<li><strong>SUSPENDED</strong> instances will be charged .75 of their normal SU value. (75%)</li>
-<li><strong>STOPPED</strong> instances will be charge 0.50 of their normal SU value. (50%)</li>
-<li><strong>SHELVED</strong> instances will not be charged SUs. (0%)</li>
-</ul>
-<p>For Large Memory and GPU allocations, the vCPU core hour cost is 2x and 4x respectively as noted above.</p>
-<p class="note">The reason for continuing to charge for VMs that are not in a usable state is that they still consume resorces if they are suspended or stopped. In those states, they still occupy allocable/usable space on the hypervisor, preventing other users from using those resources.</p>
-<p>For instructions on managing instances, please see:</p>
-<ul>
-<li><a href="../../ui/cacao/deployments/" target="_blank">Cacao instance management actions</a></li>
-<li><a href="../../ui/exo/manage/" target="_blank">Exosphere instance management actions</a></li>
-<li><a href="../../ui/horizon/manage/" target="_blank">Horizon instance management actions</a></li>
-<li><a href="../../ui/cli/manage/" target="_blank">Command line instance management actions</a></li>
-</ul>
+                <h1 id="using-the-jetstream2-software-collection-from-the-web-desktop">Using the Jetstream2 Software Collection from the Web Desktop<a class="headerlink" href="#using-the-jetstream2-software-collection-from-the-web-desktop" title="Permanent link">&para;</a></h1>
+<p class="note">The <a href="../software/">Jetstream2 Software Collection</a> is automatically mounted to instances created from a <a href="../featured/">featured image</a>. If you are <em>not</em> using a featured image, it is possible to <a href="../usingsoftware-cli/#manually-adding-the-software-collection-to-a-non-featured-virtual-machine">manually add the software collection to your virtual machine</a>; however, compatibility is not guaranteed.</p>
+<p>Jetstream2 instances created through <a href="../../ui/exo/exo/">Exosphere</a> may be <a href="../../ui/exo/create_instance/#configure-instance">deployed with a Web Desktop</a>. The Exosphere Web Desktop can be used to access the full Jetstream2 Software Collection, notably including graphical applications that cannot be used from the pure command-line (i.e. RStudio and MATLAB). </p>
+<h2 id="navigating-the-web-desktop">Navigating the Web Desktop<a class="headerlink" href="#navigating-the-web-desktop" title="Permanent link">&para;</a></h2>
+<p>Though all featured images use the same desktop environment under the hood (<a href="https://www.gnome.org/">GNOME</a>), the locations of applications and features may vary slightly. Desktop-compatible featured images from October 11, 2022 onward include easy-access application shortcuts for RStudio and MATLAB; however, all other software will need to be launched from the terminal (CLI). See <em><a href="../usingsoftware-cli/">Using the Jetstream2 Software Collection from the CLI</a></em>.</p>
+<p>Applications (including the terminal) can be found in the following respective locations:</p>
+<h3 id="ubuntu-22">Ubuntu 22<a class="headerlink" href="#ubuntu-22" title="Permanent link">&para;</a></h3>
+<p>In Ubuntu 22, application shortcuts can be found either on the favorites bar (bottom of the screen), or by searching the applications menu:</p>
+<table>
+<thead>
+<tr>
+<th>Favorites Bar</th>
+<th>Search Bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot showing the location of the Ubuntu 22.04 favorites bar" src="../../images/u22-desktop.png" /></td>
+<td><img alt="A screenshot highlighting the location of the Ubuntu 22.04 search bar" src="../../images/u22-search.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="ubuntu-20">Ubuntu 20<a class="headerlink" href="#ubuntu-20" title="Permanent link">&para;</a></h3>
+<p>Ubuntu 20 is similar to Ubuntu 22, but the favorites bar is located on the side. Shortcuts can be found on this favorites bar, in the applications list, or by searching.</p>
+<table>
+<thead>
+<tr>
+<th>Favorites Bar</th>
+<th>Show Applications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot showing the location of the Ubuntu 20.04 favorites bar" src="../../images/u20-desktop.png" /></td>
+<td><img alt="A screenshot highlighting the location of the &quot;Show Applications&quot; button in Ubuntu 20" src="../../images/u20-apps-menu.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="rocky-linux-8-and-almalinux-8">Rocky Linux 8 and AlmaLinux 8<a class="headerlink" href="#rocky-linux-8-and-almalinux-8" title="Permanent link">&para;</a></h3>
+<p>Unlike Ubuntu, Rocky and Alma do not immediately show a favorites bar on the desktop. First, click the &ldquo;Activities&rdquo; button in the top-left; from there, you can access the favorites bar, a list of all applications (the nine dots on the bottom of the favorites bar), and a search bar. </p>
+<table>
+<thead>
+<tr>
+<th>Rocky 8 &ldquo;Activities&rdquo; Menu (identical for Alma 8)</th>
+<th>Favorites Bar, Application List, and Search Bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot showing the location of the Rocky/Alma 8 &quot;Activities&quot; menu" src="../../images/rocky-desktop.png" /></td>
+<td><img alt="A screenshot highlighting the location of the &quot;Show Applications&quot; button in Rocky 8" src="../../images/rocky-apps-menu.png" /></td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../resources/" class="btn btn-neutral float-left" title="Jetstream2 Resources"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../vmsizes/" class="btn btn-neutral float-right" title="VM Sizes and Configurations">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../usingsoftware-cli/" class="btn btn-neutral float-left" title="Using the JS2 Software Collection - Command Line"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../licenses/" class="btn btn-neutral float-right" title="Software Licenses">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -412,10 +437,10 @@
         </span>
     
     
-      <span><a href="../resources/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../usingsoftware-cli/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../vmsizes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../licenses/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

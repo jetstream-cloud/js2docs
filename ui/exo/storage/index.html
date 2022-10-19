@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
                   </li>
@@ -358,10 +353,78 @@
               
                 <h1 id="using-storage-under-exosphere">Using Storage Under Exosphere<a class="headerlink" href="#using-storage-under-exosphere" title="Permanent link">&para;</a></h1>
 <h2 id="volumes">Volumes<a class="headerlink" href="#volumes" title="Permanent link">&para;</a></h2>
-<p>In Exosphere, you can create volumes and attach them to instances. Exosphere will display the volume mount point in the user interfaces.</p>
+<p class="note">For a more robust overview of volumes on Jetstream2, please see <a href="../../../general/storage/">this article on storage</a></p>
+<h3 id="creating-a-volume">Creating a Volume<a class="headerlink" href="#creating-a-volume" title="Permanent link">&para;</a></h3>
+<p>Volumes can be created in the Exosphere interface under the &ldquo;Create&rdquo; dropdown (top-right):</p>
+<p><img alt="A screenshot showing the Exosphere &quot;create&quot; dropdown, with &quot;Volume&quot; highlighted" src="../../../images/exo-create-vol.png" /></p>
+<h3 id="attaching-your-volume-to-an-instance">Attaching your Volume to an Instance<a class="headerlink" href="#attaching-your-volume-to-an-instance" title="Permanent link">&para;</a></h3>
+<p>Volumes can be attached from either the <em>Volumes</em> section of the Instance Details page, the Volumes List page, or the individual Volume Details page. </p>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Location</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Instance Details</td>
+<td><img src="/images/exo-attach-vol-instance.png" alt="A screenshot of the Instance Details page with the 'Attach Volume' button circled" width="75%" /></td>
+</tr>
+<tr>
+<td>Volumes List</td>
+<td><img src="/images/exo-attach-vol-list.png" alt="A screenshot of the Volumes List, highlighting the 'Attach' button" width="75%" /></td>
+</tr>
+<tr>
+<td>Volume Details</td>
+<td><img src="/images/exo-attach-vol-details.png" alt="A screenshot of a volume's details, highlighting the 'Attach' button" width="45%" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="accessing-an-attached-volume">Accessing an Attached Volume<a class="headerlink" href="#accessing-an-attached-volume" title="Permanent link">&para;</a></h3>
+<p>After successfully attaching a volume to an instance, Exosphere will display the device location (<code>/dev/sdb</code>, <code>/dev/sdc</code>, etc.) and the mount point (<code>/media/volume/...</code>) to which the volume is attached. This information can also be found on your Instance Details page or Volume Details page. </p>
+<p>The mount point is the directory that represents the root of a volume&rsquo;s filesystem and is where you can access files stored in it. </p>
 <p>Please note that attached volumes are mounted the first time they are accessed inside the instance (e.g. with a <code>cd</code> command).</p>
+<h3 id="detaching-a-volume">Detaching a Volume<a class="headerlink" href="#detaching-a-volume" title="Permanent link">&para;</a></h3>
+<p>A volume can be detached from an instance on either the Volumes List page or the Volume Details page:</p>
+<table>
+<thead>
+<tr>
+<th>Volume List</th>
+<th>Volume Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot of the Exosphere Volume list page with the &quot;Detach&quot; button circled" src="../../../images/exo-vol-detach-list.png" /></td>
+<td><img alt="A screenshot of the Exosphere Volume details page with the &quot;Detach&quot; button circled" src="../../../images/exo-vol-detach-details.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="deleting-a-volume">Deleting a Volume<a class="headerlink" href="#deleting-a-volume" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Volume deletion is permanent</p>
+<p>Deleting a volume will <strong>permanently</strong> destroy any data stored on it.</p>
+</div>
+<p class="note"><strong><em>Note:</em></strong> A volume cannot be deleted if it is still attached to an instance; it will need to be detached first.</p>
+<p>A volume can be deleted on either the Volumes List page or the Volume Details page by clicking the trash can icon:</p>
+<table>
+<thead>
+<tr>
+<th>Volume List</th>
+<th>Volume Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot of the Exosphere Volume list page with the trash can icon circled" src="../../../images/exo-vol-del-list.png" /></td>
+<td><img alt="A screenshot of the Exosphere Volume details page with the trash can icon circled" src="../../../images/exo-vol-del-details.png" /></td>
+</tr>
+</tbody>
+</table>
 <h2 id="file-shares">File Shares<a class="headerlink" href="#file-shares" title="Permanent link">&para;</a></h2>
-<p>Support for shared filesystems (using OpenStack Manila) is coming soon.</p>
+<p>OpenStack Manila file shares are significantly more complicated to set up than simple volumes; however, unlike simple volumes, file shares can be mounted to and accessed by multiple instances at the same time. Currently, Exosphere does not support the creation or management of Manila shares within its user interface. </p>
+<p>Please reference <em><a href="../../../general/manila/">Manila - Filesystems-as-a-service - on Jetstream2</a></em> for more information and setup guides. </p>
               
             </div>
           </div><footer>

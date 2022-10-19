@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
                   </li>
@@ -373,8 +368,8 @@
 <p>Exosphere supports users who wish to mix their use of Exosphere with other OpenStack interfaces like Horizon dashboard, the OpenStack command-line interface, and the APIs. Generally (and with a few limitations), resources that you create in one interface will show up in other interfaces. They are merely different ways to manage the same infrastructure.</p>
 <p>The other OpenStack interfaces support more features of OpenStack that Exosphere doesn&rsquo;t (yet), like Heat for cluster orchestration and Swift for object storage. So, they may better support some advanced cloud use cases than Exosphere, but they are generally less accessible to newer users. The Horizon dashboard, the OpenStack CLI, and the APIs were all built for use by IT engineers, not by researchers and data scientists. For example, in any of these tools you must create a network, subnet, router, security group, and SSH keypair before you can create an instance and connect to it (using an SSH client program and your private SSH key). If your use cases grow sophisticated enough, you may need this lower-level control, but using the Horizon dashboard is sort of like driving a car with a manual transmission. Using the CLI feels somewhat like using Horizon, but now you&rsquo;re shifting gears by typing shell commands instead of clicking buttons. Using the OpenStack APIs directly is like building your own transmission for the car.</p>
 <p>Instances created via these other tools do <em>not</em> get a one-click shell, desktop, data upload/download tool, or any of the other interactions that Exosphere sets up for you. If you want these with the other OpenStack interfaces, you must set them up yourself with varying degrees of difficulty.</p>
-<h3 id="how-exosphere-compares-with-atmosphere2">How Exosphere compares with Atmosphere2<a class="headerlink" href="#how-exosphere-compares-with-atmosphere2" title="Permanent link">&para;</a></h3>
-<p>This section will be populated once Atmosphere2 is ready enough to explore and compare.</p>
+<h3 id="how-exosphere-compares-with-cacao-atmosphere2">How Exosphere compares with Cacao (Atmosphere2)<a class="headerlink" href="#how-exosphere-compares-with-cacao-atmosphere2" title="Permanent link">&para;</a></h3>
+<p>This section will be populated once <a href="../../cacao/overview/">Cacao (Atmosphere2)</a> is ready enough to explore and compare.</p>
 <h2 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h2>
 <p>In addition to the XSEDE ticketing system, there is an #exosphere-user-support channel in the Jetstream Slack workspace. To request access, please open a ticket from the XSEDE user portal. This support option includes <em>no</em> promise of immediate, real-time assistance, but the Exosphere core developers monitor it and help when they can. Sometimes it&rsquo;s easier to chat with them than wait for ticket notifications.</p>
 <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>

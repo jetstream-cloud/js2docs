@@ -47,16 +47,11 @@
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../ui/cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../ui/cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/licenses/">Software Licenses</a>
                   </li>
@@ -385,22 +380,16 @@
 <p>The ticketing system is still the preferred mechanism for official support. That is available via help@jetstream-cloud.org or the contact form <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">https://jetstream-cloud.org/contact/index.html</a> for any questions not covered in the JS2 documentation. </p>
 <hr />
 <h3 id="accessxsede-user-news-and-announcements">ACCESS/XSEDE User News and Announcements<a class="headerlink" href="#accessxsede-user-news-and-announcements" title="Permanent link">&para;</a></h3>
-<div class="admonition caution">
-<p class="admonition-title">XSEDE End of Life</p>
-<p>In a few short weeks, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022. More information may be found at <a href="https://www.xsede.org/advancetoaccess" target="_blank">Advance to ACCESS</a></p>
-</div>
-<hr />
-<p>Next week, XSEDE will formally conclude operations, making way for ACCESS. There are exciting changes coming and the ACCESS team is working behind the scenes to prepare for the official launch on September 1, 2022.</p>
-<p>The <a href="https://www.xsede.org/advancetoaccess" target="_blank">Advance to ACCESS website</a> will always have the most current information.</p>
 <h5 id="what-is-access">What Is ACCESS?<a class="headerlink" href="#what-is-access" title="Permanent link">&para;</a></h5>
 <p>The new NSF-funded program for advancing computational and data-intensive research – the Advanced Cyberinfrastructure Coordination Ecosystem: Services &amp; Support (ACCESS) – offers significant opportunities for community involvement. One of those is ensuring that requests for resource allocations meet the program&rsquo;s requirements in careful merit reviews by a diverse group of reviewers.</p>
-<p>More information will be provided here as it becomes generally available.</p>
+<p>The ACCESS website is: <a href="https://access-ci.org/" target="_blank">https://access-ci.org/</a></p>
+<p>ACCESS Infrastructure News and Outages may be found here <a href="https://operations.access-ci.org/infrastructure_news" target="_blank">https://operations.access-ci.org/infrastructure_news</a></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../.." class="btn btn-neutral float-left" title="Jetstream2 Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../faq/js2-earlyops-faq/" class="btn btn-neutral float-right" title="FAQ">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../overview-doc/" class="btn btn-neutral float-right" title="System Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -431,7 +420,7 @@
       <span><a href="../.." style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../faq/js2-earlyops-faq/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../overview-doc/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

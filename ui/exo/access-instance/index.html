@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/ui/exo/access-instance/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>Accessing an Exosphere Instance - Jetstream2 Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link href="../../../css/custom.css" rel="stylesheet" />
+        <link href="../../../css/cacao.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Accessing an Exosphere Instance";
+        var mkdocs_page_input_path = "ui/exo/access-instance.md";
+        var mkdocs_page_url = "/ui/exo/access-instance/";
+      </script>
+    
+    <script src="../../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../..">
+          <img src="../../../images/jetstream-logo-white.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Jetstream2 Main</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../..">Jetstream2 Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/network/">Network configuration and considerations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Frequently Asked Questions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/general-faq/">General FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/trouble/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gateways/">Gateways</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Usage Information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/access/">ACCESS Credits and Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/quotas/">Quotas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/featured/">Featured Images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/windows/">Microsoft Windows on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/storage/">Storage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Allocations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/overview/">Allocations Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/trial/">Trial Allocation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/startup/">Startup Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Interfaces</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Exosphere</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../exo/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../login/">Logging In</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../create_instance/">Creating an Instance</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Accessing an Exosphere Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../exo-filetransfer/">File Transfer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage Under Exosphere</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../push-button-cluster/">Push-button clusters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../binder/">Binder Workflows</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Exosphere Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Horizon</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/ssh_keys/">SSH Keys in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/launch/">Launching Instances</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/storage/">Volumes Under Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/manila/">Manila Shares in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/troubleshooting/">Horizon Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CLI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/managing-ssh-keys/">Managing SSH Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/security_group/">Setting up a Security Group</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/network/">Setting up a Network</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/launch/">Launching a Virtual Machine</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/snapshot-image/">Snapshots & Images</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/deleting/">Deleting Infrastructure in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/storage/">Storage Under the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/manila/">Manila Shares in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General VM Operations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/firewalls/">Firewalls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/sudo/">Being the root user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Storage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Manila</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manila/">Manila</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manilaVM/">Using Manila Share on a VM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../../general/manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/object/">Object Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/filetransfer/">File Transfer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Maintenance and Administration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/adduser/">Add User to a VM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/installsoftware/">Installing Software on your VM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Research Software</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/jupyter/">Jupyter on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/galaxy/">Galaxy</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Collection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Policies and Best Practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/policies/">Acceptable Usage Policies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/export/">Export Control Guidance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/gateways/">AUPs for Jetstream2 Hosted Gateways</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/bestpractice/">Best Practices</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Containers on Jetstream2</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/docker/">Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/kubernetes/">Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8scluster/">Build a K8s cluster</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanage/">Managing Applications with Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/virtualclusters/">Virtual Clusters on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/federating/">Federating Gateways on Jetstream2</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Jetstream2 Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>User Interfaces &raquo;</li>
+          <li>Exosphere &raquo;</li>
+      <li>Accessing an Exosphere Instance</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/exo/access-instance.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="accessing-an-exosphere-instance">Accessing an Exosphere Instance<a class="headerlink" href="#accessing-an-exosphere-instance" title="Permanent link">&para;</a></h1>
+<h2 id="the-exouser-profile-passphrase">The exouser Profile &amp; Passphrase<a class="headerlink" href="#the-exouser-profile-passphrase" title="Permanent link">&para;</a></h2>
+<p>Instances launched with Exosphere will be created with a user <code>exouser</code>. By default, <code>exouser</code> has <code>sudo</code> privilege, and any web shells/desktops launched from Exosphere will be signed in with this account. Should you ever need the initial passphrase (password) created for <code>exouser</code>, it can be found on the Instance&rsquo;s Details page under &ldquo;Credentials.&rdquo;
+<img alt="A screenshot of an Instance Details page with the location of the exouser passphrase highlighted" src="../../../images/exo-passphrase.png" /></p>
+<hr />
+<h2 id="accessing-an-instance-through-exosphere-web-interface">Accessing an Instance through Exosphere Web Interface<a class="headerlink" href="#accessing-an-instance-through-exosphere-web-interface" title="Permanent link">&para;</a></h2>
+<p>Exosphere provides a variety of different methods for interacting with your instances, depending on the options selected during creation. These options include the web shell, web desktop, and console, all of which can be accessed either from the Exosphere Instance List page (with the &ldquo;Connect to&rdquo; dropdown) or from the <em>Interactions</em> section of the Instance Details page. </p>
+<p class="note">Remember that the web shell and web desktop will not be available if you have chosen not to assign a public IP address to your instance!</p>
+<table>
+<thead>
+<tr>
+<th>Instance List Page</th>
+<th>Instance Details Page</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img alt="A screenshot of the &quot;connect to&quot; dropdown on the Instance List page" src="../../../images/exo-connect-dropdown.png" /></td>
+<td><img alt="A screenshot of the Instance Details page's &quot;interactions&quot; section" src="../../../images/exo-interactions.png" /></td>
+</tr>
+</tbody>
+</table>
+<h3 id="web-shell-guacamole">Web Shell (Guacamole)<a class="headerlink" href="#web-shell-guacamole" title="Permanent link">&para;</a></h3>
+<p>By default, Exosphere configures all new instances with an easy-access web shell via <a href="https://guacamole.apache.org/">Guacamole</a>. This command-line interface signs in as <code>exouser</code>, and thus has <code>sudo</code> access. </p>
+<p class="note"><strong><em>Tip</em></strong>: From the web shell, you can open/close a menu overlay with <code>ctrl</code>+<code>alt</code>+<code>shift</code>. This menu supports directly uploading and downloading files to/from your instance, as well as sharing clipboard data.</p>
+<h3 id="web-desktop-guacamole">Web Desktop (Guacamole)<a class="headerlink" href="#web-desktop-guacamole" title="Permanent link">&para;</a></h3>
+<p>If an instance was <a href="../create_instance/#configure-instance">configured with Web Desktop</a> enabled, Exosphere will provide an interactive <a href="https://www.gnome.org/">GNOME</a> desktop environment for you to work in. Like the web shell, this is powered by <a href="https://guacamole.apache.org/">Guacamole</a> and signs in as <code>exouser</code>. </p>
+<h3 id="console">Console<a class="headerlink" href="#console" title="Permanent link">&para;</a></h3>
+<p>The Exosphere console is usually only used in rare circumstances, like recovering an instance with broken network connectivity or a corrupted disk. The console is more akin to plugging a monitor, keyboard, and mouse into the machine than accessing it via the Web Shell. If the Web Shell is working, it will generally offer a better experience than the console.</p>
+<p>When using the console, you will not be signed into the machine automatically, so you will likely need to reference the <code>exouser</code> passphrase (see above).</p>
+<hr />
+<h2 id="accessing-an-instance-with-native-ssh">Accessing an Instance with Native SSH<a class="headerlink" href="#accessing-an-instance-with-native-ssh" title="Permanent link">&para;</a></h2>
+<p class="note">If your instance does not have a public IP address assigned to it, you will be unable to SSH from your workstation (or anywhere else outside of Jetstream2, unless you are using another instance within the same allocation that <em>does</em> have a public ip as a tunnel point or jump host).</p>
+<p>Exosphere instances support SSH connections with both passphrase and <a href="https://kb.iu.edu/d/aews">public key</a> authentication. You probably already have an SSH client on your computer, included with your operating system. You can use this to connect to your instance. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to <a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui">enable it in the settings</a>. If your Windows version is too old, or you want a more customizable environment, these resources may be useful:</p>
+<ul>
+<li><a href="https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui">PuTTY</a>, a free SSH client and <code>xterm</code> terminal emulator for Windows and Unix.</li>
+<li><a href="https://learn.microsoft.com/en-us/windows/wsl/install">Install Linux on Windows with WSL</a></li>
+</ul>
+<h3 id="ssh-passphrase-authentication">SSH Passphrase Authentication<a class="headerlink" href="#ssh-passphrase-authentication" title="Permanent link">&para;</a></h3>
+<p>Passphrase authentication is enabled on Exosphere-created instances by default. To connect to your instance, simply execute (where <code>&lt;PUBLIC_IP&gt;</code> is replaced with your instance&rsquo;s public ip address, e.g. <code>149.165.0.0</code>)</p>
+<pre><code>ssh exouser@&lt;PUBLIC_IP&gt;
+</code></pre>
+<p>The Interactions section of the Instance Details page also shows this SSH connection string.</p>
+<p>When prompted, enter the <code>exouser</code> passphrase.</p>
+<p>If you want to force passphrase authentication, but are being prompted for a public key (or passphrase for your public key), you can instead try</p>
+<pre><code>ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no exouser@&lt;PUBLIC_IP&gt;
+</code></pre>
+<h3 id="ssh-public-key-authentication">SSH Public Key Authentication<a class="headerlink" href="#ssh-public-key-authentication" title="Permanent link">&para;</a></h3>
+<p class="note">This guide assumes that you have already generated a public/private key pair. For step-by-step instructions on doing so, see <a href="https://kb.iu.edu/d/aews">the IU Knowledge Base</a>.</p>
+<p>Public key authentication is preferred to passphrases by many. Adding your public key to an instance with the Exosphere UI is only possible <a href="../create_instance/#advanced-options">during creation</a>; however, there is a workaround.</p>
+<h4 id="adding-a-public-key-manually">Adding a Public Key Manually<a class="headerlink" href="#adding-a-public-key-manually" title="Permanent link">&para;</a></h4>
+<ol>
+<li>Access your instance&rsquo;s web shell or console, or by SSH using passphrase authentication</li>
+<li>Open up the file <code>/home/exouser/.ssh/authorized_keys</code> in the editor of your choice, for example:
+    <code>vim /home/exouser/.ssh/authorized_keys</code></li>
+<li>Paste your <strong>public</strong> SSH key into the file (<strong>never share your private keys</strong>) by copying it into the clipboard on your workstation, then right-clicking on the web shell. If you are having trouble copying/pasting, see <a href="../troubleshooting/#i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole">Exosphere Troubleshooting</a>. If the file is not empty, simply put your key on a new line.</li>
+<li>Save and close the file.</li>
+</ol>
+<h4 id="using-a-public-key">Using a public key<a class="headerlink" href="#using-a-public-key" title="Permanent link">&para;</a></h4>
+<p>Once your public key is registered on your instance, you should be able to SSH by referencing the <strong>private</strong> key file with</p>
+<pre><code>ssh -i /path/to/key/file exouser@&lt;PUBLIC_IP&gt;
+</code></pre>
+<p>Usually this will look something like</p>
+<pre><code>ssh -i ~/.ssh/id_rsa exouser@149.165.0.0
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../create_instance/" class="btn btn-neutral float-left" title="Creating an Instance"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../manage/" class="btn btn-neutral float-right" title="Instance Management">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright © 2022 The Trustees of Indiana University</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jetstream-cloud/js2docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../create_instance/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../manage/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../../..';</script>
+    <script src="../../../js/theme_extra.js" defer></script>
+    <script src="../../../js/theme.js" defer></script>
+      <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

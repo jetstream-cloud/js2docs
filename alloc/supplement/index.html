@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../ui/cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../ui/cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/licenses/">Software Licenses</a>
                   </li>
@@ -356,34 +351,36 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="jetstream2-allocation-supplements">Jetstream2 Allocation Supplements<a class="headerlink" href="#jetstream2-allocation-supplements" title="Permanent link">&para;</a></h1>
-<div class="admonition notice">
-<p class="admonition-title">XSEDE to ACCESS transition</p>
-<p>Please note that as XSEDE concludes operation and transitions to ACCESS, all of the allocations documentation will need to be updated. We will get it updated to reflect ACCESS as soon as possible. Thank you for your patience.</br></p>
-</div>
-<p>If your allocation has been depleted or you need to add SUs or storage for a Jetstream2 resource to your existing allocation, you may request a supplement.</p>
-<p>Detailed information about the supplement request process is available from the <a href="https://portal.xsede.org/allocations/managing#managealloc-supplements" target="_blank">XSEDE Manage Allocations</a> page.</p>
+<p>Supplemental allocations allow you to get more SUs for a resource you currently use or access to a different resource you haven&rsquo;t previously had access to. With XSEDE allocations, you could add SUs beyond your initial request. Under ACCESS, you can spend additional credits that you have requested for your allocation type. </p>
+<p>The following text is from the <a href="https://allocations.access-ci.org/ramps-policies-faqs#can-i-request-supplemental-credits" target="_blank">RAMPS policies for ACCESS</a></p>
+<blockquote>
+<p>The ACCESS Credits for the Explore, Discover, and Accelerate opportunities are awarded in two phases. The first half of the Credits are available to you upon approval of your initial request. You can request the second half when needed by submitting a supplement request accompanied by a brief Progress Report.</p>
+<p>If you require additional credits beyond the posted Credit limit for your type of project, you will need to prepare a request for an allocation opportunity with a higher limit. To be fair to all researchers, we cannot exceed the Credit limits of a given opportunity.</p>
+<p>For Maximize ACCESS projects, supplements are available and have no upper limit (in theory). However, supplement requests for Maximize ACCESS projects are subject to resource availability and Resource Provider review and approval.</p>
+</blockquote>
+<p>Additional information about supplements is available from the <a href="https://allocations.access-ci.org/manage-allocations-overview#h.ii1cvqx8falk" target="_blank">Managing allocations: overview
+</a> page.</p>
 <div class="admonition note">
 <p class="admonition-title">Supplements and User Access</p>
-<p>It&rsquo;s important to note that when you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, you may need to go to your <a href="https://portal.xsede.org/group/xup/allocations/usage" target="_blank">Allocations/Usage page</a> and select the &ldquo;Manage Users&rdquo; button for the appropriate project.</p>
+<p>It&rsquo;s important to note that when you add a resource via a supplement that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, you may need to go to your <a href="hhttps://allocations.access-ci.org/user_management" target="_blank">Manage Users page</a> and select the appropriate project.</p>
+<p>It can take up to 4 hours for any users added to an allocation to become active.</p>
 </div>
 <div class="admonition note important note">
 <p class="admonition-title">Supplements vs Extensions</p>
-<p>Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal or extension.</p>
+<p>Supplements only add SUs/storage. If you need more time on your allocation, you need to pursue a renewal <em>(preferred)</em> or extension.</p>
 </div>
 <h3 id="instructions-for-requesting-a-supplements">Instructions for requesting a supplements<a class="headerlink" href="#instructions-for-requesting-a-supplements" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Login to <a href="https://portal.xsede.org" target="_blank">portal.xsede.org</a></li>
-<li>Go to the <a href="https://portal.xsede.org/group/xup/submit-request#/" target="_blank">Submit / Review Requests page</a><ul>
-<li>(You can also mouse over the &ldquo;Allocations tab&rdquo; and then select &ldquo;Submit/Review Request&rdquo;)</li>
+<li>Go to the <a href="https://allocations.access-ci.org/requests" target="_blank">Manage Allocations page</a><ul>
+<li>This will require you to authenticate to ACCESS if you have not already</li>
 </ul>
 </li>
 <li>Find your allocation. Under the Action menu for your allocation, select &ldquo;Supplement&rdquo;<ul>
 <li><em>Note: If your allocation is going to expire in 30 days or less, you will not see the Supplement option. You should see the Extension option, though. Choose a 3 month extension and once it&rsquo;s approved, the supplement button should appear.</em></li>
 </ul>
 </li>
-<li>Choose &ldquo;Start Supplement&rdquo;</li>
 <li>Select the appropriate Jetstream2 resources(s) from the list.</li>
-<li>Once you have selected the resources you need, you&rsquo;ll need to fill in the values of your request. The SU request has the same options as when you got your allocation. You&rsquo;ll fill in the SUs needed, the number VMs and IPs you expect to use (for forecasting purposes), and any comments.<ul>
+<li>Once you have selected the resources you need, you&rsquo;ll fill in the SUs needed and any comments.<ul>
 <li>For storage requests, you&rsquo;ll fill in the value in gigabytes - e.g. 1000gb = 1TB.</li>
 <li>For the number of SUs you&rsquo;ll need. The <a href="../../general/vmsizes/">Virtual Machine Sizes and Configurations page</a> can help you estimage VM sizes needed and SUs that will consume.</li>
 <li>For more information about the resources, please see the <a href="../../general/resources/">Jetstream2 Resources</a> page</li>
@@ -396,12 +393,12 @@
 </li>
 <li>After you have added that, you may submit the request.</li>
 </ul>
-<p><strong>Requests are typically reviewed within 1 to 2 business days. You&rsquo;ll receive notification from XSEDE Allocations on the status of your request once it has been reviewed by all service providers on the request.</strong></p>
+<p><strong>Requests are typically reviewed within 1 to 2 business days. You&rsquo;ll receive notification from ACCESS Allocations on the status of your request once it has been reviewed by all service providers on the request.</strong></p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../research/" class="btn btn-neutral float-left" title="Research Allocations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../research/" class="btn btn-neutral float-left" title="Research (Maximize ACCESS) Allocations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../renew-extend/" class="btn btn-neutral float-right" title="Extensions & Renewals">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 

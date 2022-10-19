@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/faq/js2-earlyops-faq/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/overview/architecture/" />
       <link rel="shortcut icon" href="../../img/favicon.ico" />
-    <title>FAQ - Jetstream2 Documentation</title>
+    <title>Architecture and Capabilities of Jetstream2 - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../css/theme.css" />
     <link rel="stylesheet" href="../../css/theme_extra.css" />
         <link href="../../css/custom.css" rel="stylesheet" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "FAQ";
-        var mkdocs_page_input_path = "faq/js2-earlyops-faq.md";
-        var mkdocs_page_url = "/faq/js2-earlyops-faq/";
+        var mkdocs_page_name = "Architecture and Capabilities of Jetstream2";
+        var mkdocs_page_input_path = "overview/architecture.md";
+        var mkdocs_page_url = "/overview/architecture/";
       </script>
     
     <script src="../../js/jquery-3.6.0.min.js" defer></script>
@@ -44,45 +44,40 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../..">Jetstream2 Home</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
-                  </li>
-              </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul class="current">
-                  <li class="toctree-l1 current"><a class="reference internal current" href="./">FAQ</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/overview-doc/">System Overview</a>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Architecture and Capabilities of Jetstream2</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/config/">Configuration and specifications</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../config/">Configuration and specifications</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../overview/network/">Network configuration and considerations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../network/">Network configuration and considerations</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Frequently Asked Questions</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../general-faq/">General FAQs</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/general-faq/">General FAQs</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../trouble/">Troubleshooting</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/trouble/">Troubleshooting</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../alloc/">Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../gateways/">Gateways</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gateways/">Gateways</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">General Usage Information</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../ui/cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../ui/cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../general/licenses/">Software Licenses</a>
                   </li>
@@ -343,10 +338,10 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>Jetstream2 Early Operations &raquo;</li>
-      <li>FAQ</li>
+          <li>Jetstream2 Info &raquo;</li>
+      <li>Architecture and Capabilities of Jetstream2</li>
     <li class="wy-breadcrumbs-aside">
-        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/faq/js2-earlyops-faq.md"
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/overview/architecture.md"
           class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
@@ -355,33 +350,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="jetstream2-early-operations-faq">Jetstream2 Early Operations FAQ<a class="headerlink" href="#jetstream2-early-operations-faq" title="Permanent link">&para;</a></h1>
-<p class="note"><strong>Early operations has started on Jetstream2! Official start date is February 9, 2022. We will continue early operations until acceptance is complete by the National Science Foundation. We will post more complete timelines as we will post them here and all official announcements will be made via</strong> <a href="https://www.xsede.org/news/user-news" target="_blank">XSEDE user news</a>.</p>
-<p><strong>1. When will Jetstream2 be available for XSEDE research allocations?</strong></p>
-<p>Jetstream2 is presently available via the XSEDE Resource Allocation System for research allocation submissions.</p>
-<p>Please see this page for more information: <a href="https://portal.xsede.org/allocations/research" target="_blank">XSEDE Research Allocations</a></p>
-<hr />
-<p><strong>2. When will Jetstream2 be available for XSEDE startup and education allocations?</strong></p>
-<p>Jetstream2 is presently available via the XSEDE Resource Allocation System for startup, education, and Champion allocation submissions.</p>
-<p>Please see these pages for more information:</p>
-<ul>
-<li><a href="../../alloc/startup/">Startup Allocations</a></li>
-<li><a href="../../alloc/education/">Education Allocations</a></li>
-<li><a href="../../general/resources/">Jetstream2 Allocatable Resources</a></li>
-</ul>
-<p>The system has been running with researchers, educators, and students since February 9, 2022. We feel the system is stable and ready for general usage.</p>
-<p>Please watch this space and <a href="https://www.xsede.org/news/user-news" target="_blank">XSEDE user news</a> and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don&rsquo;t miss any important operations updates.</p>
-<hr />
-<p><strong>3. When will Jetstream2 be available for Jetstream2 Trial allocations?</strong></p>
-<p>Jetstream2 Trial Allocations will be made available after Jetstream2 goes into production. They will likely not be available in early user operations.</p>
-<p>Until Jetstream2 completes National Science Foundation (NSF) acceptance testing, timelines remain uncertain. Once acceptance testing has been completed, documented, presented and approved by the NSF, we will be able to publish a more definitive timeline.</p>
-<p>Please watch this space and <a href="https://www.xsede.org/news/user-news" target="_blank">XSEDE user news</a> and mailing lists for announcements about Jetstream2 operations, access, and migration. To ensure that you are receiving all updates to your inbox, login on the page above to manage your XSEDE User News subscriptions. All Jetstream users should be added when they are placed on an allocation, but you may wish to verify so that you don&rsquo;t miss any important operations updates.</p>
+                <h1 id="architecture-and-capabilities-of-jetstream2">Architecture and Capabilities of Jetstream2<a class="headerlink" href="#architecture-and-capabilities-of-jetstream2" title="Permanent link">&para;</a></h1>
+<p>Jetstream2 consists of one primary cloud and multiple regional clouds. As you can see by the image below, the primary cloud is hosted at Indiana University in Bloomington, IN with regional clouds at various institutions across the United States.</p>
+<p class="note"><em>Another huge distinction is that instead of different domains &ndash; default (Atmosphere) and tacc (API) domains, there is one namespace for Jetstream2. You can change between the CLI, Horizon, Exosphere, and Cacao as you see fit to manage your resources</em></p>
+<p><img alt="Jetstream2 Architecture" src="/images/JS2-Architecture.jpg" /></p>
+<p>Allocations will only be awarded on the primary cloud by default.</p>
+<h3 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 brings <a href="../config/" target="_blank">multiple classes of research computing hardware</a>. Jetstream2 still has hundreds of CPU-based compute nodes for general purpose virtual machines/computing. Jetstream2 also features a small number of large memory nodes with up to 1 terabyte of RAM. Jetstream2 makes available 90 GPU-enabled nodes with four <a href="https://www.nvidia.com/en-us/data-center/a100/" target="_blank">NVIDIA A100 GPUs</a> each. These are subdivided using <a href="https://www.nvidia.com/en-us/data-center/virtual-solutions/" target="_blank">NVIDIA virtual GPU (vGPU)</a> to allow Jetstream2 allocations to utilize from 1/5th of a GPU to an entire GPU in their instances, facilitating everything from educational use requiring a minimal amount of GPU processing power to a full GPU for research workloads.</p>
+<h3 id="interfaces">Interfaces<a class="headerlink" href="#interfaces" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 features an interface called <a href="/ui/exo/exo.md" target="_blank">Exosphere</a> as the primary, recommended GUI interface. Jetstream2 also provides API services utilizing both the OpenStack Horizon GUI and a robust command-line interface (CLI). Atmosphere has evolved into a new tool called <a href="/ui/cacao/intro.md" target="_blank">Containerized Atmosphere for Continuous Analysis Orchestration (CACAO or simply Cacao)</a>, which is built on the principles of Atmosphere (abstracting complicated functions such as firewalls and virtual networking). Because Jetstream2 will no longer have separate operating domains for Cacao and API operations, those utilizing Jetstream2 can switch between interfaces easily, seeing all virtual machines and other assets created in any interface. This single namespace also allows for third-party interfaces that can manage any OpenStack created resource to be used with Jetstream2.</p>
+<h3 id="containers-and-orchestration">Containers and Orchestration<a class="headerlink" href="#containers-and-orchestration" title="Permanent link">&para;</a></h3>
+<p>Jetstream2 is bringing support for containers to the forefront of services. It will support managing and scaling container-based workloads via the cloud-native functionality of OpenStack Magnum or using standalone Kubernetes deployments. Users will be able to deploy Docker Swarm, Apache Mesos, or Kubernetes container orchestration engines to manage and run their container-based research workloads. In addition, the features of Cacao will provide similar functionality to individuals who have no desire to access the OpenStack API directly. Both approaches allow researchers and educators to scale their workloads dynamically according to their needs.</p>
+<h3 id="additional-services">Additional Services<a class="headerlink" href="#additional-services" title="Permanent link">&para;</a></h3>
+<p>Services such as OpenStack Heat will be available for researchers and developers, as well. OpenStack Heat is a service that allows individuals to instantiate complex resources with dependencies via a declarative YAML-based language. Further, tools such as HashiCorp&rsquo;s <a href="https://www.terraform.io/" target="_blank">Terraform</a> programmable infrastructure, with the ability to deploy on Jetstream2, private clouds, and commercial clouds easily and consistently, will allow developers and researchers to have their environments where they need, when they need it. These capabilities build on one of the fundamental aspects of cloud computing: the ability of users to create, manage, and orchestrate use of tools autonomously, based on need, without involving sysadmins to install or enable new software.</p>
+<h3 id="virtual-clusters">Virtual Clusters<a class="headerlink" href="#virtual-clusters" title="Permanent link">&para;</a></h3>
+<p>In addition to the ability for individuals to control their infrastructure programmatically, Jetstream2 provides the capability to spin up <a href="https://xcri-docs.readthedocs.io/en/latest/toolkits/vc-installation/" target="_blank">elastic HPC virtual clusters (VCs)</a> at the push of a button. These have been tested extensively on Jetstream1, with about thirty VCs running in production at different times. These Slurm-powered virtual clusters allow individuals to transition easily between cloud and HPC resources, acting as both a test-bed environment for custom software, and a highly-available production resource for projects with modest computational needs. The deployment process for these resources in Jetstream2 will be streamlined, allowing individuals to deploy an instance, acting as a head node, that is ready to accept jobs. Once jobs are submitted, worker instances will be automatically created and destroyed as needed. The Singularity/Apptainer container runtime environment will be built into these VCs, allowing individuals to use containerized scientific software without lengthy installation processes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Push-button virtual cluster deployment is available in <a href="/ui/exo/push-button-cluster.md" target="_blank">Exosphere</a> now.</strong></p>
+</div>
+<h3 id="historical-reference">Historical Reference<a class="headerlink" href="#historical-reference" title="Permanent link">&para;</a></h3>
+<p>Jetstream1 utilized two primary clouds, geographically dispersed and powered by <a href="https://www.openstack.org/" target="_blank">OpenStack</a>, to provide thousands of concurrent virtual machines to researchers, educators, and students from hundreds of institutions across the United States. Jetstream1 featured Atmosphere, a user-friendly graphical user environment, as the means of access for the majority of users. Jetstream1 also allowed API access for infrastructure-driven projects like science gateways.</p>
+<p>There are quite a few similarities between Jetstream1 and Jetstream2. Jetstream2 will be powered by a more recent version of OpenStack and will still have a primary mission of providing virtual machine services to research and education faculty, staff, and students. Jetstream2, however, will build on what Jetstream1 delivered and provide a number of improvements and new services.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../../overview/status/" class="btn btn-neutral float-left" title="Jetstream2 Status and News"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../overview/overview-doc/" class="btn btn-neutral float-right" title="System Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../overview-doc/" class="btn btn-neutral float-left" title="System Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../config/" class="btn btn-neutral float-right" title="Configuration and specifications">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -409,10 +405,10 @@
         </span>
     
     
-      <span><a href="../../overview/status/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../overview-doc/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../overview/overview-doc/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../config/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

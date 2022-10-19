@@ -47,16 +47,11 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/status/">Jetstream2 Status and News</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Jetstream2 Early Operations</span></p>
-              <ul>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/js2-earlyops-faq/">FAQ</a>
-                  </li>
-              </ul>
               <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/overview-doc/">System Overview</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/keydiff/">Key Differences Between Jetstream 1 and 2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../overview/config/">Configuration and specifications</a>
                   </li>
@@ -82,7 +77,7 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/resources/">Jetstream2 Resources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/xsede/">XSEDE Service Units and Jetstream2</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/access/">ACCESS Credits and Jetstream2</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/vmsizes/">VM Sizes and Configurations</a>
                   </li>
@@ -107,7 +102,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/supplement/">Supplements (Storage/SUs)</a>
                   </li>
@@ -128,6 +123,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../create_instance/">Creating an Instance</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../access-instance/">Accessing an Exosphere Instance</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../exo-filetransfer/">File Transfer</a>
@@ -136,37 +133,9 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../push-button-cluster/">Push-button clusters</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../binder/">Binder Workflows</a>
+                </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Exosphere Troubleshooting</a>
-                </li>
-    </ul>
-                  </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
-    <ul>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -212,13 +181,7 @@
                 </li>
                 <li class="toctree-l3"><a class="reference internal" href="../../cli/manage/">Instance Management</a>
                 </li>
-                <li class="toctree-l3"><a class="reference internal" href="#">Snapshots & Images</a>
-    <ul>
-                <li class="toctree-l4"><a class="reference internal" href="../../cli/snapshot-image/">Overview & Creation</a>
-                </li>
-                <li class="toctree-l4"><a class="" href="../../cli/snapshot-image/#ImageSharing">Image Sharing</a>
-                </li>
-    </ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../cli/snapshot-image/">Snapshots & Images</a>
                 </li>
     </ul>
                 </li>
@@ -229,6 +192,36 @@
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/manila/">Manila Shares in the CLI</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -282,7 +275,9 @@
               <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/software/">Jetstream2 Software Collection</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware/">Using the Jetstream2 Software Collection</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../general/usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../general/licenses/">Software Licenses</a>
                   </li>
@@ -423,20 +418,29 @@ If you can&rsquo;t afford to lose something, keep a copy somewhere else.</p>
 </div>
 <hr />
 <h2 id="other-troubleshooting">Other Troubleshooting<a class="headerlink" href="#other-troubleshooting" title="Permanent link">&para;</a></h2>
-<h3 id="i-changed-the-exouser-password-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work">I changed the exouser password on my instance and now the web shell and web desktop in Exosphere don&rsquo;t work. <a name="ExospherePassphrase"></a><a class="headerlink" href="#i-changed-the-exouser-password-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work" title="Permanent link">&para;</a></h3>
+<h3 id="i-changed-the-exouser-passphrase-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work">I changed the exouser passphrase on my instance and now the web shell and web desktop in Exosphere don&rsquo;t work. <a name="ExospherePassphrase"></a><a class="headerlink" href="#i-changed-the-exouser-passphrase-on-my-instance-and-now-the-web-shell-and-web-desktop-in-exosphere-dont-work" title="Permanent link">&para;</a></h3>
 <p>The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.</p>
-<p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the password for the default exouser account. Changing the password does not prevent any access, but makes it more difficult.</p>
-<p class="warning">Currently, changing the exouser account password will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.</p>
+<p>It is possible to make it less straightforward for another user on the same allocation to access your running instance. You can do this by changing the passphrase for the default exouser account. Changing the passphrase does not prevent any access, but makes it more difficult.</p>
+<p class="warning">Currently, changing the exouser account passphrase will break Web Shell, Web Desktop, and some other Exosphere-powered instance interactions. This may change in the future.</p>
 <p>We HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That&rsquo;s covered here:</p>
 <p><a href="https://docs.jetstream-cloud.org/ui/exo/create_instance/">https://docs.jetstream-cloud.org/ui/exo/create_instance/</a></p>
 <p>under the advanced options. You can also manually add your key to an already running instance.</p>
-<p>We generally recommend using only ssh keys for external access and not changing the exouser password.</p>
+<p>We generally recommend using only ssh keys for external access and not changing the exouser passphrase.</p>
+<h3 id="i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole">I can&rsquo;t copy and paste to/from the Web Shell or Web Desktop (Guacamole)<a class="headerlink" href="#i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole" title="Permanent link">&para;</a></h3>
+<p>Copying and pasting to and from Guacamole interfaces (i.e. the web shell or web desktop) can be a tricky endeavor. If you are a Firefox user, this article presents a fix: <a href="https://sudoedit.com/firefox-async-clipboard/">https://sudoedit.com/firefox-async-clipboard/</a></p>
+<p>Otherwise, you can generally paste text <em>into</em> Guacamole by following these steps:</p>
+<ol>
+<li>Copy the text into the clipboard on your workstation</li>
+<li>Right-click in the Guacamole window (might be middle-click on some systems)</li>
+</ol>
+<p>To copy <em>out</em> of Guacamole, simply highlight the text, and it will be placed into your clipboard.</p>
+<p>If all else fails, try accessing the clipboard information in the <code>Ctrl</code>+<code>Alt</code>+<code>Shift</code> menu.</p>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../push-button-cluster/" class="btn btn-neutral float-left" title="Push-button clusters"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../../cacao/overview/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../binder/" class="btn btn-neutral float-left" title="Binder Workflows"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../horizon/intro/" class="btn btn-neutral float-right" title="Overview">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -464,10 +468,10 @@ If you can&rsquo;t afford to lose something, keep a copy somewhere else.</p>
         </span>
     
     
-      <span><a href="../push-button-cluster/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../binder/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../../cacao/overview/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../../horizon/intro/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
