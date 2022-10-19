@@ -8,7 +8,7 @@ To log in to J2 Exosphere, you will need to click on the “Add allocation” ca
 
 <img src="/images/exo-add-alloc.png" alt="A screenshot showing the 'Add Allocation' button on the Exosphere home page" width="40%"/>
 
-The next screen will ask you to add your ACCESS account or select another login method (“Other Login Methods” button). “Other login methods” allows you to add an OpenStack account, which is not something most users can use with Jetstream2. Almost all users will use their access ACCESS account or any other credentials besides OpenStack and should select the “Add ACCESS Account” card and follow the instructions below.
+The next screen will ask you to add your ACCESS account or select another login method (“Other Login Methods” button). “Other login methods” allows you to add an OpenStack account, which is not something most users can use with Jetstream2. If you are unsure, select the “Add ACCESS Account” card and follow the instructions below.
 
 <img src="/images/exo-add-access-acct.png" alt="A screenshot showing the 'Add ACCESS account' button" width="50%"/>
 
@@ -18,7 +18,7 @@ Once you click on “Add ACCESS account”, you will be redirected to a CILogon 
 
 <img src="/images/exo-cilogon-dropdown.png" alt="A screenshot showing the 'Select an Identity Provider' dropdown, with 'ACCESS CI (XSEDE)' selected" width="50%"/>
 
-Your ACCESS account credentials are the default login method to Exosphere, so it is recommended that you select ***ACCESS-CI*** from the dropdown box. *It may default to some other source so be sure to change it to ACCESS-CI!* Please note that this may require multi-factor (Duo) authentication. If you need help setting up or changing your multi-factor authentication method, please open an [ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.
+Your ACCESS account credentials are the default login method to Exosphere, so it is recommended that you select ***ACCESS-CI*** from the dropdown box. Please note that this may require multi-factor (Duo) authentication. If you need help setting up or changing your multi-factor authentication method, please open an [ACCESS Help Ticket](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank}, as Jetstream2 staff cannot fix this for you directly.
 
 #### Using other accounts
 
