@@ -64,4 +64,10 @@ You'll need to have an ACCESS account to request access to the Jetstream2 Trial 
 
 ##### To create an ACCESS account if you do not have one:
 
-Please see [ACCESS User Registration](https://identity.access-ci.org/new-user){target=_blank} for up to date information on creating an ACCESS user account. 
+Please see [ACCESS User Registration](https://identity.access-ci.org/new-user){target=_blank} for up to date information on creating an ACCESS user account.
+
+##### Start the allocations process
+
+The [General allocations page](general-allocations.md) has the steps you would take for all but the largest (Maximize) allocation size.
+
+The Maximize opportunity size has some special requirements. We recommend reading here about [Maximize ACCESS allocations](research.md) if you are contemplating an allocation larger than 3 million SUs. 

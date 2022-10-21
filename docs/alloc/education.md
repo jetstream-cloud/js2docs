@@ -4,6 +4,15 @@ Under ACCESS, there are no longer allocations dedicated solely to research or ed
 
 Since educational usage is a prime use case for Jetstream2, we want to help instructors/educators figure out how to best size their request and make that request to ACCESS.
 
+Researchers have opportunities to request ACCESS allocations at four levels.
+
+|  Allocation | Credit Threshold |
+|---|---|
+| Explore ACCESS | 400,000  |
+|  Discover ACCESS | 1,500,000  |
+| Accelerate ACCESS | 3,000,000  |
+| Maximize ACCESS | Not awarded in credits |
+
 We would suggest reviewing:
 
 * [Jetstream2 VM Sizes](../general/vmsizes.md)

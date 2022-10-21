@@ -37,7 +37,7 @@ You may continue to renew your Explore, Discover, or Accelerate-sized allocation
 *   * Go to the [Submit a Request page](https://allocations.access-ci.org/opportunities){target=_blank}
     * This will require you to authenticate to ACCESS if you have not already
 * Your allocation will show as a renewal opportunity in ***EACH*** allocation size/category. Choose the appropriate opportunity based on the categories you previously reviewed
-    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring if it is a startup allocation.*
+    * *Note: You will not see the renewal option until your allocation is within 30 days of expiring*
 * Choose "Renewal *[Your allocation number]* as *[Opportunity Size]*"
 * Fill in the fields for the Request Information, the optional Opportunity Questions, and following sections.
 * At the very bottom, you'll select the ACCESS credits needed and then submit.
