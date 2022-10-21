@@ -33,7 +33,11 @@ For a more in-depth description please see the [System Overview](/overview/overv
 
 Please visit <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a> for detailed system status information and planned maintenance announcements. Also see, [Jetstream2 system status and information](overview/status.md) for additional information on our [outages and maintenance mailing list](overview/status.md#mailing-list-for-outages-and-maintenance) and [community chat](overview/status.md#community-chat).
 
+---
 
+!!! note "Accessing Jetstream2"
+
+    **Access to Jetstream2 is available solely through Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) allocations. You must be on a valid allocation or the PI of a valid allocation to have access to Jetstream2.**
 
 ---
 ###New users may wish to review:###
