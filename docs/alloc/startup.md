@@ -1,10 +1,19 @@
-# Jetstream2 Startup Allocations
+# Jetstream2 Allocations
 
 Under ACCESS, there are no longer allocations dedicated solely to research (including research startups) or education. Instead, there are categories of allocations based on the request size. We discuss those in the [Allocations Overview](overview.md) and ACCESS covers that on their [Prepare Requests: Overview](https://allocations.access-ci.org/prepare-requests-overview){target=_blank} page.
 
 Startup allocations generally represented researchers getting started with the national cyberinfrastructure or research groups that needed modest amounts of resources generally equal to startup values. This allowed researchers that needed more modest awards to renew yearly without submitting to the allocations committee.
 
 ACCESS has embraced this methodology and all allocations under 3,000,000 SUs may be awarded outside of the allocations committee. The allocation types and sizes are covered in the [Allocations Overview](overview.md).
+
+Researchers have opportunities to request ACCESS allocations at four levels.
+
+|  Allocation | Credit Threshold |
+|---|---|
+| Explore ACCESS | 400,000  |
+|  Discover ACCESS | 1,500,000  |
+| Accelerate ACCESS | 3,000,000  |
+| Maximize ACCESS | Not awarded in credits |
 
 We would suggest reviewing:
 
