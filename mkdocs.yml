@@ -90,7 +90,7 @@ nav:
   - Allocations:
     - Allocations Overview: alloc/overview.md
     - Trial Allocation: alloc/trial.md
-    - Startup Allocations: alloc/startup.md
+    - General Allocations: alloc/general-allocations.md
     - Education Allocations: alloc/education.md
     - Research (Maximize ACCESS) Allocations: alloc/research.md
     - Supplements (Storage/SUs): alloc/supplement.md
