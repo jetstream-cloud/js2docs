@@ -98,7 +98,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/trial/">Trial Allocation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/startup/">Startup Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/general-allocations/">General Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
@@ -354,6 +354,10 @@
               
                 <h1 id="create-a-network-in-the-cli">Create a network in the CLI<a class="headerlink" href="#create-a-network-in-the-cli" title="Permanent link">&para;</a></h1>
 <p class="note">In Jetstream2, if you do not need multiple networks in your allocation, you can skip all of the steps below. However, if there&rsquo;s more than one network in your allocation already, you will either need to use one of those or create your own network using these steps.</p>
+<div class="admonition warning">
+<p class="admonition-title">auto_allocated_network</p>
+<p>If <code>auto_allocated_network</code> exists from <a href="/ui/exo/exo.md">Exosphere</a>, you may wish to use that one as it includes <code>auto_allocated_network</code>, <code>auto_allocated_router</code> and <code>auto_allocated_subnet</code> and can be used to skip these steps.</p>
+</div>
 <p>This step creates a virtual network for your instances. You&rsquo;ll create a network, a subnet, and a router and then set the routing so your instances can talk outside of the Jetstream2 networks to the world. You can have multiple networks in an allocation or also multiple subnets on a single network. This effectively isolates instances from each other.</p>
 <p>If you do not give your instances a public IP address (also called a floating ip by Openstack), your instances will not be reachable from the internet. While this is not a substitute for proper <a href="../security_group/">security groups</a>, it is another level of protection for VMs that may used internally only by your VMs (e.g. private database servers).</p>
 <table>
@@ -369,7 +373,7 @@
 <td><code>openstack network create my-network-name [--dns-domain AAA000000.projects.jetstream-cloud.org]</code></td>
 </tr>
 <tr>
-<td>(Optional)</td>
+<td><em>(Optional)</em></td>
 <td>The &ndash;dns-domain is optional but recommended. <br><br> You will need to install <i>python-designateclient</i> for dns services. <br><br> Substitute your allocation number for the Xs above</td>
 </tr>
 <tr>
@@ -386,7 +390,7 @@
 </tr>
 <tr>
 <td>Create a router</td>
-<td><code>openstack router create my-router-name</code></td>
+<td><code>openstack router create my-router-name</code> </br></br>For most uses, a single router is sufficient, so our <a href="/general/policies/#router-quota-policies">policy is to limit projects initally to 1</a>.</br>If you have a router you can skip this creation step and re-use it in the steps below</td>
 </tr>
 <tr>
 <td>Connect the newly created subnet to the router</td>
@@ -394,11 +398,11 @@
 </tr>
 <tr>
 <td>Connect the router to the gateway named <br>&ldquo;public&rdquo;</td>
-<td><code>openstack router set --external-gateway public my-router-name</code></td>
+<td><code>openstack router set --external-gateway public my-router-name</code></br></br>You only need to do this for newly created routers and can skip this step if re-using a router.</td>
 </tr>
 <tr>
 <td>Verify that the router has been connected to the<br>gateway</td>
-<td><code>openstack router show my-router-name</code></td>
+<td><code>openstack router show my-router-name</code></br></br>You only need to do this for newly created routers and can skip this step if re-using a router.</td>
 </tr>
 </tbody>
 </table>

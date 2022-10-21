@@ -98,7 +98,7 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/trial/">Trial Allocation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/startup/">Startup Allocations</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/general-allocations/">General Allocations</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/education/">Education Allocations</a>
                   </li>
@@ -352,7 +352,12 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="instance-management-actions">Instance Management Actions<a class="headerlink" href="#instance-management-actions" title="Permanent link">&para;</a></h1>
+<p class="note">For an in-depth explanation of each instance management action, please reference the <a href="../../../general/instancemgt/">general Instance Management Actions article</a>.</p>
 <p>In Exosphere, to see available management actions for an instance and choose one if desired, click the &ldquo;Actions&rdquo; drop-down menu on the instance details page.</p>
+<div class="admonition warning">
+<p class="admonition-title">Deletion is permanent!</p>
+<p><a href="../storage/#detaching-a-volume">Detach all volumes</a> from your instance before deleting it; otherwise, you may risk corrupting your data and/or the volume. Deleting an instance through Exosphere will <strong>permanently</strong> delete all data on the root disk, even for volume-backed instances.</p>
+</div>
 <p><img alt="Exosphere instance actions menu screenshot" src="../../../images/exo-actions-menu.png" /></p>
               
             </div>
