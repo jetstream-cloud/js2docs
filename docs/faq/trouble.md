@@ -51,7 +51,23 @@ The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a ker
 
     ls /var/lib/initramfs-tools | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
 
-This doesn't work on redhat-based instances like Rocky or Alma. We're working on a simple solution for that. 
+This doesn't work on redhat-based instances like Rocky or Alma. We're working on a simple solution for that.
+
+### The CUDA debugger (cuda-gdb) doesn't work on GPU instances
+
+If you use the nvhpc module with nvcc compiler and try to use the cuda-gdb debugger, you will get an error like this:
+
+    fatal:  One or more CUDA devices cannot be used for debugging
+
+There is an issue with vGPU and our configuration that cannot be readily resolved. We are looking into options to work around this problem. There is no estimate for when a workaround will be in place. We apologize for any inconvenience.
+
+### Unified memory doesn't work on GPU instances
+
+We can confirm that unified memory is not working under the NVIDIA drivers we're using. We have reach out to NVIDIA for a timeline on when we might expect that functionality.
+
+Regardless of the time, it is not expected that unified memory will work on fractional (slices of) GPUs, only on full GPU flavors.
+
+We will update this FAQ entry when we have additional information.  
 
 ### Ubuntu 22 Snaps: "not a snap cgroup"
 
