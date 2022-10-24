@@ -63,11 +63,11 @@ There is an issue with vGPU and our configuration that cannot be readily resolve
 
 ### Unified memory doesn't work on GPU instances
 
-We can confirm that unified memory is not working under the NVIDIA drivers we're using. We have reach out to NVIDIA for a timeline on when we might expect that functionality.
+We can confirm that unified memory is not working under the NVIDIA drivers we're using. We have reached out to NVIDIA for a timeline on when we might expect that functionality.
 
 Regardless of the time, it is not expected that unified memory will work on fractional (slices of) GPUs, only on full GPU flavors.
 
-We will update this FAQ entry when we have additional information.  
+We will update this FAQ entry when we have additional information.
 
 ### Ubuntu 22 Snaps: "not a snap cgroup"
 
