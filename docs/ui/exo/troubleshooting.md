@@ -64,7 +64,7 @@ We generally recommend using only ssh keys for external access and not changing 
 
 ### I can't copy and paste to/from the Web Shell or Web Desktop (Guacamole)
 
-Copying and pasting to and from Guacamole interfaces (i.e. the web shell or web desktop) can be a tricky endeavor. If you are a Firefox user, this article presents a fix: [https://sudoedit.com/firefox-async-clipboard/](https://sudoedit.com/firefox-async-clipboard/)
+Copying and pasting to and from Guacamole interfaces (i.e. the web shell or web desktop) can be a tricky endeavor. If you are a Firefox user, this article presents a fix: [https://sudoedit.com/firefox-async-clipboard/](https://sudoedit.com/firefox-async-clipboard/){target=_blank}
 
 Otherwise, you can generally paste text *into* Guacamole by following these steps:
 

@@ -9,7 +9,7 @@ Instances launched with Exosphere will be created with a user `exouser`. By defa
 
 ## Accessing an Instance through Exosphere Web Interface
 
-Exosphere provides a variety of different methods for interacting with your instances, depending on the options selected during creation. These options include the web shell, web desktop, and console, all of which can be accessed either from the Exosphere Instance List page (with the "Connect to" dropdown) or from the *Interactions* section of the Instance Details page. 
+Exosphere provides a variety of different methods for interacting with your instances, depending on the options selected during creation. These options include the web shell, web desktop, and console, all of which can be accessed either from the Exosphere Instance List page (with the "Connect to" dropdown) or from the *Interactions* section of the Instance Details page.
 
 Remember that the web shell and web desktop will not be available if you have chosen not to assign a public IP address to your instance!
 {: .note}
@@ -20,14 +20,14 @@ Remember that the web shell and web desktop will not be available if you have ch
 
 ### Web Shell (Guacamole)
 
-By default, Exosphere configures all new instances with an easy-access web shell via [Guacamole](https://guacamole.apache.org/). This command-line interface signs in as `exouser`, and thus has `sudo` access. 
+By default, Exosphere configures all new instances with an easy-access web shell via [Guacamole](https://guacamole.apache.org/){target=_blank}. This command-line interface signs in as `exouser`, and thus has `sudo` access.
 
 ***Tip***: From the web shell, you can open/close a menu overlay with `ctrl`+`alt`+`shift`. This menu supports directly uploading and downloading files to/from your instance, as well as sharing clipboard data.
 {: .note}
 
 ### Web Desktop (Guacamole)
 
-If an instance was [configured with Web Desktop](../create_instance/#configure-instance) enabled, Exosphere will provide an interactive [GNOME](https://www.gnome.org/) desktop environment for you to work in. Like the web shell, this is powered by [Guacamole](https://guacamole.apache.org/) and signs in as `exouser`. 
+If an instance was [configured with Web Desktop](../create_instance/#configure-instance) enabled, Exosphere will provide an interactive [GNOME](https://www.gnome.org/){target=_blank} desktop environment for you to work in. Like the web shell, this is powered by [Guacamole](https://guacamole.apache.org/){target=_blank} and signs in as `exouser`.
 
 ### Console
 
@@ -42,10 +42,10 @@ When using the console, you will not be signed into the machine automatically, s
 If your instance does not have a public IP address assigned to it, you will be unable to SSH from your workstation (or anywhere else outside of Jetstream2, unless you are using another instance within the same allocation that *does* have a public ip as a tunnel point or jump host).
 {: .note}
 
-Exosphere instances support SSH connections with both passphrase and [public key](https://kb.iu.edu/d/aews) authentication. You probably already have an SSH client on your computer, included with your operating system. You can use this to connect to your instance. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to [enable it in the settings](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui). If your Windows version is too old, or you want a more customizable environment, these resources may be useful:
+Exosphere instances support SSH connections with both passphrase and [public key](https://kb.iu.edu/d/aews){target=_blank} authentication. You probably already have an SSH client on your computer, included with your operating system. You can use this to connect to your instance. MacOS users can SSH from the Terminal app, and practically every Unix/Linux system has command-line SSH support. Windows 11 and Windows 10 (build 1809 and later) have a standard SSH client accessible in the Command Prompt and Powershell, although you may need to [enable it in the settings](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui){target=_blank}. If your Windows version is too old, or you want a more customizable environment, these resources may be useful:
 
-- [PuTTY](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui), a free SSH client and `xterm` terminal emulator for Windows and Unix.
-- [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
+- [PuTTY](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui){target=_blank}, a free SSH client and `xterm` terminal emulator for Windows and Unix.
+- [Install Linux on Windows with WSL](https://learn.microsoft.com/en-us/windows/wsl/install){target=_blank}
 
 ### SSH Passphrase Authentication
 
@@ -64,7 +64,7 @@ ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no exouser@<PUB
 
 ### SSH Public Key Authentication
 
-This guide assumes that you have already generated a public/private key pair. For step-by-step instructions on doing so, see [the IU Knowledge Base](https://kb.iu.edu/d/aews).
+This guide assumes that you have already generated a public/private key pair. For step-by-step instructions on doing so, see [the IU Knowledge Base](https://kb.iu.edu/d/aews){target=_blank}.
 {: .note}
 
 Public key authentication is preferred to passphrases by many. Adding your public key to an instance with the Exosphere UI is only possible [during creation](../create_instance/#advanced-options); however, there is a workaround.
