@@ -11,6 +11,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 - [Managing applications with Kubernetes](./k8smanage.md)
 - [Persistent Volumes in Kubernetes](./k8svolumes.md)
 - [Minikube](./minikube.md)
+- [Deploy BinderHub on Kubernetes](./k8sbinderhub.md)
 
 ### Third Party Kubernetes topics
 
