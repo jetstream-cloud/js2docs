@@ -1,3 +1,11 @@
+# Deploy BinderHub on top of Kubernetes on Jetstream 2
+
+BinderHub is a kubernetes-based cloud service that allows users to share reproducible interactive computing environments from code repositories. See for example <https://mybinder.org>.
+
+When pointed to a Github repository, it builds a Docker container from the metadata in that repository (for example a `requirements.txt` file), then it gives the user a live Jupyter Notebook session with this custom computing environment and the checked-out repository. The user can then browse the repository and execute Notebooks.
+
+On top of Kubernetes, it also needs a Container Registry to store the Docker containers it builds, in the following tutorial we rely on Google Cloud.
+
 ## Setup Kubernetes
 
 The first step is to have a Kubernetes deployment on Jetstream 2, for example deployed with Kubespray using [this tutorial](https://www.zonca.dev/posts/2022-03-30-jetstream2_kubernetes_kubespray)
