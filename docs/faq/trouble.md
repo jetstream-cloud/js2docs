@@ -47,9 +47,13 @@ and you'll be able to see the contents of the volume in /mnt
 
 ### My GPU is not usable after a kernel update
 
-The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a kernel update. If they do not, you can do this on Ubuntu-based instances:
+The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a kernel update. If they do not, you can do this on Ubuntu 20.04 instances:
 
     ls /var/lib/initramfs-tools | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
+
+For Ubuntu 22.04 instances, you can try:
+
+    ls /usr/lib/modules | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
 
 This doesn't work on redhat-based instances like Rocky or Alma. We're working on a simple solution for that.
 
