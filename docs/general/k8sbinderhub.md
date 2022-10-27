@@ -15,10 +15,10 @@ We first need to activate the Google Container Registry in the Google Cloud acco
 
 ## Setup permissions on the Google Container Registry
 
-Follow [the instructions on "Zero to Binderhub" to setup the Google Container Registry](https://binderhub.readthedocs.io/en/latest/zero-to-binderhub/setup-registry.html#set-up-google-container-registry)
+Follow [the instructions on "Zero to BinderHub" to setup the Google Container Registry](https://binderhub.readthedocs.io/en/latest/zero-to-binderhub/setup-registry.html#set-up-google-container-registry)
 some notes:
 
-* Better to create a dedicated project just for Binderhub
+* Better to create a dedicated project just for BinderHub
 * "Create key" is under "Actions"->"Manage keys"
 
 ## Setup ingress with HTTPS support
@@ -34,7 +34,7 @@ Follow the instructions at <https://zonca.dev/2020/03/setup-https-kubernetes-let
 BinderHub requires 2 subdomains, one for BinderHub and one for JupyterHub.
 For the initial testing I recommend to use Jetstream 2 provided domains, once they are working it is easy to replace them with custom domains.
 
-Login to [the Jestream 2 Horizon instance](https://js2.jetstream-cloud.org/), choose the right allocation, click on DNS, Zones, choose the Zone which starts with `tg`, then click on "Create Record Set".
+Login to [the Jetstream 2 Horizon instance](https://js2.jetstream-cloud.org/), choose the right allocation, click on DNS, Zones, choose the Zone which starts with `tg`, then click on "Create Record Set".
 
 Create a "A" record where name is `binder.tg-xxx000000.projects.jetstream-cloud.org` and record is the IP of your master instance. Create a second A record with the name `hub.tg-xxx000000.projects.jetstream-cloud.org` and the same record.
 
