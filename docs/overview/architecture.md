@@ -5,7 +5,7 @@ Jetstream2 consists of one primary cloud and multiple regional clouds. As you ca
 *Another huge distinction is that instead of different domains -- default (Atmosphere) and tacc (API) domains, there is one namespace for Jetstream2. You can change between the CLI, Horizon, Exosphere, and Cacao as you see fit to manage your resources*
 {: .note}
 
-![Jetstream2 Architecture](/images/JS2-Architecture.jpg)
+![Jetstream2 Architecture](/images/Jetstream2-architecture_Nov22.png)
 
 Allocations will only be awarded on the primary cloud by default.
 
