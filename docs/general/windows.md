@@ -39,3 +39,40 @@ You can find the password for your Windows instance via Horizon. Navigate to you
     ```
     ssh-keygen -p -f <PATH_TO_PRIVATE_KEY>
     ```
+
+## Accessing a Windows Instance from Horizon
+
+On the left side bar, navigate to `Project`→`Compute`→`Instances`, then click on your instance's name. Navigate to the `Console` tab near the top.
+
+![A screenshot of the Horizon console, pointing out the "Console" tab](/images/horizon-console.png)
+
+## Accessing a Windows Instance with Remote Desktop (RDP)
+
+*Note*: like SSH, RDP requires your instance to have a public (Floating) IP associated with it in order to access from outside the Jetstream2 network. 
+{: .note}
+
+Windows Remote Desktop Protocol (RDP) will most likely provide a better, more feature-rich experience than the Horizon (SPICE) console. 
+
+### Adding a security group for RDP
+
+Under normal circumstances, RDP listens for connections on TCP port 3389 and may be accelerated by exposing UDP port 3389. If TCP port 3389 is not exposed on your instance, you will be unable to connect with RDP. Luckily, Horizon provides a prefabbed security rule for RDP access.
+
+You can add this rule to an existing [security group](../../ui/horizon/security_group) or create a new one, then apply the security group to your instance by navigating to "Edit Security Groups" in the [management actions dropdown](../../ui/horizon/manage/#instance-management-actions).
+
+<img alt="A screenshot of the RDP security rule in a dropdown menu" src="/images/horizon-rdp-group.png" width="65%"/> 
+
+### Enabling Remote Desktop
+
+Remote Desktop may need to be enabled on your instance before attempting to connect. First, access your instance through Horizon, as [described above](#accessing-a-windows-instance-from-horizon). Open the machine's Settings app, then navigate to the "Remote Desktop" section on the left. Ensure that "Enable Remote Desktop" is set to "On."
+
+<img alt="A screenshot showing the location of the 'Enable Remote Desktop' toggle" src="/images/windows-rdp-enable.png" width="75%"/>
+
+### Connecting
+
+If you are on a Windows computer, you can follow these steps to connect via RDP:
+
+1. Search for "Remote Desktop Connection"
+2. In the `Computer` field, enter your instance's public IP address. <br /> <img alt="A screenshot of the Remote Desktop Connection prompt" src="/images/windows-remote-desktop-server.png" />
+3. You will be prompted for credentials. Depending on the version of Windows Server installed, the `User name` will be either "Administrator" or "Admin". Your password can be [found in Horizon](#retrieving-the-admin-password). Click "OK". <br /> <img alt="A screenshot of the RDP credentials prompt" src="/images/windows-remote-desktop-creds.png" />
+4. You will likely be prompted with a security certificate. View the certificate, determine if it is safe to continue, then (if so), click "Yes". <br /> <img alt="A screenshot of the certificate popup message" src="/images/windows-remote-desktop-cert.png" />
+5. You should now be connected to the remote machine.
