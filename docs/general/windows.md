@@ -14,7 +14,11 @@ As noted above, Jetstream2 staff makes a limited number of Microsoft Windows ima
 - In order to be able to access your instance later, you will need to provide a **brand-new** SSH keypair in PEM format. One can be generated with `ssh-keygen -m pem` in an OpenSSH-enabled terminal. Be sure to set a strong passphrase for now.
 
 - Be sure that your root disk is large enough to deploy the image; Windows tends to be larger than most Unix/Linux images. The default 20 GB size of some flavors is too small. To get around this, either select a different flavor or use a [volume-backed instance](../../faq/general-faq/#i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me).
-- Creating a Windows instance through Exosphere will cause the resulting instance to appear to be stuck in the "Building" status indefinitely, and many of the platform's creature comforts like [exouser](../../ui/exo/access-instance/#the-exouser-profile-passphrase) and resource monitoring will not function properly, if at all. 
+- Creating a Windows instance through Exosphere will cause the resulting instance to appear to be stuck in the "Building" status indefinitely, and many of the platform's creature comforts like [exouser](../../ui/exo/access-instance/#the-exouser-profile-passphrase) and resource monitoring will not function properly, if at all.
+
+!!! note "Image information"
+
+    Presently the image supplied by Jetstream2 is<br> ***Windows-Server-2022-JS2-Beta | bbad1676-40f1-485d-8575-ca9eac7e211e***
 
 ## Retrieving the Admin Password
 
@@ -48,10 +52,10 @@ On the left side bar, navigate to `Project`→`Compute`→`Instances`, then clic
 
 ## Accessing a Windows Instance with Remote Desktop (RDP)
 
-*Note*: like SSH, RDP requires your instance to have a public (Floating) IP associated with it in order to access from outside the Jetstream2 network. 
+*Note*: like SSH, RDP requires your instance to have a public (Floating) IP associated with it in order to access from outside the Jetstream2 network.
 {: .note}
 
-Windows Remote Desktop Protocol (RDP) will most likely provide a better, more feature-rich experience than the Horizon (SPICE) console. 
+Windows Remote Desktop Protocol (RDP) will most likely provide a better, more feature-rich experience than the Horizon (SPICE) console.
 
 ### Adding a security group for RDP
 
@@ -59,7 +63,7 @@ Under normal circumstances, RDP listens for connections on TCP port 3389 and may
 
 You can add this rule to an existing [security group](../../ui/horizon/security_group) or create a new one, then apply the security group to your instance by navigating to "Edit Security Groups" in the [management actions dropdown](../../ui/horizon/manage/#instance-management-actions).
 
-<img alt="A screenshot of the RDP security rule in a dropdown menu" src="/images/horizon-rdp-group.png" width="65%"/> 
+<img alt="A screenshot of the RDP security rule in a dropdown menu" src="/images/horizon-rdp-group.png" width="65%"/>
 
 ### Enabling Remote Desktop
 
