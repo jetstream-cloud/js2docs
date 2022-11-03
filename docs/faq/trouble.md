@@ -13,20 +13,6 @@ Troubleshooting Jetstream2 Interfaces:
 
 ## General Troubleshooting:
 
-### There is a known issue with suspending GPU instances
-
-We will update this [Status IO Incident](https://jetstream.status.io/pages/incident/61dc808a7e9a82053ce739d2/629a6de486604112e598b390){target=_blank} with details/
-
-There is an issue/bug with suspending GPU instances with the version of libvirt Jetstream2 is using for virtualization.
-
-!!! danger ""
-
-    DO NOT SUSPEND GPU instances.
-
-We will have to upgrade the compute nodes to resolve it. This is on the near-term timeline but we do not have a precise date at this time.
-
-In the meantime, please only use stop or shelve with GPU instances.
-
 ### I can't ping or reach a public/floating IP from an internal, non-routed host
 
 This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.
@@ -44,34 +30,6 @@ The best way to work around this is to use Horizon to attach the volume and then
     sudo mount /dev/sdb1 /mnt
 
 and you'll be able to see the contents of the volume in /mnt
-
-### My GPU is not usable after a kernel update
-
-The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a kernel update. If they do not, you can do this on Ubuntu 20.04 instances:
-
-    ls /var/lib/initramfs-tools | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
-
-For Ubuntu 22.04 instances, you can try:
-
-    ls /usr/lib/modules | sudo xargs -n1 /usr/lib/dkms/dkms_autoinstaller start
-
-This doesn't work on redhat-based instances like Rocky or Alma. We're working on a simple solution for that.
-
-### The CUDA debugger (cuda-gdb) doesn't work on GPU instances
-
-If you use the nvhpc module with nvcc compiler and try to use the cuda-gdb debugger, you will get an error like this:
-
-    fatal:  One or more CUDA devices cannot be used for debugging
-
-There is an issue with vGPU and our configuration that cannot be readily resolved. We are looking into options to work around this problem. There is no estimate for when a workaround will be in place. We apologize for any inconvenience.
-
-### Unified memory doesn't work on GPU instances
-
-We can confirm that unified memory is not working under the NVIDIA drivers we're using. We have reached out to NVIDIA for a timeline on when we might expect that functionality.
-
-Regardless of the time, it is not expected that unified memory will work on fractional (slices of) GPUs, only on full GPU flavors.
-
-We will update this FAQ entry when we have additional information.
 
 ### Ubuntu 22 Snaps: "not a snap cgroup"
 

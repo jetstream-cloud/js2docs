@@ -75,6 +75,7 @@ nav:
     - General FAQs: faq/general-faq.md
     - Troubleshooting: faq/trouble.md
     - Allocations: faq/alloc.md
+    - GPU FAQs: faq/gpu.md
     - Security: faq/security.md
     - Software: faq/software.md
     - Gateways: faq/gateways.md
@@ -183,6 +184,7 @@ nav:
       - Managing Applications with Kubernetes: general/k8smanage.md
       - Persistent Volumes in Kubernetes: general/k8svolumes.md
       - Minikube: general/minikube.md
+      - BinderHub on Kubernetes: general/k8sbinderhub.md 
     - Terraform:
       - Terraform on Jetstream2: general/terraform.md
       - Advanced Terraform Topics: general/advanced_terraform.md
