@@ -17,22 +17,21 @@ If you get an error that looks like this trying to log in to Exosphere or Horizo
 
 ````{"error":{"code":401,"message":"The request you have made requires authentication.","title":"Unauthorized"}}````
 
-you need to confirm that you either are the PI of an allocation or are on a valid allocation. If you need to be added to an allocation, you'll need to contact the PI of that allocation to do this. We are unable to add users to allocations. 
+you need to confirm that you either are the PI of an allocation or are on a valid allocation. If you need to be added to an allocation, you'll need to contact the PI of that allocation to do this. We are unable to add users to allocations.
 
 If you are indeed on an allocation or are the PI of an allocation, please note that it can take up to four hours for allocations/users to become active. This is outside of our control. If you are still unable to log into [Exosphere](../ui/exo/login.md) or [Horizon](../ui/horizon/intro.md) after four hours from being added, please open a ticket via either the [ACCESS Help Form](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank} or the [Jetstream Help Form](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
 !!! Note "Use ACCESS CI credentials if you're having trouble authenticating"
 
- We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
+     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
 
 ### I was added to an allocation but can't access Jetstream2?
 
 It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, [contact Jetstream2 help](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
-!!! Note "Use ACCESS CI credentials if you're having trouble authenticating"
+!!! Note "Use ACCESS CI credentials if you're having trouble authenticating - see just above!"
 
-     We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
 ---
 
