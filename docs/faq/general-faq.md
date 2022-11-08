@@ -118,7 +118,13 @@ If your VM has a public IP address and you need to find that IP (and don’t hav
 
 ### How do I get a jetstream-cloud.org DNS name for my instance?
 
-Right now, some allocations are set up with OpenStack Designate to automatically create DNS hostnames for instances. DNS hostnames are formatted as `instance-name.allocation-name.projects.jetstream-cloud.org`, or a more real-life example, `genome-browser.bio123456.projects.jetstream-cloud.org`.
+Right now, some allocations are set up with OpenStack Designate to automatically create DNS hostnames for instances. DNS hostnames are formatted as:
+
+```instance-name.allocation-name.projects.jetstream-cloud.org```
+
+Or a more real-life example:
+
+```genome-browser.bio123456.projects.jetstream-cloud.org```
 
 The DNS hostname points to your instance's public (a.k.a. floating) IP address, so this won't currently work if you remove an instance's public IP (or create an instance without a public IP).
 
