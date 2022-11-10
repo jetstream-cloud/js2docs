@@ -36,17 +36,19 @@ Jetstream2 Large Memory nodes charge 2 SUs per vCPU hour or 2 SUs per core per h
 
 ### Jetstream2 GPU
 
-Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA virtual GPU (vGPU) into up to 5 slices to allow more researchers and students to make use of the GPU resource.
+Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA virtual GPU (vGPU) into up to fractions of the A100 to allow more researchers and students to make use of the GPU resource.
 
 *5 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU*
 
-| VM Size   | vCPUs | RAM(GB) | Local Storage (GB) | GPU Slices/GPU Ram  | SU cost / hour |
+| VM Size   | vCPUs | RAM(GB) | Local Storage (GB) | GPU Portion/GPU Ram  | SU cost / hour |
 |:----------|:-----:|:-------:|:------------------:|:-------------------:|:--------------:|
-| g3.small  |   4   |   15    |         60         |  1 slice / 5gb RAM  |       16       |
-| g3.medium |   8   |   30    |         60         | 2 slices / 10gb RAM |       32       |
-| g3.large  |  16   |   60    |         60         | 4 slices / 20gb RAM |       64       |
-| g3.xl     |  32   |   125   |         60         | 5 slices / 40gb RAM |      128       |
+| g3.small  |   4   |   15    |         60         |  20% of GPU / 5gb RAM  |       16       |
+| g3.medium |   8   |   30    |         60         | 25% of GPU / 10gb RAM |       32       |
+| g3.large  |  16   |   60    |         60         | 50% of GPU / 20gb RAM |       64       |
+| g3.xl     |  32   |   125   |         60         | 100% of GPU / 40gb RAM |      128       |
 
+Note: If you are using a portion of the GPU and the rest of the GPU is idle, you ***may*** see higher utilization
+{: .note}
 
 **This flavor information may be subject to changes in the future.**
 
