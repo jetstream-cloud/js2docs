@@ -118,13 +118,17 @@ If your VM has a public IP address and you need to find that IP (and don’t hav
 
 ### How do I get a jetstream-cloud.org DNS name for my instance?
 
-Jetstream2 is using OpenStack Designate to set dns names for instances. We were proactive and set the auto_allocated network that most Jetstream2 users will use, but if you've created a new network and want an auto-created DNS A record, you'll need to do this from the command line:
+Right now, some allocations are set up with OpenStack Designate to automatically create DNS hostnames for instances. DNS hostnames are formatted as:
 
-    openstack network set --dns-domain xxxxxxxxx.projects.jetstream-cloud.org. network-name-or-UUID
+```instance-name.allocation-name.projects.jetstream-cloud.org```
 
-where the xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you've created in that allocation.
+Or a more real-life example:
 
-This FAQ topic may move to its own page in the future.
+```genome-browser.bio123456.projects.jetstream-cloud.org```
+
+The DNS hostname points to your instance's public (a.k.a. floating) IP address, so this won't currently work if you remove an instance's public IP (or create an instance without a public IP).
+
+If you want DNS hostnames configured for your allocation, please create a support ticket and ask for it.
 
 ---
 
