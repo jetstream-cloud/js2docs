@@ -8,8 +8,7 @@ This list will be ever evolving, but at this time, these are the items installed
 * R / R Studio
 * Intel Compiler (Intel OneAPI)
 * Singularity/Apptainer
-* NVIDIA (formerly PGI) Compiler
-  - NVIDIA HPC Toolkit / CUDA
+* NVIDIA (formerly PGI) Compiler / HPC Toolkit / CUDA
 * AOCC Compiler
 * Anaconda *(Jupyter is available via Anaconda!)*
 * Jupyter/JupyterLab/JupyterHub (as part of Anaconda)\*
