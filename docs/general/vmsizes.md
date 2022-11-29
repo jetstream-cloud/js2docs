@@ -50,11 +50,14 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 Note: If you are using a portion of the GPU and the rest of the GPU is idle, you ***may*** see higher utilization
 {: .note}
 
+
+
 **This flavor information may be subject to changes in the future.**
 
 ----
-
 ##### Example of SU estimation:
+Note: You can now estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
+{: .note}
 
 *   First determine the VM resource appropriate to your needs (CPU only, large memory, GPU):
     *   If your work requires 24 GB of RAM and 60 GB of local storage:
