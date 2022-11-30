@@ -17,7 +17,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 
 - [Deploy Kubernetes with kubespray](https://t.co/Hh8ZincbdN){target=_blank}
     - [Feedback via Github](https://t.co/3EXyrp0EEd){target=_blank}
-- [Deploy ProjectJupyter JupyterHub](https://t.co/XUKA9od8Nd){target=_blank}
+- [Deploy ProjectJupyter JupyterHub](https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub){target=_blank}
 
 ---
 Some K8s basics :
