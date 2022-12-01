@@ -50,8 +50,6 @@ Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Addi
 Note: If you are using a portion of the GPU and the rest of the GPU is idle, you ***may*** see higher utilization
 {: .note}
 
-
-
 **This flavor information may be subject to changes in the future.**
 
 ----
