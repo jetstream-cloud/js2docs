@@ -183,8 +183,9 @@ nav:
       - Build a K8s cluster: general/k8scluster.md
       - Managing Applications with Kubernetes: general/k8smanage.md
       - Persistent Volumes in Kubernetes: general/k8svolumes.md
+      - Share data between JupyterHub users with Manila shares: general/k8smanila.md
       - Minikube: general/minikube.md
-      - BinderHub on Kubernetes: general/k8sbinderhub.md 
+      - BinderHub on Kubernetes: general/k8sbinderhub.md
     - Terraform:
       - Terraform on Jetstream2: general/terraform.md
       - Advanced Terraform Topics: general/advanced_terraform.md
