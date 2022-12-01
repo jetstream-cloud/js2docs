@@ -10,6 +10,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 - [Building a Kubernetes Cluster](./k8scluster.md)
 - [Managing applications with Kubernetes](./k8smanage.md)
 - [Persistent Volumes in Kubernetes](./k8svolumes.md)
+- [Share data using Manila](./k8smanila.md)
 - [Minikube](./minikube.md)
 - [Deploy BinderHub on Kubernetes](./k8sbinderhub.md)
 
