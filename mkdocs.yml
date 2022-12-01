@@ -36,6 +36,7 @@ extra_css:
 
 extra_javascript:
     - 'js/matomo.js'
+    - 'js/usage_estimator.js'
 
 markdown_extensions:
     - smarty
@@ -97,6 +98,7 @@ nav:
     - Supplements (Storage/SUs): alloc/supplement.md
     - Extensions & Renewals: alloc/renew-extend.md
     - Frequently Asked Questions: alloc/faq.md
+    - Usage Estimation Calculator: alloc/estimator.md
   - User Interfaces:
     - Overview: ui/index.md
     - Exosphere:
