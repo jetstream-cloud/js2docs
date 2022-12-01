@@ -53,6 +53,7 @@ Note: If you are using a portion of the GPU and the rest of the GPU is idle, you
 **This flavor information may be subject to changes in the future.**
 
 ----
+
 ##### Example of SU estimation:
 Note: You can now estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
 {: .note}
