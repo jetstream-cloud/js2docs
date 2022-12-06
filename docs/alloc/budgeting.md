@@ -15,7 +15,14 @@ Although needs will vary largely depending on the type of project at hand, there
 
 ---
 
-## Virtual Workstations and/or Traditional Workloads
+## Virtual Workstations and Traditional "Burst" Workloads
+
+Because Jetstream2 instances give the user total control, including `sudo` access, a common use case is setting up an instance as a "virtual workstation" of sorts, allowing a researcher to offload computation from their local workstation or laptop, often to one that is also more powerful. 
+
+Although direct comparisons are fraught with peril due to differences in architectures, optimization technologies, cooling solutions, and more, the following can serve as a decent general frame of reference for different flavors' performance:
+
+- m3.quad: roughly a typical mid-range laptop equipped with 4-6 CPU cores and 8-16 GB of RAM.
+- m3.medium: a higher-end laptop or research workstation might have upwards of 8 CPU cores and 32 GB of RAM
 
 ---
 
@@ -39,7 +46,7 @@ These kinds of web servers are usually not too resource intensive, but the amoun
 2. The size/amount of content being served
 3. The density of expected traffic to the server (1 visitor/hr vs. 1000 visitors/hr)
 
-Servers for static pages, small amounts of data, and light traffic don't generally require more resources than those offered by an m3.small instance (or even m3.tiny on the lighter side). If you plan to serve large amounts of data or media, or you expect a high amount of traffic, you may see benefits by upsizing to an m3.quad or m3.medium flavor.
+Servers for static pages, small amounts of data, and light to moderate traffic don't generally require more resources than those offered by an m3.quad instance (or even m3.small to m3.tiny on the lighter side). If you plan to serve large amounts of data or media, or you expect a high amount of traffic, you may see benefits by upsizing.
 
 ### Dynamic Web Apps and Other
 
