@@ -15,7 +15,7 @@ All featured images are named ***Featured-yyyyyyyy*** (e.g. Featured-Ubuntu22) o
 
 These featured images will evolve over time. As distributions leave support (e.g Ubuntu 18 will end support in April 2023), we will replace them with newer, supported versions. NVIDIA drivers will be present on all featured images so any of the featured images will work with Jetstream2 GPUs.
 
-!!! Note "ACCESS to Jetstream2 SUs"
+!!! Note "CentOS 7 and GPUs"
 
      Due to issues with the NVIDIA GRID driver, we have discontinued support for GPUs using CentOS 7. We will be removing CentOS 7 from the featured images once we have a stable Rocky 9 build available.
 
