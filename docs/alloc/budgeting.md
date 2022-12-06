@@ -1,26 +1,53 @@
 # Budgeting for Common Usage Scenarios
 
-Note: If you already have a clear picture of what resources your project requires, you can now estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
-{: .note}
+!!! note
+    If you already have a clear picture of what resources your project requires, you can now estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
+
 
 Because Jetstream2 is available solely through [SUs converted from ACCESS credits](../general/access.md){target=_blank}, it is often helpful to have a plan for what compute resources your project intends to use and to budget SU expenditure before submitting an exchange request. The goal of this document is to provide examples of common usage scenarios for Jetstream2 and how one might budget for them. 
+
+## General Considerations
+
+Although needs will vary largely depending on the type of project at hand, there are still some best practices and general considerations to keep in mind:
+
+- If you are entirely unsure about what kind of system resources your application needs, it may be a good starting point to monitor its usage on a local machine/workstation (if possible), for example using `top [-p PID]`.
+- Please consider padding your budget to add room for any extra time spent in development, experimentation, workflow setup, etc.
+
+---
+
+## Virtual Workstations and/or Traditional Workloads
 
 ---
 
 ## "Always-On" Infrastructure
 
-Because of its lack of restrictions on runtime for CPU resources and the ability to route external traffic to instances (for example with a public IP address), an extremely common use case for Jetstream2 is hosting persistent or "always-on" infrastructure for projects. This category of instances might encompass things like web servers, science gateways, data hosts, and JupyterHub/RStudio servers.
+Because of its lack of restrictions on runtime for CPU resources and the ability to route external traffic to instances (for example with a public IP address), an extremely common use case for Jetstream2 is hosting persistent or "always-on" infrastructure for projects.
 
-TODO: write about ease of estimation/budgeting and whatnot
+Given a selected [instance flavor (VM size)](../general/vmsizes.md){target=_blank}, these types of workloads are simple to budget for, given that they run constantly. For example, one could simply use the default 24 hours/day, 7 days/week, and 52 total weeks on the [Usage Estimation Calculator](../alloc/estimator.md){target=_blank} to find approximate usage for a year.
 
-### Web Servers
+### Static Web Servers
 
-TODO
+**Examples**:
 
-### Other Apps
+- A simple site showcasing information and images about a research group and their project
+- A gateway sharing research data, manuscripts, or media
+- An endpoint serving static files/data to another service or application
 
+These kinds of web servers are usually not too resource intensive, but the amount of compute required might depend on several factors, including:
 
+1. The type of static content being served (small web pages vs. bulky data files)
+2. The size/amount of content being served
+3. The density of expected traffic to the server (1 visitor/hr vs. 1000 visitors/hr)
 
----
+Servers for static pages, small amounts of data, and light traffic don't generally require more resources than those offered by an m3.small instance (or even m3.tiny on the lighter side). If you plan to serve large amounts of data or media, or you expect a high amount of traffic, you may see benefits by upsizing to an m3.quad or m3.medium flavor.
 
-## Virtual Workstations and/or Traditional Workloads
+### Dynamic Web Apps and Other
+
+**Examples**:
+
+- A website with a large amount of interactivity or dynamic elements
+- An RStudio Server or JupyterHub host
+- A REST API that performs significant server-side processing for requests
+- An endpoint that dynamically processes and streams large amounts of data to/from an application
+
+# TODO: What to write here? "IDK, it depends"?
