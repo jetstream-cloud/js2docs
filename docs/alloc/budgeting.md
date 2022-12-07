@@ -11,6 +11,7 @@ Because Jetstream2 is available solely through [SUs converted from ACCESS credit
 Although needs will vary largely depending on the type of project at hand, there are still some best practices and general considerations to keep in mind:
 
 - If you are entirely unsure about what kind of system resources your application needs, it may be a good starting point to monitor its usage on a local machine/workstation (if possible), for example using `top [-p PID]`.
+- Budget high, but start low. Users often overestimate how much compute power their application really needs, **especially when it comes to GPUs**. Since [resizing an instance](../../general/instancemgt/#resize){target=_blank} to a larger flavor is always easy, we recommend starting small then scaling vertically as necessary.
 - Please consider padding your budget to add room for any extra time spent in development, experimentation, workflow setup, etc.
 
 ---
@@ -19,10 +20,14 @@ Although needs will vary largely depending on the type of project at hand, there
 
 Because Jetstream2 instances give the user total control, including `sudo` access, a common use case is setting up an instance as a "virtual workstation" of sorts, allowing a researcher to offload computation from their local workstation or laptop, often to one that is also more powerful. 
 
-Although direct comparisons are fraught with peril due to differences in architectures, optimization technologies, cooling solutions, and more, the following can serve as a decent general frame of reference for different flavors' performance:
+Although direct comparisons are fraught with peril due to differences in architectures, optimization technologies, cooling solutions, and more, the following might serve as a decent frame of reference for different flavors' performance:
 
-- m3.quad: roughly a typical mid-range laptop equipped with 4-6 CPU cores and 8-16 GB of RAM.
-- m3.medium: a higher-end laptop or research workstation might have upwards of 8 CPU cores and 32 GB of RAM
+- **m3.quad:** roughly a typical mid-range laptop equipped with 4-6 CPU cores and 8-16 GB of RAM.
+- **m3.medium:** a higher-end laptop or research workstation might have upwards of 8 CPU cores and 32 GB of RAM
+
+Since they are not providing services or infrastructure that needs to be accessible 24/7, these kinds of instances can be [shelved](../../general/instancemgt/#shelve-and-unshelve){target=_blank} when you are not actively working on them to conserve SUs. This makes budgeting a bit trickier.
+
+For example, if you intend to work on your instance for a quarter of an 8-hour work day, but not on the weekends, then you might plug the following into the [Usage Estimation Calculator](../alloc/estimator.md){target=_blank} to budget for the year: 2 hours/day, 5 days/week, and 52 total weeks.
 
 ---
 
