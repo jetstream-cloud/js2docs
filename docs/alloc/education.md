@@ -13,24 +13,14 @@ Researchers have opportunities to request ACCESS allocations at four levels.
 | Accelerate ACCESS | 3,000,000  |
 | Maximize ACCESS | Not awarded in credits |
 
-We would suggest reviewing:
+If you know how many instances, what sizes/flavors, and how long you need, you can estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}.
 
+Otherwise, we would suggest reviewing:
+
+* [Budgeting for Common Usage Scenarios](budgeting.md)
 * [Jetstream2 VM Sizes](../general/vmsizes.md)
 * [ACCESS Credits and Jetstream2](../general/access.md)
 * [Allocations Overview](overview.md)
-
-You can estimate your need after reviewing the VM sizes using this example:
-
-- 16 week course
-- 20 students
-- m3.medium instance size (8 vCPU)
-- Planning for 24 hour/day usage
-
-```
-8 vCPU (SUs) x 24 hours/day x 7 days x 16 weeks = 21,504 SUs/student x 20 students = 430,080 SUs
-```
-
-It would be standard practice to round that to 450,000 SUs for development time for the instructors plus instructor VMs during the duration of the course.
 
 ---
 
