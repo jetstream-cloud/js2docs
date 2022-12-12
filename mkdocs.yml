@@ -98,6 +98,7 @@ nav:
     - Supplements (Storage/SUs): alloc/supplement.md
     - Extensions & Renewals: alloc/renew-extend.md
     - Frequently Asked Questions: alloc/faq.md
+    - Budgeting for Common Usage Scenarios: alloc/budgeting.md
     - Usage Estimation Calculator: alloc/estimator.md
   - User Interfaces:
     - Overview: ui/index.md

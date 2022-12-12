@@ -15,24 +15,14 @@ Researchers have opportunities to request ACCESS allocations at four levels.
 | Accelerate ACCESS | 3,000,000  |
 | Maximize ACCESS | Not awarded in credits |
 
-We would suggest reviewing:
+If you have a clear picture of what resources your project requires, you can estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
 
+Otherwise, we would suggest reviewing:
+
+* [Budgeting for Common Usage Scenarios](budgeting.md)
 * [Jetstream2 VM Sizes](../general/vmsizes.md)
 * [ACCESS Credits and Jetstream2](../general/access.md)
 * [Allocations Overview](overview.md)
-
-You can estimate your needs after reviewing the VM sizes using this example:
-
-- m3.medium instance size (8 vCPU) for task 1 (8 SUs/hr)
-- m3.large instance (16 vCPU) for task 2 (16 SUs/hr)
-- g3.large instance (16 vCPU + 4 GPU slices) for task 3 (64 SUs/hr)
-- Planning for 24 hour/day usage
-
-```
-(8 + 16 + 64) x 24 hours/day x 365 days = 770,880 SUs
-```
-
-It would be standard practice to round that to 800,000 SUs for development time and incidentals. This would qualify you for a Discover ACCESS	allocation (up to 1.5M SUs) so you could request more ACCESS credits if you so desired.
 
 ---
 
