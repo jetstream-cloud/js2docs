@@ -10,9 +10,12 @@ Because Jetstream2 is available solely through [SUs converted from ACCESS credit
 
 Although needs will vary largely depending on the type of project at hand, there are still some best practices and general considerations to keep in mind:
 
-- If you are entirely unsure about what kind of system resources your application needs, it may be a good starting point to monitor its usage on a local machine/workstation (if possible), for example using `top [-p PID]`.
-- Budget high, but start low. Users often overestimate how much compute power their application really needs, **especially when it comes to GPUs**. Since [resizing an instance](../../general/instancemgt/#resize){target=_blank} to a larger flavor is always easy, we recommend starting small then scaling vertically as necessary.
-- Please consider padding your budget to add room for any extra time spent in development, experimentation, workflow setup, etc.
+- If you are entirely unsure about what kind of system resources your application needs, it may be wise to start with an [Explore allocation](general-allocations.md){target=_blank} and run your own performance and scaling measurements to determine what sort of VM structure you'll need.
+- Try to budget high, but start low. Users often overestimate how much compute power their application really needs, **especially when it comes to GPUs**. Since [resizing an instance](../../general/instancemgt/#resize){target=_blank} to a larger flavor is always easy, we recommend starting small then scaling vertically as necessary.
+- Please consider padding your budget to add room for any extra time spent in development, experimentation, workflow setup, etc. We usually recommend budgeting at least 10% of your time to development.
+
+!!! note
+    The recommendations that follow are intended to give a best guess on how to forecast, but nothing is perfect. **Under-budgeting and running out of SUs is not the end of the world!** In most cases, it is relatively uncomplicated to obtain additional credits and/or move up to the next ACCESS tier (at least until you reach the [Maximize ACCESS](research.md){target=_blank} threshold). If you would like to consult about your specific use case and allocation types or budgeting, please reach out to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org).
 
 ---
 
@@ -62,4 +65,4 @@ Servers for static pages, small amounts of data, and light to moderate traffic d
 - A REST API that performs significant server-side processing for requests
 - An endpoint that dynamically processes and streams large amounts of data to/from an application
 
-# TODO: What to write here? "IDK, it depends"?
+This type of application is difficult to make uneducated recommendations for due to the widely variable nature of usage from person to person. Because of this, it is especially important for you to be familiar with the performance requirements of your application, or, as mentioned above, to be willing to explore a bit. 
