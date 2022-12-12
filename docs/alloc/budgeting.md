@@ -14,6 +14,12 @@ Although needs will vary largely depending on the type of project at hand, there
 - If you are entirely unsure about what kind of system resources your application needs, it may be wise to start with an [Explore allocation](general-allocations.md){target=_blank} and run your own performance and scaling measurements to determine what sort of VM structure you'll need.
 - Try to budget high, but start low. Users often overestimate how much compute power their application really needs, **especially when it comes to GPUs**. Since [resizing an instance](../../general/instancemgt/#resize){target=_blank} to a larger flavor is always easy, we recommend starting small then scaling vertically as necessary.
 
+### Storage
+
+As noted in the [Jetstream2 Resources article](../general/resources.md){target=_blank}, if you do not explicitly request storage, the default cap for allocations of 1 TB (1,000 GB) is included. If your project requires it, additional Jetstream2 storage is an ACCESS-marketplace-allocated resource and can be requested with an [exchange request](https://allocations.access-ci.org/use-credits-overview){target=_blank} at a rate of 1 ACCESS credit = 1 SU = 1 GB. Please note that all storage requests will require appropriate justification.
+
+---
+
 !!! note
     The recommendations that follow are intended to give a best guess on how to forecast, but nothing is perfect. **Under-budgeting and running out of SUs is not the end of the world!** In most cases, it is relatively uncomplicated to obtain additional credits and/or move up to the next ACCESS tier (at least until you reach the [Maximize ACCESS](research.md){target=_blank} threshold). If you would like to consult about your specific use case and allocation types or budgeting, please reach out to [help@jetstream-cloud.org](mailto:help@jetstream-cloud.org).
 
