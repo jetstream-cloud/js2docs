@@ -20,25 +20,14 @@ We highly encourage all potential applicants to view:
 
 ---
 
-We would also suggest reviewing:
+If you have a clear picture of what resources your project requires, you can estimate your SU needs using the usage estimation calculator here: [Usage Estimation Calculator](../alloc/estimator.md){target=_blank}
 
+Otherwise, we would suggest reviewing:
+
+* [Budgeting for Common Usage Scenarios](budgeting.md)
 * [Jetstream2 VM Sizes](../general/vmsizes.md)
 * [ACCESS Credits and Jetstream2](../general/access.md)
 * [Allocations Overview](overview.md)
-
-You can estimate your needs after reviewing the VM sizes using this example:
-
-- m3.medium instance size (8 vCPU) for task 1 (8 SUs/hr) x 2
-- m3.large instance (16 vCPU) for task 2 (16 SUs/hr) x 2
-- m3.xl instance (32 vCPU) for task 3 (32 SUs/hr) x 2
-- g3.xl instance (32 vCPU + 5 GPU slices) for task 4 (128 SUs/hr) x 2
-- Planning for 24 hour/day usage
-
-```
-(16 + 32 + 64 + 256) x 24 hours/day x 365 days = 3,223,680 SUs
-```
-
-It would be standard practice to round that to 3,300,000 SUs for development time and incidentals.
 
 ---
 
