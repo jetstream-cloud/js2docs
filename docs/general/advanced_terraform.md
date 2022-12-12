@@ -11,13 +11,13 @@ A brief overview of the code is below:
 
 # Nginx and Mariadb
 
-This creates an ubuntu 20 server with nginx and mariadb installed and running, with a simple "Hello World!" webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.
+This creates an ubuntu 22 server with nginx and mariadb installed and running, with a simple "Hello World!" webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.
 
 ## Requirements
 
-Set your key_pair in ubuntu20.tfvars
+Set your key_pair in ubuntu22.auto.tfvars
 
-If would like the change the flavor of the instance you boot, add the following to ubuntu20.tfvars
+If would like the change the flavor of the instance you boot, add the following to ubuntu22.auto.tfvars
 ```
 flavor_id = "ID of flavor here"
 ```
@@ -30,21 +30,19 @@ openstack flavor list
 
 # R + Shiny server (Nginx proxy)
 
-This creates an ubuntu 20 server with nginx, r and shiny server installed and configure the nginx server for SSL (using certbot) and reverse proxies back shiny to port 443 (https).
+This creates an ubuntu 22 server with nginx, r and shiny server installed and configure the nginx server for SSL (using certbot) and reverse proxies back shiny to port 443 (https).
 
 
-You can specify which version of shiny you want by editing shiny_version in ansible/main.yml
+You can specify which version of shiny you want by editing shiny_version in ansible/main.yml once you have checked out the code above.
 
 ## Requirements
 
-Set your key_pair in ubuntu20.tfvars
+Set your key_pair in ubuntu22.auto.tfvars
 
 Set your email address for certbot
 
-Specify your domain_name, more often then not your domain name will be
-```
-shiny.(Jetstream Allocation Name).projects.jetstream-cloud.org
-```
+Specify your domain_name if you would like. Otherwise a name will be generated for you.
+
 If you would like to change your flavor, see above.
 
 # Kubernetes Cluster

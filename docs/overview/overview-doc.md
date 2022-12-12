@@ -6,7 +6,7 @@
 
      While it shares many common features and abilities with other research computing resources, it is **not** a traditional High Performance Computing (HPC) or High Throughput Computing (HTC) environment.</br>
 
-It provides a library of **_virtual machines_** and shared software designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers will be able to create their own customized virtual machines (VM) or their own private computing system within Jetstream2.
+It provides a library of **_virtual machines_** and shared software designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers can create their own customized virtual machines (VM) or their own private computing system within Jetstream2.
 
 Jetstream features multiple user interfaces, including the following _**web-based user interfaces**_:
 

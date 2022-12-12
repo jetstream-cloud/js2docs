@@ -14,6 +14,11 @@ We will have to upgrade the compute nodes to resolve it. This is on the near-ter
 
 In the meantime, please only use stop or shelve with GPU instances.
 
+### CentOS 7 does not work with my GPU
+
+Due to issues with the NVIDIA GRID driver, we have discontinued support for GPUs using CentOS 7. We will be removing CentOS 7 from the featured images once we have a stable Rocky 9 build available.
+
+
 ### My GPU is not usable after a kernel update
 
 The NVIDIA drivers are built as kernel modules and ***should*** rebuild on a kernel update. If they do not, you can do this on Ubuntu 20.04 instances:
