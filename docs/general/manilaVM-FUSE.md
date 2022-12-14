@@ -33,7 +33,7 @@ Add the following:
 none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
 ```
 
-Replace `$accessTo` with the arbitrary name you chose in step 3 above and `$volumePath` with (    /volume/\_no-group/...) that is also in the share information that you created.
+Replace `$accessTo` with the arbitrary name you chose for the access rule in step 3 above and `$volumePath` with (    /volume/\_no-group/...) that is also in the share information that you created.
 
 It should look something like this:
 
@@ -43,14 +43,12 @@ none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,
 
 iii.  /etc/ceph/ceph.client.`$accessTo`.keyring
 
-Add the following:
+Add the following, substituting the name you chose for the access rule and using the access key from that rule:
 
 ```
 [client.$accessTo]
     key = $accessKey
 ```
-
-Replace `$accessTo` with the arbitrary name you chose in step 3 and `$accessKey` with the Acce    ss Key generated in step 4
 
 Your file should look something like this :
 

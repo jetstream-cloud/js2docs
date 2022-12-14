@@ -8,12 +8,16 @@ If you haven't installed the *python-manilaclient* you will need to do that. Ins
 
 Then you should be able to proceed with the rest of the steps.
 
+!!! info "Share names and Access Rule Names must be unique!"
+
+    While shares and access rules to shares belong to specific allocations, the namespace is for the entire cloud. You will have to have a unique share name and unique rule names. We suggest using a descriptive name and using a variation of the name for the access rule(s).
+
 ### 1. Create a share
 
-`openstack share create --name $manila-share-name cephfs $vol-size --os-share-api-version 2.63`
+`openstack share create --name $manila-share-name cephfs $vol-size`
 
 Example:
-`openstack share create --name manila-share-cli cephfs 10 --os-share-api-version 2.63`
+`openstack share create --name collected-data-smith-lab cephfs 10`
 
 Metadata for the share created above:
 
@@ -30,7 +34,7 @@ Metadata for the share created above:
     | is_public                             | False                                |
     | metadata                              | {}                                   |
     | mount_snapshot_support                | False                                |
-    | name                                  | manila-share-cli                     |
+    | name                                  | collected-data-smith-lab             |
     | progress                              | None                                 |
     | project_id                            | 55d7efb46dd945a2b86f7ce8aa657e1a     |
     | replication_type                      | None                                 |
@@ -49,15 +53,22 @@ Metadata for the share created above:
     | user_id                               | a9e55b395bcb494aaf5938f5f8382e71     |
     | volume_type                           | cephfsnativetype                     |
     +---------------------------------------+--------------------------------------+
+
 `id` is the share_id. You can use this to look up information about your share. See step 4.
 
 
 ### 2. Create an access rule
 
-`openstack share access create $manila-share-name cephx $anyName --os-share-api-version 2.63`
+Now you can create an access rule to govern whether it's read-only or read-write access to your share. The default is read-write. If you want it to be read-only, you have to specify that explicitly.
+
+Read-write:
+`openstack share access create $manila-share-name cephx $DescriptiveRuleName`
+
+Read-only:
+`openstack share access create --access-level ro $manila-share-name cephx $DescriptiveRuleName`
 
 Example:
-`openstack share access create manila-share-cli cephx manilaAccess --os-share-api-version 2.63`
+`openstack share access create collected-data-smith-lab cephx smithlabRWaccess`
 
 Metadata for the access rule:
 
@@ -67,7 +78,7 @@ Metadata for the access rule:
     | id           | 95067b4f-f77c-4b76-be12-ac5c3a8e8897 |
     | share_id     | 23c511b2-66e7-4986-b6a6-231b490210d4 |
     | access_level | rw                                   |
-    | access_to    | manilaAccess                         |
+    | access_to    | smithlabRWacces                      |
     | access_type  | cephx                                |
     | state        | queued_to_apply                      |
     | access_key   | None                                 |
@@ -76,15 +87,15 @@ Metadata for the access rule:
     | properties   |                                      |
     +--------------+--------------------------------------+
 
-Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key`.
+Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key` that you'll need for the keyring file in when you [configure your VM for Manila share access](../../general/manilaVM/).
 
 ### 3. Get access key
 
-`openstack share access show $access-rule-id --os-share-api-version 2.63`
+`openstack share access show $access-rule-id`
 
 Example:
 
-`openstack share access show 95067b4f-f77c-4b76-be12-ac5c3a8e8897 --os-share-api-version 2.63`
+`openstack share access show 95067b4f-f77c-4b76-be12-ac5c3a8e8897`
 
 Metadata for the access rule:
 
@@ -94,7 +105,7 @@ Metadata for the access rule:
     | id           | 95067b4f-f77c-4b76-be12-ac5c3a8e8897     |
     | share_id     | 23c511b2-66e7-4986-b6a6-231b490210d4     |
     | access_level | rw                                       |
-    | access_to    | manilaAccess                             |
+    | access_to    | smithlabRWaccess                         |
     | access_type  | cephx                                    |
     | state        | active                                   |
     | access_key   | AQB2Ih5iyQKpChAAIKunDZ6Ztr1VfNn+AFxlGA== |
@@ -110,10 +121,10 @@ The access rule is active and you can use the `access_key` generated above.
 ### 4. View share information
 
 
-`openstack share show $share_id --os-share-api-version 2.63`
+`openstack share show $share_id`
 Example:
 
-`openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4 --os-share-api-version 2.63`
+`openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4`
 
 Metadata for your share will now look a little different:
 
@@ -134,7 +145,7 @@ Metadata for your share will now look a little different:
     | id                                    | 23c511b2-66e7-4986-b6a6-231b490210d4                                                                                                   |
     | is_public                             | False                                                                                                                                  |
     | mount_snapshot_support                | False                                                                                                                                  |
-    | name                                  | manila-share-cli                                                                                                                       |
+    | name                                  | collected-data-smith-lab                                                                                                                       |
     | progress                              | 100%                                                                                                                                   |
     | project_id                            | 55d7efb46dd945a2b86f7ce8aa657e1a                                                                                                       |
     | properties                            |                                                                                                                                        |

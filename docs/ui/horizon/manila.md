@@ -1,5 +1,9 @@
 # To use Manila via Horizon
 
+!!! info "Share names and Access Rule Names must be unique!"
+
+    While shares and access rules to shares belong to specific allocations, the namespace is for the entire cloud. You will have to have a unique share name and unique rule names. We suggest using a descriptive name and using a variation of the name for the access rule(s).
+
 ### 1. Create the share on Horizon
 
 ---
@@ -16,9 +20,9 @@ i. Click on:  `Project`  → `Share` → `Shares` → `+Create Share`
 
 ii. `Create share` with the following settings:
 
-- **share name**: a name of your choosing
+- **share name**: a descriptive and unique name of your choosing
 - **share protocol**: CephFS
-- **size**: the size of your manila share
+- **size**: the size of your manila share in gigabytes
 - **share type**: cephnfsnativetype
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
@@ -33,7 +37,7 @@ i. Once your share is available you can select `Edit Share` and `Manage Rules` a
 
 - **access type**: cephx
 - **access level**: read-write
-- **access to**: an arbitrary unique name
+- **access to**: an descriptive and unique rule name
 
 ![](/images/JS2-manila4.png){ align=right ; width=50% }
 
