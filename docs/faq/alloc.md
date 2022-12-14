@@ -45,6 +45,9 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 >  * [User Management](https://allocations.access-ci.org/user_management){target=_blank}
 
 !!! Note
+
+    ***Please do note that only the PI is automatically added to resources like Jetstream2 resources. This is a function of ACCESS' allocations system and is outside of our control. The PI, co-PI, or resource managers will explicitly need to add users to resources via the User Management link above***
+
     **It can take up to four hours for users added to an allocation to become active.**
 
 ---
