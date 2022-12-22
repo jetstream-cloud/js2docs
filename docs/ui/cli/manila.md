@@ -6,6 +6,16 @@ If you haven't installed the *python-manilaclient* you will need to do that. Ins
 
     pip3 install python-manilaclient
 
+Depending on the version of the python-openstack and python-manilaclient you have installed, you may get an error that says something like
+
+    Version %(req_ver)s is not supported by the API. Minimum is %(min_ver)s and maximum is %(max_ver)s. (HTTP 406) (Request-ID: xxxxxx)
+
+you may need to add
+
+    --os-share-api-version 2.63
+
+(where 2.63 may need to be changed to a different version depending on the error) to your commands below.
+
 Then you should be able to proceed with the rest of the steps.
 
 !!! info "Share names and Access Rule Names must be unique!"
