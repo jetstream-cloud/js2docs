@@ -23,11 +23,11 @@ mkdir /smith-lab-data
 
 Using the name and key of the access rule you created, complete these steps:
 
-i. Create the file `/etc/ceph.client.${accessTo}.keyring` and add the `accessKey`
+i. Create the file `/etc/ceph/ceph.client.${accessTo}.keyring` and add the `accessKey`
 
 Example:
 
-    sudo vi /etc/ceph.client.smithlabRWaccess.keyring
+    sudo vi /etc/ceph/ceph.client.smithlabRWaccess.keyring
 
 and add
 
@@ -38,7 +38,7 @@ and add
 
 Also, make sure the permissions on the file are rw to the owner only. You can do that with
 
-    sudo chmod 600 /etc/ceph.client.smithlabRWaccess.keyring
+    sudo chmod 600 /etc/ceph/ceph.client.smithlabRWaccess.keyring
 
 ii. Edit `/etc/fstab` to include the following line:
 
