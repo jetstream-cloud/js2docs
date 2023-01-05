@@ -31,7 +31,7 @@ ii. `Create share` with the following settings:
 
 ### 2. Edit the share rule
 
-i. Once your share is available you can select `Edit Share` and `Manage Rules` and `Add Rule` :
+i. Once your share is available you can select `Manage Rules` and `Add Rule` :
 
 ![](/images/JS2-manila3.png){ align=right ; width=50% }
 
