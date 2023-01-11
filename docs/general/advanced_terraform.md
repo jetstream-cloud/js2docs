@@ -49,7 +49,7 @@ If you would like to change your flavor, see above.
 
 This repo located below will setup a Kubernetes cluster with the amount of followers you specific.
 
-Currently this is running on Ubuntu 20 and installs the latest version of kubernetes.
+Currently this is running on Ubuntu 20 and installs the latest version of Kubernetes.
 
 ```
 https://github.com/wellsaar/terraform-js2-k8cluster
