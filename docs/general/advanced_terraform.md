@@ -9,15 +9,15 @@ The following link is to a repo with some more examples of what terraform can do
 
 A brief overview of the code is below:
 
-# Nginx and Mariadb
+# NGINX and MariaDB
 
-This creates an ubuntu 22 server with nginx and mariadb installed and running, with a simple "Hello World!" webpage served as the index. This is an easy way to setup and have a baseline configuration for a web server.
+This creates an ubuntu 22 server with NGINX and MariaDB installed and running, with a simple "Hello World!" webpage served as the index. This is an easy way to setup and have a baseline configuration for a web server.
 
 ## Requirements
 
-Set your key_pair in ubuntu22.auto.tfvars
+Set your key_pair in ubuntu22.auto.tfvars. This is the ssh public key that you have uploaded to Horizon. [Add SSH Keys in Horizon](../ui/horizon/ssh_keys.md)
 
-If would like the change the flavor of the instance you boot, add the following to ubuntu22.auto.tfvars
+If would like the change the flavor of the instance you boot, add the following to ubuntu22.auto.tfvars.
 ```
 flavor_id = "ID of flavor here"
 ```
@@ -28,18 +28,18 @@ openstack flavor list
 ```
 
 
-# R + Shiny server (Nginx proxy)
+# R + Shiny server (NGINX proxy)
 
-This creates an ubuntu 22 server with nginx, r and shiny server installed and configure the nginx server for SSL (using certbot) and reverse proxies back shiny to port 443 (https).
+This creates an ubuntu 22 server with NGINX, R and Shiny server installed and configure the NGINX server for SSL (using certbot) and reverse proxies back Shiny to port 443 (https).
 
 
-You can specify which version of shiny you want by editing shiny_version in ansible/main.yml once you have checked out the code above.
+You can specify which version of Shiny you want by editing shiny_version in ansible/main.yml once you have checked out the code above.
 
 ## Requirements
 
-Set your key_pair in ubuntu22.auto.tfvars
+Set your key_pair in ubuntu22.auto.tfvars. This is the ssh public key that you have uploaded to Horizon. [Add SSH Keys in Horizon](../ui/horizon/ssh_keys.md).
 
-Set your email address for certbot
+Set your email address for certbot.
 
 Specify your domain_name if you would like. Otherwise a name will be generated for you.
 
@@ -57,5 +57,6 @@ https://github.com/wellsaar/terraform-js2-k8cluster
 
 ## Requirements
 
-Editing k8.tfvars with your public key as well.
+Editing k8.tfvars with your public key as well. [Add SSH Keys in Horizon](../ui/horizon/ssh_keys.md).
+
 If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.
