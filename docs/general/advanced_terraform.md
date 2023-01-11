@@ -11,7 +11,7 @@ A brief overview of the code is below:
 
 # Nginx and Mariadb
 
-This creates an ubuntu 22 server with nginx and mariadb installed and running, with a simple "Hello World!" webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.
+This creates an ubuntu 22 server with nginx and mariadb installed and running, with a simple "Hello World!" webpage served as the index. This is an easy way to setup and have a baseline configuration for a web server.
 
 ## Requirements
 
