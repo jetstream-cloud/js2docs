@@ -13,6 +13,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 - [Share data using Manila](./k8smanila.md)
 - [Minikube](./minikube.md)
 - [Deploy BinderHub on Kubernetes](./k8sbinderhub.md)
+- [Deploy Kubernetes and JupyterHub with GPU support](./k8sgpu.md)
 
 ### Third Party Kubernetes topics
 
