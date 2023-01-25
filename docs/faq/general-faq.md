@@ -130,6 +130,9 @@ The DNS hostname points to your instance's public (a.k.a. floating) IP address, 
 
 If you want DNS hostnames configured for your allocation, please create a support ticket and ask for it.
 
+!!! Note
+    For information about hostnames outside the `projects.jetstream-cloud.org` space, see ["How do I set up a custom domain name for my gateway, site, or web service?"](../gateways/#how-do-i-set-up-a-custom-domain-name-for-my-gateway-site-or-web-service)
+
 ---
 
 ### Are there backups of Jetstream2 storage resources ?
