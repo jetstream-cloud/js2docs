@@ -61,4 +61,10 @@ For other GPU software, where possible, we highly recommend using containers fro
 
 ### What CUDA version do I need for Jetstream2 GPUs ?
 
-While NVIDIA says CUDA versions are backward compatible, we recommend using at least the same major revision
+We recommend using the same major revision as reported by `nvidia-smi`; however, NVIDIA maintains that CUDA versions are backward compatible, up to one major revision ago. For example, if `nvidia-smi` reports:
+```
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.60.13    Driver Version: 525.60.13    CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+```
+then it is "safe" to use CUDA 11.x, though CUDA 12.0 is recommended. In this example, CUDA 10.x and older will not work.
