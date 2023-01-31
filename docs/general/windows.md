@@ -63,6 +63,9 @@ Under normal circumstances, RDP listens for connections on TCP port 3389 and may
 
 You can add this rule to an existing [security group](../../ui/horizon/security_group) or create a new one, then apply the security group to your instance by navigating to "Edit Security Groups" in the [management actions dropdown](../../ui/horizon/manage/#instance-management-actions).
 
+!!! warning "Minimize security risks."
+    We **strongly** advise limiting remote access to RDP port(s) to the smallest possible CIDR or, even better, single IP(s), rather than the default `0.0.0.0/0` (which allows access from any public IP); an improperly configured RDP service could allow remote access to a host in an unintended manner in addition to exposing SSL/TLS certificate information. 
+
 <img alt="A screenshot of the RDP security rule in a dropdown menu" src="/images/horizon-rdp-group.png" width="65%"/>
 
 ### Enabling Remote Desktop
