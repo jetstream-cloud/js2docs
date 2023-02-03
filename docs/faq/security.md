@@ -36,7 +36,7 @@ Firewalls are **not enabled by default** on Jetstream2 instances. Depending on t
 
 We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you're comfortable administering it.
 
-Please refer to [Jetstream2 Virtual Machine Firewalls](/general/firewalls.md) for more information.
+Please refer to [Jetstream2 Virtual Machine Firewalls](/general/firewalls) for more information.
 
 ---
 
@@ -44,7 +44,7 @@ Please refer to [Jetstream2 Virtual Machine Firewalls](/general/firewalls.md) fo
 
 That depends on the interface.
 
-The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](/ui/cli/security_group.md) or [Horizon](/ui/horizon/security_group.md) for more information on managing security groups in those interfaces.
+The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](/ui/cli/security_group) or [Horizon](/ui/horizon/security_group) for more information on managing security groups in those interfaces.
 
 For Exosphere, the default security group allows all egress and inbound access.
 
