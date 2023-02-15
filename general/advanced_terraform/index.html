@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -357,34 +367,32 @@ The following examples assume that you have created an app credential and have <
 <p>The following link is to a repo with some more examples of what terraform can do:</p>
 <p><a href="https://github.com/wellsaar/terraform-js2" target="_blank">https://github.com/wellsaar/terraform-js2</a></p>
 <p>A brief overview of the code is below:</p>
-<h1 id="nginx-and-mariadb">Nginx and Mariadb<a class="headerlink" href="#nginx-and-mariadb" title="Permanent link">&para;</a></h1>
-<p>This creates an ubuntu 20 server with nginx and mariadb installed and running, with a simple &ldquo;Hello World!&rdquo; webpage served as the index. This is a easy way to setup and have a baseline configuration for a web server.</p>
+<h1 id="nginx-and-mariadb">NGINX and MariaDB<a class="headerlink" href="#nginx-and-mariadb" title="Permanent link">&para;</a></h1>
+<p>This creates an ubuntu 22 server with NGINX and MariaDB installed and running, with a simple &ldquo;Hello World!&rdquo; webpage served as the index. This is an easy way to setup and have a baseline configuration for a web server.</p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<p>Set your key_pair in ubuntu20.tfvars</p>
-<p>If would like the change the flavor of the instance you boot, add the following to ubuntu20.tfvars</p>
+<p>Set your key_pair in ubuntu22.auto.tfvars. This is the ssh public key that you have uploaded to Horizon. <a href="../../ui/horizon/ssh_keys/">Add SSH Keys in Horizon</a></p>
+<p>If would like the change the flavor of the instance you boot, add the following to ubuntu22.auto.tfvars.</p>
 <pre><code>flavor_id = &quot;ID of flavor here&quot;
 </code></pre>
 <p>You can see the list of flavor with the following command.</p>
 <pre><code>openstack flavor list
 </code></pre>
-<h1 id="r-shiny-server-nginx-proxy">R + Shiny server (Nginx proxy)<a class="headerlink" href="#r-shiny-server-nginx-proxy" title="Permanent link">&para;</a></h1>
-<p>This creates an ubuntu 20 server with nginx, r and shiny server installed and configure the nginx server for SSL (using certbot) and reverse proxies back shiny to port 443 (https).</p>
-<p>You can specify which version of shiny you want by editing shiny_version in ansible/main.yml</p>
+<h1 id="r-shiny-server-nginx-proxy">R + Shiny server (NGINX proxy)<a class="headerlink" href="#r-shiny-server-nginx-proxy" title="Permanent link">&para;</a></h1>
+<p>This creates an ubuntu 22 server with NGINX, R and Shiny server installed and configure the NGINX server for SSL (using certbot) and reverse proxies back Shiny to port 443 (https).</p>
+<p>You can specify which version of Shiny you want by editing shiny_version in ansible/main.yml once you have checked out the code above.</p>
 <h2 id="requirements_1">Requirements<a class="headerlink" href="#requirements_1" title="Permanent link">&para;</a></h2>
-<p>Set your key_pair in ubuntu20.tfvars</p>
-<p>Set your email address for certbot</p>
-<p>Specify your domain_name, more often then not your domain name will be</p>
-<pre><code>shiny.(Jetstream Allocation Name).projects.jetstream-cloud.org
-</code></pre>
+<p>Set your key_pair in ubuntu22.auto.tfvars. This is the ssh public key that you have uploaded to Horizon. <a href="../../ui/horizon/ssh_keys/">Add SSH Keys in Horizon</a>.</p>
+<p>Set your email address for certbot.</p>
+<p>Specify your domain_name if you would like. Otherwise a name will be generated for you.</p>
 <p>If you would like to change your flavor, see above.</p>
 <h1 id="kubernetes-cluster">Kubernetes Cluster<a class="headerlink" href="#kubernetes-cluster" title="Permanent link">&para;</a></h1>
 <p>This repo located below will setup a Kubernetes cluster with the amount of followers you specific.</p>
-<p>Currently this is running on Ubuntu 20 and installs the latest version of kubernetes.</p>
+<p>Currently this is running on Ubuntu 20 and installs the latest version of Kubernetes.</p>
 <pre><code>https://github.com/wellsaar/terraform-js2-k8cluster
 </code></pre>
 <h2 id="requirements_2">Requirements<a class="headerlink" href="#requirements_2" title="Permanent link">&para;</a></h2>
-<p>Editing k8.tfvars with your public key as well.
-If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.</p>
+<p>Editing k8.tfvars with your public key as well. <a href="../../ui/horizon/ssh_keys/">Add SSH Keys in Horizon</a>.</p>
+<p>If you would like to change the flavor or amount of followers in your cluster you can do so in k8.tfvars.</p>
               
             </div>
           </div><footer>
@@ -429,6 +437,7 @@ If you would like to change the flavor or amount of followers in your cluster yo
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -369,20 +379,20 @@
 <h4 id="jetstream2-storage">Jetstream2 Storage<a class="headerlink" href="#jetstream2-storage" title="Permanent link">&para;</a></h4>
 <p>Jetstream2 storage is an allocated resource. All allocations will be given a default storage amount (as noted on the <a href="./">Jetstream2 Resources</a> page).</p>
 <p>This storage is usable by all users on that allocation so the PI may want to institute per user quotas or discuss proper usage etiquette with the members of their allocation. Jetstream2 staff will not institute per user storage quotas, with the exception of the Jetstream2 Trial Allocation.</p>
-<p><strong>Limits on Jetstream2 Storage</strong></p>
+<h4 id="limits-on-jetstream2-storage">Limits on Jetstream2 Storage**<a class="headerlink" href="#limits-on-jetstream2-storage" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Explore allocations are generally limited to 5TB max</li>
 <li>Discover allocations are generally limited to 5-10TB max</li>
-<li>Accelerate allocations are genereally limited to 20TB max</li>
-<li>Maximize allocations are genereally limited to 40TB max</li>
+<li>Accelerate allocations are generally limited to 20TB max</li>
+<li>Maximize allocations are generally limited to 40TB max</li>
 </ul>
 <p>All are subject to proper justification in the <a href="../../alloc/overview/">allocations</a> process. Maxmimum values may be adjusted with proper justification and if there are adequate resources available. This is entirely at the discretion of the Jetstream2 team.</p>
 <p>Please refer to the following pages for more information on using Jetstream2 storage under the various interfaces:</p>
 <ul>
-<li><a href="../../ui/cacao/storage/">Using Jetstream2 Storage Under Cacao</a></li>
 <li><a href="../../ui/exo/storage/">Using Jetstream2 Storage Under Exosphere</a></li>
 <li><a href="../../ui/horizon/storage/">Using Jetstream2 Storage Under Horizon</a></li>
 <li><a href="../../ui/cli/storage/">Using Jetstream2 Storage Under the CLI</a></li>
+<li><a href="../../ui/cacao/storage/">Using Jetstream2 Storage Under Cacao</a></li>
 <li><a href="../manila/">Using Jetstream2 Storage with Manila</a></li>
 <li><a href="../object/">Using Jetstream2 Storage with Object Store</a></li>
 </ul>
@@ -430,6 +440,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

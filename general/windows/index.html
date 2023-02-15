@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -351,9 +361,74 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="microsoft-windows-on-jetstream2">Microsoft Windows on Jetstream2<a class="headerlink" href="#microsoft-windows-on-jetstream2" title="Permanent link">&para;</a></h1>
-<p>Microsoft Windows is not officially supported on Jetstream2. We will be making a limited number of images available for experimental use.</p>
+<div class="admonition warning">
+<p class="admonition-title">Microsoft Windows is not officially supported on Jetstream2.</p>
+<p>We will be making a limited number of images available for experimental use.</p>
 <p>While these images will be created by one of the Jetstream2 parters in conjunction with Jetstream2 staff, it is NOT supported nor guaranteed to work. It is unlikely that the Jetstream2 staff will be able to do more than general VM troubleshooting as we do not have Windows expertise on staff. No license will be installed so you will need to bring your own license.</p>
 <p>It is not known at this time whether GPUs will work on Microsoft-based instances. We will test this as time permits.</p>
+</div>
+<h2 id="creating-an-instance">Creating an Instance<a class="headerlink" href="#creating-an-instance" title="Permanent link">&para;</a></h2>
+<p>As noted above, Jetstream2 staff makes a limited number of Microsoft Windows images publically available. Instances can be spawned from these images with some considerations:</p>
+<ul>
+<li>
+<p>In order to be able to access your instance later, you will need to provide a <strong>brand-new</strong> SSH keypair in PEM format. One can be generated with <code>ssh-keygen -m pem</code> in an OpenSSH-enabled terminal. Be sure to set a strong passphrase for now.</p>
+</li>
+<li>
+<p>Be sure that your root disk is large enough to deploy the image; Windows tends to be larger than most Unix/Linux images. The default 20 GB size of some flavors is too small. To get around this, either select a different flavor or use a <a href="../../faq/general-faq/#i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me">volume-backed instance</a>.</p>
+</li>
+<li>Creating a Windows instance through Exosphere will cause the resulting instance to appear to be stuck in the &ldquo;Building&rdquo; status indefinitely, and many of the platform&rsquo;s creature comforts like <a href="../../ui/exo/access-instance/#the-exouser-profile-passphrase">exouser</a> and resource monitoring will not function properly, if at all.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Image information</p>
+<p>Presently the image supplied by Jetstream2 is<br> <strong><em>Windows-Server-2022-JS2-Beta | bbad1676-40f1-485d-8575-ca9eac7e211e</em></strong></p>
+</div>
+<h2 id="retrieving-the-admin-password">Retrieving the Admin Password<a class="headerlink" href="#retrieving-the-admin-password" title="Permanent link">&para;</a></h2>
+<p class="note">In order to retrieve the password for a Windows Server instance, an SSH keypair is <strong>required</strong> at setup. If you did not provide your instance with a keypair, you will be locked out, since recovering the Windows password without one is impossible.</p>
+<p>You can find the password for your Windows instance via Horizon. Navigate to your <a href="../../ui/horizon/manage/#instance-management-actions">instance&rsquo;s management actions dropdown</a> and select &ldquo;Retrieve Password.&rdquo; To decrypt the password, you will need to provide your SSH keypair&rsquo;s private key file or contents. In order for Horizon to recognize the private key, it must have no passphrase and be in PEM format (it should start with <code>-----BEGIN RSA PRIVATE KEY-----</code>). It is, however, bad practice to leave your SSH keys unprotected, so we recommend <strong><em>temporarily</em></strong> removing the passphrase, retrieving your instance&rsquo;s password, then re-setting a passphrase on the key:</p>
+<div class="admonition warning">
+<p class="admonition-title">SSH Private Keys are Secret.</p>
+<p>Horizon processes your private key locally only, and does not transmit it across the internet. Just like a password or passphrase, your private key should <strong>never</strong> be shared, even with good intentions. Jetstream2 support personnel will <strong>never</strong> ask you for your private key.</p>
+</div>
+<ol>
+<li>
+<p>Remove the passphrase on your key and ensure it is in PEM format (when prompted for a passphrase, simply hit <code>enter</code>/<code>return</code>):</p>
+<p><code>ssh-keygen -p -f &lt;PATH_TO_PRIVATE_KEY&gt; -m pem</code></p>
+</li>
+<li>
+<p>Select your key file in Horizon or paste its contents directly into the text box, then click &ldquo;Decrypt Password.&rdquo;</p>
+</li>
+<li>Take note of the resulting password.</li>
+<li>
+<p>Reset the passphrase on your private key to something strong:</p>
+<p><code>ssh-keygen -p -f &lt;PATH_TO_PRIVATE_KEY&gt;</code></p>
+</li>
+</ol>
+<h2 id="accessing-a-windows-instance-from-horizon">Accessing a Windows Instance from Horizon<a class="headerlink" href="#accessing-a-windows-instance-from-horizon" title="Permanent link">&para;</a></h2>
+<p>On the left side bar, navigate to <code>Project</code>→<code>Compute</code>→<code>Instances</code>, then click on your instance&rsquo;s name. Navigate to the <code>Console</code> tab near the top.</p>
+<p><img alt="A screenshot of the Horizon console, pointing out the &quot;Console&quot; tab" src="/images/horizon-console.png" /></p>
+<h2 id="accessing-a-windows-instance-with-remote-desktop-rdp">Accessing a Windows Instance with Remote Desktop (RDP)<a class="headerlink" href="#accessing-a-windows-instance-with-remote-desktop-rdp" title="Permanent link">&para;</a></h2>
+<p class="note"><em>Note</em>: like SSH, RDP requires your instance to have a public (Floating) IP associated with it in order to access from outside the Jetstream2 network.</p>
+<p>Windows Remote Desktop Protocol (RDP) will most likely provide a better, more feature-rich experience than the Horizon (SPICE) console.</p>
+<h3 id="adding-a-security-group-for-rdp">Adding a security group for RDP<a class="headerlink" href="#adding-a-security-group-for-rdp" title="Permanent link">&para;</a></h3>
+<p>Under normal circumstances, RDP listens for connections on TCP port 3389 and may be accelerated by exposing UDP port 3389. If TCP port 3389 is not exposed on your instance, you will be unable to connect with RDP. Luckily, Horizon provides a prefabbed security rule for RDP access.</p>
+<p>You can add this rule to an existing <a href="../../ui/horizon/security_group">security group</a> or create a new one, then apply the security group to your instance by navigating to &ldquo;Edit Security Groups&rdquo; in the <a href="../../ui/horizon/manage/#instance-management-actions">management actions dropdown</a>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Minimize security risks.</p>
+<p>We <strong>strongly</strong> advise limiting remote access to RDP port(s) to the smallest possible CIDR or, even better, single IP(s), rather than the default <code>0.0.0.0/0</code> (which allows access from any public IP); an improperly configured RDP service could allow remote access to a host in an unintended manner in addition to exposing SSL/TLS certificate information. </p>
+</div>
+<p><img alt="A screenshot of the RDP security rule in a dropdown menu" src="/images/horizon-rdp-group.png" width="65%"/></p>
+<h3 id="enabling-remote-desktop">Enabling Remote Desktop<a class="headerlink" href="#enabling-remote-desktop" title="Permanent link">&para;</a></h3>
+<p>Remote Desktop may need to be enabled on your instance before attempting to connect. First, access your instance through Horizon, as <a href="#accessing-a-windows-instance-from-horizon">described above</a>. Open the machine&rsquo;s Settings app, then navigate to the &ldquo;Remote Desktop&rdquo; section on the left. Ensure that &ldquo;Enable Remote Desktop&rdquo; is set to &ldquo;On.&rdquo;</p>
+<p><img alt="A screenshot showing the location of the 'Enable Remote Desktop' toggle" src="/images/windows-rdp-enable.png" width="75%"/></p>
+<h3 id="connecting">Connecting<a class="headerlink" href="#connecting" title="Permanent link">&para;</a></h3>
+<p>If you are on a Windows computer, you can follow these steps to connect via RDP:</p>
+<ol>
+<li>Search for &ldquo;Remote Desktop Connection&rdquo;</li>
+<li>In the <code>Computer</code> field, enter your instance&rsquo;s public IP address. <br /> <img alt="A screenshot of the Remote Desktop Connection prompt" src="/images/windows-remote-desktop-server.png" /></li>
+<li>You will be prompted for credentials. Depending on the version of Windows Server installed, the <code>User name</code> will be either &ldquo;Administrator&rdquo; or &ldquo;Admin&rdquo;. Your password can be <a href="#retrieving-the-admin-password">found in Horizon</a>. Click &ldquo;OK&rdquo;. <br /> <img alt="A screenshot of the RDP credentials prompt" src="/images/windows-remote-desktop-creds.png" /></li>
+<li>You will likely be prompted with a security certificate. View the certificate, determine if it is safe to continue, then (if so), click &ldquo;Yes&rdquo;. <br /> <img alt="A screenshot of the certificate popup message" src="/images/windows-remote-desktop-cert.png" /></li>
+<li>You should now be connected to the remote machine.</li>
+</ol>
               
             </div>
           </div><footer>
@@ -398,6 +473,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

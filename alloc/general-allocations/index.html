@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -381,22 +391,14 @@
 </tr>
 </tbody>
 </table>
-<p>We would suggest reviewing:</p>
+<p>If you have a clear picture of what resources your project requires, you can estimate your SU needs using the usage estimation calculator here: <a href="../estimator/" target="_blank">Usage Estimation Calculator</a></p>
+<p>Otherwise, we would suggest reviewing:</p>
 <ul>
+<li><a href="../budgeting/">Budgeting for Common Usage Scenarios</a></li>
 <li><a href="../../general/vmsizes/">Jetstream2 VM Sizes</a></li>
 <li><a href="../../general/access/">ACCESS Credits and Jetstream2</a></li>
 <li><a href="../overview/">Allocations Overview</a></li>
 </ul>
-<p>You can estimate your needs after reviewing the VM sizes using this example:</p>
-<ul>
-<li>m3.medium instance size (8 vCPU) for task 1 (8 SUs/hr)</li>
-<li>m3.large instance (16 vCPU) for task 2 (16 SUs/hr)</li>
-<li>g3.large instance (16 vCPU + 4 GPU slices) for task 3 (64 SUs/hr)</li>
-<li>Planning for 24 hour/day usage</li>
-</ul>
-<pre><code>(8 + 16 + 64) x 24 hours/day x 365 days = 770,880 SUs
-</code></pre>
-<p>It would be standard practice to round that to 800,000 SUs for development time and incidentals. This would qualify you for a Discover ACCESS   allocation (up to 1.5M SUs) so you could request more ACCESS credits if you so desired.</p>
 <hr />
 <p>The process is that you as the PI will:</p>
 <blockquote>
@@ -470,6 +472,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

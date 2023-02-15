@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -356,7 +366,7 @@
 <p class="admonition-title">Jetstream is a cloud!</p>
 <p>While it shares many common features and abilities with other research computing resources, it is <strong>not</strong> a traditional High Performance Computing (HPC) or High Throughput Computing (HTC) environment.</br></p>
 </div>
-<p>It provides a library of <strong><em>virtual machines</em></strong> and shared software designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers will be able to create their own customized virtual machines (VM) or their own private computing system within Jetstream2.</p>
+<p>It provides a library of <strong><em>virtual machines</em></strong> and shared software designed to create research infrastructure or to perform discipline-specific scientific analysis. Software creators and researchers can create their own customized virtual machines (VM) or their own private computing system within Jetstream2.</p>
 <p>Jetstream features multiple user interfaces, including the following <em><strong>web-based user interfaces</strong></em>:</p>
 <ul>
 <li><a href="../../ui/exo/exo/">Exosphere</a></li>
@@ -424,6 +434,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

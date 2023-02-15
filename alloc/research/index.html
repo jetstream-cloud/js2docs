@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -364,23 +374,14 @@
 <p><a href="https://allocations.access-ci.org/preparing-your-maximize-access-request#guidance-for-gateway-requests" target="_blank">Science Gateway research requests</a> may have some different criteria. We recommend reviewing this section of the document if you will be submitting a science gateway oriented research request.</p>
 <p class="note"><em>Please do not forget to review the <a href="https://allocations.access-ci.org/preparing-your-maximize-access-request#appendix-formatting-guidelines" target="_blank">formatting guidelines</a> - failure to adhere to the guidelines may also result in a submission being rejected without review</em></p>
 <hr />
-<p>We would also suggest reviewing:</p>
+<p>If you have a clear picture of what resources your project requires, you can estimate your SU needs using the usage estimation calculator here: <a href="../estimator/" target="_blank">Usage Estimation Calculator</a></p>
+<p>Otherwise, we would suggest reviewing:</p>
 <ul>
+<li><a href="../budgeting/">Budgeting for Common Usage Scenarios</a></li>
 <li><a href="../../general/vmsizes/">Jetstream2 VM Sizes</a></li>
 <li><a href="../../general/access/">ACCESS Credits and Jetstream2</a></li>
 <li><a href="../overview/">Allocations Overview</a></li>
 </ul>
-<p>You can estimate your needs after reviewing the VM sizes using this example:</p>
-<ul>
-<li>m3.medium instance size (8 vCPU) for task 1 (8 SUs/hr) x 2</li>
-<li>m3.large instance (16 vCPU) for task 2 (16 SUs/hr) x 2</li>
-<li>m3.xl instance (32 vCPU) for task 3 (32 SUs/hr) x 2</li>
-<li>g3.xl instance (32 vCPU + 5 GPU slices) for task 4 (128 SUs/hr) x 2</li>
-<li>Planning for 24 hour/day usage</li>
-</ul>
-<pre><code>(16 + 32 + 64 + 256) x 24 hours/day x 365 days = 3,223,680 SUs
-</code></pre>
-<p>It would be standard practice to round that to 3,300,000 SUs for development time and incidentals.</p>
 <hr />
 <p>As this process is more involved and are reviewed by a panel twice a year, the turn around time to receive the award will be weeks or months after submission. Please plan accordingly.</p>
 <hr />
@@ -438,6 +439,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

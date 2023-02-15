@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -372,11 +382,11 @@
 <p>Jetstream2 staff encourages a defense-in-depth approach to security. This potentially involves several methods of restricting access and securing instances.</p>
 <p>Firewalls are <strong>not enabled by default</strong> on Jetstream2 instances. Depending on the user interface you launched your instance from, you may have different security groups established for your instance. (See <a href="#DefaultSecProfile">What is the default security profile for Jetstream2 VMs?</a> on this page for more information on that.)</p>
 <p>We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you&rsquo;re comfortable administering it.</p>
-<p>Please refer to <a href="/general/firewalls.md">Jetstream2 Virtual Machine Firewalls</a> for more information.</p>
+<p>Please refer to <a href="/general/firewalls">Jetstream2 Virtual Machine Firewalls</a> for more information.</p>
 <hr />
 <h3 id="what-is-the-default-security-profile-for-jetstream2-vms">What is the default security profile for Jetstream2 VMs? <a name="DefaultSecProfile"></a><a class="headerlink" href="#what-is-the-default-security-profile-for-jetstream2-vms" title="Permanent link">&para;</a></h3>
 <p>That depends on the interface.</p>
-<p>The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the <a href="/ui/cli/security_group.md">CLI</a> or <a href="/ui/horizon/security_group.md">Horizon</a> for more information on managing security groups in those interfaces.</p>
+<p>The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the <a href="/ui/cli/security_group">CLI</a> or <a href="/ui/horizon/security_group">Horizon</a> for more information on managing security groups in those interfaces.</p>
 <p>For Exosphere, the default security group allows all egress and inbound access.</p>
 <p>For CACAO, the default security group will be announced when it is available for general usage.</p>
 <hr />
@@ -397,7 +407,7 @@
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../alloc/" class="btn btn-neutral float-left" title="Allocations"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../gpu/" class="btn btn-neutral float-left" title="GPU FAQs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../software/" class="btn btn-neutral float-right" title="Software">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -426,7 +436,7 @@
         </span>
     
     
-      <span><a href="../alloc/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../gpu/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../software/" style="color: #fcfcfc">Next &raquo;</a></span>
@@ -437,6 +447,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

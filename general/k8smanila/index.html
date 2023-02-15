@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/general/k8smanila/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Share data between JupyterHub users with Manila shares - Jetstream2 Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link href="../../css/custom.css" rel="stylesheet" />
+        <link href="../../css/cacao.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Share data between JupyterHub users with Manila shares";
+        var mkdocs_page_input_path = "general/k8smanila.md";
+        var mkdocs_page_url = "/general/k8smanila/";
+      </script>
+    
+    <script src="../../js/jquery-3.6.0.min.js" defer></script>
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]--> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../..">
+          <img src="../../images/jetstream-logo-white.svg" class="logo" alt="Logo"/>
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">Jetstream2 Main</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../..">Jetstream2 Home</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/status/">Jetstream2 Status and News</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jetstream2 Info</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/overview-doc/">System Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/architecture/">Architecture and Capabilities of Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/config/">Configuration and specifications</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../overview/network/">Network configuration and considerations</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Frequently Asked Questions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/general-faq/">General FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/trouble/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gateways/">Gateways</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General Usage Information</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../resources/">Jetstream2 Resources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../access/">ACCESS Credits and Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../vmsizes/">VM Sizes and Configurations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../quotas/">Quotas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instancemgt/">Instance Management Actions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../featured/">Featured Images</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../windows/">Microsoft Windows on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../storage/">Storage</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Allocations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/overview/">Allocations Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/trial/">Trial Allocation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/general-allocations/">General Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/education/">Education Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/research/">Research (Maximize ACCESS) Allocations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/supplement/">Supplements (Storage/SUs)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">User Interfaces</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../ui/">Overview</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Exosphere</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/login/">Logging In</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/create_instance/">Creating an Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/access-instance/">Accessing an Exosphere Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/exo-filetransfer/">File Transfer</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/storage/">Storage Under Exosphere</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/push-button-cluster/">Push-button clusters</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/binder/">Binder Workflows</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/exo/troubleshooting/">Exosphere Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Horizon</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/intro/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/security_group/">Security Group Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/network/">Networks in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/ssh_keys/">SSH Keys in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/launch/">Launching Instances</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/storage/">Volumes Under Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/manila/">Manila Shares in Horizon</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/troubleshooting/">Horizon Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CLI</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/clients/">Installing Openstack Clients</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/openrc/">Setting up openrc.sh</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/managing-ssh-keys/">Managing SSH Keys</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/security_group/">Setting up a Security Group</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/network/">Setting up a Network</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/launch/">Launching a Virtual Machine</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../ui/cli/snapshot-image/">Snapshots & Images</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/deleting/">Deleting Infrastructure in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/storage/">Storage Under the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/manila/">Manila Shares in the CLI</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/troubleshooting/">CLI Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/ui_basics/">UI Basics</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/getting_started/">Getting Started For New Cacao Users</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">General VM Operations</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Security</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../firewalls/">Firewalls</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../sudo/">Being the root user</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Storage</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="#">Manila</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../manila/">Manila</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM/">Using Manila Share on a VM</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../manilaVM-FUSE/">Configuring a Ceph FUSE client</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../object/">Object Store</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../filetransfer/">File Transfer</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Maintenance and Administration</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../adduser/">Add User to a VM</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../installsoftware/">Installing Software on your VM</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Research Software</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../jupyter/">Jupyter on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../galaxy/">Galaxy</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Software Collection</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../software/">Jetstream2 Software Collection</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware-cli/">Using the JS2 Software Collection - Command Line</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../usingsoftware-desktop/">Using the JS2 Software Collection - Web Desktop</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../licenses/">Software Licenses</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Policies and Best Practices</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../policies/">Acceptable Usage Policies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../export/">Export Control Guidance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gateways/">AUPs for Jetstream2 Hosted Gateways</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../bestpractice/">Best Practices</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Advanced Capabilities</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Containers on Jetstream2</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../docker/">Docker</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../kubernetes/">Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8scluster/">Build a K8s cluster</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanage/">Managing Applications with Kubernetes</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Share data between JupyterHub users with Manila shares</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="#">Terraform</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../terraform/">Terraform on Jetstream2</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../advanced_terraform/">Advanced Terraform Topics</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../virtualclusters/">Virtual Clusters on Jetstream2</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../federating/">Federating Gateways on Jetstream2</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Jetstream2 Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
+          <li>Advanced Capabilities &raquo;</li>
+          <li>Containers on Jetstream2 &raquo;</li>
+      <li>Share data between JupyterHub users with Manila shares</li>
+    <li class="wy-breadcrumbs-aside">
+        <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/general/k8smanila.md"
+          class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="share-data-between-jupyterhub-users-with-manila-shares">Share data between JupyterHub users with Manila shares<a class="headerlink" href="#share-data-between-jupyterhub-users-with-manila-shares" title="Permanent link">&para;</a></h1>
+<p>In the <a href="https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub" target="_blank">standard deployment of JupyterHub on top of Kubernetes on Jetstream 2</a>, each user has access to their own home folder, but there is no built-in way to share data between users.</p>
+<p>One option is to <a href="https://www.zonca.dev/posts/2020-07-10-nfs-server-kubernetes-jetstream" target="_blank">install a NFS server as a service in Kubernetes</a>.
+However, Jetstream offers a managed service, named Manila, that offers the sharing capability out-of-the-box.</p>
+<p>Therefore we can lower the maintenance burden by creating a shared volume inside Manila and then mount it on any Kubernetes or JupyterHub pod, so that users can access shared data read-only or read-write.</p>
+<h2 id="create-a-share-in-manila">Create a Share in Manila<a class="headerlink" href="#create-a-share-in-manila" title="Permanent link">&para;</a></h2>
+<p>Create a share in Horizon <a href="https://docs.jetstream-cloud.org/ui/horizon/manila/" target="_blank">following the instructions in the Jetstream documentation</a>:</p>
+<ul>
+<li>for access to choose &ldquo;$USER-manila-share&rdquo;</li>
+<li>note down &ldquo;Path&rdquo; and &ldquo;Access Key&rdquo;</li>
+</ul>
+<h2 id="test-in-a-pod">Test in a Pod<a class="headerlink" href="#test-in-a-pod" title="Permanent link">&para;</a></h2>
+<p>First we want to test the connection with a pod, which is also useful to perform administrative tasks on the volume.</p>
+<p>You can find all the necessary files <a href="https://github.com/zonca/jupyterhub-deploy-kubernetes-jetstream/tree/master/manila" target="_blank">in this Github repository</a>.</p>
+<p>Copy the access key into <code>ceph-secret.yml</code>, then create the secret with:</p>
+<pre><code>kubectl create -f ceph-secret.yml
+</code></pre>
+<p>Then split the &ldquo;Path&rdquo; string you copied from Horizon into the different servers and the path and copy them to <code>ceph-pod.yml</code> and:</p>
+<pre><code>kubectl create -f ceph-pod.yml
+</code></pre>
+<p>Access the shared volume with:</p>
+<pre><code>kubectl exec --stdin -n jhub --tty ceph -- /bin/bash
+cd /mnt/cephfs
+</code></pre>
+<p>This container executes as <code>root</code>, so you should have write access to the share, instead, the JupyterHub users use the <code>jovyan</code> user, so we need to create a folder owned by <code>jovyan</code> to give them write access, all other folders will be read-only:</p>
+<pre><code>mkdir readonly
+mkdir readwrite
+chown 1000:100 readwrite
+</code></pre>
+<p>so we should have:</p>
+<pre><code>root@cephfs-pod:/mnt/cephfs# ls -la
+total 6
+drwxr-xr-x 4  119   126    0 Dec  1 00:48 .
+drwxr-xr-x 1 root root  4096 Nov 30 23:50 ..
+drwxr-xr-x 2 root root     0 Dec  1 00:04 readonly
+drwxr-xr-x 2 1000 users    0 Dec  1 00:07 readwrite
+</code></pre>
+<h2 id="configure-jupyterhub">Configure JupyterHub<a class="headerlink" href="#configure-jupyterhub" title="Permanent link">&para;</a></h2>
+<p>We can finally configure JupyterHub to mount this volume, if you have followed the JupyterHub deployment tutorial, you should have your <code>install_jhub.sh</code> script, edit it to also add an additional configuration file:</p>
+<pre><code>RELEASE=jhub
+NAMESPACE=jhub
+
+helm upgrade --install $RELEASE jupyterhub/jupyterhub \
+      --namespace $NAMESPACE  \
+      --create-namespace \
+      --version 1.2.0 \
+      --debug \
+      --values config_standard_storage.yaml --values secrets.yaml \
+      --values manila/jupyterhub_manila.yaml
+</code></pre>
+<p><code>manila/jupyterhub_manila.yaml</code> contains the same configuration of <code>ceph-pod.yml</code>, so you can copy-paste from there.</p>
+<p>Now you should be able to access the shared folders from a JupyterHub single user session:</p>
+<pre><code>jovyan@jupyter-zonca:~$ cd /share
+jovyan@jupyter-zonca:/share$ ls -lah
+total 5.5K
+drwxr-xr-x 4    119   126    0 Dec  1 00:48 .
+drwxr-xr-x 1 root   root  4.0K Nov 30 23:48 ..
+drwxr-xr-x 2 root   root     0 Dec  1 00:04 readonly
+drwxr-xr-x 2 jovyan users    0 Dec  1 00:07 readwrite
+jovyan@jupyter-zonca:/share$ touch readwrite/myfile
+jovyan@jupyter-zonca:/share$ touch readonly/myfile
+touch: cannot touch 'readonly/myfile': Permission denied
+</code></pre>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../k8svolumes/" class="btn btn-neutral float-left" title="Persistent Volumes in Kubernetes"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../minikube/" class="btn btn-neutral float-right" title="Minikube">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>Copyright © 2022 The Trustees of Indiana University</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/jetstream-cloud/js2docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../k8svolumes/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../minikube/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script>var base_url = '../..';</script>
+    <script src="../../js/theme_extra.js" defer></script>
+    <script src="../../js/theme.js" defer></script>
+      <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
+      <script src="../../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -359,34 +369,36 @@
 <p><a href="https://docs.ceph.com/en/quincy/install/get-packages/" target="_blank">https://docs.ceph.com/en/quincy/install/get-packages/</a></p>
 <p>If you aren&rsquo;t comfortable with adding repositories and installing packages, we highly recommend that you use a featured image.</p>
 <h3 id="1-create-a-mount-point-on-your-instance">1. Create a mount point on your instance<a class="headerlink" href="#1-create-a-mount-point-on-your-instance" title="Permanent link">&para;</a></h3>
-<pre><code>mkdir /mnt/ceph
+<p>This can be anywhere in the filesystem. We recommend using a descriptive name.</p>
+<pre><code>mkdir /smith-lab-data
 </code></pre>
 <h3 id="2configuring-your-instance">2.Configuring your instance<a class="headerlink" href="#2configuring-your-instance" title="Permanent link">&para;</a></h3>
-<p>i. Create the file <code>/etc/ceph.${accessTo}.secret</code> and add the <code>accessKey</code></p>
+<p>Using the name and key of the access rule you created, complete these steps:</p>
+<p>i. Create the file <code>/etc/ceph/ceph.client.${accessTo}.keyring</code> and add the <code>accessKey</code></p>
 <p>Example:</p>
-<pre><code>vi /etc/ceph.manilashare.secret
+<pre><code>sudo vi /etc/ceph/ceph.client.smithlabRWaccess.keyring
 </code></pre>
 <p>and add</p>
-<pre><code>AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
-
+<pre><code>[client.smithlabRWaccess]
+    key = AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
 </code></pre>
-<p>Substitute the key value from the share creation above.</p>
 <p>Also, make sure the permissions on the file are rw to the owner only. You can do that with</p>
-<pre><code>sudo chmod 600 /etc/ceph.manilashare.secret
+<pre><code>sudo chmod 600 /etc/ceph/ceph.client.smithlabRWaccess.keyring
 </code></pre>
 <p>ii. Edit <code>/etc/fstab</code> to include the following line:</p>
-<pre><code>$path /mnt/ceph ceph name=${accessTo},secretfile=/etc/ceph.${accessTo}.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+<p>Using the path from the share creation and the name and key of the access rule you created, add your entry to the fstab so it mounts at boot time:</p>
+<pre><code>$path /smith-lab-data ceph name=${accessTo},x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 </code></pre>
 <p>$path = IP#:ports followed by volume path (/volume/_no-group/uuid/uuid)</p>
 <p><em>Please make sure to change the $variables to whatever you set these values to in Manila or the CLI when you created the share</em></p>
 <p>Example:</p>
-<pre><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98 /mnt/ceph ceph name=manilashare,secretfile=/etc/ceph/ceph.manilashare.secret,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
+<pre><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98 /smith-lab-data ceph name=smithlabRWaccess,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0 2
 </code></pre>
 <h3 id="3-mount-the-share">3. Mount the share<a class="headerlink" href="#3-mount-the-share" title="Permanent link">&para;</a></h3>
 <p>Mount the manila share created with the following command <code>mount -a</code></p>
 <p>If you then run a <code>df -h|grep vol</code> you should see something like this:</p>
 <blockquote>
-<p><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98   1.8T  134G  1.7T   2% /mnt/ceph</code></p>
+<p><code>149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.158.70:6789,149.165.158.86:6789:/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc61fbb98   1.8T  134G  1.7T   2% /smith-lab-data</code></p>
 </blockquote>
               
             </div>
@@ -432,6 +444,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

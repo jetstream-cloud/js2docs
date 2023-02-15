@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -353,7 +363,7 @@
                 <h1 id="architecture-and-capabilities-of-jetstream2">Architecture and Capabilities of Jetstream2<a class="headerlink" href="#architecture-and-capabilities-of-jetstream2" title="Permanent link">&para;</a></h1>
 <p>Jetstream2 consists of one primary cloud and multiple regional clouds. As you can see by the image below, the primary cloud is hosted at Indiana University in Bloomington, IN with regional clouds at various institutions across the United States.</p>
 <p class="note"><em>Another huge distinction is that instead of different domains &ndash; default (Atmosphere) and tacc (API) domains, there is one namespace for Jetstream2. You can change between the CLI, Horizon, Exosphere, and Cacao as you see fit to manage your resources</em></p>
-<p><img alt="Jetstream2 Architecture" src="/images/JS2-Architecture.jpg" /></p>
+<p><img alt="Jetstream2 Architecture" src="/images/Jetstream2-architecture_Nov22.png" /></p>
 <p>Allocations will only be awarded on the primary cloud by default.</p>
 <h3 id="hardware">Hardware<a class="headerlink" href="#hardware" title="Permanent link">&para;</a></h3>
 <p>Jetstream2 brings <a href="../config/" target="_blank">multiple classes of research computing hardware</a>. Jetstream2 still has hundreds of CPU-based compute nodes for general purpose virtual machines/computing. Jetstream2 also features a small number of large memory nodes with up to 1 terabyte of RAM. Jetstream2 makes available 90 GPU-enabled nodes with four <a href="https://www.nvidia.com/en-us/data-center/a100/" target="_blank">NVIDIA A100 GPUs</a> each. These are subdivided using <a href="https://www.nvidia.com/en-us/data-center/virtual-solutions/" target="_blank">NVIDIA virtual GPU (vGPU)</a> to allow Jetstream2 allocations to utilize from 1/5th of a GPU to an entire GPU in their instances, facilitating everything from educational use requiring a minimal amount of GPU processing power to a full GPU for research workloads.</p>
@@ -416,6 +426,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

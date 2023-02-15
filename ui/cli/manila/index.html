@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -356,11 +366,22 @@
 <p>If you haven&rsquo;t installed the <em>python-manilaclient</em> you will need to do that. Installing with pip/pip3 would be</p>
 <pre><code>pip3 install python-manilaclient
 </code></pre>
+<p>Depending on the version of the python-openstack and python-manilaclient you have installed, you may get an error that says something like</p>
+<pre><code>Version %(req_ver)s is not supported by the API. Minimum is %(min_ver)s and maximum is %(max_ver)s. (HTTP 406) (Request-ID: xxxxxx)
+</code></pre>
+<p>you may need to add</p>
+<pre><code>--os-share-api-version 2.63
+</code></pre>
+<p>(where 2.63 may need to be changed to a different version depending on the error) to your commands below.</p>
 <p>Then you should be able to proceed with the rest of the steps.</p>
+<div class="admonition info">
+<p class="admonition-title">Share names and Access Rule Names must be unique!</p>
+<p>While shares and access rules to shares belong to specific allocations, the namespace is for the entire cloud. You will have to have a unique share name and unique rule names. We suggest using a descriptive name and using a variation of the name for the access rule(s).</p>
+</div>
 <h3 id="1-create-a-share">1. Create a share<a class="headerlink" href="#1-create-a-share" title="Permanent link">&para;</a></h3>
-<p><code>openstack share create --name $manila-share-name cephfs $vol-size --os-share-api-version 2.63</code></p>
+<p><code>openstack share create --name $manila-share-name cephfs $vol-size</code></p>
 <p>Example:
-<code>openstack share create --name manila-share-cli cephfs 10 --os-share-api-version 2.63</code></p>
+<code>openstack share create --name collected-data-smith-lab cephfs 10</code></p>
 <p>Metadata for the share created above:</p>
 <pre><code>+---------------------------------------+--------------------------------------+
 | Field                                 | Value                                |
@@ -375,7 +396,7 @@
 | is_public                             | False                                |
 | metadata                              | {}                                   |
 | mount_snapshot_support                | False                                |
-| name                                  | manila-share-cli                     |
+| name                                  | collected-data-smith-lab             |
 | progress                              | None                                 |
 | project_id                            | 55d7efb46dd945a2b86f7ce8aa657e1a     |
 | replication_type                      | None                                 |
@@ -397,9 +418,13 @@
 </code></pre>
 <p><code>id</code> is the share_id. You can use this to look up information about your share. See step 4.</p>
 <h3 id="2-create-an-access-rule">2. Create an access rule<a class="headerlink" href="#2-create-an-access-rule" title="Permanent link">&para;</a></h3>
-<p><code>openstack share access create $manila-share-name cephx $anyName --os-share-api-version 2.63</code></p>
+<p>Now you can create an access rule to govern whether it&rsquo;s read-only or read-write access to your share. The default is read-write. If you want it to be read-only, you have to specify that explicitly.</p>
+<p>Read-write:
+<code>openstack share access create $manila-share-name cephx $DescriptiveRuleName</code></p>
+<p>Read-only:
+<code>openstack share access create --access-level ro $manila-share-name cephx $DescriptiveRuleName</code></p>
 <p>Example:
-<code>openstack share access create manila-share-cli cephx manilaAccess --os-share-api-version 2.63</code></p>
+<code>openstack share access create collected-data-smith-lab cephx smithlabRWaccess</code></p>
 <p>Metadata for the access rule:</p>
 <pre><code>+--------------+--------------------------------------+
 | Field        | Value                                |
@@ -407,7 +432,7 @@
 | id           | 95067b4f-f77c-4b76-be12-ac5c3a8e8897 |
 | share_id     | 23c511b2-66e7-4986-b6a6-231b490210d4 |
 | access_level | rw                                   |
-| access_to    | manilaAccess                         |
+| access_to    | smithlabRWacces                      |
 | access_type  | cephx                                |
 | state        | queued_to_apply                      |
 | access_key   | None                                 |
@@ -416,11 +441,11 @@
 | properties   |                                      |
 +--------------+--------------------------------------+
 </code></pre>
-<p>Make a note of the id value. This is the <code>access rule id</code>. In the above example it is <code>95067b4f-f77c-4b76-be12-ac5c3a8e8897</code>. You can look up the access rule id in openstack to get your <code>access_key</code>.</p>
+<p>Make a note of the id value. This is the <code>access rule id</code>. In the above example it is <code>95067b4f-f77c-4b76-be12-ac5c3a8e8897</code>. You can look up the access rule id in openstack to get your <code>access_key</code> that you&rsquo;ll need for the keyring file in when you <a href="../../general/manilaVM/">configure your VM for Manila share access</a>.</p>
 <h3 id="3-get-access-key">3. Get access key<a class="headerlink" href="#3-get-access-key" title="Permanent link">&para;</a></h3>
-<p><code>openstack share access show $access-rule-id --os-share-api-version 2.63</code></p>
+<p><code>openstack share access show $access-rule-id</code></p>
 <p>Example:</p>
-<p><code>openstack share access show 95067b4f-f77c-4b76-be12-ac5c3a8e8897 --os-share-api-version 2.63</code></p>
+<p><code>openstack share access show 95067b4f-f77c-4b76-be12-ac5c3a8e8897</code></p>
 <p>Metadata for the access rule:</p>
 <pre><code>+--------------+------------------------------------------+
 | Field        | Value                                    |
@@ -428,7 +453,7 @@
 | id           | 95067b4f-f77c-4b76-be12-ac5c3a8e8897     |
 | share_id     | 23c511b2-66e7-4986-b6a6-231b490210d4     |
 | access_level | rw                                       |
-| access_to    | manilaAccess                             |
+| access_to    | smithlabRWaccess                         |
 | access_type  | cephx                                    |
 | state        | active                                   |
 | access_key   | AQB2Ih5iyQKpChAAIKunDZ6Ztr1VfNn+AFxlGA== |
@@ -439,9 +464,9 @@
 </code></pre>
 <p>The access rule is active and you can use the <code>access_key</code> generated above.</p>
 <h3 id="4-view-share-information">4. View share information<a class="headerlink" href="#4-view-share-information" title="Permanent link">&para;</a></h3>
-<p><code>openstack share show $share_id --os-share-api-version 2.63</code>
+<p><code>openstack share show $share_id</code>
 Example:</p>
-<p><code>openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4 --os-share-api-version 2.63</code></p>
+<p><code>openstack share show 23c511b2-66e7-4986-b6a6-231b490210d4</code></p>
 <p>Metadata for your share will now look a little different:</p>
 <pre><code>+---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------+
 | Field                                 | Value                                                                                                                                  |
@@ -460,7 +485,7 @@ Example:</p>
 | id                                    | 23c511b2-66e7-4986-b6a6-231b490210d4                                                                                                   |
 | is_public                             | False                                                                                                                                  |
 | mount_snapshot_support                | False                                                                                                                                  |
-| name                                  | manila-share-cli                                                                                                                       |
+| name                                  | collected-data-smith-lab                                                                                                                       |
 | progress                              | 100%                                                                                                                                   |
 | project_id                            | 55d7efb46dd945a2b86f7ce8aa657e1a                                                                                                       |
 | properties                            |                                                                                                                                        |
@@ -539,6 +564,7 @@ Example:</p>
     <script src="../../../js/theme_extra.js" defer></script>
     <script src="../../../js/theme.js" defer></script>
       <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../js/usage_estimator.js" defer></script>
       <script src="../../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

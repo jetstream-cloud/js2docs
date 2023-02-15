@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -373,7 +383,7 @@
 <h2 id="getting-help">Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h2>
 <p>In addition to the XSEDE ticketing system, there is an #exosphere-user-support channel in the Jetstream Slack workspace. To request access, please open a ticket from the XSEDE user portal. This support option includes <em>no</em> promise of immediate, real-time assistance, but the Exosphere core developers monitor it and help when they can. Sometimes it&rsquo;s easier to chat with them than wait for ticket notifications.</p>
 <h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
-<p>If you&rsquo;d like to help build Exosphere or request a new feature, visit the <a href="https://gitlab.com/exosphere/exosphere">project on GitLab</a>. The Exosphere maintainers strive to provide a welcoming experience for new contributors. At a broader level than Jetstream, the Exosphere project has a <a href="https://riot.im/app/#/room/#exosphere:matrix.org">chat room on Matrix/Element</a> which is used to coordinate development work, but community members are also welcome to join. Further, the Exosphere team discusses project progress and priorities on a weekly video call on Mondays at 16:00 UTC. You can join at <a href="https://meet.jit.si/exosphere">https://meet.jit.si/exosphere</a> or dial in at +1.512.647.1431, PIN: 3037 7824 88#. (Find the agenda and notes from previous meetings <a href="https://c-mart.sandcats.io/shared/wfRsWBVmJZ3maUn7HMFqNj_MR_Bzy1vob9CzWu1n7QI">here</a>.)</p>
+<p>If you&rsquo;d like to help build Exosphere or request a new feature, visit the <a href="https://gitlab.com/exosphere/exosphere" target="_blank">project on GitLab</a>. The Exosphere maintainers strive to provide a welcoming experience for new contributors. At a broader level than Jetstream, the Exosphere project has a <a href="https://riot.im/app/#/room/#exosphere:matrix.org" target="_blank">chat room on Matrix/Element</a> which is used to coordinate development work, but community members are also welcome to join. Further, the Exosphere team discusses project progress and priorities on a weekly video call on Mondays at 16:00 UTC. You can join at <a href="https://meet.jit.si/exosphere" target="_blank">https://meet.jit.si/exosphere</a> or dial in at +1.512.647.1431, PIN: 3037 7824 88#. (Find the agenda and notes from previous meetings <a href="https://c-mart.sandcats.io/shared/wfRsWBVmJZ3maUn7HMFqNj_MR_Bzy1vob9CzWu1n7QI" target="_blank">here</a>.)</p>
               
             </div>
           </div><footer>
@@ -418,6 +428,7 @@
     <script src="../../../js/theme_extra.js" defer></script>
     <script src="../../../js/theme.js" defer></script>
       <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../js/usage_estimator.js" defer></script>
       <script src="../../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

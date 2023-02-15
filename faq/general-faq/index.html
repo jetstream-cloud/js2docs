@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -361,11 +371,19 @@
 </ul>
 <hr />
 <h2 id="general-faqs">General FAQs<a class="headerlink" href="#general-faqs" title="Permanent link">&para;</a></h2>
-<h3 id="i-was-added-to-an-allocation-but-cant-access-jetstream2">I was added to an allocation but can&rsquo;t access Jetstream2?<a class="headerlink" href="#i-was-added-to-an-allocation-but-cant-access-jetstream2" title="Permanent link">&para;</a></h3>
-<p>It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact Jetstream2 help</a>.</p>
+<h3 id="im-getting-a-401-error-trying-to-log-into-exosphere-or-horizon">I&rsquo;m getting a 401 error trying to log into Exosphere or Horizon<a class="headerlink" href="#im-getting-a-401-error-trying-to-log-into-exosphere-or-horizon" title="Permanent link">&para;</a></h3>
+<p>If you get an error that looks like this trying to log in to Exosphere or Horizon:</p>
+<p><code>{"error":{"code":401,"message":"The request you have made requires authentication.","title":"Unauthorized"}}</code></p>
+<p>you need to confirm that you either are the PI of an allocation or are on a valid allocation. If you need to be added to an allocation, you&rsquo;ll need to contact the PI of that allocation to do this. We are unable to add users to allocations.</p>
+<p>If you are indeed on an allocation or are the PI of an allocation, please note that it can take up to four hours for allocations/users to become active. This is outside of our control. If you are still unable to log into <a href="../../ui/exo/login/">Exosphere</a> or <a href="../../ui/horizon/intro/">Horizon</a> after four hours from being added, please open a ticket via either the <a href="https://support.access-ci.org/user/login?destination=/open-a-ticket" target="_blank">ACCESS Help Form</a> or the <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">Jetstream Help Form</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Use ACCESS CI credentials if you&rsquo;re having trouble authenticating</p>
 <p>We know ACCESS-CI credentials work correctly and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon.<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these <a href="https://identity.access-ci.org/id-linking" target="_blank">Linking instructions</a> to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.</p>
+</div>
+<h3 id="i-was-added-to-an-allocation-but-cant-access-jetstream2">I was added to an allocation but can&rsquo;t access Jetstream2?<a class="headerlink" href="#i-was-added-to-an-allocation-but-cant-access-jetstream2" title="Permanent link">&para;</a></h3>
+<p>It can take up to four hours for ACCESS to sync up everything to Jetstream2. If you were added recently, we recommend trying later. If you still cannot access your Jetstream2 account and your PI or resource manager has confirmed that you are on a valid allocation, <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">contact Jetstream2 help</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Use ACCESS CI credentials if you&rsquo;re having trouble authenticating - see just above!</p>
 </div>
 <hr />
 <h3 id="how-do-i-cite-jetstream2">How do I cite Jetstream2 ?<a class="headerlink" href="#how-do-i-cite-jetstream2" title="Permanent link">&para;</a></h3>
@@ -419,11 +437,16 @@ curl http://ipinfo.io/ip
 <p>*Note: http://169.254.169.254/latest/meta-data/public-ipv4 works even in conditions in which external DNS servers are not accessible.</p>
 <hr />
 <h3 id="how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance">How do I get a jetstream-cloud.org DNS name for my instance?<a class="headerlink" href="#how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance" title="Permanent link">&para;</a></h3>
-<p>Jetstream2 is using OpenStack Designate to set dns names for instances. We were proactive and set the auto_allocated network that most Jetstream2 users will use, but if you&rsquo;ve created a new network and want an auto-created DNS A record, you&rsquo;ll need to do this from the command line:</p>
-<pre><code>openstack network set --dns-domain xxxxxxxxx.projects.jetstream-cloud.org. network-name-or-UUID
-</code></pre>
-<p>where the xxxxxxxxx is your XSEDE allocation number and network-name-or-UUID is the custom network you&rsquo;ve created in that allocation.</p>
-<p>This FAQ topic may move to its own page in the future.</p>
+<p>Right now, every allocation&rsquo;s <code>auto_allocated_network</code> is set up with OpenStack Designate to automatically create DNS hostnames for instances. DNS hostnames are formatted as:</p>
+<p><code>instance-name.allocation-name.projects.jetstream-cloud.org</code></p>
+<p>Or a more real-life example:</p>
+<p><code>genome-browser.bio123456.projects.jetstream-cloud.org</code></p>
+<p>The DNS hostname points to your instance&rsquo;s public (a.k.a. floating) IP address, so this won&rsquo;t currently work if you remove an instance&rsquo;s public IP (or create an instance without a public IP).</p>
+<p>If DNS hostnames are not working for your allocation or you&rsquo;d like to set up Designate for another network, please <a href="https://jetstream-cloud.org/contact/index.html" target="_blank">create a support ticket</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For information about hostnames outside the <code>projects.jetstream-cloud.org</code> space, see <a href="../gateways/#how-do-i-set-up-a-custom-domain-name-for-my-gateway-site-or-web-service">&ldquo;How do I set up a custom domain name for my gateway, site, or web service?&rdquo;</a></p>
+</div>
 <hr />
 <h3 id="are-there-backups-of-jetstream2-storage-resources">Are there backups of Jetstream2 storage resources ?<a class="headerlink" href="#are-there-backups-of-jetstream2-storage-resources" title="Permanent link">&para;</a></h3>
 <p>Jetstream2 provides multiple forms of storage, including block (volumes), shares (Manila), and an object store. All of these storage formats are on erasure coded partitions that should provide protection against data loss in the case of hardware issues or outages.</p>
@@ -498,6 +521,7 @@ curl http://ipinfo.io/ip
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

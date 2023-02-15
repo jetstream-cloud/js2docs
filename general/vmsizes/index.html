@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -459,7 +469,7 @@
 </tbody>
 </table>
 <h3 id="jetstream2-gpu">Jetstream2 GPU<a class="headerlink" href="#jetstream2-gpu" title="Permanent link">&para;</a></h3>
-<p>Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA virtual GPU (vGPU) into up to 5 slices to allow more researchers and students to make use of the GPU resource.</p>
+<p>Jetstream2 GPU nodes charge 4 SUs per vCPU hour or 4 SUs per core per hour. Additionally, there are four NVIDIA A100 GPUs on each node. These GPUs are subdivided using NVIDIA virtual GPU (vGPU) into up to fractions of the A100 to allow more researchers and students to make use of the GPU resource.</p>
 <p><em>5 GPU slices = 1 NVIDIA 40GB Ampere A100 GPU</em></p>
 <table>
 <thead>
@@ -468,7 +478,7 @@
 <th align="center">vCPUs</th>
 <th align="center">RAM(GB)</th>
 <th align="center">Local Storage (GB)</th>
-<th align="center">GPU Slices/GPU Ram</th>
+<th align="center">GPU Portion/GPU Ram</th>
 <th align="center">SU cost / hour</th>
 </tr>
 </thead>
@@ -478,7 +488,7 @@
 <td align="center">4</td>
 <td align="center">15</td>
 <td align="center">60</td>
-<td align="center">1 slice / 5gb RAM</td>
+<td align="center">20% of GPU / 5gb RAM</td>
 <td align="center">16</td>
 </tr>
 <tr>
@@ -486,7 +496,7 @@
 <td align="center">8</td>
 <td align="center">30</td>
 <td align="center">60</td>
-<td align="center">2 slices / 10gb RAM</td>
+<td align="center">25% of GPU / 10gb RAM</td>
 <td align="center">32</td>
 </tr>
 <tr>
@@ -494,7 +504,7 @@
 <td align="center">16</td>
 <td align="center">60</td>
 <td align="center">60</td>
-<td align="center">4 slices / 20gb RAM</td>
+<td align="center">50% of GPU / 20gb RAM</td>
 <td align="center">64</td>
 </tr>
 <tr>
@@ -502,14 +512,16 @@
 <td align="center">32</td>
 <td align="center">125</td>
 <td align="center">60</td>
-<td align="center">5 slices / 40gb RAM</td>
+<td align="center">100% of GPU / 40gb RAM</td>
 <td align="center">128</td>
 </tr>
 </tbody>
 </table>
+<p class="note">Note: If you are using a portion of the GPU and the rest of the GPU is idle, you <strong><em>may</em></strong> see higher utilization</p>
 <p><strong>This flavor information may be subject to changes in the future.</strong></p>
 <hr />
 <h5 id="example-of-su-estimation">Example of SU estimation:<a class="headerlink" href="#example-of-su-estimation" title="Permanent link">&para;</a></h5>
+<p class="note">Note: You can now estimate your SU needs using the usage estimation calculator here: <a href="../../alloc/estimator/" target="_blank">Usage Estimation Calculator</a></p>
 <ul>
 <li>First determine the VM resource appropriate to your needs (CPU only, large memory, GPU):<ul>
 <li>If your work requires 24 GB of RAM and 60 GB of local storage:<ul>
@@ -617,6 +629,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

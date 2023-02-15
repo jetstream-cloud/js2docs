@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -374,16 +384,15 @@ mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.1
 <p>Add the following:</p>
 <pre><code>none    /mnt/ceph fuse.ceph   ceph.id=$accessTo,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=$volumePath,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0       2
 </code></pre>
-<p>Replace <code>$accessTo</code> with the arbitrary name you chose in step 3 above and <code>$volumePath</code> with (    /volume/_no-group/&hellip;) that is also in the share information that you created.</p>
+<p>Replace <code>$accessTo</code> with the arbitrary name you chose for the access rule in step 3 above and <code>$volumePath</code> with (    /volume/_no-group/&hellip;) that is also in the share information that you created.</p>
 <p>It should look something like this:</p>
 <pre><code>none    /mnt/ceph fuse.ceph   ceph.id=manilashare,ceph.conf=/etc/ceph/ceph.conf,ceph.client_mountpoint=/volumes/_nogroup/fe4f8ad4-2877-4e23-b5d3-46eb8476750b/ab404bac-9584-45f4-8a34-92dfc6    1fbb98,x-systemd.device-timeout=30,x-systemd.mount-timeout=30,noatime,_netdev,rw 0   2
 </code></pre>
 <p>iii.  /etc/ceph/ceph.client.<code>$accessTo</code>.keyring</p>
-<p>Add the following:</p>
+<p>Add the following, substituting the name you chose for the access rule and using the access key from that rule:</p>
 <pre><code>[client.$accessTo]
     key = $accessKey
 </code></pre>
-<p>Replace <code>$accessTo</code> with the arbitrary name you chose in step 3 and <code>$accessKey</code> with the Acce    ss Key generated in step 4</p>
 <p>Your file should look something like this :</p>
 <pre><code>[client.manilashare]
     key = AQAHfhZiwTf/NhAAT5ChE4tDXt3Nq1NyiURbMQ==
@@ -432,6 +441,7 @@ mon host = 149.165.158.38:6789,149.165.158.22:6789,149.165.158.54:6789,149.165.1
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

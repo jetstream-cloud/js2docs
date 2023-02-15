@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -352,6 +362,10 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="to-use-manila-via-horizon">To use Manila via Horizon<a class="headerlink" href="#to-use-manila-via-horizon" title="Permanent link">&para;</a></h1>
+<div class="admonition info">
+<p class="admonition-title">Share names and Access Rule Names must be unique!</p>
+<p>While shares and access rules to shares belong to specific allocations, the namespace is for the entire cloud. You will have to have a unique share name and unique rule names. We suggest using a descriptive name and using a variation of the name for the access rule(s).</p>
+</div>
 <h3 id="1-create-the-share-on-horizon">1. Create the share on Horizon<a class="headerlink" href="#1-create-the-share-on-horizon" title="Permanent link">&para;</a></h3>
 <hr />
 <p><img _=";" align="right" alt="" src="/images/JS2-manila1.png" width="50%" /></p>
@@ -361,20 +375,20 @@
 <p><img _=";" align="right" alt="" src="/images/JS2-manila2.png" width="50%" /></p>
 <p>ii. <code>Create share</code> with the following settings:</p>
 <ul>
-<li><strong>share name</strong>: a name of your choosing</li>
+<li><strong>share name</strong>: a descriptive and unique name of your choosing</li>
 <li><strong>share protocol</strong>: CephFS</li>
-<li><strong>size</strong>: the size of your manila share</li>
+<li><strong>size</strong>: the size of your manila share in gigabytes</li>
 <li><strong>share type</strong>: cephnfsnativetype</li>
 </ul>
 <p></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></p>
 <hr />
 <h3 id="2-edit-the-share-rule">2. Edit the share rule<a class="headerlink" href="#2-edit-the-share-rule" title="Permanent link">&para;</a></h3>
-<p>i. Once your share is available you can select <code>Edit Share</code> and <code>Manage Rules</code> and <code>Add Rule</code> :</p>
+<p>i. Once your share is available you can select <code>Manage Rules</code> and <code>Add Rule</code> :</p>
 <p><img _=";" align="right" alt="" src="/images/JS2-manila3.png" width="50%" /></p>
 <ul>
 <li><strong>access type</strong>: cephx</li>
 <li><strong>access level</strong>: read-write</li>
-<li><strong>access to</strong>: an arbitrary unique name</li>
+<li><strong>access to</strong>: an descriptive and unique rule name</li>
 </ul>
 <p><img _=";" align="right" alt="" src="/images/JS2-manila4.png" width="50%" /></p>
 <p>In the example above the <code>accessTo</code> name is <code>manilashare</code>.</br><strong><em>The name assigned must be globally unique!</em></strong> If you use a name that is already in use you will see an error state. To help avoid accidental overlap, we recommend prefixing your name with something unique such as your ACCESS username or your allocation number. For example, instead of using just <code>seed-research</code>, use <code>&lt;ALLOCATION&gt;-seed-research</code>.</p>
@@ -435,6 +449,7 @@
     <script src="../../../js/theme_extra.js" defer></script>
     <script src="../../../js/theme.js" defer></script>
       <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../js/usage_estimator.js" defer></script>
       <script src="../../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

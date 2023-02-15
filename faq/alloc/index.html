@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="./">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -395,6 +405,7 @@
 </blockquote>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p><strong><em>Please do note that only the PI is automatically added to resources like Jetstream2 resources. This is a function of ACCESS&rsquo; allocations system and is outside of our control. The PI, co-PI, or resource managers will explicitly need to add users to resources via the User Management link above</em></strong></p>
 <p><strong>It can take up to four hours for users added to an allocation to become active.</strong></p>
 </div>
 <hr />
@@ -451,7 +462,7 @@
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../trouble/" class="btn btn-neutral float-left" title="Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../security/" class="btn btn-neutral float-right" title="Security">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../gpu/" class="btn btn-neutral float-right" title="GPU FAQs">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -482,7 +493,7 @@
       <span><a href="../trouble/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../security/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../gpu/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
@@ -490,6 +501,7 @@
     <script src="../../js/theme_extra.js" defer></script>
     <script src="../../js/theme.js" defer></script>
       <script src="../../js/matomo.js" defer></script>
+      <script src="../../js/usage_estimator.js" defer></script>
       <script src="../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {

@@ -66,6 +66,8 @@
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/alloc/">Allocations</a>
                   </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../faq/gpu/">GPU FAQs</a>
+                  </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/security/">Security</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../faq/software/">Software</a>
@@ -109,6 +111,10 @@
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/renew-extend/">Extensions & Renewals</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../../../alloc/faq/">Frequently Asked Questions</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/budgeting/">Budgeting for Common Usage Scenarios</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../../alloc/estimator/">Usage Estimation Calculator</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
@@ -307,7 +313,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8sbinderhub/">BinderHub on Kubernetes</a>
                 </li>
     </ul>
                   </li>
@@ -354,32 +364,32 @@
                 <h1 id="binder-workflows-in-exosphere">Binder Workflows in Exosphere<a class="headerlink" href="#binder-workflows-in-exosphere" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">About experimental features</p>
-<p>Exosphere&rsquo;s Binder-related functionality is an experimental feature. Developing it further may not be a current priority; users are still encouraged to <a href="https://jetstream2.exosphere.app/exosphere/getsupport">report any bugs they encounter</a>, but they may not receive a quick resolution.</p>
+<p>Exosphere&rsquo;s Binder-related functionality is an experimental feature. Developing it further may not be a current priority; users are still encouraged to <a href="https://jetstream2.exosphere.app/exosphere/getsupport" target="_blank">report any bugs they encounter</a>, but they may not receive a quick resolution.</p>
 </div>
 <h2 id="about-binder-binderhub">About Binder &amp; BinderHub<a class="headerlink" href="#about-binder-binderhub" title="Permanent link">&para;</a></h2>
-<p><a href="https://jupyter.org/binder">Binder</a> is a project maintained by Project Jupyter that allows for the deployment and sharing of computing environments with a single link. It is built on an open-source software stack that converts a <a href="https://repo2docker.readthedocs.io/en/latest/specification.html">Reproducible Execution Environment Specification</a> (stored as a git repository) to a reproducible Docker image, then deploys that image into a shareable container. Out of the box, Binder supports Python, R, and Julia as base languages, and offers classic Jupyter notebooks, JupyterLab, nteract, RStudio, and Shiny as exposable user interfaces.</p>
+<p><a href="https://jupyter.org/binder" target="_blank">Binder</a> is a project maintained by Project Jupyter that allows for the deployment and sharing of computing environments with a single link. It is built on an open-source software stack that converts a <a href="https://repo2docker.readthedocs.io/en/latest/specification.html" target="_blank">Reproducible Execution Environment Specification</a> (stored as a git repository) to a reproducible Docker image, then deploys that image into a shareable container. Out of the box, Binder supports Python, R, and Julia as base languages, and offers classic Jupyter notebooks, JupyterLab, nteract, RStudio, and Shiny as exposable user interfaces.</p>
 <h2 id="when-not-to-use-a-binder">When (not) to use a Binder<a class="headerlink" href="#when-not-to-use-a-binder" title="Permanent link">&para;</a></h2>
-<p>When deciding if a Binder workflow is optimal for specific your use case, there are some considerations to make. First and foremost is the nature of Docker containers; since by default containers are stateless/ephemeral, <strong>all changes made to files inside the workflow will be permanently lost when your instance restarts.</strong> Although there are ways around this (for example, creating a <a href="https://docs.docker.com/storage/volumes/">Docker volume</a> and attaching it to the container), such a need may be a good indication to explore other solutions, for example a <a href="../../../general/jupyter/">traditional Jupyter server using Anaconda</a>. For some examples of good use cases for Binder, see <a href="https://jupyter.org/binder#what-is-binder-used-for">&ldquo;What is Binder used for?&rdquo;</a> in the Jupyter docs.</p>
+<p>When deciding if a Binder workflow is optimal for specific your use case, there are some considerations to make. First and foremost is the nature of Docker containers; since by default containers are stateless/ephemeral, <strong>all changes made to files inside the workflow will be permanently lost when your instance restarts.</strong> Although there are ways around this (for example, creating a <a href="https://docs.docker.com/storage/volumes/" target="_blank">Docker volume</a> and attaching it to the container), such a need may be a good indication to explore other solutions, for example a <a href="../../../general/jupyter/">traditional Jupyter server using Anaconda</a>. For some examples of good use cases for Binder, see <a href="https://jupyter.org/binder#what-is-binder-used-for" target="_blank">&ldquo;What is Binder used for?&rdquo;</a> in the Jupyter docs.</p>
 <h2 id="deploying-a-binder-using-exosphere">Deploying a Binder using Exosphere<a class="headerlink" href="#deploying-a-binder-using-exosphere" title="Permanent link">&para;</a></h2>
 <p class="note">This guide assumes that you are comfortable creating instances using Exosphere. If you are new to Exosphere, see <a href="../exo/">Exosphere: Overview</a>.</p>
-<p>Any Binder-compatible repository can be easily be deployed as a Jetstream2 instance using <a href="../exo/">Exosphere</a>. This guide will use the following repository as an example: <a href="https://github.com/binder-examples/r_with_python">https://github.com/binder-examples/r_with_python</a>.</p>
-<p class="note">Currently, Exosphere&rsquo;s workflow deployment features are somewhat limited and intended for the <strong>individual consumption of Binders</strong> rather than the mass publishing of them&ndash;for example, you want to run someone&rsquo;s Binder repository, but it needs more compute resources than you can get from <a href="https://mybinder.org/">mybinder.org</a>. If your goal is to create a replacement for <a href="https://mybinder.org/">mybinder.org</a>, where users can individually spin up Binders as needed, that may be possible on Jetstream2, but you will have to manually set up a <a href="https://binderhub.readthedocs.io/en/latest/index.html">BinderHub</a> deployment, which is not covered here.</p>
+<p>Any Binder-compatible repository can be easily be deployed as a Jetstream2 instance using <a href="../exo/">Exosphere</a>. This guide will use the following repository as an example: <a href="https://github.com/binder-examples/r_with_python" target="_blank">https://github.com/binder-examples/r_with_python</a>.</p>
+<p class="note">Currently, Exosphere&rsquo;s workflow deployment features are somewhat limited and intended for the <strong>individual consumption of Binders</strong> rather than the mass publishing of them&ndash;for example, you want to run someone&rsquo;s Binder repository, but it needs more compute resources than you can get from <a href="https://mybinder.org/" target="_blank">mybinder.org</a>. If your goal is to create a replacement for <a href="https://mybinder.org/">mybinder.org</a>, where users can individually spin up Binders as needed, that may be possible on Jetstream2, but you will have to manually set up a <a href="https://binderhub.readthedocs.io/en/latest/index.html" target="_blank">BinderHub</a> deployment, which is not covered here.</p>
 <h3 id="enable-experimental-features-in-settings">Enable Experimental Features in Settings<a class="headerlink" href="#enable-experimental-features-in-settings" title="Permanent link">&para;</a></h3>
-<p>Open the Settings page (top menu). Ensure that the &ldquo;Experimental Features&rdquo; option is enabled.  </p>
+<p>Open the Settings page (top menu). Ensure that the &ldquo;Experimental Features&rdquo; option is enabled.</p>
 <h3 id="create-a-jetstream2-instance">Create a Jetstream2 Instance<a class="headerlink" href="#create-a-jetstream2-instance" title="Permanent link">&para;</a></h3>
 <p>Select &ldquo;Create&rdquo; and then &ldquo;Instance&rdquo;.</p>
 <p><img alt="screenshot of create dropdown" src="../../../images/exo-create-dropdown.png" /></p>
-<p>Select your preferred source (OS/Image) and configure the instance normally with the resources required for your application. Be sure to assign a public IP address; otherwise, you will be unable to connect to your workflow remotely. </p>
+<p>Select your preferred source (OS/Image) and configure the instance normally with the resources required for your application. Be sure to assign a public IP address; otherwise, you will be unable to connect to your workflow remotely.</p>
 <p>You should see an option &ldquo;Launch a workflow in the instance.&rdquo; Select &ldquo;Yes&rdquo; for this option.</p>
 <p>Three new fields should appear:</p>
 <ul>
 <li><u>&ldquo;DOI or Git repository URL&rdquo;:</u> the top-level URL of your repository&ndash;for example, <code>https://github.com/binder-examples/r_with_python</code></li>
-<li><u>[<em>Optional</em>] &ldquo;Git reference (branch, tag, or commit)&rdquo;:</u> a specific <a href="https://git-scm.com/book/en/v2/Git-Internals-Git-References">Git reference</a> to clone. Defaults to <code>HEAD</code>.</li>
+<li><u>[<em>Optional</em>] &ldquo;Git reference (branch, tag, or commit)&rdquo;:</u> a specific <a href="https://git-scm.com/book/en/v2/Git-Internals-Git-References" target="_blank">Git reference</a> to clone. Defaults to <code>HEAD</code>.</li>
 <li><u>[<em>Optional</em>] &ldquo;Path to open&rdquo;:</u> If your Binder configuration files are located in a subdirectory of your repository (not the root), you can specify the path here. Defaults to <code>/</code>.</li>
 </ul>
 <p><img alt="screenshot of Exosphere workflow options" src="../../../images/exo-binder-options.png" /></p>
 <p>Click &ldquo;Create&rdquo; to start your new instance.</p>
-<p class="note">Instances with Workflows may take extra time to deploy; depending on the flavor selected and the complexity of the Binder, this may be up to around 15-30 minutes. </p>
+<p class="note">Instances with Workflows may take extra time to deploy; depending on the flavor selected and the complexity of the Binder, this may be up to around 15-30 minutes.</p>
 <h3 id="accessing-the-workflow">Accessing the Workflow<a class="headerlink" href="#accessing-the-workflow" title="Permanent link">&para;</a></h3>
 <p>Provided that your instance has a public IP assigned to it, your workflow can be accessed by simply clicking the &ldquo;Workflow&rdquo; button on your Instance Details page (look under &ldquo;Interactions&rdquo;).</p>
 <p><img alt="screenshot of Exosphere Instance Details page, showing the &quot;Workflow&quot; button highlighted" src="../../../images/exo-workflow-launch.png" /></p>
@@ -434,6 +444,7 @@
     <script src="../../../js/theme_extra.js" defer></script>
     <script src="../../../js/theme.js" defer></script>
       <script src="../../../js/matomo.js" defer></script>
+      <script src="../../../js/usage_estimator.js" defer></script>
       <script src="../../../search/main.js" defer></script>
     <script defer>
         window.onload = function () {
