@@ -368,7 +368,7 @@
 <p>Volumes can be created in the Exosphere interface under the &ldquo;Create&rdquo; dropdown (top-right):</p>
 <p><img alt="A screenshot showing the Exosphere &quot;create&quot; dropdown, with &quot;Volume&quot; highlighted" src="../../../images/exo-create-vol.png" /></p>
 <h3 id="attaching-your-volume-to-an-instance">Attaching your Volume to an Instance<a class="headerlink" href="#attaching-your-volume-to-an-instance" title="Permanent link">&para;</a></h3>
-<p>Volumes can be attached from either the <em>Volumes</em> section of the Instance Details page, the Volumes List page, or the individual Volume Details page. </p>
+<p>Volumes can be attached from either the <em>Volumes</em> section of the Instance Details page, the Volumes List page, or the individual Volume Details page.</p>
 <table>
 <thead>
 <tr>
@@ -392,9 +392,9 @@
 </tbody>
 </table>
 <h3 id="accessing-an-attached-volume">Accessing an Attached Volume<a class="headerlink" href="#accessing-an-attached-volume" title="Permanent link">&para;</a></h3>
-<p>After successfully attaching a volume to an instance, Exosphere will display the device location (<code>/dev/sdb</code>, <code>/dev/sdc</code>, etc.) and the mount point (<code>/media/volume/...</code>) to which the volume is attached. This information can also be found on your Instance Details page or Volume Details page. </p>
-<p>The mount point is the directory that represents the root of a volume&rsquo;s filesystem and is where you can access files stored in it. </p>
-<p>Please note that attached volumes are mounted the first time they are accessed inside the instance (e.g. with a <code>cd</code> command).</p>
+<p>After successfully attaching a volume to an instance, Exosphere will display the device location (<code>/dev/sdb</code>, <code>/dev/sdc</code>, etc.) and the mount point (<code>/media/volume/...</code>) to which the volume is attached. This information can also be found on your Instance Details page or Volume Details page.</p>
+<p>The mount point is the directory that represents the root of a volume&rsquo;s filesystem and is where you can access files stored in it.</p>
+<p>Please note that attached volumes are mounted the first time they are accessed inside the instance (e.g. with a <code>cd</code> command), and are NOT necessarily mounted at attachment time. If you encounter a seeming lag or problem with filesystem access, the volume may not be properly mounted; you may wish to try making sure you can <code>cd</code> to the directory.</p>
 <h3 id="detaching-a-volume">Detaching a Volume<a class="headerlink" href="#detaching-a-volume" title="Permanent link">&para;</a></h3>
 <p>A volume can be detached from an instance on either the Volumes List page or the Volume Details page:</p>
 <table>
@@ -433,8 +433,8 @@
 </tbody>
 </table>
 <h2 id="file-shares">File Shares<a class="headerlink" href="#file-shares" title="Permanent link">&para;</a></h2>
-<p>OpenStack Manila file shares are significantly more complicated to set up than simple volumes; however, unlike simple volumes, file shares can be mounted to and accessed by multiple instances at the same time. Currently, Exosphere does not support the creation or management of Manila shares within its user interface. </p>
-<p>Please reference <em><a href="../../../general/manila/">Manila - Filesystems-as-a-service - on Jetstream2</a></em> for more information and setup guides. </p>
+<p>OpenStack Manila file shares are significantly more complicated to set up than simple volumes; however, unlike simple volumes, file shares can be mounted to and accessed by multiple instances at the same time. Currently, Exosphere does not support the creation or management of Manila shares within its user interface.</p>
+<p>Please reference <em><a href="../../../general/manila/">Manila - Filesystems-as-a-service - on Jetstream2</a></em> for more information and setup guides.</p>
               
             </div>
           </div><footer>
