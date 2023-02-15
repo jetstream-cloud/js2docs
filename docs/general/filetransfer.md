@@ -19,4 +19,4 @@ Here are some recommended clients for transferring files with SCP or SFTP. These
 
 **Globus**  
 
-[Globus](https://www.globus.org/data-transfer){target=_blank} is a fast, reliable, and secure file transfer service for easily moving data to, from, and between digital resources. Information for transferring files with Globus can be found [here](https://www.globus.org/data-transfer){target=_blank}, and a tutorial describing installing and use of Globus Personal Connect can be found [here](https://docs.globus.org/how-to/globus-connect-personal-linux/){target=_blank}
+[Globus](https://www.globus.org/data-transfer){target=_blank} is a fast, reliable, and secure file transfer service for easily moving data to, from, and between digital resources. Information for transferring files with Globus can be found here: [https://www.globus.org/data-transfer](https://www.globus.org/data-transfer){target=_blank}, and a tutorial describing installing and use of Globus Personal Connect can be found here: [globus-connect-personal-linux](https://docs.globus.org/how-to/globus-connect-personal-linux/){target=_blank}
