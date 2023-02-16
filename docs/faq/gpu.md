@@ -14,6 +14,12 @@ We will have to upgrade the compute nodes to resolve it. This is on the near-ter
 
 In the meantime, please only use stop or shelve with GPU instances.
 
+### How do I used multiple GPUs on an instance for my research?
+
+The short answer is that you cannot use multiple GPUs on a single instance at this time. 
+
+The longer answer is that this is a limitation of the NVIDIA GRID vGPU driver for our hypervisors. Basically, even with NVLINK present, the driver cannot gang multiple CPUs together into a single VM. Recent updates indicate that we may be able to use multiple *fractional* vGPUs on an instance. Engineers are currently looking into this and we will update this FAQ and the documentation overall accordingly if there is a means to do this.
+
 ### CentOS 7 does not work with my GPU
 
 Due to issues with the NVIDIA GRID driver, we have discontinued support for GPUs using CentOS 7. We will be removing CentOS 7 from the featured images once we have a stable Rocky 9 build available.
