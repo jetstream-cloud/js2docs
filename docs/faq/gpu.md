@@ -18,7 +18,7 @@ In the meantime, please only use stop or shelve with GPU instances.
 
 The short answer is that you cannot use multiple GPUs on a single instance at this time. 
 
-The longer answer is that this is a limitation of the NVIDIA GRID vGPU driver for our hypervisors. Basically, even with NVLINK present, the driver cannot gang multiple CPUs together into a single VM. Recent updates indicate that we may be able to use multiple *fractional* vGPUs on an instance. Engineers are currently looking into this and we will update this FAQ and the documentation overall accordingly if there is a means to do this.
+The longer answer is that this is a limitation of the NVIDIA GRID vGPU driver for our hypervisors. Basically, even with NVLINK present, the driver cannot gang multiple GPUs together into a single VM. Recent updates indicate that we may be able to use multiple *fractional* vGPUs on an instance. Engineers are currently looking into this and we will update this FAQ and the documentation overall accordingly if there is a means to do this.
 
 ### CentOS 7 does not work with my GPU
 
