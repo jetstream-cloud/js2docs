@@ -14,7 +14,7 @@ We will have to upgrade the compute nodes to resolve it. This is on the near-ter
 
 In the meantime, please only use stop or shelve with GPU instances.
 
-### How do I used multiple GPUs on an instance for my research?
+### How do I use multiple GPUs on an instance for my research?
 
 The short answer is that you cannot use multiple GPUs on a single instance at this time. 
 
