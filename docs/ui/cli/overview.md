@@ -32,8 +32,9 @@ You can make that permanent by adding the following to your environment.
 
     export CLIFF_FIT_WIDTH=1
 
-You'll then need to create a security group and network before launching your first VMs. More information may be found here:
+You'll then need to register an ssh key, create a security group and network before launching your first VMs. More information may be found here:
 
+ - [Register an SSH key](managing-ssh-keys.md)
  - [Create a security group](security_group.md)
  - [Create a network](network.md)
  - [Create and launch a VM](launch.md)
