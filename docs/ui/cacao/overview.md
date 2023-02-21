@@ -2,9 +2,9 @@
 # Everything you wanted to know about Cacao to do more research in Jetstream2
 ![cacao logo](images/cacao-logo.png){ width=128px }
 
-!!! note "INFO::Cacao is considered BETA at this time"
+!!! note "INFO::Cacao is considered Alpha at this time"
 
-     Cacao is still considered in BETA at this time and is not officially supported yet on Jetstream2</br>
+     Cacao is still considered in Alpha at this time</br>
 
 ## Intro to Cacao
 <div class="cacao-overview"></div>
@@ -18,9 +18,9 @@
 
 ## Cacao 101
 <div class="cacao-overview"></div>
-* [Credentials](credentials.md)
-* [Workspaces](workspaces.md)
+* [Dashboard](dashboard.md)
 * [Deployments](deployments.md)
+* [Credentials](credentials.md)
 * [Choosing your allocation](alloc.md)
 * [Logging Into An Instance](login.md) (coming soon!)
 * [Storage](storage.md) (coming soon!)
