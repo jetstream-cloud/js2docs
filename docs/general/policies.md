@@ -58,9 +58,15 @@ Jetstream2 requires an active ACCESS allocation for access. If your allocation e
 
 Jetstream2 policy is that we will do the following when allocations expire:
 
-* At **expiration** - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
+* At **expiration** or point where it becomes **expiration**- the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
 * If the allocation has not been renewed *(preferred)* or extended in **10 days**, all VMs on the allocation will be shelved and thus no longer accessible
 * If the allocation has not been renewed *(preferred)* or extended in **30 days**, all resources (VMs, volumes, shares, images, etc) on the allocation will be destroyed and *will not be recoverable*
+
+***Similar policies will apply for overdrawn allocations:***
+
+* Once an allocation is **overdrawn** - - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users
+* If the allocation has not been renewed on a larger allocation or additional credits transferred (if available) in **10 days**, all VMs on the allocation will be shelved and thus no longer accessible
+* If the allocation has not been renewed on a larger allocation or additional credits transferred (if available) in **30 days**, all VMs on the allocation will be shelved and thus no longer accessible
 
 ### IP (IPv4 floating ip) Policies
 
