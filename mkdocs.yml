@@ -115,6 +115,7 @@ nav:
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
       - Overview: ui/horizon/intro.md
+      - Logging In: ui/horizon/login.md
       - Security Group Management: ui/horizon/security_group.md
       - Networks in Horizon: ui/horizon/network.md
       - SSH Keys in Horizon: ui/horizon/ssh_keys.md
