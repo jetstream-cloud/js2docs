@@ -67,3 +67,13 @@ code {color: blue; !important}
 .admonition.danger { background: #e2e5e7 !important; }
 
 .note { background: #e2e5e7 !important; }
+
+/* Implements fix for right-floated images spilling over into next section, 
+  for example in /ui/horizon/login.md
+*/
+/* As described at https://www.w3schools.com/css/css_float_clear.asp */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}

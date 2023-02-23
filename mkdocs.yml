@@ -115,6 +115,7 @@ nav:
       - Exosphere Troubleshooting: ui/exo/troubleshooting.md
     - Horizon:
       - Overview: ui/horizon/intro.md
+      - Logging In: ui/horizon/login.md
       - Security Group Management: ui/horizon/security_group.md
       - Networks in Horizon: ui/horizon/network.md
       - SSH Keys in Horizon: ui/horizon/ssh_keys.md
@@ -126,7 +127,7 @@ nav:
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: ui/cli/clients.md
-      - Setting up openrc.sh: ui/cli/openrc.md
+      - Authentication (Logging In): ui/cli/auth.md
       - Using OpenStack command line:
         - Managing SSH Keys: ui/cli/managing-ssh-keys.md
         - Setting up a Security Group: ui/cli/security_group.md
