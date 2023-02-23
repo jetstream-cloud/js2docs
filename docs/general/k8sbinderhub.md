@@ -79,7 +79,7 @@ This script first creates `config.yaml` (and overwrites it, so keep your changes
 
 Connect to `https://binder.tg-xxx000000.projects.jetstream-cloud.org`, you should see the binder login page:
 
-![Binder login page](../../images/binderloginpage.png)
+![Binder login page](/images/binderloginpage.png)
 
 You can then test with one of the binder examples:
 
