@@ -127,7 +127,7 @@ nav:
     - CLI:
       - Overview: ui/cli/overview.md
       - Installing Openstack Clients: ui/cli/clients.md
-      - Setting up openrc.sh: ui/cli/openrc.md
+      - Authentication (Logging In): ui/cli/auth.md
       - Using OpenStack command line:
         - Managing SSH Keys: ui/cli/managing-ssh-keys.md
         - Setting up a Security Group: ui/cli/security_group.md
