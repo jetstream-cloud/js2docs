@@ -8,10 +8,12 @@ on:
 
 permissions:
   contents: read
+  pages: write
+  id-token: write
 
 # This allows a subsequently queued workflow run to interrupt previous runs
 concurrency:
-  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  group: 'pages'
   cancel-in-progress: true
 
 jobs:
@@ -33,3 +35,23 @@ jobs:
         
       - name: Show site dir
         run: ls ./site/
+
+  deploy:
+    needs: build_site
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+        
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          # Upload site dir
+          path: './site'
+          
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
