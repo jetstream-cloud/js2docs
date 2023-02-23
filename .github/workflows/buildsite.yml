@@ -1,0 +1,37 @@
+name: 'Publish preview site on push to main'
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+    - main
+
+permissions:
+  contents: read
+
+# This allows a subsequently queued workflow run to interrupt previous runs
+concurrency:
+  group: '${{ github.workflow }} @ ${{ github.event.pull_request.head.label || github.head_ref || github.ref }}'
+  cancel-in-progress: true
+
+jobs:
+  build_site:
+    runs-on: ubuntu-latest
+    outputs:
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v4.5.0
+        
+      - name: Setup mkdocs
+        run: pip3 install mkdocs
+        
+      - name: Build site directory with mkdocs
+        id: buildsite
+        run: mkdocs build
+        
+      - name: Show site dir
+        run: ls ./site/
