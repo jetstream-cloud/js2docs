@@ -2,7 +2,7 @@
 
 All allocations receive 1 TB of storage alloation by default. You can use this storage quota in the form of volumes or manila shares. **[LINK MANILA INFO HERE]**
 
-All of the commands below assume that you have an [Openstack Client](clients.md) installed and a working [openrc](openrc.md) file.
+All of the commands below assume that you have an [Openstack Client](clients.md) installed and a working [openrc](auth.md) file.
 
 To view any volumes you might have:
 

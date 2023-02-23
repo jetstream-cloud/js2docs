@@ -1,20 +1,46 @@
-## Setting up application credentials and openrc.sh for the Jetstream2 CLI
+# Authenticating Against the OpenStack CLI (Logging In)
 
-### New openrc format for Jetstream2 CLI!
+!!! note "New openrc format for Jetstream2 CLI!"
+    One of the key changes to using Jetstream2's command line interface (CLI) is that it uses ACCESS credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
 
-One of the key changes to using Jetstream2's command line interface (CLI) is that it uses ACCESS credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
+The OpenStack <abbr title="Command-Line Interface">CLI</abbr> expects certain environment variables to be set when issuing commands; these environment variables are used to provide information/context about authenticating to the OpenStack API, for example where to find it (`$OS_AUTH_URL`) and what authentication method to use (`$OS_AUTH_TYPE`). If these are not properly provided, you might see a message like `Missing value auth-url required for auth plugin password`.
 
-> **Please make sure to source the new Jetstream2 openrc in a fresh terminal session. If you invoke it in a session that's had another openrc sourced, you'll get an error like this:**
-*Error authenticating with application credential: Application credentials cannot request a scope.* Other troubleshooting items may be found [here](troubleshooting.md)
-{: .note}
+The easiest way to provide authentication information is by using an `openrc.sh` script:
+```
+source openrc-file-name
+```
 
-### Openrc files are allocation-specific
+If you do not already have an `openrc` file, the next sections will walk you through how to create one.
+
+---
+
+## About openrc.sh files
+
+#### Openrc files are private
+
+Since they contain information about application credentials and secrets, just like a password or passphrase, you generally should not share your `openrc` file with anyone. 
+
+Projects with multiple users should ideally have a unique application credential and corresponding `openrc` for **every user and every machine/client**! Following this practice can drastically reduce security risk and simplify the necessary response should the information in an `openrc` be compromised.
+
+#### Always source an openrc in a fresh terminal session!
+If you invoke it in a session that's had another openrc sourced (especially one for Jetstream1), you may get an error like this:
+
+```
+Error authenticating with application credential: Application credentials cannot request a scope.
+```
+
+Check your `.bashrc` file or any other similar ones to be sure an old `openrc` isn't being automatically sourced at login. Other troubleshooting items may be found [here](troubleshooting.md)
+
+#### Openrc files are allocation-specific
 
 Each allocation you wish to use from the command line will need its own application credential and openrc file.
 
-### You **CANNOT** use the openrc generator like in Jetstream1
+---
 
-The openrc generator on the Horizon right side (username) menu will NOT work properly with Jetstream2! Please use the process below to get your application credential based openrc file.
+## Setting up application credentials and openrc.sh for the Jetstream2 CLI
+
+!!! warning "You **CANNOT** use the openrc generator like in Jetstream1"
+    The openrc generator on the Horizon right side (username) menu will NOT work properly with Jetstream2! Please use the process below to get your application credential based openrc file.
 
 ### Using the Horizon dashboard to generate openrc.sh
 

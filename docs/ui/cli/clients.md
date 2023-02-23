@@ -40,7 +40,7 @@ Note: *Python3 is required*. This should already be installed by your operating 
 | Task 	| Command 	|
 |---	|---	|
 | Install the OpenStack clients 	| ```pip install python-openstackclient```<br><br>Additional clients that may also be useful depending on your custom needs are:<br>&nbsp;<br>```python-swiftclient, python-heatclient, python-magnumclient, python-manilaclient```<br><br>For current users, clients that you likely no longer need to install are:<br>```python-keystoneclient```, ```python-novaclient```, ```python-neutronclient```, ```python-cinderclient```, ```python-glanceclient``` 	|
-| Set up your OpenStack credentials<br> [See Setting up openrc.sh for details.](openrc.md){target=_blank} 	| ```source openrc.sh``` 	|
+| Set up your OpenStack credentials<br> [See Authentication (Logging In) for details.](auth.md){target=_blank} 	| ```source openrc.sh``` 	|
 | Test an Open Stack command 	| ```openstack flavor list``` 	|
 | Following future OpenStack updates,<br> all installed pip modules can be updated<br> with this command: 	| ```pip3 list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1 | xargs -n1 pip3 install -U ``` 	|
 |  	|  	|

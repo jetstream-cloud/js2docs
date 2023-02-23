@@ -16,19 +16,13 @@ There are many options and tools for using the OpenStack API from the command li
 
 You should be running the latest version of the clients.  We recommend using python-openstack >= 5.0 as it uses Python3 and removes the dependencies on the now deprecated Python2. See [Installing Openstack Clients](clients.md) for more information.
 
-The next thing you'll need to do before being able to do any CLI commands is have an appropriate *openrc* file.
+The next thing you'll need to do before being able to do any CLI commands is have an appropriate *openrc* file. See [Authentication (Logging In)](auth.md) for more information.
 
-<span style="color:red">Please note that openrc files on Jetstream2 require *application credentials*. Please refer to the [Jetstream2 Openrc File](openrc.md) page for information on generating an application credential and openrc file.
-
-##### Source the openrc:
-
-    source openrc-file-name
-
-You can also make the output look nicer in your terminal with the --fit-width option:
+You can make the output look nicer in your terminal with the --fit-width option:
 
     openstack image show Featured-Ubuntu20 --fit-width
 
-You can make that permanent by adding the following to your environment.
+Optionally, you can make that permanent by adding the following to your environment.
 
     export CLIFF_FIT_WIDTH=1
 
