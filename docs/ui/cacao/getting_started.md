@@ -6,30 +6,30 @@ Cacao is a space for you to organize and manage your Jetstream cloud resources. 
 
 ## 1. Login to Cacao
 
-Cacao uses Globus XSEDE credentials for identity
+CACAO uses Globus XSEDE credentials for identity
 
 !!! cacao-steps ""
 
-    1. In your browser, connect to [https://cacao.jetstream-cloud.org](https://cacao.jetstream-cloud.org) **<< coming soon**
-    2. Click "Sign-In".
-    3. If you are not currently logged into globus, you should select XSEDE
-    4. Enter your XSEDE login credentials
+    1. In your browser, connect to [https://cacao.jetstream-cloud.org](https://cacao.jetstream-cloud.org)
+    2. Click Sign-In button.
+    3. If you are not currently logged into ACCESS, you should select the "ACCESS-CI (XSEDE)" identity provider
+    4. Enter your ACCESS login credentials
     5. You may need to authenticate with your two-factor
+    6. Upon successful login, you will land into the CACAO dashboard
 
-    ![xsede login](images/globus-xsede-login.png){ width="75%" }
+    ![xsede login](images/cilogon-access-select-identity-provider.png){ width="75%" }
 
 ## 1. Add your Jetstream 2 credentials
 
-Access to any Jetstream 2 cloud will begin with adding your Openstack credentials, which may be different from your XSEDE credentials.
+Access to any Jetstream 2 cloud will begin with adding the OpenStack Application Credentials for your ACCESS project/allocation.
 
 !!! cacao-steps ""
     1. Click on the Credentials menu
     2. Click on Add Credential button
-    3. Select Jetstream Password Credential
-    4. Select Cloud
-    5. Enter Openstack Project Name; this is the default project to create resources
-    6. Enter your Openstack Username
-    7. Enter your Openstack Password
+    3. Select Cloud Credential
+    4. Select Jetstream 2
+    5. Click Next
+    6. Select the ACCESS allocation that you wish to import into CACAO (if you belong to multiple allocations, you can select multiple allocations)
     8. Click on the Add button
 
     ![add jetstream openstack password](images/credentials-jetstream-password.png){ width="75%" }

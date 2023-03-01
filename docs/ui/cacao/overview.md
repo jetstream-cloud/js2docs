@@ -4,7 +4,7 @@
 
 !!! note "INFO::Cacao is considered Alpha at this time"
 
-     Cacao is still considered in Alpha at this time</br>
+     Cacao is considered in Alpha at this time</br>
 
 ## Intro to Cacao
 <div class="cacao-overview"></div>
@@ -21,9 +21,6 @@
 * [Dashboard](dashboard.md)
 * [Deployments](deployments.md)
 * [Credentials](credentials.md)
-* [Choosing your allocation](alloc.md)
 * [Logging Into An Instance](login.md) (coming soon!)
-* [Storage](storage.md) (coming soon!)
 * Providers (coming soon!)
 * Templates (coming soon!)
-* Your Accout (coming soon!)
