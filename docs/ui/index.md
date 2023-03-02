@@ -6,10 +6,10 @@ Jetstream2 (JS2) supports a number of different interfaces for creating, deployi
 
     * [Exosphere](/ui/exo/exo)
     * [Horizon](/ui/horizon/intro)
-    * [Cacao (aka Atmsophere2)](/ui/cacao/overview)
+    * [CACAO](/ui/cacao/overview)
 
         !!! note ""
 
-            Cacao is still in development on JS2 and not in its final production state.
+            CACAO is still in development on JS2 and not in its final production state.
 
     * [OpenStack CLI](/ui/cli/overview)
