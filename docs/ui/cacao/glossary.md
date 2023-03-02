@@ -26,11 +26,6 @@ A deployment is one or more resources, such as instances, created on one or more
 **Instance**<br/>
 An instance is another name for a virtual machine or server (in Openstack)
 
-### <a name="M"></a>M
-
-**Meta cloud orchestration**<br/>
-The ability to provision resources in different types of clouds
-
 ### <a name="P"></a>P
 
 **Provider**<br/>

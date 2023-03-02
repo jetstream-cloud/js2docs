@@ -2,11 +2,11 @@
 
 # Cacao UI basics
 
-Welcome to Cacao, a multi-cloud orchestration service. Cacao helps transform research and education in a multi-cloud world. This guide will cover how to navigate the user interface of Cacao.
+Welcome to CACAO, a multi-cloud orchestration service. CACAO helps transform research and education in a multi-cloud world. This guide will cover how to navigate the user interface of CACAO.
 
 ## Sidebar
 
-The sidebar is the main navigation for the Cacao user interface.
+The sidebar is the main navigation for the CACAO user interface.
 
 ![navigation](images/navigation.png)
 

@@ -1,10 +1,10 @@
-![cacao logo](images/cacao-logo.png){ width=128px }[Cacao Overview](overview.md) &gg; Getting started for new users
+![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Getting started for new users
 
 # Getting started for new users
 
-Cacao is a space for you to organize and manage your Jetstream cloud resources. Once you obtain your Jetstream allocation, this guide will help you get started.
+CACAO is a space for you to organize and manage your Jetstream cloud resources. Once you obtain your Jetstream allocation, this guide will help you get started.
 
-## 1. Login to Cacao
+## 1. Login to CACAO
 
 CACAO uses Globus XSEDE credentials for identity
 
@@ -80,4 +80,4 @@ You can use Workspaces to organize your deployments.
 
     ![add deployment](images/deployment-set-parameters.png){ width="75%" }
 
-## 4. Learn about other Cacao features
+## 4. Learn about other CACAO features
