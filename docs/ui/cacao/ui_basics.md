@@ -1,6 +1,6 @@
-![cacao logo](images/cacao-logo.png){ width=128px }[Cacao Overview](overview.md) &gg; Cacao UI basics
+![cacao logo](images/cacao-logo.png){ width=128px }[Cacao Overview](overview.md) &gg; CACAO UI basics
 
-# Cacao UI basics
+# CACAO UI basics
 
 Welcome to CACAO, a multi-cloud orchestration service. CACAO helps transform research and education in a multi-cloud world. This guide will cover how to navigate the user interface of CACAO.
 
@@ -14,7 +14,7 @@ The sidebar is the main navigation for the CACAO user interface.
 
 The Home view provides a dashboard for your account, including a summary of your providers, allocation, and resources used
 
-![home](images/home.png)
+![home](images/home-dashboard.png)
 
 ### Deployments
 
@@ -28,17 +28,11 @@ Credentials provides access to your the various credentials used to access cloud
 
 ![credentials](images/credentials.png)
 
-### Storage (still baking)
+### Templates
 
-Storage displays your storage resources
+Templates provides information about templates that have been imported in the system and that are available for you to create deployments onto Jetstream2. You can only see templates that are available to you, whether public or private templates imported by you.
 
-### Providers (still baking)
-
-Providers displays details about your clouds.
-
-### Templates (still baking)
-
-Templates provides advanced users access to import or share templates they create.
+![templates](images/templates.png)
 
 ## Help
 

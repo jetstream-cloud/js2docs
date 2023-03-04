@@ -32,7 +32,7 @@ Access to any Jetstream 2 cloud will begin with adding the OpenStack Application
     6. Select the ACCESS allocation that you wish to import into CACAO (if you belong to multiple allocations, you can select multiple allocations)
     8. Click on the Add button
 
-    ![add jetstream openstack password](images/credentials-jetstream-password.png){ width="75%" }
+    ![add jetstream openstack password](images/credentials-jetstream2-allocations.png){ width="75%" }
 
 ## Add a Public SSH Key
 
@@ -47,19 +47,6 @@ SSH Keys are used to login to virtual machines (sometimes called 'servers' or 'i
     6. Click on the Add button
 
     ![add ssh key](images/credentials-public-ssh-key.png){ width="75%" }
-## 2. Create your first workspace
-
-You can use Workspaces to organize your deployments.
-
-!!! cacao-steps ""
-    1. Click on the Deployments menu
-    2. Click on the Add Workspace button
-    3. Enter your Workspace name
-    4. Enter a Description
-    5. Enter a Default Cloud, which is used to deploy your resources
-    6. Click on the Create Workspace Button
-
-    ![add workspace](images/workspace-add.png){ width="75%" }
 
 ## 3. Create your first deployment
 
@@ -67,12 +54,12 @@ You can use Workspaces to organize your deployments.
     1. Click on the Deployments menu
     2. Click on the Add Deployment button
     3. Select Workspace, then Next button
-    4. Select the "openstack-single-image-new" Template, then Next Button
-    5. Select your Openstack credential, then wait a few seconds for the project list to be retrieved
-    6. Select your Openstack project to launch your deployment
+    4. Select the "simple launch of one or more vms" Template, then Go Button
+    5. Select the region; if unsure, "IU" is the default
+    6. Click Next button
     7. Enter your deployment values
-       A. Deployment name
-       B. Select your image
+       A. Deployment Name
+       B. Select your Image
        C. Number of instances
        D. Size (also called 'flavor')
     8. Click Next button
@@ -80,4 +67,4 @@ You can use Workspaces to organize your deployments.
 
     ![add deployment](images/deployment-set-parameters.png){ width="75%" }
 
-## 4. Learn about other CACAO features
+## Congratulations on your first CACAO deployment!

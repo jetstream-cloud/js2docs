@@ -138,20 +138,17 @@ nav:
       - Storage Under the CLI: ui/cli/storage.md
       - Manila Shares in the CLI: ui/cli/manila.md
       - CLI Troubleshooting: ui/cli/troubleshooting.md
-    - Cacao (aka Atmosphere2):
+    - CACAO:
       - Overview: ui/cacao/overview.md
-      - What is Cacao: ui/cacao/intro.md
+      - What is CACAO: ui/cacao/intro.md
       - Glossary: ui/cacao/glossary.md
       - UI Basics: ui/cacao/ui_basics.md
       - Getting Started For New Cacao Users: ui/cacao/getting_started.md
       - Credentials: ui/cacao/credentials.md
-      - Workspaces: ui/cacao/workspaces.md
       - Deployments (Launching a VM): ui/cacao/deployments.md
-      - Choosing Your Allocation: ui/cacao/alloc.md
       - Logging Into An Instance: ui/cacao/login.md
       - Instance Management: ui/cacao/manage.md
-      - Storage: ui/cacao/storage.md
-      - Cacao Troubleshooting: ui/cacao/troubleshooting.md
+      - CACAO Troubleshooting: ui/cacao/troubleshooting.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
