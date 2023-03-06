@@ -145,10 +145,9 @@ nav:
       - UI Basics: ui/cacao/ui_basics.md
       - Getting Started For New Cacao Users: ui/cacao/getting_started.md
       - Credentials: ui/cacao/credentials.md
-      - Deployments (Launching a VM): ui/cacao/deployments.md
+      - Deployments: ui/cacao/deployments.md
+      - Templates: ui/cacao/templates.md
       - Logging Into An Instance: ui/cacao/login.md
-      - Instance Management: ui/cacao/manage.md
-      - CACAO Troubleshooting: ui/cacao/troubleshooting.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md

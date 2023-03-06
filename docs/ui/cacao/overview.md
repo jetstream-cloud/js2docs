@@ -18,9 +18,8 @@
 
 ## CACAO 101
 <div class="cacao-overview"></div>
-* [Dashboard](dashboard.md)
-* [Deployments](deployments.md)
 * [Credentials](credentials.md)
+* [Deployments](deployments.md)
 * [Templates](templates.md)
 * [Logging Into An Instance](login.md)
 * Providers (coming soon!)

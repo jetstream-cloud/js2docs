@@ -1,5 +1,7 @@
 ![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Getting started for new users
 
+[TOC]
+
 # Getting started for new users
 
 CACAO is a space for you to organize and manage your Jetstream cloud resources. Once you obtain your Jetstream allocation, this guide will help you get started.
@@ -19,7 +21,7 @@ CACAO uses Globus XSEDE credentials for identity
 
     ![xsede login](images/cilogon-access-select-identity-provider.png){ width="75%" }
 
-## 1. Add your Jetstream 2 credentials
+## 2. Add your Jetstream 2 credentials
 
 Access to any Jetstream 2 cloud will begin with adding the OpenStack Application Credentials for your ACCESS project/allocation.
 
@@ -34,7 +36,7 @@ Access to any Jetstream 2 cloud will begin with adding the OpenStack Application
 
     ![add jetstream openstack password](images/credentials-jetstream2-allocations.png){ width="75%" }
 
-## Add a Public SSH Key
+## 3. Add a Public SSH Key
 
 SSH Keys are used to login to virtual machines (sometimes called 'servers' or 'instances') after they are launched.
 
@@ -48,7 +50,7 @@ SSH Keys are used to login to virtual machines (sometimes called 'servers' or 'i
 
     ![add ssh key](images/credentials-public-ssh-key.png){ width="75%" }
 
-## 3. Create your first deployment
+## 4. Create your first deployment
 
 !!! cacao-steps ""
     1. Click on the Deployments menu
@@ -67,4 +69,4 @@ SSH Keys are used to login to virtual machines (sometimes called 'servers' or 'i
 
     ![add deployment](images/deployment-set-parameters.png){ width="75%" }
 
-## Congratulations on your first CACAO deployment!
+## 5. Congratulations on your first CACAO deployment!

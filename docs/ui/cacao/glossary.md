@@ -19,7 +19,7 @@ Continuous analysis is the ability to execute workflows triggered by events, suc
 ### <a name="D"></a>D
 
 **Deployment**<br/>
-A deployment is one or more resources, such as instances, created on one or more clouds.
+A deployment is a collection of one or more resources, such as instances and storage, created in a cloud.
 
 ### <a name="I"></a>I
 
@@ -39,7 +39,7 @@ A resource or cloud resource is a general term used for any object -- instance, 
 ### <a name="T"></a>T
 
 **Template**<br/>
-A template refers to a set of instructions or description of what cloud resources to create on a cloud. A template in Cacao requires a template engine to process the hte instructions or description. Currently, Cacao's primary templates for OpenStack use Hashicorp Terraform.
+A template refers to a set of instructions or a description of what cloud resources to create in a cloud. A template in CACAO requires a template engine to process these instructions. Currently, CACAO only support Hashicorp Terraform templates, including any embedded scripts or code that is supported through Terraform's [local-exec provisioner](https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec), such as Ansible.
 
 ### <a name="W"></a>W
 
