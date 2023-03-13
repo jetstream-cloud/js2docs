@@ -307,6 +307,8 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8svolumes/">Persistent Volumes in Kubernetes</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../general/k8sgpu/">GPUs in a K8s cluster</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/k8smanila/">Share data between JupyterHub users with Manila shares</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../../general/minikube/">Minikube</a>
@@ -356,7 +358,7 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="using-storage-under-the-cli">Using Storage Under the CLI<a class="headerlink" href="#using-storage-under-the-cli" title="Permanent link">&para;</a></h1>
-<p>All allocations receive 1 TB of storage alloation by default. You can use this storage quota in the form of volumes or manila shares. <strong>[LINK MANILA INFO HERE]</strong></p>
+<p>All allocations receive 1 TB of storage alloation by default. You can use this storage quota in the form of volumes or <a href="/ui/cli/manila.md">manila shares</a>.</p>
 <p>All of the commands below assume that you have an <a href="../clients/">Openstack Client</a> installed and a working <a href="../auth/">openrc</a> file.</p>
 <p>To view any volumes you might have:</p>
 <pre><code>openstack volume list
