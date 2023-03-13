@@ -183,6 +183,7 @@ nav:
       - Build a K8s cluster: general/k8scluster.md
       - Managing Applications with Kubernetes: general/k8smanage.md
       - Persistent Volumes in Kubernetes: general/k8svolumes.md
+      - GPUs in a K8s cluster: general/k8sgpu.md
       - Share data between JupyterHub users with Manila shares: general/k8smanila.md
       - Minikube: general/minikube.md
       - BinderHub on Kubernetes: general/k8sbinderhub.md
