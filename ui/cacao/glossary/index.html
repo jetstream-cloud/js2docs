@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,7 +343,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
+          <li>CACAO &raquo;</li>
       <li>Glossary</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/glossary.md"
@@ -373,13 +367,10 @@ An application credential, specifically an <a href="https://docs.openstack.org/k
 Continuous analysis is the ability to execute workflows triggered by events, such as data changes or code changes</p>
 <h3 id="d"><a name="D"></a>D<a class="headerlink" href="#d" title="Permanent link">&para;</a></h3>
 <p><strong>Deployment</strong><br/>
-A deployment is one or more resources, such as instances, created on one or more clouds.</p>
+A deployment is a collection of one or more resources, such as instances and storage, created in a cloud.</p>
 <h3 id="i"><a name="I"></a>I<a class="headerlink" href="#i" title="Permanent link">&para;</a></h3>
 <p><strong>Instance</strong><br/>
 An instance is another name for a virtual machine or server (in Openstack)</p>
-<h3 id="m"><a name="M"></a>M<a class="headerlink" href="#m" title="Permanent link">&para;</a></h3>
-<p><strong>Meta cloud orchestration</strong><br/>
-The ability to provision resources in different types of clouds</p>
 <h3 id="p"><a name="P"></a>P<a class="headerlink" href="#p" title="Permanent link">&para;</a></h3>
 <p><strong>Provider</strong><br/>
 A provider is another name for cloud or cloud provider, where cloud resources are created</p>
@@ -388,7 +379,7 @@ A provider is another name for cloud or cloud provider, where cloud resources ar
 A resource or cloud resource is a general term used for any object &ndash; instance, volume, container &ndash; in a cloud</p>
 <h3 id="t"><a name="T"></a>T<a class="headerlink" href="#t" title="Permanent link">&para;</a></h3>
 <p><strong>Template</strong><br/>
-A template refers to a set of instructions or description of what cloud resources to create on a cloud. A template in Cacao requires a template engine to process the hte instructions or description. Currently, Cacao&rsquo;s primary templates for OpenStack use Hashicorp Terraform.</p>
+A template refers to a set of instructions or a description of what cloud resources to create in a cloud. A template in CACAO requires a template engine to process these instructions. Currently, CACAO only support Hashicorp Terraform templates, including any embedded scripts or code that is supported through Terraform&rsquo;s <a href="https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec">local-exec provisioner</a>, such as Ansible.</p>
 <h3 id="w"><a name="W"></a>W<a class="headerlink" href="#w" title="Permanent link">&para;</a></h3>
 <p><strong>Workspace</strong><br/>
 A workspace is a way to group one or more deployments.</p>
@@ -396,7 +387,7 @@ A workspace is a way to group one or more deployments.</p>
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../intro/" class="btn btn-neutral float-left" title="What is Cacao"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../intro/" class="btn btn-neutral float-left" title="What is CACAO"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../ui_basics/" class="btn btn-neutral float-right" title="UI Basics">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 

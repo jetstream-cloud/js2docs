@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -417,7 +411,7 @@
 <td><code>pip install python-openstackclient</code><br><br>Additional clients that may also be useful depending on your custom needs are:<br>&nbsp;<br><code>python-swiftclient, python-heatclient, python-magnumclient, python-manilaclient</code><br><br>For current users, clients that you likely no longer need to install are:<br><code>python-keystoneclient</code>, <code>python-novaclient</code>, <code>python-neutronclient</code>, <code>python-cinderclient</code>, <code>python-glanceclient</code></td>
 </tr>
 <tr>
-<td>Set up your OpenStack credentials<br> <a href="../openrc/" target="_blank">See Setting up openrc.sh for details.</a></td>
+<td>Set up your OpenStack credentials<br> <a href="../auth/" target="_blank">See Authentication (Logging In) for details.</a></td>
 <td><code>source openrc.sh</code></td>
 </tr>
 <tr>
@@ -471,7 +465,7 @@
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../overview/" class="btn btn-neutral float-left" title="Overview"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../openrc/" class="btn btn-neutral float-right" title="Setting up openrc.sh">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../auth/" class="btn btn-neutral float-right" title="Authentication (Logging In)">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -502,7 +496,7 @@
       <span><a href="../overview/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../openrc/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../auth/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

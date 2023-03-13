@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,7 +343,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
+          <li>CACAO &raquo;</li>
       <li>UI Basics</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/ui_basics.md"
@@ -361,27 +355,24 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; Cacao UI basics</p>
-<h1 id="cacao-ui-basics">Cacao UI basics<a class="headerlink" href="#cacao-ui-basics" title="Permanent link">&para;</a></h1>
-<p>Welcome to Cacao, a multi-cloud orchestration service. Cacao helps transform research and education in a multi-cloud world. This guide will cover how to navigate the user interface of Cacao.</p>
+                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; CACAO UI basics</p>
+<h1 id="cacao-ui-basics">CACAO UI basics<a class="headerlink" href="#cacao-ui-basics" title="Permanent link">&para;</a></h1>
+<p>Welcome to CACAO, a multi-cloud orchestration service. CACAO helps transform research and education in a multi-cloud world. This guide will cover how to navigate the user interface of CACAO.</p>
 <h2 id="sidebar">Sidebar<a class="headerlink" href="#sidebar" title="Permanent link">&para;</a></h2>
-<p>The sidebar is the main navigation for the Cacao user interface.</p>
+<p>The sidebar is the main navigation for the CACAO user interface.</p>
 <p><img alt="navigation" src="../images/navigation.png" /></p>
 <h3 id="home">Home<a class="headerlink" href="#home" title="Permanent link">&para;</a></h3>
 <p>The Home view provides a dashboard for your account, including a summary of your providers, allocation, and resources used</p>
-<p><img alt="home" src="../images/home.png" /></p>
+<p><img alt="home" src="../images/home-dashboard.png" /></p>
 <h3 id="deployments">Deployments<a class="headerlink" href="#deployments" title="Permanent link">&para;</a></h3>
 <p>Deployments displays your workspaces and deployemnts.</p>
 <p><img alt="deployments" src="../images/deployments.png" /></p>
 <h3 id="credentials">Credentials<a class="headerlink" href="#credentials" title="Permanent link">&para;</a></h3>
 <p>Credentials provides access to your the various credentials used to access clouds and resources, including ssh key and openstack credentials</p>
 <p><img alt="credentials" src="../images/credentials.png" /></p>
-<h3 id="storage-still-baking">Storage (still baking)<a class="headerlink" href="#storage-still-baking" title="Permanent link">&para;</a></h3>
-<p>Storage displays your storage resources</p>
-<h3 id="providers-still-baking">Providers (still baking)<a class="headerlink" href="#providers-still-baking" title="Permanent link">&para;</a></h3>
-<p>Providers displays details about your clouds.</p>
-<h3 id="templates-still-baking">Templates (still baking)<a class="headerlink" href="#templates-still-baking" title="Permanent link">&para;</a></h3>
-<p>Templates provides advanced users access to import or share templates they create.</p>
+<h3 id="templates">Templates<a class="headerlink" href="#templates" title="Permanent link">&para;</a></h3>
+<p>Templates provides information about templates that have been imported in the system and that are available for you to create deployments onto Jetstream2. You can only see templates that are available to you, whether public or private templates imported by you.</p>
+<p><img alt="templates" src="../images/templates.png" /></p>
 <h2 id="help">Help<a class="headerlink" href="#help" title="Permanent link">&para;</a></h2>
 <p>Help provides access to help resources</p>
 <h2 id="your-account">Your Account<a class="headerlink" href="#your-account" title="Permanent link">&para;</a></h2>

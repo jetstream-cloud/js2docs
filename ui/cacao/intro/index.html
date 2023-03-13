@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/ui/cacao/intro/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>What is Cacao - Jetstream2 Documentation</title>
+    <title>What is CACAO - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link href="../../../css/custom.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "What is Cacao";
+        var mkdocs_page_name = "What is CACAO";
         var mkdocs_page_input_path = "ui/cacao/intro.md";
         var mkdocs_page_url = "/ui/cacao/intro/";
       </script>
@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">What is Cacao</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,8 +343,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
-      <li>What is Cacao</li>
+          <li>CACAO &raquo;</li>
+      <li>What is CACAO</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/intro.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -361,22 +355,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; What is Cacao</p>
-<h1 id="what-is-cacao">What is Cacao?<a class="headerlink" href="#what-is-cacao" title="Permanent link">&para;</a></h1>
-<p>Cacao is a multi cloud orchestration service for researchers and educators that eliminates the complexity of using multiple clouds. By focusing on getting stuff done, Cacao helps transform research and education in a multi-cloud world.</p>
-<p><img alt="cyverse logo" src="../images/cyverse-globe_dark-blue_64x54.png" />Cacao is built and maintained by <a href="https://www.cyverse.org">CyVerse</a>, the NSF research project that created Atmosphere. </p>
-<h2 id="why-cacao">Why Cacao?<a class="headerlink" href="#why-cacao" title="Permanent link">&para;</a></h2>
-<p>Cacao helps you use clouds with ease of use, flexibility, and collaboration.</p>
+                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">CACAO Overview</a> &gg; What is CACAO</p>
+<h1 id="what-is-cacao">What is CACAO?<a class="headerlink" href="#what-is-cacao" title="Permanent link">&para;</a></h1>
+<p>CACAO, Cloud Automation and Continuous Analysis Orchestration, is an orchestration service for researchers and educators that eliminates the complexity of using multiple clouds. By focusing on getting stuff done, CACAO helps transform research and education in a multi-cloud world.</p>
+<p><img alt="cyverse logo" src="../images/cyverse-globe_dark-blue_64x54.png" />CACAO is built and maintained by <a href="https://www.cyverse.org">CyVerse</a>, the NSF research project that created Atmosphere.</p>
+<h2 id="why-cacao">Why CACAO?<a class="headerlink" href="#why-cacao" title="Permanent link">&para;</a></h2>
+<p>CACAO helps you use clouds with ease of use, flexibility, and collaboration.</p>
 <h3 id="ease-of-use">Ease of use<a class="headerlink" href="#ease-of-use" title="Permanent link">&para;</a></h3>
-<p>Cacao makes it convenient to use your XSEDE Jetstream 2 allocation on any Jetstream cloud. You can organize your Openstack resources &ndash; servers, volumes, containers, and more &ndash; into workspaces. At the basic level, you can use Cacao just as you did with Atmosphere on Jetstream 1: launch a vm with the tools you use, do your work, and shutdown when you&rsquo;re done.</p>
+<p>CACAO makes it convenient to use your ACCESS Jetstream 2 allocation on any Jetstream cloud. You can organize your Openstack resources &ndash; servers, volumes, containers, and more &ndash; by project. You can use CACAO on Jetstream 2 to create simple deployments: launch a vm with the tools you use, do your work, and delete those resources when you&rsquo;re done. You can also use CACAO to create other more complex deployments that require the orchestration of mutiple servers and storage, such as a JupyterHub for a workshop or a Kubernetes cluster. CACAO already has some templates that are curated by CyVerse, or you can create your own templates.</p>
 <p><img alt="cacao home dashboard" src="../images/home-dashboard.png" /></p>
-<h3 id="flexibility-coming-soon">Flexibility (coming soon!)<a class="headerlink" href="#flexibility-coming-soon" title="Permanent link">&para;</a></h3>
-<p><img alt="something sweet coming soon" src="../images/SweetA.png" style="float: right;" width="128px" /> Cacao helps adapt the cloud to fit your needs. Under the hood, your cloud resources are created using pre-defined <a href="https://www.terraform.io/intro/index.html">Hashicorp Terraform templates</a>. If you don&rsquo;t know Terraform, don&rsquo;t worry &ndash; you don&rsquo;t need to know Terraform to use Cacao; however, you can create your own Openstack Terraform templates if you wish to level-up your Cacao workflow game. Future features in Cacao will include support for AWS/GCP/Azure+Terraform as well as non-Terraform-based templates, such as Kubernetes and Argo templates.</p>
-<p>Cacao will also allow you to activate your resources when your data or workflow code changes and shutdown your resources after executing your workflow, in a <a href="https://github.com/greenelab/continuous_analysis">Continuous Analysis</a> way.</p>
+<h3 id="flexibility">Flexibility<a class="headerlink" href="#flexibility" title="Permanent link">&para;</a></h3>
+<p>CACAO helps adapt the cloud to fit your needs. Under the hood, your cloud resources are created using pre-defined <a href="https://www.terraform.io/intro/index.html">Hashicorp Terraform templates</a>. If you don&rsquo;t know Terraform, don&rsquo;t worry &ndash; you don&rsquo;t need to know Terraform to use CACAO; however, you can create your own Openstack Terraform templates if you wish to level-up your CACAO workflow game. Future features in CACAO will include support for AWS/GCP/Azure Terraform as well as non-Terraform-based templates, such as native Kubernetes or Nextflow templates.</p>
+<p>CACAO will also allow you to activate your resources when your data or workflow code changes and shutdown your resources after executing your workflow, in a <a href="https://github.com/greenelab/continuous_analysis">Continuous Analysis</a> way.</p>
 <h3 id="collaboration-coming-soon">Collaboration (coming soon!)<a class="headerlink" href="#collaboration-coming-soon" title="Permanent link">&para;</a></h3>
-<p><img alt="something sweet coming soon" src="../images/SweetA.png" style="float: right" width="128px" /> Cacao makes collaboration in the cloud, less cloudy. You will be able share resources and workflows with the people you want. </p>
+<p><img alt="something sweet coming soon" src="../images/SweetA.png" style="float: right" width="128px" /> CACAO makes collaboration in the cloud, less cloudy. You will be able share resources and workflows with the people you want. </p>
 <h2 id="what-next">What next?<a class="headerlink" href="#what-next" title="Permanent link">&para;</a></h2>
-<p>If you are a new user to Cacao, <a href="../getting_started/">get started in using Cacao</a></p>
+<p>If you are a new user to CACAO, <a href="../getting_started/">get started in using Cacao</a></p>
               
             </div>
           </div><footer>

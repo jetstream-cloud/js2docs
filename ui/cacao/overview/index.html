@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,7 +343,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
+          <li>CACAO &raquo;</li>
       <li>Overview</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/overview.md"
@@ -361,43 +355,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h1 id="everything-you-wanted-to-know-about-cacao-to-do-more-research-in-jetstream2">Everything you wanted to know about Cacao to do more research in Jetstream2<a class="headerlink" href="#everything-you-wanted-to-know-about-cacao-to-do-more-research-in-jetstream2" title="Permanent link">&para;</a></h1>
+                <h1 id="everything-you-wanted-to-know-about-cacao-to-do-more-research-in-jetstream2">Everything you wanted to know about CACAO to do more research in Jetstream2<a class="headerlink" href="#everything-you-wanted-to-know-about-cacao-to-do-more-research-in-jetstream2" title="Permanent link">&para;</a></h1>
 <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /></p>
 <div class="admonition note">
-<p class="admonition-title">INFO::Cacao is considered BETA at this time</p>
-<p>Cacao is still considered in BETA at this time and is not officially supported yet on Jetstream2</br></p>
+<p class="admonition-title">INFO::CACAO is considered Alpha at this time</p>
+<p>CACAO is considered in Alpha at this time</br></p>
 </div>
-<h2 id="intro-to-cacao">Intro to Cacao<a class="headerlink" href="#intro-to-cacao" title="Permanent link">&para;</a></h2>
+<h2 id="intro-to-cacao">Intro to CACAO<a class="headerlink" href="#intro-to-cacao" title="Permanent link">&para;</a></h2>
 <div class="cacao-overview"></div>
 <ul>
-<li><a href="../intro/">What is Cacao</a></li>
-<li><a href="../glossary/">Cacao glossary</a></li>
-<li><a href="../ui_basics/">Cacao UI basics</a></li>
+<li><a href="../intro/">What is CACAO</a></li>
+<li><a href="../glossary/">CACAO glossary</a></li>
+<li><a href="../ui_basics/">CACAO UI basics</a></li>
 </ul>
 <h2 id="getting-started-for-new-users">Getting started for new users<a class="headerlink" href="#getting-started-for-new-users" title="Permanent link">&para;</a></h2>
 <div class="cacao-overview"></div>
 <ul>
-<li><a href="../getting_started/">Getting started for new Cacao users</a></li>
+<li><a href="../getting_started/">Getting started for new CACAO users</a></li>
 </ul>
-<h2 id="cacao-101">Cacao 101<a class="headerlink" href="#cacao-101" title="Permanent link">&para;</a></h2>
+<h2 id="cacao-101">CACAO 101<a class="headerlink" href="#cacao-101" title="Permanent link">&para;</a></h2>
 <div class="cacao-overview"></div>
 <ul>
 <li><a href="../credentials/">Credentials</a></li>
-<li><a href="../workspaces/">Workspaces</a></li>
 <li><a href="../deployments/">Deployments</a></li>
-<li><a href="../alloc/">Choosing your allocation</a></li>
-<li><a href="../login/">Logging Into An Instance</a> (coming soon!)</li>
-<li><a href="../storage/">Storage</a> (coming soon!)</li>
+<li><a href="../templates/">Templates</a></li>
+<li><a href="../login/">Logging Into An Instance</a></li>
 <li>Providers (coming soon!)</li>
-<li>Templates (coming soon!)</li>
-<li>Your Accout (coming soon!)</li>
 </ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../../cli/troubleshooting/" class="btn btn-neutral float-left" title="CLI Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../intro/" class="btn btn-neutral float-right" title="What is Cacao">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../intro/" class="btn btn-neutral float-right" title="What is CACAO">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>

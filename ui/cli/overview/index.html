@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -374,19 +368,16 @@
 </ul>
 <h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h3>
 <p>You should be running the latest version of the clients.  We recommend using python-openstack &gt;= 5.0 as it uses Python3 and removes the dependencies on the now deprecated Python2. See <a href="../clients/">Installing Openstack Clients</a> for more information.</p>
-<p>The next thing you&rsquo;ll need to do before being able to do any CLI commands is have an appropriate <em>openrc</em> file.</p>
-<p><span style="color:red">Please note that openrc files on Jetstream2 require <em>application credentials</em>. Please refer to the <a href="../openrc/">Jetstream2 Openrc File</a> page for information on generating an application credential and openrc file.</p>
-<h5 id="source-the-openrc">Source the openrc:<a class="headerlink" href="#source-the-openrc" title="Permanent link">&para;</a></h5>
-<pre><code>source openrc-file-name
-</code></pre>
-<p>You can also make the output look nicer in your terminal with the &ndash;fit-width option:</p>
+<p>The next thing you&rsquo;ll need to do before being able to do any CLI commands is have an appropriate <em>openrc</em> file. See <a href="../auth/">Authentication (Logging In)</a> for more information.</p>
+<p>You can make the output look nicer in your terminal with the &ndash;fit-width option:</p>
 <pre><code>openstack image show Featured-Ubuntu20 --fit-width
 </code></pre>
-<p>You can make that permanent by adding the following to your environment.</p>
+<p>Optionally, you can make that permanent by adding the following to your environment.</p>
 <pre><code>export CLIFF_FIT_WIDTH=1
 </code></pre>
-<p>You&rsquo;ll then need to create a security group and network before launching your first VMs. More information may be found here:</p>
+<p>You&rsquo;ll then need to register an ssh key, create a security group and network before launching your first VMs. More information may be found here:</p>
 <ul>
+<li><a href="../managing-ssh-keys/">Register an SSH key</a></li>
 <li><a href="../security_group/">Create a security group</a></li>
 <li><a href="../network/">Create a network</a></li>
 <li><a href="../launch/">Create and launch a VM</a></li>

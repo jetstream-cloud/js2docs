@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2 current"><a class="reference internal current" href="#">Using OpenStack command line</a>
     <ul class="current">
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -366,7 +360,7 @@
 <p>Secure shell (SSH) keys are crucial to securely accessing your virtual machines. Jetstream2 only supports ssh key access to CLI and Horizon virtual machines.</p>
 <p>You can only add a key pair to an instance at the time of its creation, not afterwards, so it is important not to overlook this step. You&rsquo;ll want to have a key pair created before hand and uploaded to the Jetstream2 cloud.</p>
 <p>While several formats are supported, we recommend using RSA or ED25519 format keys.</p>
-<p>Source your openrc if you haven&rsquo;t already! Refer to <a href="../openrc/" target="_blank">creating an openrc</a> if you still need to create an openrc file for Jetstream2. We&rsquo;re assuming it is <em>openrc.sh</em> for this example.</p>
+<p>Source your openrc if you haven&rsquo;t already! Refer to <a href="../auth/#setting-up-application-credentials-and-openrcsh-for-the-jetstream2-cli" target="_blank">Authentication (Logging In)</a> if you still need to create an openrc file for Jetstream2. We&rsquo;re assuming it is <em>openrc.sh</em> for this example.</p>
 <pre><code>source openrc.sh
 </code></pre>
 <h3 id="uploading-an-existing-key">Uploading an existing key<a class="headerlink" href="#uploading-an-existing-key" title="Permanent link">&para;</a></h3>
@@ -402,7 +396,7 @@ openstack keypair create --public-key id_ed25519.pub my-api-key
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../openrc/" class="btn btn-neutral float-left" title="Setting up openrc.sh"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../auth/" class="btn btn-neutral float-left" title="Authentication (Logging In)"><span class="icon icon-circle-arrow-left"></span> Previous</a>
         <a href="../security_group/" class="btn btn-neutral float-right" title="Setting up a Security Group">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
@@ -431,7 +425,7 @@ openstack keypair create --public-key id_ed25519.pub my-api-key
         </span>
     
     
-      <span><a href="../openrc/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../auth/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
       <span><a href="../security_group/" style="color: #fcfcfc">Next &raquo;</a></span>

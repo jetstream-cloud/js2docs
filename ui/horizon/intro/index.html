@@ -149,6 +149,8 @@
     <ul class="current">
                 <li class="toctree-l2 current"><a class="reference internal current" href="./">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -364,70 +358,10 @@
                 <h1 id="horizon">Horizon<a class="headerlink" href="#horizon" title="Permanent link">&para;</a></h1>
 <p>Horizon is a web-based GUI for interacting with the Openstack API. It is likely the most complete GUI for working with Openstack but isn&rsquo;t the fastest or most user-friendly. Almost all functionality that is available from the CLI is available in Horizon. <a href="../../exo/exo/">Exosphere</a> and <a href="../../cacao/intro/">Cacao</a> both provide subsets of Horizon functionality with more focus on ease of use.</p>
 <p>That said, there are times you may need the more complete features of Horizon instead of the other GUI interfaces. This documentation will cover the basics of launching, using, and managing instances, using various storage options in Horizon, using container orchestration engines, and other aspects of using Openstack.</p>
-<h3 id="logging-into-horizon">Logging into horizon<a class="headerlink" href="#logging-into-horizon" title="Permanent link">&para;</a></h3>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Login-Screen.png" width="50%" /></p>
-<ol>
-<li><strong>Navigate</strong></li>
-</ol>
-<ul>
-<li>Navigate to <a href="https://js2.jetstream-cloud.org">https://js2.jetstream-cloud.org</a></br>
-Make sure it says &ldquo;ACCESS CILogon&rdquo; in the Authenticate Using box.</li>
-</ul>
-<p></br></br></br></br></br></br></p>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-CILogin-Screen.png" width="50%" /></p>
-<ol start="2">
-<li><strong>CILogon Authentication</strong></li>
-</ol>
-<ul>
-<li>You will be directed to a CILogon page to permit authorization the first time and any time your are using a new browser or your credentials go stale.</br></br></li>
-<li>If you have linked institutional, Google, Orcid, or other credentials, you&rsquo;ll be able to use those to authenticate. <p></li>
-</ul>
-<p>We know <strong><em>ACCESS-CI</em></strong> credentials work correctly so we will show that in our example and recommend using those unless you are 100% sure you have linked credentials PREVIOUSLY in CILogon</p>
-<div class="admonition note">
-<p class="admonition-title">Other intstitution credentials</p>
-<p>Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these <a href="https://identity.access-ci.org/id-linking" target="_blank">Linking instructions</a> to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.</p>
-</div>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-CILogin-Auth-Screen.png" width="50%" /></p>
-<ol start="3">
-<li><strong>ACCESS credentials</strong></li>
-</ol>
-<ul>
-<li>The next page should be the login screen for your credentials. We&rsquo;re showing the ACCESS login screen as our example.</li>
-</ul>
-<p></br></br></br></br></br></br></p>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-Access-Duo-Screen.png" width="50%" /></p>
-<ol start="4">
-<li><strong>Multi Factor Authentication</strong></li>
-</ol>
-<ul>
-<li>If you&rsquo;re using multi-factor authentication with your credentials as ACCESS does, you&rsquo;ll likely get a Duo or an Authenticator screen here.</li>
-</ul>
-<p></br></br></br></br></br></br></br></p>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Home.png" width="50%" /></p>
-<ol start="5">
-<li><strong>Horizon Dashboard</strong></li>
-</ol>
-<ul>
-<li>You should be at the Horizon Dashboard home now.</li>
-</ul>
-<p></br></br></br></br></br></br></br></br></p>
-<hr />
-<p><img _=";" align="right" alt="" src="/images/JS2-Horizon-Change-Projects.png" width="50%" /></p>
-<ol start="6">
-<li><strong>Project</strong></li>
-</ol>
-<ul>
-<li>If you are on multiple ACCESS allocations, you&rsquo;ll want to verify you&rsquo;re using the correct one and change to the correct one if you are not. </br></br>You do that by clicking at the top left next to the Jetstream2 logo where it has <code>ACCESS * AAA000000 * IU</code>. That will show allocations under &ldquo;Projects&rdquo;.</li>
-</ul>
-<p></br></br></br></br></p>
 <hr />
 <h3 id="getting-started-with-horizon">Getting started with Horizon<a class="headerlink" href="#getting-started-with-horizon" title="Permanent link">&para;</a></h3>
 <ul>
+<li><a href="../login/">Logging in</a></li>
 <li><a href="../security_group/">Creating and managing security groups</a></li>
 <li><a href="../network/">Creating networks</a></li>
 <li><a href="../launch/">Launching an instance</a></li>
@@ -441,7 +375,7 @@ Make sure it says &ldquo;ACCESS CILogon&rdquo; in the Authenticate Using box.</l
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
         <a href="../../exo/troubleshooting/" class="btn btn-neutral float-left" title="Exosphere Troubleshooting"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../security_group/" class="btn btn-neutral float-right" title="Security Group Management">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../login/" class="btn btn-neutral float-right" title="Logging In">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -472,7 +406,7 @@ Make sure it says &ldquo;ACCESS CILogon&rdquo; in the Authenticate Using box.</l
       <span><a href="../../exo/troubleshooting/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../security_group/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../login/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

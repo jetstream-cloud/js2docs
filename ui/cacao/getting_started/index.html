@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,7 +343,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
+          <li>CACAO &raquo;</li>
       <li>Getting Started For New Cacao Users</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/getting_started.md"
@@ -361,37 +355,49 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; Getting started for new users</p>
+                <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">CACAO Overview</a> &gg; Getting started for new users</p>
+<div class="toc">
+<ul>
+<li><a href="#getting-started-for-new-users">Getting started for new users</a><ul>
+<li><a href="#1-login-to-cacao">1. Login to CACAO</a></li>
+<li><a href="#2-add-your-jetstream-2-credentials">2. Add your Jetstream 2 credentials</a></li>
+<li><a href="#3-add-a-public-ssh-key">3. Add a Public SSH Key</a></li>
+<li><a href="#4-create-your-first-deployment">4. Create your first deployment</a></li>
+<li><a href="#5-congratulations-on-your-first-cacao-deployment">5. Congratulations on your first CACAO deployment!</a></li>
+</ul>
+</li>
+</ul>
+</div>
 <h1 id="getting-started-for-new-users">Getting started for new users<a class="headerlink" href="#getting-started-for-new-users" title="Permanent link">&para;</a></h1>
-<p>Cacao is a space for you to organize and manage your Jetstream cloud resources. Once you obtain your Jetstream allocation, this guide will help you get started.</p>
-<h2 id="1-login-to-cacao">1. Login to Cacao<a class="headerlink" href="#1-login-to-cacao" title="Permanent link">&para;</a></h2>
-<p>Cacao uses Globus XSEDE credentials for identity</p>
+<p>CACAO is a space for you to organize and manage your Jetstream cloud resources. Once you obtain your Jetstream allocation, this guide will help you get started.</p>
+<h2 id="1-login-to-cacao">1. Login to CACAO<a class="headerlink" href="#1-login-to-cacao" title="Permanent link">&para;</a></h2>
+<p>CACAO uses Globus XSEDE credentials for identity</p>
 <div class="admonition cacao-steps">
 <ol>
-<li>In your browser, connect to <a href="https://cacao.jetstream-cloud.org">https://cacao.jetstream-cloud.org</a> <strong>&lt;&lt; coming soon</strong></li>
-<li>Click &ldquo;Sign-In&rdquo;.</li>
-<li>If you are not currently logged into globus, you should select XSEDE</li>
-<li>Enter your XSEDE login credentials</li>
+<li>In your browser, connect to <a href="https://cacao.jetstream-cloud.org">https://cacao.jetstream-cloud.org</a></li>
+<li>Click Sign-In button.</li>
+<li>If you are not currently logged into ACCESS, you should select the &ldquo;ACCESS-CI (XSEDE)&rdquo; identity provider</li>
+<li>Enter your ACCESS login credentials</li>
 <li>You may need to authenticate with your two-factor</li>
+<li>Upon successful login, you will land into the CACAO dashboard</li>
 </ol>
-<p><img alt="xsede login" src="../images/globus-xsede-login.png" width="75%" /></p>
+<p><img alt="xsede login" src="../images/cilogon-access-select-identity-provider.png" width="75%" /></p>
 </div>
-<h2 id="1-add-your-jetstream-2-credentials">1. Add your Jetstream 2 credentials<a class="headerlink" href="#1-add-your-jetstream-2-credentials" title="Permanent link">&para;</a></h2>
-<p>Access to any Jetstream 2 cloud will begin with adding your Openstack credentials, which may be different from your XSEDE credentials.</p>
+<h2 id="2-add-your-jetstream-2-credentials">2. Add your Jetstream 2 credentials<a class="headerlink" href="#2-add-your-jetstream-2-credentials" title="Permanent link">&para;</a></h2>
+<p>Access to any Jetstream 2 cloud will begin with adding the OpenStack Application Credentials for your ACCESS project/allocation.</p>
 <div class="admonition cacao-steps">
 <ol>
 <li>Click on the Credentials menu</li>
 <li>Click on Add Credential button</li>
-<li>Select Jetstream Password Credential</li>
-<li>Select Cloud</li>
-<li>Enter Openstack Project Name; this is the default project to create resources</li>
-<li>Enter your Openstack Username</li>
-<li>Enter your Openstack Password</li>
+<li>Select Cloud Credential</li>
+<li>Select Jetstream 2</li>
+<li>Click Next</li>
+<li>Select the ACCESS allocation that you wish to import into CACAO (if you belong to multiple allocations, you can select multiple allocations)</li>
 <li>Click on the Add button</li>
 </ol>
-<p><img alt="add jetstream openstack password" src="../images/credentials-jetstream-password.png" width="75%" /></p>
+<p><img alt="add jetstream openstack password" src="../images/credentials-jetstream2-allocations.png" width="75%" /></p>
 </div>
-<h2 id="add-a-public-ssh-key">Add a Public SSH Key<a class="headerlink" href="#add-a-public-ssh-key" title="Permanent link">&para;</a></h2>
+<h2 id="3-add-a-public-ssh-key">3. Add a Public SSH Key<a class="headerlink" href="#3-add-a-public-ssh-key" title="Permanent link">&para;</a></h2>
 <p>SSH Keys are used to login to virtual machines (sometimes called &lsquo;servers&rsquo; or &lsquo;instances&rsquo;) after they are launched.</p>
 <div class="admonition cacao-steps">
 <ol>
@@ -404,31 +410,18 @@
 </ol>
 <p><img alt="add ssh key" src="../images/credentials-public-ssh-key.png" width="75%" /></p>
 </div>
-<h2 id="2-create-your-first-workspace">2. Create your first workspace<a class="headerlink" href="#2-create-your-first-workspace" title="Permanent link">&para;</a></h2>
-<p>You can use Workspaces to organize your deployments.</p>
-<div class="admonition cacao-steps">
-<ol>
-<li>Click on the Deployments menu</li>
-<li>Click on the Add Workspace button</li>
-<li>Enter your Workspace name</li>
-<li>Enter a Description</li>
-<li>Enter a Default Cloud, which is used to deploy your resources</li>
-<li>Click on the Create Workspace Button</li>
-</ol>
-<p><img alt="add workspace" src="../images/workspace-add.png" width="75%" /></p>
-</div>
-<h2 id="3-create-your-first-deployment">3. Create your first deployment<a class="headerlink" href="#3-create-your-first-deployment" title="Permanent link">&para;</a></h2>
+<h2 id="4-create-your-first-deployment">4. Create your first deployment<a class="headerlink" href="#4-create-your-first-deployment" title="Permanent link">&para;</a></h2>
 <div class="admonition cacao-steps">
 <ol>
 <li>Click on the Deployments menu</li>
 <li>Click on the Add Deployment button</li>
 <li>Select Workspace, then Next button</li>
-<li>Select the &ldquo;openstack-single-image-new&rdquo; Template, then Next Button</li>
-<li>Select your Openstack credential, then wait a few seconds for the project list to be retrieved</li>
-<li>Select your Openstack project to launch your deployment</li>
+<li>Select the &ldquo;simple launch of one or more vms&rdquo; Template, then Go Button</li>
+<li>Select the region; if unsure, &ldquo;IU&rdquo; is the default</li>
+<li>Click Next button</li>
 <li>Enter your deployment values
-   A. Deployment name
-   B. Select your image
+   A. Deployment Name
+   B. Select your Image
    C. Number of instances
    D. Size (also called &lsquo;flavor&rsquo;)</li>
 <li>Click Next button</li>
@@ -436,7 +429,7 @@
 </ol>
 <p><img alt="add deployment" src="../images/deployment-set-parameters.png" width="75%" /></p>
 </div>
-<h2 id="4-learn-about-other-cacao-features">4. Learn about other Cacao features<a class="headerlink" href="#4-learn-about-other-cacao-features" title="Permanent link">&para;</a></h2>
+<h2 id="5-congratulations-on-your-first-cacao-deployment">5. Congratulations on your first CACAO deployment!<a class="headerlink" href="#5-congratulations-on-your-first-cacao-deployment" title="Permanent link">&para;</a></h2>
               
             </div>
           </div><footer>

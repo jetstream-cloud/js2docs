@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://docs.jetstream-cloud.org/ui/cacao/deployments/" />
       <link rel="shortcut icon" href="../../../img/favicon.ico" />
-    <title>Deployments (Launching a VM) - Jetstream2 Documentation</title>
+    <title>Deployments - Jetstream2 Documentation</title>
     <link rel="stylesheet" href="../../../css/theme.css" />
     <link rel="stylesheet" href="../../../css/theme_extra.css" />
         <link href="../../../css/custom.css" rel="stylesheet" />
@@ -13,7 +13,7 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Deployments (Launching a VM)";
+        var mkdocs_page_name = "Deployments";
         var mkdocs_page_input_path = "ui/cacao/deployments.md";
         var mkdocs_page_url = "/ui/cacao/deployments/";
       </script>
@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">CACAO</a>
     <ul class="current">
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2 current"><a class="reference internal current" href="./">Deployments</a>
                 </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -349,8 +343,8 @@
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
           <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
-      <li>Deployments (Launching a VM)</li>
+          <li>CACAO &raquo;</li>
+      <li>Deployments</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/deployments.md"
           class="icon icon-github"> Edit on GitHub</a>
@@ -362,14 +356,98 @@
             <div class="section" itemprop="articleBody">
               
                 <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; Deployments</p>
-<h1 id="deployments-launching-instances">Deployments (Launching instances)<a class="headerlink" href="#deployments-launching-instances" title="Permanent link">&para;</a></h1>
-<p><img alt="something sweet coming soon" src="../images/SweetA.png" /></p>
+<div class="toc">
+<ul>
+<li><a href="#deployments">Deployments</a><ul>
+<li><a href="#deployments-view">Deployments View</a><ul>
+<li><a href="#1-current-cloud">1. Current cloud</a></li>
+<li><a href="#2-current-allocation">2. Current allocation</a></li>
+<li><a href="#3-add-button">3. Add button</a></li>
+<li><a href="#4-deployment">4. Deployment</a></li>
+<li><a href="#5-deployment-summary">5. Deployment summary</a></li>
+<li><a href="#6-current-status">6. Current Status</a></li>
+<li><a href="#7-edit-deployment">7. Edit (Deployment)</a></li>
+<li><a href="#8-delete-deployment">8. Delete (Deployment)</a></li>
+</ul>
+</li>
+<li><a href="#deployment-details">Deployment Details</a><ul>
+<li><a href="#1-deployment-id">1. Deployment ID</a></li>
+<li><a href="#2-deployment-summary">2. Deployment summary</a></li>
+<li><a href="#3-deployment-operations">3. Deployment operations</a></li>
+<li><a href="#4-deployment-parameters">4. Deployment parameters</a></li>
+<li><a href="#5-resource-instance-details">5. Resource (instance) details</a></li>
+<li><a href="#6-resource-instance-operations">6. Resource (instance) operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h1 id="deployments">Deployments<a class="headerlink" href="#deployments" title="Permanent link">&para;</a></h1>
+<p>A deployment is a collection of one or more resources, such as instances and storage, created in a cloud. In a simple deployment, there might be one instance; in a more complex deployment example, there might be multiple instances, each with their own volumes, and a common shared storage.</p>
+<p>Unlike other cloud user interfaces, where cloud resources are generally created and deleted individually, CACAO provides the means to create a collection of resources through the use of orchestration templates. Currently, Hashicorp Terraform templates, and other templates that can be executed using the local-exec provisioner including Ansible, are only supported in CACAO. Future releases of CACAO will support other templates, including Kubernetes-native and Nextflow templates.</p>
+<h2 id="deployments-view">Deployments View<a class="headerlink" href="#deployments-view" title="Permanent link">&para;</a></h2>
+<p><img alt="deployments view list" src="../images/deployments-view.png" width="95%" /></p>
+<p>The above screenshot shows the view of the deployments within CACAO. From this screen, you can create new deployments, change your allocation, view your deployments and their statuses, and perform select actions. Each element in this screen is described in detail below.</p>
+<h3 id="1-current-cloud">1. Current cloud<a class="headerlink" href="#1-current-cloud" title="Permanent link">&para;</a></h3>
+<p>This select box shows the current cloud in use for new deployments or existing deployments being shown on the screen. Currently, Jetstream2 is the only cloud.</p>
+<h3 id="2-current-allocation">2. Current allocation<a class="headerlink" href="#2-current-allocation" title="Permanent link">&para;</a></h3>
+<p>This select box shows the current ACCESS allocation (or project) in use for new deployments or existing deployments being show on the screen. If you have more than one deployment, you can change your allocation (or project) using this select box.</p>
+<h3 id="3-add-button">3. Add button<a class="headerlink" href="#3-add-button" title="Permanent link">&para;</a></h3>
+<p>This button will start the deployment wizard to create a new deployment in this cloud and allocation.</p>
+<h3 id="4-deployment">4. Deployment<a class="headerlink" href="#4-deployment" title="Permanent link">&para;</a></h3>
+<p>Each deployment will have an entry in this view. You can click on a deployment to view its details. For more information, see <a href="#deployment-details">Deployment Details</a></p>
+<h3 id="5-deployment-summary">5. Deployment summary<a class="headerlink" href="#5-deployment-summary" title="Permanent link">&para;</a></h3>
+<p>Each deployment will have a deployment summary, containing the following information:</p>
+<ul>
+<li>deployment name</li>
+<li>the region within the cloud</li>
+<li>number of instances</li>
+<li>the template used for the deployment</li>
+<li>the date and time the deployment was updated</li>
+</ul>
+<h3 id="6-current-status">6. Current Status<a class="headerlink" href="#6-current-status" title="Permanent link">&para;</a></h3>
+<p>Each deployment will have a status. A status of &ldquo;active&rdquo; indicates the deployment is currently running.</p>
+<h3 id="7-edit-deployment">7. Edit (Deployment)<a class="headerlink" href="#7-edit-deployment" title="Permanent link">&para;</a></h3>
+<p>After a deployment is active, you can edit some of the configuration. Examples of parameters you can edit are changing the name of the deployment and increasing the number of instances.</p>
+<h3 id="8-delete-deployment">8. Delete (Deployment)<a class="headerlink" href="#8-delete-deployment" title="Permanent link">&para;</a></h3>
+<p>The Delete button for a deployment will delete all the resources, including instances and any storage, that were created as part of the deployment.</p>
+<h2 id="deployment-details">Deployment Details<a class="headerlink" href="#deployment-details" title="Permanent link">&para;</a></h2>
+<p><img alt="deployments view list" src="../images/deployment-details.png" width="95%" /></p>
+<p>The above screenshop shows the details of a deployment, which can contain one or more resources. From this screen, you can manage or view detailed information of a deployment including, the parameters used to create the deployment, perform deployment operations, or access the resources of a deployment. Each element of this view is described below.</p>
+<h3 id="1-deployment-id">1. Deployment ID<a class="headerlink" href="#1-deployment-id" title="Permanent link">&para;</a></h3>
+<p>Every deployment has a unique ID in CACAO. This can be used if you need to contact support.</p>
+<h3 id="2-deployment-summary">2. Deployment summary<a class="headerlink" href="#2-deployment-summary" title="Permanent link">&para;</a></h3>
+<p>The deployment summary on this screen is similar to the information contained in the deployments view. Additional information in this summar include start time, build time, and the template id for the deployment.</p>
+<h3 id="3-deployment-operations">3. Deployment operations<a class="headerlink" href="#3-deployment-operations" title="Permanent link">&para;</a></h3>
+<p>You can start, shelve, stop, and remove (delete) a deployment from these buttons. These operations are similar to those that you can perform in other user interfaces, but operate on all instances in a deployment.</p>
+<h3 id="4-deployment-parameters">4. Deployment parameters<a class="headerlink" href="#4-deployment-parameters" title="Permanent link">&para;</a></h3>
+<p>Expanding this section will expose the parameters used to configure the deployment.</p>
+<h3 id="5-resource-instance-details">5. Resource (instance) details<a class="headerlink" href="#5-resource-instance-details" title="Permanent link">&para;</a></h3>
+<p>Every resource created as part of the deployment will have summary information, which may differ on the type of resources. Instances will have the following information:</p>
+<ul>
+<li>name</li>
+<li>state</li>
+<li>resource type</li>
+<li>ID (unique to cacao)</li>
+<li>private ip address</li>
+<li>public ip address (openstack floating ip)</li>
+<li>image</li>
+<li>flavor</li>
+</ul>
+<h3 id="6-resource-instance-operations">6. Resource (instance) operations<a class="headerlink" href="#6-resource-instance-operations" title="Permanent link">&para;</a></h3>
+<p>If a resource has additional operations, they will be available in this section. Instances will have the following operations:</p>
+<ul>
+<li>web shell</li>
+<li>web desktop</li>
+<li>image (not currently available)</li>
+</ul>
               
             </div>
           </div><footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../workspaces/" class="btn btn-neutral float-left" title="Workspaces"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../alloc/" class="btn btn-neutral float-right" title="Choosing Your Allocation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="../credentials/" class="btn btn-neutral float-left" title="Credentials"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../templates/" class="btn btn-neutral float-right" title="Templates">Next <span class="icon icon-circle-arrow-right"></span></a>
     </div>
 
   <hr/>
@@ -397,10 +475,10 @@
         </span>
     
     
-      <span><a href="../workspaces/" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../credentials/" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="../alloc/" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="../templates/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

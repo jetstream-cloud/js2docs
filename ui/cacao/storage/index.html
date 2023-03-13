@@ -118,7 +118,7 @@
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">User Interfaces</span></p>
-              <ul class="current">
+              <ul>
                   <li class="toctree-l1"><a class="reference internal" href="../../">Overview</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="#">Exosphere</a>
@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Cacao (aka Atmosphere2)</a>
-    <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
+    <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2 current"><a class="reference internal current" href="./">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -348,8 +342,6 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../../.." class="icon icon-home" alt="Docs"></a> &raquo;</li>
-          <li>User Interfaces &raquo;</li>
-          <li>Cacao (aka Atmosphere2) &raquo;</li>
       <li>Storage</li>
     <li class="wy-breadcrumbs-aside">
         <a href="https://github.com/jetstream-cloud/js2docs/edit/master/docs/ui/cacao/storage.md"
@@ -362,15 +354,11 @@
             <div class="section" itemprop="articleBody">
               
                 <p><img alt="cacao logo" src="../images/cacao-logo.png" width="128px" /><a href="../overview/">Cacao Overview</a> &gg; Using Storage with Cacao</p>
-<h1 id="using-storage-with-cacao">Using Storage with Cacao<a class="headerlink" href="#using-storage-with-cacao" title="Permanent link">&para;</a></h1>
+<h1 id="using-storage-with-cacao">Using Storage with CACAO<a class="headerlink" href="#using-storage-with-cacao" title="Permanent link">&para;</a></h1>
 <p><img alt="something sweet coming soon" src="../images/SweetA.png" /></p>
               
             </div>
           </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href="../manage/" class="btn btn-neutral float-left" title="Instance Management"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-        <a href="../troubleshooting/" class="btn btn-neutral float-right" title="Cacao Troubleshooting">Next <span class="icon icon-circle-arrow-right"></span></a>
-    </div>
 
   <hr/>
 
@@ -397,10 +385,6 @@
         </span>
     
     
-      <span><a href="../manage/" style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-      <span><a href="../troubleshooting/" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

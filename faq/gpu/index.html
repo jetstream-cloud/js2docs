@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -369,6 +363,9 @@
 </div>
 <p>We will have to upgrade the compute nodes to resolve it. This is on the near-term timeline but we do not have a precise date at this time.</p>
 <p>In the meantime, please only use stop or shelve with GPU instances.</p>
+<h3 id="how-do-i-use-multiple-gpus-on-an-instance-for-my-research">How do I use multiple GPUs on an instance for my research?<a class="headerlink" href="#how-do-i-use-multiple-gpus-on-an-instance-for-my-research" title="Permanent link">&para;</a></h3>
+<p>The short answer is that you cannot use multiple GPUs on a single instance at this time. </p>
+<p>The longer answer is that this is a limitation of the NVIDIA GRID vGPU driver for our hypervisors. Basically, even with NVLINK present, the driver cannot gang multiple GPUs together into a single VM. Recent updates indicate that we may be able to use multiple <em>fractional</em> vGPUs on an instance. Engineers are currently looking into this and we will update this FAQ and the documentation overall accordingly if there is a means to do this.</p>
 <h3 id="centos-7-does-not-work-with-my-gpu">CentOS 7 does not work with my GPU<a class="headerlink" href="#centos-7-does-not-work-with-my-gpu" title="Permanent link">&para;</a></h3>
 <p>Due to issues with the NVIDIA GRID driver, we have discontinued support for GPUs using CentOS 7. We will be removing CentOS 7 from the featured images once we have a stable Rocky 9 build available.</p>
 <h3 id="my-gpu-is-not-usable-after-a-kernel-update">My GPU is not usable after a kernel update<a class="headerlink" href="#my-gpu-is-not-usable-after-a-kernel-update" title="Permanent link">&para;</a></h3>

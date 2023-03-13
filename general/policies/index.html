@@ -149,6 +149,8 @@
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/intro/">Overview</a>
                 </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/login/">Logging In</a>
+                </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/security_group/">Security Group Management</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/horizon/network/">Networks in Horizon</a>
@@ -173,7 +175,7 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/clients/">Installing Openstack Clients</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/openrc/">Setting up openrc.sh</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cli/auth/">Authentication (Logging In)</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="#">Using OpenStack command line</a>
     <ul>
@@ -201,11 +203,11 @@
                 </li>
     </ul>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="#">Cacao (aka Atmosphere2)</a>
+                  <li class="toctree-l1"><a class="reference internal" href="#">CACAO</a>
     <ul>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/overview/">Overview</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is Cacao</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/intro/">What is CACAO</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/glossary/">Glossary</a>
                 </li>
@@ -215,19 +217,11 @@
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/credentials/">Credentials</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/workspaces/">Workspaces</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments</a>
                 </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/deployments/">Deployments (Launching a VM)</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/alloc/">Choosing Your Allocation</a>
+                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/templates/">Templates</a>
                 </li>
                 <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/login/">Logging Into An Instance</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/manage/">Instance Management</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/storage/">Storage</a>
-                </li>
-                <li class="toctree-l2"><a class="reference internal" href="../../ui/cacao/troubleshooting/">Cacao Troubleshooting</a>
                 </li>
     </ul>
                   </li>
@@ -416,9 +410,15 @@ restrictions.</p>
 <p>Jetstream2 requires an active ACCESS allocation for access. If your allocation expires you will no longer be able to access Jetstream2 or your resources. Presently, ACCESS warns PIs monthly, starting at 3 months until allocation expiration, and at the time of expiration.</p>
 <p>Jetstream2 policy is that we will do the following when allocations expire:</p>
 <ul>
-<li>At <strong>expiration</strong> - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users</li>
+<li>At <strong>expiration</strong> or point where it becomes <strong>expiration</strong>- the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users</li>
 <li>If the allocation has not been renewed <em>(preferred)</em> or extended in <strong>10 days</strong>, all VMs on the allocation will be shelved and thus no longer accessible</li>
 <li>If the allocation has not been renewed <em>(preferred)</em> or extended in <strong>30 days</strong>, all resources (VMs, volumes, shares, images, etc) on the allocation will be destroyed and <em>will not be recoverable</em></li>
+</ul>
+<p><strong><em>Similar policies will apply for overdrawn allocations:</em></strong></p>
+<ul>
+<li>Once an allocation is <strong>overdrawn</strong> - - the allocation will be disabled on Jetstream2 and access is no longer possible to allocation users</li>
+<li>If the allocation has not been renewed on a larger allocation or additional credits transferred (if available) in <strong>10 days</strong>, all VMs on the allocation will be shelved and thus no longer accessible</li>
+<li>If the allocation has not been renewed on a larger allocation or additional credits transferred (if available) in <strong>30 days</strong>, all VMs on the allocation will be shelved and thus no longer accessible</li>
 </ul>
 <h3 id="ip-ipv4-floating-ip-policies">IP (IPv4 floating ip) Policies<a class="headerlink" href="#ip-ipv4-floating-ip-policies" title="Permanent link">&para;</a></h3>
 <p>Unlike Atmosphere on Jetstream1, floating ip numbers (also called public IPs) can be retained by an allocation for a virtual machine as long as needed under all Jetstream2 interfaces. As long as the IP number is in use by a virtual machine, whether active or not, it may be retained.</p>
