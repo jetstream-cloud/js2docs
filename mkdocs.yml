@@ -148,6 +148,7 @@ nav:
       - Credentials: ui/cacao/credentials.md
       - Deployments: ui/cacao/deployments.md
       - Templates: ui/cacao/templates.md
+      - Template Deployment Tutorials: ui/cacao/tutorials.md
       - Logging Into An Instance: ui/cacao/login.md
   - General VM Operations:
     - Security:
