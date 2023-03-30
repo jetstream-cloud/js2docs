@@ -20,6 +20,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 - [Deploy Kubernetes with kubespray](https://t.co/Hh8ZincbdN){target=_blank}
     - [Feedback via Github](https://t.co/3EXyrp0EEd){target=_blank}
 - [Deploy ProjectJupyter JupyterHub](https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub){target=_blank}
+- [Update Openstack credentials in Kubernetes](https://www.zonca.dev/posts/2023-03-23-update-openstack-credentials-kubernetes){target=_blank}, useful if the Application Credential generated for Kubernetes has expired.
 
 ---
 Some K8s basics :
