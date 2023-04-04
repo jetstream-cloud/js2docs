@@ -24,7 +24,7 @@ Choose a unique name (preferably a short name with no spaces or special characte
 
 This will be the base name for all resources created for the cluster, including networks, SSH keys, compute nodes, etc.
 
-For flavor choose "m1.small".
+For flavor choose "m3.small".
 
 Expand "Advanced Options".
 
