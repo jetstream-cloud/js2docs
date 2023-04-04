@@ -14,7 +14,7 @@ We will have to upgrade the compute nodes to resolve it. This is on the near-ter
 
 In the meantime, please only use stop or shelve with GPU instances.
 
-### I don't have GPU instances available to me when I go to launch an image
+### I don't have GPU instances available to me when I go to launch an instance
 
 Jetstream2 consists of [four distinct resources](../general/resources.md). You must explictly have access to the Jetstream2-GPU resource to access GPUs. Having access to Jetstream2 (CPU) does not give you access to GPUs. We also highly encourage you familiarize yourself with the [VM instance sizes/flavors](../general/vmsizes.md) and note the difference in burn rate (SU cost per hour).
 
