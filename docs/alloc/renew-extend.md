@@ -42,8 +42,8 @@ You may continue to renew your Explore, Discover, or Accelerate-sized allocation
 * Fill in the fields for the Request Information, the optional Opportunity Questions, and following sections.
 * At the very bottom, you'll select the ACCESS credits needed and then submit.
 * Once the initial renewal has been approved, you'll need to spend your ACCESS credits - please refer to the [Use credits overview page](https://allocations.access-ci.org/use-credits-overview){target=_blank} for more information.
-* To transfer credits from your renewal to a specific resource, you'll go to [My Allocations](https://allocations.access-ci.org/requests) page and select "Exchange" from the dropdown in the first column for your allocation.
+* To exchange credits from your renewal request to a specific resource, you'll go to [My Allocations](https://allocations.access-ci.org/requests) page and select "Exchange" from the dropdown in the first column for your allocation.
 
 !!! note "Request approval process"
 
-    **There are two requests with ACCESS -- renewals and credit transfers. Requests are typically reviewed within 1 to 2 business days. You'll receive notification from ACCESS Allocations on the status of your request once it has been reviewed by all service providers on the transfer. It may take up to four hours for your allocation to become active after the TRANSFER has been approved.**
+    **There are two requests with ACCESS -- renewals and credit exchanges. Requests are typically reviewed within 1 to 2 business days. You'll receive notification from ACCESS Allocations on the status of your request once it has been reviewed by all service providers on the transfer. It may take up to four hours for your allocation to become active after the EXCHANGE has been approved.**
