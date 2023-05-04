@@ -27,6 +27,8 @@ For Large Memory and GPU allocations, the vCPU core hour cost is 2x and 4x respe
 The reason for continuing to charge for VMs that are not in a usable state is that they still consume resorces if they are suspended or stopped. In those states, they still occupy allocable/usable space on the hypervisor, preventing other users from using those resources.
 {: .note}
 
+***If your VM is active, even if you are not logged in and using it, it is still being charged for use. If you do not wish to be charged, shelve your instance***
+
 !!! Note "Usage reporting"
 
      Usage reported to ACCESS is not in real time. There may be a delay of 12-24 hours for usage reporting.</br>
