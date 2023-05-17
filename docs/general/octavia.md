@@ -1,3 +1,8 @@
+<style>
+    img {
+        margin-left: 20px;
+    }
+</style>
 # Load Balancing with OpenStack Octavia
 
 When designing a web application/service, it is often useful to distribute incoming requests between a pool of multiple (normally identical) backend workers. This is usually done for two primary reasons:
@@ -53,14 +58,9 @@ You should now notice that the instances are serving their basic page in a backg
 
 ### 3. Create a load balancer
 
-![](/images/horizon-create-load-balancer.png){ align=right ; width=50% }
-
 [Log into Horizon](../ui/horizon/login.md) and, from the left-hand menu, select `Network`→`Load Balancers`. Click on the `+ Create Load Balancer` button.
 
-<!-- Prevents the right-floated image from spilling into the next section -->
-<!-- see https://www.w3schools.com/css/css_float_clear.asp -->
-&nbsp; 
-{: .clearfix}
+![](/images/horizon-create-load-balancer.png){width=500rem}
 
 #### 3a. Load Balancer Details
 In the first section ("Load Balancer Details"), enter the following options:
@@ -79,7 +79,7 @@ In the first section ("Load Balancer Details"), enter the following options:
 
 A listener describes what traffic your load balancer listens to. For instance, for a basic HTTP web server (like our example) would listen over HTTP port 80. For more information about each field, click the question mark icon in the top-right of the window. 
 
-![](/images/horizon-load-balancer-listener-details.png){width=75% }
+![](/images/horizon-load-balancer-listener-details.png){width=500rem }
 
 #### 3c. Pool Details
 
@@ -99,7 +99,12 @@ You can also add workers to the pool that aren't Jetstream2/OpenStack instances 
 
 #### 3e. Monitor Details
 
-***TODO***
+![](/images/horizon-load-balancer-health.png){ align=right ; width=50%}
+
+A health monitor is used by the load balancer to determine the operational state of pool members by sending out a "heartbeat" ping/request on a regular interval. If a worker fails to respond to the health check, requests are not routed to it.
+
+For our example, we want to set up a health monitor of type HTTP that `GET`s the root URL path (`/`) every 5 seconds; if the request times out or returns anything other than `200 OK` more than 3 times in a row, the pool member's status is flagged.
+{: .clearfix}
 
 ### 4. Assign the load balancer a floating IP
 
@@ -126,5 +131,28 @@ curl <floating-ip>
 
 Notice that since we selected `ROUND_ROBIN` as our algorithm, our sequential requests get rotated between the two workers, hence the alternating worker number in the reply.
 
-Thanks to page caching, visiting the load balancer's floating IP in a browser may not always display this alternating behavior as seen here, even though the round robin balancing is working properly.
+Thanks to page caching, visiting the load balancer's floating IP in a browser may not always display alternating messages as seen here, even though the round robin balancing is working properly.
 {:.note}
+
+What happens when one of the workers breaks, though? To simulate this, quickly suspend the `worker-node-2` instance or kill the `screen` session the page is being served by. We can observe two things:
+
+1. After a few seconds, the health monitor's check will fail, causing our pool's status to become `Degraded`. Also notice on the pool "Members" tab that `worker-node-2` has an operating status of `Error`. <br/>
+
+    ![](/images/horizon-load-balancer-pool-status.png){width=500rem}
+
+2. Since `worker-node-2` is down, all of our requests are now sent to `worker-node-1`:
+
+        curl <floating-ip>
+        <!DOCTYPE html><html><body><p>Hello from worker 1!</p></body></html>
+
+        curl <floating-ip>
+        <!DOCTYPE html><html><body><p>Hello from worker 1!</p></body></html>
+
+If we bring `worker-node-2` back online, we should see that it is picked back up automatically by the load balancer:
+```
+curl <floating-ip>
+<!DOCTYPE html><html><body><p>Hello from worker 1!</p></body></html>
+
+curl <floating-ip>
+<!DOCTYPE html><html><body><p>Hello from worker 2!</p></body></html>
+```
