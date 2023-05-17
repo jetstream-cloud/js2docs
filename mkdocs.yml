@@ -192,3 +192,4 @@ nav:
       - Advanced Terraform Topics: general/advanced_terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
     - Federating Gateways on Jetstream2: general/federating.md
+    - Load Balancing with OpenStack Octavia: general/octavia.md
