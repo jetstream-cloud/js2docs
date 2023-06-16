@@ -54,7 +54,7 @@ Inside `jetstream_kubespray`, choose a name for the cluster and copy from my tem
 
 also `export CLUSTER=yourclustername` is useful to add to the `app*openrc.sh`.
 
-### Get a projects.jetstream-cloud.org subdomain
+### Use a projects.jetstream-cloud.org subdomain
 
 One option is to use the Designate Openstack service deployed by Jetstream to get an automatically created domain for the instances.
 In this case the DNS name will be of the form:
@@ -66,12 +66,6 @@ where `PROJ` is the ID of your Jestream 2 allocation:
     export PROJ="xxx000000"
 
 The first part of the URL is the instance name, we shortened it removing `k8s-master` because domains too long do not work with Letsencrypt.
-
-Unfortunately the way Terraform creates the Openstack resources breaks the automatic assignment of a DNS record, however this can be easily fixed by disassociating and immediately reassociating the floating IP from the master node (and other nodes is useful):
-
-    export IP= #paste from the output of Terraform
-    openstack server remove floating ip $CLUSTER-1 $IP
-    openstack server add floating ip $CLUSTER-1 $IP
 
 After having executed Terraform, you can pip install on your local machine the package `python-designateclient` to check what records were created (mind the final period):
 
@@ -107,9 +101,9 @@ It is useful to save the IP into the `app*openrc.sh`, so that every time you loa
 ### Run Terraform
 
 Open and modify `cluster.tfvars`, choose your image (by default Ubuntu 20) and number of nodes and the flavor of the nodes, by default they are medium instances (`"4"`).
+See the entries marked as `REPLACE` and replace them according to the instructions provided.
 
 Paste the floating ip created previously into `k8s_master_fips`, unless you are using a projects.jetstream-cloud.org subdomain.
-Make also sure you add your auto allocated router ID, see instructions inside `cluster.tfvars`.
 
 Initialize Terraform:
 
