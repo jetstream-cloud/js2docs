@@ -4,7 +4,7 @@ This tutorial will explain how to install Kubernetes on Jetstream 2 relying on K
 
 Kubespray is a project built on top of Terraform, for creating Openstack resources, and Ansible, for configuring the Virtual Machines for Kubernetes.
 
-The latest Kubespray release v2.21.0 was published in January 2023, which installs Kubernetes v1.25.6, released in December 2022.
+Kubespray v2.21.0 was published in January 2023, which installs Kubernetes v1.25.6, released in December 2022.
 
 ## Create Jetstream Virtual machines with Terraform
 
