@@ -4,7 +4,7 @@ BinderHub is a kubernetes-based cloud service that allows users to share reprodu
 
 When pointed to a Github repository, it builds a Docker container from the metadata in that repository (for example a `requirements.txt` file), then it gives the user a live Jupyter Notebook session with this custom computing environment and the checked-out repository. The user can then browse the repository and execute Notebooks.
 
-On top of Kubernetes, it also needs a Container Registry to store the Docker containers it builds, in the following tutorial we rely on Google Cloud.
+On top of Kubernetes, it also needs a Container Registry to store the Docker containers it builds. Here, we rely on Google Cloud.
 
 ## Setup Kubernetes
 
@@ -40,25 +40,27 @@ Follow this [other tutorial](https://zonca.dev/2020/03/setup-https-kubernetes-le
 ## Configure the domains
 
 BinderHub requires 2 subdomains, one for BinderHub and one for JupyterHub.
-For the initial testing I recommend to use Jetstream 2 provided domains, once they are working it is easy to replace them with custom domains.
+For the initial testing, we recommend using Jetstream 2 provided domains. Once they are working it is easy to replace them with custom domains.
 
-Login to [the Jetstream 2 Horizon instance](https://js2.jetstream-cloud.org/){target=_blank}, choose the right allocation, click on DNS, Zones, choose the Zone which starts with `tg`, then click on "Create Record Set".
+Login to [the Jetstream 2 Horizon instance](https://js2.jetstream-cloud.org/){target=_blank}, choose the right allocation, click on DNS, Zones, choose the Zone which starts with your project name (e.g., `xxx000000.projects.jetstream-cloud.org.`, then click on "Create Record Set".
 
-Create a "A" record where name is `binder.tg-xxx000000.projects.jetstream-cloud.org` and record is the IP of your master instance. Create a second A record with the name `hub.tg-xxx000000.projects.jetstream-cloud.org` and the same record.
+Create a "A" record where name is `binder.xxx000000.projects.jetstream-cloud.org.` and record is the IP of your master instance. Create a second A record with the name `hub.xxx000000.projects.jetstream-cloud.org.` and the same record.
 
 These should be ready to be used in a few minutes.
 
 ## Install BinderHub with Helm
 
-Checkout the repository with the configuration files:
+Log in to your master node on Jetstream 2.
+
+Clone the following repository:
 
     git clone https://github.com/zonca/jupyterhub-deploy-kubernetes-jetstream/
 
-Enter the `binderhub` folder.
+`cd` to the `jupyterhub-deploy-kubernetes-jetstream/binderhub` folder.
 
 Follow the [instructions on how to create just the `secret.yaml` file](https://binderhub.readthedocs.io/en/latest/zero-to-binderhub/setup-binderhub.html){target=_blank}.
 
-The repository provides a template named `config_template.yaml` to create `config.yaml`, this file contains all of the configuration items needed to setup the following items, see the links for the relevant documentation:
+The repository provides a template named `config_template.yaml` to create `config.yaml`; this file contains all of the configuration items needed to setup the following items; see the links for the relevant documentation:
 
 * [BinderHub with Google Container Registry](https://binderhub.readthedocs.io/en/latest/zero-to-binderhub/setup-binderhub.html){target=_blank}
 * [Configure HTTPS ingress for BinderHub and JupyterHub](https://binderhub.readthedocs.io/en/latest/https.html){target=_blank}
@@ -77,12 +79,12 @@ This script first creates `config.yaml` (and overwrites it, so keep your changes
 
 ## Test the deployment
 
-Connect to `https://binder.tg-xxx000000.projects.jetstream-cloud.org`, you should see the binder login page:
+Connect to `https://binder.xxx000000.projects.jetstream-cloud.org`, you should see the binder login page:
 
 ![Binder login page](/images/binderloginpage.png)
 
 You can then test with one of the binder examples:
 
-`https://binder.tg-xxx000000.projects.jetstream-cloud.org/v2/gh/binder-examples/requirements/master`
+`https://binder.xxx000000.projects.jetstream-cloud.org/v2/gh/binder-examples/requirements/HEAD`
 
-This should build the container using the Docker-in-Docker pod, push it to the registry on Google Cloud, then spawn a Jupyter Notebook instance inside JupyterHub and redirect you to `https://hub.tg-xxx000000.projects.jetstream-cloud.org>.
+This should build the container using the Docker-in-Docker pod, push it to the registry on Google Cloud, then spawn a Jupyter Notebook instance inside JupyterHub and redirect you to `https://hub.xxx000000.projects.jetstream-cloud.org>.
