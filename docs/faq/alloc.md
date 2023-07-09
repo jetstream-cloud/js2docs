@@ -92,12 +92,11 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 
 !!! Note
 
-    For allocations that are about to expire or have expired, ***renewals are ALWAYS preferred over extensions***
-
-
-!!! Note
+    Supplements only add SUs. If you need more time, you need an extension or renewal (preferred).
 
     Extensions only add time. If you need more or different resources, you need to pursue a supplement.
+
+    For allocations that are about to expire or have expired, ***renewals are ALWAYS preferred over extensions***
 
 ---
 

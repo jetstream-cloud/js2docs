@@ -52,6 +52,26 @@ For CACAO, the default security group will be announced when it is available for
 
 ---
 
+### What is the *default* security group I can see in Horizon or from the CLI?
+
+The *default* security group that you can see from Horizon or the CLI is provided by OpenStack for every allocation. It contains default egress rules for all VMs on that allocation and is automatically applied to each VM.
+
+We highly recommend not changing the *default* security group at all. Security groups are additive, so you can create additional groups for the access you need and add them to your host at launch or at any time after launch.
+
+Please refer to the [CLI](/ui/cli/security_group) or [Horizon](/ui/horizon/security_group) for more information on managing security groups in those interfaces.
+
+### Is there any security benefit to creating a new network or subnet for VMs in my project?
+
+Unlike physical networking, there is no real advantage to "isolating" hosts on their own subnet or network. 
+
+All traffic is filtered on the hypervisor and must be explicitly allowed by security groups even if the two hosts are on the same neutron subnet.
+
+Only network traffic destined for ports on the specific hypervisor a VM is on will even make it to that hypervisor. Since the networking happens at a layer above the virtual machines, promiscuous mode sniffing will only reveal traffic that was already destined for the VM(s) in question.
+
+We recommend using the auto_allocated_network and auto_allocated_subnet_v4 that are automatically created for each allocation. If you do not specify a network or subnet when creating a VM, it should automatically use those via an OpenStack configuration/feature.
+
+---
+
 ### In Exosphere, there is a way to get a passphrase for any instance. Can I prevent other users on my allocation from accessing my instance(s)?
 
 The way Jetstream2 is currently architected, all users on an allocation have access to all resources on the allocation. By default, Exosphere hides some resources created by other users, but this is only a convenience and it cannot assure separation of access.

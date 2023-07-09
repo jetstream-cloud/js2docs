@@ -35,9 +35,13 @@ We are also introducing a new community discussion site on the Matrix communicat
 
 The ticketing system is still the preferred mechanism for official support. That is available via help@jetstream-cloud.org or the contact form [https://jetstream-cloud.org/contact/index.html](https://jetstream-cloud.org/contact/index.html){target=_blank} for any questions not covered in the JS2 documentation. 
 
+ACCESS isseus (accounts, passwords, 2FA, allocations, etc) are best handled via the ACCESS support form: [https://support.access-ci.org/open-a-ticket](https://support.access-ci.org/open-a-ticket){target=_blank}
+
+Jetstream2 issues may be opened via the ACCESS form, as well.
+
 ---
 
-### ACCESS/XSEDE User News and Announcements
+### ACCESS User News and Announcements
 
 ##### What Is ACCESS?
 

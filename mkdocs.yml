@@ -2,7 +2,7 @@ site_name: 'Jetstream2 Documentation'
 site_url: https://docs.jetstream-cloud.org/
 site_description: "Jetstream2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
-copyright: Copyright © 2022 The Trustees of Indiana University
+copyright: Copyright © 2023 The Trustees of Indiana University
 #site_favicon: 'images/Jetstream2_icon_64px.jpg'
 
 theme:
@@ -139,20 +139,16 @@ nav:
       - Storage Under the CLI: ui/cli/storage.md
       - Manila Shares in the CLI: ui/cli/manila.md
       - CLI Troubleshooting: ui/cli/troubleshooting.md
-    - Cacao (aka Atmosphere2):
+    - CACAO:
       - Overview: ui/cacao/overview.md
-      - What is Cacao: ui/cacao/intro.md
+      - What is CACAO: ui/cacao/intro.md
       - Glossary: ui/cacao/glossary.md
       - UI Basics: ui/cacao/ui_basics.md
       - Getting Started For New Cacao Users: ui/cacao/getting_started.md
       - Credentials: ui/cacao/credentials.md
-      - Workspaces: ui/cacao/workspaces.md
-      - Deployments (Launching a VM): ui/cacao/deployments.md
-      - Choosing Your Allocation: ui/cacao/alloc.md
+      - Deployments: ui/cacao/deployments.md
+      - Templates: ui/cacao/templates.md
       - Logging Into An Instance: ui/cacao/login.md
-      - Instance Management: ui/cacao/manage.md
-      - Storage: ui/cacao/storage.md
-      - Cacao Troubleshooting: ui/cacao/troubleshooting.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
@@ -187,6 +183,7 @@ nav:
       - Build a K8s cluster: general/k8scluster.md
       - Managing Applications with Kubernetes: general/k8smanage.md
       - Persistent Volumes in Kubernetes: general/k8svolumes.md
+      - GPUs in a K8s cluster: general/k8sgpu.md
       - Share data between JupyterHub users with Manila shares: general/k8smanila.md
       - Minikube: general/minikube.md
       - BinderHub on Kubernetes: general/k8sbinderhub.md
@@ -195,3 +192,4 @@ nav:
       - Advanced Terraform Topics: general/advanced_terraform.md
     - Virtual Clusters on Jetstream2: general/virtualclusters.md
     - Federating Gateways on Jetstream2: general/federating.md
+    - Load Balancing with OpenStack Octavia: general/octavia.md
