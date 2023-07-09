@@ -44,7 +44,7 @@ We needed to make a few modifications to `kubespray` to adapt it to Jetstream:
     git clone https://github.com/zonca/jetstream_kubespray
     git checkout -b branch_v2.21.0 origin/branch_v2.21.0
 
-See an [overview of my changes compared to the standard `kubespray` release 2.21.0](https://github.com/zonca/jetstream_kubespray/pull/21),
+See an [overview of my changes compared to the standard `kubespray` release 2.21.0](https://github.com/zonca/jetstream_kubespray/pull/21), compared to previous releases of this tutorial, now the changes in the Terraform recipes are extensive, the good news is that the deployment itself is simpler. We are having all networking handled automatically by Jetstream 2, i.e. instances are automatically assigned to the `auto_allocated_network`, `auto_allocated_router` and `auto_allocated_subnet`, instead of creating dedicated resources with Terraform.
 
 Inside `jetstream_kubespray`, choose a name for the cluster and copy from my template:
 
