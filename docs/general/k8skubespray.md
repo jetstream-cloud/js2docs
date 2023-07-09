@@ -1,10 +1,10 @@
 # Deploy Kubernetes on Jetstream 2 with Kubespray
 
-This tutorial will explain how to install Kubernetes on Jetstream 2 relying on Kubespray. The other strategy for deploying Kubernetes is Openstack Magnum, which being integrated in Openstack is generally easier, however, it is not operational on Jetstream 2 yet.
+This tutorial will explain how to install Kubernetes on Jetstream 2 relying on Kubespray.
 
 Kubespray is a project built on top of Terraform, for creating Openstack resources, and Ansible, for configuring the Virtual Machines for Kubernetes.
 
-Kubespray v2.21.0 was published in January 2023, which installs Kubernetes v1.25.6, released in December 2022.
+This work is based on Kubespray v2.21.0 which was published in January 2023, which installs Kubernetes v1.25.6, released in December 2022.
 
 ## Create Jetstream Virtual machines with Terraform
 
