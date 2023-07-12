@@ -103,3 +103,11 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 ####My PI got a Jetstream2 supplement added to our existing allocation but we cannot access Exosphere or Horizon
 
 > When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your [User Management page](https://allocations.access-ci.org/user_management){target=_blank} and select the appropriate allocation to manage.
+
+####I have an Explore ACCESS allocation but need to move to a larger Discover or Accelerate allocation size. How do I do that and keep my allocation number (and VMs/volumes in my current allocation)?
+
+ >When you are ready to move up to the next ACCESS Opportunity, please keep a few things in mind. 
+ 
+ 1. First make sure you use up all your ACCESS Credits. Please submit an Exchange Request if you have any remaining ACCESS Credits. 
+ 2. Next, you will want to focus on using any SUs you have left on the resources. 
+ 3. When you get close to using up all your SUs, please submit a ticket to the [ACCESS Allocations Team](https://access-ci.atlassian.net/servicedesk/customer/portal/2) when you have about 90% of the resources used. The Allocations Team will then help you move up to the next ACCESS Opportunity while keeping the same allocation number. 
