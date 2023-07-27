@@ -19,7 +19,7 @@ With the exception of Jetstream2 Storage, these resources may be allocated indiv
 
 #### Jetstream2 Storage
 
-Jetstream2 storage is an allocated resource. All allocations will be given a default storage amount (as noted on the [Jetstream2 Resources](../general/resources.md) page).
+Jetstream2 storage is an ACCESS-allocated resource. All allocations will be given a default storage amount (as noted on the [Storage](storage.md) page), and any needs beyond this initial quota require a discrete allocation on the "Indiana Jetstream2 Storage" resource. 
 
 This storage is usable by all users on that allocation so the PI may want to institute per user quotas or discuss proper usage etiquette with the members of their allocation. Jetstream2 staff will not institute per user storage quotas, with the exception of the Jetstream2 Trial Allocation.
 
