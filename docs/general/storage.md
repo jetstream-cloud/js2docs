@@ -37,9 +37,11 @@ Volume actions (method varies per interface):
 
 ### Cost and Size:
 
-While Volumes are available to facilitate research at no additional Service Unit charge, and may be requested during initial or supplemental Jetstream allocation requests, Jetstream is not primarily a storage service; large capacity storage is beyond the scope of Jetstream.
+While Volumes are available to facilitate research, Jetstream2 is not primarily a storage service; large capacity storage is beyond the scope of Jetstream2.
 
-Projects are limited to 10 volumes with an aggregate capacity of 1 TB by default. Adjustment of **storage quotas** (_volume count_ and _aggregate capacity_ up to your allocation max) can be requested via [the Jetstream2 contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}
+Projects are limited to 10 volumes with an aggregate capacity of 1 TB by default. Adjustment of **volume count quotas** can be requested via [the Jetstream2 contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}; however, storage capacity is an ACCESS-allocated resource (as noted on *[Jetstream2 Resources](resources.md)*). As with any allocated resource, Jetstream2 storage carries its own "balance" independent of your project's other amounts (including compute SU balances), and the proper way to request an allocation on this resource is through an ACCESS [exchange request](https://allocations.access-ci.org/use-credits-overview){target=_blank} or [supplement](../alloc/supplement.md).
+
+For more information about exchange rates and planning, see *[Budgeting for Common Usage Scenarios](../../alloc/budgeting/#storage)*.
 
 ### Project and Providers:
 

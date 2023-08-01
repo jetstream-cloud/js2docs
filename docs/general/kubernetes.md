@@ -3,11 +3,12 @@
 
 Kubernetes (K8s) is an open-source system for automating deployment, scaling, and management of containerized applications.
 
-More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/){target=_blank}
+More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/concepts/overview/what-is-kubernetes/){target=\_blank}
 
 ### Kubernetes topics
 
 - [Building a Kubernetes Cluster](./k8scluster.md)
+- [Deploy a Kubernetes Cluster with Kubespray](./k8skubespray.md)
 - [Managing applications with Kubernetes](./k8smanage.md)
 - [Persistent Volumes in Kubernetes](./k8svolumes.md)
 - [Share data using Manila](./k8smanila.md)
@@ -17,10 +18,8 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 
 ### Third Party Kubernetes topics
 
-- [Deploy Kubernetes with kubespray](https://t.co/Hh8ZincbdN){target=_blank}
-    - [Feedback via Github](https://t.co/3EXyrp0EEd){target=_blank}
-- [Deploy ProjectJupyter JupyterHub](https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub){target=_blank}
-- [Update Openstack credentials in Kubernetes](https://www.zonca.dev/posts/2023-03-23-update-openstack-credentials-kubernetes){target=_blank}, useful if the Application Credential generated for Kubernetes has expired.
+- [Deploy JupyterHub](https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub){target=\_blank}
+- [Update Openstack credentials in Kubernetes](https://www.zonca.dev/posts/2023-03-23-update-openstack-credentials-kubernetes){target=\_blank}, useful if the Application Credential generated for Kubernetes has expired.
 
 ---
 Some K8s basics :

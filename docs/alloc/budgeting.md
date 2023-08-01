@@ -16,7 +16,9 @@ Although needs will vary largely depending on the type of project at hand, there
 
 ### Storage
 
-As noted in the [Jetstream2 Resources article](../general/resources.md){target=_blank}, if you do not explicitly request storage, the default cap for allocations of 1 TB (1,000 GB) is included. If your project requires it, additional Jetstream2 storage is an ACCESS-marketplace-allocated resource and can be requested with an [exchange request](https://allocations.access-ci.org/use-credits-overview){target=_blank} at a rate of 1 ACCESS credit = 1 SU = 1 GB. Please note that all storage requests will require appropriate justification.
+As noted in the [Jetstream2 Resources article](../general/resources.md){target=_blank}, if you do not explicitly request storage, the default cap for allocations of 1 TB (1,000 GB) is included. If your project requires it, additional Jetstream2 storage is an ACCESS-marketplace-allocated resource and can be requested with an [exchange request](https://allocations.access-ci.org/use-credits-overview){target=_blank} at a rate of `1 ACCESS credit == 1 SU == 1 GB`. Please note that all storage requests will require appropriate justification.
+
+Also note that the default 1 TB quota is only a floor, and storage allocations are absolute. In other words, the default 1 TB is **replaced** by a discrete allocation, **not added** on top of it. For example, if a project has a Jetstream2 Storage allocation through ACCESS of 3,000 credits/SUs/GB, their total storage quota will be 3 TB (not `3 TB + 1 TB = 4 TB`). In this sense, preparing storage exchange requests is simple--just request the amount of total GB needed.
 
 ---
 
