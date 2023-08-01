@@ -9,7 +9,7 @@ The Jetstream2 primary cloud configuation features:
 * 100 Gbps network connectivity from the compute hosts to the cloud's internal network infrastructure
 * 2x100 Gbps uplinks from the cloud infrastructure to the data center infrastructure
 * 100 Gbps connectivity from the site infrastructure to the Internet2 backbone
-* 100 Gbps connectivity to the XSEDE research network via virtualized link
+* 100 Gbps connectivity to the ACCESS research network via virtualized link
 * Individual instances have full access to this infrastructure with no added speed limits.
 
 *It is important to note that connections coming from commercial/commodity internet will likely not be as fast as those coming from Internet2 sites.*
@@ -24,7 +24,7 @@ The Jetstream administration team reserves the right to release any IP addresses
 
 #### Network Security Policies:
 
-In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the instutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service ports (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way. Whether they are open by default will be dependent on which user interface you're launching your VM with.
+In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the institutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service ports (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way. Whether they are open by default will be dependent on which user interface you're launching your VM with.
 
 Please refer to the [Security FAQ](/faq/security.md#what-is-the-default-security-profile-for-jetstream2-vms) for additional information.
 
