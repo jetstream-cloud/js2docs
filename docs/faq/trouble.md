@@ -13,12 +13,6 @@ Troubleshooting Jetstream2 Interfaces:
 
 ## General Troubleshooting:
 
-### I can't ping or reach a public/floating IP from an internal, non-routed host
-
-This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.
-
-To communicate from an internal only Jetstream2 instance to an instance on Jetstream2 with a floating IP, you'll need to use the internal networking address or name.
-
 ### My instance/image that was migrated to a bootable volume won't mount on Exosphere
 
 Most instances that were migrated from Jetstream1 were partitioned whereas volumes on Jetstream2 are generally the entire device. What this means is that in almost all cases, migrated instances will have their information on */dev/sdb1* assuming it's the first volume you're attaching to an instance.
@@ -79,3 +73,9 @@ If you are affected, the only easy workaround is to use another web browser. You
     sudo apt install ./google-chrome-stable_current_amd64.deb
 
 Chrome can also be launched from the command-line by typing `google-chrome`. You can also launch it from the activity bar.
+
+### I can't ping or reach a public/floating IP from an internal, non-routed host
+
+This as a change in the network between Jetstream 1 and 2. You cannot presently ping a floating IP address from  internal, non-routable IPs. You can only to talk from non-routed nodes to bastion hosts and floating IPs only work from other routable hosts.
+
+To communicate from an internal only Jetstream2 instance to an instance on Jetstream2 with a floating IP, you'll need to use the internal networking address or name.
