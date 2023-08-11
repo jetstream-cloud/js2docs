@@ -158,6 +158,8 @@ nav:
         - Deploying Kubernetes: ui/cacao/deployment_kubernetes.md
         - Deploying VMs for a workshop: ui/cacao/deployment_vms_for_workshops.md
         - Deploying DADI (a community template): ui/cacao/deployment_dadi.md
+      - Advanced Topics:
+        - Importing a Terraform Template: ui/cacao/import_terraform_template.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md

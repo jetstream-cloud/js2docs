@@ -24,3 +24,14 @@
 * [Logging Into An Instance](login.md)
 * Providers (coming soon!)
 
+## Tutorials for existing templates
+* [Intro](tutorials.md)
+* [Deploying one or more instances](deployment_single_image.md)
+* [Deploying JupyterHub](deployment_jupyterhub.md)
+* [Deploying Kubernetes](deployment_kubernetes.md)
+* [Deploying VMs for a workshop](deployment_vms_for_workshops.md)
+* [Deploying DADI (a community template)](deployment_dadi.md)
+
+## Advanced topics
+<div class="cacao-overview"></div>
+* [Importing a terraform template](import_terraform_template.md)
