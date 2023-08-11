@@ -250,7 +250,7 @@ Once the `.cacao/metadata.json` and optionally the `.cacao/ui.json` have been cr
 
 To import a template, follow these steps
 
-0. **Download the `cacao` binary from https://gitlab.com/cyverse/cacao/-/packages**
+0. **Download the `cacao` binary from [https://gitlab.com/cyverse/cacao/-/packages/16741734](https://gitlab.com/cyverse/cacao/-/packages/16741734){target=_blank}**
 
 Once you download the binary appropriate for your system, you may want to rename the file to `cacao` and add the path to your system or user's `PATH` variable. If you don't update your PATH, you may need to prefix the binary with a relative or absolute path to properly use the cli tool e.g. `./cacao` or `/home/myusername/cacao`.
 
