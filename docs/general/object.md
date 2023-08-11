@@ -3,20 +3,18 @@
 The object store is presently experimental. It WILL be a production service in coming weeks/months, but is under active development presently. The object store is only available via Horizon and the CLI presently.
 {: .note}
 
-**Documentation will continue to evolve.**
-
-The Jetstream object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI). From the CLI, you can use the python-swiftclient or the aws s3api or compatible tools.
+The Jetstream2 object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI). From the CLI, you can use the python-swiftclient, the `aws s3api`, or compatible tools.
 
 *Horizon instructions will be coming soon. Though it does not appear that you can generate the EC2 credentials in Horizon.*
 
 #### Prerequisites
 
-If the you want to use s3 compatibility, you’ll need to generate EC2 credentials. This assumes you already have the python-openstackclient installed and have generated an application credential for the CLI.
+If the you want to use S3 compatibility, you’ll need to generate EC2 credentials via the OpenStack CLI.
 
-If you do not have an application credential openrc and CLI clients installed, please see these pages:
+If you do not have CLI clients installed and an application credential openrc, please see these pages:
 
-- [Creating an application credential and openrc on Jetstream2](https://docs.jetstream-cloud.org/ui/cli/openrc/){target=_blank}
-- [Installing Openstack Clients](https://docs.jetstream-cloud.org/ui/cli/clients/){target=_blank}
+- [Installing Openstack Clients](../ui/cli/clients.md){target=_blank}
+- [Authenticating Against the OpenStack CLI (Logging In)](../ui/cli/auth.md){target=_blank}
 
 Optionally, you'll want an AWS s3api client like the [aws command line interface reference client](https://aws.amazon.com/cli/){target=_blank}
 
