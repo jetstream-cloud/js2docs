@@ -144,12 +144,22 @@ nav:
       - Overview: ui/cacao/overview.md
       - What is CACAO: ui/cacao/intro.md
       - Glossary: ui/cacao/glossary.md
-      - UI Basics: ui/cacao/ui_basics.md
-      - Getting Started For New Cacao Users: ui/cacao/getting_started.md
-      - Credentials: ui/cacao/credentials.md
-      - Deployments: ui/cacao/deployments.md
-      - Templates: ui/cacao/templates.md
+      - The User Interface:
+        - Basics: ui/cacao/ui_basics.md
+        - Credentials: ui/cacao/credentials.md
+        - Deployments: ui/cacao/deployments.md
+        - Templates: ui/cacao/templates.md
       - Logging Into An Instance: ui/cacao/login.md
+      - Getting Started For New Cacao Users: ui/cacao/getting_started.md
+      - Tutorials:
+        - Intro: ui/cacao/tutorials.md
+        - Deploying one or more instances: ui/cacao/deployment_single_image.md
+        - Deploying JupyterHub: ui/cacao/deployment_jupyterhub.md
+        - Deploying Kubernetes: ui/cacao/deployment_kubernetes.md
+        - Deploying VMs for a workshop: ui/cacao/deployment_vms_for_workshops.md
+        - Deploying DADI (a community template): ui/cacao/deployment_dadi.md
+      - Advanced Topics:
+        - Importing a Terraform Template: ui/cacao/import_terraform_template.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
