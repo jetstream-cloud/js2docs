@@ -30,7 +30,7 @@ The process is that you as the PI will:
 
 > 1. [Create your user account](https://identity.access-ci.org/new-user){target=_blank}
 > 2. [Request an allocation/ACCESS credits](https://allocations.access-ci.org/opportunities){target=_blank}
-> 3. [Then you will "spend" those credits on Jetstream2 resources](https://allocations.access-ci.org/requests){target=_blank}
+> 3. [Then you will "spend" (exchange) those credits on Jetstream2 resources](https://allocations.access-ci.org/requests){target=_blank}
 > 4. [Have any colleagues or student researchers get their ACCESS accounts](https://identity.access-ci.org/new-user){target=_blank}
 > 5. [Add them to your allocation](https://allocations.access-ci.org/user_management){target=_blank}
 
