@@ -15,6 +15,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 - [Minikube](./minikube.md)
 - [Deploy BinderHub on Kubernetes](./k8sbinderhub.md)
 - [Deploy Kubernetes and JupyterHub with GPU support](./k8sgpu.md)
+- [Using Cacao on Jetstream2 for Kubernetes](../ui/cacao/intro.md)
 
 ### Third Party Kubernetes topics
 
