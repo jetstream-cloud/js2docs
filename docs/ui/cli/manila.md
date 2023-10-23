@@ -24,10 +24,10 @@ Then you should be able to proceed with the rest of the steps.
 
 ### 1. Create a share
 
-`openstack share create --name $manila-share-name cephfs $vol-size`
+`openstack share create --share-type cephfsnativetype --name $manila-share-name cephfs $vol-size`
 
 Example:
-`openstack share create --name collected-data-smith-lab cephfs 10`
+`openstack share create --share-type cephfsnativetype --name collected-data-smith-lab cephfs 10`
 
 Metadata for the share created above:
 
