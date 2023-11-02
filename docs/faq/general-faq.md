@@ -11,11 +11,11 @@ For specific FAQs, see the following pages:
 ---
 ## General FAQs
 
-### I'm getting a 401 error trying to log into Exosphere or Horizon
+### I'm getting an error trying to log into Exosphere or Horizon
 
 If you get an error that looks like this trying to log in to Exosphere or Horizon:
 
-````{"error":{"code":401,"message":"The request you have made requires authentication.","title":"Unauthorized"}}````
+> To use Jetstream2, your account must belong to an ACCESS allocation that is active on a Jetstream2 resource. Please visit https://docs.jetstream-cloud.org/faq/general-faq
 
 you need to confirm that you either are the PI of an allocation or are on a valid allocation. If you need to be added to an allocation, you'll need to contact the PI of that allocation to do this. We are unable to add users to allocations.
 
