@@ -14,6 +14,7 @@ Page contents:
 - [Deploying Single/Multiple VMs](#deploying-singlemultiple-vms)
 - [Deploying Multi-VM JupyterHub](#deploying-multi-vm-jupyterhub)
 - [Deploying Multi-VM Kubernetes Cluster](#deploying-multi-vm-kubernetes-cluster)
+- [Deploying Magic Castle](#deploying-magic-castle)
 - [Deploying DADI OpenStack Instace](#deploying-dadi-openstack-instace)
 - [Accessing your deployments](#accessing-your-deployments)
 
