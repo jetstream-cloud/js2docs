@@ -157,6 +157,7 @@ nav:
         - Deploying JupyterHub: ui/cacao/deployment_jupyterhub.md
         - Deploying Kubernetes: ui/cacao/deployment_kubernetes.md
         - Deploying VMs for a workshop: ui/cacao/deployment_vms_for_workshops.md
+        - Deploying Magic Castle (virtual slurm cluster): ui/cacao/deployment_magic_castle.md
         - Deploying DADI (a community template): ui/cacao/deployment_dadi.md
       - Advanced Topics:
         - Importing a Terraform Template: ui/cacao/import_terraform_template.md
