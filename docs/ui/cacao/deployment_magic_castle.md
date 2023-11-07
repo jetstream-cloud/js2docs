@@ -11,6 +11,23 @@ You will need to setup your the following before you deploy any cloud resource u
 
 Instructions on installing your first Jetstream cloud credential and adding  in CACAO can be found [here](https://docs.jetstream-cloud.org/ui/cacao/credentials/).
 
+Magic Castle requires several OpenStack resources, which may impact your quota limits. Here is a summary on minimum resources:
+
+1 floating IP
+3 security groups
+1 network
+1 subnet
+1 router
+3 volumes
+3 instances
+8 VCPUs
+7 neutron ports
+12 GB of RAM
+8 security rules
+80 GB of volume storage
+
+See [this page for more information on this limits](https://github.com/ComputeCanada/magic_castle/tree/main/docs#144-openstack). You may need to request a quota increase from Jetstream2 staff if you do not have enough quota.
+
 ## Instructions
 
 The steps below will guide you through the process of deploying a Magic Castle (virtual slurm cluster)
