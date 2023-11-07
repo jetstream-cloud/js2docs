@@ -1,4 +1,4 @@
-# Deploying Single/Multiple VMs
+# Deploying Magic Castle (virtual slurm cluster)
 
 [Magic Castle](https://docs.computecanada.ca/wiki/Magic_Castle), developed by the Digital Research Alliance of Canada (formerly Compute Canada), is a terraform template to deploy a virtual slurm cluster. This template has been adapted to launch easily in CACAO.
 
