@@ -64,6 +64,9 @@ The `parameters` field defines the input values that are configurable for the te
 * `description`, a short description of the parameter
 * `default`, the default value if the value for the parameter is empty or unset
 * `enum`, if defined, an enumerated list of values that may be used for the parameter
+* `required`, if set true, the parameter is should be input
+* `editable`, if set true, the parameter is editable via UI
+* `base64`, if set true, the parameter will have Base64 encoded value
 
 The following table shows the parameter types that may be used within the `parameters` field. Two parameter fields `instance_name` and `power_state` are unique fields that must be declared by name and are of type `string` -- future releases of CACAO will reference these parameters as parameter types, rather than by names.
 
