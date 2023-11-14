@@ -173,6 +173,8 @@ The `.cacao/ui.json` is an optional json file used to provide hints on the layou
 | `schema_version` | yes | string | should always be `"1"` | 
 | `author` | no | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | no | string | The author's email |
+| `description` | no | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `steps` | yes | array of steps | see below |
 
 The `steps` field defines an ordered array of steps in the deployment wizard, each step referring to a new view or page.
@@ -187,9 +189,11 @@ The following are types of ui elements that can be included in `items`:
 ```json
     {
         "name": "region",
-        "ui_label": "Choose Region"
+        "ui_label": "Choose Region",
+        "help_text": "Choose region where you want to run the instance on"
     }
 ```
+
 * **row**, a container allows one or more ui fields to exist in the same row of a page. A row will contain its own `items` property. An example row field:
 ```json
     {
