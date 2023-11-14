@@ -48,11 +48,14 @@ The `.cacao/metadata.json` is a required json file needed for CACAO to properly 
 | `author` | yes | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | yes | string | The author's email |
 | `description` | yes | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `template_type` | yes | string | The type of the template and typically captures the language and cloud combination. For Terraform that primarily runs on Openstack, use `openstack_terraform` |
 | `purpose` | yes | string | The purpose of the template, and typically captures the cloud and type of resources. This should be `openstack_compute`, though future purposes values will include storage |
+| `published_versions` | no | array of strings | The list of git releases of the template code that are compatible. By default, `main` branch is used. |
 | `cacao_pre_tasks` | no | array of values | reserved, not yet implemented |
 | `cacao_post_tasks` | no | array of values | reserved, not yet implemented |
 | `parameters` | yes | array of parameters | see below |
+| `filters` | no | array of values | reserved, not yet implemented |
 
 The `parameters` field defines the input values that are configurable for the template. A properties of a parameter can include the following:
 
