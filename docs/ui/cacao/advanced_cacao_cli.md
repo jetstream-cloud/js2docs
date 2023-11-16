@@ -62,7 +62,7 @@ Enter the auth token you get from browser:
 3. In your browser open the following URL (this is also echoed in the terminal, line #5): https://cacao.jetstream-cloud.org/api/user/login
 
 **WARNING!**
-> For the workshop, use the "ACCESS CI (XSEDE)" identity provider when you login.
+> It is recommended that you use the "ACCESS CI (XSEDE)" identity provider when you login, especially if you have any issues logging in. After creating your ACCESS CI identity, you should be able to login with [other linked identities](https://operations.access-ci.org/identity/id-linking).
 
 ![](images/access-ci-select-identity-provider2.png){ width="60%" }
 
