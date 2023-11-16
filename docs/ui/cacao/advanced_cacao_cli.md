@@ -95,4 +95,4 @@ $
 
 ### Login Option 2: Login with CACAO API token (coming soon!)
 
-This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option wwill be available soon.
+This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option will be available soon.
