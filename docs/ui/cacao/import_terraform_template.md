@@ -79,8 +79,14 @@ The following table shows the parameter types that may be used within the `param
 | `cacao_provider_project` | no | no | A string representing the OpenStack project |
 | `cacao_provider_region` | no | no | A string representing the OpenStack region, such as "IU" |
 | `cacao_provider_image` | no | no | A string representing the OpenStack image uuid |
+| `cacao_provider_image_name` | no | no | A string representing the OpenStack image name |
 | `cacao_provider_flavor` | no | no | A string representing the OpenStack image flavor  |
-| `cacao_username` | no | no | A string representing the CACAO username |
+| `cacao_username` | no | no | A string representing the CACAO username e.g. `myuser@access-ci.org` |
+| `cacao_username_unix` | no | no | A string representing the CACAO username without the at sign, if federated identity e.g `myuser` |
+| `cacao_user_ssh_key_all_json` | no | no | A string representing the all user's ssh key that would normally be injected into cloud-init in json format; use this if the template already provides or cannot use CACAO-defined cloud-init or `cacao_cloud_init` parameter |
+| `cacao_ssh_key` | no | no | CACAO's public ssh key, which may be needed for template provisioners or ansible. use this if your template already provides or cannot use a CACAO-defined cloud-init, which contains cacao's public ssh key, or the `cacao_cloud_init` parameter |
+| `cacao_white_list_cidr_json` | no | no | A string representing the cidr block that can be used to whitelist cacao ips, which is useful for configuring services like fail2ban |
+| `cacao_provider_project` | no | no | A string representing the OpenStack project |
 | `string` | no | no | a basic string type  |
 | `integer` | no | no | a basic integer type  |
 | `bool` | no | no | a basic boolean type, either `true` or `false`  |
