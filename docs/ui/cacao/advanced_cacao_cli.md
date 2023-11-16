@@ -1,6 +1,6 @@
 ![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Using the CACAO CLI
 
-# CACAO Command-Line Interrface
+# CACAO Command-Line Interface
 
 The CACAO Command-Line Interface (CLI) allows command-line users to interact with CACAO. The CLI is a Go program that can be installed on any system.
 
