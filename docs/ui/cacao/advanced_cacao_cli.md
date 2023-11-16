@@ -1,6 +1,6 @@
 ![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Using the CACAO CLI
 
-# CACAO Command-Line Interrface
+# CACAO Command-Line Interface
 
 The CACAO Command-Line Interface (CLI) allows command-line users to interact with CACAO. The CLI is a Go program that can be installed on any system.
 
@@ -8,8 +8,8 @@ The CACAO Command-Line Interface (CLI) allows command-line users to interact wit
 
 1. The CACAO CLI is a single binary that can be installed on any system. The most recent cli binaries can be downloaded from [the CACAO packages page on Gitlab](https://gitlab.com/cyverse/cacao/-/packages) or you can download from here:
 
-- [CACAO Darwin ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101908036/download)
-- [CACAO Darwin AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907995/download)
+- [CACAO Mac (Darwin) ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101908036/download)
+- [CACAO Mac (Darwin) AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907995/download)
 - [CACAO Windows AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907940/download)
 - [CACAO Linux ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101907892/download)
 - [CACAO Linux AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907877/download)
@@ -62,7 +62,7 @@ Enter the auth token you get from browser:
 3. In your browser open the following URL (this is also echoed in the terminal, line #5): https://cacao.jetstream-cloud.org/api/user/login
 
 **WARNING!**
-> It is recommended that you use the "ACCESS CI (XSEDE)" identity provider when you login, especially if you have any issues logging in. After creating your ACCESS CI identity, you should be able to login with [other linked identities](https://operations.access-ci.org/identity/id-linking).
+> It is recommended that you use the "ACCESS CI (XSEDE)" identity provider when you login, especially if you encounter any issues logging in. After creating your ACCESS CI identity, you should be able to login with [other linked identities](https://operations.access-ci.org/identity/id-linking).
 
 ![](images/access-ci-select-identity-provider2.png){ width="60%" }
 
@@ -95,4 +95,4 @@ $
 
 ### Login Option 2: Login with CACAO API token (coming soon!)
 
-This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option wwill be available soon.
+This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option will be available soon.
