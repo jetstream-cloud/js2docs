@@ -8,8 +8,8 @@ The CACAO Command-Line Interface (CLI) allows command-line users to interact wit
 
 1. The CACAO CLI is a single binary that can be installed on any system. The most recent cli binaries can be downloaded from [the CACAO packages page on Gitlab](https://gitlab.com/cyverse/cacao/-/packages) or you can download from here:
 
-- [CACAO Darwin ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101908036/download)
-- [CACAO Darwin AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907995/download)
+- [CACAO Mac (Darwin) ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101908036/download)
+- [CACAO Mac (Darwin) AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907995/download)
 - [CACAO Windows AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907940/download)
 - [CACAO Linux ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101907892/download)
 - [CACAO Linux AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907877/download)
