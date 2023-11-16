@@ -48,11 +48,14 @@ The `.cacao/metadata.json` is a required json file needed for CACAO to properly 
 | `author` | yes | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | yes | string | The author's email |
 | `description` | yes | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `template_type` | yes | string | The type of the template and typically captures the language and cloud combination. For Terraform that primarily runs on Openstack, use `openstack_terraform` |
 | `purpose` | yes | string | The purpose of the template, and typically captures the cloud and type of resources. This should be `openstack_compute`, though future purposes values will include storage |
+| `published_versions` | no | array of strings | The list of git releases of the template code that are compatible. By default, `main` branch is used. |
 | `cacao_pre_tasks` | no | array of values | reserved, not yet implemented |
 | `cacao_post_tasks` | no | array of values | reserved, not yet implemented |
 | `parameters` | yes | array of parameters | see below |
+| `filters` | no | array of values | reserved, not yet implemented |
 
 The `parameters` field defines the input values that are configurable for the template. A properties of a parameter can include the following:
 
@@ -61,6 +64,9 @@ The `parameters` field defines the input values that are configurable for the te
 * `description`, a short description of the parameter
 * `default`, the default value if the value for the parameter is empty or unset
 * `enum`, if defined, an enumerated list of values that may be used for the parameter
+* `required`, if set true, the parameter is should be input
+* `editable`, if set true, the parameter is editable via UI
+* `base64`, if set true, the parameter will have Base64 encoded value
 
 The following table shows the parameter types that may be used within the `parameters` field. Two parameter fields `instance_name` and `power_state` are unique fields that must be declared by name and are of type `string` -- future releases of CACAO will reference these parameters as parameter types, rather than by names.
 
@@ -167,6 +173,8 @@ The `.cacao/ui.json` is an optional json file used to provide hints on the layou
 | `schema_version` | yes | string | should always be `"1"` | 
 | `author` | no | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | no | string | The author's email |
+| `description` | no | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `steps` | yes | array of steps | see below |
 
 The `steps` field defines an ordered array of steps in the deployment wizard, each step referring to a new view or page.
@@ -181,9 +189,11 @@ The following are types of ui elements that can be included in `items`:
 ```json
     {
         "name": "region",
-        "ui_label": "Choose Region"
+        "ui_label": "Choose Region",
+        "help_text": "Choose region where you want to run the instance on"
     }
 ```
+
 * **row**, a container allows one or more ui fields to exist in the same row of a page. A row will contain its own `items` property. An example row field:
 ```json
     {
