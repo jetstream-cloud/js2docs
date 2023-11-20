@@ -93,6 +93,48 @@ $
 5. To test a successful login, you can execute a cacao command, such as: `cacao provider get`
 
 
-### Login Option 2: Login with CACAO API token (coming soon!)
+### Login Option 2: Login with CACAO API token using cacao cli
+
+1. While logged in with a Bearer token as above, use the cacao cli to create a cacao API token:
+
+```bash
+$ cacao token create -n token-name -t personal -e 2024-01-01T00:00:00Z -s api
+```
+Expiration (-e) is expected to be an [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) datetime string. Use a reasonable expiration date, up to 1 year into the future.
+
+Optionally set a start date with -s.
+
+After entering the create command, the token you created will be displayed:
+
+```bash
+{
+    "id": "cptoken_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_clbqcdxxxxxxxxxxxxx",
+    "tid": "tid-clbqcdxxxxxxxxxxx",
+    "timestamp": "2023-11-17T17:43:19.319789233Z"
+}
+```
+
+**Be sure to save the token "id" in safe place! Treat it like a password!**  This is what you use to login and access the token. The access string is shown only once after creating the token.
+
+
+2. Log out of cacao via `cacao logout` and log back in via `cacao login --browser`
+3. Enter the CACAO API url: `https://cacao.jetstream-cloud.org/api`
+4. Next, enter the CACAO API token you created earlier:
+
+```bash
+Cacao API address (http://ca.cyverse.local/api): https://cacao.jetstream-cloud.org/api
+Please go to this URL in the browser: https://cacao.jetstream-cloud.org/api/user/login
+
+After login, you should get a JSON response, the auth token could be the value of following properties:
+- "IDToken" or "id_token" if keycloak
+- "access_token" if other auth provider
+
+Enter the auth token you get from browser: cptoken_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_clbqcdxxxxxxxxxxxxx
+```
+You are now logged in with a CACAO API token.
+
+
+### Login Option 2: Login with CACAO API token (UI coming soon!)
+
 
 This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option will be available soon.
