@@ -152,7 +152,7 @@ This method is significantly easier than the CILogin method, where you can simpl
 
 ![](images/api-token-wizard-finish.png)
 
-6. Log in to CACAO CLI via `cacao login --browser`:
+6. Log in to CACAO CLI via `cacao login --browser`, enter the CACAO API url: `https://cacao.jetstream-cloud.org/api`, and the token from step 5:
 
 ```bash
 $ cacao login --browser
