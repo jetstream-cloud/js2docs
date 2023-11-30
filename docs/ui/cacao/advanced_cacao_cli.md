@@ -134,7 +134,36 @@ Enter the auth token you get from browser: cptoken_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 You are now logged in with a CACAO API token.
 
 
-### Login Option 2: Login with CACAO API token (UI coming soon!)
+### Login Option 2: Login with CACAO API token
 
+This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI.
 
-This method is significantly easier than the CILogin method, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI. This option will be available soon.
+1. Log in to [Jetstream2](https://cacao.jetstream-cloud.org/)
+2. Go to the [Credentials](https://cacao.jetstream-cloud.org/credentials) page
+3. Click "+ Add Credential" and choose "API Token":
+
+![](images/api-token-add.png)
+
+4. Choose a name for your token and optionally adjust the start and expiration dates or add a description:
+
+![](images/api-token-wizard-create.png)
+
+5. After pushing the 'Create Token' button, your token will appear on screen **only once**. Be sure to save it somewhere secure!
+
+![](images/api-token-wizard-finish.png)
+
+6. Log in to CACAO CLI via `cacao login --browser`:
+
+```bash
+$ cacao login --browser
+Cacao API address (http://ca.cyverse.local/api): https://cacao.jetstream-cloud.org/api
+Please go to this URL in the browser: https://cacao.jetstream-cloud.org/api/user/login
+
+After login, you should get a JSON response, the auth token could be the value of following properties:
+- "IDToken" or "id_token" if keycloak
+- "access_token" if other auth provider
+
+Enter the auth token you get from browser: cptoken_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx_clbqcdxxxxxxxxxxxxx
+```
+
+7. To test a successful login, you can execute a cacao command, such as: `cacao provider get`
