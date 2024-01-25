@@ -23,6 +23,12 @@
 
 Jetstream2 maintains a system status and announcement site at [https://jetstream.status.io](https://jetstream.status.io). Please visit that site for detailed system status information and planned maintenance announcements.
 
+### Canary
+
+[![canary pipeline status](https://gitlab.com/jetstream-cloud/canary/badges/main/pipeline.svg?key_text=canary+pipeline&key_width=100)](https://gitlab.com/jetstream-cloud/canary/-/pipelines) 
+
+The canary is a continuous integration pipeline that tests Jetstream2's primary (IU) region every few hours. If the status site is Operational but the badge above indicates a failing pipeline, this suggests a new systemic issue that needs staff attention.
+
 ##### Mailing list for outages and maintenance
 
 We also have a mailing list that receives system notices. All JS2 researchers, educators, and students get automatically added when they receive JS2 access. You may also subscribe by emailing *js2-users-l-subscribe AT list.iu.edu* or by contacting JS2 help to be added.
