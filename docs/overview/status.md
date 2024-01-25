@@ -21,9 +21,7 @@
   </tbody>
 </table>
 
-Jetstream2 is maintaining a system status and announcement site at <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a>
-
-Please visit that site for detailed system status information and planned maintenance announcements.
+Jetstream2 maintains a system status and announcement site at [https://jetstream.status.io](https://jetstream.status.io). Please visit that site for detailed system status information and planned maintenance announcements.
 
 ##### Mailing list for outages and maintenance
 
