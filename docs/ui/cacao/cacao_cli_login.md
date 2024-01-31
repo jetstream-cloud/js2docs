@@ -1,18 +1,18 @@
-![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Using the CACAO CLI
+![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; CACAO CLI Installing and Logging In
 
-# CACAO Command-Line Interface
+# CACAO Command-Line Interface Login
 
 The CACAO Command-Line Interface (CLI) allows command-line users to interact with CACAO. The CLI is a Go program that can be installed on any system.
 
 ## Installation
 
-1. The CACAO CLI is a single binary that can be installed on any system. The most recent cli binaries can be downloaded from [the CACAO packages page on Gitlab](https://gitlab.com/cyverse/cacao/-/packages) or you can download from here:
+1. The CACAO CLI is a single binary that can be installed on Mac, Windows, and Linux. The most recent cli binaries can be downloaded from [the CACAO packages page on Gitlab](https://gitlab.com/cyverse/cacao/-/packages) or you can download using these direct links:
 
-- [CACAO Mac (Darwin) ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101908036/download)
-- [CACAO Mac (Darwin) AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907995/download)
-- [CACAO Windows AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907940/download)
-- [CACAO Linux ARM64](https://gitlab.com/cyverse/cacao/-/package_files/101907892/download)
-- [CACAO Linux AMD64](https://gitlab.com/cyverse/cacao/-/package_files/101907877/download)
+- [CACAO Mac (Darwin) ARM64](https://gitlab.com/cyverse/cacao/-/package_files/109343739/download)
+- [CACAO Mac (Darwin) AMD64](https://gitlab.com/cyverse/cacao/-/package_files/109343715/download)
+- [CACAO Windows AMD64](https://gitlab.com/cyverse/cacao/-/package_files/109343698/download)
+- [CACAO Linux ARM64](https://gitlab.com/cyverse/cacao/-/package_files/109343675/download)
+- [CACAO Linux AMD64](https://gitlab.com/cyverse/cacao/-/package_files/109343660/download)
 
 2. If necessary, rename the file to `cacao.zip` and unzip the file. After unzipping, binary will be named `cacao_<os>_<architecture>` e.g. `cacao_darwin_arm64` or `cacao_linux_amd64`.
 
@@ -28,11 +28,47 @@ mv cacao_linux_amd64 /usr/local/bin/cacao
 
 ## Login with the CACAO CLI
 
-There are currently two approaches to logging in with the CACAO CLI.
+There are currently two approaches to logging in with the CACAO CLI. Most users should select Option 1 (Login with CACAO API Token). Option 2 (Login with ACCESS CI federated identity) is available for advanced users and is not generally recommended.
 
-### Login Option 1: Login with CIlogin federated identity
+### Login Option 1: Login with CACAO API Token (coming soon!)
 
-This method integrates with CILogin and requires a few steps.
+The CACAO API Token method is the easiest method to login with the CACAO CLI, where you can simply create a CACAO API Token using the CACAO user interface and use that token with the CLI.
+
+1. In the browser, login to CACAO at [https://cacao.jetstream-cloud.org](https://cacao.jetstream-cloud.org) with your ACCESS CI identity.
+
+2. Click on the Credentials menu
+
+3. Click on the "Add Credential" button
+
+4. Click on the "API Token" submenu
+
+5. In the Create API Token dialog window, enter the following:
+    * Token Name: provide a unique name for your token
+    * Description: optional, provide a description for your token
+    * Start Date: optional, leave as is to start the token immediately
+    * Expiration Date: optional, leave as is to expire the token in 1 year or you can select a different date
+
+6. Click on the "Create Token" button
+
+7. Your new token string should be displayed. Copy the token string to your clipboard (you will need this string in step 9)
+
+8. You can click the "Close" button to close the dialog window (or keep the dialog window open until it's no longer needed)
+
+9. In a terminal window, you can login with the following command: `cacao login --token <token>`
+
+***NOTE***
+
+`<token>` is the token string you copied WITHOUT the `<` and `>` characters.
+
+10. To test a successful login, you can execute a cacao command, such as: `cacao provider get`
+
+**NOTE: What to do if you encounter a login issue?**
+> Sometimes login using the command line will fail -- a typo happens, a copy-n-paste of a token happens, using the wrong api url happens, etc -- and you need to reset your login. To reset your login, you can use the following command:
+> `cacao logout`
+
+### Login Option 2: Login with ACCESS CI federated identity
+
+This method integrates with ACCESS CI and requires a few steps.
 
 1. `cacao login --browser`
 
