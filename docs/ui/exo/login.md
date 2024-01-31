@@ -26,7 +26,7 @@ If you have linked institutional, Google, Orcid, or other credentials **PREVIOUS
 
 ***We know ACCESS-CI credentials work correctly and recommend using "ACCESS-CI" as your identity provider unless you are 100% sure you have linked your credentials with CILogon (previously linked credentials in XSEDE using Globus do NOT carry over).***
 
-!!! note "Other intstitution credentials"
+!!! note "Other institutional credentials"
 
      Please note that other CILogon credentials (i.e. for your home institution or Google) must be set up outside of this process. Follow these [Linking instructions](https://identity.access-ci.org/id-linking){target=_blank} to link your home institution or other organization (e.g. Google, ORCID, etc) credentials.
 
