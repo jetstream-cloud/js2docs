@@ -159,8 +159,9 @@ nav:
         - Deploying Magic Castle (virtual slurm cluster): ui/cacao/deployment_magic_castle.md
         - Deploying DADI (a community template): ui/cacao/deployment_dadi.md
       - Advanced Topics:
-        - Using the CACAO CLI: ui/cacao/advanced_cacao_cli.md
-        - Importing a Terraform Template: ui/cacao/import_terraform_template.md
+        - CACAO CLI Installing and Logging In: ui/cacao/cacao_cli_login.md
+        - CACAO CLI Importing a Terraform Template: ui/cacao/cacao_cli_import_terraform_template.md
+        - CACAO CLI Deploying Cloud Resources: ui/cacao/cacao_cli_deploy_resources.md
   - General VM Operations:
     - Security:
       - Firewalls: general/firewalls.md
