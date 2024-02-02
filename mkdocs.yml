@@ -2,7 +2,7 @@ site_name: 'Jetstream2 Documentation'
 site_url: https://docs.jetstream-cloud.org/
 site_description: "Jetstream2 Documentation"
 repo_url: https://github.com/jetstream-cloud/js2docs
-copyright: Copyright © 2023 The Trustees of Indiana University
+copyright: Copyright © 2024 The Trustees of Indiana University
 #site_favicon: 'images/Jetstream2_icon_64px.jpg'
 
 theme:
@@ -67,7 +67,7 @@ nav:
   - Jetstream2 Main:
     - Jetstream2 Home: index.md
     - Jetstream2 Status and News: overview/status.md
-  - Jetstream2 Info:
+  - 'Jetstream2 Info':
     - System Overview: overview/overview-doc.md
     - Architecture and Capabilities of Jetstream2: overview/architecture.md
     - Configuration and specifications: overview/config.md
@@ -129,13 +129,12 @@ nav:
       - Overview: cli/overview.md
       - Installing Openstack Clients: cli/clients.md
       - Authentication (Logging In): cli/auth.md
-      - Using OpenStack command line:
-        - Managing SSH Keys: cli/managing-ssh-keys.md
-        - Setting up a Security Group: cli/security_group.md
-        - Setting up a Network: cli/network.md
-        - Launching a Virtual Machine: cli/launch.md
-        - Instance Management: cli/manage.md
-        - Snapshots & Images: cli/snapshot-image.md
+      - Managing SSH Keys: cli/managing-ssh-keys.md
+      - Setting up a Security Group: cli/security_group.md
+      - Setting up a Network: cli/network.md
+      - Launching a Virtual Machine: cli/launch.md
+      - Instance Management: cli/manage.md
+      - Snapshots & Images: cli/snapshot-image.md
       - Deleting Infrastructure in the CLI: cli/deleting.md
       - Storage Under the CLI: cli/storage.md
       - Manila Shares in the CLI: cli/manila.md
