@@ -21,6 +21,7 @@ More information on Kubernetes here: [Kubernetes](https://kubernetes.io/docs/con
 
 - [Deploy JupyterHub](https://www.zonca.dev/posts/2022-03-31-jetstream2_jupyterhub){target=\_blank}
 - [Update Openstack credentials in Kubernetes](https://www.zonca.dev/posts/2023-03-23-update-openstack-credentials-kubernetes){target=\_blank}, useful if the Application Credential generated for Kubernetes has expired.
+- [Quickly scaling a Kubernetes cluster on Jetstream using shelving](https://www.zonca.dev/posts/2024-02-02-soft-scaling-kubernetes-jetstream){target=\_blank}
 
 ---
 Some K8s basics :
