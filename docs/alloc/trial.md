@@ -1,16 +1,16 @@
 # Jetstream2 Trial Allocations (JTA)
 
-Jetstream2 trial allocations provide expedited, limited access to Jetstream2 resources. With a trial allocation, approved users can “test drive” Jetstream2 prior to requesting their own Explore, Discover, Accelerate, or Maximize allocations. 
+Jetstream2 trial allocations provide expedited, limited access to Jetstream2 resources. With a trial allocation, approved users can “test drive” Jetstream2 prior to requesting their own ACCESS allocations. 
 
 Trial allocations feature:
 - 1000 service units (SUs) on the main Jetstream2 cloud at Indiana University (access to regional clouds is not provided)
-- 1 m3.tiny (single core) or 1 m3.small (2-core) virtual machine instance per cloud at a time
+- 1 m3.tiny (single core) or 1 m3.small (2-core) virtual machine instance
 - 1 virtual machine backup snapshot per instance
-- 1 small 10 GB disk external storage volume
+- 10 GB disk external storage volume
 
 This is meant to provide enough capacity for new users to experience “cloud native” virtual computing. It is not intended as a permanent or long-term solution.
 
-Please note that these limits are intrinsic to the allocation and cannot be adjusted. While [virtual GPUs](https://docs.jetstream-cloud.org/general/vmsizes/#jetstream2-gpu) are available on JS2, they are not currently part of the trial allocation program.
+Please note that these limits are intrinsic to the allocation and cannot be adjusted. While [virtual GPUs](https://docs.jetstream-cloud.org/general/vmsizes/#jetstream2-gpu) are available on Jetstream2, they are not currently part of the trial allocation program.
 
 ## Signing up for a trial allocation
 To begin the process of using a Jetstream2 trial allocation:
