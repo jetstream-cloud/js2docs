@@ -29,7 +29,7 @@ The mount point is the directory that represents the root of a volume's filesyst
 
 #### Note for older Instances
 
-On older Instances (created before 2/10/2024), the device location (`/dev/sdb`) will also be displayed, and the mount point will match the device location (`/media/volume/sdb`).
+On older Instances (created before 2024-02-08), the device location (`/dev/sdb`) will also be displayed, and the mount point will match the device location (`/media/volume/sdb`).
 
 ### Detaching a Volume
 
