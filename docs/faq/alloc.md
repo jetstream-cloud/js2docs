@@ -12,24 +12,26 @@
 
 ####Is there an overview of the types of allocations available as well as any restrictions those allocations have?
 
-> The [Getting Started guide](https://allocations.access-ci.org/get-started-overview){target=_blank} describes the the overall allocations process and using ACCESS resources. To review the types of allocations ACCESS and the process to get an allocation, here are some links you might find useful:
+> The [Getting Started guide](https://allocations.access-ci.org/get-your-first-project){target=_blank} describes the the overall allocations process and using ACCESS resources. To review the types of allocations ACCESS and the process to get an allocation, here are some links you might find useful:
 
 >  *  [Allocations overview](../alloc/overview.md){target=_blank}
-  *   [Types of allocations, eligibility, details](https://allocations.access-ci.org/prepare-requests-overview){target=_blank}
-  *   [Allocation policies](https://allocations.access-ci.org/access-allocations-policies){target=_blank}
-  *   [Managing allocations overview](https://allocations.access-ci.org/manage-allocations-overview){target=_blank}
-  *   [Managing users](https://allocations.access-ci.org/user_management){target=_blank} - *requires ACCESS login*
-  *   [ACCESS Allocation FAQs](https://allocations.access-ci.org/ramps-policies-faqs){target=_blank}
+  *   [Allocation Details](https://allocations.access-ci.org/project-types){target=_blank}
+  *   [Allocation Requirements & Request Instructions](https://allocations.access-ci.org/prepare-requests){target=_blank}
+  *   [Allocation policies](https://allocations.access-ci.org/allocations-policy){target=_blank}
+  *   [Allocations Management Portal](https://allocations.access-ci.org/){target=_blank}
+  *   [Allocation How-To Guides](https://allocations.access-ci.org/how-to){target=_blank}
 ---
 
 ####Is there a example or demonstration of how to get an allocation that I could follow?
 
-> The requirements for allocations has changed considerably with ACCESS.
+> The requirements for allocations have changed considerably with ACCESS. An overview of the details and differences between allocation tiers can be found on the [Allocation Details](https://allocations.access-ci.org/project-types){target=_blank} page.
 
-> * [Explore ACCESS](https://allocations.access-ci.org/preparing-your-explore-access-request){target=_blank} - up to 400,000 credits, basically requires an abstract and other standard items listed on the Explore ACCESS page.
-  * [Discover ACCESS](https://allocations.access-ci.org/preparing-your-discover-access-request){target=_blank} - up to 1,500,000 credits, requires an abstract, one page description, and other standard items listed on the Discover ACCESS page.
-  * [Accelerate ACCESS](https://allocations.access-ci.org/preparing-your-discover-access-request){target=_blank} - up to 3,000,000 credits, requires an abstract, three page description, and other standard items listed on the Discover ACCESS page.
-  * [Maximize ACCESS](https://allocations.access-ci.org/preparing-your-maximize-access-request){target=_blank} - most closely resembles XSEDE research allocations. Submission periods are twice a year and have requirements of up to 10 page main document, additional code and scaling performance documents, and the other standard materials like CVs required by all requests.
+> Instructions on how to apply to each tier as well as their requirements can be found on the [Allocation Requirements & Request Instructions](https://allocations.access-ci.org/prepare-requests){target=_blank} 
+
+> * Explore ACCESS - up to 400,000 credits, basically requires an abstract and other standard items listed on the Explore ACCESS page.
+  * Discover ACCESS - up to 1,500,000 credits, requires an abstract, one page description, and other standard items listed on the Discover ACCESS page.
+  * Accelerate ACCESS - up to 3,000,000 credits, requires an abstract, three page description, and other standard items listed on the Discover ACCESS page.
+  * Maximize ACCESS - most closely resembles XSEDE research allocations. Submission periods are twice a year and have requirements of up to 10 page main document, additional code and scaling performance documents, and the other standard materials like CVs required by all requests.
 
 >
 > Presently there are no sample documents though we expect those will materialize in time. That said, with the requirements for documentation for all but the largest allocations being up to three pages, following the ACCESS pages linked above for submissions should yield all of the information you need.
@@ -42,7 +44,8 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 
 > To add users to, or remove them from, an active Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support ([ACCESS](https://access-ci.org/about/){target=_blank}) allocation, the principal investigator, co-principal investigator, or can use the ACCESS tools here (*requires ACCESS login*):
 
->  * [User Management](https://allocations.access-ci.org/user_management){target=_blank}
+>  * [Allocations Management Portal](https://allocations.access-ci.org/){target=_blank}
+>  * See the [Allocation How-To Guides](https://allocations.access-ci.org/how-to){target=_blank} for more information
 
 !!! Note
 
@@ -54,7 +57,7 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 
 #### Can I keep renewing my allocation(s)?
 
-> Unlike XSEDE, ACCESS does not differentiate between most allocation types. You can renew all allocation types now, though ***Maximize ACCCESS*** allocations are only renewable during the enrollment periods noted at the top of the [Preparing Your Maximize ACCESS Request](https://allocations.access-ci.org/preparing-your-maximize-access-request){target=_blank} page.
+> Unlike XSEDE, ACCESS does not differentiate between most allocation types. You can renew all allocation types now, though ***Maximize ACCCESS*** allocations are only renewable during the enrollment periods noted in the ***Maximize Access*** section of the [Preparing your ACCESS Request](https://allocations.access-ci.org/prepare-requests){target=_blank} page.
 
 ---
 
@@ -102,7 +105,7 @@ You can add users to (or remove them from) your ACCESS allocation via the ACCESS
 
 ####My PI got a Jetstream2 supplement added to our existing allocation but we cannot access Exosphere or Horizon
 
-> When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to your [User Management page](https://allocations.access-ci.org/user_management){target=_blank} and select the appropriate allocation to manage.
+> When you get a supplement for a resource that you have not previously had, users on your allocation are not automatically enabled for it. To enable users for a new resource like Jetstream2, your PI, Co-PI, or resource managers may need to go to their [Allocations Management page](https://allocations.access-ci.org){target=_blank} and select the appropriate allocation to manage.
 
 ####I have an Explore ACCESS allocation but need to move to a larger Discover or Accelerate allocation size. How do I do that and keep my allocation number (and VMs/volumes in my current allocation)?
 

@@ -9,7 +9,7 @@ Therefore we can lower the maintenance burden by creating a shared volume inside
 
 ## Create a Share in Manila
 
-Create a share in Horizon [following the instructions in the Jetstream documentation](https://docs.jetstream-cloud.org/ui/horizon/manila/){target=_blank}:
+Create a share in Horizon [following the instructions in the Jetstream documentation](../ui/horizon/manila.md){target=_blank}:
 
   * for access to choose "$USER-manila-share"
   * note down "Path" and "Access Key"

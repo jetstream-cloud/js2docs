@@ -16,7 +16,7 @@ The Jetstream2 primary cloud configuation features:
 
 #### Persistent IPs: <a name="PersistentIP"></a>
 
-A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](/ui/exo/exo.md) and [Cacao](/ui/cacao/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/intro.md) and the Jetstream2 [CLI](/ui/cli/overview.md) require you to explicitly release the IP address.
+A key difference between Jetstream1 and Jetstream2 is that no special or additional access is required to get a persistent IP address. Some of the GUI interfaces like [Exosphere](../ui/exo/exo.md) and [Cacao](../ui/cacao/overview.md) release IPs by default when a VM is deleted. [Horizon](../ui/horizon/intro.md) and the Jetstream2 [CLI](../ui/cli/overview.md) require you to explicitly release the IP address.
 
 We do ask that you release any unused IPs back to the public pool. There are a finite number of IPs available and allocations hoarding them may inadvertently cause issues for other Jetstream2 researchers.
 
@@ -26,7 +26,7 @@ The Jetstream administration team reserves the right to release any IP addresses
 
 In general, Jetstream2 does not restrict inbound or outbound access to virtual machines. There are a handful of blocks at the institutional level that are outside of the control of the Jetstream2 staff. In general, though, the most common Unix service ports (eg. 22/ssh, 80/http, 443/https, etc) are not restricted in any way. Whether they are open by default will be dependent on which user interface you're launching your VM with.
 
-Please refer to the [Security FAQ](/faq/security.md#what-is-the-default-security-profile-for-jetstream2-vms) for additional information.
+Please refer to the [Security FAQ](../faq/security.md#what-is-the-default-security-profile-for-jetstream2-vms) for additional information.
 
 -----
 
@@ -48,7 +48,7 @@ This document primarily looks at the **Cluster Network** and may delve into the 
 
 ## Cluster Network
 
-[BGP in the Data Center](/attachments/bgp-in-the-data-center.pdf){target=_blank} is recommended reading. It provides background and orientation to Clos networks and BGP the way that it is used here. It is a short, accessible read for someone with general IT networking knowledge. For a quicker version, read chapters 1, 2, 4, and 6. Skim chapters 3 and 5.
+[BGP in the Data Center](../attachments/bgp-in-the-data-center.pdf){target=_blank} is recommended reading. It provides background and orientation to Clos networks and BGP the way that it is used here. It is a short, accessible read for someone with general IT networking knowledge. For a quicker version, read chapters 1, 2, 4, and 6. Skim chapters 3 and 5.
 
 The Jetstream2 network is a two-tier spine-and-leaf network in a [fat tree](https://en.wikipedia.org/wiki/Fat_tree){target=_blank} or [Clos](https://en.wikipedia.org/wiki/Clos_network){target=_blank} topology.
 

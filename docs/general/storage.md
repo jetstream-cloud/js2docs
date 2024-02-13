@@ -41,7 +41,7 @@ While Volumes are available to facilitate research, Jetstream2 is not primarily 
 
 Projects are limited to 10 volumes with an aggregate capacity of 1 TB by default. Adjustment of **volume count quotas** can be requested via [the Jetstream2 contact form](https://jetstream-cloud.org/contact/index.html){target=_blank}; however, storage capacity is an ACCESS-allocated resource (as noted on *[Jetstream2 Resources](resources.md)*). As with any allocated resource, Jetstream2 storage carries its own "balance" independent of your project's other amounts (including compute SU balances), and the proper way to request an allocation on this resource is through an ACCESS [exchange request](https://allocations.access-ci.org/use-credits-overview){target=_blank} or [supplement](../alloc/supplement.md).
 
-For more information about exchange rates and planning, see *[Budgeting for Common Usage Scenarios](../../alloc/budgeting/#storage)*.
+For more information about exchange rates and planning, see *[Budgeting for Common Usage Scenarios](../alloc/budgeting.md#storage)*.
 
 ### Project and Providers:
 
@@ -52,7 +52,7 @@ As with Instances, Volumes are associated/organized with Projects and with parti
 
 Generally, Volumes may be attached to one active Instance at a time.
 
-You can’t easily share volumes in OpenStack without deploying a **Shared File System service**. However, the native OpenStack [Manila - Filesystems-as-a-service](/general/manila/) option is available.
+You can’t easily share volumes in OpenStack without deploying a **Shared File System service**. However, the native OpenStack [Manila - Filesystems-as-a-service](../general/manila/) option is available.
 
 Volumes may also be shared using standard methods (e.g. NFS) to other active Instances within Jetstream.
 
@@ -63,4 +63,4 @@ Volumes may also be shared using standard methods (e.g. NFS) to other active Ins
 
 ### Backup & Exporting:
 
-Users should regularly backup (via `ssh`, `rsync`, `tar`, or the like: see [File Transfer](/general/filetransfer)) any critical data contained on Volumes as no automated backup functions are currently provided by Jetstream. 
+Users should regularly backup (via `ssh`, `rsync`, `tar`, or the like: see [File Transfer](../general/filetransfer)) any critical data contained on Volumes as no automated backup functions are currently provided by Jetstream. 

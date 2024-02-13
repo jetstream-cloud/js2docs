@@ -13,8 +13,8 @@ As noted above, Jetstream2 staff makes a limited number of Microsoft Windows ima
 
 - In order to be able to access your instance later, you will need to provide a **brand-new** SSH keypair in PEM format. One can be generated with `ssh-keygen -m pem` in an OpenSSH-enabled terminal. Be sure to set a strong passphrase for now.
 
-- Be sure that your root disk is large enough to deploy the image; Windows tends to be larger than most Unix/Linux images. The default 20 GB size of some flavors is too small. To get around this, either select a different flavor or use a [volume-backed instance](../../faq/general-faq/#i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me).
-- Creating a Windows instance through Exosphere will cause the resulting instance to appear to be stuck in the "Building" status indefinitely, and many of the platform's creature comforts like [exouser](../../ui/exo/access-instance/#the-exouser-profile-passphrase) and resource monitoring will not function properly, if at all.
+- Be sure that your root disk is large enough to deploy the image; Windows tends to be larger than most Unix/Linux images. The default 20 GB size of some flavors is too small. To get around this, either select a different flavor or use a [volume-backed instance](../faq/general-faq.md#i-need-a-root-disk-larger-than-the-maximum-size-for-jetstream2-instances-can-you-create-a-custom-flavor-for-me).
+- Creating a Windows instance through Exosphere will cause the resulting instance to appear to be stuck in the "Building" status indefinitely, and many of the platform's creature comforts like [exouser](../ui/exo/access-instance.md#the-exouser-profile-passphrase) and resource monitoring will not function properly, if at all.
 
 !!! note "Image information"
 
@@ -25,7 +25,7 @@ As noted above, Jetstream2 staff makes a limited number of Microsoft Windows ima
 In order to retrieve the password for a Windows Server instance, an SSH keypair is **required** at setup. If you did not provide your instance with a keypair, you will be locked out, since recovering the Windows password without one is impossible.
 {: .note}
 
-You can find the password for your Windows instance via Horizon. Navigate to your [instance's management actions dropdown](../../ui/horizon/manage/#instance-management-actions) and select "Retrieve Password." To decrypt the password, you will need to provide your SSH keypair's private key file or contents. In order for Horizon to recognize the private key, it must have no passphrase and be in PEM format (it should start with `-----BEGIN RSA PRIVATE KEY-----`). It is, however, bad practice to leave your SSH keys unprotected, so we recommend ***temporarily*** removing the passphrase, retrieving your instance's password, then re-setting a passphrase on the key:
+You can find the password for your Windows instance via Horizon. Navigate to your [instance's management actions dropdown](../ui/horizon/manage.md#instance-management-actions) and select "Retrieve Password." To decrypt the password, you will need to provide your SSH keypair's private key file or contents. In order for Horizon to recognize the private key, it must have no passphrase and be in PEM format (it should start with `-----BEGIN RSA PRIVATE KEY-----`). It is, however, bad practice to leave your SSH keys unprotected, so we recommend ***temporarily*** removing the passphrase, retrieving your instance's password, then re-setting a passphrase on the key:
 
 !!! warning "SSH Private Keys are Secret."
     Horizon processes your private key locally only, and does not transmit it across the internet. Just like a password or passphrase, your private key should **never** be shared, even with good intentions. Jetstream2 support personnel will **never** ask you for your private key.
@@ -48,7 +48,7 @@ You can find the password for your Windows instance via Horizon. Navigate to you
 
 On the left side bar, navigate to `Project`→`Compute`→`Instances`, then click on your instance's name. Navigate to the `Console` tab near the top.
 
-![A screenshot of the Horizon console, pointing out the "Console" tab](/images/horizon-console.png)
+![A screenshot of the Horizon console, pointing out the "Console" tab](../images/horizon-console.png)
 
 ## Accessing a Windows Instance with Remote Desktop (RDP)
 
@@ -61,7 +61,7 @@ Windows Remote Desktop Protocol (RDP) will most likely provide a better, more fe
 
 Under normal circumstances, RDP listens for connections on TCP port 3389 and may be accelerated by exposing UDP port 3389. If TCP port 3389 is not exposed on your instance, you will be unable to connect with RDP. Luckily, Horizon provides a prefabbed security rule for RDP access.
 
-You can add this rule to an existing [security group](../../ui/horizon/security_group) or create a new one, then apply the security group to your instance by navigating to "Edit Security Groups" in the [management actions dropdown](../../ui/horizon/manage/#instance-management-actions).
+You can add this rule to an existing [security group](../ui/horizon/security_group.md) or create a new one, then apply the security group to your instance by navigating to "Edit Security Groups" in the [management actions dropdown](../ui/horizon/manage.md#instance-management-actions).
 
 !!! warning "Minimize security risks."
     We **strongly** advise limiting remote access to RDP port(s) to the smallest possible CIDR or, even better, single IP(s), rather than the default `0.0.0.0/0` (which allows access from any public IP); an improperly configured RDP service could allow remote access to a host in an unintended manner in addition to exposing SSL/TLS certificate information. 

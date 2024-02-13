@@ -12,7 +12,7 @@ Information on federating your gateway or Jupyter service is outlined in on [Fed
 
 If you want to access your site/service with a hostname (rather than a raw public IP address), you will need to set up appropriate DNS (Domain Name Service) records. 
 
-It is possible to configure automatic DNS hostnames for instances in the `projects.jetstream-cloud.org` subdomain; for more information, see ["How do I get a jetstream-cloud.org DNS name for my instance?"](../general-faq/#how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance)
+It is possible to configure automatic DNS hostnames for instances in the `projects.jetstream-cloud.org` subdomain; for more information, see ["How do I get a jetstream-cloud.org DNS name for my instance?"](general-faq.md#how-do-i-get-a-jetstream-cloudorg-dns-name-for-my-instance)
 {: .note}
 
 Second level "designer" domains like "myresearchproject.org" or "ourcoolproject.info" would need to be purchased from an [ICANN-accredited registrar](https://www.icann.org/en/accredited-registrars){target=_blank}. Many popular registrars will include DNS configuration in the price of a domain. Before purchasing a domain name, consider investigating whether your sponsoring university or organization offers such services; for example, projects affiliated with Indiana University may be able to obtain an [IU subdomain](https://kb.iu.edu/d/aqeo){target=_blank}.

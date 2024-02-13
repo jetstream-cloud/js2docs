@@ -19,9 +19,9 @@ The requirement is a terraform version `> 0.14`, this tutorial has been tested w
 
 ### Request API access
 
-Follow [the instructions in the Jetstream 2 documentation to create application credentials](https://docs.jetstream-cloud.org/ui/cli/auth/#openrc-files-are-allocation-specific).
+Follow [the instructions in the Jetstream 2 documentation to create application credentials](../ui/cli/auth.md#openrc-files-are-allocation-specific).
 
-Also make sure you are not hitting any of the [issues in the Troubleshooting page](https://docs.jetstream-cloud.org/faq/trouble/), in particular, it is a good idea to set your password within single quotes to avoid special characters being interpreted by the shell:
+Also make sure you are not hitting any of the [issues in the Troubleshooting page](../faq/trouble.md), in particular, it is a good idea to set your password within single quotes to avoid special characters being interpreted by the shell:
 
     export OS_APPLICATION_CREDENTIAL_SECRET='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
