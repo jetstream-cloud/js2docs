@@ -1,0 +1,102 @@
+# Deploying Magic Castle (virtual slurm cluster)
+
+[Magic Castle](https://github.com/ComputeCanada/magic_castle), developed by the Digital Research Alliance of Canada (formerly Compute Canada), is a terraform template to deploy a virtual slurm cluster. This template has been adapted to launch easily in CACAO.
+
+## Pre-requisites
+
+You will need to setup the following before you deploy any cloud resource using CACAO:
+
+- Jetstream cloud credentials (aka application credential)
+- your public ssh key
+
+Instructions on installing your first Jetstream cloud credential and adding ssh key in CACAO can be found [here](https://docs.jetstream-cloud.org/ui/cacao/credentials/).
+
+Magic Castle requires several OpenStack resources, which may impact your quota limits. Here is a summary on minimum resources:
+
+- 1 floating IP
+- 3 security groups
+- 1 network
+- 1 subnet
+- 1 router
+- 3 volumes
+- 3 instances
+- 8 VCPUs
+- 7 neutron ports
+- 12 GB of RAM
+- 8 security rules
+- 80 GB of volume storage
+
+See [this page for more information on these limits](https://github.com/ComputeCanada/magic_castle/tree/main/docs#144-openstack). You may need to request a quota increase from Jetstream2 staff if you do not have enough quota.
+
+## Instructions
+
+The steps below will guide you through the process of deploying a Magic Castle (virtual slurm cluster)
+
+1. Go to Deployments menu in CACAO
+2. If you have more than one ACCESS allocation, you should select the ACCESS project in the left drop down menu.
+3. Select "Add Deployment" from the top right corner.
+4. Click on **launch Compute Canada Magic Castle** from the list of available templates. You may need to scroll down to find it.
+
+![template list](images/deployments/magic_castle/template_list.png){ width="75%" }
+
+5. Click the Next button
+6. In the dialog:
+    1. Choose your Region
+    2. Give a Cluster Name
+    3. Select a Boot Image
+    !!! Note
+        You must select either AlmaLinux 8/9 or Rocky 8/9 image
+
+    4. Management Nodes: select the number and size of your management node(s)
+    5. Login Nodes: select the number and size of your login node(s)
+    6. Worker Nodes: select the number and size of your compute nodes
+    7. Size of the NSF Home Volume: enter the size of the home volume in GB
+    8. Size of the NSF Project Volume: enter the size of the project volume in GB
+    9. Size of the NSF Scratch Volume: enter the size of the scratch volume in GB
+    10. Select the number of guest users
+    !!! Note
+        Guest users will be named `user1`, `user2`, etc
+
+    11. Enter a guest user shared password or leave blank to generate a random password
+    !!! Note
+        All guest users will use the same password. The usernames and password will be repeated in the `accounts.txt` file (see below)
+
+![magic castle parameters](images/deployments/magic_castle/mdw_magic_castle.png){ width="75%" }
+
+7. Click the Next button
+8. After reviewing the parameters, click the "Submit" button
+9. Get a cup of coffee and wait for the deployment to be "Active". You can monitor the progress of the deployment in the "Deployments" menu.
+
+## Accessing your Magic Castle Cluster as the "Sudo" user
+
+When your Magic Castle deployment is "Active", you have two options to access the cluster as an "sudo" user, the account with elevated privileges.
+
+### Option 1: Web Shell
+
+1. In the Deployments list, click on your deployment
+2. Click on the "Web Shell" button for the login node (see image)
+
+![magic castle webshell](images/deployments/magic_castle/mc-details-with-webshell.png){ width="75%" }
+
+### Option 2: Using an SSH Client
+
+1. In the Deployments list, click on your deployment
+2. Copy the public ip address for the login node (see image)
+3. Using an external ssh client with access to your private key that is associated with a public key imported into CACAO, goto: `<username>@<public-ip-address>`. For example, if your access ci identity (and cacao username) is `wildcat@access-ci.org` and the public ip is `1.2.3.4`, then your ssh login to the login node will be `wildcat@1.2.3.4`.
+
+![magic castle public ip](images/deployments/magic_castle/mc-details-with-public-ip.png){ width="75%" }
+
+## Verifying that your Magic Castle Cluster is ready to use
+
+1. When you web shell or ssh into your Magic Castle cluster login node, you should see a message similar to screenshot below.
+
+![magic castle terminal](images/deployments/magic_castle/mc_terminal.png){ width="75%" }
+
+2. You should see the following information:
+    1. The current state of your Magic Castle cluster. The state should be "Ready" when ready, and "Not Ready" when not.
+    2. The cli command to re-check the Magic Castle Cluster: `mccheck`.
+    3. The path to the `accounts.txt` file that contains both the number of guest users and the shared guest user password.
+
+## Giving access to your Guest Users
+
+Guest users can access the Magic Castle cluster using an ssh client. The guest user accounts are autogenerated (e.g. `user1`, `user2`, etc) and will use the same password. The password is stored in the `accounts.txt` file in the home directory of the "sudo" user.

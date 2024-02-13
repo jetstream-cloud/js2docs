@@ -6,6 +6,9 @@ Jetstream2 (JS2) supports a number of different methods for data storage, includ
 * [Manila](/general/manila): Filesystems-as-a-service
 * [Object Store](/general/object): experimental Openstack Swift and S3 storage
 
+!!! note "Default Storage"
+    By default, all allocations receive 1TB (1000 GB) of Jetstream2 Storage for volumes. If you will not need more than this, you do not need to request Jetstream2 Storage with your allocation request.
+
 ---
 
 ## Volumes <a name="Volumes"></a>

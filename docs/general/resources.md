@@ -11,9 +11,14 @@ The specifications for each are linked above.
 
 With the exception of Jetstream2 Storage, these resources may be allocated individually. Jetstream2 Storage requires the PI apply for or already have an allocation on any one or more of the three Jetstream compute resources.
 
+!!! note "Default Storage"
+    By default, all allocations receive 1TB (1000 GB) of Jetstream2 Storage for volumes. If you will not need more than this, you do not need to request Jetstream2 Storage with your allocation request.
+    
+    ***Any additional storage must be justified in your allocation request.***
+
 ### Limits and important notes:
 
-* Storage defaults to 1 TB. ***Any additional storage must be justified in your allocation request.***
+* Storage defaults to 1 TB. 
 * There are no restrictions on runtime for the Jetstream2 CPU resource. As long as you have an active allocation and SUs remaining, you may run your Jetstream2 CPU VM(s) continuously or on demand.
 * Jetstream2 GPU and Jetstream2 Large Memory may have runtime restriction placed at a future date. Present policy notes that Jetstream2 Staff may limit runtime on these resources to two weeks at a time. As long as resources are not in contention, we *may* opt to allow continuous running of VMs/services. Any change in resource limits will be noted via [ACCESS Infrastructure News](https://operations.access-ci.org/infrastructure_news){target=_blank} and other communications channels.
 

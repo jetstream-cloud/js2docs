@@ -21,9 +21,13 @@
   </tbody>
 </table>
 
-Jetstream2 is maintaining a system status and announcement site at <a href="https://jetstream.status.io/" target=_blank>https://jetstream.status.io/</a>
+Jetstream2 maintains a system status and announcement site at [https://jetstream.status.io](https://jetstream.status.io). Please visit that site for detailed system status information and planned maintenance announcements.
 
-Please visit that site for detailed system status information and planned maintenance announcements.
+### Canary
+
+[![canary pipeline status](https://gitlab.com/jetstream-cloud/canary/badges/main/pipeline.svg?key_text=canary+pipeline&key_width=100)](https://gitlab.com/jetstream-cloud/canary/-/pipelines) 
+
+The canary is a continuous integration pipeline that tests Jetstream2's primary (IU) region every few hours. If the status site is Operational but the badge above indicates a failing pipeline, this suggests a new systemic issue that needs staff attention.
 
 ##### Mailing list for outages and maintenance
 
@@ -35,9 +39,9 @@ We are also introducing a new community discussion site on the Matrix communicat
 
 The ticketing system is still the preferred mechanism for official support. That is available via help@jetstream-cloud.org or the contact form [https://jetstream-cloud.org/contact/index.html](https://jetstream-cloud.org/contact/index.html){target=_blank} for any questions not covered in the JS2 documentation. 
 
-ACCESS isseus (accounts, passwords, 2FA, allocations, etc) are best handled via the ACCESS support form: [https://support.access-ci.org/open-a-ticket](https://support.access-ci.org/open-a-ticket){target=_blank}
+ACCESS issues (accounts, passwords, 2FA, allocations, etc) are best handled via the ACCESS support form: [https://support.access-ci.org/open-a-ticket](https://support.access-ci.org/open-a-ticket){target=_blank}
 
-Jetstream2 issues may be opened via the ACCESS form, as well.
+Jetstream2 issues may be opened via the ACCESS form as well.
 
 ---
 

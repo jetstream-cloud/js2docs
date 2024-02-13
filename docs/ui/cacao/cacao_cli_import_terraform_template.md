@@ -1,4 +1,4 @@
-![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; Importing a Terraform Template
+![cacao logo](images/cacao-logo.png){ width=128px }[CACAO Overview](overview.md) &gg; CACAO CLI Importing a Terraform Template
 
 # Why create my own Terraform templates?
 
@@ -48,11 +48,14 @@ The `.cacao/metadata.json` is a required json file needed for CACAO to properly 
 | `author` | yes | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | yes | string | The author's email |
 | `description` | yes | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `template_type` | yes | string | The type of the template and typically captures the language and cloud combination. For Terraform that primarily runs on Openstack, use `openstack_terraform` |
 | `purpose` | yes | string | The purpose of the template, and typically captures the cloud and type of resources. This should be `openstack_compute`, though future purposes values will include storage |
+| `published_versions` | no | array of strings | The list of git releases of the template code that are compatible. By default, `main` branch is used. |
 | `cacao_pre_tasks` | no | array of values | reserved, not yet implemented |
 | `cacao_post_tasks` | no | array of values | reserved, not yet implemented |
 | `parameters` | yes | array of parameters | see below |
+| `filters` | no | array of values | reserved, not yet implemented |
 
 The `parameters` field defines the input values that are configurable for the template. A properties of a parameter can include the following:
 
@@ -61,6 +64,9 @@ The `parameters` field defines the input values that are configurable for the te
 * `description`, a short description of the parameter
 * `default`, the default value if the value for the parameter is empty or unset
 * `enum`, if defined, an enumerated list of values that may be used for the parameter
+* `required`, if set true, the parameter is should be input
+* `editable`, if set true, the parameter is editable via UI
+* `base64`, if set true, the parameter will have Base64 encoded value
 
 The following table shows the parameter types that may be used within the `parameters` field. Two parameter fields `instance_name` and `power_state` are unique fields that must be declared by name and are of type `string` -- future releases of CACAO will reference these parameters as parameter types, rather than by names.
 
@@ -73,8 +79,14 @@ The following table shows the parameter types that may be used within the `param
 | `cacao_provider_project` | no | no | A string representing the OpenStack project |
 | `cacao_provider_region` | no | no | A string representing the OpenStack region, such as "IU" |
 | `cacao_provider_image` | no | no | A string representing the OpenStack image uuid |
+| `cacao_provider_image_name` | no | no | A string representing the OpenStack image name |
 | `cacao_provider_flavor` | no | no | A string representing the OpenStack image flavor  |
-| `cacao_username` | no | no | A string representing the CACAO username |
+| `cacao_username` | no | no | A string representing the CACAO username e.g. `myuser@access-ci.org` |
+| `cacao_username_unix` | no | no | A string representing the CACAO username without the at sign, if federated identity e.g `myuser` |
+| `cacao_user_ssh_key_all_json` | no | no | A string representing the all user's ssh key that would normally be injected into cloud-init in json format; use this if the template already provides or cannot use CACAO-defined cloud-init or `cacao_cloud_init` parameter |
+| `cacao_ssh_key` | no | no | CACAO's public ssh key, which may be needed for template provisioners or ansible. use this if your template already provides or cannot use a CACAO-defined cloud-init, which contains cacao's public ssh key, or the `cacao_cloud_init` parameter |
+| `cacao_white_list_cidr_json` | no | no | A string representing the cidr block that can be used to whitelist cacao ips, which is useful for configuring services like fail2ban |
+| `cacao_provider_project` | no | no | A string representing the OpenStack project |
 | `string` | no | no | a basic string type  |
 | `integer` | no | no | a basic integer type  |
 | `bool` | no | no | a basic boolean type, either `true` or `false`  |
@@ -167,6 +179,8 @@ The `.cacao/ui.json` is an optional json file used to provide hints on the layou
 | `schema_version` | yes | string | should always be `"1"` | 
 | `author` | no | string | The author name for the template, not to be confused with the user who imports a template |
 | `author_email` | no | string | The author's email |
+| `description` | no | string | The description of the template. This should be short and sweet. |
+| `doc_url` | no | string | The URL of the document that expains how to use the template |
 | `steps` | yes | array of steps | see below |
 
 The `steps` field defines an ordered array of steps in the deployment wizard, each step referring to a new view or page.
@@ -181,9 +195,11 @@ The following are types of ui elements that can be included in `items`:
 ```json
     {
         "name": "region",
-        "ui_label": "Choose Region"
+        "ui_label": "Choose Region",
+        "help_text": "Choose region where you want to run the instance on"
     }
 ```
+
 * **row**, a container allows one or more ui fields to exist in the same row of a page. A row will contain its own `items` property. An example row field:
 ```json
     {

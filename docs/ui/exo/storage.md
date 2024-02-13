@@ -23,11 +23,13 @@ Volumes can be attached from either the *Volumes* section of the Instance Detail
 
 ### Accessing an Attached Volume
 
-After successfully attaching a volume to an instance, Exosphere will display the device location (`/dev/sdb`, `/dev/sdc`, etc.) and the mount point (`/media/volume/...`) to which the volume is attached. This information can also be found on your Instance Details page or Volume Details page.
+After successfully attaching a volume to an instance, Exosphere will display the mount point (`/media/volume/my-volume`) to which the volume is attached. This information can also be found on your Instance Details page or Volume Details page.
 
 The mount point is the directory that represents the root of a volume's filesystem and is where you can access files stored in it.
 
-Please note that attached volumes are mounted the first time they are accessed inside the instance (e.g. with a `cd` command), and are NOT necessarily mounted at attachment time. If you encounter a seeming lag or problem with filesystem access, the volume may not be properly mounted; you may wish to try making sure you can `cd` to the directory.
+#### Note for older Instances
+
+On older Instances (created before 2024-02-08), the device location (`/dev/sdb`) will also be displayed, and the mount point will match the device location (`/media/volume/sdb`).
 
 ### Detaching a Volume
 

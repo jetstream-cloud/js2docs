@@ -2,7 +2,7 @@
 
 ####I was added to an allocation but I get an error like this trying to log in
 
->    ````{"error":{"code":401,"message":"The request you have made requires authentication.","title":"Unauthorized"}}````
+> To use Jetstream2, your account must belong to an ACCESS allocation that is active on a Jetstream2 resource. Please visit https://docs.jetstream-cloud.org/faq/general-faq
 
 >The allocation updates and user additions are created by ACCESS and synced to Jetstream2 (and other ACCESS resources). It can take up to four hours for users added to an allocation to become active. This is outside of our control. If you are still unable to log into [Exosphere](../ui/exo/login.md) or [Horizon](../ui/horizon/intro.md) after four hours from being added, please open a ticket via either the [ACCESS Help Form](https://support.access-ci.org/user/login?destination=/open-a-ticket){target=_blank} or the [Jetstream Help Form](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
