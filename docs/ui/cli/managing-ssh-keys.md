@@ -6,7 +6,7 @@ You can only add a key pair to an instance at the time of its creation, not afte
 
 While several formats are supported, we recommend using RSA or ED25519 format keys.
 
-Source your openrc if you haven't already! Refer to [Authentication (Logging In)](../auth/#setting-up-application-credentials-and-openrcsh-for-the-jetstream2-cli){target=_blank} if you still need to create an openrc file for Jetstream2. We're assuming it is *openrc.sh* for this example.
+Source your openrc if you haven't already! Refer to [Authentication (Logging In)](auth.md#setting-up-application-credentials-and-openrcsh-for-the-jetstream2-cli){target=_blank} if you still need to create an openrc file for Jetstream2. We're assuming it is *openrc.sh* for this example.
 
     source openrc.sh
 

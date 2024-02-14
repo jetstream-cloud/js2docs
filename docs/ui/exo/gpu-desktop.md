@@ -7,9 +7,9 @@ Scientific desktop software applications like QGIS, Metashape, VMD, ParaView, an
 
 | CPU | GPU |
 |-----|-----|
-| ![](/images/guacamole-paraview-cpu.gif) | ![](/images/guacamole-paraview-gpu.gif) |
+| ![](../../images/guacamole-paraview-cpu.gif) | ![](../../images/guacamole-paraview-gpu.gif) |
 
-The graphical environment provided by the [Exosphere web desktop](../access-instance/#web-desktop-guacamole) is not configured to provide GPU-backed 2D & 3D rendering by default, instead relying on software (CPU rendering)--even if the instance is a GPU flavor.
+The graphical environment provided by the [Exosphere web desktop](access-instance.md#web-desktop-guacamole) is not configured to provide GPU-backed 2D & 3D rendering by default, instead relying on software (CPU rendering)--even if the instance is a GPU flavor.
 
 This document only covers one setup; however, there are countless solutions on the topic. Further technologies of interest may include:
 
@@ -27,7 +27,7 @@ This document only covers one setup; however, there are countless solutions on t
     Due to a lack of feature parity in the older version of `tigervnc-scraping-server` available for Ubuntu 20.04, these steps only support Ubuntu 22, Rocky Linux 8/9, and AlmaLinux 8/9. 
 
 1. [Create an instance through Exosphere](create_instance.md), being sure to select a GPU flavor (`g3.x`) and enable the web desktop. 
-2. Connect to the instance via the [web shell](../access-instance/#web-shell-guacamole) or [native SSH](../access-instance/#accessing-an-instance-with-native-ssh). Do **not** use the web desktop for these setup steps.
+2. Connect to the instance via the [web shell](access-instance.md#web-shell-guacamole) or [native SSH](access-instance.md#accessing-an-instance-with-native-ssh). Do **not** use the web desktop for these setup steps.
 3. Grab and run the setup script as root (or follow the manual steps below): <br /> `curl -s "https://docs.jetstream-cloud.org/attachments/gpu-desktop-setup.sh" | sudo bash -s`
 
 You should now notice that both the underlying [Xorg](https://en.wikipedia.org/wiki/X.Org_Server){target=_blank} server and any graphical apps launched on the web desktop are using the GPU:

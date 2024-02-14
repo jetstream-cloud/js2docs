@@ -1,6 +1,6 @@
 # Launching an instance
 
-![](/images/horizon_instance_launch.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_launch.webp){ align=right ; width=50% }
 
 1. **Open `Launch instance` menu**
 
@@ -14,7 +14,7 @@
 
 ---
 
-![](/images/horizon_instance_source.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_source.webp){ align=right ; width=50% }
 
 2. **Instance Source**
 
@@ -35,7 +35,7 @@
 </br></br></br></br>
 
 ---
-![](/images/horizon_launch_volume_backed.png){ align=right ; width=50% }
+![](../../images/horizon_launch_volume_backed.png){ align=right ; width=50% }
 
 ### ALTERNATIVE: Volume-backed Instance
 
@@ -56,7 +56,7 @@
 
 ---
 
-![](/images/horizon_instance_flavor.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_flavor.webp){ align=right ; width=50% }
 
 3. **Flavor**
 
@@ -71,7 +71,7 @@
 
 ---
 
-![](/images/horizon_instance_network.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_network.webp){ align=right ; width=50% }
 
 4. **Networks**
 
@@ -83,7 +83,7 @@
 
 ---
 
-![](/images/horizon_instance_secgrp.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_secgrp.webp){ align=right ; width=50% }
 
 5. **Security Groups**
 
@@ -94,7 +94,7 @@
 
 ---
 
-![](/images/horizon_instance_keypair.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_keypair.webp){ align=right ; width=50% }
 
 6. **Keypair**
 
@@ -105,7 +105,7 @@
 
 ---
 
-![](/images/horizon_instance_float_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_float_IP.webp){ align=right ; width=50% }
 
 7. **Associate Floating IP**
 
@@ -116,7 +116,7 @@
 
 ---
 
-![](/images/horizon_instance_select_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_select_IP.webp){ align=right ; width=50% }
 
 8. **Assign IP**
 
@@ -127,7 +127,7 @@
 
 ---
 
-![](/images/horizon_instance_pool_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_pool_IP.webp){ align=right ; width=50% }
 
 9. **Assign Pool**
 
@@ -138,7 +138,7 @@
 
 ---
 
-![](/images/horizon_instance_assoc_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_assoc_IP.webp){ align=right ; width=50% }
 
 10. **Choose IP**
 
@@ -150,7 +150,7 @@
 
 ---
 
-![](/images/horizon_instance_test_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_test_IP.webp){ align=right ; width=50% }
 
 11. **Test the connection**
 
@@ -161,7 +161,7 @@
 
 ---
 
-![](/images/horizon_instance_ssh_IP.webp){ align=right ; width=50% }
+![](../../images/horizon_instance_ssh_IP.webp){ align=right ; width=50% }
 
 12. **Try to `ssh` to your instance**
 

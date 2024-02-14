@@ -65,7 +65,7 @@ extra:
 
 validation:
   links:
-    absolute_links: ignore
+    absolute_links: info
 
 nav:
   - Jetstream2 Main:

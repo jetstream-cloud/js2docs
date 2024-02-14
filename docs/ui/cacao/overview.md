@@ -34,4 +34,4 @@
 
 ## Advanced topics
 <div class="cacao-overview"></div>
-* [Importing a terraform template](import_terraform_template.md)
+* [Importing a terraform template](cacao_cli_import_terraform_template.md)

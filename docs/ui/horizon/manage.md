@@ -2,7 +2,7 @@
 
 ### ACTIONS
 
-![](/images/horizon_instance_actions.png){ align=right ; width=25% }
+![](../../images/horizon_instance_actions.png){ align=right ; width=25% }
 
 After launching an instance (On the left side bar, click on `Project` → `Compute` →  `Instances`), several options are available under the `Actions` menu located on the right hand side of your screen.
 
@@ -78,7 +78,7 @@ After launching an instance (On the left side bar, click on `Project` → `Compu
 * Creates an **image** template from a VM instance.
     * You can launch an instance, custom install the software and files you want to use, then request an **snapshot/image** of the instance. This will save all of the changes and updates, but also make your custom changes available to yourself and collaborators.  Saving instances as images helps leverage both your time and existing resources. The saved image can be used to launch a new child instance at any time. This allows you to discard non-active instances, thus saving resources.
 * **Snapshots and Images**
-    * When you have created a custom workflow or configuration, you can create a _snapshot_ for your own use. In **OpenStack**, an instance _snapshot_ is an [image](/general/instancemgt/#Image). The only difference between an _image_ that has been uploaded directly to the image data service: [glance](https://docs.openstack.org/glance) and an _image_ you create by _snapshot_ is that an image created by snapshot has additional properties in the glance database and defaults to being private.
+    * When you have created a custom workflow or configuration, you can create a _snapshot_ for your own use. In **OpenStack**, an instance _snapshot_ is an [image](../../general/instancemgt.md#Image). The only difference between an _image_ that has been uploaded directly to the image data service: [glance](https://docs.openstack.org/glance) and an _image_ you create by _snapshot_ is that an image created by snapshot has additional properties in the glance database and defaults to being private.
 
     !!! note ""
 
@@ -102,7 +102,7 @@ After launching an instance (On the left side bar, click on `Project` → `Compu
 
     For example, an image created on a `Tiny` sized VM can be launched on a VM of any size; an image created on a `Medium` VM can only be launched on a `Medium` or larger size VM.
 
-![](/images/horizon_image_actions.png){ align=right ; width=25% }
+![](../../images/horizon_image_actions.png){ align=right ; width=25% }
 
 * In the `Project` → `Compute` →  `Images` menu, click `Action` → `Edit Image` to modify the `visibility` and `minimum disk` requirements of your newly created image
 

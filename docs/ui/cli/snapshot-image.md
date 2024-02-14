@@ -2,7 +2,7 @@
 
 ### Snapshots and Images
 
-When you have created a custom workflow or configuration, you can create a _snapshot_ for your own use. In **OpenStack**, an instance _snapshot_ is an [image](/general/instancemgt/#Image). The only difference between an _image_ that has been uploaded directly to the image data service: [glance](https://docs.openstack.org/glance) and an _image_ you create by _snapshot_ is that an image created by snapshot has additional properties in the glance database and defaults to being private.
+When you have created a custom workflow or configuration, you can create a _snapshot_ for your own use. In **OpenStack**, an instance _snapshot_ is an [image](../../general/instancemgt.md#Image). The only difference between an _image_ that has been uploaded directly to the image data service: [glance](https://docs.openstack.org/glance) and an _image_ you create by _snapshot_ is that an image created by snapshot has additional properties in the glance database and defaults to being private.
 
 !!! note ""
 
@@ -16,7 +16,7 @@ When you have created a custom workflow or configuration, you can create a _snap
 
     Before creating the snapshot and/or image, you'll want to make sure that `cloud-init` is installed on your instance as well as `qemu-guest-agent`
 
-    * If your instance was based on one of the [Featured](/general/featured) images, both _cloud-init_ and _qemu-guest-agent_ should be present unless you explicitly removed them.
+    * If your instance was based on one of the [Featured](../../general/featured.md) images, both _cloud-init_ and _qemu-guest-agent_ should be present unless you explicitly removed them.
 
 #### To create the snapshot from the command line <a name="ImageCreate"></a>
 
@@ -90,4 +90,4 @@ to accept the image.
 
     For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
 
-    Currently, ***visibility*** can only be modified in the [Horizon](/ui/horizon/intro) and [CLI](/ui/cli/snapshot-image) interfaces.
+    Currently, ***visibility*** can only be modified in the [Horizon](../horizon/intro.md) and [CLI](snapshot-image.md) interfaces.

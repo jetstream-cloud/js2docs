@@ -138,7 +138,7 @@ What happens when one of the workers breaks, though? To simulate this, quickly s
 
 1. After a few seconds, the health monitor's check will fail, causing our pool's status to become `Degraded`. Also notice on the pool "Members" tab that `worker-node-2` has an operating status of `Error`. <br/>
 
-    ![](/images/horizon-load-balancer-pool-status.png){width=500rem}
+    ![](../images/horizon-load-balancer-pool-status.png){width=500rem}
 
 2. Since `worker-node-2` is down, all of our requests are now sent to `worker-node-1`:
 

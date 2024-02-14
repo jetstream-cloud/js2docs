@@ -31,7 +31,7 @@ In addition to the ability for individuals to control their infrastructure progr
 
 !!! Note
 
-    **Push-button virtual cluster deployment is available in [Exosphere](/ui/exo/push-button-cluster.md){target=_blank} now.**
+    **Push-button virtual cluster deployment is available in [Exosphere](../ui/exo/push-button-cluster.md){target=_blank} now.**
 
 ### Historical Reference
 

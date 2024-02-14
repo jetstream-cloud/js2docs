@@ -2,7 +2,7 @@
 
 ---
 
-![](/images/JS2-Horizon-Login-Screen.png){ align=right ; width=50% }
+![](../../images/JS2-Horizon-Login-Screen.png){ align=right ; width=50% }
 
 #### 1. Navigate
 
@@ -16,7 +16,7 @@
 
 ---
 
-![](/images/JS2-CILogin-Screen.png){ align=right ; width=50% }
+![](../../images/JS2-CILogin-Screen.png){ align=right ; width=50% }
 
 #### 2. CILogon Authentication
 
@@ -31,7 +31,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 ---
 
-![](/images/JS2-CILogin-Auth-Screen.png){ align=right ; width=50% }
+![](../../images/JS2-CILogin-Auth-Screen.png){ align=right ; width=50% }
 
 #### 3. ACCESS credentials
 
@@ -42,7 +42,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 ---
 
-![](/images/JS2-Access-Duo-Screen.png){ align=right ; width=50% }
+![](../../images/JS2-Access-Duo-Screen.png){ align=right ; width=50% }
 
 #### 4. Multi Factor Authentication
 
@@ -53,7 +53,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 ---
 
-![](/images/JS2-Horizon-Home.png){ align=right ; width=50% }
+![](../../images/JS2-Horizon-Home.png){ align=right ; width=50% }
 
 #### 5. Horizon Dashboard
 
@@ -64,7 +64,7 @@ We know ***ACCESS-CI*** credentials work correctly so we will show that in our e
 
 ---
 
-![](/images/JS2-Horizon-Change-Projects.png){ align=right ; width=50% }
+![](../../images/JS2-Horizon-Change-Projects.png){ align=right ; width=50% }
 
 #### 6. Project
 

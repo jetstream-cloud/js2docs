@@ -97,7 +97,7 @@ Metadata for the access rule:
     | properties   |                                      |
     +--------------+--------------------------------------+
 
-Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key` that you'll need for the keyring file in when you [configure your VM for Manila share access](../../general/manilaVM/).
+Make a note of the id value. This is the `access rule id`. In the above example it is `95067b4f-f77c-4b76-be12-ac5c3a8e8897`. You can look up the access rule id in openstack to get your `access_key` that you'll need for the keyring file in when you [configure your VM for Manila share access](../../general/manilaVM.md).
 
 ### 3. Get access key
 

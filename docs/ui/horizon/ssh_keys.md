@@ -1,6 +1,6 @@
 # Add SSH Keys in Horizon
 
-![](/images/horizon_keypair.webp){ align=right ; width=50% }
+![](../../images/horizon_keypair.webp){ align=right ; width=50% }
 
 1. **Upload SSH Key**
 

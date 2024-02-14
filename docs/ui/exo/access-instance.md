@@ -27,7 +27,7 @@ By default, Exosphere configures all new instances with an easy-access web shell
 
 ### Web Desktop (Guacamole)
 
-If an instance was [configured with Web Desktop](../create_instance/#configure-instance) enabled, Exosphere will provide an interactive [GNOME](https://www.gnome.org/){target=_blank} desktop environment for you to work in. Like the web shell, this is powered by [Guacamole](https://guacamole.apache.org/){target=_blank} and signs in as `exouser`.
+If an instance was [configured with Web Desktop](create_instance.md#configure-instance) enabled, Exosphere will provide an interactive [GNOME](https://www.gnome.org/){target=_blank} desktop environment for you to work in. Like the web shell, this is powered by [Guacamole](https://guacamole.apache.org/){target=_blank} and signs in as `exouser`.
 
 ### Console
 
@@ -67,7 +67,7 @@ ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no exouser@<PUB
 This guide assumes that you have already generated a public/private key pair. For step-by-step instructions on doing so, see [the IU Knowledge Base](https://kb.iu.edu/d/aews){target=_blank}.
 {: .note}
 
-Public key authentication is preferred to passphrases by many. Adding your public key to an instance with the Exosphere UI is only possible [during creation](../create_instance/#advanced-options); however, there is a workaround.
+Public key authentication is preferred to passphrases by many. Adding your public key to an instance with the Exosphere UI is only possible [during creation](create_instance.md#advanced-options); however, there is a workaround.
 
 #### Adding a Public Key Manually
 
@@ -76,7 +76,7 @@ Public key authentication is preferred to passphrases by many. Adding your publi
     ```
     vim /home/exouser/.ssh/authorized_keys
     ```
-3. Paste your **public** SSH key into the file (**never share your private keys**) by copying it into the clipboard on your workstation, then right-clicking on the web shell. If you are having trouble copying/pasting, see [Exosphere Troubleshooting](../troubleshooting/#i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole). If the file is not empty, simply put your key on a new line.
+3. Paste your **public** SSH key into the file (**never share your private keys**) by copying it into the clipboard on your workstation, then right-clicking on the web shell. If you are having trouble copying/pasting, see [Exosphere Troubleshooting](troubleshooting.md#i-cant-copy-and-paste-tofrom-the-web-shell-or-web-desktop-guacamole). If the file is not empty, simply put your key on a new line.
 4. Save and close the file.
 
 #### Using a public key

@@ -8,4 +8,4 @@
 
 ### I can manage instances in Horizon, but CLI doesn't work
 
-* You are likely not using `Application Credentials` in your openrc file. See [CLI openrc](/ui/cli/openrc) for instructions
+* You are likely not using `Application Credentials` in your openrc file. See [CLI openrc](../cli/auth.md) for instructions

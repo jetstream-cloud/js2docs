@@ -8,7 +8,7 @@
 
 ---
 
-![](/images/JS2-manila1.png){ align=right ; width=50% }
+![](../../images/JS2-manila1.png){ align=right ; width=50% }
 
 i. Click on:  `Project`  → `Share` → `Shares` → `+Create Share`
 
@@ -16,7 +16,7 @@ i. Click on:  `Project`  → `Share` → `Shares` → `+Create Share`
 
 ---
 
-![](/images/JS2-manila2.png){ align=right ; width=50% }
+![](../../images/JS2-manila2.png){ align=right ; width=50% }
 
 ii. `Create share` with the following settings:
 
@@ -33,13 +33,13 @@ ii. `Create share` with the following settings:
 
 i. Once your share is available you can select `Manage Rules` and `Add Rule` :
 
-![](/images/JS2-manila3.png){ align=right ; width=50% }
+![](../../images/JS2-manila3.png){ align=right ; width=50% }
 
 - **access type**: cephx
 - **access level**: read-write
 - **access to**: an descriptive and unique rule name
 
-![](/images/JS2-manila4.png){ align=right ; width=50% }
+![](../../images/JS2-manila4.png){ align=right ; width=50% }
 
 In the example above the `accessTo` name is `manilashare`.</br>***The name assigned must be globally unique!*** If you use a name that is already in use you will see an error state. To help avoid accidental overlap, we recommend prefixing your name with something unique such as your ACCESS username or your allocation number. For example, instead of using just `seed-research`, use `<ALLOCATION>-seed-research`.
 
@@ -47,7 +47,7 @@ In the example above the `accessTo` name is `manilashare`.</br>***The name assig
 
 ---
 
-![](/images/JS2-manila5.png){ align=right ; width=50% }
+![](../../images/JS2-manila5.png){ align=right ; width=50% }
 
 ii.  If you now go back to the share page (`Project`/`Share`/`Shares`) and click on the share you created you should see your share's metadata.
 

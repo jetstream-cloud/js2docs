@@ -78,7 +78,7 @@ Be aware that system images quickly fall behind on operating system updates. As 
 
     For more information on Glance ***visibility*** properties, see [https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design](https://wiki.openstack.org/wiki/Glance-v2-community-image-visibility-design)
 
-    Currently, ***visibility*** can only be modified in the [Horizon](/ui/horizon/intro) and [CLI](/ui/cli/overview) interfaces.
+    Currently, ***visibility*** can only be modified in the [Horizon](../ui/horizon/intro.md) and [CLI](../ui/cli/overview.md) interfaces.
 
 
 ### Suspend and Resume <a name="Suspend"></a>
