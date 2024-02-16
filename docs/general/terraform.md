@@ -35,7 +35,7 @@ git clone git@github.com:wellsaar/terraform-jetstream.git
 This command creates a clone of the git repo that contains the code examples that we use below. The master branch of the git repo above should be a good starting point in developing your own terraform code.
 
 # Running Terraform
-Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](../ui/cli/auth/#setting-up-application-credentials-and-openrcsh-for-the-jetstream2-cli)
+Make sure that you have setup and downloaded your openrc file. [Setting up the openrc.sh for the Jetstream2 CLI](../../ui/cli/auth/#setting-up-application-credentials-and-openrcsh-for-the-jetstream2-cli)
 
 You will need to source the openrc file once you have downloaded it in order to setup the variables that Terraform will need to connect to Jetstream2.
 
