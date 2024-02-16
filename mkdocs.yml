@@ -63,6 +63,10 @@ extra:
 #https://github.com/mkdocs/mkdocs/issues/2101
 #https://github.com/mkdocs/mkdocs/issues/1794
 
+validation:
+  links:
+    absolute_links: info
+
 nav:
   - Jetstream2 Main:
     - Jetstream2 Home: index.md

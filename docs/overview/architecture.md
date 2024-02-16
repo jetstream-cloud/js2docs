@@ -5,7 +5,7 @@ Jetstream2 consists of one primary cloud and multiple regional clouds. As you ca
 *Another huge distinction is that instead of different domains -- default (Atmosphere) and tacc (API) domains, there is one namespace for Jetstream2. You can change between the CLI, Horizon, Exosphere, and Cacao as you see fit to manage your resources*
 {: .note}
 
-![Jetstream2 Architecture](/images/Jetstream2-architecture_Nov22.png)
+![Jetstream2 Architecture](../images/Jetstream2-architecture_Nov22.png)
 
 Allocations will only be awarded on the primary cloud by default.
 
@@ -15,7 +15,7 @@ Jetstream2 brings [multiple classes of research computing hardware](config.md){t
 
 ### Interfaces
 
-Jetstream2 features an interface called [Exosphere](/ui/exo/exo.md){target=_blank} as the primary, recommended GUI interface. Jetstream2 also provides API services utilizing both the OpenStack Horizon GUI and a robust command-line interface (CLI). Atmosphere has evolved into a new tool called [Containerized Atmosphere for Continuous Analysis Orchestration (CACAO or simply Cacao)](/ui/cacao/intro.md){target=_blank}, which is built on the principles of Atmosphere (abstracting complicated functions such as firewalls and virtual networking). Because Jetstream2 will no longer have separate operating domains for Cacao and API operations, those utilizing Jetstream2 can switch between interfaces easily, seeing all virtual machines and other assets created in any interface. This single namespace also allows for third-party interfaces that can manage any OpenStack created resource to be used with Jetstream2.
+Jetstream2 features an interface called [Exosphere](../ui/exo/exo.md){target=_blank} as the primary, recommended GUI interface. Jetstream2 also provides API services utilizing both the OpenStack Horizon GUI and a robust command-line interface (CLI). Atmosphere has evolved into a new tool called [Containerized Atmosphere for Continuous Analysis Orchestration (CACAO or simply Cacao)](../ui/cacao/intro.md){target=_blank}, which is built on the principles of Atmosphere (abstracting complicated functions such as firewalls and virtual networking). Because Jetstream2 will no longer have separate operating domains for Cacao and API operations, those utilizing Jetstream2 can switch between interfaces easily, seeing all virtual machines and other assets created in any interface. This single namespace also allows for third-party interfaces that can manage any OpenStack created resource to be used with Jetstream2.
 
 ### Containers and Orchestration
 
@@ -31,7 +31,7 @@ In addition to the ability for individuals to control their infrastructure progr
 
 !!! Note
 
-    **Push-button virtual cluster deployment is available in [Exosphere](/ui/exo/push-button-cluster.md){target=_blank} now.**
+    **Push-button virtual cluster deployment is available in [Exosphere](../ui/exo/push-button-cluster.md){target=_blank} now.**
 
 ### Historical Reference
 

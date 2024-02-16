@@ -60,7 +60,7 @@ You should now notice that the instances are serving their basic page in a backg
 
 [Log into Horizon](../ui/horizon/login.md) and, from the left-hand menu, select `Network`→`Load Balancers`. Click on the `+ Create Load Balancer` button.
 
-![](/images/horizon-create-load-balancer.png){width=500rem}
+![](../images/horizon-create-load-balancer.png){width=500rem}
 
 #### 3a. Load Balancer Details
 In the first section ("Load Balancer Details"), enter the following options:
@@ -79,7 +79,7 @@ In the first section ("Load Balancer Details"), enter the following options:
 
 A listener describes what traffic your load balancer listens to. For instance, for a basic HTTP web server (like our example) would listen over HTTP port 80. For more information about each field, click the question mark icon in the top-right of the window. 
 
-![](/images/horizon-load-balancer-listener-details.png){width=500rem }
+![](../images/horizon-load-balancer-listener-details.png){width=500rem }
 
 #### 3c. Pool Details
 
@@ -99,7 +99,7 @@ You can also add workers to the pool that aren't Jetstream2/OpenStack instances 
 
 #### 3e. Monitor Details
 
-![](/images/horizon-load-balancer-health.png){ align=right ; width=50%}
+![](../images/horizon-load-balancer-health.png){ align=right ; width=50%}
 
 A health monitor is used by the load balancer to determine the operational state of pool members by sending out a "heartbeat" ping/request on a regular interval. If a worker fails to respond to the health check, requests are not routed to it.
 
@@ -138,7 +138,7 @@ What happens when one of the workers breaks, though? To simulate this, quickly s
 
 1. After a few seconds, the health monitor's check will fail, causing our pool's status to become `Degraded`. Also notice on the pool "Members" tab that `worker-node-2` has an operating status of `Error`. <br/>
 
-    ![](/images/horizon-load-balancer-pool-status.png){width=500rem}
+    ![](../images/horizon-load-balancer-pool-status.png){width=500rem}
 
 2. Since `worker-node-2` is down, all of our requests are now sent to `worker-node-1`:
 

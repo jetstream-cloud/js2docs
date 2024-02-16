@@ -57,10 +57,10 @@ The downside is that using boot from volume will count against your Jetstream2-S
 
 Instructions for using boot from volume are here:
 
-* [Exosphere: Choose a Root Disk Size](/ui/exo/create_instance/#configure-instance)
+* [Exosphere: Choose a Root Disk Size](../ui/exo/create_instance.md#configure-instance)
 * Cacao (link coming)
-* [Horizon](/ui/horizon/launch/#alternative-volume-backed-instance)
-* [CLI](/ui/cli/launch)
+* [Horizon](../ui/horizon/launch.md#alternative-volume-backed-instance)
+* [CLI](../ui/cli/launch.md)
 
 ---
 
@@ -131,7 +131,7 @@ The DNS hostname points to your instance's public (a.k.a. floating) IP address, 
 If DNS hostnames are not working for your allocation or you'd like to set up Designate for another network, please [create a support ticket](https://jetstream-cloud.org/contact/index.html){target=_blank}.
 
 !!! Note
-    For information about hostnames outside the `projects.jetstream-cloud.org` space, see ["How do I set up a custom domain name for my gateway, site, or web service?"](../gateways/#how-do-i-set-up-a-custom-domain-name-for-my-gateway-site-or-web-service)
+    For information about hostnames outside the `projects.jetstream-cloud.org` space, see ["How do I set up a custom domain name for my gateway, site, or web service?"](gateways.md#how-do-i-set-up-a-custom-domain-name-for-my-gateway-site-or-web-service)
 
 ---
 

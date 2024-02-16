@@ -3,7 +3,7 @@
 The object store is only available via Horizon and the CLI presently.
 {: .note}
 
-The Jetstream2 object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI). From the CLI, you can use the python-swiftclient, the [AWS CLI's `s3api`](../s3/#aws-cli), or other compatible tools.
+The Jetstream2 object store utilizes Openstack Swift and is S3 compatible. You can utilize it via Horizon or the command line interface (CLI). From the CLI, you can use the python-swiftclient, the [AWS CLI's `s3api`](s3.md#aws-cli), or other compatible tools.
 
 #### Trying the object store from the CLI using Swift
 

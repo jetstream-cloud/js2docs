@@ -1,9 +1,9 @@
 # Using the Jetstream2 Software Collection from the Web Desktop
 
-The [Jetstream2 Software Collection](software.md) is automatically mounted to instances created from a [featured image](featured.md). If you are *not* using a featured image, it is possible to [manually add the software collection to your virtual machine](../usingsoftware-cli/#manually-adding-the-software-collection-to-a-non-featured-virtual-machine); however, compatibility is not guaranteed.
+The [Jetstream2 Software Collection](software.md) is automatically mounted to instances created from a [featured image](featured.md). If you are *not* using a featured image, it is possible to [manually add the software collection to your virtual machine](usingsoftware-cli.md#manually-adding-the-software-collection-to-a-non-featured-virtual-machine); however, compatibility is not guaranteed.
 {: .note}
 
-Jetstream2 instances created through [Exosphere](../ui/exo/exo.md) may be [deployed with a Web Desktop](../../ui/exo/create_instance/#configure-instance). The Exosphere Web Desktop can be used to access the full Jetstream2 Software Collection, notably including graphical applications that cannot be used from the pure command-line (i.e. RStudio and MATLAB). 
+Jetstream2 instances created through [Exosphere](../ui/exo/exo.md) may be [deployed with a Web Desktop](../ui/exo/create_instance.md#configure-instance). The Exosphere Web Desktop can be used to access the full Jetstream2 Software Collection, notably including graphical applications that cannot be used from the pure command-line (i.e. RStudio and MATLAB). 
 
 ## Navigating the Web Desktop
 

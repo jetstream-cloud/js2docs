@@ -5,7 +5,7 @@ There are a number of ways to transfer files to and from your VM instances. Some
 **Web shell/Web Desktop**  
 
 The web shell and web desktop allow file transfers to be easily done with a built in facility.  
-Exosphere : [Transferring files with web shell and web desktop](https://docs.jetstream-cloud.org/ui/exo/exo-filetransfer)   
+Exosphere : [Transferring files with web shell and web desktop](../ui/exo/exo-filetransfer.md)   
 Cacao : Coming soon!  
 
 **SCP/SFTP**  

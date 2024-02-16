@@ -36,7 +36,7 @@ Firewalls are **not enabled by default** on Jetstream2 instances. Depending on t
 
 We encourage keeping your instances patched, rebooting as needed for any kernel or glibc patches, limiting access to all services as much as possible, utilizing security groups if your interface allows it, and running your own host-based firewall if you're comfortable administering it.
 
-Please refer to [Jetstream2 Virtual Machine Firewalls](/general/firewalls) for more information.
+Please refer to [Jetstream2 Virtual Machine Firewalls](../general/firewalls.md) for more information.
 
 ---
 
@@ -44,7 +44,7 @@ Please refer to [Jetstream2 Virtual Machine Firewalls](/general/firewalls) for m
 
 That depends on the interface.
 
-The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](/ui/cli/security_group) or [Horizon](/ui/horizon/security_group) for more information on managing security groups in those interfaces.
+The CLI and Horizon by default allow egress only. You have to apply the appropriate security groups for ingress. Please refer to the [CLI](../ui/cli/security_group.md) or [Horizon](../ui/horizon/security_group.md) for more information on managing security groups in those interfaces.
 
 For Exosphere, the default security group allows all egress and inbound access.
 
@@ -58,7 +58,7 @@ The *default* security group that you can see from Horizon or the CLI is provide
 
 We highly recommend not changing the *default* security group at all. Security groups are additive, so you can create additional groups for the access you need and add them to your host at launch or at any time after launch.
 
-Please refer to the [CLI](/ui/cli/security_group) or [Horizon](/ui/horizon/security_group) for more information on managing security groups in those interfaces.
+Please refer to the [CLI](../ui/cli/security_group.md) or [Horizon](../ui/horizon/security_group.md) for more information on managing security groups in those interfaces.
 
 ### Is there any security benefit to creating a new network or subnet for VMs in my project?
 
@@ -84,7 +84,7 @@ It is possible to make it less straightforward for another user on the same allo
 
 We note how to change a user password here:
 
-[https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine](/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine)
+[https://docs.jetstream-cloud.org/faq/general-faq/#can-i-set-the-password-for-a-user-on-my-virtual-machine](general-faq.md#can-i-set-the-password-for-a-user-on-my-virtual-machine)
 
 you can do:
 
@@ -92,6 +92,6 @@ you can do:
 
 and that solves the issue of them being able to access your instance using the credential listed on the Exosphere page. While you can use the console option still, we HIGHLY suggest utilizing ssh keys for your instances to ensure you have access. That's covered here:
 
-[https://docs.jetstream-cloud.org/ui/exo/create_instance/](/ui/exo/create_instance/)
+[https://docs.jetstream-cloud.org/ui/exo/create_instance/](../ui/exo/create_instance.md)
 
 under the advanced options. You can also manually add your key to an already running instance.

@@ -9,7 +9,7 @@ On the left side bar, click on `Project` → `Volumes` →  `Volumes`.
 
 ---
 
-![](/images/horizon_volume_create_empty.png){ align=right ; width=50% }
+![](../../images/horizon_volume_create_empty.png){ align=right ; width=50% }
 
 1. `Create Volume`
 
@@ -22,23 +22,23 @@ On the left side bar, click on `Project` → `Volumes` →  `Volumes`.
 * **Size**: modify the size of the size of the volume.</br>***All volumes count against the project's storage quota***
 * Click `Create Volume`
 
-![](/images/horizon_volume_create_image.png){ align=right ; width=30% }
+![](../../images/horizon_volume_create_image.png){ align=right ; width=30% }
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
 ---
 
-![](/images/horizon_volume_actions.png){ align=right ; width=25% }
+![](../../images/horizon_volume_actions.png){ align=right ; width=25% }
 
 2. `Attach Volume`
 
 * Click `Manage Attachments` for the desired volume
 * Select an instance to attach to, and click `Attach Volume`
-![](/images/horizon_volume_manage_attachments.png){ align=right ; width=50% }
+![](../../images/horizon_volume_manage_attachments.png){ align=right ; width=50% }
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br>
 
-![](/images/horizon_volume_attached-to.png){ align=right ; width=25% }
+![](../../images/horizon_volume_attached-to.png){ align=right ; width=25% }
 
 * The **device** on a particular **instance** will now be listed in the `Attached To` column
 * `ssh` to your instance, create any filesystems as needed, create a mountpoint, and mount the volume.
@@ -62,7 +62,7 @@ On the left side bar, click on `Project` → `Volumes` →  `Volumes`.
 
 ---
 
-![](/images/horizon_volume_actions.png){ align=right ; width=25% }
+![](../../images/horizon_volume_actions.png){ align=right ; width=25% }
 
 3. `Detach Volume`
 
@@ -72,7 +72,7 @@ On the left side bar, click on `Project` → `Volumes` →  `Volumes`.
 * In Horizon `Project` → `Volumes` →  `Volumes`, click `Manage Attachments` for the desired volume
 * Select an instance, and click `Detach Volume`
 * Confirm `Detach Volume`
-![](/images/horizon_volume_manage_detach.png){ align=right ; width=50% }
+![](../../images/horizon_volume_manage_detach.png){ align=right ; width=50% }
 
 
 </br></br></br></br></br></br></br></br></br></br></br>
@@ -80,7 +80,7 @@ On the left side bar, click on `Project` → `Volumes` →  `Volumes`.
 
 ---
 
-![](/images/horizon_volume_actions.png){ align=right ; width=25% }
+![](../../images/horizon_volume_actions.png){ align=right ; width=25% }
 
 4. `Delete Volume`
 

@@ -9,7 +9,7 @@ pre-formatted reference data. There are also [extensive training
 resources](https://training.galaxyproject.org/){target=_blank} for a variety of roles,
 including researchers, tool developers, and educators.
 
-![Galaxy UI](/images/galaxy.png)
+![Galaxy UI](../images/galaxy.png)
 
 ## Galaxy on Jetstream
 

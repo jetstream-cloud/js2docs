@@ -13,7 +13,7 @@ Jetstream allocations are awarded exclusively through ACCESS. ACCESS provides us
     You may apply for an account via the [ACCESS User Registration page](https://identity.access-ci.org/new-user){target=_blank}.
 
 A guide with more detail on the allocations processes is available from the
-[Managing Allocations Overview](https://allocations.access-ci.org/manage-allocations-overview){target=_blank} page.
+[ACCESS Allocations Overview](https://allocations.access-ci.org/){target=_blank} page.
 
 ### Allocation types:
 
@@ -30,7 +30,7 @@ Researchers have opportunities to request ACCESS allocations at four levels.
 | Accelerate ACCESS | 3,000,000  |
 | Maximize ACCESS | Not awarded in credits |
 
-Information for each tier is below. Complete information including how to apply for allocations may be found on the [ACCESS Prepare Requests Overview](https://allocations.access-ci.org/prepare-requests-overview){target=_blank} page.
+Information for each tier is below. Complete information including how to apply for allocations may be found on the [ACCESS Get Your First Project Page](https://allocations.access-ci.org/get-your-first-project){target=_blank} page.
 
 ##### Explore ACCESS
 

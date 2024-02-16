@@ -2,7 +2,7 @@
 
 ## Create a Network
 
-![](/images/horizon_create_network.webp){ align=right ; width=50% }
+![](../../images/horizon_create_network.webp){ align=right ; width=50% }
 
 1. **Network**
 
@@ -16,7 +16,7 @@
 
 ---
 
-![](/images/horizon_network_name.webp){ align=right ; width=50% }
+![](../../images/horizon_network_name.webp){ align=right ; width=50% }
 
 2. **Network name**
 
@@ -28,7 +28,7 @@
 
 ---
 
-![](/images/horizon_subnet.webp){ align=right ; width=50% }
+![](../../images/horizon_subnet.webp){ align=right ; width=50% }
 
 3. **Subnet**
 
@@ -47,7 +47,7 @@
 
 ---
 
-![](/images/horizon_network_dhcp.webp){ align=right ; width=50% }
+![](../../images/horizon_network_dhcp.webp){ align=right ; width=50% }
 
 4. **Create**
 
@@ -61,11 +61,11 @@
 
 ---
 
-![](/images/horizon_create_router.jpg){ align=right ; width=50% }
+![](../../images/horizon_create_router.jpg){ align=right ; width=50% }
 
 5. **Router**
 
-* [Jetstream2 Policy](/general/policies) defaults to `router quota = 1`.</br>If you already have the `auto_allocated_network` and have not requested a quota increase, the button `+Create Router` may be greyed out.</br>-**Otherwise**-</br>
+* [Jetstream2 Policy](../../general/policies.md) defaults to `router quota = 1`.</br>If you already have the `auto_allocated_network` and have not requested a quota increase, the button `+Create Router` may be greyed out.</br>-**Otherwise**-</br>
 
 * Click on `+Create Router`.
 
@@ -73,7 +73,7 @@
 
 ---
 
-![](/images/horizon_router_name.jpg){ align=right ; width=50% }
+![](../../images/horizon_router_name.jpg){ align=right ; width=50% }
 
 6. **Router name**
 
@@ -85,7 +85,7 @@
 
 ---
 
-![](/images/horizon_net_top_graph.webp){ align=right ; width=50% }
+![](../../images/horizon_net_top_graph.webp){ align=right ; width=50% }
 
 7. **Connect Network to Router**
 
@@ -94,7 +94,7 @@
 
 * Click on the router you just created (*or **auto_allocated_router** *),</br>then `+Add Interface`.
 
-![](/images/horizon_net_interface.jpg){ align=right ; width=50% }
+![](../../images/horizon_net_interface.jpg){ align=right ; width=50% }
 
 </br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 
@@ -106,7 +106,7 @@
 
 ---
 
-![](/images/horizon_router-add.png){ align=right ; width=50% }
+![](../../images/horizon_router-add.png){ align=right ; width=50% }
 
 8. **Select subnet**
 
@@ -118,7 +118,7 @@
 
 ---
 
-![](/images/horizon_network_final.webp){ align=right ; width=30% }
+![](../../images/horizon_network_final.webp){ align=right ; width=30% }
 
 9. The network should now be connected to the new router.  The end result will look similar to the diagram.
 

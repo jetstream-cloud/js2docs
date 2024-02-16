@@ -23,7 +23,7 @@ The operational software environment is based on [OpenStack](https://www.opensta
 Jetstream2 is primarily accessible through the [Exosphere](../ui/exo/exo.md) web interface using [ACCESS](https://access-ci.org/){target=_blank} credentials via [CILogon](https://www.cilogon.org/faq/){target=_blank}.
 
 
->Newly created ACCESS accounts must be [added to a Jetstream2 specific allocation](https://allocations.access-ci.org/user_management){target=_blank} by the PI or Resource manager in order to access Jetstream2.
+>Newly created ACCESS accounts must be [added to a Jetstream2 specific allocation](https://allocations.access-ci.org/){target=_blank} by the PI or Resource manager in order to access Jetstream2.
 
 >Jetstream2 is meant primarily for **interactive** research, small scale processing **on demand**, or as the backend to science **gateways** to send research jobs to other HPC or HTC resources, or for general infrastructure for research or research-related development.
 
