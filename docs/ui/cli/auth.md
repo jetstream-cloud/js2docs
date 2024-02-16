@@ -1,7 +1,7 @@
 # Authenticating Against the OpenStack CLI (Logging In)
 
 !!! note "New openrc format for Jetstream2 CLI!"
-    One of the key changes to using Jetstream2's command line interface (CLI) is that it uses ACCESS credentials for authentication. To do that, you have to create an application credential via the [Horizon](../horizon/intro.md) interface. This will require a different sort of openrc than Jetstream1. This page will walk you through that process.
+    When using Jetstream2's command line interface (CLI), know that its setup file (openrc) is not the same as Jetstream1's. For each Jetstream2 allocation you wish to access via the CLI, you must create a unique code called an 'application credential'. Begin by signing into [Horizon](../horizon/intro.md) with your ACCESS-CI account. Then, select the allocation and create an application credential. This guide provides the necessary steps.
 
 The OpenStack <abbr title="Command-Line Interface">CLI</abbr> expects certain environment variables to be set when issuing commands; these environment variables are used to provide information/context about authenticating to the OpenStack API, for example where to find it (`$OS_AUTH_URL`) and what authentication method to use (`$OS_AUTH_TYPE`). If these are not properly provided, you might see a message like `Missing value auth-url required for auth plugin password`.
 

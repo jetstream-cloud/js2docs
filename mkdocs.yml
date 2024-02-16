@@ -126,19 +126,19 @@ nav:
       - Manila Shares in Horizon: ui/horizon/manila.md
       - Horizon Troubleshooting: ui/horizon/troubleshooting.md
     - CLI:
-      - Overview: cli/overview.md
-      - Installing Openstack Clients: cli/clients.md
-      - Authentication (Logging In): cli/auth.md
-      - Managing SSH Keys: cli/managing-ssh-keys.md
-      - Setting up a Security Group: cli/security_group.md
-      - Setting up a Network: cli/network.md
-      - Launching a Virtual Machine: cli/launch.md
-      - Instance Management: cli/manage.md
-      - Snapshots & Images: cli/snapshot-image.md
-      - Deleting Infrastructure in the CLI: cli/deleting.md
-      - Storage Under the CLI: cli/storage.md
-      - Manila Shares in the CLI: cli/manila.md
-      - CLI Troubleshooting: cli/troubleshooting.md
+      - Overview: ui/cli/overview.md
+      - Installing Openstack Clients: ui/cli/clients.md
+      - Authentication (Logging In): ui/cli/auth.md
+      - Managing SSH Keys: ui/cli/managing-ssh-keys.md
+      - Setting up a Security Group: ui/cli/security_group.md
+      - Setting up a Network: ui/cli/network.md
+      - Launching a Virtual Machine: ui/cli/launch.md
+      - Instance Management: ui/cli/manage.md
+      - Snapshots & Images: ui/cli/snapshot-image.md
+      - Deleting Infrastructure in the CLI: ui/cli/deleting.md
+      - Storage Under the CLI: ui/cli/storage.md
+      - Manila Shares in the CLI: ui/cli/manila.md
+      - CLI Troubleshooting: ui/cli/troubleshooting.md
     - CACAO:
       - Overview: ui/cacao/overview.md
       - What is CACAO: ui/cacao/intro.md
