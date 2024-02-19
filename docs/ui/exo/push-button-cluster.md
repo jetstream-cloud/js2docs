@@ -51,7 +51,7 @@ sudo su - rocky
 Go to the cluster repository directory: 
 
 ```bash
-cd ~/CRI_Jetstream_Cluster/
+cd ~/Jetstream_Cluster/
 ```
 
 Submit a test batch job: 
