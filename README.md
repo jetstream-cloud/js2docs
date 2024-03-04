@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This repository has been permanently migrated to GitLab: [https://gitlab.com/jetstream-cloud/docs](https://gitlab.com/jetstream-cloud/docs).
+
 # Jetstream2 Documentation
 
 Test this one out locally by installing mkdocs in your local python venv!
